@@ -1,0 +1,615 @@
+order_id,customer_id,order_date,ship_date,status,order_total,country
+1,1,2026-06-06,,pending,109.48,United States
+2,2,2025-11-17,2025-11-19,delivered,44.23,United States
+3,2,2025-10-13,,cancelled,41.39,United States
+4,2,2026-08-01,2026-08-04,delivered,50.85,United States
+5,3,2025-08-14,,cancelled,145.57,United States
+6,4,2026-05-08,2026-05-12,delivered,123.7,New Zealand
+7,4,2026-08-22,2026-08-24,delivered,41.19,New Zealand
+8,5,2026-05-20,2026-05-24,delivered,68.45,Netherlands
+9,5,2025-08-01,2025-08-04,delivered,142.62,Netherlands
+10,5,2025-07-22,2025-07-24,delivered,558.86,Netherlands
+11,5,2025-04-28,,pending,12.53,Netherlands
+12,5,2025-05-25,2025-05-29,shipped,185.6,Netherlands
+13,6,2026-04-29,2026-04-30,delivered,84.45,United States
+14,6,2026-06-23,,cancelled,23.69,United States
+15,6,2026-08-07,2026-08-08,delivered,85.21,United States
+16,7,2025-04-07,2025-04-08,shipped,102.71,United States
+17,7,2026-03-06,,cancelled,143.09,United States
+18,8,2026-07-11,2026-07-14,delivered,111.2,France
+19,8,2026-01-30,2026-02-02,delivered,44.77,France
+20,8,2026-01-01,2026-01-05,delivered,41.01,France
+21,9,2026-04-07,2026-04-09,shipped,123.24,France
+22,10,2026-03-11,2026-03-12,delivered,147.6,United States
+23,10,2025-10-11,2025-10-14,delivered,195.76,United States
+24,11,2025-08-13,2025-08-16,shipped,168.9,United Kingdom
+25,12,2025-02-19,2025-02-24,delivered,80.66,United States
+26,12,2026-09-12,,pending,89.19,United States
+27,12,2025-05-29,,cancelled,509.82,United States
+28,13,2026-08-05,2026-08-08,delivered,383.49,Germany
+29,13,2025-12-09,2025-12-12,delivered,35.64,Germany
+30,14,2025-09-20,2025-09-21,delivered,523.03,United States
+31,14,2026-03-26,2026-03-29,delivered,50.48,United States
+32,14,2025-10-11,2025-10-15,delivered,10.65,United States
+33,14,2026-01-19,2026-01-21,delivered,455.5,United States
+34,15,2026-01-01,2026-01-06,delivered,40.66,United States
+35,15,2026-04-28,2026-04-29,delivered,566.01,United States
+36,15,2026-01-26,2026-01-30,delivered,449.35,United States
+37,15,2026-08-15,2026-08-20,delivered,26.96,United States
+38,16,2026-07-23,2026-07-27,delivered,28.55,France
+39,16,2026-02-17,2026-02-22,delivered,61.3,France
+40,17,2025-10-09,2025-10-12,delivered,599.3,United States
+41,17,2025-03-30,2025-04-03,shipped,11.92,United States
+42,18,2025-01-09,2025-01-11,delivered,25.14,Spain
+43,19,2025-06-10,2025-06-11,delivered,205.86,United States
+44,20,2026-07-16,2026-07-17,delivered,96.94,United States
+45,20,2026-02-12,2026-02-15,delivered,78.69,United States
+46,21,2025-11-13,2025-11-15,delivered,6.78,United States
+47,22,2026-07-15,2026-07-16,delivered,88.29,United States
+48,23,2026-07-14,,pending,103.53,United Kingdom
+49,23,2026-04-01,,pending,944.68,United Kingdom
+50,23,2026-04-21,2026-04-24,shipped,80.11,United Kingdom
+51,24,2026-03-18,2026-03-20,delivered,41.01,United States
+52,24,2025-03-13,2025-03-17,delivered,60.16,United States
+53,25,2025-11-25,,pending,313.18,United States
+54,25,2026-09-09,2026-09-13,delivered,24.24,United States
+55,26,2026-07-21,2026-07-22,shipped,44.48,United States
+56,26,2026-05-04,2026-05-06,delivered,41.9,United States
+57,27,2026-05-16,2026-05-20,delivered,165.54,United States
+58,27,2026-02-06,2026-02-09,shipped,326.86,United States
+59,28,1900-01-01,2025-05-27,delivered,19.16,Australia
+60,28,2025-02-01,2025-02-03,delivered,396.46,Australia
+61,29,2025-07-07,2025-07-09,shipped,289.08,Canada
+62,30,2025-07-26,2025-07-30,delivered,60.4,New Zealand
+63,30,2026-06-14,2026-06-17,delivered,141.69,New Zealand
+64,31,2026-07-05,2026-07-08,delivered,191.13,United States
+65,31,2025-07-14,2025-07-18,delivered,137.93,United States
+66,32,2026-05-09,2026-05-13,delivered,212.08,United States
+67,33,2026-07-03,2026-07-08,delivered,60.01,United States
+68,33,2026-06-17,2026-06-20,delivered,103.35,United States
+69,34,2025-04-19,2025-04-21,delivered,632.89,Australia
+70,34,2026-01-08,2026-01-10,delivered,136.85,Australia
+71,34,2026-05-05,2026-05-07,delivered,80.59,Australia
+72,35,2025-01-25,2025-01-29,delivered,25.41,United States
+73,35,2025-08-15,2025-08-19,delivered,15.11,United States
+74,36,2026-03-01,,pending,365.46,United Kingdom
+75,37,2025-03-09,2025-03-10,delivered,46.57,Ireland
+76,37,2025-06-19,,cancelled,108.24,Ireland
+77,38,2025-09-25,2025-09-28,delivered,126.77,Sweden
+78,39,2026-07-28,2026-08-01,delivered,137.93,Sweden
+79,40,2025-12-26,2025-12-29,delivered,586.63,Netherlands
+80,40,2025-01-20,2025-01-25,delivered,11.03,Netherlands
+81,41,2025-07-03,2025-07-08,delivered,251.5,United States
+82,42,2026-04-27,2026-05-01,delivered,711.17,Australia
+83,42,2026-07-10,2026-07-11,shipped,599.3,Australia
+84,42,2026-02-25,2026-03-02,delivered,84.45,Australia
+85,43,2026-05-21,2026-05-25,delivered,21.48,Netherlands
+86,43,2026-06-01,2026-06-02,delivered,208.15,Netherlands
+87,43,2026-06-15,2026-06-17,delivered,51.1,Netherlands
+88,44,2026-08-24,2026-08-28,delivered,427.32,United States
+89,45,2025-11-21,,cancelled,36.38,Canada
+90,45,2025-03-04,2025-03-09,delivered,59.82,Canada
+91,46,2026-07-26,2026-07-27,delivered,78.98,France
+92,46,2026-07-19,,pending,120.52,France
+93,46,2026-08-25,2026-08-30,delivered,32.09,France
+94,47,2026-04-26,2026-04-27,delivered,142.72,United States
+95,47,2025-08-17,2025-08-21,delivered,25.65,United States
+96,47,2026-05-28,2026-05-29,delivered,321.32,United States
+97,47,2025-07-07,,pending,17.8,United States
+98,47,2025-03-07,2025-03-10,delivered,30.35,United States
+99,47,2025-03-15,2025-03-19,delivered,7.65,United States
+100,48,2025-05-15,2025-05-19,delivered,84.45,Canada
+101,48,2026-06-19,2026-06-20,delivered,147.95,Canada
+102,49,2026-06-22,2026-06-26,shipped,113.3,Germany
+103,50,2025-01-06,,cancelled,17.29,Sweden
+104,51,2026-02-27,2026-03-04,delivered,123.24,United States
+105,52,2026-04-19,2026-04-22,delivered,99.32,Germany
+106,52,2025-09-05,2025-09-07,shipped,15.2,Germany
+107,52,2025-06-19,2025-06-20,delivered,164.15,Germany
+108,52,2025-12-07,2025-12-08,delivered,147.84,Germany
+109,53,2026-03-01,2026-03-02,delivered,66.2,Spain
+110,53,2026-02-17,2026-02-18,delivered,209.71,Spain
+111,53,2025-06-11,2025-06-12,delivered,75.22,Spain
+112,54,2026-06-27,2026-06-30,delivered,26.59,Netherlands
+113,54,2026-05-11,2026-05-14,shipped,47.46,Netherlands
+114,54,2026-05-26,2026-05-31,shipped,251.83,Netherlands
+115,54,2026-05-13,2026-05-18,delivered,125.06,Netherlands
+116,55,2026-06-28,2026-07-01,delivered,818.52,United States
+117,56,2025-12-12,,pending,133.53,Sweden
+118,57,2026-07-13,2026-07-18,delivered,284.91,United Kingdom
+119,57,2025-12-15,2025-12-20,delivered,452.54,United Kingdom
+120,58,2025-12-26,2025-12-30,delivered,179.63,Ireland
+121,59,2026-05-13,2026-05-18,delivered,121,United States
+122,60,2026-01-19,2026-01-22,delivered,203.09,Spain
+123,60,2026-09-07,,pending,251.3,Spain
+124,60,2026-09-16,2026-09-20,shipped,125.44,Spain
+125,60,2026-02-14,2026-02-18,delivered,145.64,Spain
+126,61,2026-04-28,2026-05-02,delivered,76.96,Spain
+127,62,2025-09-24,2025-09-27,shipped,210.86,Germany
+128,63,2026-07-15,2026-07-16,delivered,295.7,France
+129,64,2026-02-03,2026-02-06,delivered,20.17,Canada
+130,64,2025-11-12,2025-11-17,delivered,169.52,Canada
+131,65,2025-06-02,,pending,36.52,Italy
+132,65,2025-02-24,2025-02-28,delivered,40.33,Italy
+133,65,2025-05-26,2025-05-30,delivered,67.71,Italy
+134,66,2025-05-22,2025-05-26,delivered,127.1,France
+135,66,2025-05-02,2025-05-07,delivered,22.24,France
+136,67,2026-01-01,2026-01-04,delivered,40.66,Canada
+137,68,2026-08-27,2026-09-01,delivered,108.36,United Kingdom
+138,69,2025-11-26,,cancelled,129.96,United States
+139,70,2026-04-26,2026-04-27,shipped,559.51,United States
+140,70,2025-06-27,2025-06-29,delivered,17.82,United States
+141,70,2026-06-21,2026-06-26,delivered,1104.34,United States
+142,71,2026-07-26,2026-07-28,delivered,22.83,Germany
+143,72,2025-07-07,2025-07-11,delivered,47.67,Canada
+144,73,2026-05-14,,cancelled,110.43,United States
+145,73,2025-08-30,2025-09-03,delivered,169.93,United States
+146,73,2026-01-27,2026-01-28,delivered,605.21,United States
+147,73,2025-09-02,2025-09-07,delivered,64.18,United States
+148,74,2026-02-21,2026-02-22,delivered,19.08,United States
+149,75,2025-07-19,2025-07-21,delivered,103.14,France
+150,75,2026-04-27,2026-05-02,delivered,21.67,France
+151,76,2025-08-23,2025-08-26,delivered,329.96,Germany
+152,77,2026-05-06,2026-05-10,delivered,43.5,Netherlands
+153,77,2026-02-28,2026-03-03,delivered,17.24,Netherlands
+154,77,2026-02-20,2026-02-23,shipped,63.7,Netherlands
+155,78,2026-04-14,2026-04-19,delivered,155.01,France
+156,78,2025-09-20,2025-09-25,delivered,1560.69,France
+157,78,2026-03-04,2026-03-09,delivered,111.2,France
+158,79,2026-02-15,2026-02-19,delivered,16.31,United States
+159,79,2026-08-10,2026-08-11,delivered,419.68,United States
+160,80,2025-11-27,2025-11-29,delivered,347.42,United States
+161,80,2025-11-27,2025-11-28,delivered,25.06,United States
+162,80,2025-10-30,2025-11-04,delivered,123.57,United States
+163,80,2025-11-26,2025-11-27,shipped,107.01,United States
+164,81,2026-03-29,2026-03-30,shipped,197.45,United States
+165,82,2025-10-30,2025-10-31,delivered,445.78,Canada
+166,82,2025-10-12,2025-10-14,delivered,145.66,Canada
+167,82,2025-09-14,2025-09-18,delivered,542.52,Canada
+168,82,2026-08-10,,pending,38.16,Canada
+169,82,2026-05-15,,pending,452.54,Canada
+170,82,2026-06-25,2026-06-27,delivered,45.3,Canada
+171,82,2025-10-03,2025-10-04,delivered,19.98,
+172,82,2025-10-28,2025-10-29,shipped,246.2,Canada
+173,83,2025-08-31,2025-09-01,delivered,246.53,United States
+174,83,2026-07-30,2026-08-02,delivered,437.48,United States
+175,83,2026-04-29,2026-05-02,delivered,138.72,United States
+176,84,2025-03-22,2025-03-26,delivered,181.4,Netherlands
+177,84,2025-04-28,2025-05-03,delivered,60.88,Netherlands
+178,84,2026-09-09,2026-09-12,delivered,26.22,Netherlands
+179,85,2026-09-19,2026-09-20,delivered,334.93,Sweden
+180,86,2026-02-20,2026-02-23,shipped,84.45,United States
+181,86,2026-02-12,2026-02-13,delivered,799.55,United States
+182,86,2026-04-04,2026-04-07,delivered,73.3,United States
+183,86,2026-03-07,,pending,22.04,United States
+184,86,2026-03-05,2026-03-08,shipped,506.58,United States
+185,86,2026-02-07,2026-02-10,delivered,37.6,United States
+186,87,2026-08-02,2026-08-06,delivered,30.35,N/A
+187,87,2026-07-09,2026-07-10,delivered,48.42,United Kingdom
+188,87,2026-05-23,2026-05-26,shipped,758.08,United Kingdom
+189,88,2025-12-26,2026-02-11,delivered,19.08,United States
+190,88,2026-01-23,,pending,123.28,United States
+191,88,2026-01-20,,cancelled,125.65,United States
+192,89,2026-06-30,,pending,37.13,United States
+193,90,2026-01-08,2026-01-11,delivered,210.86,Ireland
+194,90,2026-07-02,2026-07-03,delivered,84.45,Ireland
+195,90,2026-07-30,2026-08-01,delivered,325.68,Ireland
+196,91,2026-07-01,2026-07-02,delivered,22.56,United States
+197,92,2025-11-25,2099-12-31,delivered,11.39,Australia
+198,93,2026-08-09,2026-08-13,delivered,97.47,Canada
+199,93,2026-09-05,2026-09-06,delivered,54.33,Canada
+200,94,2025-09-04,2025-09-06,delivered,29.22,Netherlands
+201,94,2026-04-25,2026-04-28,delivered,401.58,Netherlands
+202,95,2026-02-01,2026-02-06,delivered,122.47,Italy
+203,96,2026-05-21,2026-05-26,delivered,84.45,United States
+204,96,2025-04-22,,cancelled,54.73,United States
+205,96,2025-08-21,2025-08-25,delivered,747.4,United States
+206,97,2025-12-23,,cancelled,208.67,United States
+207,97,2026-01-29,2026-02-01,delivered,31.16,United States
+208,98,2025-09-11,2025-09-16,delivered,263.25,Netherlands
+209,99,2025-12-17,2025-12-20,delivered,194,United Kingdom
+210,99,2025-07-19,2025-07-22,delivered,249.71,United Kingdom
+211,100,2026-02-14,2026-02-17,delivered,46.32,Spain
+212,100,2026-09-10,2026-09-15,delivered,147.59,Spain
+213,101,2026-02-04,2026-02-05,delivered,38.06,France
+214,102,2026-03-05,2026-03-09,delivered,22.24,United States
+215,102,2026-02-16,,cancelled,562.72,United States
+216,102,2026-03-10,2026-03-12,delivered,119.86,United States
+217,102,2026-03-06,2026-03-09,delivered,22.24,United States
+218,102,2026-07-31,,pending,52.58,United States
+219,103,2025-05-15,1900-01-01,delivered,323.66,United States
+220,104,2026-02-14,2026-02-18,delivered,41.19,Ireland
+221,105,2026-09-05,2026-09-08,delivered,168.9,Sweden
+222,106,2025-09-21,2025-09-23,delivered,54.19,Australia
+223,107,2025-09-21,2025-09-26,delivered,257.99,Germany
+224,107,2025-10-10,2025-10-11,delivered,189.01,Germany
+225,108,2026-04-17,2026-04-19,delivered,121.4,Australia
+226,108,2026-03-28,,pending,22.24,Australia
+227,109,2025-05-26,2025-05-30,delivered,22.24,United States
+228,109,2026-02-18,,cancelled,4.41,United States
+229,110,2026-06-24,2026-06-28,delivered,146.08,New Zealand
+230,110,2026-07-04,2026-07-08,shipped,40.33,New Zealand
+231,110,2026-08-04,2026-08-09,delivered,51.17,New Zealand
+232,111,2025-07-04,,cancelled,26.39,France
+233,112,2026-02-19,2026-02-22,shipped,26.97,United Kingdom
+234,113,2025-01-06,2025-01-08,delivered,87.99,United States
+235,113,2025-04-16,,cancelled,105.21,United States
+236,114,2026-08-14,2026-08-15,delivered,69.87,Ireland
+237,115,2025-05-15,2025-05-17,delivered,117.79,United Kingdom
+238,115,2026-03-14,,cancelled,142.9,United Kingdom
+239,115,2026-01-29,2026-02-01,delivered,25.24,United Kingdom
+240,116,2026-03-18,2026-03-22,delivered,179.09,Australia
+241,117,2026-02-25,,cancelled,290.21,United Kingdom
+242,117,2026-01-07,2026-01-12,delivered,320.95,United Kingdom
+243,117,2025-12-25,2025-12-29,delivered,100.75,United Kingdom
+244,118,2026-07-02,2026-07-04,delivered,52.84,Germany
+245,119,2025-09-18,2025-09-23,delivered,19.08,Germany
+246,119,2026-07-13,2026-07-17,shipped,262.32,Germany
+247,119,2026-01-27,,pending,86.48,Germany
+248,120,2025-02-11,2025-02-12,delivered,84.45,Canada
+249,120,2025-03-09,2025-03-10,delivered,1063.34,Canada
+250,121,2025-06-09,2025-06-14,delivered,149.1,Germany
+251,121,2025-10-29,2025-10-30,delivered,23.01,Germany
+252,122,2026-07-19,2026-07-23,delivered,95.69,United States
+253,123,2026-01-12,2026-01-16,delivered,369.3,Canada
+254,123,2026-01-14,2026-01-15,delivered,15.96,Canada
+255,124,2026-07-10,2026-07-15,delivered,56.66,United States
+256,124,2026-02-10,2026-02-13,delivered,29.18,United States
+257,124,2026-06-08,2026-06-12,delivered,608.32,United States
+258,125,2026-05-28,2026-06-02,delivered,49.2,France
+259,126,2026-02-01,2026-02-04,delivered,513,Sweden
+260,127,2026-07-21,,cancelled,31.47,New Zealand
+261,128,2026-02-04,2026-02-07,delivered,80.66,Spain
+262,129,2025-05-18,2025-05-22,delivered,93.92,United Kingdom
+263,130,2026-03-29,,pending,292.12,United States
+264,130,2026-03-12,,pending,9.24,United States
+265,130,2026-03-16,2026-03-21,delivered,121.41,United States
+266,130,2026-03-24,2026-03-26,delivered,22.04,United States
+267,131,2026-02-11,,cancelled,57.68,United States
+268,131,2026-02-24,2026-02-28,delivered,28.19,United States
+269,132,1900-01-01,,cancelled,562.53,United Kingdom
+270,132,2025-07-02,2025-07-03,shipped,119.86,United Kingdom
+271,132,2026-06-25,2026-06-30,delivered,16.05,United Kingdom
+272,132,2025-02-19,2025-02-24,delivered,56.17,United Kingdom
+273,132,2025-12-06,2025-12-08,shipped,84.45,United Kingdom
+274,133,2026-02-16,2026-02-20,delivered,12.16,Canada
+275,133,2026-03-04,2026-03-05,delivered,86.65,Canada
+276,134,2026-02-10,,cancelled,190.46,Australia
+277,135,2026-04-23,2026-04-28,delivered,105.51,Germany
+278,135,2026-05-11,2026-05-16,shipped,96.56,Germany
+279,135,2026-05-23,2026-05-27,shipped,94.96,Germany
+280,135,2026-05-24,,pending,141.6,Germany
+281,135,2026-05-25,2026-05-26,delivered,133.42,Germany
+282,136,2026-04-29,2026-05-03,delivered,117.97,Australia
+283,136,2026-05-05,2026-05-08,shipped,525.17,Australia
+284,136,2026-06-18,2026-06-23,delivered,76.26,Australia
+285,136,2026-05-14,2026-05-18,shipped,27.68,Australia
+286,137,2026-01-17,2026-01-19,delivered,49.24,Netherlands
+287,137,2026-06-20,2026-06-23,delivered,5.77,Netherlands
+288,138,2026-02-27,2026-03-02,delivered,258.64,Canada
+289,139,2026-02-06,2026-02-08,shipped,427.39,United States
+290,139,2026-07-15,2026-07-20,delivered,182.06,United States
+291,140,2025-09-11,2025-09-14,delivered,362.33,United Kingdom
+292,141,2026-01-04,,pending,369.21,United States
+293,141,2025-05-02,2025-05-05,delivered,15.7,United States
+294,142,2026-05-15,2026-05-17,delivered,120.85,Netherlands
+295,142,2026-04-03,2026-04-06,delivered,339.66,Netherlands
+296,143,2025-07-10,2025-07-11,delivered,265.96,Canada
+297,144,2026-06-01,2026-06-04,delivered,73.81,Ireland
+298,144,2026-06-29,2026-07-02,delivered,134.9,Ireland
+299,145,2025-11-08,2025-11-12,delivered,97.55,Ireland
+300,145,2025-10-16,2025-10-17,delivered,452.91,Ireland
+301,146,2026-06-15,2026-06-17,shipped,12.9,Sweden
+302,146,2026-05-14,2026-05-15,delivered,55.58,Sweden
+303,147,2025-12-07,,pending,58.36,United States
+304,147,2026-04-16,2026-04-19,delivered,19.08,United States
+305,148,2026-08-02,2026-08-05,delivered,38.92,United States
+306,149,2026-06-10,2026-06-15,delivered,63.32,United Kingdom
+307,149,2026-07-26,2026-07-29,delivered,137.93,United Kingdom
+308,150,2026-08-21,2026-08-25,delivered,10.21,Australia
+309,150,2026-08-28,2026-09-01,delivered,382.69,Australia
+310,151,2026-09-05,2026-09-08,delivered,330.09,Spain
+311,152,2025-08-17,2025-08-22,delivered,85.36,Netherlands
+312,153,2025-12-31,2026-01-02,delivered,489.76,Germany
+313,153,2026-07-09,2026-07-13,delivered,121.87,Germany
+314,153,2025-04-19,2025-04-23,delivered,148.38,Germany
+315,154,2026-06-20,,cancelled,58.72,Netherlands
+316,155,2025-11-08,2025-11-10,delivered,174.38,United States
+317,155,2025-11-09,2025-11-10,delivered,6.78,United States
+318,155,2026-03-14,2026-03-18,delivered,239.72,United States
+319,156,2026-02-25,2026-03-01,delivered,310.06,United States
+320,157,2025-06-20,2025-06-22,delivered,21.19,Canada
+321,157,2025-06-28,,cancelled,179.72,Canada
+322,157,2026-02-01,2026-02-06,delivered,44.5,Canada
+323,158,2025-06-16,2025-06-18,delivered,41.19,United States
+324,158,2025-01-06,2025-01-10,delivered,261.02,United States
+325,158,2026-02-20,2026-02-23,delivered,121.02,United States
+326,159,2025-07-16,2025-07-21,delivered,466.36,New Zealand
+327,160,2025-12-21,2025-12-22,shipped,142.4,United States
+328,160,2025-12-30,2026-01-02,delivered,16.71,United States
+329,161,2026-01-04,2026-01-08,delivered,289.08,United Kingdom
+330,161,2026-09-18,,cancelled,18.92,United Kingdom
+331,161,2026-06-19,,pending,107.88,United Kingdom
+332,161,2025-10-19,,cancelled,24.02,United Kingdom
+333,162,2025-09-09,2025-09-14,shipped,205.2,United States
+334,163,2026-05-29,2026-05-31,delivered,477.1,Germany
+335,164,2026-07-06,2026-07-07,shipped,30.65,United Kingdom
+336,164,2025-11-28,2025-12-01,delivered,460.82,United Kingdom
+337,165,2026-03-23,,pending,22.24,Germany
+338,166,2025-11-13,2025-11-18,delivered,599.47,United States
+339,167,2026-06-04,2026-07-28,delivered,225.19,France
+340,167,2026-06-09,2026-06-13,shipped,134.9,France
+341,167,2026-06-16,,cancelled,219.78,France
+342,167,2026-07-21,2026-07-26,delivered,152.94,France
+343,168,2026-02-03,2026-02-08,delivered,183.02,Netherlands
+344,168,2025-06-11,,pending,484.78,Netherlands
+345,169,2025-10-30,,pending,39.01,United States
+346,170,2026-06-30,,cancelled,19.36,Australia
+347,170,2025-08-10,2025-08-15,delivered,44.89,Australia
+348,171,2025-12-13,2025-12-15,delivered,21.3,Germany
+349,172,2026-01-25,2026-01-27,delivered,730.52,United States
+350,173,2026-05-17,2026-05-20,shipped,316.55,Canada
+351,174,2026-06-22,,cancelled,7.03,United States
+352,174,2026-07-09,,pending,866.63,United States
+353,174,2026-07-08,2026-07-11,delivered,73.1,United States
+354,174,2026-06-19,2026-06-21,shipped,312.14,United States
+355,174,2026-05-27,2026-05-31,delivered,44.48,United States
+356,175,2025-08-14,2025-08-16,delivered,238.16,France
+357,176,2026-07-22,,pending,24.06,United Kingdom
+358,176,2026-06-27,2026-06-28,delivered,200.29,United Kingdom
+359,177,2025-09-04,2025-09-09,delivered,24.35,United States
+360,177,2025-04-26,2025-05-01,delivered,23.01,United States
+361,178,2025-11-11,,pending,176.24,United States
+362,178,2025-05-13,2025-05-18,delivered,168.9,United States
+363,179,2026-08-15,2099-12-31,delivered,13.2,France
+364,179,2026-05-02,2026-05-04,delivered,220.79,France
+365,179,2026-05-05,2026-05-07,delivered,61.23,France
+366,179,2026-04-06,2026-04-07,delivered,22.74,France
+367,180,2026-08-14,2026-08-18,shipped,31.26,Spain
+368,180,2026-07-15,2026-07-20,delivered,119.86,Spain
+369,181,2026-07-16,,cancelled,546.98,Australia
+370,182,2026-02-14,2026-02-18,delivered,42.11,United Kingdom
+371,183,2026-05-24,2026-05-27,delivered,22.24,United States
+372,183,2026-06-02,2026-06-03,delivered,193.17,United States
+373,183,2026-05-17,2026-05-20,delivered,610.4,United States
+374,184,2026-03-19,2026-03-22,delivered,168.88,United Kingdom
+375,184,2025-08-13,2025-08-18,delivered,19.08,United Kingdom
+376,184,2026-07-24,2026-07-28,delivered,538.92,United Kingdom
+377,185,2025-04-03,,pending,117.78,France
+378,185,2026-01-14,2026-01-15,delivered,108.29,France
+379,186,2026-05-13,2026-05-16,shipped,215.33,Canada
+380,187,2025-05-13,,pending,132.93,Australia
+381,188,2025-11-28,2025-11-30,shipped,224.67,United States
+382,188,2026-07-22,2026-07-27,delivered,582.16,United States
+383,189,2025-09-26,2025-09-29,delivered,67.64,United Kingdom
+384,190,2026-05-11,,pending,80.73,Spain
+385,191,2025-12-20,,cancelled,1287.34,France
+386,192,2025-05-17,2025-05-21,delivered,102.36,France
+387,192,2026-06-23,2026-06-24,delivered,86.55,France
+388,192,2025-10-27,2025-11-01,delivered,498.34,France
+389,192,2025-10-15,2025-10-18,delivered,84.45,France
+390,193,2026-08-18,,cancelled,79.71,Canada
+391,193,2026-05-05,,cancelled,102.82,Canada
+392,194,2026-08-07,2026-08-09,delivered,84.46,Canada
+393,194,2025-06-06,2025-06-09,delivered,40.65,Canada
+394,195,2025-12-18,2025-12-22,delivered,86.56,Italy
+395,195,2026-04-18,2026-04-19,delivered,50.44,Italy
+396,195,2026-05-26,2026-05-29,delivered,503.4,Italy
+397,196,2025-11-19,2025-11-21,delivered,374.2,Germany
+398,196,2025-11-02,2025-11-07,delivered,887.08,Germany
+399,197,2026-09-14,2026-09-16,delivered,288.14,Canada
+400,198,2026-04-16,,cancelled,22.18,France
+401,198,2026-02-19,2026-02-20,delivered,253.35,France
+402,198,2026-04-02,2026-04-07,delivered,84.45,France
+403,198,2026-03-13,2026-03-17,delivered,592.15,France
+404,199,2026-07-11,2026-07-14,delivered,11.92,Spain
+405,199,2025-08-06,2025-08-07,delivered,85.41,Spain
+406,200,2099-12-31,2026-02-08,delivered,138.55,United States
+407,201,2026-09-04,2026-09-07,delivered,483.49,France
+408,201,2026-06-08,2026-06-11,delivered,22.24,France
+409,202,2026-07-24,,cancelled,246.2,United Kingdom
+410,202,2026-02-24,2026-02-27,delivered,1009.48,United Kingdom
+411,202,2026-01-12,2026-01-16,delivered,102.75,United Kingdom
+412,202,2026-01-19,2026-01-23,delivered,448.25,United Kingdom
+413,203,2026-07-22,2026-07-25,delivered,1195.96,Ireland
+414,203,2026-03-25,2026-03-28,delivered,45.14,Ireland
+415,204,2026-03-18,2026-03-21,shipped,61.98,France
+416,205,2026-01-12,2026-01-13,delivered,22.24,Netherlands
+417,205,2026-03-21,2026-03-26,delivered,103.83,Netherlands
+418,206,2026-08-14,,delivered,351.72,United States
+419,206,2025-05-04,2025-05-09,delivered,97.5,United States
+420,206,2025-05-13,2025-05-17,delivered,242.54,United States
+421,207,2026-08-18,2026-08-23,delivered,77.37,United States
+422,208,2026-04-26,2026-04-27,delivered,21.67,Canada
+423,208,2026-05-06,2026-05-11,delivered,46.43,Canada
+424,209,2025-08-26,2025-08-31,shipped,19.08,United States
+425,210,2025-10-27,2025-10-31,delivered,37.46,United Kingdom
+426,210,2025-04-06,2025-04-08,delivered,154.78,United Kingdom
+427,211,2026-05-05,2026-05-07,delivered,4.85,Netherlands
+428,211,2026-07-18,2026-07-20,delivered,91.32,Netherlands
+429,211,2026-08-31,2026-09-04,delivered,71.08,Netherlands
+430,212,2026-09-10,2026-09-15,delivered,286.1,Germany
+431,212,2026-09-03,2026-09-04,shipped,109.05,Germany
+432,213,2099-12-31,2025-11-27,delivered,213.93,Canada
+433,214,2026-07-31,2026-08-05,delivered,239.72,Australia
+434,214,2026-07-02,2026-07-07,delivered,172.56,Australia
+435,214,2026-07-14,2026-07-16,delivered,41.19,Australia
+436,215,1900-01-01,2026-01-26,delivered,237.21,Sweden
+437,215,2026-07-28,2026-07-31,delivered,22.04,Sweden
+438,215,2026-08-05,2026-08-06,delivered,71.34,Sweden
+439,216,2026-05-14,2026-05-19,delivered,40.03,United States
+440,217,2026-04-16,,pending,226.42,United Kingdom
+441,218,2026-08-17,2026-08-21,shipped,711.96,Netherlands
+442,219,2026-01-16,2026-01-18,delivered,104.7,Spain
+443,219,2025-11-24,,pending,22.24,Spain
+444,220,2025-04-15,2025-04-16,delivered,544.82,United Kingdom
+445,220,2025-07-08,,cancelled,35.17,United Kingdom
+446,221,2026-08-02,2026-08-05,delivered,22.24,Australia
+447,221,2026-06-30,2026-07-05,delivered,75.85,Australia
+448,221,2026-08-14,2026-08-19,delivered,5.69,Australia
+449,222,2026-08-22,2026-08-23,delivered,228.43,Ireland
+450,222,2025-12-30,2026-01-03,delivered,22.65,Ireland
+451,222,2026-04-05,2026-04-06,delivered,28.55,Ireland
+452,223,2026-05-02,2026-05-05,shipped,92.05,Australia
+453,224,2026-08-10,2026-08-13,delivered,191.95,France
+454,225,2026-08-28,2026-09-02,delivered,76.68,Sweden
+455,226,2026-01-06,2026-01-09,delivered,445.82,United States
+456,226,2026-06-05,2026-06-08,delivered,44.48,United States
+457,227,2026-09-07,,pending,147.83,France
+458,227,2025-05-07,2025-05-08,shipped,18.6,France
+459,228,2026-07-20,2026-07-23,delivered,222.09,Germany
+460,229,2025-02-05,2025-02-10,delivered,385.89,Germany
+461,229,2025-05-24,2025-05-28,delivered,205.35,Germany
+462,229,2025-05-24,,cancelled,63.86,Germany
+463,229,2025-08-25,2025-08-26,delivered,38.63,Germany
+464,229,2025-07-23,,cancelled,72.62,Germany
+465,230,2026-02-04,2026-02-08,delivered,177.91,United States
+466,230,2025-10-03,,cancelled,328.61,United States
+467,230,2025-05-28,2025-05-29,shipped,360.57,United States
+468,230,2025-08-27,2025-08-31,delivered,198.02,United States
+469,231,2026-05-11,2026-05-14,delivered,32.43,United States
+470,232,2026-03-16,2026-03-18,delivered,351.38,United Kingdom
+471,232,2026-02-23,2026-02-24,delivered,289.37,United Kingdom
+472,233,2025-09-13,2025-09-17,shipped,130.75,Netherlands
+473,233,2025-05-22,2025-05-24,delivered,95.95,Netherlands
+474,234,2025-09-23,2025-09-26,delivered,59.13,Ireland
+475,235,2025-12-24,,pending,257.13,Netherlands
+476,235,2025-09-23,2025-09-27,delivered,25.34,Netherlands
+477,236,2025-11-28,2025-12-01,shipped,252.08,United States
+478,236,2025-10-31,2025-11-01,delivered,373.21,United States
+479,236,2025-06-16,2025-06-20,delivered,153.11,United States
+480,237,2025-08-24,,cancelled,316.65,Australia
+481,238,2025-04-04,2025-04-08,shipped,144,United States
+482,238,2025-11-01,2026-05-23,delivered,30.63,United States
+483,239,2026-08-29,,cancelled,84.46,Sweden
+484,240,2025-08-02,2025-08-07,shipped,287.01,Germany
+485,241,2026-01-31,2026-02-04,delivered,161.43,United States
+486,241,2025-06-30,,cancelled,21.3,United States
+487,241,2025-12-08,2025-12-11,delivered,178.36,United States
+488,241,2025-08-26,2025-08-30,delivered,328.57,United States
+489,241,2025-08-07,2025-08-09,delivered,1197.78,United States
+490,241,2026-05-25,2026-05-28,delivered,34.67,United States
+491,242,2025-06-16,2025-06-21,delivered,44.89,Sweden
+492,242,2025-08-06,2025-08-09,delivered,13.68,Sweden
+493,242,2025-06-15,2025-06-18,delivered,62.72,Sweden
+494,243,2026-06-14,,pending,78.89,United States
+495,243,2026-05-28,2026-05-30,shipped,597.82,United States
+496,243,2026-05-20,2026-05-22,delivered,22.24,United States
+497,244,2025-03-04,2025-03-07,delivered,220.94,France
+498,244,2025-02-13,,cancelled,49.7,France
+499,244,2025-01-15,2025-01-19,delivered,88.39,France
+500,245,2026-01-09,2026-01-10,delivered,256.99,Netherlands
+501,245,2025-12-13,2099-12-31,cancelled,79.44,Netherlands
+502,246,2026-03-10,2026-03-12,delivered,84.06,Canada
+503,247,2025-12-22,2025-12-23,delivered,16.96,Canada
+504,247,2025-01-25,2025-01-29,delivered,25.87,Canada
+505,247,2025-11-14,,cancelled,285.3,Canada
+506,248,2026-03-12,2026-03-15,delivered,175.9,United States
+507,249,2025-04-25,2025-04-27,shipped,40.66,United States
+508,250,2025-06-14,2025-06-17,delivered,16.14,United Kingdom
+509,251,2025-11-01,2025-11-03,shipped,778.87,United States
+510,252,2025-07-31,2025-08-03,shipped,36.22,Canada
+511,253,2025-08-25,2025-08-30,delivered,132.32,United States
+512,253,2026-02-24,2026-02-25,delivered,185.2,United States
+513,254,2026-07-26,2026-07-29,delivered,394.83,United Kingdom
+514,255,2025-04-24,2025-04-28,delivered,20.17,United Kingdom
+515,255,2025-07-10,2025-07-11,delivered,144.95,United Kingdom
+516,255,2025-02-23,2025-02-27,delivered,237.46,United Kingdom
+517,256,2025-01-02,,pending,166.66,Germany
+518,256,2025-08-15,,cancelled,109.21,Germany
+519,256,2025-04-26,2025-04-27,shipped,337.48,Germany
+520,257,2025-11-09,2025-11-11,delivered,256.68,United States
+521,257,2026-08-06,2026-08-09,shipped,193.93,United States
+522,258,2025-04-13,2025-04-16,delivered,88.06,Italy
+523,259,2025-11-20,2025-11-25,shipped,40.6,France
+524,260,2026-09-10,2026-09-11,delivered,22.24,United States
+525,260,2025-09-01,2025-09-06,shipped,108.93,United States
+526,261,2026-05-26,2026-05-28,delivered,66.72,France
+527,261,2026-06-26,2026-06-29,delivered,104.49,France
+528,261,2025-07-24,2025-07-25,delivered,68.93,France
+529,262,2026-02-05,,pending,31.38,Canada
+530,263,2026-06-04,2026-06-05,shipped,106.01,Germany
+531,263,2025-10-19,2025-10-20,shipped,43.21,Germany
+532,263,2026-03-28,2026-03-31,delivered,174.78,Germany
+533,264,2026-03-06,2026-03-09,delivered,222.12,United States
+534,264,2025-07-20,2025-07-23,delivered,18.58,United States
+535,265,2026-01-06,,pending,755.68,Australia
+536,265,2025-11-20,2025-11-21,delivered,30.44,Australia
+537,265,2025-11-22,2025-11-27,delivered,299.16,Australia
+538,266,2026-02-28,2026-03-01,delivered,10.65,France
+539,267,2026-07-22,2026-07-27,delivered,7.65,Canada
+540,267,2026-05-11,2026-05-15,delivered,88.68,Canada
+541,267,2025-11-28,2025-12-02,delivered,20.17,Canada
+542,267,2026-08-15,2026-08-19,delivered,8.59,Canada
+543,267,2026-01-26,2026-01-28,delivered,998.56,Canada
+544,268,2026-08-10,2026-08-12,delivered,670.09,Canada
+545,268,2025-12-06,2025-12-10,delivered,683.96,Canada
+546,269,2025-03-08,2025-03-13,delivered,40.79,Germany
+547,270,2025-09-11,2025-09-16,delivered,36.09,United States
+548,270,2025-12-10,2025-12-11,delivered,84.45,United States
+549,271,2025-01-19,2025-01-24,delivered,29.83,United States
+550,272,2025-04-17,2025-04-18,delivered,131.04,United States
+551,273,2026-05-28,2026-05-31,delivered,195.96,Canada
+552,273,2026-06-20,,cancelled,270.27,Canada
+553,274,2026-07-17,2026-07-18,delivered,145.69,United States
+554,274,2026-09-12,2026-09-17,delivered,230.88,United States
+555,274,2026-07-12,,cancelled,211.73,United States
+556,275,2026-06-02,2026-06-07,delivered,28.72,Sweden
+557,276,2025-11-09,2025-11-10,shipped,124.77,Canada
+558,276,2025-05-10,2025-05-11,delivered,95.5,Canada
+559,276,2026-05-25,2026-05-30,delivered,226.59,Canada
+560,277,2025-12-29,2025-12-30,shipped,22.24,Australia
+561,278,2025-12-28,2026-01-02,delivered,164.44,Netherlands
+562,279,2025-07-06,2025-07-07,delivered,302.11,Sweden
+563,279,2026-03-09,2026-03-14,delivered,123.48,Sweden
+564,280,2025-12-27,2025-12-30,shipped,43.12,France
+565,280,2025-12-22,2025-12-26,delivered,146.44,France
+566,280,2026-02-22,2026-02-23,delivered,119.86,France
+567,281,2025-06-23,2025-06-28,shipped,67.84,France
+568,282,2026-03-14,,cancelled,61.56,United States
+569,282,2026-03-27,,pending,37.58,United States
+570,283,2026-03-01,,pending,38.16,United States
+571,283,2026-08-15,2026-08-18,shipped,571.66,United States
+572,284,2025-11-25,2025-11-26,delivered,22.24,France
+573,284,2026-07-30,,cancelled,532.41,France
+574,284,2025-06-18,,cancelled,36.19,France
+575,284,2025-08-11,2025-08-15,shipped,167.73,France
+576,285,2026-03-21,2026-03-24,shipped,587.08,Germany
+577,285,2025-05-01,2025-05-04,delivered,59.08,Germany
+578,285,2025-12-12,2025-12-16,delivered,344.18,Germany
+579,285,2026-08-29,2026-09-01,shipped,12.96,Germany
+580,285,2026-06-07,2026-06-08,delivered,101.76,Germany
+581,285,2025-04-29,2025-05-01,delivered,225.77,Germany
+582,286,2025-09-02,,pending,84.45,United Kingdom
+583,286,2025-02-01,,cancelled,123.1,United Kingdom
+584,286,2025-09-29,2025-09-30,delivered,108.93,United Kingdom
+585,287,2025-06-20,2025-06-22,delivered,12.16,Australia
+586,288,2026-05-08,2026-05-10,delivered,549.65,Canada
+587,289,2026-06-16,2026-06-17,shipped,21.6,Spain
+588,289,2026-04-13,2026-04-17,delivered,116.53,Spain
+589,289,2025-06-05,2025-06-09,delivered,60.5,Spain
+590,289,2025-09-04,2025-09-07,delivered,7.6,Spain
+591,289,2026-08-28,,cancelled,250.38,Spain
+592,290,2026-08-27,2026-08-30,delivered,207.46,United States
+593,291,2025-11-25,2025-11-27,delivered,311.1,France
+594,291,2025-08-15,2025-08-20,delivered,15.96,France
+595,292,2025-01-27,2025-01-29,delivered,88.96,Spain
+596,292,2026-08-15,2026-08-20,delivered,145.52,Spain
+597,292,2025-03-05,2025-03-09,delivered,51.74,Spain
+598,293,2025-03-22,2025-03-24,delivered,57.49,Germany
+599,294,2026-02-19,2026-02-23,delivered,45.19,Germany
+600,294,2026-02-24,2026-02-25,delivered,91.85,Germany
+601,295,2025-11-29,2025-11-30,delivered,87.56,Italy
+602,296,2025-12-20,2025-12-22,delivered,92.94,Australia
+603,296,2026-07-08,2026-07-09,delivered,203.11,Australia
+604,296,2025-07-08,2025-07-12,delivered,95.1,Australia
+605,296,2025-01-17,2025-01-20,delivered,103.4,Australia
+606,297,2026-08-16,2026-08-19,delivered,231.27,Canada
+607,298,2025-11-02,2025-11-06,delivered,10.65,United States
+608,299,2025-10-13,2025-10-18,delivered,525.42,New Zealand
+609,300,2025-02-12,2025-02-17,delivered,63.04,Germany
+610,301,2026-05-01,2026-05-05,delivered,307.31,France
+611,302,2026-05-26,2026-05-29,delivered,1003.06,France
+612,302,2026-01-23,2026-01-26,delivered,114.18,France
+613,302,2026-01-20,2026-01-25,delivered,10.65,France
+614,303,2025-12-29,2026-01-03,delivered,543.3,United States

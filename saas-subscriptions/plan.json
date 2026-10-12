@@ -1,0 +1,1086 @@
+{
+ "total_rows": 250000,
+ "dataset_type": "relational",
+ "tables": {
+  "churn_events": {
+   "columns": {
+    "subscription_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "subscriptions",
+      "column": "subscription_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "@anchor.subscription_id"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "churn_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "reason": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 28.0,
+          "value": "price"
+         },
+         {
+          "percentage": 16.0,
+          "value": "missing_feature"
+         },
+         {
+          "percentage": 20.0,
+          "value": "switched_tool"
+         },
+         {
+          "percentage": 24.0,
+          "value": "low_usage"
+         },
+         {
+          "percentage": 5.0,
+          "value": "company_closed"
+         },
+         {
+          "percentage": 7.0,
+          "value": "support"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "churned_on": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "@anchor.ended_on"
+       }
+      }
+     ],
+     "date_after": [
+      "subscription_id.started_on",
+      "@anchor.started_on",
+      "@anchor.account_id.signup_date"
+     ],
+     "nullable": false
+    },
+    "feedback_score": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "range",
+       "parameters": {
+        "context_columns": [
+         "reason"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "max": 5,
+          "min": 1
+         }
+        ]
+       },
+       "if": "{reason} == 'support' or {reason} == 'price'"
+      },
+      {
+       "generate_via": "range",
+       "parameters": {
+        "context_columns": [
+         "reason"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "max": 10,
+          "min": 5
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 3200,
+   "anchor": {
+    "table": "subscriptions",
+    "unique": true,
+    "where": "{status} == 'cancelled'"
+   }
+  },
+  "invoices": {
+   "columns": {
+    "amount_paid": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "if_else({status} == 'paid', {amount_due}, 0)"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "subscription_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "subscriptions",
+      "column": "subscription_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "subscriptions",
+        "target_column": "subscription_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.3
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "amount_due": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "subscription_id.mrr"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "period_end": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_months({period_start}, 1)"
+       }
+      }
+     ],
+     "date_after": [
+      "subscription_id.started_on"
+     ],
+     "nullable": false
+    },
+    "invoice_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "period_start": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2023-01-01",
+        "end_date": "2026-09-01",
+        "include_time": false
+       }
+      }
+     ],
+     "date_after": [
+      "subscription_id.started_on"
+     ],
+     "nullable": false,
+     "date_after_spread_days": 30
+    },
+    "paid_on": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "{status} == 'paid'",
+       "parameters": {
+        "equation": "add_days({issued_on}, random_int(0, 20))"
+       }
+      },
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "calculated",
+        "base_parameters": {
+         "equation": "add_days({issued_on}, random_int(0, 20))"
+        },
+        "null_rate": 1.0
+       }
+      }
+     ],
+     "date_after": [
+      "subscription_id.started_on"
+     ],
+     "nullable": true
+    },
+    "issued_on": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({period_start}, 0)"
+       }
+      }
+     ],
+     "date_after": [
+      "subscription_id.started_on"
+     ],
+     "nullable": false
+    },
+    "status": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "paid",
+          "percentage": 91
+         },
+         {
+          "value": "open",
+          "percentage": 4
+         },
+         {
+          "value": "past_due",
+          "percentage": 3
+         },
+         {
+          "value": "void",
+          "percentage": 2
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 159792
+  },
+  "plans": {
+   "dataset_type": "tabular",
+   "columns": {
+    "plan_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "plan_name": {
+     "data_type": "string",
+     "rules": []
+    },
+    "tier": {
+     "data_type": "string",
+     "rules": []
+    },
+    "monthly_price": {
+     "data_type": "string",
+     "rules": []
+    },
+    "seats_included": {
+     "data_type": "string",
+     "rules": []
+    }
+   },
+   "fixed_rows": [
+    {
+     "plan_id": 1,
+     "plan_name": "Starter Monthly",
+     "tier": "starter",
+     "monthly_price": 19,
+     "seats_included": 3
+    },
+    {
+     "plan_id": 2,
+     "plan_name": "Starter Annual",
+     "tier": "starter",
+     "monthly_price": 15,
+     "seats_included": 3
+    },
+    {
+     "plan_id": 3,
+     "plan_name": "Team Monthly",
+     "tier": "team",
+     "monthly_price": 39,
+     "seats_included": 10
+    },
+    {
+     "plan_id": 4,
+     "plan_name": "Team Annual",
+     "tier": "team",
+     "monthly_price": 32,
+     "seats_included": 10
+    },
+    {
+     "plan_id": 5,
+     "plan_name": "Business Monthly",
+     "tier": "business",
+     "monthly_price": 69,
+     "seats_included": 25
+    },
+    {
+     "plan_id": 6,
+     "plan_name": "Business Annual",
+     "tier": "business",
+     "monthly_price": 57,
+     "seats_included": 25
+    },
+    {
+     "plan_id": 7,
+     "plan_name": "Enterprise Monthly",
+     "tier": "enterprise",
+     "monthly_price": 109,
+     "seats_included": 100
+    },
+    {
+     "plan_id": 8,
+     "plan_name": "Enterprise Annual",
+     "tier": "enterprise",
+     "monthly_price": 89,
+     "seats_included": 100
+    }
+   ],
+   "total_rows": 8
+  },
+  "subscriptions": {
+   "columns": {
+    "account_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "accounts",
+      "column": "account_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "accounts",
+        "target_column": "account_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.2
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "started_on": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2023-01-01",
+        "end_date": "2026-08-15",
+        "include_time": false
+       }
+      }
+     ],
+     "date_after": [
+      "account_id.signup_date"
+     ],
+     "nullable": false,
+     "date_after_spread_days": 45
+    },
+    "plan_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "plans",
+      "column": "plan_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "plans",
+        "target_column": "plan_id",
+        "fk_distribution": "uniform"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "subscription_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "mrr": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round({seats} * {plan_id.monthly_price}, 2)"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "ended_on": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "{status} == 'cancelled'",
+       "parameters": {
+        "equation": "min(add_months({started_on}, random_int(1, 30)), '2026-09-30')"
+       }
+      },
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "calculated",
+        "base_parameters": {
+         "equation": "min(add_months({started_on}, random_int(1, 30)), '2026-09-30')"
+        },
+        "null_rate": 1.0
+       }
+      }
+     ],
+     "date_after": [
+      "started_on",
+      "account_id.signup_date"
+     ],
+     "nullable": true
+    },
+    "seats": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{account_id.employee_band} == '1-10'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 1,
+          "max": 10,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{account_id.employee_band} == '11-50'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 5,
+          "max": 40,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{account_id.employee_band} == '51-200'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 20,
+          "max": 150,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{account_id.employee_band} == '201-1000'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 60,
+          "max": 400,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 100,
+          "max": 500,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "billing_cycle": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{plan_id.plan_name} in ('Starter Annual', 'Team Annual', 'Business Annual', 'Enterprise Annual')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "annual",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "monthly",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "status": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "active",
+          "percentage": 76
+         },
+         {
+          "value": "cancelled",
+          "percentage": 20
+         },
+         {
+          "value": "past_due",
+          "percentage": 4
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 15000
+  },
+  "users": {
+   "columns": {
+    "account_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "accounts",
+      "column": "account_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "accounts",
+        "target_column": "account_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.6
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "created_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2023-01-01",
+        "end_date": "2026-08-31",
+        "include_time": true
+       }
+      }
+     ],
+     "date_after": [
+      "account_id.signup_date"
+     ],
+     "nullable": false,
+     "date_after_spread_days": 30
+    },
+    "is_active": {
+     "data_type": "boolean",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 88,
+          "value": "true"
+         },
+         {
+          "percentage": 12,
+          "value": "false"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "last_login_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "date_range",
+        "base_parameters": {
+         "start_date": "2023-01-01",
+         "end_date": "2026-09-30",
+         "include_time": true
+        },
+        "null_rate": 0.07
+       }
+      }
+     ],
+     "date_after": [
+      "created_at"
+     ],
+     "nullable": true,
+     "date_after_spread_days": 30
+    },
+    "role": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 4.0,
+          "value": "owner"
+         },
+         {
+          "percentage": 15.0,
+          "value": "admin"
+         },
+         {
+          "percentage": 72.0,
+          "value": "member"
+         },
+         {
+          "percentage": 9.0,
+          "value": "viewer"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "email": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "parameters": {
+        "primitive_type": "email"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "user_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 60000
+  },
+  "accounts": {
+   "columns": {
+    "account_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "employee_band": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 34.0,
+          "value": "1-10"
+         },
+         {
+          "percentage": 33.0,
+          "value": "11-50"
+         },
+         {
+          "percentage": 20.0,
+          "value": "51-200"
+         },
+         {
+          "percentage": 10.0,
+          "value": "201-1000"
+         },
+         {
+          "percentage": 3.0,
+          "value": "1000+"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "country": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "United States",
+          "percentage": 38
+         },
+         {
+          "value": "United Kingdom",
+          "percentage": 12
+         },
+         {
+          "value": "Canada",
+          "percentage": 9
+         },
+         {
+          "value": "Germany",
+          "percentage": 9
+         },
+         {
+          "value": "France",
+          "percentage": 7
+         },
+         {
+          "value": "Australia",
+          "percentage": 6
+         },
+         {
+          "value": "Netherlands",
+          "percentage": 4
+         },
+         {
+          "value": "Spain",
+          "percentage": 4
+         },
+         {
+          "value": "Italy",
+          "percentage": 4
+         },
+         {
+          "value": "Sweden",
+          "percentage": 3
+         },
+         {
+          "value": "Ireland",
+          "percentage": 2
+         },
+         {
+          "value": "New Zealand",
+          "percentage": 2
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "signup_date": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 1600",
+       "parameters": {
+        "start_date": "2023-01-01",
+        "end_date": "2023-12-31",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 2857",
+       "parameters": {
+        "start_date": "2024-01-01",
+        "end_date": "2024-12-31",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 5333",
+       "parameters": {
+        "start_date": "2025-01-01",
+        "end_date": "2025-12-31",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2026-01-01",
+        "end_date": "2026-06-30",
+        "include_time": false
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "acquisition_channel": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 30.0,
+          "value": "organic"
+         },
+         {
+          "percentage": 20.0,
+          "value": "paid_search"
+         },
+         {
+          "percentage": 15.0,
+          "value": "referral"
+         },
+         {
+          "percentage": 15.0,
+          "value": "outbound"
+         },
+         {
+          "percentage": 10.0,
+          "value": "partner"
+         },
+         {
+          "percentage": 10.0,
+          "value": "event"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "company_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "parameters": {
+        "primitive_type": "company"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "industry": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 8.34,
+          "value": "Technology"
+         },
+         {
+          "percentage": 8.33,
+          "value": "Healthcare"
+         },
+         {
+          "percentage": 8.33,
+          "value": "Finance"
+         },
+         {
+          "percentage": 8.33,
+          "value": "Retail"
+         },
+         {
+          "percentage": 8.33,
+          "value": "Manufacturing"
+         },
+         {
+          "percentage": 8.33,
+          "value": "Education"
+         },
+         {
+          "percentage": 8.33,
+          "value": "Real Estate"
+         },
+         {
+          "percentage": 8.33,
+          "value": "Construction"
+         },
+         {
+          "percentage": 8.33,
+          "value": "Transportation"
+         },
+         {
+          "percentage": 8.34,
+          "value": "Media"
+         },
+         {
+          "percentage": 8.34,
+          "value": "Energy"
+         },
+         {
+          "percentage": 8.34,
+          "value": "Telecommunications"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 12000
+  }
+ },
+ "dataset_name": "Synthetic SaaS Subscriptions and Churn"
+}

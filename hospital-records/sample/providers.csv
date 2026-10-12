@@ -1,0 +1,344 @@
+provider_id,full_name,specialty,department
+1,Ryan Garner,Emergency Medicine,Emergency
+3,Traci Davis,Cardiology,Cardiology
+5,James Carter,Pulmonology,Respiratory
+6,Clinton Guerra,General Surgery,Surgery
+10,Melinda Johnson,Pulmonology,Respiratory
+14,Nicholas Bennett,Cardiology,Cardiology
+15,Gabriel Moore,Emergency Medicine,Emergency
+16,Cory Bond,Orthopaedics,Surgery
+17,John Williams,Orthopaedics,Surgery
+18,Victoria Reynolds,General Surgery,Surgery
+19,Billy Cortez,Neurology,Neurology
+20,Daniel Nelson,Paediatrics,Paediatrics
+21,Rebecca Ward,Family Medicine,Outpatient Clinic
+22,Kristin Holmes,Family Medicine,Outpatient Clinic
+25,Heather Peterson,Pulmonology,Respiratory
+26,Jack Bullock,Family Medicine,Outpatient Clinic
+28,Stacey Cox,Psychiatry,Behavioural Health
+29,Anna Nixon,Paediatrics,Paediatrics
+31,John Bryan,Family Medicine,Outpatient Clinic
+36,James Arias,Endocrinology,Internal Medicine
+37,Sharon Carter,Cardiology,Cardiology
+42,Joseph Lowery,Emergency Medicine,Emergency
+43,Lisa Johnston,Family Medicine,Outpatient Clinic
+45,Linda Brown,Pulmonology,Respiratory
+47,Ariel Perez,Gastroenterology,Internal Medicine
+49,Eric Brown,Family Medicine,Outpatient Clinic
+51,Danielle Frey,Emergency Medicine,Emergency
+52,Mr. Frank Perez MD,Urology,Surgery
+54,Mr. William Keith,Orthopaedics,Surgery
+55,Maria Daniels,Family Medicine,Outpatient Clinic
+57,Miranda Owens,Family Medicine,Outpatient Clinic
+58,Lisa Andrews,Endocrinology,Internal Medicine
+59,Michael Smith,Urology,Surgery
+60,Mr. Clarence Doyle,Cardiology,Cardiology
+62,Theresa Potter,Endocrinology,Internal Medicine
+63,Johnny Silva,Gastroenterology,Internal Medicine
+64,Hannah Lewis,Emergency Medicine,Emergency
+65,Jeffrey Hernandez,Family Medicine,Outpatient Clinic
+66,Diane Valenzuela,Endocrinology,Internal Medicine
+68,Lindsay Snyder,Family Medicine,Outpatient Clinic
+71,Justin Berger,Emergency Medicine,Emergency
+72,Donna Pearson,Cardiology,Cardiology
+73,Bryan Bates,Pulmonology,Respiratory
+74,Austin Sullivan,Family Medicine,Outpatient Clinic
+75,Melissa Blake,Endocrinology,Internal Medicine
+78,Amber Mcdowell,Family Medicine,Outpatient Clinic
+79,Thomas Clark,Urology,Surgery
+80,Randy Morrison,General Surgery,Surgery
+81,Henry Baker,Endocrinology,Internal Medicine
+83,Bailey Brown,Emergency Medicine,Emergency
+84,Samantha Mitchell,Cardiology,Cardiology
+86,Rebecca Gonzalez,Neurology,Neurology
+88,Jeffrey Chen,Orthopaedics,Surgery
+89,Jamie Johnson,Emergency Medicine,Emergency
+90,Dawn Jenkins,Paediatrics,Paediatrics
+91,Daniel Collins,Family Medicine,Outpatient Clinic
+92,Jared Reynolds,Neurology,Neurology
+95,Maurice Peck,General Surgery,Surgery
+96,David Gibbs,General Surgery,Surgery
+98,Rachel Houston,Cardiology,Cardiology
+102,William Thomas,Psychiatry,Behavioural Health
+113,Linda Stevens,Cardiology,Cardiology
+114,Charles Welch,Pulmonology,Respiratory
+116,Samantha Reed,Pulmonology,Respiratory
+117,Mark Figueroa DDS,Pulmonology,Respiratory
+118,Ana Williams,Orthopaedics,Surgery
+119,Sean Charles,Pulmonology,Respiratory
+121,Ann Edwards,Family Medicine,Outpatient Clinic
+122,Wayne Madden,Emergency Medicine,Emergency
+124,Catherine Dillon,Family Medicine,Outpatient Clinic
+127,Shelley Willis,Family Medicine,Outpatient Clinic
+128,Jacob Gardner,Urology,Surgery
+129,Joseph Ruiz,Pulmonology,Respiratory
+130,Patricia Hill,Neurology,Neurology
+131,Jane Williamson,Emergency Medicine,Emergency
+132,Patricia Cook,Paediatrics,Paediatrics
+133,Tony Smith,Family Medicine,Outpatient Clinic
+135,Emily Russell,Endocrinology,Internal Medicine
+138,Elizabeth Fisher,Gastroenterology,Internal Medicine
+140,William Brown,Neurology,Neurology
+142,Jody Ramirez,Family Medicine,Outpatient Clinic
+143,Christopher Conway,Neurology,Neurology
+145,Veronica Willis,Family Medicine,Outpatient Clinic
+146,Hayley Evans,Pulmonology,Respiratory
+149,Andrew Simmons,Psychiatry,Behavioural Health
+153,Joshua Peters,Paediatrics,Paediatrics
+158,Maria Boyd,Cardiology,Cardiology
+159,Christopher Peck,Family Medicine,Outpatient Clinic
+160,Melissa Brown,Family Medicine,Outpatient Clinic
+162,Olivia Baker,Emergency Medicine,Emergency
+163,Margaret Johnson,Paediatrics,Paediatrics
+167,Lisa Fitzpatrick,Family Medicine,Outpatient Clinic
+168,Katherine Brown,Family Medicine,Outpatient Clinic
+169,Phillip Morris,Emergency Medicine,Emergency
+172,Sean Reed,Family Medicine,Outpatient Clinic
+174,Mitchell Garcia,Paediatrics,Paediatrics
+175,Angela Stokes,Emergency Medicine,Emergency
+180,Pamela Martin,Paediatrics,Paediatrics
+184,Paul Davis,Family Medicine,Outpatient Clinic
+188,Jamie Fischer,Family Medicine,Outpatient Clinic
+191,Angela Martinez,Gastroenterology,Internal Medicine
+193,Daniel Rivera,Emergency Medicine,Emergency
+194,Isaac Pierce,Family Medicine,Outpatient Clinic
+195,Pamela Perez,Family Medicine,Outpatient Clinic
+198,Cynthia Johnston,Endocrinology,Internal Medicine
+199,James Crawford,Neurology,Neurology
+200,Elizabeth Gibbs,Endocrinology,Internal Medicine
+201,Nicole Barber,Paediatrics,Paediatrics
+203,Michael Williams,Neurology,Neurology
+204,Elizabeth Dillon,Pulmonology,Respiratory
+206,Desiree Valdez,Endocrinology,Internal Medicine
+208,Edward Bond,Emergency Medicine,Emergency
+210,Charles Valenzuela,Pulmonology,Respiratory
+212,Alexandra Thompson,Gastroenterology,Internal Medicine
+214,Scott Nolan,Pulmonology,Respiratory
+215,Laura Carlson,General Surgery,Surgery
+216,Tina Blair,Orthopaedics,Surgery
+220,Sheri Knight,Family Medicine,Outpatient Clinic
+221,David Farrell,Endocrinology,Internal Medicine
+222,Karina Phillips,Emergency Medicine,Emergency
+223,Katherine Hancock,Endocrinology,Internal Medicine
+224,Aaron Mills MD,Urology,Surgery
+227,Carrie Morgan,General Surgery,Surgery
+228,Phyllis Hanna,Psychiatry,Behavioural Health
+229,Raymond Medina,Orthopaedics,Surgery
+232,Ronald Clark,Emergency Medicine,Emergency
+235,Mary Rodriguez,Psychiatry,Behavioural Health
+236,Jean Davis,General Surgery,Surgery
+239,Brent Howard,Family Medicine,Outpatient Clinic
+240,Rodney Murphy,Emergency Medicine,Emergency
+241,Joseph Smith,General Surgery,Surgery
+242,Kristin Krueger,Gastroenterology,Internal Medicine
+243,Zachary Carter,Paediatrics,Paediatrics
+248,Ronald Greene,Neurology,Neurology
+249,Jessica Gates,Family Medicine,Outpatient Clinic
+250,Beth Weiss,Emergency Medicine,Emergency
+251,Angela Clark,Family Medicine,Outpatient Clinic
+255,Michael Henderson,Orthopaedics,Surgery
+257,Christopher Woods,Gastroenterology,Internal Medicine
+260,Helen Sparks,Emergency Medicine,Emergency
+263,Kim Harris,Emergency Medicine,Emergency
+264,Jeffrey Harris,Family Medicine,Outpatient Clinic
+265,Brandon Taylor,Pulmonology,Respiratory
+266,Christopher Berg,Pulmonology,Respiratory
+267,Monica Morris,Pulmonology,Respiratory
+268,Tiffany Mercado,Orthopaedics,Surgery
+271,Lisa Madden,Gastroenterology,Internal Medicine
+272,Beverly West,Cardiology,Cardiology
+273,Bethany Jacobs,Cardiology,Cardiology
+274,Heidi Jones,Gastroenterology,Internal Medicine
+277,Amber Zamora,Endocrinology,Internal Medicine
+278,Samuel Marquez,Psychiatry,Behavioural Health
+282,Joshua York,Paediatrics,Paediatrics
+283,Jordan Ruiz,Neurology,Neurology
+285,Heidi Avila,Family Medicine,Outpatient Clinic
+287,Rhonda Roberts,Psychiatry,Behavioural Health
+288,Tina Williams,Gastroenterology,Internal Medicine
+289,Lauren Mitchell,Orthopaedics,Surgery
+291,Nina Cole,Family Medicine,Outpatient Clinic
+292,Jill Rice,Cardiology,Cardiology
+294,Steven Kline,General Surgery,Surgery
+295,Antonio Kennedy,Emergency Medicine,Emergency
+296,Jennifer Mueller,General Surgery,Surgery
+297,Gregory Snyder,Endocrinology,Internal Medicine
+300,Christopher Brown,Emergency Medicine,Emergency
+301,Paul Sanders,Family Medicine,Outpatient Clinic
+302,Samuel Holmes,Paediatrics,Paediatrics
+304,Lisa Sosa,Cardiology,Cardiology
+305,Sarah Crosby,Emergency Medicine,Emergency
+306,Patricia Leonard,Emergency Medicine,Emergency
+308,Jade Reeves,Emergency Medicine,Emergency
+309,Jessica Reed,Cardiology,Cardiology
+311,Austin Williamson,Pulmonology,Respiratory
+312,Tara Scott,Emergency Medicine,Emergency
+318,Thomas Horne,General Surgery,Surgery
+319,Jessica Pittman,Family Medicine,Outpatient Clinic
+320,Jamie Cook,Emergency Medicine,Emergency
+323,James Daniel,Family Medicine,Outpatient Clinic
+324,Tara Flores,Endocrinology,Internal Medicine
+325,Joseph Young,General Surgery,Surgery
+328,Laura Brown,Emergency Medicine,Emergency
+329,Jonathan Spencer,Family Medicine,Outpatient Clinic
+331,Alex Dudley,Urology,Surgery
+334,Patrick Delacruz,Emergency Medicine,Emergency
+336,Antonio Sullivan,Endocrinology,Internal Medicine
+337,Crystal Allen,Emergency Medicine,Emergency
+338,Anthony Riggs,Emergency Medicine,Emergency
+339,Christopher Robinson,Emergency Medicine,Emergency
+340,Michelle Brewer,Paediatrics,Paediatrics
+341,Tammy Odonnell,Family Medicine,Outpatient Clinic
+342,Michelle Novak,Psychiatry,Behavioural Health
+343,John Bonilla,Gastroenterology,Internal Medicine
+345,Kristi Walker,Cardiology,Cardiology
+346,Garrett Ball,Urology,Surgery
+347,Walter Duran,Pulmonology,Respiratory
+348,Jennifer Olsen,Family Medicine,Outpatient Clinic
+350,Tina Carey,Endocrinology,Internal Medicine
+351,Jeffery Rodriguez,Paediatrics,Paediatrics
+353,Dawn Anderson,Family Medicine,Outpatient Clinic
+354,Diana Briggs,Endocrinology,Internal Medicine
+359,Joshua Graham,Emergency Medicine,Emergency
+360,Adam Brock,Family Medicine,Outpatient Clinic
+361,John Ho,Pulmonology,Respiratory
+362,Kristen Maxwell,Orthopaedics,Surgery
+364,Erin Thomas,Orthopaedics,Surgery
+365,Joseph Lee,Family Medicine,Outpatient Clinic
+367,Christine Nguyen,Family Medicine,Outpatient Clinic
+368,Dr. Jennifer Reeves DDS,Family Medicine,Outpatient Clinic
+370,Stephen Dunn,Emergency Medicine,Emergency
+371,Jose Dillon DVM,Emergency Medicine,Emergency
+372,Maureen Keith MD,Psychiatry,Behavioural Health
+374,Alexander Jacobs,Emergency Medicine,Emergency
+376,Brian Bennett,Endocrinology,Internal Medicine
+377,David Choi,Emergency Medicine,Emergency
+378,Greg Brown,Emergency Medicine,Emergency
+379,Allison Maldonado,Gastroenterology,Internal Medicine
+380,Jeffrey Fitzpatrick,Paediatrics,Paediatrics
+381,Stephanie Lopez,Gastroenterology,Internal Medicine
+382,David Brown,Emergency Medicine,Emergency
+383,Melissa Burch,Endocrinology,Internal Medicine
+385,Rhonda Mueller,Emergency Medicine,Emergency
+386,Tonya Rogers,Urology,Surgery
+393,Tammy Chung,Pulmonology,Respiratory
+394,Daniel Campos,Family Medicine,Outpatient Clinic
+395,Richard Miller,Orthopaedics,Surgery
+396,Diana Walker,Psychiatry,Behavioural Health
+397,Denise Guerrero,Gastroenterology,Internal Medicine
+399,Emily Wilson,Pulmonology,Respiratory
+402,Caleb Weaver,Urology,Surgery
+404,Andrew Phillips,Cardiology,Cardiology
+405,Christopher Costa,General Surgery,Surgery
+408,Martin Williams,Neurology,Neurology
+411,Michael Malone,Cardiology,Cardiology
+412,Brandon Smith,General Surgery,Surgery
+413,Michael George,General Surgery,Surgery
+414,Chad Rodriguez,Neurology,Neurology
+416,Luke Moss,Family Medicine,Outpatient Clinic
+418,Crystal Garcia,Family Medicine,Outpatient Clinic
+419,Matthew Bullock,Psychiatry,Behavioural Health
+421,Jessica Williams,Family Medicine,Outpatient Clinic
+422,Bonnie Dodson,Family Medicine,Outpatient Clinic
+423,Jonathan Whitaker,Neurology,Neurology
+424,Bryan Cook,Cardiology,Cardiology
+426,George Peck,Urology,Surgery
+427,Monica Doyle,Pulmonology,Respiratory
+428,Bonnie Hoffman,Family Medicine,Outpatient Clinic
+430,Pamela Cox,Neurology,Neurology
+431,Ryan Taylor,Paediatrics,Paediatrics
+432,James Taylor,Endocrinology,Internal Medicine
+433,Matthew Robinson,Family Medicine,Outpatient Clinic
+434,Leonard Walker,Endocrinology,Internal Medicine
+437,Audrey Flores,Gastroenterology,Internal Medicine
+439,Mark Brown,Cardiology,Cardiology
+442,Jonathan Campbell,Family Medicine,Outpatient Clinic
+443,Angelica Harrison,Gastroenterology,Internal Medicine
+448,David Melton,General Surgery,Surgery
+449,Susan Coleman,General Surgery,Surgery
+450,Joshua Johnson,Orthopaedics,Surgery
+451,Lindsay Snyder,Cardiology,Cardiology
+454,April Brown,Endocrinology,Internal Medicine
+457,Michelle Watson,Urology,Surgery
+458,Scott Delacruz,Gastroenterology,Internal Medicine
+461,Elizabeth Reynolds,Cardiology,Cardiology
+462,John Moore,Emergency Medicine,Emergency
+468,Ernest Wilson,Urology,Surgery
+469,Amber Lee,Endocrinology,Internal Medicine
+472,Ashlee Chandler,Pulmonology,Respiratory
+473,Michael Brown,Emergency Medicine,Emergency
+475,Jessica Hines,Paediatrics,Paediatrics
+476,Heather Mendez,Family Medicine,Outpatient Clinic
+477,Danielle Farmer,Pulmonology,Respiratory
+480,Kristen Martin,Pulmonology,Respiratory
+481,Taylor Neal,Gastroenterology,Internal Medicine
+482,Allen Wise,Gastroenterology,Internal Medicine
+487,Jason Rodriguez,Cardiology,Cardiology
+490,Chelsea Smith,Endocrinology,Internal Medicine
+492,Emily Harris,Psychiatry,Behavioural Health
+493,Phillip Rich,Family Medicine,Outpatient Clinic
+494,Katie Hill,Neurology,Neurology
+496,Edward Brooks,Family Medicine,Outpatient Clinic
+497,Natalie Farmer,Emergency Medicine,Emergency
+498,Sharon Stewart,General Surgery,Surgery
+499,Justin Gonzalez,Urology,Surgery
+500,John Murray,Emergency Medicine,Emergency
+501,Todd Mendez,Family Medicine,Outpatient Clinic
+503,Susan Gonzalez,Family Medicine,Outpatient Clinic
+505,Matthew Brady,General Surgery,Surgery
+507,Brenda Hayes,Neurology,Neurology
+508,Dylan Collins,Endocrinology,Internal Medicine
+509,Curtis Gonzales,Emergency Medicine,Emergency
+510,Dustin Phillips,Family Medicine,Outpatient Clinic
+511,Maria Jones,Orthopaedics,Surgery
+513,Stacy Hodges,Cardiology,Cardiology
+514,Scott Sullivan III,Family Medicine,Outpatient Clinic
+517,Annette Robertson,Orthopaedics,Surgery
+518,Mark Sullivan,Neurology,Neurology
+521,Michelle Fowler,Gastroenterology,Internal Medicine
+522,Robert Bowen,Gastroenterology,Internal Medicine
+527,Donald Hughes,Family Medicine,Outpatient Clinic
+532,Andrew Martinez,Endocrinology,Internal Medicine
+533,Kenneth Lee,Pulmonology,Respiratory
+535,Jimmy Thomas,Emergency Medicine,Emergency
+536,Susan Martinez,Emergency Medicine,Emergency
+537,Morgan Parsons,General Surgery,Surgery
+538,Lori Porter,Urology,Surgery
+539,Austin Miller,Endocrinology,Internal Medicine
+540,Christopher Mitchell,Family Medicine,Outpatient Clinic
+541,Jill Howard,Family Medicine,Outpatient Clinic
+543,Gary Wright,Family Medicine,Outpatient Clinic
+545,Cameron Love,Endocrinology,Internal Medicine
+546,Beth Valencia,Paediatrics,Paediatrics
+547,Steven Kim,Paediatrics,Paediatrics
+548,Ruth Simmons,Family Medicine,Outpatient Clinic
+550,Beth Baker,General Surgery,Surgery
+551,Michael Madden,General Surgery,Surgery
+552,Valerie Terry,Gastroenterology,Internal Medicine
+553,Jeanette Ellison,Emergency Medicine,Emergency
+554,Denise Campbell,Cardiology,Cardiology
+555,Holly Williams,Cardiology,Cardiology
+557,Erin Buckley,Gastroenterology,Internal Medicine
+560,George Jones,Psychiatry,Behavioural Health
+561,Kyle Scott,Paediatrics,Paediatrics
+564,Frank Reed,Psychiatry,Behavioural Health
+566,Elizabeth Moore,Cardiology,Cardiology
+567,Elizabeth Mcdaniel,Emergency Medicine,Emergency
+568,Angela Miller,Cardiology,Cardiology
+573,Connie Rodriguez,Family Medicine,Outpatient Clinic
+574,Dana Cruz,Family Medicine,Outpatient Clinic
+576,Jennifer Taylor,Gastroenterology,Internal Medicine
+577,Amanda Blevins,Pulmonology,Respiratory
+578,Justin Jones,Family Medicine,Outpatient Clinic
+579,Angela Williams,Orthopaedics,Surgery
+580,Tyler Barnes,Family Medicine,Outpatient Clinic
+584,Corey Kelly,Endocrinology,Internal Medicine
+585,Justin Miller,Family Medicine,Outpatient Clinic
+588,Daniel Hartman,General Surgery,Surgery
+589,Denise Humphrey,Emergency Medicine,Emergency
+590,Corey Morris,Pulmonology,Respiratory
+591,Veronica Porter,Urology,Surgery
+593,Jodi Santos,Paediatrics,Paediatrics
+594,Collin Hood,Family Medicine,Outpatient Clinic
+596,Kelly Chase,Family Medicine,Outpatient Clinic
+597,Sherry Myers,Urology,Surgery

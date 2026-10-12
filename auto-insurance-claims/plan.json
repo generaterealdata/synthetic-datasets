@@ -1,0 +1,2317 @@
+{
+ "dataset_type": "relational",
+ "tables": {
+  "policyholders": {
+   "dataset_type": "tabular",
+   "columns": {
+    "policyholder_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "full_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "name"
+       }
+      }
+     ]
+    },
+    "date_of_birth": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "1941-01-01",
+        "end_date": "2004-12-31",
+        "include_time": false
+       }
+      }
+     ]
+    },
+    "state": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "TX",
+          "percentage": 16
+         },
+         {
+          "value": "CA",
+          "percentage": 16
+         },
+         {
+          "value": "FL",
+          "percentage": 13
+         },
+         {
+          "value": "NY",
+          "percentage": 8
+         },
+         {
+          "value": "IL",
+          "percentage": 6
+         },
+         {
+          "value": "CO",
+          "percentage": 6
+         },
+         {
+          "value": "WA",
+          "percentage": 6
+         },
+         {
+          "value": "GA",
+          "percentage": 6
+         },
+         {
+          "value": "OK",
+          "percentage": 5
+         },
+         {
+          "value": "KS",
+          "percentage": 4
+         },
+         {
+          "value": "LA",
+          "percentage": 5
+         },
+         {
+          "value": "AZ",
+          "percentage": 5
+         },
+         {
+          "value": "OH",
+          "percentage": 4
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "city": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'TX'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Houston",
+          "percentage": 25.0
+         },
+         {
+          "value": "Dallas",
+          "percentage": 25.0
+         },
+         {
+          "value": "Austin",
+          "percentage": 25.0
+         },
+         {
+          "value": "San Antonio",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'CA'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Los Angeles",
+          "percentage": 25.0
+         },
+         {
+          "value": "San Diego",
+          "percentage": 25.0
+         },
+         {
+          "value": "San Jose",
+          "percentage": 25.0
+         },
+         {
+          "value": "Sacramento",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'FL'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Miami",
+          "percentage": 25.0
+         },
+         {
+          "value": "Orlando",
+          "percentage": 25.0
+         },
+         {
+          "value": "Tampa",
+          "percentage": 25.0
+         },
+         {
+          "value": "Jacksonville",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'NY'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "New York",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Buffalo",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Rochester",
+          "percentage": 33.333333333333336
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'IL'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Chicago",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Aurora",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Springfield",
+          "percentage": 33.333333333333336
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'CO'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Denver",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Colorado Springs",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Boulder",
+          "percentage": 33.333333333333336
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'WA'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Seattle",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Spokane",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Tacoma",
+          "percentage": 33.333333333333336
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'GA'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Atlanta",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Savannah",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Augusta",
+          "percentage": 33.333333333333336
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'OK'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Oklahoma City",
+          "percentage": 50.0
+         },
+         {
+          "value": "Tulsa",
+          "percentage": 50.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'KS'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Wichita",
+          "percentage": 50.0
+         },
+         {
+          "value": "Topeka",
+          "percentage": 50.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'LA'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "New Orleans",
+          "percentage": 50.0
+         },
+         {
+          "value": "Baton Rouge",
+          "percentage": 50.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{state} == 'AZ'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Phoenix",
+          "percentage": 50.0
+         },
+         {
+          "value": "Tucson",
+          "percentage": 50.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Columbus",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Cleveland",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Cincinnati",
+          "percentage": 33.333333333333336
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "zip_code": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Houston'",
+       "parameters": {
+        "pattern": "770[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Dallas'",
+       "parameters": {
+        "pattern": "752[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Austin'",
+       "parameters": {
+        "pattern": "787[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'San Antonio'",
+       "parameters": {
+        "pattern": "782[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Los Angeles'",
+       "parameters": {
+        "pattern": "900[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'San Diego'",
+       "parameters": {
+        "pattern": "921[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'San Jose'",
+       "parameters": {
+        "pattern": "951[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Sacramento'",
+       "parameters": {
+        "pattern": "958[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Miami'",
+       "parameters": {
+        "pattern": "331[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Orlando'",
+       "parameters": {
+        "pattern": "328[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Tampa'",
+       "parameters": {
+        "pattern": "336[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Jacksonville'",
+       "parameters": {
+        "pattern": "322[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'New York'",
+       "parameters": {
+        "pattern": "100[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Buffalo'",
+       "parameters": {
+        "pattern": "142[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Rochester'",
+       "parameters": {
+        "pattern": "146[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Chicago'",
+       "parameters": {
+        "pattern": "606[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Aurora'",
+       "parameters": {
+        "pattern": "605[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Springfield'",
+       "parameters": {
+        "pattern": "627[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Denver'",
+       "parameters": {
+        "pattern": "802[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Colorado Springs'",
+       "parameters": {
+        "pattern": "809[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Boulder'",
+       "parameters": {
+        "pattern": "803[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Seattle'",
+       "parameters": {
+        "pattern": "981[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Spokane'",
+       "parameters": {
+        "pattern": "992[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Tacoma'",
+       "parameters": {
+        "pattern": "984[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Atlanta'",
+       "parameters": {
+        "pattern": "303[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Savannah'",
+       "parameters": {
+        "pattern": "314[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Augusta'",
+       "parameters": {
+        "pattern": "309[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Oklahoma City'",
+       "parameters": {
+        "pattern": "731[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Tulsa'",
+       "parameters": {
+        "pattern": "741[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Wichita'",
+       "parameters": {
+        "pattern": "672[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Topeka'",
+       "parameters": {
+        "pattern": "666[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'New Orleans'",
+       "parameters": {
+        "pattern": "701[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Baton Rouge'",
+       "parameters": {
+        "pattern": "708[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Phoenix'",
+       "parameters": {
+        "pattern": "850[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Tucson'",
+       "parameters": {
+        "pattern": "857[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Columbus'",
+       "parameters": {
+        "pattern": "432[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{city} == 'Cleveland'",
+       "parameters": {
+        "pattern": "441[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "DEFAULT",
+       "parameters": {
+        "pattern": "452[0-9]{2}"
+       }
+      }
+     ]
+    },
+    "licensed_since": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({date_of_birth}, random_int(5844, 7670))"
+       }
+      }
+     ]
+    },
+    "credit_band": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "good",
+          "percentage": 42
+         },
+         {
+          "value": "fair",
+          "percentage": 26
+         },
+         {
+          "value": "excellent",
+          "percentage": 22
+         },
+         {
+          "value": "poor",
+          "percentage": 10
+         }
+        ]
+       }
+      }
+     ]
+    }
+   },
+   "total_rows": 30000
+  },
+  "policies": {
+   "dataset_type": "tabular",
+   "columns": {
+    "policy_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "policy_number": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "regex",
+       "if": "DEFAULT",
+       "parameters": {
+        "pattern": "POL-[0-9]{2}-[0-9]{6}"
+       }
+      }
+     ],
+     "unique": true
+    },
+    "policyholder_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "policyholders",
+        "target_column": "policyholder_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.2
+       }
+      }
+     ]
+    },
+    "vehicle_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "@anchor.vehicle_id"
+       }
+      }
+     ],
+     "references": {
+      "table": "vehicles",
+      "column": "vehicle_id"
+     }
+    },
+    "coverage": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "comprehensive",
+          "percentage": 46
+         },
+         {
+          "value": "collision",
+          "percentage": 30
+         },
+         {
+          "value": "liability",
+          "percentage": 24
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "deductible": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 250,
+          "percentage": 15
+         },
+         {
+          "value": 500,
+          "percentage": 45
+         },
+         {
+          "value": 1000,
+          "percentage": 30
+         },
+         {
+          "value": 2000,
+          "percentage": 10
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "annual_premium": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{coverage} == 'comprehensive'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 1200,
+          "max": 4200,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{coverage} == 'collision'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 900,
+          "max": 2800,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 500,
+          "max": 1500,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "start_date": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2023-01-01",
+        "end_date": "2026-06-30",
+        "include_time": false
+       }
+      }
+     ]
+    },
+    "end_date": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_months({start_date}, 12)"
+       }
+      }
+     ]
+    },
+    "status": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{end_date} < '2026-10-01'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "expired",
+          "percentage": 94
+         },
+         {
+          "value": "cancelled",
+          "percentage": 6
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "active",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    }
+   },
+   "anchor": {
+    "table": "vehicles",
+    "unique": true
+   },
+   "total_rows": 37000
+  },
+  "vehicles": {
+   "dataset_type": "tabular",
+   "columns": {
+    "vehicle_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "vin": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "vin"
+       }
+      }
+     ],
+     "unique": true
+    },
+    "make": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Camry'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Toyota",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'RAV4'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Toyota",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Corolla'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Toyota",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Tacoma'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Toyota",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Civic'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Honda",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'CR-V'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Honda",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Accord'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Honda",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'F-150'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Ford",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Escape'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Ford",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Explorer'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Ford",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Silverado'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Chevrolet",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Equinox'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Chevrolet",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Model 3'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Tesla",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Model Y'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Tesla",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Outback'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Subaru",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Forester'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Subaru",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Wrangler'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Jeep",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Grand Cherokee'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Jeep",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Altima'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Nissan",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Rogue'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Nissan",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Tucson'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Hyundai",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Elantra'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Hyundai",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Sportage'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Kia",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == '1500'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Ram",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Golf'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Volkswagen",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'CX-5'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Mazda",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == '3 Series'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "BMW",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Pacifica'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Chrysler",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Mustang'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Ford",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Mini",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "model": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Camry",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "RAV4",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Corolla",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Tacoma",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Civic",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "CR-V",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Accord",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "F-150",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Escape",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Explorer",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Silverado",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Equinox",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Model 3",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Model Y",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Outback",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Forester",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Wrangler",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Grand Cherokee",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Altima",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Rogue",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Tucson",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Elantra",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Sportage",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "1500",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Golf",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "CX-5",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "3 Series",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Pacifica",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Mustang",
+          "percentage": 3.3333333333333335
+         },
+         {
+          "value": "Cooper",
+          "percentage": 3.3333333333333335
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "model_year": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 2008,
+          "max": 2015,
+          "percentage": 22
+         },
+         {
+          "min": 2016,
+          "max": 2021,
+          "percentage": 40
+         },
+         {
+          "min": 2022,
+          "max": 2026,
+          "percentage": 38
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "body_type": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Camry'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "sedan",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'RAV4'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Corolla'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "sedan",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Tacoma'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "pickup",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Civic'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "sedan",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'CR-V'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Accord'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "sedan",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'F-150'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "pickup",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Escape'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Explorer'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Silverado'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "pickup",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Equinox'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Model 3'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "sedan",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Model Y'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Outback'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Forester'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Wrangler'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Grand Cherokee'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Altima'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "sedan",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Rogue'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Tucson'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Elantra'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "sedan",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Sportage'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == '1500'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "pickup",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Golf'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "hatchback",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'CX-5'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "suv",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == '3 Series'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "sedan",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Pacifica'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "van",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Mustang'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "coupe",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "hatchback",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "market_value": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{model_year} >= 2022",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 22000,
+          "max": 85000,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{model_year} >= 2016",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 9000,
+          "max": 40000,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 3000,
+          "max": 14000,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    }
+   },
+   "total_rows": 37000
+  },
+  "claims": {
+   "dataset_type": "tabular",
+   "columns": {
+    "claim_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "claim_number": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "if": "DEFAULT",
+       "parameters": {
+        "prefix": "CLM-",
+        "start": 1,
+        "step": 1,
+        "padding": 7
+       }
+      }
+     ],
+     "unique": true
+    },
+    "policy_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "policies",
+        "target_column": "policy_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.4
+       }
+      }
+     ]
+    },
+    "loss_date": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({policy_id.start_date}, random_int(0, min(364, date_diff_days('2026-09-30', {policy_id.start_date}))))"
+       }
+      }
+     ]
+    },
+    "reported_on": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({loss_date}, random_int(0, min(10, date_diff_days('2026-09-30', {loss_date}))))"
+       }
+      }
+     ]
+    },
+    "loss_state": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "policy_id.policyholder_id.state"
+       }
+      }
+     ]
+    },
+    "peril": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{loss_state} in ('TX', 'CO', 'OK', 'KS')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "collision",
+          "percentage": 44
+         },
+         {
+          "value": "hail",
+          "percentage": 24
+         },
+         {
+          "value": "glass",
+          "percentage": 12
+         },
+         {
+          "value": "theft",
+          "percentage": 7
+         },
+         {
+          "value": "vandalism",
+          "percentage": 5
+         },
+         {
+          "value": "animal",
+          "percentage": 5
+         },
+         {
+          "value": "flood",
+          "percentage": 1
+         },
+         {
+          "value": "fire",
+          "percentage": 2
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{loss_state} in ('FL', 'LA')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "collision",
+          "percentage": 46
+         },
+         {
+          "value": "flood",
+          "percentage": 18
+         },
+         {
+          "value": "glass",
+          "percentage": 12
+         },
+         {
+          "value": "theft",
+          "percentage": 8
+         },
+         {
+          "value": "vandalism",
+          "percentage": 6
+         },
+         {
+          "value": "animal",
+          "percentage": 4
+         },
+         {
+          "value": "hail",
+          "percentage": 4
+         },
+         {
+          "value": "fire",
+          "percentage": 2
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "collision",
+          "percentage": 56
+         },
+         {
+          "value": "glass",
+          "percentage": 15
+         },
+         {
+          "value": "theft",
+          "percentage": 10
+         },
+         {
+          "value": "vandalism",
+          "percentage": 7
+         },
+         {
+          "value": "animal",
+          "percentage": 6
+         },
+         {
+          "value": "hail",
+          "percentage": 3
+         },
+         {
+          "value": "flood",
+          "percentage": 1
+         },
+         {
+          "value": "fire",
+          "percentage": 2
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "status": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{loss_date} >= '2026-08-01'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "filed",
+          "percentage": 40
+         },
+         {
+          "value": "under_review",
+          "percentage": 40
+         },
+         {
+          "value": "investigation",
+          "percentage": 12
+         },
+         {
+          "value": "denied",
+          "percentage": 8
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{loss_date} >= '2026-05-01'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "paid",
+          "percentage": 66
+         },
+         {
+          "value": "under_review",
+          "percentage": 12
+         },
+         {
+          "value": "denied",
+          "percentage": 10
+         },
+         {
+          "value": "investigation",
+          "percentage": 9
+         },
+         {
+          "value": "filed",
+          "percentage": 3
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "paid",
+          "percentage": 86
+         },
+         {
+          "value": "denied",
+          "percentage": 11
+         },
+         {
+          "value": "investigation",
+          "percentage": 3
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "claim_amount": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{peril} == 'glass'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 150,
+          "max": 1200,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 800,
+          "max": 9000,
+          "percentage": 88
+         },
+         {
+          "min": 9000,
+          "max": 60000,
+          "percentage": 12
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "reserve_amount": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "{status} in ('filed', 'under_review', 'investigation')",
+       "parameters": {
+        "equation": "{claim_amount}"
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "paid_total": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "aggregate",
+       "if": "DEFAULT",
+       "parameters": {
+        "child_table": "claim_payments",
+        "child_fk": "claim_id",
+        "function": "sum",
+        "expression": "{amount}"
+       }
+      }
+     ]
+    }
+   },
+   "total_rows": 50000
+  },
+  "claim_payments": {
+   "dataset_type": "tabular",
+   "columns": {
+    "payment_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "claim_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "@anchor.claim_id"
+       }
+      }
+     ],
+     "references": {
+      "table": "claims",
+      "column": "claim_id"
+     }
+    },
+    "paid_on": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({@anchor.reported_on}, random_int(5, 45))"
+       }
+      }
+     ]
+    },
+    "amount": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round({@anchor.claim_amount} * random_float(0.6, 1.0), 2)"
+       }
+      }
+     ]
+    },
+    "payee": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "repair_shop",
+          "percentage": 55
+         },
+         {
+          "value": "policyholder",
+          "percentage": 33
+         },
+         {
+          "value": "third_party",
+          "percentage": 8
+         },
+         {
+          "value": "medical_provider",
+          "percentage": 4
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "method": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "bank_transfer",
+          "percentage": 68
+         },
+         {
+          "value": "check",
+          "percentage": 24
+         },
+         {
+          "value": "card",
+          "percentage": 8
+         }
+        ]
+       }
+      }
+     ]
+    }
+   },
+   "anchor": {
+    "table": "claims",
+    "unique": true,
+    "where": "{status} == 'paid'"
+   },
+   "total_rows": 46000
+  }
+ },
+ "total_rows": 200000,
+ "dataset_name": "Synthetic Auto Insurance Policies and Claims"
+}

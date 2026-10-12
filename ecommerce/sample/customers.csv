@@ -1,0 +1,117 @@
+customer_id,first_name,last_name,email,phone,country,city,signup_date,loyalty_tier,marketing_opt_in
+1,Jill,Ellis,jill.ellis1@example.com,,France,Marseille,2022-08-06,silver,0
+2,Darrell,Gilbert,darrell.gilbert2@example.com,+1-873-555-0199,United States,New York,2023-01-02,none,0
+3,Phillip,Francis,phillip.francis3@example.com,+44 7700 900107,United Kingdom,Leeds,2023-05-05,none,1
+4,Heather,Reyes,heather.reyes4@example.com,,France,Paris,2022-05-27,none,0
+5,Brent,Mayer,brent.mayer5@example.com,+1-514-555-0123,United States,Houston,2023-10-31,none,1
+6,Jeffrey,Ward,jeffrey.ward6@example.com,+1-892-555-0159,United States,Seattle,2022-05-07,none,0
+7,Mark,Ramos,mark.ramos7@example.com,+1-331-555-0112,United States,New York,2022-07-23,none,0
+8,Douglas,Burns,douglas.burns8@example.com,+1-764-555-0135,United States,Houston,2022-09-04,none,0
+9,Tamara,Ray,tamara.ray9@example.com,+353 20 911 2885,Ireland,Limerick,2022-11-26,none,0
+10,Marissa,Jenkins,marissa.jenkins10@example.com,,Netherlands,Eindhoven,2022-06-22,none,1
+11,Mary,King,mary.king11@example.com,,Netherlands,Utrecht,2022-01-24,silver,0
+12,Christopher,Ramos,christopher.ramos12@example.com,+1-573-555-0122,United States,Chicago,2022-07-24,silver,1
+13,Renee,Reynolds,renee.reynolds13@example.com,,Italy,Rome,2022-07-13,none,0
+14,Aaron,Stephens,aaron.stephens14@example.com,+1-662-555-0188,United States,Seattle,2022-10-26,silver,0
+15,Anthony,Stout,anthony.stout15@example.com,+1-974-555-0124,United States,Los Angeles,2023-10-06,none,0
+16,Paul,Harris,paul.harris16@example.com,+44 7700 900096,United Kingdom,London,2021-12-09,none,0
+17,Tyler,Johnson,tyler.johnson17@example.com,+44 7700 900180,United Kingdom,Leeds,2021-07-07,none,1
+18,Sara,York,sara.york18@example.com,,Italy,Milan,2023-08-12,none,0
+19,Gabriella,Navarro,gabriella.navarro19@example.com,,France,Paris,2023-04-24,gold,1
+20,Natalie,Kramer,natalie.kramer20@example.com,,Spain,Barcelona,2023-06-14,none,1
+21,Daniel,Powers,daniel.powers21@example.com,+1-538-555-0159,United States,Seattle,2023-02-24,none,1
+22,Mark,Ortega,mark.ortega22@example.com,+1-616-555-0196,United States,New York,2023-02-17,platinum,1
+23,Melody,Benson,melody.benson23@example.com,,Spain,Madrid,2023-03-17,none,0
+24,Isaac,Kim,isaac.kim24@example.com,+1-818-555-0130,United States,Chicago,2022-07-18,none,1
+25,Mark,Romero,mark.romero25@example.com,+1-494-555-0117,United States,Seattle,2022-09-22,none,1
+26,Anthony,Williamson,anthony.williamson26@example.com,+1-962-555-0158,United States,Houston,2023-01-04,silver,1
+27,Kathy,Powell,kathy.powell27@example.com,+61 491 570 512,Australia,Perth,2022-06-15,none,1
+28,Robert,Smith,robert.smith28@example.com,+44 7700 900537,United Kingdom,London,2021-06-20,gold,1
+29,Matthew,Barnes,matthew.barnes29@example.com,+1-996-555-0108,United States,Houston,2022-06-30,silver,1
+30,Stephen,Baker,stephen.baker30@example.com,+44 7700 900999,United Kingdom,Manchester,2022-02-06,silver,1
+31,Michelle,Pitts,michelle.pitts31@example.com,,Spain,Valencia,2023-08-31,none,0
+32,Zachary,Davis,zachary.davis32@example.com,+1-706-555-0156,Canada,Montreal,2021-08-26,none,0
+33,Carolyn,Harrison,carolyn.harrison33@example.com,,Germany,Cologne,2022-08-17,none,0
+34,Sergio,Miller,sergio.miller34@example.com,+44 7700 900337,United Kingdom,Leeds,2021-08-14,none,0
+35,Ernest,Odom,ernest.odom35@example.com,+1-357-555-0172,United States,Seattle,2023-12-17,none,1
+36,Debra,Graham,debra.graham36@example.com,,Germany,Berlin,2022-07-17,none,1
+37,Lauren,Hammond,lauren.hammond37@example.com,+61 491 570 284,Australia,Brisbane,2023-05-27,none,0
+38,Tyler,Williamson,tyler.williamson38@example.com,+44 7700 900214,United Kingdom,Manchester,2023-01-03,gold,0
+39,Stephen,King,stephen.king39@example.com,+44 7700 900528,United Kingdom,London,2022-01-26,none,1
+40,Nicholas,Perry,nicholas.perry40@example.com,+1-984-555-0125,United States,Chicago,2022-06-27,none,1
+41,Douglas,Ballard,douglas.ballard41@example.com,+1-235-555-0199,United States,New York,2023-06-29,none,0
+42,Angela,Gonzalez,angela.gonzalez42@example.com,+1-522-555-0148,Canada,Toronto,2021-12-03,none,0
+43,Laura,Fitzgerald,laura.fitzgerald43@example.com,+61 491 570 411,Australia,Melbourne,2023-04-26,none,0
+44,Travis,Sanchez,travis.sanchez44@example.com,+44 7700 900342,United Kingdom,Manchester,2022-01-19,none,0
+45,Dana,Colon,dana.colon45@example.com,,Germany,Berlin,2023-07-17,none,1
+46,Nicole,Smith,nicole.smith46@example.com,,Spain,Valencia,2021-06-07,none,1
+47,Jennifer,Li,jennifer.li47@example.com,,France,Toulouse,2023-07-08,gold,0
+48,Adam,Terry,adam.terry48@example.com,+1-929-555-0125,United States,Los Angeles,2023-03-20,none,0
+49,Danny,Allen,danny.allen49@example.com,+1-867-555-0131,United States,Chicago,2022-01-13,none,0
+50,Edward,Knight,edward.knight50@example.com,+1-725-555-0161,United States,Houston,2022-11-16,none,0
+51,Karen,Lee,karen.lee51@example.com,+61 491 570 008,Australia,Perth,2021-11-30,silver,1
+52,Edward,Mitchell,edward.mitchell52@example.com,+1-621-555-0121,United States,Seattle,2022-02-23,none,0
+53,Stephanie,Wilson,stephanie.wilson53@example.com,,Sweden,Stockholm,2021-09-19,silver,1
+54,Theodore,Cameron,theodore.cameron54@example.com,+44 7700 900722,United Kingdom,Leeds,2023-08-04,none,0
+55,Timothy,Trevino,timothy.trevino55@example.com,+44 7700 900739,United Kingdom,Birmingham,2023-08-20,gold,0
+56,Gregory,Williams,gregory.williams56@example.com,+1-997-555-0174,United States,Los Angeles,2021-07-15,none,0
+57,Jason,Mcintyre,jason.mcintyre57@example.com,+1-836-555-0158,United States,Chicago,2023-10-10,silver,1
+58,Alisha,Hodges,alisha.hodges58@example.com,+1-687-555-0151,Canada,Calgary,2023-05-19,none,1
+59,Garrett,Ritter,garrett.ritter59@example.com,+1-788-555-0122,United States,New York,2023-12-22,gold,1
+60,Morgan,Thomas,morgan.thomas60@example.com,,Spain,Seville,2021-10-12,none,0
+61,Phillip,Barajas,phillip.barajas61@example.com,+44 7700 900527,United Kingdom,Leeds,2023-12-27,none,1
+62,Alicia,Russo,alicia.russo62@example.com,+1-293-555-0192,Canada,Vancouver,2023-09-03,none,0
+63,Robert,Chandler,robert.chandler63@example.com,+44 7700 900541,United Kingdom,Birmingham,2023-04-18,gold,0
+64,Kimberly,Kennedy,kimberly.kennedy64@example.com,+61 491 570 022,Australia,Melbourne,2022-08-21,none,0
+65,Matthew,Martin,matthew.martin65@example.com,+1-788-555-0113,United States,New York,2021-10-31,none,1
+66,David,Cuevas,david.cuevas66@example.com,+1-529-555-0162,United States,Seattle,2023-12-28,none,1
+67,Johnny,Ramsey,johnny.ramsey67@example.com,+1-542-555-0173,United States,Seattle,2023-04-15,none,1
+68,Pamela,Bush,pamela.bush68@example.com,,Spain,Valencia,2023-03-27,none,0
+69,Marcus,Gibson,marcus.gibson69@example.com,+1-499-555-0132,United States,New York,2022-08-03,platinum,1
+70,Anne,Avery,anne.avery70@example.com,+1-978-555-0129,Canada,Toronto,2023-11-13,silver,1
+71,Max,Moore,max.moore71@example.com,+1-556-555-0138,United States,Los Angeles,2021-10-24,none,1
+72,Michael,Kim,michael.kim72@example.com,+1-762-555-0148,United States,New York,2022-07-18,none,0
+73,Sarah,Baker,sarah.baker73@example.com,,Italy,Milan,2022-02-03,gold,1
+74,Ryan,Townsend,ryan.townsend74@example.com,+44 7700 900702,United Kingdom,Manchester,2023-05-28,none,0
+75,Melissa,Bright,melissa.bright75@example.com,,Spain,Barcelona,2023-12-28,none,1
+76,Paul,Padilla,paul.padilla76@example.com,+44 7700 900360,United Kingdom,Leeds,2023-03-27,none,0
+77,Michael,Robbins,michael.robbins77@example.com,+1-275-555-0189,United States,Houston,2023-04-08,none,1
+78,Katherine,Robinson,katherine.robinson78@example.com,+61 491 570 414,Australia,Perth,2021-12-25,none,1
+79,Amy,Serrano,amy.serrano79@example.com,+1-776-555-0134,Canada,Vancouver,2023-07-20,platinum,0
+80,Samuel,Cardenas,samuel.cardenas80@example.com,+44 7700 900682,United Kingdom,Glasgow,2023-07-12,none,1
+81,Scott,Ross,scott.ross81@example.com,+44 7700 900237,United Kingdom,Birmingham,2022-06-12,none,1
+82,Debra,Griffin,debra.griffin82@example.com,,Germany,Berlin,2022-07-27,silver,0
+83,William,Edwards,william.edwards83@example.com,+1-475-555-0109,Canada,Calgary,2022-03-23,platinum,1
+84,Mary,Wong,mary.wong84@example.com,,Netherlands,Rotterdam,2023-02-02,silver,0
+85,William,Gonzalez,william.gonzalez85@example.com,+1-745-555-0183,Canada,Vancouver,2021-12-04,silver,0
+86,April,Mendez,april.mendez86@example.com,+1-922-555-0138,Canada,Vancouver,2023-01-01,silver,1
+87,Eric,Bates,eric.bates87@example.com,+1-207-555-0101,United States,Houston,2023-02-15,none,1
+88,Lisa,Kelley,lisa.kelley88@example.com,,Netherlands,Rotterdam,2022-10-31,none,1
+89,Emily,Smith,emily.smith89@example.com,,Germany,Cologne,2021-06-03,none,1
+90,Crystal,King,crystal.king90@example.com,,Germany,Hamburg,2022-01-25,none,0
+91,Renee,Sellers,renee.sellers91@example.com,,Italy,Turin,2023-10-15,none,1
+92,Holly,Smith,holly.smith92@example.com,,France,Lyon,2021-06-21,none,0
+93,Gabriel,Reynolds,gabriel.reynolds93@example.com,+1-975-555-0180,United States,Chicago,2022-07-13,none,1
+94,Casey,Wong,casey.wong94@example.com,+1-908-555-0144,United States,Seattle,2023-02-02,none,1
+95,Cheryl,Ellis,cheryl.ellis95@example.com,,Germany,Cologne,2022-08-06,silver,0
+96,Sarah,Cowan,sarah.cowan96@example.com,,Italy,Milan,2023-12-26,none,1
+97,Matthew,Young,matthew.young97@example.com,+1-533-555-0181,United States,New York,2022-01-08,none,1
+98,Thomas,Robinson,thomas.robinson98@example.com,+44 7700 900519,United Kingdom,Birmingham,2021-12-25,none,1
+99,Ashley,Jones,ashley.jones99@example.com,+1-980-555-0173,Canada,Montreal,2021-08-11,none,1
+100,Herbert,Peterson,herbert.peterson100@example.com,+1-323-555-0154,United States,Seattle,2022-04-19,none,1
+101,Ivan,Alvarado,ivan.alvarado101@example.com,+1-583-555-0127,United States,Seattle,2023-02-16,none,0
+102,Tiffany,James,tiffany.james102@example.com,+353 20 913 1966,Ireland,Limerick,2022-05-25,none,0
+103,Sarah,Norris,sarah.norris103@example.com,,Sweden,Stockholm,2023-03-12,none,1
+104,Reginald,Gonzales,reginald.gonzales104@example.com,+44 7700 900358,United Kingdom,London,2022-07-19,none,0
+105,Frederick,Perez,frederick.perez105@example.com,+1-671-555-0125,United States,Seattle,2022-01-02,none,0
+106,Brenda,Gomez,brenda.gomez106@example.com,+1-220-555-0104,Canada,Vancouver,2022-04-30,none,1
+107,Stacey,Brown,stacey.brown107@example.com,,Sweden,Malmo,2021-07-30,silver,0
+108,Jennifer,Petersen,jennifer.petersen108@example.com,,France,Marseille,2023-07-19,none,0
+109,Tammy,Garcia,tammy.garcia109@example.com,+353 20 915 4864,Ireland,Limerick,2021-09-05,none,0
+110,Teresa,Manning,teresa.manning110@example.com,+353 20 912 6420,Ireland,Limerick,2023-05-03,platinum,0
+111,Catherine,Edwards,catherine.edwards111@example.com,,Germany,Cologne,2022-03-22,none,0
+112,Holly,Jackson,holly.jackson112@example.com,,France,Paris,2021-11-05,none,1
+113,Rodney,Burns,rodney.burns113@example.com,+44 7700 900126,United Kingdom,Manchester,2022-09-04,none,0
+114,Taylor,Henson,taylor.henson114@example.com,+44 7700 900845,United Kingdom,Birmingham,2023-09-12,none,0
+115,Sierra,West,sierra.west115@example.com,,Sweden,Stockholm,2022-07-27,none,0
+116,Zachary,Romero,zachary.romero116@example.com,+1-674-555-0117,Canada,Vancouver,2022-09-23,none,0

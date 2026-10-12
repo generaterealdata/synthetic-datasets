@@ -1,0 +1,41 @@
+department_id,department_name,division,location
+1,Platform Engineering,Technology,Toronto
+2,Data Science,Technology,New York
+3,Mobile Engineering,Technology,Dublin
+4,Web Engineering,Technology,Chicago
+5,Infrastructure,Technology,London
+6,Security Engineering,Technology,Bengaluru
+7,Quality Assurance,Technology,Sydney
+8,IT Support,Technology,Austin
+9,Product Management,Product,Toronto
+10,Product Design,Product,New York
+11,User Research,Product,Dublin
+12,Technical Writing,Product,Chicago
+13,Enterprise Sales,Sales,London
+14,Mid-Market Sales,Sales,Bengaluru
+15,SMB Sales,Sales,Sydney
+16,Sales Development,Sales,Austin
+17,Sales Operations,Sales,Toronto
+18,Partnerships,Sales,New York
+19,Brand Marketing,Marketing,Dublin
+20,Growth Marketing,Marketing,Chicago
+21,Content,Marketing,London
+22,Events,Marketing,Bengaluru
+23,Product Marketing,Marketing,Sydney
+24,Customer Support,Operations,Austin
+25,Customer Success,Operations,Toronto
+26,Professional Services,Operations,New York
+27,Logistics,Operations,Dublin
+28,Procurement,Operations,Chicago
+29,Facilities,Operations,London
+30,Accounting,Finance,Bengaluru
+31,Payroll,Finance,Sydney
+32,Financial Planning,Finance,Austin
+33,Tax,Finance,Toronto
+34,Internal Audit,Finance,New York
+35,Talent Acquisition,People,Dublin
+36,People Operations,People,Chicago
+37,Learning & Development,People,London
+38,Compensation & Benefits,People,Bengaluru
+39,Legal,Legal,Sydney
+40,Compliance,Legal,Austin

@@ -1,0 +1,27 @@
+{
+  "dataset": "hospital-records",
+  "title": "Synthetic Hospital Records (No Real Patients)",
+  "generator": "GenerateRealData",
+  "generator_url": "https://generaterealdata.com/industries/healthcare/",
+  "generated_on": "2026-10-11",
+  "mode": "schema",
+  "plan": "plan.json",
+  "schema": "schema.sql",
+  "seed": 20261105,
+  "rows_requested": 300000,
+  "rows_generated": 300000,
+  "rows_per_table": {
+    "patients": 30000,
+    "providers": 600,
+    "encounters": 70000,
+    "vitals": 120000,
+    "prescriptions": 50000,
+    "claims": 29400
+  },
+  "ai_written_fields": [],
+  "ai_rows_used": 0,
+  "anomalies": false,
+  "format": "sql",
+  "dialect": "postgresql",
+  "licence": "CC-BY-4.0"
+}

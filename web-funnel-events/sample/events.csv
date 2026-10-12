@@ -1,0 +1,998 @@
+event_id,session_id,step_no,event_name,page_path,occurred_at,secs_on_step,cart_value
+1397,77226,1,session_start,/sale,2026-07-19 09:44:01,15,0
+1398,77226,2,exit,(left site),2026-07-19 09:44:13,64,0
+1575,34477,1,session_start,/blog/packing-list,2026-07-09 21:52:17,10,0
+1576,34477,2,search,/search?q=headlamp,2026-07-09 21:52:56,201,0
+1577,34477,3,view_product,/p/merino-base-layer,2026-07-09 21:53:55,6,0
+1578,34477,4,view_product,/p/trail-runner-x,2026-07-09 21:53:57,21,0
+1579,34477,5,add_to_cart,/cart,2026-07-09 21:54:04,76,53.63
+1580,34477,6,exit,(left site),2026-07-09 21:56:35,121,0
+1736,82041,1,session_start,/p/trail-runner-x,2026-09-27 07:15:59,13,0
+1737,82041,2,view_product,/p/nomad-headlamp,2026-09-27 07:16:09,25,0
+1738,82041,3,view_product,/p/alpine-2-person-tent,2026-09-27 07:16:31,10,0
+1739,82041,4,view_product,/p/summit-45l-backpack,2026-09-27 07:16:41,51,0
+1740,82041,5,exit,(left site),2026-09-27 07:17:41,9,0
+1765,80822,1,session_start,/p/trail-runner-x,2026-07-07 06:50:08,22,0
+1766,80822,2,view_product,/p/trail-runner-x,2026-07-07 06:52:23,209,0
+1767,80822,3,add_to_cart,/cart,2026-07-07 06:52:36,29,409.18
+1768,80822,4,begin_checkout,/checkout,2026-07-07 06:52:55,24,409.18
+1769,80822,5,purchase,/checkout/thank-you,2026-07-07 06:53:05,60,409.18
+4957,58036,1,session_start,/blog/packing-list,2026-07-09 09:06:02,201,0
+4958,58036,2,view_product,/p/glacier-down-sleeping-bag,2026-07-09 09:07:17,7,0
+4959,58036,3,add_to_cart,/cart,2026-07-09 09:07:42,54,125.84
+4960,58036,4,exit,(left site),2026-07-09 09:07:43,46,0
+5069,71316,1,session_start,/sale,2026-08-22 05:49:30,13,0
+5070,71316,2,view_product,/p/summit-45l-backpack,2026-08-22 05:49:31,16,0
+5071,71316,3,exit,(left site),2026-08-22 05:49:39,10,0
+5434,50415,1,session_start,/,2026-08-15 19:16:57,27,0
+5435,50415,2,view_product,/p/nomad-headlamp,2026-08-15 19:17:07,189,0
+5436,50415,3,view_product,/p/merino-base-layer,2026-08-15 19:18:02,12,0
+5437,50415,4,exit,(left site),2026-08-15 19:18:11,25,0
+5970,60354,1,session_start,/,2026-08-30 16:35:10,28,0
+5971,60354,2,exit,(left site),2026-08-30 16:36:43,7,0
+6201,2389,1,session_start,/,2026-09-12 14:15:35,97,0
+6202,2389,2,exit,(left site),2026-09-12 14:15:48,68,0
+6998,29713,1,session_start,/,2026-08-11 00:22:01,50,0
+6999,29713,2,exit,(left site),2026-08-11 00:22:02,30,0
+8495,3801,1,session_start,/category/apparel,2026-08-13 05:34:03,191,0
+8496,3801,2,exit,(left site),2026-08-13 05:34:10,10,0
+8750,47877,1,session_start,/category/footwear,2026-09-08 14:03:05,39,0
+8751,47877,2,search,/search?q=gps+watch,2026-09-08 14:03:30,62,0
+8752,47877,3,view_product,/p/summit-45l-backpack,2026-09-08 14:05:19,80,0
+8753,47877,4,view_product,/p/trail-runner-x,2026-09-08 14:06:37,18,0
+8754,47877,5,view_product,/p/glacier-down-sleeping-bag,2026-09-08 14:07:46,9,0
+8755,47877,6,add_to_cart,/cart,2026-09-08 14:08:32,40,594.63
+8756,47877,7,begin_checkout,/checkout,2026-09-08 14:08:49,82,594.63
+12037,51081,1,session_start,/blog/packing-list,2026-07-29 22:54:48,126,0
+12038,51081,2,view_product,/p/trail-runner-x,2026-07-29 22:56:59,3,0
+12039,51081,3,view_product,/p/canyon-trekking-poles,2026-07-29 22:57:42,53,0
+12040,51081,4,view_product,/p/glacier-down-sleeping-bag,2026-07-29 22:58:27,4,0
+12041,51081,5,view_product,/p/basecamp-camp-stove,2026-07-29 23:00:46,15,0
+12042,51081,6,exit,(left site),2026-07-29 23:03:31,153,0
+12393,44910,1,session_start,/category/apparel,2026-09-08 23:02:33,25,0
+12394,44910,2,search,/search?q=sleeping+bag,2026-09-08 23:04:35,22,0
+12395,44910,3,exit,(left site),2026-09-08 23:05:17,52,0
+12413,2371,1,session_start,/sale,2026-09-10 09:29:27,82,0
+12414,2371,2,search,/search?q=hiking+boots,2026-09-10 09:29:50,15,0
+12415,2371,3,view_product,/p/basecamp-camp-stove,2026-09-10 09:31:01,66,0
+12416,2371,4,view_product,/p/canyon-trekking-poles,2026-09-10 09:32:47,68,0
+12417,2371,5,view_product,/p/basecamp-camp-stove,2026-09-10 09:33:37,36,0
+12418,2371,6,exit,(left site),2026-09-10 09:34:02,221,0
+13718,10963,1,session_start,/category/footwear,2026-08-20 18:04:27,8,0
+13719,10963,2,view_product,/p/vertex-gps-watch,2026-08-20 18:04:40,24,0
+13720,10963,3,add_to_cart,/cart,2026-08-20 18:06:26,96,34.97
+13721,10963,4,begin_checkout,/checkout,2026-08-20 18:07:06,7,34.97
+13722,10963,5,purchase,/checkout/thank-you,2026-08-20 18:08:50,10,34.97
+14257,75277,1,session_start,/,2026-09-27 23:23:54,37,0
+14258,75277,2,view_product,/p/horizon-hiking-boot,2026-09-27 23:25:30,179,0
+14259,75277,3,exit,(left site),2026-09-27 23:25:36,217,0
+14445,78384,1,session_start,/category/footwear,2026-09-05 16:30:54,4,0
+14446,78384,2,view_product,/p/trail-runner-x,2026-09-05 16:31:15,14,0
+14447,78384,3,add_to_cart,/cart,2026-09-05 16:31:45,7,393.96
+14448,78384,4,begin_checkout,/checkout,2026-09-05 16:32:32,44,393.96
+14449,78384,5,exit,(left site),2026-09-05 16:32:33,48,0
+16472,36261,1,session_start,/category/footwear,2026-08-28 03:04:45,150,0
+16473,36261,2,search,/search?q=headlamp,2026-08-28 03:05:59,204,0
+16474,36261,3,view_product,/p/summit-45l-backpack,2026-08-28 03:06:35,21,0
+16475,36261,4,exit,(left site),2026-08-28 03:06:36,91,0
+20465,68129,1,session_start,/,2026-08-15 17:50:48,21,0
+20466,68129,2,search,/search?q=backpack+45l,2026-08-15 17:50:49,48,0
+20467,68129,3,view_product,/p/alpine-2-person-tent,2026-08-15 17:51:02,5,0
+20468,68129,4,view_product,/p/alpine-2-person-tent,2026-08-15 17:51:59,69,0
+20469,68129,5,exit,(left site),2026-08-15 17:52:10,16,0
+20960,18090,1,session_start,/category/footwear,2026-07-03 12:36:22,8,0
+20961,18090,2,search,/search?q=backpack+45l,2026-07-03 12:38:06,50,0
+20962,18090,3,view_product,/p/canyon-trekking-poles,2026-07-03 12:38:43,27,0
+20963,18090,4,exit,(left site),2026-07-03 12:38:49,36,0
+22277,39879,1,session_start,/category/tents,2026-09-21 11:14:01,178,0
+22278,39879,2,view_product,/p/basecamp-camp-stove,2026-09-21 11:14:11,13,0
+22279,39879,3,view_product,/p/nomad-headlamp,2026-09-21 11:14:47,58,0
+22280,39879,4,exit,(left site),2026-09-21 11:15:16,136,0
+25513,60261,1,session_start,/category/apparel,2026-08-23 00:30:38,50,0
+25514,60261,2,view_product,/p/basecamp-camp-stove,2026-08-23 00:31:41,64,0
+25515,60261,3,exit,(left site),2026-08-23 00:31:42,32,0
+28530,54095,1,session_start,/category/tents,2026-09-20 01:09:54,65,0
+28531,54095,2,search,/search?q=backpack+45l,2026-09-20 01:10:01,27,0
+28532,54095,3,exit,(left site),2026-09-20 01:10:48,21,0
+29244,32174,1,session_start,/category/tents,2026-07-10 10:34:24,13,0
+29245,32174,2,exit,(left site),2026-07-10 10:34:57,86,0
+30650,5908,1,session_start,/,2026-09-05 02:30:07,69,0
+30651,5908,2,view_product,/p/vertex-gps-watch,2026-09-05 02:30:55,10,0
+30652,5908,3,add_to_cart,/cart,2026-09-05 02:31:01,61,454.52
+30653,5908,4,begin_checkout,/checkout,2026-09-05 02:31:45,139,454.52
+30654,5908,5,exit,(left site),2026-09-05 02:31:55,16,0
+31126,37249,1,session_start,/sale,2026-07-17 11:01:52,163,0
+31127,37249,2,view_product,/p/canyon-trekking-poles,2026-07-17 11:02:08,200,0
+31128,37249,3,add_to_cart,/cart,2026-07-17 11:02:25,23,193.31
+31129,37249,4,exit,(left site),2026-07-17 11:03:59,33,0
+33603,65107,1,session_start,/,2026-08-11 09:50:48,82,0
+33604,65107,2,view_product,/p/basecamp-camp-stove,2026-08-11 09:52:38,27,0
+33605,65107,3,exit,(left site),2026-08-11 09:55:19,194,0
+34650,56528,1,session_start,/sale,2026-09-07 16:10:35,92,0
+34651,56528,2,exit,(left site),2026-09-07 16:11:55,209,0
+34728,41357,1,session_start,/,2026-07-04 06:21:33,10,0
+34729,41357,2,view_product,/p/merino-base-layer,2026-07-04 06:21:37,200,0
+34730,41357,3,exit,(left site),2026-07-04 06:21:41,135,0
+36523,66940,1,session_start,/,2026-07-02 17:20:16,80,0
+36524,66940,2,exit,(left site),2026-07-02 17:20:17,20,0
+36914,25747,1,session_start,/,2026-08-18 22:44:05,79,0
+36915,25747,2,search,/search?q=backpack+45l,2026-08-18 22:44:13,5,0
+36916,25747,3,exit,(left site),2026-08-18 22:44:43,237,0
+38582,49239,1,session_start,/category/apparel,2026-07-11 04:14:25,5,0
+38583,49239,2,exit,(left site),2026-07-11 04:14:33,55,0
+38687,38566,1,session_start,/,2026-08-01 07:10:36,41,0
+38688,38566,2,search,/search?q=sleeping+bag,2026-08-01 07:10:41,13,0
+38689,38566,3,exit,(left site),2026-08-01 07:11:16,152,0
+39858,12213,1,session_start,/p/trail-runner-x,2026-08-02 15:50:52,160,0
+39859,12213,2,view_product,/p/canyon-trekking-poles,2026-08-02 15:50:53,6,0
+39860,12213,3,exit,(left site),2026-08-02 15:50:54,4,0
+40482,36661,1,session_start,/sale,2026-07-05 21:48:55,162,0
+40483,36661,2,view_product,/p/trail-runner-x,2026-07-05 21:48:59,35,0
+40484,36661,3,exit,(left site),2026-07-05 21:49:22,215,0
+41246,17264,1,session_start,/category/footwear,2026-08-12 15:02:38,26,0
+41247,17264,2,view_product,/p/nomad-headlamp,2026-08-12 15:02:56,20,0
+41248,17264,3,view_product,/p/ridge-rain-jacket,2026-08-12 15:03:48,22,0
+41249,17264,4,view_product,/p/glacier-down-sleeping-bag,2026-08-12 15:05:39,4,0
+41250,17264,5,exit,(left site),2026-08-12 15:05:56,23,0
+42159,18548,1,session_start,/sale,2026-07-15 19:35:29,4,0
+42160,18548,2,exit,(left site),2026-07-15 19:38:24,205,0
+42936,42933,1,session_start,/blog/packing-list,2026-08-25 03:14:25,20,0
+42937,42933,2,exit,(left site),2026-08-25 03:14:58,80,0
+44027,66040,1,session_start,/category/footwear,2026-07-24 20:33:24,19,0
+44028,66040,2,view_product,/p/basecamp-camp-stove,2026-07-24 20:33:58,21,0
+44029,66040,3,add_to_cart,/cart,2026-07-24 20:34:05,5,407.6
+44030,66040,4,exit,(left site),2026-07-24 20:35:37,80,0
+45466,33818,1,session_start,/p/alpine-2-person-tent,2026-07-11 22:48:27,163,0
+45467,33818,2,search,/search?q=gps+watch,2026-07-11 22:48:41,16,0
+45468,33818,3,view_product,/p/summit-45l-backpack,2026-07-11 22:48:47,11,0
+45469,33818,4,view_product,/p/alpine-2-person-tent,2026-07-11 22:50:12,222,0
+45470,33818,5,view_product,/p/nomad-headlamp,2026-07-11 22:51:31,88,0
+45471,33818,6,exit,(left site),2026-07-11 22:52:40,24,0
+48314,5295,1,session_start,/,2026-07-24 19:48:18,15,0
+48315,5295,2,search,/search?q=headlamp,2026-07-24 19:48:52,21,0
+48316,5295,3,view_product,/p/tundra-wool-beanie,2026-07-24 19:49:06,17,0
+48317,5295,4,add_to_cart,/cart,2026-07-24 19:49:49,74,466.05
+48318,5295,5,begin_checkout,/checkout,2026-07-24 19:50:25,22,466.05
+48319,5295,6,exit,(left site),2026-07-24 19:50:54,88,0
+49470,45602,1,session_start,/p/trail-runner-x,2026-07-06 16:30:53,4,0
+49471,45602,2,exit,(left site),2026-07-06 16:31:09,29,0
+49472,79315,1,session_start,/,2026-07-06 12:54:21,162,0
+49473,79315,2,exit,(left site),2026-07-06 12:54:46,88,0
+50580,46881,1,session_start,/blog/packing-list,2026-09-02 01:43:48,65,0
+50581,46881,2,view_product,/p/ridge-rain-jacket,2026-09-02 01:44:56,50,0
+50582,46881,3,view_product,/p/tundra-wool-beanie,2026-09-02 01:45:22,43,0
+50583,46881,4,exit,(left site),2026-09-02 01:45:23,10,0
+51296,51600,1,session_start,/p/trail-runner-x,2026-08-01 21:05:04,115,0
+51297,51600,2,view_product,/p/alpine-2-person-tent,2026-08-01 21:05:38,226,0
+51298,51600,3,add_to_cart,/cart,2026-08-01 21:06:17,47,579
+51299,51600,4,begin_checkout,/checkout,2026-08-01 21:08:11,26,579
+51300,51600,5,purchase,/checkout/thank-you,2026-08-01 21:10:07,63,579
+51633,6739,1,session_start,/category/apparel,2026-07-05 22:22:25,217,0
+51634,6739,2,exit,(left site),2026-07-05 22:22:49,179,0
+53319,3758,1,session_start,/p/alpine-2-person-tent,2026-08-07 01:50:27,236,0
+53320,3758,2,view_product,/p/alpine-2-person-tent,2026-08-07 01:51:07,23,0
+53321,3758,3,add_to_cart,/cart,2026-08-07 01:52:21,24,431.02
+53322,3758,4,view_product,/p/summit-45l-backpack,2026-08-07 01:52:42,10,0
+53323,3758,5,view_product,/p/trail-runner-x,2026-08-07 01:53:03,159,0
+53324,3758,6,exit,(left site),2026-08-07 01:53:07,19,0
+53421,73385,1,session_start,/sale,2026-07-18 21:02:27,26,0
+53422,73385,2,search,/search?q=hiking+boots,2026-07-18 21:03:34,75,0
+53423,73385,3,view_product,/p/merino-base-layer,2026-07-18 21:05:31,88,0
+53424,73385,4,add_to_cart,/cart,2026-07-18 21:05:32,67,568.15
+53425,73385,5,begin_checkout,/checkout,2026-07-18 21:05:33,21,568.15
+53426,73385,6,exit,(left site),2026-07-18 21:05:35,79,0
+54826,40781,1,session_start,/p/alpine-2-person-tent,2026-08-12 01:52:28,7,0
+54827,40781,2,exit,(left site),2026-08-12 01:53:21,83,0
+55569,45832,1,session_start,/blog/packing-list,2026-09-26 10:58:47,168,0
+55570,45832,2,search,/search?q=headlamp,2026-09-26 10:59:09,75,0
+55571,45832,3,exit,(left site),2026-09-26 11:00:50,77,0
+57941,14471,1,session_start,/category/apparel,2026-07-19 06:20:15,43,0
+57942,14471,2,view_product,/p/glacier-down-sleeping-bag,2026-07-19 06:20:31,194,0
+57943,14471,3,add_to_cart,/cart,2026-07-19 06:21:02,50,543.49
+57944,14471,4,view_product,/p/tundra-wool-beanie,2026-07-19 06:22:47,26,0
+57945,14471,5,exit,(left site),2026-07-19 06:22:49,13,0
+59493,64653,1,session_start,/p/alpine-2-person-tent,2026-07-20 21:53:01,239,0
+59494,64653,2,search,/search?q=tent,2026-07-20 21:53:08,223,0
+59495,64653,3,exit,(left site),2026-07-20 21:53:11,27,0
+59518,17505,1,session_start,/category/footwear,2026-08-22 11:51:24,14,0
+59519,17505,2,search,/search?q=gps+watch,2026-08-22 11:52:22,56,0
+59520,17505,3,exit,(left site),2026-08-22 11:53:14,4,0
+63080,61154,1,session_start,/category/apparel,2026-07-08 10:42:38,23,0
+63081,61154,2,exit,(left site),2026-07-08 10:43:10,139,0
+65314,63708,1,session_start,/category/footwear,2026-09-03 20:02:03,114,0
+65315,63708,2,view_product,/p/horizon-hiking-boot,2026-09-03 20:02:35,36,0
+65316,63708,3,add_to_cart,/cart,2026-09-03 20:03:12,20,596.52
+65317,63708,4,begin_checkout,/checkout,2026-09-03 20:03:47,107,596.52
+65318,63708,5,exit,(left site),2026-09-03 20:05:16,20,0
+67099,66739,1,session_start,/,2026-09-16 06:19:31,9,0
+67100,66739,2,view_product,/p/canyon-trekking-poles,2026-09-16 06:19:58,35,0
+67101,66739,3,add_to_cart,/cart,2026-09-16 06:19:59,63,186.41
+67102,66739,4,exit,(left site),2026-09-16 06:20:32,47,0
+69829,58322,1,session_start,/category/footwear,2026-08-21 20:36:16,207,0
+69830,58322,2,view_product,/p/vertex-gps-watch,2026-08-21 20:36:29,74,0
+69831,58322,3,exit,(left site),2026-08-21 20:38:02,11,0
+73538,24494,1,session_start,/category/tents,2026-07-17 16:24:06,60,0
+73539,24494,2,view_product,/p/trail-runner-x,2026-07-17 16:24:38,55,0
+73540,24494,3,add_to_cart,/cart,2026-07-17 16:24:50,18,419.86
+73541,24494,4,begin_checkout,/checkout,2026-07-17 16:24:57,50,419.86
+73542,24494,5,exit,(left site),2026-07-17 16:25:01,64,0
+73680,26199,1,session_start,/category/apparel,2026-07-10 21:14:48,15,0
+73681,26199,2,search,/search?q=tent,2026-07-10 21:15:13,145,0
+73682,26199,3,view_product,/p/glacier-down-sleeping-bag,2026-07-10 21:15:14,239,0
+73683,26199,4,exit,(left site),2026-07-10 21:15:37,45,0
+75920,40358,1,session_start,/category/tents,2026-09-14 10:44:27,33,0
+75921,40358,2,search,/search?q=headlamp,2026-09-14 10:45:24,13,0
+75922,40358,3,view_product,/p/basecamp-camp-stove,2026-09-14 10:46:51,93,0
+75923,40358,4,view_product,/p/canyon-trekking-poles,2026-09-14 10:46:52,126,0
+75924,40358,5,view_product,/p/tundra-wool-beanie,2026-09-14 10:48:39,77,0
+75925,40358,6,exit,(left site),2026-09-14 10:49:34,16,0
+78279,58622,1,session_start,/,2026-09-05 08:17:00,54,0
+78280,58622,2,view_product,/p/summit-45l-backpack,2026-09-05 08:17:53,55,0
+78281,58622,3,exit,(left site),2026-09-05 08:18:11,70,0
+79097,11667,1,session_start,/category/tents,2026-09-12 08:42:13,100,0
+79098,11667,2,view_product,/p/merino-base-layer,2026-09-12 08:42:40,28,0
+79099,11667,3,view_product,/p/alpine-2-person-tent,2026-09-12 08:42:55,13,0
+79100,11667,4,exit,(left site),2026-09-12 08:44:20,140,0
+79363,17180,1,session_start,/,2026-07-30 21:16:14,13,0
+79364,17180,2,view_product,/p/basecamp-camp-stove,2026-07-30 21:17:09,23,0
+79365,17180,3,view_product,/p/summit-45l-backpack,2026-07-30 21:19:06,65,0
+79366,17180,4,exit,(left site),2026-07-30 21:19:10,11,0
+80526,60546,1,session_start,/sale,2026-09-14 18:05:25,233,0
+80527,60546,2,view_product,/p/summit-45l-backpack,2026-09-14 18:06:11,17,0
+80528,60546,3,exit,(left site),2026-09-14 18:06:32,25,0
+80551,21135,1,session_start,/blog/packing-list,2026-09-22 10:50:40,120,0
+80552,21135,2,search,/search?q=headlamp,2026-09-22 10:51:58,27,0
+80553,21135,3,view_product,/p/ridge-rain-jacket,2026-09-22 10:52:49,24,0
+80554,21135,4,add_to_cart,/cart,2026-09-22 10:53:21,231,595.65
+80555,21135,5,view_product,/p/nomad-headlamp,2026-09-22 10:53:22,39,0
+80556,21135,6,exit,(left site),2026-09-22 10:53:43,87,0
+81250,53065,1,session_start,/sale,2026-08-27 19:44:10,41,0
+81251,53065,2,view_product,/p/horizon-hiking-boot,2026-08-27 19:45:36,19,0
+81252,53065,3,exit,(left site),2026-08-27 19:46:29,67,0
+81345,65627,1,session_start,/p/trail-runner-x,2026-08-27 02:50:48,41,0
+81346,65627,2,search,/search?q=hiking+boots,2026-08-27 02:50:50,91,0
+81347,65627,3,exit,(left site),2026-08-27 02:51:30,9,0
+83189,45506,1,session_start,/,2026-07-01 18:36:20,51,0
+83190,45506,2,view_product,/p/vertex-gps-watch,2026-07-01 18:38:53,3,0
+83191,45506,3,view_product,/p/basecamp-camp-stove,2026-07-01 18:40:23,19,0
+83192,45506,4,view_product,/p/horizon-hiking-boot,2026-07-01 18:40:55,20,0
+83193,45506,5,view_product,/p/alpine-2-person-tent,2026-07-01 18:41:06,18,0
+83194,45506,6,view_product,/p/glacier-down-sleeping-bag,2026-07-01 18:41:57,14,0
+83195,45506,7,exit,(left site),2026-07-01 18:42:06,7,0
+83752,42657,1,session_start,/sale,2026-09-21 19:25:30,194,0
+83753,42657,2,view_product,/p/vertex-gps-watch,2026-09-21 19:25:53,3,0
+83754,42657,3,add_to_cart,/cart,2026-09-21 19:26:20,8,232.83
+83755,42657,4,begin_checkout,/checkout,2026-09-21 19:26:50,182,232.83
+83756,42657,5,purchase,/checkout/thank-you,2026-09-21 19:27:18,74,232.83
+83946,46090,1,session_start,/category/apparel,2026-09-21 13:13:13,154,0
+83947,46090,2,view_product,/p/nomad-headlamp,2026-09-21 13:14:30,16,0
+83948,46090,3,view_product,/p/vertex-gps-watch,2026-09-21 13:15:12,207,0
+83949,46090,4,add_to_cart,/cart,2026-09-21 13:15:29,6,67.1
+83950,46090,5,begin_checkout,/checkout,2026-09-21 13:15:50,87,67.1
+83951,46090,6,purchase,/checkout/thank-you,2026-09-21 13:17:01,133,67.1
+84355,4562,1,session_start,/sale,2026-08-17 10:51:11,13,0
+84356,4562,2,exit,(left site),2026-08-17 10:51:22,30,0
+84575,49862,1,session_start,/sale,2026-08-07 13:50:50,7,0
+84576,49862,2,view_product,/p/summit-45l-backpack,2026-08-07 13:55:35,164,0
+84577,49862,3,exit,(left site),2026-08-07 13:57:09,13,0
+86156,37773,1,session_start,/sale,2026-07-08 23:07:30,231,0
+86157,37773,2,view_product,/p/vertex-gps-watch,2026-07-08 23:08:02,22,0
+86158,37773,3,view_product,/p/nomad-headlamp,2026-07-08 23:08:14,83,0
+86159,37773,4,add_to_cart,/cart,2026-07-08 23:08:31,10,153.87
+86160,37773,5,begin_checkout,/checkout,2026-07-08 23:09:33,5,153.87
+86161,37773,6,exit,(left site),2026-07-08 23:10:35,20,0
+87275,38001,1,session_start,/blog/packing-list,2026-07-12 18:19:21,9,0
+87276,38001,2,view_product,/p/tundra-wool-beanie,2026-07-12 18:19:34,85,0
+87277,38001,3,exit,(left site),2026-07-12 18:19:45,174,0
+87806,17370,1,session_start,/,2026-07-26 16:56:38,54,0
+87807,17370,2,exit,(left site),2026-07-26 16:56:41,14,0
+89584,6655,1,session_start,/p/trail-runner-x,2026-09-15 19:58:21,68,0
+89585,6655,2,view_product,/p/glacier-down-sleeping-bag,2026-09-15 19:59:34,20,0
+89586,6655,3,exit,(left site),2026-09-15 20:00:01,57,0
+89830,68289,1,session_start,/,2026-07-04 10:03:37,77,0
+89831,68289,2,exit,(left site),2026-07-04 10:05:10,29,0
+91351,74250,1,session_start,/,2026-08-27 16:28:51,30,0
+91352,74250,2,exit,(left site),2026-08-27 16:29:25,21,0
+92612,52901,1,session_start,/,2026-09-04 02:49:00,85,0
+92613,52901,2,search,/search?q=backpack+45l,2026-09-04 02:49:18,23,0
+92614,52901,3,exit,(left site),2026-09-04 02:50:02,70,0
+92655,26408,1,session_start,/sale,2026-07-20 04:24:25,56,0
+92656,26408,2,exit,(left site),2026-07-20 04:25:23,58,0
+92870,72760,1,session_start,/p/trail-runner-x,2026-08-12 14:26:10,29,0
+92871,72760,2,exit,(left site),2026-08-12 14:27:14,82,0
+94444,15751,1,session_start,/p/alpine-2-person-tent,2026-09-26 19:20:35,13,0
+94445,15751,2,view_product,/p/merino-base-layer,2026-09-26 19:20:50,177,0
+94446,15751,3,exit,(left site),2026-09-26 19:21:16,11,0
+95822,58410,1,session_start,/category/footwear,2026-08-17 01:35:05,21,0
+95823,58410,2,exit,(left site),2026-08-17 01:35:53,26,0
+96285,54991,1,session_start,/,2026-07-27 10:53:29,23,0
+96286,54991,2,search,/search?q=headlamp,2026-07-27 10:54:11,160,0
+96287,54991,3,view_product,/p/nomad-headlamp,2026-07-27 10:56:53,164,0
+96288,54991,4,add_to_cart,/cart,2026-07-27 10:56:56,60,597.29
+96289,54991,5,view_product,/p/nomad-headlamp,2026-07-27 10:57:08,151,0
+96290,54991,6,view_product,/p/canyon-trekking-poles,2026-07-27 10:58:32,6,0
+96291,54991,7,exit,(left site),2026-07-27 10:58:56,202,0
+96306,64766,1,session_start,/p/trail-runner-x,2026-07-26 12:24:59,64,0
+96307,64766,2,exit,(left site),2026-07-26 12:25:13,23,0
+96788,49503,1,session_start,/,2026-07-02 08:50:35,66,0
+96789,49503,2,view_product,/p/trail-runner-x,2026-07-02 08:51:48,38,0
+96790,49503,3,add_to_cart,/cart,2026-07-02 08:53:16,51,72.57
+96791,49503,4,begin_checkout,/checkout,2026-07-02 08:53:30,84,72.57
+96792,49503,5,purchase,/checkout/thank-you,2026-07-02 08:53:46,192,72.57
+97484,65499,1,session_start,/p/alpine-2-person-tent,2026-07-26 21:36:43,9,0
+97485,65499,2,search,/search?q=trekking+poles,2026-07-26 21:36:56,57,0
+97486,65499,3,view_product,/p/horizon-hiking-boot,2026-07-26 21:37:11,10,0
+97487,65499,4,add_to_cart,/cart,2026-07-26 21:37:16,144,270.81
+97488,65499,5,begin_checkout,/checkout,2026-07-26 21:39:30,7,270.81
+97489,65499,6,purchase,/checkout/thank-you,2026-07-26 21:40:51,76,270.81
+98187,74688,1,session_start,/sale,2026-07-04 06:48:40,20,0
+98188,74688,2,search,/search?q=gps+watch,2026-07-04 06:49:44,10,0
+98189,74688,3,view_product,/p/merino-base-layer,2026-07-04 06:50:49,70,0
+98190,74688,4,exit,(left site),2026-07-04 06:51:37,80,0
+98591,20161,1,session_start,/blog/packing-list,2026-08-24 00:27:28,11,0
+98592,20161,2,view_product,/p/alpine-2-person-tent,2026-08-24 00:29:22,22,0
+98593,20161,3,view_product,/p/vertex-gps-watch,2026-08-24 00:30:20,53,0
+98594,20161,4,view_product,/p/tundra-wool-beanie,2026-08-24 00:30:21,27,0
+98595,20161,5,exit,(left site),2026-08-24 00:31:07,28,0
+99634,4062,1,session_start,/category/footwear,2026-09-25 18:27:32,29,0
+99635,4062,2,view_product,/p/canyon-trekking-poles,2026-09-25 18:27:52,29,0
+99636,4062,3,exit,(left site),2026-09-25 18:29:26,152,0
+101111,69749,1,session_start,/sale,2026-08-17 00:31:59,23,0
+101112,69749,2,exit,(left site),2026-08-17 00:32:04,152,0
+101658,15295,1,session_start,/category/tents,2026-08-18 00:34:03,75,0
+101659,15295,2,view_product,/p/basecamp-camp-stove,2026-08-18 00:34:27,23,0
+101660,15295,3,view_product,/p/alpine-2-person-tent,2026-08-18 00:35:58,7,0
+101661,15295,4,exit,(left site),2026-08-18 00:36:10,6,0
+104514,26669,1,session_start,/p/alpine-2-person-tent,2026-08-01 04:10:43,61,0
+104515,26669,2,view_product,/p/summit-45l-backpack,2026-08-01 04:12:37,32,0
+104516,26669,3,exit,(left site),2026-08-01 04:12:38,69,0
+104946,80050,1,session_start,/category/footwear,2026-07-02 00:25:18,48,0
+104947,80050,2,view_product,/p/tundra-wool-beanie,2026-07-02 00:25:23,36,0
+104948,80050,3,exit,(left site),2026-07-02 00:26:02,77,0
+107641,73807,1,session_start,/category/footwear,2026-08-28 08:33:21,9,0
+107642,73807,2,exit,(left site),2026-08-28 08:35:05,31,0
+108394,35854,1,session_start,/,2026-07-26 13:13:11,36,0
+108395,35854,2,exit,(left site),2026-07-26 13:16:30,74,0
+110624,23777,1,session_start,/category/tents,2026-08-13 05:11:01,39,0
+110625,23777,2,exit,(left site),2026-08-13 05:11:13,52,0
+111603,68631,1,session_start,/category/footwear,2026-09-22 22:43:41,12,0
+111604,68631,2,search,/search?q=backpack+45l,2026-09-22 22:45:21,54,0
+111605,68631,3,view_product,/p/basecamp-camp-stove,2026-09-22 22:45:59,14,0
+111606,68631,4,view_product,/p/summit-45l-backpack,2026-09-22 22:46:00,28,0
+111607,68631,5,view_product,/p/ridge-rain-jacket,2026-09-22 22:46:42,53,0
+111608,68631,6,add_to_cart,/cart,2026-09-22 22:46:50,23,253.89
+111609,68631,7,exit,(left site),2026-09-22 22:47:36,65,0
+114127,40695,1,session_start,/p/trail-runner-x,2026-09-29 06:51:09,69,0
+114128,40695,2,search,/search?q=sleeping+bag,2026-09-29 06:52:34,63,0
+114129,40695,3,exit,(left site),2026-09-29 06:54:20,39,0
+115783,12225,1,session_start,/,2026-07-30 19:41:05,10,0
+115784,12225,2,view_product,/p/ridge-rain-jacket,2026-07-30 19:41:31,41,0
+115785,12225,3,add_to_cart,/cart,2026-07-30 19:42:46,26,522.75
+115786,12225,4,begin_checkout,/checkout,2026-07-30 19:42:57,24,522.75
+115787,12225,5,purchase,/checkout/thank-you,2026-07-30 19:44:09,112,522.75
+116974,49448,1,session_start,/p/alpine-2-person-tent,2026-07-21 07:28:08,60,0
+116975,49448,2,search,/search?q=hiking+boots,2026-07-21 07:32:17,136,0
+116976,49448,3,view_product,/p/alpine-2-person-tent,2026-07-21 07:32:48,161,0
+116977,49448,4,add_to_cart,/cart,2026-07-21 07:35:29,74,397.12
+116978,49448,5,begin_checkout,/checkout,2026-07-21 07:35:34,9,397.12
+116979,49448,6,exit,(left site),2026-07-21 07:36:03,72,0
+119674,80160,1,session_start,/,2026-07-17 23:36:15,28,0
+119675,80160,2,exit,(left site),2026-07-17 23:38:06,125,0
+121348,13129,1,session_start,/p/trail-runner-x,2026-08-16 09:41:08,184,0
+121349,13129,2,view_product,/p/ridge-rain-jacket,2026-08-16 09:41:29,10,0
+121350,13129,3,view_product,/p/vertex-gps-watch,2026-08-16 09:41:34,22,0
+121351,13129,4,exit,(left site),2026-08-16 09:41:38,12,0
+121581,37413,1,session_start,/category/tents,2026-07-05 10:25:32,152,0
+121582,37413,2,search,/search?q=backpack+45l,2026-07-05 10:26:13,23,0
+121583,37413,3,view_product,/p/trail-runner-x,2026-07-05 10:27:53,81,0
+121584,37413,4,view_product,/p/summit-45l-backpack,2026-07-05 10:28:45,22,0
+121585,37413,5,add_to_cart,/cart,2026-07-05 10:29:36,70,310.47
+121586,37413,6,begin_checkout,/checkout,2026-07-05 10:29:45,30,310.47
+121587,37413,7,purchase,/checkout/thank-you,2026-07-05 10:29:59,22,310.47
+123914,76766,1,session_start,/,2026-07-09 13:52:31,43,0
+123915,76766,2,search,/search?q=hiking+boots,2026-07-09 13:52:41,237,0
+123916,76766,3,view_product,/p/ridge-rain-jacket,2026-07-09 13:53:16,28,0
+123917,76766,4,view_product,/p/alpine-2-person-tent,2026-07-09 13:54:19,161,0
+123918,76766,5,exit,(left site),2026-07-09 13:54:30,234,0
+124343,62180,1,session_start,/p/trail-runner-x,2026-08-11 22:07:19,44,0
+124344,62180,2,view_product,/p/canyon-trekking-poles,2026-08-11 22:07:28,110,0
+124345,62180,3,exit,(left site),2026-08-11 22:07:57,196,0
+124576,57881,1,session_start,/blog/packing-list,2026-08-07 02:19:06,10,0
+124577,57881,2,search,/search?q=gps+watch,2026-08-07 02:19:35,39,0
+124578,57881,3,view_product,/p/nomad-headlamp,2026-08-07 02:19:36,88,0
+124579,57881,4,exit,(left site),2026-08-07 02:19:37,10,0
+128314,61356,1,session_start,/p/trail-runner-x,2026-07-07 06:13:30,114,0
+128315,61356,2,exit,(left site),2026-07-07 06:14:05,158,0
+128467,55521,1,session_start,/,2026-09-25 14:31:56,28,0
+128468,55521,2,view_product,/p/alpine-2-person-tent,2026-09-25 14:33:19,88,0
+128469,55521,3,view_product,/p/trail-runner-x,2026-09-25 14:33:39,25,0
+128470,55521,4,exit,(left site),2026-09-25 14:34:21,30,0
+128494,7246,1,session_start,/,2026-09-03 22:15:38,10,0
+128495,7246,2,exit,(left site),2026-09-03 22:15:56,210,0
+130754,19377,1,session_start,/,2026-07-30 17:25:35,7,0
+130755,19377,2,search,/search?q=backpack+45l,2026-07-30 17:25:41,5,0
+130756,19377,3,view_product,/p/nomad-headlamp,2026-07-30 17:28:45,28,0
+130757,19377,4,exit,(left site),2026-07-30 17:29:39,48,0
+132219,26745,1,session_start,/,2026-08-04 21:21:21,78,0
+132220,26745,2,view_product,/p/horizon-hiking-boot,2026-08-04 21:21:39,102,0
+132221,26745,3,exit,(left site),2026-08-04 21:23:43,76,0
+133611,8813,1,session_start,/p/alpine-2-person-tent,2026-07-16 06:47:10,78,0
+133612,8813,2,view_product,/p/basecamp-camp-stove,2026-07-16 06:47:11,35,0
+133613,8813,3,add_to_cart,/cart,2026-07-16 06:47:22,24,596.47
+133614,8813,4,begin_checkout,/checkout,2026-07-16 06:47:46,76,596.47
+133615,8813,5,purchase,/checkout/thank-you,2026-07-16 06:47:54,36,596.47
+135001,11060,1,session_start,/p/trail-runner-x,2026-09-17 18:34:35,35,0
+135002,11060,2,view_product,/p/trail-runner-x,2026-09-17 18:34:39,12,0
+135003,11060,3,add_to_cart,/cart,2026-09-17 18:34:42,13,111.4
+135004,11060,4,begin_checkout,/checkout,2026-09-17 18:35:24,57,111.4
+135005,11060,5,purchase,/checkout/thank-you,2026-09-17 18:36:21,27,111.4
+135158,4508,1,session_start,/,2026-07-03 19:45:42,188,0
+135159,4508,2,search,/search?q=sleeping+bag,2026-07-03 19:45:59,29,0
+135160,4508,3,view_product,/p/summit-45l-backpack,2026-07-03 19:46:10,71,0
+135161,4508,4,add_to_cart,/cart,2026-07-03 19:47:07,24,153.52
+135162,4508,5,begin_checkout,/checkout,2026-07-03 19:47:08,52,153.52
+135163,4508,6,exit,(left site),2026-07-03 19:49:02,20,0
+135186,30219,1,session_start,/sale,2026-07-20 01:52:33,28,0
+135187,30219,2,view_product,/p/tundra-wool-beanie,2026-07-20 01:53:04,25,0
+135188,30219,3,exit,(left site),2026-07-20 01:53:38,53,0
+137598,13504,1,session_start,/,2026-08-18 01:07:04,70,0
+137599,13504,2,view_product,/p/summit-45l-backpack,2026-08-18 01:07:11,21,0
+137600,13504,3,exit,(left site),2026-08-18 01:07:29,47,0
+137864,58304,1,session_start,/sale,2026-08-20 22:40:28,31,0
+137865,58304,2,search,/search?q=tent,2026-08-20 22:41:35,193,0
+137866,58304,3,view_product,/p/nomad-headlamp,2026-08-20 22:42:04,3,0
+137867,58304,4,view_product,/p/glacier-down-sleeping-bag,2026-08-20 22:42:28,184,0
+137868,58304,5,exit,(left site),2026-08-20 22:42:49,21,0
+138224,10705,1,session_start,/,2026-09-21 22:22:19,29,0
+138225,10705,2,search,/search?q=backpack+45l,2026-09-21 22:22:28,28,0
+138226,10705,3,view_product,/p/summit-45l-backpack,2026-09-21 22:22:57,5,0
+138227,10705,4,add_to_cart,/cart,2026-09-21 22:23:48,9,78.95
+138228,10705,5,view_product,/p/canyon-trekking-poles,2026-09-21 22:24:16,16,0
+138229,10705,6,add_to_cart,/cart,2026-09-21 22:26:49,101,78.95
+138230,10705,7,exit,(left site),2026-09-21 22:27:01,6,0
+139148,55489,1,session_start,/sale,2026-07-17 10:15:25,10,0
+139149,55489,2,view_product,/p/canyon-trekking-poles,2026-07-17 10:16:35,36,0
+139150,55489,3,exit,(left site),2026-07-17 10:17:34,16,0
+140537,18165,1,session_start,/sale,2026-07-13 22:18:12,18,0
+140538,18165,2,view_product,/p/glacier-down-sleeping-bag,2026-07-13 22:18:14,81,0
+140539,18165,3,exit,(left site),2026-07-13 22:19:59,15,0
+142821,59655,1,session_start,/category/tents,2026-07-26 20:37:50,85,0
+142822,59655,2,search,/search?q=sleeping+bag,2026-07-26 20:38:20,128,0
+142823,59655,3,view_product,/p/basecamp-camp-stove,2026-07-26 20:40:16,89,0
+142824,59655,4,view_product,/p/nomad-headlamp,2026-07-26 20:41:27,34,0
+142825,59655,5,exit,(left site),2026-07-26 20:42:36,62,0
+143363,33146,1,session_start,/category/footwear,2026-08-01 23:59:13,28,0
+143364,33146,2,view_product,/p/trail-runner-x,2026-08-02 00:00:47,195,0
+143365,33146,3,add_to_cart,/cart,2026-08-02 00:01:03,16,536.74
+143366,33146,4,exit,(left site),2026-08-02 00:02:24,43,0
+146075,44604,1,session_start,/sale,2026-07-26 19:54:51,94,0
+146076,44604,2,exit,(left site),2026-07-26 19:55:14,62,0
+147335,56986,1,session_start,/category/footwear,2026-09-28 12:52:54,163,0
+147336,56986,2,view_product,/p/basecamp-camp-stove,2026-09-28 12:53:26,112,0
+147337,56986,3,add_to_cart,/cart,2026-09-28 12:56:54,21,46.34
+147338,56986,4,begin_checkout,/checkout,2026-09-28 12:57:28,6,46.34
+147339,56986,5,purchase,/checkout/thank-you,2026-09-28 12:59:39,23,46.34
+147529,66504,1,session_start,/,2026-08-09 18:40:37,32,0
+147530,66504,2,exit,(left site),2026-08-09 18:43:15,43,0
+148765,30764,1,session_start,/category/footwear,2026-07-01 14:30:24,89,0
+148766,30764,2,view_product,/p/trail-runner-x,2026-07-01 14:30:29,168,0
+148767,30764,3,exit,(left site),2026-07-01 14:30:48,223,0
+151903,52944,1,session_start,/category/apparel,2026-07-01 01:07:36,64,0
+151904,52944,2,exit,(left site),2026-07-01 01:07:53,14,0
+152387,16654,1,session_start,/sale,2026-07-24 14:01:27,86,0
+152388,16654,2,view_product,/p/horizon-hiking-boot,2026-07-24 14:02:06,55,0
+152389,16654,3,view_product,/p/ridge-rain-jacket,2026-07-24 14:03:37,51,0
+152390,16654,4,add_to_cart,/cart,2026-07-24 14:03:52,57,255.26
+152391,16654,5,begin_checkout,/checkout,2026-07-24 14:04:09,26,255.26
+152392,16654,6,exit,(left site),2026-07-24 14:04:12,71,0
+152689,17401,1,session_start,/,2026-09-21 08:34:52,219,0
+152690,17401,2,exit,(left site),2026-09-21 08:35:26,24,0
+156703,22677,1,session_start,/sale,2026-08-08 16:55:15,83,0
+156704,22677,2,exit,(left site),2026-08-08 16:55:31,26,0
+158141,54125,1,session_start,/category/footwear,2026-08-12 04:23:25,26,0
+158142,54125,2,search,/search?q=backpack+45l,2026-08-12 04:23:31,52,0
+158143,54125,3,exit,(left site),2026-08-12 04:24:57,128,0
+158792,75255,1,session_start,/,2026-08-03 21:46:14,28,0
+158793,75255,2,exit,(left site),2026-08-03 21:47:27,161,0
+160064,75882,1,session_start,/category/footwear,2026-09-13 11:02:13,49,0
+160065,75882,2,view_product,/p/alpine-2-person-tent,2026-09-13 11:03:14,75,0
+160066,75882,3,add_to_cart,/cart,2026-09-13 11:03:45,121,575.58
+160067,75882,4,exit,(left site),2026-09-13 11:04:48,23,0
+165972,20230,1,session_start,/category/footwear,2026-08-01 09:55:20,139,0
+165973,20230,2,search,/search?q=tent,2026-08-01 09:55:36,58,0
+165974,20230,3,view_product,/p/tundra-wool-beanie,2026-08-01 09:57:00,32,0
+165975,20230,4,exit,(left site),2026-08-01 09:57:16,26,0
+166007,53364,1,session_start,/,2026-07-28 21:02:27,73,0
+166008,53364,2,search,/search?q=tent,2026-07-28 21:02:29,23,0
+166009,53364,3,exit,(left site),2026-07-28 21:02:45,161,0
+169466,62695,1,session_start,/p/alpine-2-person-tent,2026-08-03 17:28:37,37,0
+169467,62695,2,view_product,/p/alpine-2-person-tent,2026-08-03 17:28:48,83,0
+169468,62695,3,add_to_cart,/cart,2026-08-03 17:29:45,46,522.05
+169469,62695,4,begin_checkout,/checkout,2026-08-03 17:31:20,11,522.05
+169470,62695,5,exit,(left site),2026-08-03 17:33:35,8,0
+170519,21476,1,session_start,/sale,2026-08-16 03:23:36,30,0
+170520,21476,2,view_product,/p/ridge-rain-jacket,2026-08-16 03:23:37,14,0
+170521,21476,3,add_to_cart,/cart,2026-08-16 03:24:45,64,104.44
+170522,21476,4,begin_checkout,/checkout,2026-08-16 03:25:28,24,104.44
+170523,21476,5,purchase,/checkout/thank-you,2026-08-16 03:27:32,9,104.44
+170809,33043,1,session_start,/category/tents,2026-09-09 03:38:49,36,0
+170810,33043,2,view_product,/p/merino-base-layer,2026-09-09 03:39:13,22,0
+170811,33043,3,exit,(left site),2026-09-09 03:40:49,78,0
+171353,11736,1,session_start,/p/alpine-2-person-tent,2026-08-15 01:49:45,29,0
+171354,11736,2,view_product,/p/tundra-wool-beanie,2026-08-15 01:50:02,49,0
+171355,11736,3,exit,(left site),2026-08-15 01:50:10,75,0
+175354,32251,1,session_start,/,2026-09-22 21:00:07,74,0
+175355,32251,2,exit,(left site),2026-09-22 21:01:14,9,0
+176805,15635,1,session_start,/,2026-08-18 23:50:00,144,0
+176806,15635,2,view_product,/p/nomad-headlamp,2026-08-18 23:50:31,22,0
+176807,15635,3,add_to_cart,/cart,2026-08-18 23:52:02,16,290.65
+176808,15635,4,begin_checkout,/checkout,2026-08-18 23:52:31,239,290.65
+176809,15635,5,exit,(left site),2026-08-18 23:52:34,131,0
+177676,38518,1,session_start,/sale,2026-09-13 02:59:34,49,0
+177677,38518,2,search,/search?q=tent,2026-09-13 03:02:10,44,0
+177678,38518,3,view_product,/p/merino-base-layer,2026-09-13 03:02:16,49,0
+177679,38518,4,exit,(left site),2026-09-13 03:02:17,100,0
+178676,54073,1,session_start,/category/footwear,2026-08-28 11:37:34,21,0
+178677,54073,2,search,/search?q=gps+watch,2026-08-28 11:38:35,61,0
+178678,54073,3,view_product,/p/tundra-wool-beanie,2026-08-28 11:39:15,10,0
+178679,54073,4,add_to_cart,/cart,2026-08-28 11:39:26,11,440.87
+178680,54073,5,exit,(left site),2026-08-28 11:39:34,13,0
+178806,63641,1,session_start,/blog/packing-list,2026-09-25 07:59:48,72,0
+178807,63641,2,search,/search?q=gps+watch,2026-09-25 08:00:09,3,0
+178808,63641,3,view_product,/p/trail-runner-x,2026-09-25 08:01:08,30,0
+178809,63641,4,add_to_cart,/cart,2026-09-25 08:01:25,30,555.79
+178810,63641,5,begin_checkout,/checkout,2026-09-25 08:01:43,149,555.79
+178811,63641,6,purchase,/checkout/thank-you,2026-09-25 08:01:56,28,555.79
+180579,61790,1,session_start,/sale,2026-09-24 10:13:41,145,0
+180580,61790,2,view_product,/p/vertex-gps-watch,2026-09-24 10:13:46,61,0
+180581,61790,3,add_to_cart,/cart,2026-09-24 10:15:10,11,225.1
+180582,61790,4,exit,(left site),2026-09-24 10:16:28,72,0
+185338,54729,1,session_start,/,2026-07-26 03:48:26,15,0
+185339,54729,2,view_product,/p/alpine-2-person-tent,2026-07-26 03:48:44,19,0
+185340,54729,3,view_product,/p/ridge-rain-jacket,2026-07-26 03:50:42,218,0
+185341,54729,4,view_product,/p/alpine-2-person-tent,2026-07-26 03:51:14,11,0
+185342,54729,5,add_to_cart,/cart,2026-07-26 03:51:26,25,324.51
+185343,54729,6,view_product,/p/summit-45l-backpack,2026-07-26 03:51:44,7,0
+185344,54729,7,exit,(left site),2026-07-26 03:51:47,157,0
+185818,29977,1,session_start,/blog/packing-list,2026-09-10 09:10:31,39,0
+185819,29977,2,view_product,/p/trail-runner-x,2026-09-10 09:12:36,162,0
+185820,29977,3,add_to_cart,/cart,2026-09-10 09:12:57,22,548.63
+185821,29977,4,exit,(left site),2026-09-10 09:13:04,179,0
+186924,65731,1,session_start,/,2026-09-07 09:32:55,139,0
+186925,65731,2,search,/search?q=headlamp,2026-09-07 09:34:15,78,0
+186926,65731,3,view_product,/p/trail-runner-x,2026-09-07 09:34:34,6,0
+186927,65731,4,add_to_cart,/cart,2026-09-07 09:35:12,5,507.89
+186928,65731,5,begin_checkout,/checkout,2026-09-07 09:35:22,46,507.89
+186929,65731,6,purchase,/checkout/thank-you,2026-09-07 09:35:35,212,507.89
+187013,27406,1,session_start,/category/tents,2026-07-17 09:30:41,105,0
+187014,27406,2,view_product,/p/summit-45l-backpack,2026-07-17 09:31:12,93,0
+187015,27406,3,add_to_cart,/cart,2026-07-17 09:32:54,80,531.14
+187016,27406,4,view_product,/p/basecamp-camp-stove,2026-07-17 09:33:15,200,0
+187017,27406,5,add_to_cart,/cart,2026-07-17 09:35:07,67,531.14
+187018,27406,6,begin_checkout,/checkout,2026-07-17 09:35:15,15,531.14
+187019,27406,7,exit,(left site),2026-07-17 09:38:14,56,0
+187164,77709,1,session_start,/,2026-09-04 04:46:39,18,0
+187165,77709,2,view_product,/p/alpine-2-person-tent,2026-09-04 04:48:32,27,0
+187166,77709,3,view_product,/p/vertex-gps-watch,2026-09-04 04:48:58,16,0
+187167,77709,4,view_product,/p/alpine-2-person-tent,2026-09-04 04:49:58,46,0
+187168,77709,5,add_to_cart,/cart,2026-09-04 04:50:03,120,175.71
+187169,77709,6,view_product,/p/glacier-down-sleeping-bag,2026-09-04 04:50:30,12,0
+187170,77709,7,view_product,/p/trail-runner-x,2026-09-04 04:50:48,24,0
+189786,4604,1,session_start,/,2026-08-12 13:12:37,63,0
+189787,4604,2,search,/search?q=headlamp,2026-08-12 13:15:18,20,0
+189788,4604,3,view_product,/p/ridge-rain-jacket,2026-08-12 13:17:23,234,0
+189789,4604,4,view_product,/p/horizon-hiking-boot,2026-08-12 13:18:20,6,0
+189790,4604,5,add_to_cart,/cart,2026-08-12 13:18:27,98,150.76
+189791,4604,6,begin_checkout,/checkout,2026-08-12 13:18:30,7,150.76
+189792,4604,7,purchase,/checkout/thank-you,2026-08-12 13:18:37,43,150.76
+191233,39534,1,session_start,/category/apparel,2026-09-25 22:38:20,88,0
+191234,39534,2,view_product,/p/nomad-headlamp,2026-09-25 22:38:40,7,0
+191235,39534,3,exit,(left site),2026-09-25 22:40:52,233,0
+192177,38435,1,session_start,/,2026-09-18 09:49:48,86,0
+192178,38435,2,exit,(left site),2026-09-18 09:49:56,30,0
+192941,66912,1,session_start,/category/tents,2026-07-03 06:40:39,79,0
+192942,66912,2,view_product,/p/vertex-gps-watch,2026-07-03 06:41:14,156,0
+192943,66912,3,add_to_cart,/cart,2026-07-03 06:41:15,51,431.28
+192944,66912,4,exit,(left site),2026-07-03 06:41:42,33,0
+193383,53539,1,session_start,/category/footwear,2026-07-22 11:58:37,75,0
+193384,53539,2,view_product,/p/vertex-gps-watch,2026-07-22 11:58:59,19,0
+193385,53539,3,exit,(left site),2026-07-22 11:59:06,69,0
+193414,28994,1,session_start,/category/apparel,2026-08-03 14:37:26,19,0
+193415,28994,2,exit,(left site),2026-08-03 14:38:03,22,0
+196430,70531,1,session_start,/category/apparel,2026-07-12 09:37:05,45,0
+196431,70531,2,search,/search?q=headlamp,2026-07-12 09:37:48,25,0
+196432,70531,3,view_product,/p/horizon-hiking-boot,2026-07-12 09:38:07,85,0
+196433,70531,4,add_to_cart,/cart,2026-07-12 09:38:11,157,369.89
+196434,70531,5,begin_checkout,/checkout,2026-07-12 09:38:36,60,369.89
+196435,70531,6,purchase,/checkout/thank-you,2026-07-12 09:38:53,127,369.89
+199772,43479,1,session_start,/,2026-07-29 17:29:54,226,0
+199773,43479,2,view_product,/p/trail-runner-x,2026-07-29 17:30:31,203,0
+199774,43479,3,exit,(left site),2026-07-29 17:31:59,15,0
+201053,47683,1,session_start,/category/tents,2026-08-12 04:22:36,197,0
+201054,47683,2,view_product,/p/summit-45l-backpack,2026-08-12 04:23:22,28,0
+201055,47683,3,exit,(left site),2026-08-12 04:24:11,3,0
+203399,81646,1,session_start,/category/footwear,2026-07-18 19:53:17,11,0
+203400,81646,2,search,/search?q=backpack+45l,2026-07-18 19:53:31,11,0
+203401,81646,3,view_product,/p/basecamp-camp-stove,2026-07-18 19:53:32,20,0
+203402,81646,4,view_product,/p/alpine-2-person-tent,2026-07-18 19:53:51,15,0
+203403,81646,5,exit,(left site),2026-07-18 19:54:13,76,0
+203628,50629,1,session_start,/category/footwear,2026-07-28 13:32:26,21,0
+203629,50629,2,view_product,/p/glacier-down-sleeping-bag,2026-07-28 13:33:38,142,0
+203630,50629,3,exit,(left site),2026-07-28 13:33:57,8,0
+203655,13932,1,session_start,/sale,2026-09-02 15:09:07,173,0
+203656,13932,2,search,/search?q=trekking+poles,2026-09-02 15:09:20,29,0
+203657,13932,3,view_product,/p/trail-runner-x,2026-09-02 15:09:55,206,0
+203658,13932,4,exit,(left site),2026-09-02 15:09:56,56,0
+204279,83462,1,session_start,/sale,2026-07-12 12:03:05,62,0
+204280,83462,2,view_product,/p/glacier-down-sleeping-bag,2026-07-12 12:04:26,43,0
+204281,83462,3,exit,(left site),2026-07-12 12:05:03,66,0
+205643,2070,1,session_start,/category/footwear,2026-07-03 14:51:17,87,0
+205644,2070,2,view_product,/p/ridge-rain-jacket,2026-07-03 14:52:22,7,0
+205645,2070,3,view_product,/p/vertex-gps-watch,2026-07-03 14:52:34,34,0
+205646,2070,4,exit,(left site),2026-07-03 14:52:58,90,0
+209284,43381,1,session_start,/,2026-08-26 20:42:33,178,0
+209285,43381,2,view_product,/p/canyon-trekking-poles,2026-08-26 20:43:17,6,0
+209286,43381,3,add_to_cart,/cart,2026-08-26 20:43:51,6,236.39
+209287,43381,4,begin_checkout,/checkout,2026-08-26 20:43:55,17,236.39
+209288,43381,5,exit,(left site),2026-08-26 20:45:10,16,0
+210123,64300,1,session_start,/blog/packing-list,2026-07-25 23:10:18,29,0
+210124,64300,2,view_product,/p/trail-runner-x,2026-07-25 23:11:14,16,0
+210125,64300,3,exit,(left site),2026-07-25 23:12:26,35,0
+210573,23229,1,session_start,/p/alpine-2-person-tent,2026-08-12 22:10:33,194,0
+210574,23229,2,view_product,/p/ridge-rain-jacket,2026-08-12 22:11:12,90,0
+210575,23229,3,add_to_cart,/cart,2026-08-12 22:11:14,17,279.51
+210576,23229,4,begin_checkout,/checkout,2026-08-12 22:11:31,91,279.51
+210577,23229,5,exit,(left site),2026-08-12 22:12:23,166,0
+210928,79214,1,session_start,/sale,2026-09-05 11:13:19,85,0
+210929,79214,2,view_product,/p/nomad-headlamp,2026-09-05 11:13:48,43,0
+210930,79214,3,add_to_cart,/cart,2026-09-05 11:13:53,18,16.66
+210931,79214,4,exit,(left site),2026-09-05 11:15:43,83,0
+212545,10137,1,session_start,/,2026-09-24 05:44:55,29,0
+212546,10137,2,exit,(left site),2026-09-24 05:45:03,11,0
+213611,787,1,session_start,/category/tents,2026-07-05 13:46:32,176,0
+213612,787,2,view_product,/p/tundra-wool-beanie,2026-07-05 13:47:14,80,0
+213613,787,3,exit,(left site),2026-07-05 13:48:00,113,0
+214208,83870,1,session_start,/p/alpine-2-person-tent,2026-07-22 03:04:31,32,0
+214209,83870,2,exit,(left site),2026-07-22 03:04:44,8,0
+214309,28070,1,session_start,/,2026-08-05 22:54:04,63,0
+214310,28070,2,view_product,/p/canyon-trekking-poles,2026-08-05 22:54:28,4,0
+214311,28070,3,exit,(left site),2026-08-05 22:55:12,50,0
+215852,68340,1,session_start,/category/footwear,2026-07-26 11:20:27,20,0
+215853,68340,2,view_product,/p/merino-base-layer,2026-07-26 11:21:00,79,0
+215854,68340,3,add_to_cart,/cart,2026-07-26 11:21:03,6,24.6
+215855,68340,4,begin_checkout,/checkout,2026-07-26 11:21:17,51,24.6
+215856,68340,5,purchase,/checkout/thank-you,2026-07-26 11:21:48,13,24.6
+217734,42972,1,session_start,/sale,2026-08-04 18:32:27,236,0
+217735,42972,2,view_product,/p/alpine-2-person-tent,2026-08-04 18:33:31,115,0
+217736,42972,3,view_product,/p/horizon-hiking-boot,2026-08-04 18:33:36,43,0
+217737,42972,4,exit,(left site),2026-08-04 18:34:20,96,0
+218499,3934,1,session_start,/sale,2026-07-18 04:03:05,22,0
+218500,3934,2,search,/search?q=rain+jacket,2026-07-18 04:03:53,48,0
+218501,3934,3,view_product,/p/glacier-down-sleeping-bag,2026-07-18 04:04:49,14,0
+218502,3934,4,add_to_cart,/cart,2026-07-18 04:07:39,11,328.46
+218503,3934,5,begin_checkout,/checkout,2026-07-18 04:07:40,28,328.46
+218504,3934,6,purchase,/checkout/thank-you,2026-07-18 04:08:25,10,328.46
+219108,38908,1,session_start,/category/tents,2026-09-10 17:44:01,55,0
+219109,38908,2,view_product,/p/summit-45l-backpack,2026-09-10 17:45:35,103,0
+219110,38908,3,exit,(left site),2026-09-10 17:46:19,66,0
+220239,17821,1,session_start,/category/apparel,2026-09-12 23:42:25,56,0
+220240,17821,2,exit,(left site),2026-09-12 23:42:31,93,0
+222875,15652,1,session_start,/sale,2026-08-19 22:37:31,140,0
+222876,15652,2,view_product,/p/merino-base-layer,2026-08-19 22:38:19,146,0
+222877,15652,3,exit,(left site),2026-08-19 22:38:20,6,0
+224386,11088,1,session_start,/,2026-07-21 16:11:11,32,0
+224387,11088,2,exit,(left site),2026-07-21 16:16:16,28,0
+228414,58421,1,session_start,/p/alpine-2-person-tent,2026-08-01 17:47:00,21,0
+228415,58421,2,search,/search?q=sleeping+bag,2026-08-01 17:47:55,28,0
+228416,58421,3,view_product,/p/summit-45l-backpack,2026-08-01 17:48:13,13,0
+228417,58421,4,exit,(left site),2026-08-01 17:48:27,73,0
+228483,43919,1,session_start,/category/footwear,2026-09-20 02:09:49,17,0
+228484,43919,2,search,/search?q=backpack+45l,2026-09-20 02:10:02,173,0
+228485,43919,3,exit,(left site),2026-09-20 02:10:30,5,0
+229286,66554,1,session_start,/,2026-08-24 18:46:32,31,0
+229287,66554,2,view_product,/p/canyon-trekking-poles,2026-08-24 18:46:33,105,0
+229288,66554,3,add_to_cart,/cart,2026-08-24 18:46:50,42,161.26
+229289,66554,4,view_product,/p/summit-45l-backpack,2026-08-24 18:48:01,56,0
+229290,66554,5,add_to_cart,/cart,2026-08-24 18:48:40,14,161.26
+229291,66554,6,exit,(left site),2026-08-24 18:49:21,18,0
+229477,23402,1,session_start,/,2026-09-13 05:41:17,22,0
+229478,23402,2,view_product,/p/vertex-gps-watch,2026-09-13 05:43:05,35,0
+229479,23402,3,add_to_cart,/cart,2026-09-13 05:43:17,14,524.38
+229480,23402,4,begin_checkout,/checkout,2026-09-13 05:43:36,27,524.38
+229481,23402,5,exit,(left site),2026-09-13 05:44:04,46,0
+229492,72622,1,session_start,/,2026-09-21 14:50:13,57,0
+229493,72622,2,search,/search?q=sleeping+bag,2026-09-21 14:50:14,107,0
+229494,72622,3,view_product,/p/basecamp-camp-stove,2026-09-21 14:50:15,3,0
+229495,72622,4,exit,(left site),2026-09-21 14:50:33,64,0
+229690,80608,1,session_start,/,2026-07-01 03:47:34,47,0
+229691,80608,2,view_product,/p/canyon-trekking-poles,2026-07-01 03:47:37,188,0
+229692,80608,3,add_to_cart,/cart,2026-07-01 03:47:53,71,427.52
+229693,80608,4,begin_checkout,/checkout,2026-07-01 03:47:55,80,427.52
+229694,80608,5,purchase,/checkout/thank-you,2026-07-01 03:48:27,22,427.52
+233013,70911,1,session_start,/category/tents,2026-09-16 08:40:27,54,0
+233014,70911,2,exit,(left site),2026-09-16 08:40:28,111,0
+233671,16960,1,session_start,/blog/packing-list,2026-09-24 17:08:02,44,0
+233672,16960,2,view_product,/p/horizon-hiking-boot,2026-09-24 17:08:03,232,0
+233673,16960,3,exit,(left site),2026-09-24 17:08:25,26,0
+238375,23320,1,session_start,/p/alpine-2-person-tent,2026-07-01 20:51:08,228,0
+238376,23320,2,exit,(left site),2026-07-01 20:51:46,10,0
+238811,22135,1,session_start,/p/alpine-2-person-tent,2026-08-17 06:57:33,10,0
+238812,22135,2,search,/search?q=headlamp,2026-08-17 06:58:17,143,0
+238813,22135,3,view_product,/p/horizon-hiking-boot,2026-08-17 06:58:22,32,0
+238814,22135,4,view_product,/p/merino-base-layer,2026-08-17 06:59:56,5,0
+238815,22135,5,exit,(left site),2026-08-17 07:00:01,63,0
+239614,52602,1,session_start,/,2026-08-01 00:26:11,8,0
+239615,52602,2,exit,(left site),2026-08-01 00:28:55,44,0
+241459,23023,1,session_start,/category/apparel,2026-08-04 15:11:14,11,0
+241460,23023,2,search,/search?q=tent,2026-08-04 15:11:55,5,0
+241461,23023,3,view_product,/p/canyon-trekking-poles,2026-08-04 15:12:06,61,0
+241462,23023,4,exit,(left site),2026-08-04 15:12:19,13,0
+241788,13116,1,session_start,/sale,2026-07-03 10:35:11,105,0
+241789,13116,2,search,/search?q=headlamp,2026-07-03 10:35:26,19,0
+241790,13116,3,view_product,/p/canyon-trekking-poles,2026-07-03 10:35:50,65,0
+241791,13116,4,exit,(left site),2026-07-03 10:36:12,39,0
+243482,68388,1,session_start,/category/footwear,2026-07-09 00:12:54,236,0
+243483,68388,2,search,/search?q=trekking+poles,2026-07-09 00:13:51,7,0
+243484,68388,3,view_product,/p/ridge-rain-jacket,2026-07-09 00:14:10,66,0
+243485,68388,4,exit,(left site),2026-07-09 00:15:35,114,0
+243486,29168,1,session_start,/,2026-09-06 22:56:43,47,0
+243487,29168,2,view_product,/p/vertex-gps-watch,2026-09-06 22:57:00,20,0
+243488,29168,3,view_product,/p/summit-45l-backpack,2026-09-06 22:57:29,152,0
+243489,29168,4,view_product,/p/alpine-2-person-tent,2026-09-06 22:59:13,62,0
+243490,29168,5,exit,(left site),2026-09-06 22:59:17,53,0
+244556,39847,1,session_start,/,2026-09-26 14:02:57,29,0
+244557,39847,2,view_product,/p/glacier-down-sleeping-bag,2026-09-26 14:04:15,72,0
+244558,39847,3,view_product,/p/tundra-wool-beanie,2026-09-26 14:05:18,24,0
+244559,39847,4,exit,(left site),2026-09-26 14:05:19,14,0
+244915,36451,1,session_start,/,2026-09-01 13:55:20,216,0
+244916,36451,2,search,/search?q=headlamp,2026-09-01 13:55:55,107,0
+244917,36451,3,exit,(left site),2026-09-01 13:58:59,21,0
+245979,63145,1,session_start,/p/trail-runner-x,2026-07-08 16:50:43,8,0
+245980,63145,2,search,/search?q=gps+watch,2026-07-08 16:50:49,36,0
+245981,63145,3,exit,(left site),2026-07-08 16:51:07,24,0
+246024,13389,1,session_start,/category/apparel,2026-08-25 12:17:12,25,0
+246025,13389,2,exit,(left site),2026-08-25 12:19:04,26,0
+246060,34749,1,session_start,/sale,2026-07-22 11:57:11,65,0
+246061,34749,2,view_product,/p/glacier-down-sleeping-bag,2026-07-22 12:00:16,4,0
+246062,34749,3,add_to_cart,/cart,2026-07-22 12:00:30,31,533.31
+246063,34749,4,begin_checkout,/checkout,2026-07-22 12:00:31,180,533.31
+246064,34749,5,exit,(left site),2026-07-22 12:01:29,87,0
+246528,45921,1,session_start,/sale,2026-08-04 17:21:09,9,0
+246529,45921,2,view_product,/p/trail-runner-x,2026-08-04 17:21:19,9,0
+246530,45921,3,exit,(left site),2026-08-04 17:21:39,27,0
+247893,36101,1,session_start,/,2026-08-14 14:09:15,72,0
+247894,36101,2,exit,(left site),2026-08-14 14:09:37,72,0
+251739,82665,1,session_start,/,2026-09-11 09:44:06,68,0
+251740,82665,2,view_product,/p/vertex-gps-watch,2026-09-11 09:44:13,18,0
+251741,82665,3,view_product,/p/trail-runner-x,2026-09-11 09:45:01,65,0
+251742,82665,4,add_to_cart,/cart,2026-09-11 09:45:31,78,106.35
+251743,82665,5,begin_checkout,/checkout,2026-09-11 09:46:21,106,106.35
+251744,82665,6,exit,(left site),2026-09-11 09:46:30,103,0
+253994,20526,1,session_start,/category/footwear,2026-08-03 06:50:03,24,0
+253995,20526,2,view_product,/p/merino-base-layer,2026-08-03 06:50:28,26,0
+253996,20526,3,exit,(left site),2026-08-03 06:52:20,8,0
+254792,16905,1,session_start,/,2026-07-13 03:07:05,34,0
+254793,16905,2,view_product,/p/trail-runner-x,2026-07-13 03:07:15,25,0
+254794,16905,3,exit,(left site),2026-07-13 03:07:22,76,0
+254857,31098,1,session_start,/p/alpine-2-person-tent,2026-07-13 06:08:58,4,0
+254858,31098,2,view_product,/p/glacier-down-sleeping-bag,2026-07-13 06:09:37,133,0
+254859,31098,3,exit,(left site),2026-07-13 06:10:05,17,0
+255279,78667,1,session_start,/sale,2026-07-18 04:55:55,14,0
+255280,78667,2,search,/search?q=sleeping+bag,2026-07-18 04:57:26,8,0
+255281,78667,3,view_product,/p/ridge-rain-jacket,2026-07-18 04:57:48,11,0
+255282,78667,4,view_product,/p/ridge-rain-jacket,2026-07-18 04:58:35,5,0
+255283,78667,5,view_product,/p/canyon-trekking-poles,2026-07-18 04:59:29,114,0
+255284,78667,6,add_to_cart,/cart,2026-07-18 05:00:22,193,574.73
+255285,78667,7,exit,(left site),2026-07-18 05:00:26,13,0
+255675,18507,1,session_start,/,2026-09-25 18:43:15,28,0
+255676,18507,2,view_product,/p/tundra-wool-beanie,2026-09-25 18:43:18,115,0
+255677,18507,3,exit,(left site),2026-09-25 18:43:43,22,0
+256346,9168,1,session_start,/sale,2026-09-10 01:07:31,35,0
+256347,9168,2,exit,(left site),2026-09-10 01:09:56,163,0
+256500,39825,1,session_start,/p/trail-runner-x,2026-09-19 09:14:12,57,0
+256501,39825,2,view_product,/p/alpine-2-person-tent,2026-09-19 09:15:01,47,0
+256502,39825,3,exit,(left site),2026-09-19 09:15:04,4,0
+257284,18947,1,session_start,/,2026-08-13 20:43:42,20,0
+257285,18947,2,search,/search?q=hiking+boots,2026-08-13 20:44:01,69,0
+257286,18947,3,view_product,/p/nomad-headlamp,2026-08-13 20:45:18,22,0
+257287,18947,4,view_product,/p/basecamp-camp-stove,2026-08-13 20:45:29,182,0
+257288,18947,5,add_to_cart,/cart,2026-08-13 20:45:52,8,487.93
+257289,18947,6,exit,(left site),2026-08-13 20:47:06,23,0
+257457,41243,1,session_start,/category/apparel,2026-07-17 12:34:32,25,0
+257458,41243,2,search,/search?q=headlamp,2026-07-17 12:34:50,11,0
+257459,41243,3,view_product,/p/nomad-headlamp,2026-07-17 12:35:44,22,0
+257460,41243,4,exit,(left site),2026-07-17 12:37:01,26,0
+257600,22556,1,session_start,/,2026-07-20 22:13:50,19,0
+257601,22556,2,view_product,/p/trail-runner-x,2026-07-20 22:14:44,4,0
+257602,22556,3,exit,(left site),2026-07-20 22:15:25,13,0
+258230,54848,1,session_start,/category/apparel,2026-08-16 06:10:29,51,0
+258231,54848,2,view_product,/p/basecamp-camp-stove,2026-08-16 06:13:21,84,0
+258232,54848,3,exit,(left site),2026-08-16 06:13:22,87,0
+258901,81491,1,session_start,/sale,2026-09-27 22:41:40,3,0
+258902,81491,2,view_product,/p/tundra-wool-beanie,2026-09-27 22:43:19,101,0
+258903,81491,3,view_product,/p/trail-runner-x,2026-09-27 22:43:28,48,0
+258904,81491,4,exit,(left site),2026-09-27 22:44:15,28,0
+259441,40842,1,session_start,/sale,2026-08-21 10:52:08,18,0
+259442,40842,2,exit,(left site),2026-08-21 10:53:41,30,0
+260109,26890,1,session_start,/p/alpine-2-person-tent,2026-08-07 07:39:37,26,0
+260110,26890,2,exit,(left site),2026-08-07 07:40:36,47,0
+260743,10002,1,session_start,/,2026-09-22 20:30:58,18,0
+260744,10002,2,exit,(left site),2026-09-22 20:31:10,34,0
+261403,45157,1,session_start,/p/trail-runner-x,2026-09-27 20:06:30,13,0
+261404,45157,2,view_product,/p/merino-base-layer,2026-09-27 20:06:46,230,0
+261405,45157,3,exit,(left site),2026-09-27 20:07:03,135,0
+261755,34972,1,session_start,/blog/packing-list,2026-08-10 23:19:41,21,0
+261756,34972,2,view_product,/p/horizon-hiking-boot,2026-08-10 23:19:49,48,0
+261757,34972,3,add_to_cart,/cart,2026-08-10 23:20:21,56,57.68
+261758,34972,4,begin_checkout,/checkout,2026-08-10 23:20:28,33,57.68
+261759,34972,5,purchase,/checkout/thank-you,2026-08-10 23:20:29,27,57.68
+265124,31740,1,session_start,/sale,2026-09-15 05:18:22,204,0
+265125,31740,2,view_product,/p/horizon-hiking-boot,2026-09-15 05:18:26,148,0
+265126,31740,3,exit,(left site),2026-09-15 05:19:19,7,0
+265840,55806,1,session_start,/category/footwear,2026-07-03 11:01:33,86,0
+265841,55806,2,search,/search?q=hiking+boots,2026-07-03 11:01:58,88,0
+265842,55806,3,exit,(left site),2026-07-03 11:02:38,44,0
+266129,23483,1,session_start,/category/tents,2026-09-01 15:03:42,26,0
+266130,23483,2,view_product,/p/merino-base-layer,2026-09-01 15:04:12,89,0
+266131,23483,3,view_product,/p/alpine-2-person-tent,2026-09-01 15:04:16,71,0
+266132,23483,4,view_product,/p/glacier-down-sleeping-bag,2026-09-01 15:04:19,79,0
+266133,23483,5,add_to_cart,/cart,2026-09-01 15:04:48,49,503.77
+266134,23483,6,exit,(left site),2026-09-01 15:04:50,11,0
+267044,49267,1,session_start,/p/trail-runner-x,2026-07-02 09:49:21,21,0
+267045,49267,2,view_product,/p/vertex-gps-watch,2026-07-02 09:51:12,33,0
+267046,49267,3,exit,(left site),2026-07-02 09:52:26,20,0
+268039,170,1,session_start,/,2026-07-18 05:41:38,43,0
+268040,170,2,view_product,/p/ridge-rain-jacket,2026-07-18 05:41:48,166,0
+268041,170,3,exit,(left site),2026-07-18 05:43:33,84,0
+268042,47406,1,session_start,/p/trail-runner-x,2026-09-15 01:08:35,108,0
+268043,47406,2,view_product,/p/ridge-rain-jacket,2026-09-15 01:08:55,25,0
+268044,47406,3,add_to_cart,/cart,2026-09-15 01:09:16,31,151.14
+268045,47406,4,begin_checkout,/checkout,2026-09-15 01:09:19,21,151.14
+268046,47406,5,purchase,/checkout/thank-you,2026-09-15 01:09:22,17,151.14
+268497,11602,1,session_start,/category/footwear,2026-08-28 07:21:51,22,0
+268498,11602,2,search,/search?q=headlamp,2026-08-28 07:24:19,26,0
+268499,11602,3,view_product,/p/merino-base-layer,2026-08-28 07:26:08,26,0
+268500,11602,4,add_to_cart,/cart,2026-08-28 07:26:25,4,327.38
+268501,11602,5,begin_checkout,/checkout,2026-08-28 07:26:26,4,327.38
+268502,11602,6,purchase,/checkout/thank-you,2026-08-28 07:27:09,154,327.38
+268520,40558,1,session_start,/p/trail-runner-x,2026-09-11 14:43:06,38,0
+268521,40558,2,view_product,/p/summit-45l-backpack,2026-09-11 14:43:21,11,0
+268522,40558,3,view_product,/p/horizon-hiking-boot,2026-09-11 14:43:45,42,0
+268523,40558,4,view_product,/p/glacier-down-sleeping-bag,2026-09-11 14:44:03,20,0
+268524,40558,5,view_product,/p/canyon-trekking-poles,2026-09-11 14:45:24,104,0
+268525,40558,6,exit,(left site),2026-09-11 14:46:10,58,0
+271163,63327,1,session_start,/category/apparel,2026-09-05 05:02:03,29,0
+271164,63327,2,exit,(left site),2026-09-05 05:03:36,61,0
+271325,5636,1,session_start,/,2026-07-17 05:36:58,3,0
+271326,5636,2,view_product,/p/alpine-2-person-tent,2026-07-17 05:37:48,20,0
+271327,5636,3,exit,(left site),2026-07-17 05:37:51,108,0
+271488,78201,1,session_start,/category/footwear,2026-08-07 11:17:29,13,0
+271489,78201,2,view_product,/p/alpine-2-person-tent,2026-08-07 11:19:06,6,0
+271490,78201,3,add_to_cart,/cart,2026-08-07 11:19:08,34,527.19
+271491,78201,4,begin_checkout,/checkout,2026-08-07 11:19:55,8,527.19
+271492,78201,5,purchase,/checkout/thank-you,2026-08-07 11:21:25,30,527.19
+272161,80102,1,session_start,/category/footwear,2026-07-17 11:11:42,44,0
+272162,80102,2,view_product,/p/nomad-headlamp,2026-07-17 11:12:30,7,0
+272163,80102,3,view_product,/p/tundra-wool-beanie,2026-07-17 11:12:56,237,0
+272164,80102,4,exit,(left site),2026-07-17 11:14:47,45,0
+272457,38175,1,session_start,/p/alpine-2-person-tent,2026-07-25 22:43:47,22,0
+272458,38175,2,search,/search?q=tent,2026-07-25 22:48:27,75,0
+272459,38175,3,exit,(left site),2026-07-25 22:48:45,4,0
+272723,56094,1,session_start,/category/tents,2026-07-24 01:21:01,15,0
+272724,56094,2,view_product,/p/tundra-wool-beanie,2026-07-24 01:21:16,27,0
+272725,56094,3,view_product,/p/tundra-wool-beanie,2026-07-24 01:23:34,23,0
+272726,56094,4,add_to_cart,/cart,2026-07-24 01:23:45,107,193.86
+272727,56094,5,begin_checkout,/checkout,2026-07-24 01:24:01,13,193.86
+272728,56094,6,purchase,/checkout/thank-you,2026-07-24 01:24:23,153,193.86
+275140,63976,1,session_start,/p/trail-runner-x,2026-07-25 05:27:19,43,0
+275141,63976,2,exit,(left site),2026-07-25 05:27:36,188,0
+275275,849,1,session_start,/category/footwear,2026-09-12 01:32:29,43,0
+275276,849,2,view_product,/p/basecamp-camp-stove,2026-09-12 01:32:37,75,0
+275277,849,3,exit,(left site),2026-09-12 01:33:03,27,0
+275834,33441,1,session_start,/,2026-08-03 11:39:46,80,0
+275835,33441,2,view_product,/p/tundra-wool-beanie,2026-08-03 11:39:56,111,0
+275836,33441,3,exit,(left site),2026-08-03 11:40:16,84,0
+276162,22029,1,session_start,/blog/packing-list,2026-07-23 21:18:38,69,0
+276163,22029,2,exit,(left site),2026-07-23 21:18:47,11,0
+277011,76103,1,session_start,/category/footwear,2026-09-14 06:14:42,20,0
+277012,76103,2,view_product,/p/vertex-gps-watch,2026-09-14 06:15:52,5,0
+277013,76103,3,exit,(left site),2026-09-14 06:16:03,28,0
+279649,10124,1,session_start,/,2026-09-26 04:25:14,76,0
+279650,10124,2,exit,(left site),2026-09-26 04:25:39,78,0
+280362,41560,1,session_start,/,2026-07-08 14:58:53,74,0
+280363,41560,2,view_product,/p/basecamp-camp-stove,2026-07-08 14:59:11,73,0
+280364,41560,3,exit,(left site),2026-07-08 15:01:10,42,0
+280371,66357,1,session_start,/p/trail-runner-x,2026-08-04 23:40:58,52,0
+280372,66357,2,search,/search?q=tent,2026-08-04 23:41:35,5,0
+280373,66357,3,exit,(left site),2026-08-04 23:42:13,219,0
+281473,37186,1,session_start,/p/trail-runner-x,2026-07-09 09:31:47,64,0
+281474,37186,2,view_product,/p/horizon-hiking-boot,2026-07-09 09:33:43,9,0
+281475,37186,3,add_to_cart,/cart,2026-07-09 09:35:34,142,469.34
+281476,37186,4,begin_checkout,/checkout,2026-07-09 09:37:18,238,469.34
+281477,37186,5,exit,(left site),2026-07-09 09:37:49,55,0
+281736,9980,1,session_start,/category/footwear,2026-07-12 11:30:11,126,0
+281737,9980,2,search,/search?q=backpack+45l,2026-07-12 11:31:11,65,0
+281738,9980,3,exit,(left site),2026-07-12 11:31:15,21,0
+285527,82486,1,session_start,/,2026-07-05 10:10:36,21,0
+285528,82486,2,view_product,/p/merino-base-layer,2026-07-05 10:11:55,48,0
+285529,82486,3,add_to_cart,/cart,2026-07-05 10:12:42,73,556.34
+285530,82486,4,view_product,/p/ridge-rain-jacket,2026-07-05 10:15:07,7,0
+285531,82486,5,view_product,/p/tundra-wool-beanie,2026-07-05 10:16:42,78,0
+285532,82486,6,view_product,/p/canyon-trekking-poles,2026-07-05 10:18:31,181,0
+285533,82486,7,view_product,/p/trail-runner-x,2026-07-05 10:18:58,73,0
+285839,61285,1,session_start,/category/tents,2026-09-11 12:56:29,89,0
+285840,61285,2,exit,(left site),2026-09-11 12:57:48,56,0
+286416,14764,1,session_start,/category/apparel,2026-08-22 14:47:39,52,0
+286417,14764,2,search,/search?q=trekking+poles,2026-08-22 14:50:13,28,0
+286418,14764,3,exit,(left site),2026-08-22 14:50:56,65,0
+286981,59550,1,session_start,/,2026-09-17 17:04:59,14,0
+286982,59550,2,search,/search?q=headlamp,2026-09-17 17:05:36,33,0
+286983,59550,3,exit,(left site),2026-09-17 17:05:54,15,0
+287132,26131,1,session_start,/category/tents,2026-08-20 04:37:17,52,0
+287133,26131,2,search,/search?q=gps+watch,2026-08-20 04:38:14,87,0
+287134,26131,3,view_product,/p/merino-base-layer,2026-08-20 04:38:48,9,0
+287135,26131,4,exit,(left site),2026-08-20 04:38:50,179,0
+288125,53945,1,session_start,/p/trail-runner-x,2026-08-21 04:28:24,14,0
+288126,53945,2,exit,(left site),2026-08-21 04:28:32,24,0
+288417,54350,1,session_start,/blog/packing-list,2026-07-17 00:00:23,21,0
+288418,54350,2,view_product,/p/tundra-wool-beanie,2026-07-17 00:01:32,15,0
+288419,54350,3,exit,(left site),2026-07-17 00:03:27,83,0
+289376,57002,1,session_start,/blog/packing-list,2026-07-05 09:44:30,12,0
+289377,57002,2,view_product,/p/ridge-rain-jacket,2026-07-05 09:45:18,30,0
+289378,57002,3,view_product,/p/trail-runner-x,2026-07-05 09:45:35,27,0
+289379,57002,4,view_product,/p/nomad-headlamp,2026-07-05 09:46:03,13,0
+289380,57002,5,add_to_cart,/cart,2026-07-05 09:46:44,18,143.38
+289381,57002,6,view_product,/p/nomad-headlamp,2026-07-05 09:50:07,36,0
+289382,57002,7,add_to_cart,/cart,2026-07-05 09:50:08,13,143.38
+290981,64065,1,session_start,/category/apparel,2026-09-22 00:02:13,16,0
+290982,64065,2,exit,(left site),2026-09-22 00:02:56,19,0
+291272,47572,1,session_start,/sale,2026-09-14 01:41:23,36,0
+291273,47572,2,view_product,/p/horizon-hiking-boot,2026-09-14 01:41:48,68,0
+291274,47572,3,exit,(left site),2026-09-14 01:42:50,81,0
+291647,41295,1,session_start,/sale,2026-07-02 19:29:43,6,0
+291648,41295,2,view_product,/p/trail-runner-x,2026-07-02 19:29:56,24,0
+291649,41295,3,exit,(left site),2026-07-02 19:30:55,196,0
+293880,34343,1,session_start,/,2026-08-03 10:47:54,11,0
+293881,34343,2,view_product,/p/canyon-trekking-poles,2026-08-03 10:48:04,51,0
+293882,34343,3,add_to_cart,/cart,2026-08-03 10:48:15,216,557.17
+293883,34343,4,view_product,/p/alpine-2-person-tent,2026-08-03 10:49:07,16,0
+293884,34343,5,add_to_cart,/cart,2026-08-03 10:50:17,84,557.17
+293885,34343,6,exit,(left site),2026-08-03 10:50:34,37,0
+294481,37564,1,session_start,/,2026-09-08 21:07:06,110,0
+294482,37564,2,exit,(left site),2026-09-08 21:07:43,4,0
+296122,55090,1,session_start,/,2026-09-17 03:15:57,112,0
+296123,55090,2,view_product,/p/merino-base-layer,2026-09-17 03:15:58,68,0
+296124,55090,3,add_to_cart,/cart,2026-09-17 03:16:36,59,247.1
+296125,55090,4,begin_checkout,/checkout,2026-09-17 03:16:40,45,247.1
+296126,55090,5,purchase,/checkout/thank-you,2026-09-17 03:16:49,98,247.1
+297111,49804,1,session_start,/p/trail-runner-x,2026-07-17 18:24:24,24,0
+297112,49804,2,view_product,/p/trail-runner-x,2026-07-17 18:24:50,101,0
+297113,49804,3,view_product,/p/tundra-wool-beanie,2026-07-17 18:26:07,102,0
+297114,49804,4,add_to_cart,/cart,2026-07-17 18:26:51,13,508.76
+297115,49804,5,exit,(left site),2026-07-17 18:26:52,19,0
+297468,26560,1,session_start,/category/tents,2026-08-07 22:03:10,79,0
+297469,26560,2,view_product,/p/horizon-hiking-boot,2026-08-07 22:03:19,106,0
+297470,26560,3,view_product,/p/trail-runner-x,2026-08-07 22:03:47,27,0
+297471,26560,4,view_product,/p/tundra-wool-beanie,2026-08-07 22:04:18,182,0
+297472,26560,5,exit,(left site),2026-08-07 22:05:42,19,0
+297925,42441,1,session_start,/,2026-09-10 07:40:08,54,0
+297926,42441,2,exit,(left site),2026-09-10 07:42:51,8,0
+298868,71279,1,session_start,/sale,2026-07-25 00:49:38,14,0
+298869,71279,2,view_product,/p/merino-base-layer,2026-07-25 00:50:26,43,0
+298870,71279,3,view_product,/p/merino-base-layer,2026-07-25 00:50:40,14,0
+298871,71279,4,view_product,/p/basecamp-camp-stove,2026-07-25 00:50:58,233,0
+298872,71279,5,view_product,/p/vertex-gps-watch,2026-07-25 00:53:39,27,0
+298873,71279,6,add_to_cart,/cart,2026-07-25 00:53:50,39,519.01
+298874,71279,7,view_product,/p/trail-runner-x,2026-07-25 00:53:51,68,0
+302362,50613,1,session_start,/category/tents,2026-09-18 23:17:16,100,0
+302363,50613,2,view_product,/p/canyon-trekking-poles,2026-09-18 23:20:29,5,0
+302364,50613,3,add_to_cart,/cart,2026-09-18 23:21:20,66,223.47
+302365,50613,4,view_product,/p/ridge-rain-jacket,2026-09-18 23:24:59,7,0
+302366,50613,5,view_product,/p/alpine-2-person-tent,2026-09-18 23:26:08,23,0
+302367,50613,6,add_to_cart,/cart,2026-09-18 23:26:10,39,223.47
+302368,50613,7,exit,(left site),2026-09-18 23:29:43,9,0
+302680,39810,1,session_start,/p/trail-runner-x,2026-08-03 20:27:39,11,0
+302681,39810,2,view_product,/p/horizon-hiking-boot,2026-08-03 20:29:47,74,0
+302682,39810,3,exit,(left site),2026-08-03 20:29:48,60,0
+303171,33583,1,session_start,/category/tents,2026-07-08 23:26:24,173,0
+303172,33583,2,exit,(left site),2026-07-08 23:27:31,8,0

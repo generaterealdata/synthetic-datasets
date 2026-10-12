@@ -1,0 +1,267 @@
+session_id,user_id,started_at,device,browser,referrer,landing_page,duration_s
+170,86,2026-07-18 05:41:38,desktop,Safari,bing,/,293
+787,53,2026-07-05 13:46:32,tablet,Chrome,direct,/category/tents,369
+849,87,2026-09-12 01:32:29,tablet,Safari,instagram,/category/footwear,145
+2070,87,2026-07-03 14:51:17,mobile,Chrome,google,/category/footwear,218
+2371,1,2026-09-10 09:29:27,tablet,Chrome,direct,/sale,488
+2389,95,2026-09-12 14:15:35,mobile,Chrome,bing,/,165
+3758,59,2026-08-07 01:50:27,desktop,Chrome,google,/p/alpine-2-person-tent,471
+3801,14,2026-08-13 05:34:03,mobile,Firefox,google,/category/apparel,201
+3934,47,2026-07-18 04:03:05,desktop,Chrome,direct,/sale,133
+4062,58,2026-09-25 18:27:32,mobile,Chrome,newsletter,/category/footwear,210
+4508,74,2026-07-03 19:45:42,mobile,Edge,facebook,/,384
+4562,31,2026-08-17 10:51:11,mobile,Chrome,direct,/sale,43
+4604,87,2026-08-12 13:12:37,desktop,Safari,newsletter,/,471
+5295,55,2026-07-24 19:48:18,mobile,Chrome,google,/,237
+5636,104,2026-07-17 05:36:58,desktop,Safari,direct,/,131
+5908,55,2026-09-05 02:30:07,desktop,Chrome,direct,/,295
+6655,3,2026-09-15 19:58:21,desktop,Chrome,instagram,/p/trail-runner-x,145
+6739,100,2026-07-05 22:22:25,mobile,Chrome,instagram,/category/apparel,396
+7246,51,2026-09-03 22:15:38,desktop,Chrome,google,/,220
+8813,104,2026-07-16 06:47:10,mobile,Chrome,instagram,/p/alpine-2-person-tent,249
+9168,75,2026-09-10 01:07:31,mobile,Safari,facebook,/sale,198
+9980,74,2026-07-12 11:30:11,mobile,Safari,instagram,/category/footwear,212
+10002,87,2026-09-22 20:30:58,mobile,Chrome,google,/,52
+10124,50,2026-09-26 04:25:14,mobile,Safari,facebook,/,154
+10137,7,2026-09-24 05:44:55,mobile,Chrome,google,/,40
+10705,26,2026-09-21 22:22:19,mobile,Samsung Internet,instagram,/,194
+10963,90,2026-08-20 18:04:27,tablet,Chrome,newsletter,/category/footwear,145
+11060,13,2026-09-17 18:34:35,mobile,Chrome,google,/p/trail-runner-x,144
+11088,105,2026-07-21 16:11:11,desktop,Chrome,google,/,60
+11602,107,2026-08-28 07:21:51,tablet,Firefox,google,/category/footwear,236
+11667,87,2026-09-12 08:42:13,mobile,Chrome,google,/category/tents,281
+11736,41,2026-08-15 01:49:45,mobile,Samsung Internet,instagram,/p/alpine-2-person-tent,153
+12213,111,2026-08-02 15:50:52,mobile,Chrome,google,/p/trail-runner-x,170
+12225,35,2026-07-30 19:41:05,tablet,Chrome,google,/,213
+13116,14,2026-07-03 10:35:11,mobile,Chrome,google,/sale,228
+13129,102,2026-08-16 09:41:08,mobile,Safari,newsletter,/p/trail-runner-x,228
+13389,106,2026-08-25 12:17:12,desktop,Safari,google,/category/apparel,51
+13504,47,2026-08-18 01:07:04,desktop,Safari,google,/,138
+13932,13,2026-09-02 15:09:07,desktop,Chrome,direct,/sale,464
+14471,79,2026-07-19 06:20:15,desktop,Chrome,google,/category/apparel,326
+14764,13,2026-08-22 14:47:39,mobile,Firefox,google,/category/apparel,145
+15295,87,2026-08-18 00:34:03,mobile,Edge,google,/category/tents,111
+15635,114,2026-08-18 23:50:00,mobile,Safari,google,/,552
+15652,87,2026-08-19 22:37:31,desktop,Safari,direct,/sale,292
+15751,1,2026-09-26 19:20:35,desktop,Chrome,direct,/p/alpine-2-person-tent,201
+16654,75,2026-07-24 14:01:27,desktop,Chrome,facebook,/sale,346
+16905,87,2026-07-13 03:07:05,mobile,Samsung Internet,bing,/,135
+16960,87,2026-09-24 17:08:02,mobile,Chrome,instagram,/blog/packing-list,302
+17180,47,2026-07-30 21:16:14,mobile,Chrome,direct,/,112
+17264,77,2026-08-12 15:02:38,mobile,Chrome,google,/category/footwear,95
+17370,87,2026-07-26 16:56:38,mobile,Chrome,google,/,68
+17401,10,2026-09-21 08:34:52,desktop,Chrome,google,/,243
+17505,20,2026-08-22 11:51:24,desktop,Chrome,google,/category/footwear,74
+17821,87,2026-09-12 23:42:25,mobile,Chrome,facebook,/category/apparel,149
+18090,71,2026-07-03 12:36:22,mobile,Safari,google,/category/footwear,121
+18165,101,2026-07-13 22:18:12,desktop,Chrome,facebook,/sale,114
+18507,48,2026-09-25 18:43:15,mobile,Safari,newsletter,/,165
+18548,17,2026-07-15 19:35:29,tablet,Samsung Internet,partner site,/sale,209
+18947,1,2026-08-13 20:43:42,mobile,Safari,instagram,/,324
+19377,104,2026-07-30 17:25:35,desktop,Safari,instagram,/,88
+20161,71,2026-08-24 00:27:28,mobile,Firefox,bing,/blog/packing-list,141
+20230,11,2026-08-01 09:55:20,desktop,Safari,partner site,/category/footwear,255
+20526,4,2026-08-03 06:50:03,mobile,Safari,google,/category/footwear,58
+21135,87,2026-09-22 10:50:40,desktop,Safari,newsletter,/blog/packing-list,528
+21476,30,2026-08-16 03:23:36,mobile,Safari,google,/sale,141
+22029,106,2026-07-23 21:18:38,mobile,Chrome,google,/blog/packing-list,80
+22135,45,2026-08-17 06:57:33,mobile,Safari,google,/p/alpine-2-person-tent,253
+22556,2,2026-07-20 22:13:50,mobile,Chrome,instagram,/,36
+22677,87,2026-08-08 16:55:15,mobile,Chrome,direct,/sale,109
+23023,106,2026-08-04 15:11:14,desktop,Chrome,facebook,/category/apparel,90
+23229,71,2026-08-12 22:10:33,mobile,Chrome,bing,/p/alpine-2-person-tent,558
+23320,71,2026-07-01 20:51:08,mobile,Safari,google,/p/alpine-2-person-tent,238
+23402,87,2026-09-13 05:41:17,desktop,Safari,instagram,/,144
+23483,102,2026-09-01 15:03:42,mobile,Firefox,google,/category/tents,325
+23777,31,2026-08-13 05:11:01,desktop,Edge,direct,/category/tents,91
+24494,87,2026-07-17 16:24:06,desktop,Chrome,facebook,/category/tents,247
+25747,57,2026-08-18 22:44:05,mobile,Firefox,instagram,/,321
+26131,13,2026-08-20 04:37:17,mobile,Safari,google,/category/tents,327
+26199,38,2026-07-10 21:14:48,desktop,Safari,google,/category/apparel,444
+26408,40,2026-07-20 04:24:25,mobile,Safari,facebook,/sale,114
+26560,2,2026-08-07 22:03:10,mobile,Firefox,bing,/category/tents,413
+26669,112,2026-08-01 04:10:43,desktop,Edge,newsletter,/p/alpine-2-person-tent,162
+26745,92,2026-08-04 21:21:21,desktop,Chrome,direct,/,256
+26890,34,2026-08-07 07:39:37,desktop,Chrome,google,/p/alpine-2-person-tent,73
+27406,77,2026-07-17 09:30:41,desktop,Chrome,google,/category/tents,616
+28070,101,2026-08-05 22:54:04,desktop,Edge,newsletter,/,117
+28994,48,2026-08-03 14:37:26,mobile,Safari,google,/category/apparel,41
+29168,75,2026-09-06 22:56:43,desktop,Chrome,bing,/,334
+29713,87,2026-08-11 00:22:01,mobile,Samsung Internet,google,/,80
+29977,110,2026-09-10 09:10:31,desktop,Chrome,google,/blog/packing-list,402
+30219,87,2026-07-20 01:52:33,desktop,Safari,instagram,/sale,106
+30764,46,2026-07-01 14:30:24,desktop,Chrome,newsletter,/category/footwear,480
+31098,98,2026-07-13 06:08:58,mobile,Chrome,google,/p/alpine-2-person-tent,154
+31740,87,2026-09-15 05:18:22,mobile,Chrome,direct,/sale,359
+32174,34,2026-07-10 10:34:24,desktop,Chrome,direct,/category/tents,99
+32251,86,2026-09-22 21:00:07,mobile,Chrome,google,/,83
+33043,107,2026-09-09 03:38:49,mobile,Safari,newsletter,/category/tents,136
+33146,87,2026-08-01 23:59:13,tablet,Chrome,partner site,/category/footwear,282
+33441,32,2026-08-03 11:39:46,desktop,Chrome,google,/,275
+33583,13,2026-07-08 23:26:24,mobile,Samsung Internet,google,/category/tents,181
+33818,59,2026-07-11 22:48:27,mobile,Chrome,google,/p/alpine-2-person-tent,524
+34343,47,2026-08-03 10:47:54,mobile,Chrome,google,/,415
+34477,42,2026-07-09 21:52:17,mobile,Chrome,facebook,/blog/packing-list,435
+34749,3,2026-07-22 11:57:11,desktop,Samsung Internet,instagram,/sale,367
+34972,76,2026-08-10 23:19:41,mobile,Safari,facebook,/blog/packing-list,185
+35854,75,2026-07-26 13:13:11,mobile,Safari,bing,/,110
+36101,71,2026-08-14 14:09:15,mobile,Chrome,direct,/,144
+36261,75,2026-08-28 03:04:45,mobile,Safari,partner site,/category/footwear,466
+36451,87,2026-09-01 13:55:20,desktop,Edge,google,/,344
+36661,77,2026-07-05 21:48:55,tablet,Firefox,newsletter,/sale,412
+37186,90,2026-07-09 09:31:47,desktop,Edge,direct,/p/trail-runner-x,508
+37249,87,2026-07-17 11:01:52,tablet,Safari,facebook,/sale,419
+37413,47,2026-07-05 10:25:32,mobile,Chrome,direct,/category/tents,400
+37564,87,2026-09-08 21:07:06,mobile,Chrome,facebook,/,114
+37773,43,2026-07-08 23:07:30,mobile,Chrome,direct,/sale,371
+38001,101,2026-07-12 18:19:21,mobile,Chrome,google,/blog/packing-list,268
+38175,111,2026-07-25 22:43:47,mobile,Chrome,bing,/p/alpine-2-person-tent,101
+38435,87,2026-09-18 09:49:48,mobile,Chrome,instagram,/,116
+38518,55,2026-09-13 02:59:34,tablet,Safari,google,/sale,242
+38566,47,2026-08-01 07:10:36,mobile,Safari,partner site,/,206
+38908,64,2026-09-10 17:44:01,desktop,Chrome,google,/category/tents,224
+39534,52,2026-09-25 22:38:20,mobile,Edge,instagram,/category/apparel,328
+39810,53,2026-08-03 20:27:39,mobile,Chrome,direct,/p/trail-runner-x,145
+39825,53,2026-09-19 09:14:12,mobile,Firefox,google,/p/trail-runner-x,108
+39847,70,2026-09-26 14:02:57,desktop,Safari,facebook,/,139
+39879,72,2026-09-21 11:14:01,mobile,Chrome,bing,/category/tents,385
+40358,53,2026-09-14 10:44:27,desktop,Safari,partner site,/category/tents,358
+40558,71,2026-09-11 14:43:06,mobile,Chrome,direct,/p/trail-runner-x,273
+40695,34,2026-09-29 06:51:09,mobile,Safari,direct,/p/trail-runner-x,171
+40781,57,2026-08-12 01:52:28,desktop,Chrome,partner site,/p/alpine-2-person-tent,90
+40842,15,2026-08-21 10:52:08,tablet,Safari,facebook,/sale,48
+41243,101,2026-07-17 12:34:32,mobile,Edge,google,/category/apparel,84
+41295,47,2026-07-02 19:29:43,desktop,Chrome,bing,/sale,226
+41357,13,2026-07-04 06:21:33,desktop,Chrome,google,/,345
+41560,104,2026-07-08 14:58:53,mobile,Chrome,instagram,/,189
+42441,55,2026-09-10 07:40:08,mobile,Chrome,google,/,62
+42657,80,2026-09-21 19:25:30,desktop,Edge,newsletter,/sale,461
+42933,47,2026-08-25 03:14:25,desktop,Chrome,google,/blog/packing-list,100
+42972,55,2026-08-04 18:32:27,mobile,Chrome,google,/sale,490
+43381,87,2026-08-26 20:42:33,mobile,Safari,newsletter,/,223
+43479,58,2026-07-29 17:29:54,desktop,Safari,partner site,/,444
+43919,58,2026-09-20 02:09:49,mobile,Samsung Internet,partner site,/category/footwear,195
+44604,71,2026-07-26 19:54:51,desktop,Chrome,google,/sale,156
+44910,111,2026-09-08 23:02:33,mobile,Chrome,google,/category/apparel,99
+45157,68,2026-09-27 20:06:30,mobile,Samsung Internet,google,/p/trail-runner-x,378
+45506,78,2026-07-01 18:36:20,desktop,Safari,newsletter,/,132
+45602,72,2026-07-06 16:30:53,tablet,Edge,google,/p/trail-runner-x,33
+45832,104,2026-09-26 10:58:47,mobile,Chrome,direct,/blog/packing-list,320
+45921,37,2026-08-04 17:21:09,mobile,Chrome,instagram,/sale,45
+46090,45,2026-09-21 13:13:13,mobile,Chrome,direct,/category/apparel,603
+46881,59,2026-09-02 01:43:48,mobile,Safari,google,/blog/packing-list,168
+47406,61,2026-09-15 01:08:35,desktop,Safari,direct,/p/trail-runner-x,202
+47572,106,2026-09-14 01:41:23,desktop,Safari,direct,/sale,185
+47683,36,2026-08-12 04:22:36,desktop,Chrome,partner site,/category/tents,228
+47877,24,2026-09-08 14:03:05,mobile,Safari,bing,/category/footwear,330
+49239,31,2026-07-11 04:14:25,desktop,Safari,direct,/category/apparel,60
+49267,74,2026-07-02 09:49:21,mobile,Safari,direct,/p/trail-runner-x,74
+49448,13,2026-07-21 07:28:08,desktop,Edge,google,/p/alpine-2-person-tent,512
+49503,55,2026-07-02 08:50:35,mobile,Chrome,google,/,431
+49804,111,2026-07-17 18:24:24,mobile,Chrome,google,/p/trail-runner-x,259
+49862,82,2026-08-07 13:50:50,desktop,Safari,google,/sale,184
+50415,47,2026-08-15 19:16:57,mobile,Safari,direct,/,253
+50613,13,2026-09-18 23:17:16,mobile,Chrome,instagram,/category/tents,249
+50629,87,2026-07-28 13:32:26,mobile,Chrome,direct,/category/footwear,171
+51081,55,2026-07-29 22:54:48,mobile,Safari,instagram,/blog/packing-list,354
+51600,33,2026-08-01 21:05:04,mobile,Chrome,direct,/p/trail-runner-x,477
+52602,72,2026-08-01 00:26:11,mobile,Chrome,google,/,52
+52901,87,2026-09-04 02:49:00,mobile,Edge,partner site,/,178
+52944,58,2026-07-01 01:07:36,mobile,Chrome,direct,/category/apparel,78
+53065,65,2026-08-27 19:44:10,mobile,Chrome,instagram,/sale,127
+53364,106,2026-07-28 21:02:27,tablet,Safari,google,/,257
+53539,71,2026-07-22 11:58:37,mobile,Chrome,google,/category/footwear,163
+53945,104,2026-08-21 04:28:24,mobile,Chrome,direct,/p/trail-runner-x,38
+54073,39,2026-08-28 11:37:34,mobile,Chrome,facebook,/category/footwear,116
+54095,55,2026-09-20 01:09:54,desktop,Chrome,newsletter,/category/tents,113
+54125,71,2026-08-12 04:23:25,desktop,Safari,instagram,/category/footwear,206
+54350,102,2026-07-17 00:00:23,desktop,Chrome,google,/blog/packing-list,119
+54729,106,2026-07-26 03:48:26,mobile,Safari,google,/,452
+54848,104,2026-08-16 06:10:29,mobile,Edge,instagram,/category/apparel,222
+54991,87,2026-07-27 10:53:29,mobile,Firefox,google,/,766
+55090,13,2026-09-17 03:15:57,tablet,Chrome,direct,/,382
+55489,36,2026-07-17 10:15:25,mobile,Safari,direct,/sale,62
+55521,98,2026-09-25 14:31:56,mobile,Safari,direct,/,171
+55806,87,2026-07-03 11:01:33,mobile,Chrome,google,/category/footwear,218
+56094,55,2026-07-24 01:21:01,mobile,Edge,google,/category/tents,338
+56528,87,2026-09-07 16:10:35,mobile,Chrome,partner site,/sale,301
+56986,55,2026-09-28 12:52:54,mobile,Safari,direct,/category/footwear,325
+57002,71,2026-07-05 09:44:30,mobile,Safari,google,/blog/packing-list,149
+57881,39,2026-08-07 02:19:06,mobile,Edge,instagram,/blog/packing-list,147
+58036,78,2026-07-09 09:06:02,mobile,Samsung Internet,google,/blog/packing-list,308
+58304,40,2026-08-20 22:40:28,mobile,Safari,google,/sale,432
+58322,34,2026-08-21 20:36:16,mobile,Safari,google,/category/footwear,292
+58410,97,2026-08-17 01:35:05,mobile,Edge,google,/category/footwear,47
+58421,87,2026-08-01 17:47:00,desktop,Edge,facebook,/p/alpine-2-person-tent,135
+58622,13,2026-09-05 08:17:00,mobile,Safari,google,/,179
+59550,87,2026-09-17 17:04:59,mobile,Safari,direct,/,62
+59655,61,2026-07-26 20:37:50,mobile,Chrome,direct,/category/tents,398
+60261,25,2026-08-23 00:30:38,mobile,Safari,direct,/category/apparel,146
+60354,87,2026-08-30 16:35:10,tablet,Samsung Internet,partner site,/,35
+60546,3,2026-09-14 18:05:25,desktop,Safari,direct,/sale,275
+61154,94,2026-07-08 10:42:38,mobile,Safari,direct,/category/apparel,162
+61285,8,2026-09-11 12:56:29,mobile,Chrome,google,/category/tents,145
+61356,2,2026-07-07 06:13:30,desktop,Chrome,newsletter,/p/trail-runner-x,272
+61790,55,2026-09-24 10:13:41,mobile,Safari,facebook,/sale,289
+62180,47,2026-08-11 22:07:19,mobile,Chrome,facebook,/p/trail-runner-x,350
+62695,1,2026-08-03 17:28:37,mobile,Edge,google,/p/alpine-2-person-tent,185
+63145,8,2026-07-08 16:50:43,mobile,Chrome,newsletter,/p/trail-runner-x,68
+63327,10,2026-09-05 05:02:03,desktop,Edge,direct,/category/apparel,90
+63641,22,2026-09-25 07:59:48,mobile,Chrome,direct,/blog/packing-list,312
+63708,87,2026-09-03 20:02:03,mobile,Chrome,google,/category/footwear,297
+63976,71,2026-07-25 05:27:19,mobile,Chrome,instagram,/p/trail-runner-x,231
+64065,55,2026-09-22 00:02:13,desktop,Firefox,direct,/category/apparel,35
+64300,47,2026-07-25 23:10:18,mobile,Firefox,direct,/blog/packing-list,80
+64653,75,2026-07-20 21:53:01,desktop,Chrome,newsletter,/p/alpine-2-person-tent,489
+64766,87,2026-07-26 12:24:59,mobile,Safari,partner site,/p/trail-runner-x,87
+65107,69,2026-08-11 09:50:48,mobile,Edge,direct,/,303
+65499,75,2026-07-26 21:36:43,mobile,Chrome,google,/p/alpine-2-person-tent,303
+65627,43,2026-08-27 02:50:48,mobile,Safari,google,/p/trail-runner-x,141
+65731,87,2026-09-07 09:32:55,desktop,Safari,facebook,/,486
+66040,55,2026-07-24 20:33:24,mobile,Safari,facebook,/category/footwear,125
+66357,87,2026-08-04 23:40:58,desktop,Chrome,instagram,/p/trail-runner-x,276
+66504,96,2026-08-09 18:40:37,mobile,Chrome,instagram,/,75
+66554,87,2026-08-24 18:46:32,desktop,Chrome,direct,/,266
+66739,58,2026-09-16 06:19:31,desktop,Safari,google,/,154
+66912,13,2026-07-03 06:40:39,mobile,Chrome,newsletter,/category/tents,319
+66940,56,2026-07-02 17:20:16,desktop,Safari,direct,/,100
+68129,87,2026-08-15 17:50:48,mobile,Firefox,google,/,159
+68289,87,2026-07-04 10:03:37,desktop,Safari,facebook,/,106
+68340,74,2026-07-26 11:20:27,desktop,Safari,direct,/category/footwear,169
+68388,87,2026-07-09 00:12:54,tablet,Safari,google,/category/footwear,423
+68631,71,2026-09-22 22:43:41,mobile,Chrome,newsletter,/category/footwear,249
+69749,87,2026-08-17 00:31:59,mobile,Safari,facebook,/sale,175
+70531,47,2026-07-12 09:37:05,mobile,Safari,direct,/category/apparel,499
+70911,71,2026-09-16 08:40:27,tablet,Edge,google,/category/tents,165
+71279,71,2026-07-25 00:49:38,mobile,Edge,facebook,/sale,438
+71316,2,2026-08-22 05:49:30,desktop,Chrome,direct,/sale,39
+72622,87,2026-09-21 14:50:13,desktop,Safari,newsletter,/,231
+72760,59,2026-08-12 14:26:10,mobile,Chrome,partner site,/p/trail-runner-x,111
+73385,102,2026-07-18 21:02:27,desktop,Safari,newsletter,/sale,356
+73807,44,2026-08-28 08:33:21,mobile,Safari,newsletter,/category/footwear,40
+74250,63,2026-08-27 16:28:51,desktop,Samsung Internet,newsletter,/,51
+74688,34,2026-07-04 06:48:40,desktop,Chrome,newsletter,/sale,180
+75255,111,2026-08-03 21:46:14,desktop,Chrome,google,/,189
+75277,88,2026-09-27 23:23:54,desktop,Chrome,google,/,433
+75882,47,2026-09-13 11:02:13,desktop,Safari,google,/category/footwear,268
+76103,62,2026-09-14 06:14:42,tablet,Safari,google,/category/footwear,53
+76766,75,2026-07-09 13:52:31,desktop,Chrome,google,/,703
+77226,87,2026-07-19 09:44:01,mobile,Safari,partner site,/sale,79
+77709,8,2026-09-04 04:46:39,mobile,Edge,bing,/,263
+78201,87,2026-08-07 11:17:29,mobile,Samsung Internet,facebook,/category/footwear,91
+78384,87,2026-09-05 16:30:54,desktop,Edge,bing,/category/footwear,117
+78667,13,2026-07-18 04:55:55,desktop,Chrome,newsletter,/sale,358
+79214,74,2026-09-05 11:13:19,mobile,Chrome,direct,/sale,229
+79315,52,2026-07-06 12:54:21,desktop,Chrome,newsletter,/,250
+80050,70,2026-07-02 00:25:18,desktop,Samsung Internet,bing,/category/footwear,161
+80102,62,2026-07-17 11:11:42,mobile,Safari,google,/category/footwear,333
+80160,60,2026-07-17 23:36:15,mobile,Chrome,newsletter,/,153
+80608,74,2026-07-01 03:47:34,mobile,Safari,direct,/,408
+80822,105,2026-07-07 06:50:08,mobile,Safari,google,/p/trail-runner-x,344
+81491,85,2026-09-27 22:41:40,desktop,Safari,direct,/sale,180
+81646,55,2026-07-18 19:53:17,mobile,Firefox,google,/category/footwear,133
+82041,101,2026-09-27 07:15:59,desktop,Samsung Internet,google,/p/trail-runner-x,108
+82486,55,2026-07-05 10:10:36,mobile,Chrome,google,/,481
+82665,106,2026-09-11 09:44:06,mobile,Chrome,instagram,/,438
+83462,38,2026-07-12 12:03:05,mobile,Chrome,google,/sale,171
+83870,98,2026-07-22 03:04:31,mobile,Chrome,google,/p/alpine-2-person-tent,40

@@ -1,0 +1,26 @@
+{
+  "dataset": "auto-insurance-claims",
+  "title": "Synthetic Auto Insurance Policies and Claims",
+  "generator": "GenerateRealData",
+  "generator_url": "https://generaterealdata.com/industries/insurance/",
+  "generated_on": "2026-10-11",
+  "mode": "schema",
+  "plan": "plan.json",
+  "schema": "schema.sql",
+  "seed": 20261110,
+  "rows_requested": 200000,
+  "rows_generated": 192843,
+  "rows_per_table": {
+    "policyholders": 30000,
+    "vehicles": 37000,
+    "policies": 37000,
+    "claims": 50000,
+    "claim_payments": 38843
+  },
+  "ai_written_fields": [],
+  "ai_rows_used": 0,
+  "anomalies": false,
+  "format": "sql",
+  "dialect": "postgresql",
+  "licence": "CC-BY-4.0"
+}

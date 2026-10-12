@@ -1,0 +1,324 @@
+employee_id,first_name,last_name,email,department_id,job_title,job_level,hire_date,termination_date,employment_status,gender,date_of_birth,work_mode
+1,Isaiah,Hatfield,isaiah.hatfield1@corp.example.com,14,"Associate, Mid-Market Sales",1,2021-11-07,,active,Male,1984-01-24,remote
+2,Tracy,Good,tracy.good2@corp.example.com,20,"Lead, Growth Marketing",4,2019-12-02,,active,Female,1973-04-15,hybrid
+3,Christine,Wong,christine.wong3@corp.example.com,9,"Specialist, Product Management",2,2020-08-21,,active,Female,1973-11-13,hybrid
+4,Roger,Montes,roger.montes4@corp.example.com,8,"Specialist, IT Support",2,2023-05-31,,active,Female,1968-07-12,office
+5,Ian,Woodward,ian.woodward5@corp.example.com,36,"Lead, People Operations",4,2019-02-21,,active,Male,1971-12-21,hybrid
+6,Monica,Jones,monica.jones6@corp.example.com,13,"Specialist, Enterprise Sales",2,2026-03-02,,active,Female,1995-12-12,office
+7,Natalie,Becker,natalie.becker7@corp.example.com,30,"Senior Specialist, Accounting",3,2020-06-24,,active,Female,1961-01-26,hybrid
+8,Victoria,Bailey,victoria.bailey8@corp.example.com,4,"Associate, Web Engineering",1,2023-04-19,2026-09-30,terminated,Female,1966-10-23,hybrid
+9,Jamie,Baker,jamie.baker9@corp.example.com,40,"Specialist, Compliance",2,2025-01-29,,active,Female,1972-06-20,hybrid
+10,Jason,Watts,jason.watts10@corp.example.com,38,"Specialist, Compensation & Benefits",2,2021-04-19,,active,Male,1966-01-12,office
+11,Theresa,Hall,theresa.hall11@corp.example.com,10,"Senior Specialist, Product Design",3,2022-06-26,,active,Male,1960-03-18,hybrid
+12,Evan,Martinez,evan.martinez12@corp.example.com,16,"Associate, Sales Development",1,2020-04-21,,active,Female,1960-09-26,remote
+13,Denise,Freeman,denise.freeman13@corp.example.com,11,"Lead, User Research",4,2025-05-02,2026-09-30,terminated,Male,1984-02-25,hybrid
+14,Meagan,Clark,meagan.clark14@corp.example.com,12,"Lead, Technical Writing",4,2015-04-28,,active,Male,1958-02-03,remote
+15,Kevin,Williams,kevin.williams15@corp.example.com,23,"Senior Specialist, Product Marketing",3,2019-08-20,,active,Male,1988-11-13,hybrid
+16,Samantha,Richards,samantha.richards16@corp.example.com,36,"Senior Specialist, People Operations",3,2025-09-29,,active,Male,1965-04-27,hybrid
+17,Mitchell,Bowman,mitchell.bowman17@corp.example.com,8,"Senior Specialist, IT Support",3,2021-09-26,,active,Non-binary,1978-02-09,hybrid
+18,Ricardo,White,ricardo.white18@corp.example.com,22,"Specialist, Events",2,2015-02-04,,active,Male,1958-04-06,hybrid
+19,Beth,Wood,beth.wood19@corp.example.com,27,"Director, Logistics",6,2015-05-16,,active,Female,1964-04-07,hybrid
+20,Robert,Warren,robert.warren20@corp.example.com,19,"Manager, Brand Marketing",5,2025-03-31,,active,Female,1962-03-28,hybrid
+21,Jackie,Waters,jackie.waters21@corp.example.com,16,"Manager, Sales Development",5,2024-04-12,,active,Female,1983-08-09,hybrid
+22,Teresa,Hall,teresa.hall22@corp.example.com,29,"Associate, Facilities",1,2024-10-28,,active,Male,1976-04-11,hybrid
+23,Jacob,Ortiz,jacob.ortiz23@corp.example.com,32,"Associate, Financial Planning",1,2015-09-13,,active,Male,1989-09-07,hybrid
+24,Heidi,Davis,heidi.davis24@corp.example.com,2,"Vice President, Data Science",7,2021-05-27,,active,Female,1974-09-24,remote
+25,Erik,Jensen,erik.jensen25@corp.example.com,21,"Manager, Content",5,2023-10-18,,on_leave,Male,1984-12-13,remote
+26,Megan,Richardson,megan.richardson26@corp.example.com,6,"Lead, Security Engineering",4,2022-05-29,,active,Male,1995-01-16,hybrid
+27,Dean,Stewart,dean.stewart27@corp.example.com,1,"Associate, Platform Engineering",1,2017-12-08,,active,Male,1964-12-01,office
+28,Leslie,Foster,leslie.foster28@corp.example.com,36,"Specialist, People Operations",2,2021-10-06,,active,Male,1979-02-15,hybrid
+29,Cynthia,Walker,cynthia.walker29@corp.example.com,9,"Associate, Product Management",1,2020-11-30,,on_leave,Male,1999-08-04,hybrid
+30,Katie,Walter,katie.walter30@corp.example.com,5,"Lead, Infrastructure",4,2024-09-25,,active,Male,1971-12-16,remote
+31,Steven,Owens,steven.owens31@corp.example.com,4,"Senior Specialist, Web Engineering",3,2021-01-07,,active,Male,1981-09-20,office
+32,Andrea,Johnson,andrea.johnson32@corp.example.com,7,"Lead, Quality Assurance",4,2024-12-19,,active,Female,1995-08-09,hybrid
+33,Jacob,Myers,jacob.myers33@corp.example.com,18,"Associate, Partnerships",1,2022-05-31,2024-11-30,terminated,Male,1978-01-26,hybrid
+34,Sue,Woodward,sue.woodward34@corp.example.com,30,"Specialist, Accounting",2,2022-07-03,,active,Male,1983-01-11,hybrid
+35,Christopher,Lambert,christopher.lambert35@corp.example.com,1,"Lead, Platform Engineering",4,2026-06-29,,active,Female,1969-11-11,hybrid
+36,Duane,Wood,duane.wood36@corp.example.com,32,"Associate, Financial Planning",1,2025-06-29,,active,Male,1962-09-27,remote
+37,Cheyenne,Wilson,cheyenne.wilson37@corp.example.com,29,"Senior Specialist, Facilities",3,2015-07-08,,active,Male,1992-10-08,hybrid
+38,Gloria,Smith,gloria.smith38@corp.example.com,17,"Associate, Sales Operations",1,2018-09-08,,active,Female,1957-06-07,office
+39,Brian,Marshall,brian.marshall39@corp.example.com,28,"Senior Specialist, Procurement",3,2023-04-14,,active,Female,1996-02-16,hybrid
+40,Jonathan,Wong,jonathan.wong40@corp.example.com,18,"Specialist, Partnerships",2,2024-09-30,,active,Female,1987-01-01,hybrid
+41,Lori,Armstrong,lori.armstrong41@corp.example.com,9,"Senior Specialist, Product Management",3,2024-12-04,2026-09-30,terminated,Female,1973-04-09,office
+42,Monique,Dunlap,monique.dunlap42@corp.example.com,33,"Lead, Tax",4,2023-07-25,,active,Male,1974-05-12,office
+43,Stephanie,Shaffer,stephanie.shaffer43@corp.example.com,26,"Specialist, Professional Services",2,2023-10-10,2026-06-10,terminated,Female,1971-03-03,hybrid
+44,Christina,Cummings,christina.cummings44@corp.example.com,36,"Associate, People Operations",1,2023-08-17,,active,Female,1990-09-06,hybrid
+45,Diana,Kirk,diana.kirk45@corp.example.com,40,"Specialist, Compliance",2,2015-02-27,,active,Female,1954-10-09,remote
+46,Gabriela,Simpson,gabriela.simpson46@corp.example.com,9,"Lead, Product Management",4,2024-10-17,,active,Male,1991-01-26,hybrid
+47,Heather,White,heather.white47@corp.example.com,11,"Specialist, User Research",2,2022-10-10,,on_leave,Male,1974-12-28,remote
+48,Jessica,Hernandez,jessica.hernandez48@corp.example.com,18,"Specialist, Partnerships",2,2018-08-29,,active,Male,1983-12-15,office
+49,Katherine,Morales,katherine.morales49@corp.example.com,32,"Associate, Financial Planning",1,2023-06-14,,on_leave,Male,1961-03-14,hybrid
+50,Travis,Martin,travis.martin50@corp.example.com,36,"Lead, People Operations",4,2025-09-11,,active,Female,1987-02-03,hybrid
+51,Regina,Hutchinson,regina.hutchinson51@corp.example.com,3,"Specialist, Mobile Engineering",2,2016-04-01,,active,Female,1991-08-05,hybrid
+52,Shannon,Anderson,shannon.anderson52@corp.example.com,23,"Specialist, Product Marketing",2,2026-01-02,,active,Male,1966-02-22,office
+53,Jack,Hughes,jack.hughes53@corp.example.com,28,"Specialist, Procurement",2,2021-10-26,,active,Female,1961-10-25,office
+54,John,Price,john.price54@corp.example.com,32,"Specialist, Financial Planning",2,2020-03-07,,active,Female,1970-04-07,hybrid
+55,Mary,Smith,mary.smith55@corp.example.com,15,"Senior Specialist, SMB Sales",3,2023-11-16,2026-09-30,terminated,Male,1982-08-08,hybrid
+56,Brandon,Smith,brandon.smith56@corp.example.com,11,"Specialist, User Research",2,2026-06-22,,active,Female,1977-12-24,office
+57,Susan,Green,susan.green57@corp.example.com,9,"Director, Product Management",6,2022-06-28,,active,Female,1968-09-09,office
+58,Daryl,Bullock,daryl.bullock58@corp.example.com,34,"Director, Internal Audit",6,2026-06-01,,active,Male,1975-06-14,office
+59,Richard,Liu,richard.liu59@corp.example.com,19,"Lead, Brand Marketing",4,2019-02-13,,active,Female,1967-06-26,office
+60,Carlos,Myers,carlos.myers60@corp.example.com,32,"Lead, Financial Planning",4,2020-06-02,,active,Male,1989-08-26,remote
+61,Daniel,Hayes,daniel.hayes61@corp.example.com,17,"Specialist, Sales Operations",2,2021-02-06,2023-01-06,terminated,Male,1968-11-08,remote
+62,James,Lee,james.lee62@corp.example.com,10,"Associate, Product Design",1,2023-09-13,,active,Female,1992-11-10,hybrid
+63,Kenneth,Bradley,kenneth.bradley63@corp.example.com,17,"Senior Specialist, Sales Operations",3,2022-02-28,,active,Female,1991-03-03,hybrid
+64,Kristen,Hill,kristen.hill64@corp.example.com,36,"Senior Specialist, People Operations",3,2017-09-24,,active,Male,1992-09-29,office
+65,Timothy,Pugh,timothy.pugh65@corp.example.com,17,"Manager, Sales Operations",5,2018-06-17,,active,Male,1996-05-13,hybrid
+66,Michael,Larson,michael.larson66@corp.example.com,21,"Director, Content",6,2026-05-29,,active,Male,1994-05-07,hybrid
+67,Carolyn,Miller,carolyn.miller67@corp.example.com,17,"Lead, Sales Operations",4,2020-11-09,,active,Male,1970-05-24,hybrid
+68,Diana,Snow,diana.snow68@corp.example.com,11,"Specialist, User Research",2,2021-01-25,,active,Male,1960-07-19,hybrid
+69,Kathryn,Valencia,kathryn.valencia69@corp.example.com,10,"Associate, Product Design",1,2026-02-16,,active,Female,1996-08-31,office
+70,Miranda,Smith,miranda.smith70@corp.example.com,17,"Senior Specialist, Sales Operations",3,2017-02-07,,active,Male,1971-02-05,office
+71,Johnathan,Johnson,johnathan.johnson71@corp.example.com,9,"Manager, Product Management",5,2016-09-12,,active,Male,1977-12-11,hybrid
+72,Joseph,Cortez,joseph.cortez72@corp.example.com,39,"Director, Legal",6,2019-12-18,2022-12-18,terminated,Male,1969-05-30,office
+73,Walter,Jones,walter.jones73@corp.example.com,14,"Senior Specialist, Mid-Market Sales",3,2019-11-13,,active,Female,1962-03-01,hybrid
+74,Catherine,Ritter,catherine.ritter74@corp.example.com,16,"Lead, Sales Development",4,2023-04-10,2023-12-10,terminated,Male,1998-03-19,office
+75,Stephanie,Pierce,stephanie.pierce75@corp.example.com,22,"Manager, Events",5,2025-01-05,,active,Male,1961-05-03,remote
+76,Francis,Thomas,francis.thomas76@corp.example.com,32,"Specialist, Financial Planning",2,2024-01-16,2026-09-30,terminated,Male,1992-08-27,remote
+77,Melissa,Calhoun,melissa.calhoun77@corp.example.com,32,"Specialist, Financial Planning",2,2022-05-27,2025-04-27,terminated,Female,1978-09-01,office
+78,Mason,Mendoza,mason.mendoza78@corp.example.com,38,"Associate, Compensation & Benefits",1,2026-08-23,,active,Male,1968-10-06,hybrid
+79,Arthur,Hall,arthur.hall79@corp.example.com,39,"Specialist, Legal",2,2025-08-02,,active,Male,1985-12-05,office
+80,Gabrielle,Reyes,gabrielle.reyes80@corp.example.com,18,"Lead, Partnerships",4,2015-07-09,2020-09-09,terminated,Male,1974-04-03,hybrid
+81,Julie,Sutton,julie.sutton81@corp.example.com,23,"Specialist, Product Marketing",2,2025-10-30,,active,Female,1992-12-28,hybrid
+82,Linda,Paul,linda.paul82@corp.example.com,12,"Specialist, Technical Writing",2,2020-03-09,,active,Male,1988-10-30,office
+83,Keith,Frey,keith.frey83@corp.example.com,32,"Senior Specialist, Financial Planning",3,2026-01-30,,active,Male,1972-08-25,remote
+84,Mike,Gomez,mike.gomez84@corp.example.com,36,"Lead, People Operations",4,2024-06-14,,active,Female,1985-05-26,remote
+85,Deborah,Allen,deborah.allen85@corp.example.com,21,"Specialist, Content",2,2026-07-12,,active,Male,1996-01-27,remote
+86,Nathaniel,King,nathaniel.king86@corp.example.com,24,"Lead, Customer Support",4,2026-01-31,,active,Male,2001-01-09,hybrid
+87,Jessica,Jenkins,jessica.jenkins87@corp.example.com,22,"Associate, Events",1,2024-02-01,,active,Male,1971-09-04,office
+88,Meghan,Gonzalez,meghan.gonzalez88@corp.example.com,32,"Manager, Financial Planning",5,2020-12-28,,active,Female,1973-04-03,hybrid
+89,Christopher,Roberts,christopher.roberts89@corp.example.com,39,"Associate, Legal",1,2022-03-31,,active,Non-binary,1973-05-17,hybrid
+90,Michael,Ramos,michael.ramos90@corp.example.com,32,"Specialist, Financial Planning",2,2020-07-12,2021-09-12,terminated,Male,1991-06-25,office
+91,Nicole,Hoffman,nicole.hoffman91@corp.example.com,10,"Specialist, Product Design",2,2018-08-11,,active,Female,1972-12-03,remote
+92,Penny,Ortega,penny.ortega92@corp.example.com,24,"Specialist, Customer Support",2,2022-07-24,,active,Male,1994-04-07,office
+93,James,Jordan,james.jordan93@corp.example.com,35,"Senior Specialist, Talent Acquisition",3,2020-11-14,,active,Male,1973-07-07,hybrid
+94,Brian,Brown,brian.brown94@corp.example.com,35,"Senior Specialist, Talent Acquisition",3,2026-03-29,,active,Male,1996-01-30,hybrid
+95,Thomas,Miller,thomas.miller95@corp.example.com,16,"Lead, Sales Development",4,2018-05-24,,active,Female,1970-04-03,hybrid
+96,Tammy,Lopez,tammy.lopez96@corp.example.com,40,"Lead, Compliance",4,2022-07-30,,active,Male,1989-08-08,hybrid
+97,Andrew,Williams,andrew.williams97@corp.example.com,2,"Director, Data Science",6,2020-07-04,,active,Female,1986-02-11,remote
+98,Melissa,Hall,melissa.hall98@corp.example.com,32,"Specialist, Financial Planning",2,2026-06-19,,active,Male,1999-09-11,remote
+99,Chad,Thompson,chad.thompson99@corp.example.com,38,"Specialist, Compensation & Benefits",2,2026-01-05,,active,Male,1988-09-24,remote
+100,Angela,Luna,angela.luna100@corp.example.com,20,"Senior Specialist, Growth Marketing",3,2024-09-01,,active,Male,1966-01-23,hybrid
+101,Sheila,Rice,sheila.rice101@corp.example.com,30,"Specialist, Accounting",2,2017-05-06,,active,Female,1965-03-05,office
+102,Kristin,Murillo,kristin.murillo102@corp.example.com,32,"Associate, Financial Planning",1,2019-03-08,,active,Male,1973-06-16,hybrid
+103,Sherry,Gonzalez,sherry.gonzalez103@corp.example.com,21,"Manager, Content",5,2018-01-30,,active,Female,1959-03-17,hybrid
+104,Ashley,Burton,ashley.burton104@corp.example.com,37,"Manager, Learning & Development",5,2021-09-21,,active,Male,1990-06-07,remote
+105,Frank,Norton,frank.norton105@corp.example.com,20,"Specialist, Growth Marketing",2,2021-08-29,,active,Non-binary,1977-05-12,office
+106,Sheila,Williams,sheila.williams106@corp.example.com,11,"Specialist, User Research",2,2019-09-09,,active,Female,1984-03-05,office
+107,Paul,Miller,paul.miller107@corp.example.com,32,"Senior Specialist, Financial Planning",3,2025-10-08,,active,Female,1983-01-28,hybrid
+108,Susan,Carr,susan.carr108@corp.example.com,20,"Senior Specialist, Growth Marketing",3,2016-06-27,,active,Male,1961-07-27,hybrid
+109,Michael,Tyler,michael.tyler109@corp.example.com,34,"Associate, Internal Audit",1,2024-11-22,,active,Male,1979-10-16,hybrid
+110,Nathan,Johnson,nathan.johnson110@corp.example.com,39,"Associate, Legal",1,2016-09-16,,active,Female,1979-01-14,office
+111,Felicia,Chavez,felicia.chavez111@corp.example.com,3,"Associate, Mobile Engineering",1,2022-09-06,,active,Male,1975-09-18,hybrid
+112,Victoria,Rodgers,victoria.rodgers112@corp.example.com,37,"Specialist, Learning & Development",2,2020-08-30,2026-09-30,terminated,Female,1963-11-20,office
+113,John,Hodges,john.hodges113@corp.example.com,11,"Specialist, User Research",2,2022-04-13,,active,Male,1976-08-14,hybrid
+114,Jeffrey,Torres,jeffrey.torres114@corp.example.com,22,"Lead, Events",4,2023-01-27,,active,Male,1980-12-06,office
+115,Andrea,Bell,andrea.bell115@corp.example.com,19,"Manager, Brand Marketing",5,2023-02-15,,active,Female,1983-02-07,office
+116,John,Hall,john.hall116@corp.example.com,3,"Manager, Mobile Engineering",5,2020-01-08,2026-09-30,terminated,Male,1972-01-07,hybrid
+117,Crystal,Schwartz,crystal.schwartz117@corp.example.com,16,"Senior Specialist, Sales Development",3,2021-06-25,,active,Female,1991-08-14,office
+118,John,Valencia,john.valencia118@corp.example.com,11,"Associate, User Research",1,2020-04-15,,active,Male,1978-06-15,hybrid
+119,Travis,Christensen,travis.christensen119@corp.example.com,3,"Manager, Mobile Engineering",5,2023-08-20,,active,Female,2001-05-16,hybrid
+120,Karen,Russell,karen.russell120@corp.example.com,1,"Specialist, Platform Engineering",2,2020-12-29,2023-12-29,terminated,Female,1963-07-19,hybrid
+121,Valerie,Beard,valerie.beard121@corp.example.com,32,"Senior Specialist, Financial Planning",3,2022-12-30,,on_leave,Female,1993-10-25,hybrid
+122,William,Wheeler,william.wheeler122@corp.example.com,30,"Director, Accounting",6,2022-06-27,,active,Male,1986-05-01,office
+123,Andrea,Brown,andrea.brown123@corp.example.com,11,"Senior Specialist, User Research",3,2023-06-23,,active,Male,2000-03-22,hybrid
+124,Sean,Griffin,sean.griffin124@corp.example.com,1,"Senior Specialist, Platform Engineering",3,2018-01-08,2020-12-08,terminated,Male,1969-09-15,remote
+125,Cheyenne,Walker,cheyenne.walker125@corp.example.com,12,"Lead, Technical Writing",4,2023-05-17,,active,Male,1980-06-14,remote
+126,Luis,Myers,luis.myers126@corp.example.com,9,"Specialist, Product Management",2,2026-02-13,,active,Male,1991-11-21,remote
+127,Amy,Shah,amy.shah127@corp.example.com,36,"Associate, People Operations",1,2024-04-17,,active,Male,1995-08-30,hybrid
+128,Christine,Smith,christine.smith128@corp.example.com,8,"Associate, IT Support",1,2020-01-17,,active,Female,1980-10-22,office
+129,Laura,Adkins,laura.adkins129@corp.example.com,27,"Associate, Logistics",1,2026-05-17,,active,Non-binary,1978-01-16,hybrid
+130,Melissa,Maldonado,melissa.maldonado130@corp.example.com,15,"Specialist, SMB Sales",2,2015-01-22,2018-02-22,terminated,Non-binary,1993-05-04,remote
+131,Crystal,Hampton,crystal.hampton131@corp.example.com,32,"Senior Specialist, Financial Planning",3,2021-02-23,,active,Female,1958-05-03,remote
+132,Jane,Sanchez,jane.sanchez132@corp.example.com,6,"Lead, Security Engineering",4,2022-08-11,,active,Male,1973-01-05,office
+133,Monica,Wall,monica.wall133@corp.example.com,2,"Senior Specialist, Data Science",3,2018-10-28,,active,Female,1971-08-30,hybrid
+134,Clifford,Mcgee,clifford.mcgee134@corp.example.com,11,"Specialist, User Research",2,2017-03-04,,active,Male,1966-05-28,remote
+135,Cynthia,Brady,cynthia.brady135@corp.example.com,32,"Manager, Financial Planning",5,2026-02-07,,active,Female,1984-11-10,hybrid
+136,Elizabeth,Stephens,elizabeth.stephens136@corp.example.com,25,"Senior Specialist, Customer Success",3,2023-04-04,,active,Male,1972-08-17,office
+137,Lucas,Garcia,lucas.garcia137@corp.example.com,3,"Senior Specialist, Mobile Engineering",3,2020-07-28,,active,Female,1976-10-09,remote
+138,Jason,Odonnell,jason.odonnell138@corp.example.com,32,"Senior Specialist, Financial Planning",3,2016-12-10,,active,Male,1970-10-29,remote
+139,Sandra,Snow,sandra.snow139@corp.example.com,40,"Associate, Compliance",1,2025-04-18,,active,Male,1967-04-13,office
+140,David,Reed,david.reed140@corp.example.com,37,"Specialist, Learning & Development",2,2021-11-13,,active,Female,1980-09-24,hybrid
+141,Michelle,Banks,michelle.banks141@corp.example.com,37,"Specialist, Learning & Development",2,2025-08-03,,active,Female,2003-10-18,office
+142,Barbara,Hodge,barbara.hodge142@corp.example.com,26,"Senior Specialist, Professional Services",3,2016-11-14,2021-11-14,terminated,Male,1964-02-07,hybrid
+143,Raymond,Clark,raymond.clark143@corp.example.com,8,"Specialist, IT Support",2,2018-09-24,2021-07-24,terminated,Female,1970-07-07,office
+144,Evelyn,Nash,evelyn.nash144@corp.example.com,8,"Specialist, IT Support",2,2023-11-14,,active,Non-binary,1966-05-08,hybrid
+145,Carolyn,Williams,carolyn.williams145@corp.example.com,37,"Specialist, Learning & Development",2,2022-02-22,,active,Female,1986-04-18,hybrid
+146,Michael,Meza,michael.meza146@corp.example.com,17,"Associate, Sales Operations",1,2018-09-13,,active,Male,1989-06-21,office
+147,Kelly,Maynard,kelly.maynard147@corp.example.com,3,"Associate, Mobile Engineering",1,2022-08-19,,active,Male,1995-12-05,hybrid
+148,Melissa,Johnson,melissa.johnson148@corp.example.com,20,"Associate, Growth Marketing",1,2026-08-02,,active,Non-binary,1973-05-25,hybrid
+149,Maria,Diaz,maria.diaz149@corp.example.com,9,"Associate, Product Management",1,2017-11-10,,active,Female,1991-03-19,office
+150,Samuel,Guzman,samuel.guzman150@corp.example.com,9,"Associate, Product Management",1,2021-12-22,2023-09-22,terminated,Male,1965-08-30,hybrid
+151,Ronnie,Lopez,ronnie.lopez151@corp.example.com,26,"Manager, Professional Services",5,2024-12-17,,active,Female,1991-07-03,hybrid
+152,Matthew,Johnson,matthew.johnson152@corp.example.com,1,"Specialist, Platform Engineering",2,2022-01-15,,active,Female,1982-11-22,office
+153,Timothy,Douglas,timothy.douglas153@corp.example.com,22,"Senior Specialist, Events",3,2020-09-20,,active,Male,1995-03-25,hybrid
+154,Madison,Wilson,madison.wilson154@corp.example.com,19,"Specialist, Brand Marketing",2,2020-07-09,,active,Female,1968-07-16,office
+155,Rachel,Wilson,rachel.wilson155@corp.example.com,23,"Associate, Product Marketing",1,2025-12-02,,active,Female,1976-12-10,hybrid
+156,Lisa,Hill,lisa.hill156@corp.example.com,11,"Senior Specialist, User Research",3,2016-02-22,,active,Female,1970-09-27,remote
+157,Eric,Hughes,eric.hughes157@corp.example.com,37,"Specialist, Learning & Development",2,2018-10-24,,active,Non-binary,1958-09-28,office
+158,Joy,Olson,joy.olson158@corp.example.com,20,"Associate, Growth Marketing",1,2024-06-13,,active,Female,1963-03-21,hybrid
+159,Tracy,Norris,tracy.norris159@corp.example.com,9,"Senior Specialist, Product Management",3,2022-07-13,,active,Male,1969-10-27,remote
+160,Amanda,Andrews,amanda.andrews160@corp.example.com,39,"Associate, Legal",1,2022-09-26,,active,Female,1959-12-24,remote
+161,Yvette,Kim,yvette.kim161@corp.example.com,3,"Specialist, Mobile Engineering",2,2017-08-01,,active,Male,1972-10-25,hybrid
+162,Michael,Peterson,michael.peterson162@corp.example.com,30,"Specialist, Accounting",2,2025-09-23,,active,Female,1983-11-06,hybrid
+163,Mark,Browning,mark.browning163@corp.example.com,32,"Director, Financial Planning",6,2020-10-27,,active,Male,1972-06-27,hybrid
+164,Tonya,Walton,tonya.walton164@corp.example.com,11,"Specialist, User Research",2,2021-10-20,,active,Female,1984-05-16,hybrid
+165,Jessica,Wall,jessica.wall165@corp.example.com,14,"Senior Specialist, Mid-Market Sales",3,2017-04-24,,active,Female,1969-10-14,hybrid
+166,Sean,Joseph,sean.joseph166@corp.example.com,31,"Specialist, Payroll",2,2026-08-13,,active,Female,1967-06-09,hybrid
+167,Alexandra,Cain,alexandra.cain167@corp.example.com,26,"Senior Specialist, Professional Services",3,2019-09-29,,active,Male,1992-10-06,hybrid
+168,Eric,Rowe,eric.rowe168@corp.example.com,36,"Senior Specialist, People Operations",3,2021-03-19,,active,Male,1990-02-26,hybrid
+169,Alexis,Johnston,alexis.johnston169@corp.example.com,23,"Specialist, Product Marketing",2,2017-12-22,,active,Male,1970-04-21,remote
+170,David,Berry,david.berry170@corp.example.com,16,"Specialist, Sales Development",2,2025-07-21,,active,Male,1972-10-01,office
+171,Rebecca,Robinson,rebecca.robinson171@corp.example.com,16,"Senior Specialist, Sales Development",3,2023-12-05,,active,Female,1972-02-01,hybrid
+172,Laura,Smith,laura.smith172@corp.example.com,32,"Associate, Financial Planning",1,2015-10-30,2017-02-28,terminated,Male,1979-04-26,hybrid
+173,Daniel,Butler,daniel.butler173@corp.example.com,37,"Associate, Learning & Development",1,2025-08-09,,active,Male,1990-08-06,remote
+174,Jeff,Palmer,jeff.palmer174@corp.example.com,10,"Lead, Product Design",4,2024-10-16,,active,Female,1994-02-13,remote
+175,Christopher,Arnold,christopher.arnold175@corp.example.com,32,"Associate, Financial Planning",1,2026-05-19,,active,Female,2002-10-23,remote
+176,Sandra,Carroll,sandra.carroll176@corp.example.com,24,"Specialist, Customer Support",2,2019-06-17,,active,Female,1965-07-27,remote
+177,Derrick,Ball,derrick.ball177@corp.example.com,16,"Associate, Sales Development",1,2023-08-20,2026-09-30,terminated,Female,1984-10-11,office
+178,Alexandra,Warner,alexandra.warner178@corp.example.com,16,"Associate, Sales Development",1,2024-04-12,,active,Female,1982-07-07,remote
+179,Travis,Taylor,travis.taylor179@corp.example.com,6,"Senior Specialist, Security Engineering",3,2021-05-03,2026-09-30,terminated,Female,1978-06-15,remote
+180,Laura,Rios,laura.rios180@corp.example.com,25,"Associate, Customer Success",1,2025-04-23,,active,Male,1992-04-02,hybrid
+181,Dylan,Robertson,dylan.robertson181@corp.example.com,24,"Lead, Customer Support",4,2024-02-25,2026-09-30,terminated,Male,1994-09-06,hybrid
+182,Victoria,Riley,victoria.riley182@corp.example.com,40,"Specialist, Compliance",2,2025-01-13,2026-09-30,terminated,Female,1964-12-22,hybrid
+183,Heather,Rose,heather.rose183@corp.example.com,27,"Associate, Logistics",1,2017-05-22,2018-06-22,terminated,Female,1988-04-09,office
+184,Peter,Moses,peter.moses184@corp.example.com,2,"Manager, Data Science",5,2026-03-24,,active,Male,1996-07-16,hybrid
+185,Scott,Anderson,scott.anderson185@corp.example.com,11,"Senior Specialist, User Research",3,2022-04-19,,active,Female,1999-09-03,office
+186,Sarah,Becker,sarah.becker186@corp.example.com,10,"Associate, Product Design",1,2020-04-30,,active,Female,1958-12-16,remote
+187,Tiffany,Moore,tiffany.moore187@corp.example.com,11,"Associate, User Research",1,2021-04-03,2024-02-03,terminated,Female,1998-04-30,office
+188,Rita,Moore,rita.moore188@corp.example.com,8,"Associate, IT Support",1,2024-10-31,,active,Female,1977-01-20,remote
+189,Jonathan,Rowe,jonathan.rowe189@corp.example.com,7,"Lead, Quality Assurance",4,2023-04-23,,active,Male,1995-02-27,hybrid
+190,Arthur,Burnett,arthur.burnett190@corp.example.com,21,"Lead, Content",4,2021-02-22,,active,Male,1999-08-21,office
+191,Hayden,Oliver,hayden.oliver191@corp.example.com,13,"Specialist, Enterprise Sales",2,2020-11-05,,active,Female,1966-08-12,remote
+192,Wayne,Gomez,wayne.gomez192@corp.example.com,12,"Associate, Technical Writing",1,2026-05-07,,active,Male,1997-02-18,hybrid
+193,Jay,Parker,jay.parker193@corp.example.com,27,"Lead, Logistics",4,2023-07-08,2026-09-30,terminated,Female,1964-08-16,hybrid
+194,Daniel,Gordon,daniel.gordon194@corp.example.com,23,"Senior Specialist, Product Marketing",3,2024-09-18,,active,Female,1968-06-09,hybrid
+195,George,Maldonado,george.maldonado195@corp.example.com,3,"Specialist, Mobile Engineering",2,2023-02-28,,active,Male,1960-03-14,remote
+196,Tracy,Clarke,tracy.clarke196@corp.example.com,23,"Senior Specialist, Product Marketing",3,2025-12-11,,active,Female,1991-09-06,office
+197,Andrew,Delacruz,andrew.delacruz197@corp.example.com,10,"Specialist, Product Design",2,2023-10-31,2024-07-31,terminated,Female,1963-08-18,remote
+198,Richard,Thompson,richard.thompson198@corp.example.com,13,"Lead, Enterprise Sales",4,2024-11-23,,active,Male,2001-03-22,hybrid
+199,Molly,Rodriguez,molly.rodriguez199@corp.example.com,20,"Associate, Growth Marketing",1,2017-09-24,,active,Female,1969-07-16,remote
+200,Anne,Harper,anne.harper200@corp.example.com,37,"Specialist, Learning & Development",2,2024-06-22,,active,Female,2000-11-05,hybrid
+201,Jeffrey,Moore,jeffrey.moore201@corp.example.com,38,"Lead, Compensation & Benefits",4,2018-04-21,2024-12-21,terminated,Female,1994-02-19,hybrid
+202,Lori,Martin,lori.martin202@corp.example.com,8,"Specialist, IT Support",2,2017-05-09,2019-02-09,terminated,Female,1977-08-07,office
+203,Teresa,Hill,teresa.hill203@corp.example.com,26,"Associate, Professional Services",1,2021-04-09,,active,Female,1970-03-30,office
+204,Rachel,Hill,rachel.hill204@corp.example.com,6,"Associate, Security Engineering",1,2025-10-16,,active,Female,1994-06-24,office
+205,Stefanie,Huber,stefanie.huber205@corp.example.com,11,"Associate, User Research",1,2025-04-06,,active,Male,1993-06-26,office
+206,Colleen,Lopez,colleen.lopez206@corp.example.com,31,"Director, Payroll",6,2018-10-12,2025-01-12,terminated,Male,1960-02-11,hybrid
+207,Patrick,Smith,patrick.smith207@corp.example.com,11,"Manager, User Research",5,2025-12-28,,active,Male,1998-10-22,remote
+208,Robert,Russo,robert.russo208@corp.example.com,15,"Director, SMB Sales",6,2023-11-03,2026-04-03,terminated,Female,1996-01-10,hybrid
+209,Christine,Barnes,christine.barnes209@corp.example.com,3,"Senior Specialist, Mobile Engineering",3,2021-01-04,,active,Male,1967-09-08,hybrid
+210,Amanda,Jennings,amanda.jennings210@corp.example.com,32,"Specialist, Financial Planning",2,2026-03-05,,active,Male,1994-10-16,office
+211,Robert,Wright,robert.wright211@corp.example.com,3,"Lead, Mobile Engineering",4,2019-10-20,,active,Male,1988-07-23,office
+212,Adam,Terrell,adam.terrell212@corp.example.com,3,"Senior Specialist, Mobile Engineering",3,2022-10-01,,active,Female,1969-03-12,hybrid
+213,Cindy,Holt,cindy.holt213@corp.example.com,8,"Associate, IT Support",1,2016-06-20,,active,Female,1970-02-16,office
+214,Louis,Richardson,louis.richardson214@corp.example.com,18,"Associate, Partnerships",1,2021-01-28,,active,Female,1965-10-23,office
+215,Jodi,Lopez,jodi.lopez215@corp.example.com,13,"Specialist, Enterprise Sales",2,2021-02-07,2021-07-07,terminated,Male,1963-01-31,hybrid
+216,Deborah,Beard,deborah.beard216@corp.example.com,17,"Senior Specialist, Sales Operations",3,2023-11-08,2026-09-30,terminated,Male,1988-10-17,remote
+217,Nichole,Velazquez,nichole.velazquez217@corp.example.com,32,"Senior Specialist, Financial Planning",3,2023-09-06,,active,Male,1981-06-13,hybrid
+218,Sean,Johnson,sean.johnson218@corp.example.com,11,"Lead, User Research",4,2017-08-04,,active,Female,1994-08-26,office
+219,Jack,Holden,jack.holden219@corp.example.com,27,"Associate, Logistics",1,2021-01-28,,active,Male,1962-05-13,office
+220,Linda,Hughes,linda.hughes220@corp.example.com,4,"Senior Specialist, Web Engineering",3,2025-12-23,2026-09-30,terminated,Female,1963-06-05,remote
+221,Richard,Perez,richard.perez221@corp.example.com,5,"Vice President, Infrastructure",7,2026-04-14,,active,Male,1973-09-09,remote
+222,Erica,Glover,erica.glover222@corp.example.com,9,"Lead, Product Management",4,2022-08-28,,active,Male,1980-08-27,remote
+223,Jeffrey,Taylor,jeffrey.taylor223@corp.example.com,40,"Specialist, Compliance",2,2016-10-05,,active,Female,1960-06-02,office
+224,Nichole,Morton,nichole.morton224@corp.example.com,37,"Specialist, Learning & Development",2,2023-03-04,,active,Male,1959-10-19,office
+225,James,Shelton,james.shelton225@corp.example.com,11,"Specialist, User Research",2,2023-03-20,,active,Male,1959-08-04,hybrid
+226,Donald,Mayo,donald.mayo226@corp.example.com,25,"Specialist, Customer Success",2,2024-09-13,,active,Male,1998-05-13,hybrid
+227,Courtney,Moore,courtney.moore227@corp.example.com,29,"Senior Specialist, Facilities",3,2024-01-08,,active,Male,1973-04-13,hybrid
+228,Teresa,Farmer,teresa.farmer228@corp.example.com,32,"Associate, Financial Planning",1,2022-02-05,,active,Male,1973-09-18,hybrid
+229,David,West,david.west229@corp.example.com,20,"Senior Specialist, Growth Marketing",3,2019-11-27,,active,Male,1987-07-31,hybrid
+230,Jennifer,Wise,jennifer.wise230@corp.example.com,29,"Associate, Facilities",1,2022-05-21,2026-07-21,terminated,Non-binary,1993-03-11,remote
+231,Aaron,Olson,aaron.olson231@corp.example.com,30,"Lead, Accounting",4,2022-03-17,,active,Female,2001-01-11,hybrid
+232,Heather,Moore,heather.moore232@corp.example.com,1,"Specialist, Platform Engineering",2,2022-06-17,,active,Female,1993-06-24,office
+233,Jessica,Mccormick,jessica.mccormick233@corp.example.com,23,"Associate, Product Marketing",1,2017-02-20,2018-10-20,terminated,Male,1992-10-17,office
+234,Sheila,Johnson,sheila.johnson234@corp.example.com,25,"Lead, Customer Success",4,2024-10-04,,active,Male,1980-03-10,office
+235,William,Thompson,william.thompson235@corp.example.com,13,"Associate, Enterprise Sales",1,2023-07-30,,active,Male,1959-11-06,office
+236,Michelle,Franco,michelle.franco236@corp.example.com,16,"Associate, Sales Development",1,2015-07-05,,active,Female,1986-12-06,hybrid
+237,Brittany,Oconnor,brittany.oconnor237@corp.example.com,9,"Specialist, Product Management",2,2025-10-02,,active,Male,1992-06-19,office
+238,Megan,Edwards,megan.edwards238@corp.example.com,39,"Specialist, Legal",2,2025-07-16,,active,Male,1990-11-02,hybrid
+239,Nicholas,Baird,nicholas.baird239@corp.example.com,32,"Associate, Financial Planning",1,2022-05-29,,active,Male,1962-04-13,hybrid
+240,Suzanne,Allen,suzanne.allen240@corp.example.com,24,"Associate, Customer Support",1,2020-01-24,,active,Male,1985-08-11,hybrid
+241,Martha,Davis,martha.davis241@corp.example.com,20,"Lead, Growth Marketing",4,2015-03-02,,active,Female,1991-08-16,hybrid
+242,Amber,Freeman,amber.freeman242@corp.example.com,38,"Lead, Compensation & Benefits",4,2024-01-26,2026-09-30,terminated,Male,1994-04-02,remote
+243,Andrew,Leonard,andrew.leonard243@corp.example.com,30,"Senior Specialist, Accounting",3,2019-09-14,,active,Male,1967-04-10,hybrid
+244,Mark,Steele,mark.steele244@corp.example.com,21,"Manager, Content",5,2021-09-22,,active,Female,1975-08-23,office
+245,Michael,Taylor,michael.taylor245@corp.example.com,36,"Associate, People Operations",1,2015-05-08,,active,Male,1982-03-05,hybrid
+246,Michael,Shields,michael.shields246@corp.example.com,32,"Associate, Financial Planning",1,2023-04-06,,active,Male,1982-03-03,hybrid
+247,David,Gonzalez,david.gonzalez247@corp.example.com,32,"Specialist, Financial Planning",2,2023-07-28,,active,Female,1980-11-03,hybrid
+248,Michael,Blevins,michael.blevins248@corp.example.com,30,"Associate, Accounting",1,2023-06-16,,active,Male,2000-01-06,office
+249,Allen,Booth,allen.booth249@corp.example.com,24,"Lead, Customer Support",4,2022-03-05,,active,Female,1967-08-22,hybrid
+250,Manuel,Guerrero,manuel.guerrero250@corp.example.com,21,"Manager, Content",5,2023-07-04,,active,Female,1969-10-15,office
+251,Jeff,Mitchell,jeff.mitchell251@corp.example.com,35,"Lead, Talent Acquisition",4,2016-12-07,,active,Male,1990-10-24,office
+252,James,Johnson,james.johnson252@corp.example.com,34,"Specialist, Internal Audit",2,2022-05-26,,active,Female,1975-04-10,office
+253,Michelle,Dean,michelle.dean253@corp.example.com,27,"Specialist, Logistics",2,2015-02-04,,active,Non-binary,1958-12-05,office
+254,Jesse,Morgan,jesse.morgan254@corp.example.com,39,"Associate, Legal",1,2021-05-13,,active,Male,1980-09-17,hybrid
+255,Brian,Faulkner,brian.faulkner255@corp.example.com,35,"Senior Specialist, Talent Acquisition",3,2025-05-24,,active,Female,1974-07-02,hybrid
+256,Michael,Dunn,michael.dunn256@corp.example.com,8,"Director, IT Support",6,2017-10-07,,active,Male,1991-12-01,hybrid
+257,Briana,Henderson,briana.henderson257@corp.example.com,22,"Specialist, Events",2,2022-09-24,,active,Non-binary,1995-01-22,hybrid
+258,Miguel,Walton,miguel.walton258@corp.example.com,22,"Director, Events",6,2020-07-26,,active,Male,1959-04-15,hybrid
+259,Scott,Martin,scott.martin259@corp.example.com,33,"Manager, Tax",5,2024-08-16,,active,Male,1985-04-17,hybrid
+260,David,Nicholson,david.nicholson260@corp.example.com,12,"Manager, Technical Writing",5,2023-04-07,,active,Male,1975-07-03,office
+261,Jeremy,Barr,jeremy.barr261@corp.example.com,32,"Associate, Financial Planning",1,2017-08-03,,active,Female,1963-01-08,hybrid
+262,Austin,Weiss,austin.weiss262@corp.example.com,15,"Specialist, SMB Sales",2,2020-08-13,,active,Male,1993-02-11,hybrid
+263,Paul,Juarez,paul.juarez263@corp.example.com,23,"Senior Specialist, Product Marketing",3,2022-08-30,2023-04-30,terminated,Non-binary,1968-01-07,hybrid
+264,Andrew,Smith,andrew.smith264@corp.example.com,32,"Specialist, Financial Planning",2,2018-11-11,2020-11-11,terminated,Male,1980-10-20,hybrid
+265,Jay,Byrd,jay.byrd265@corp.example.com,1,"Lead, Platform Engineering",4,2021-01-14,,active,Male,1961-12-17,office
+266,Kathleen,Sanchez,kathleen.sanchez266@corp.example.com,27,"Senior Specialist, Logistics",3,2020-04-22,2021-09-22,terminated,Male,1992-11-28,hybrid
+267,Samuel,Stewart,samuel.stewart267@corp.example.com,11,"Senior Specialist, User Research",3,2023-08-10,,active,Male,1975-10-17,hybrid
+268,Larry,Collins,larry.collins268@corp.example.com,17,"Lead, Sales Operations",4,2017-12-11,,active,Female,1978-11-30,office
+269,Melissa,Adams,melissa.adams269@corp.example.com,9,"Director, Product Management",6,2022-02-28,,active,Male,1993-02-24,office
+270,Matthew,Ball,matthew.ball270@corp.example.com,14,"Director, Mid-Market Sales",6,2024-02-16,,active,Male,1961-01-06,hybrid
+271,Sean,Martin,sean.martin271@corp.example.com,26,"Associate, Professional Services",1,2025-09-07,,active,Female,1972-03-25,hybrid
+272,Dana,Summers,dana.summers272@corp.example.com,12,"Manager, Technical Writing",5,2026-04-12,2026-09-30,terminated,Male,1982-11-22,office
+273,Laura,Evans,laura.evans273@corp.example.com,6,"Specialist, Security Engineering",2,2020-04-03,,active,Female,1995-01-07,office
+274,David,Gonzalez,david.gonzalez274@corp.example.com,8,"Specialist, IT Support",2,2016-11-06,,active,Male,1972-01-17,office
+275,Amanda,Swanson,amanda.swanson275@corp.example.com,22,"Senior Specialist, Events",3,2026-07-03,,active,Female,1963-01-20,remote
+276,Mark,Jacobson,mark.jacobson276@corp.example.com,15,"Specialist, SMB Sales",2,2022-05-10,,active,Non-binary,1974-03-07,hybrid
+277,Kristin,Garrison,kristin.garrison277@corp.example.com,12,"Specialist, Technical Writing",2,2018-08-24,,active,Male,1956-12-21,hybrid
+278,Robin,Chavez,robin.chavez278@corp.example.com,4,"Manager, Web Engineering",5,2022-10-23,,active,Male,1994-08-18,hybrid
+279,Brian,Johnson,brian.johnson279@corp.example.com,36,"Senior Specialist, People Operations",3,2024-10-02,,active,Male,1988-07-12,office
+280,Jacob,Gibbs,jacob.gibbs280@corp.example.com,16,"Director, Sales Development",6,2020-07-13,,active,Male,1991-06-21,office
+281,Randall,Johnson,randall.johnson281@corp.example.com,21,"Senior Specialist, Content",3,2021-05-15,2022-04-15,terminated,Male,1973-10-07,hybrid
+282,Andrea,Moore,andrea.moore282@corp.example.com,8,"Associate, IT Support",1,2023-08-16,,active,Male,1969-08-15,remote
+283,Brenda,Coffey,brenda.coffey283@corp.example.com,29,"Senior Specialist, Facilities",3,2023-01-07,,active,Male,1997-05-02,remote
+284,Hannah,Davis,hannah.davis284@corp.example.com,31,"Associate, Payroll",1,2023-06-14,,active,Female,1963-07-20,office
+285,James,Bryant,james.bryant285@corp.example.com,16,"Senior Specialist, Sales Development",3,2015-12-21,2018-05-21,terminated,Male,1963-02-17,hybrid
+286,Karen,Miller,karen.miller286@corp.example.com,32,"Associate, Financial Planning",1,2020-12-23,,active,Female,1968-04-10,hybrid
+287,Kimberly,Young,kimberly.young287@corp.example.com,15,"Associate, SMB Sales",1,2023-07-30,,active,Female,1999-08-17,office
+288,Jessica,Robinson,jessica.robinson288@corp.example.com,9,"Senior Specialist, Product Management",3,2020-02-11,2021-06-11,terminated,Female,1988-08-04,hybrid
+289,Scott,Scott,scott.scott289@corp.example.com,11,"Senior Specialist, User Research",3,2022-08-09,,active,Female,1972-11-27,hybrid
+290,Melissa,Thompson,melissa.thompson290@corp.example.com,6,"Specialist, Security Engineering",2,2015-11-07,2018-09-07,terminated,Female,1960-09-16,hybrid
+291,Stephanie,Erickson,stephanie.erickson291@corp.example.com,40,"Director, Compliance",6,2022-01-16,,active,Male,1984-01-07,remote
+292,Jorge,Allen,jorge.allen292@corp.example.com,21,"Specialist, Content",2,2021-09-01,,active,Male,1988-12-20,office
+293,Michelle,Bowen,michelle.bowen293@corp.example.com,11,"Senior Specialist, User Research",3,2021-01-13,,active,Male,1975-07-18,office
+294,Karen,Murray,karen.murray294@corp.example.com,9,"Senior Specialist, Product Management",3,2025-08-23,,active,Male,1968-05-20,office
+295,Jason,Bowers,jason.bowers295@corp.example.com,23,"Manager, Product Marketing",5,2025-02-24,,active,Male,1972-07-06,hybrid
+296,Natalie,Ramirez,natalie.ramirez296@corp.example.com,8,"Specialist, IT Support",2,2015-06-12,,active,Female,1985-10-10,office
+297,Richard,Brown,richard.brown297@corp.example.com,20,"Specialist, Growth Marketing",2,2022-10-22,,active,Female,1969-11-01,office
+298,Rachel,Long,rachel.long298@corp.example.com,5,"Specialist, Infrastructure",2,2024-08-02,,active,Male,2003-03-09,hybrid
+299,Jeff,Martinez,jeff.martinez299@corp.example.com,26,"Director, Professional Services",6,2025-08-16,,active,Male,1973-09-24,hybrid
+300,William,Green,william.green300@corp.example.com,6,"Associate, Security Engineering",1,2015-01-28,2017-11-28,terminated,Male,1951-06-10,office
+301,Peter,Davis,peter.davis301@corp.example.com,40,"Associate, Compliance",1,2020-11-18,2025-05-18,terminated,Female,1970-04-28,hybrid
+302,Craig,Murillo,craig.murillo302@corp.example.com,31,"Senior Specialist, Payroll",3,2017-05-14,,active,Male,1982-09-11,hybrid
+303,Natasha,Jones,natasha.jones303@corp.example.com,18,"Lead, Partnerships",4,2019-01-22,,active,Female,1989-08-25,hybrid
+304,Thomas,Chambers,thomas.chambers304@corp.example.com,6,"Associate, Security Engineering",1,2022-08-09,2025-06-09,terminated,Male,1977-12-28,hybrid
+305,Kristine,Hernandez,kristine.hernandez305@corp.example.com,40,"Associate, Compliance",1,2017-12-22,,active,Male,1981-11-25,office
+306,John,Decker,john.decker306@corp.example.com,13,"Specialist, Enterprise Sales",2,2026-08-02,2026-09-30,terminated,Female,1973-04-29,office
+307,Christina,Reyes,christina.reyes307@corp.example.com,4,"Associate, Web Engineering",1,2021-08-19,,active,Female,1997-12-09,hybrid
+308,Heidi,Porter,heidi.porter308@corp.example.com,37,"Vice President, Learning & Development",7,2025-03-19,,active,Male,1976-08-06,office
+309,John,Hayden,john.hayden309@corp.example.com,32,"Specialist, Financial Planning",2,2020-10-27,,active,Female,1967-05-21,office
+310,James,Wall,james.wall310@corp.example.com,22,"Senior Specialist, Events",3,2023-06-21,,active,Female,1978-11-08,hybrid
+311,Jennifer,Levine,jennifer.levine311@corp.example.com,16,"Manager, Sales Development",5,2024-11-12,,active,Non-binary,1990-04-19,hybrid
+312,Victor,Nolan,victor.nolan312@corp.example.com,7,"Specialist, Quality Assurance",2,2016-02-12,,active,Female,1974-06-28,office
+313,Carol,Wright,carol.wright313@corp.example.com,8,"Specialist, IT Support",2,2023-03-03,,active,Female,1976-01-05,remote
+314,Earl,Yang,earl.yang314@corp.example.com,23,"Associate, Product Marketing",1,2015-01-17,2018-12-17,terminated,Female,1993-02-26,hybrid
+315,Sara,Coleman,sara.coleman315@corp.example.com,20,"Lead, Growth Marketing",4,2024-03-08,,active,Female,1981-01-06,hybrid
+316,Ruben,Kelley,ruben.kelley316@corp.example.com,22,"Lead, Events",4,2024-03-27,,active,Male,1993-07-03,hybrid
+317,Christopher,Bentley,christopher.bentley317@corp.example.com,23,"Senior Specialist, Product Marketing",3,2020-10-30,,active,Female,1991-12-14,remote
+318,Shari,Henry,shari.henry318@corp.example.com,11,"Senior Specialist, User Research",3,2024-05-17,,active,Male,1980-10-21,hybrid
+319,Carrie,Mathews,carrie.mathews319@corp.example.com,9,"Associate, Product Management",1,2024-05-08,2026-09-30,terminated,Non-binary,1997-08-14,office
+320,Sandy,Smith,sandy.smith320@corp.example.com,16,"Associate, Sales Development",1,2022-07-31,,active,Female,1965-08-24,hybrid
+321,Cody,Dunn,cody.dunn321@corp.example.com,40,"Manager, Compliance",5,2018-01-24,,active,Male,1973-04-23,hybrid
+322,Dennis,Christensen,dennis.christensen322@corp.example.com,32,"Associate, Financial Planning",1,2026-08-08,,active,Male,1989-09-02,hybrid
+323,Andrew,Washington,andrew.washington323@corp.example.com,27,"Associate, Logistics",1,2019-01-30,,active,Male,1973-08-25,office

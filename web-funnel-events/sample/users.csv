@@ -1,0 +1,115 @@
+user_id,signup_date,country,device_preference,acquisition_channel,is_customer
+1,2025-05-29,New Zealand,desktop,social,0
+2,2024-12-12,United Kingdom,mobile,referral,0
+3,2026-01-05,United States,mobile,organic,0
+4,2024-05-16,United States,mobile,direct,0
+5,2025-07-07,United States,mobile,organic,0
+6,2024-08-10,Germany,desktop,social,0
+7,2024-07-17,Spain,mobile,direct,0
+8,2024-03-06,Germany,mobile,paid_search,0
+9,2025-05-22,Australia,mobile,paid_search,0
+10,2024-02-28,Ireland,mobile,paid_search,0
+11,2024-07-13,New Zealand,mobile,direct,1
+12,2024-03-09,Germany,mobile,email,0
+13,2026-06-16,United States,mobile,social,0
+14,2024-06-19,United Kingdom,mobile,organic,1
+15,2024-06-01,United States,mobile,email,0
+16,2024-08-02,Netherlands,mobile,email,0
+17,2024-09-19,United States,mobile,organic,0
+18,2025-12-13,United States,mobile,organic,0
+19,2025-01-23,United Kingdom,desktop,paid_search,1
+20,2025-07-27,United States,desktop,organic,0
+21,2026-05-15,Spain,mobile,organic,0
+22,2026-01-09,United Kingdom,desktop,email,0
+23,2025-11-30,Spain,mobile,email,1
+24,2024-03-09,France,desktop,social,1
+25,2025-08-17,Germany,mobile,organic,0
+26,2025-07-24,Canada,desktop,organic,0
+27,2024-07-30,Canada,desktop,paid_search,0
+28,2026-02-02,United States,desktop,organic,0
+29,2024-02-26,United States,desktop,social,0
+30,2025-01-23,Canada,tablet,organic,0
+31,2025-04-17,United States,desktop,organic,0
+32,2025-02-11,United States,mobile,organic,0
+33,2024-05-19,Ireland,mobile,organic,0
+34,2026-06-29,Germany,mobile,organic,0
+35,2024-05-03,Ireland,mobile,organic,0
+36,2025-04-15,United Kingdom,mobile,email,1
+37,2026-06-05,United Kingdom,desktop,social,0
+38,2025-08-17,France,mobile,email,0
+39,2025-10-25,United States,desktop,email,1
+40,2026-05-21,United States,tablet,organic,0
+41,2025-04-26,United States,mobile,paid_search,0
+42,2026-06-24,Canada,mobile,paid_search,0
+43,2026-01-15,United States,mobile,organic,0
+44,2025-07-12,United Kingdom,desktop,organic,1
+45,2024-07-06,United States,mobile,paid_search,0
+46,2024-02-29,Australia,mobile,direct,1
+47,2025-03-16,Australia,mobile,social,0
+48,2024-04-06,Australia,mobile,paid_search,0
+49,2024-08-25,United States,mobile,paid_search,0
+50,2024-10-15,United States,mobile,social,0
+51,2024-11-23,France,mobile,organic,1
+52,2025-06-05,France,mobile,organic,0
+53,2026-05-03,United Kingdom,desktop,social,0
+54,2024-01-21,Canada,desktop,email,0
+55,2024-12-06,Spain,mobile,email,1
+56,2024-01-08,Germany,tablet,organic,1
+57,2024-01-04,United Kingdom,desktop,organic,0
+58,2024-06-23,Netherlands,desktop,paid_search,1
+59,2026-01-07,Netherlands,mobile,organic,1
+60,2025-08-16,United States,mobile,paid_search,0
+61,2024-05-26,Spain,tablet,social,1
+62,2026-01-06,Canada,desktop,referral,0
+63,2025-09-27,United States,mobile,direct,1
+64,2024-04-27,Italy,desktop,organic,0
+65,2026-06-17,Canada,desktop,referral,1
+66,2024-07-27,United Kingdom,mobile,email,0
+67,2025-11-24,United Kingdom,mobile,direct,0
+68,2024-01-03,United States,mobile,direct,0
+69,2025-08-14,United States,mobile,email,1
+70,2025-06-21,United States,mobile,paid_search,0
+71,2025-07-25,United Kingdom,desktop,direct,0
+72,2024-11-01,United Kingdom,desktop,social,1
+73,2026-01-12,United States,mobile,social,0
+74,2026-01-04,United Kingdom,desktop,organic,0
+75,2026-04-11,United States,mobile,social,0
+76,2024-02-27,United States,mobile,organic,0
+77,2025-02-04,United States,mobile,paid_search,0
+78,2024-07-04,Germany,mobile,organic,0
+79,2026-05-12,United States,mobile,social,0
+80,2025-11-10,United States,mobile,paid_search,0
+81,2025-10-17,United Kingdom,tablet,social,0
+82,2025-11-21,Italy,desktop,paid_search,0
+83,2026-03-14,United States,mobile,social,0
+84,2025-05-31,Germany,mobile,paid_search,0
+85,2024-10-13,Netherlands,desktop,paid_search,0
+86,2025-09-01,Netherlands,desktop,paid_search,0
+87,2025-09-06,Ireland,mobile,organic,0
+88,2025-11-26,United States,mobile,organic,0
+89,2025-10-04,United Kingdom,mobile,organic,0
+90,2025-10-06,New Zealand,desktop,direct,0
+91,2024-10-07,United States,mobile,organic,1
+92,2026-04-28,Australia,tablet,paid_search,0
+93,2025-06-06,Sweden,mobile,email,0
+94,2024-10-07,United States,tablet,organic,1
+95,2026-02-01,Spain,mobile,social,0
+96,2025-09-08,United States,mobile,paid_search,0
+97,2025-07-13,United States,mobile,social,1
+98,2024-02-01,United States,mobile,organic,0
+99,2025-09-09,United States,tablet,email,0
+100,2024-08-23,Germany,mobile,direct,1
+101,2025-09-24,United States,mobile,organic,1
+102,2026-02-11,United States,tablet,paid_search,0
+103,2025-12-15,Sweden,mobile,organic,1
+104,2024-01-12,United Kingdom,mobile,paid_search,0
+105,2024-01-18,United States,mobile,social,1
+106,2025-04-16,Italy,desktop,organic,0
+107,2025-07-11,Sweden,tablet,paid_search,0
+108,2025-12-11,United States,mobile,organic,0
+109,2026-05-03,United States,mobile,social,0
+110,2024-12-11,United Kingdom,desktop,direct,0
+111,2026-03-17,Canada,tablet,paid_search,0
+112,2025-02-12,United States,mobile,direct,0
+113,2025-08-12,United States,mobile,social,0
+114,2026-04-16,Italy,mobile,social,0

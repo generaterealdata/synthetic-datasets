@@ -1,0 +1,2187 @@
+{
+ "dataset_type": "relational",
+ "tables": {
+  "patients": {
+   "dataset_type": "tabular",
+   "columns": {
+    "patient_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "mrn": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "if": "DEFAULT",
+       "parameters": {
+        "prefix": "MRN-",
+        "start": 1,
+        "step": 1,
+        "padding": 7
+       }
+      }
+     ],
+     "unique": true
+    },
+    "first_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "first_name"
+       }
+      }
+     ]
+    },
+    "last_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "last_name"
+       }
+      }
+     ]
+    },
+    "sex": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "F",
+          "percentage": 52
+         },
+         {
+          "value": "M",
+          "percentage": 48
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "date_of_birth": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 2400",
+       "parameters": {
+        "start_date": "1931-01-01",
+        "end_date": "1955-12-31",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 3947",
+       "parameters": {
+        "start_date": "1956-01-01",
+        "end_date": "1975-12-31",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 6522",
+       "parameters": {
+        "start_date": "1976-01-01",
+        "end_date": "2005-12-31",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2006-01-01",
+        "end_date": "2024-12-31",
+        "include_time": false
+       }
+      }
+     ]
+    },
+    "blood_type": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "O+",
+          "percentage": 37
+         },
+         {
+          "value": "A+",
+          "percentage": 36
+         },
+         {
+          "value": "B+",
+          "percentage": 9
+         },
+         {
+          "value": "O-",
+          "percentage": 7
+         },
+         {
+          "value": "A-",
+          "percentage": 6
+         },
+         {
+          "value": "AB+",
+          "percentage": 3
+         },
+         {
+          "value": "B-",
+          "percentage": 1.5
+         },
+         {
+          "value": "AB-",
+          "percentage": 0.5
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "city": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Riverton",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "Lakewood",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "Fairview",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "Brookfield",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "Ashford",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "Milton",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "Greenville",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "Oakdale",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "Kingsport",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "Weston",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "Harmon",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "Clearwater",
+          "percentage": 8.333333333333334
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "insurance_type": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "private",
+          "percentage": 55
+         },
+         {
+          "value": "public",
+          "percentage": 38
+         },
+         {
+          "value": "self_pay",
+          "percentage": 7
+         }
+        ]
+       }
+      }
+     ]
+    }
+   },
+   "total_rows": 30000
+  },
+  "providers": {
+   "dataset_type": "tabular",
+   "columns": {
+    "provider_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "full_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "name"
+       }
+      }
+     ]
+    },
+    "specialty": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Family Medicine",
+          "percentage": 22.0
+         },
+         {
+          "value": "Emergency Medicine",
+          "percentage": 16.0
+         },
+         {
+          "value": "Cardiology",
+          "percentage": 9.0
+         },
+         {
+          "value": "Pulmonology",
+          "percentage": 7.0
+         },
+         {
+          "value": "Endocrinology",
+          "percentage": 7.0
+         },
+         {
+          "value": "Gastroenterology",
+          "percentage": 7.0
+         },
+         {
+          "value": "Orthopaedics",
+          "percentage": 7.0
+         },
+         {
+          "value": "General Surgery",
+          "percentage": 7.0
+         },
+         {
+          "value": "Paediatrics",
+          "percentage": 7.0
+         },
+         {
+          "value": "Psychiatry",
+          "percentage": 4.0
+         },
+         {
+          "value": "Urology",
+          "percentage": 3.5
+         },
+         {
+          "value": "Neurology",
+          "percentage": 3.5
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "department": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{specialty} == 'Family Medicine'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Outpatient Clinic",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{specialty} == 'Emergency Medicine'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Emergency",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{specialty} == 'Cardiology'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Cardiology",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{specialty} == 'Pulmonology'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Respiratory",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{specialty} == 'Endocrinology'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Internal Medicine",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{specialty} == 'Gastroenterology'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Internal Medicine",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{specialty} == 'Orthopaedics'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Surgery",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{specialty} == 'General Surgery'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Surgery",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{specialty} == 'Paediatrics'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Paediatrics",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{specialty} == 'Psychiatry'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Behavioural Health",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{specialty} == 'Urology'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Surgery",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Neurology",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    }
+   },
+   "total_rows": 600
+  },
+  "encounters": {
+   "dataset_type": "tabular",
+   "columns": {
+    "encounter_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "patient_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "patients",
+        "target_column": "patient_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.6
+       }
+      }
+     ]
+    },
+    "provider_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "providers",
+        "target_column": "provider_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.5
+       }
+      }
+     ]
+    },
+    "encounter_type": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "outpatient",
+          "percentage": 62
+         },
+         {
+          "value": "emergency",
+          "percentage": 24
+         },
+         {
+          "value": "inpatient",
+          "percentage": 14
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "admit_date": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2025-01-01",
+        "end_date": "2026-09-15",
+        "include_time": false
+       }
+      }
+     ]
+    },
+    "discharge_date": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({admit_date}, {length_of_stay})"
+       }
+      }
+     ]
+    },
+    "length_of_stay": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{encounter_type} == 'inpatient'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 1,
+          "max": 4,
+          "percentage": 60
+         },
+         {
+          "min": 5,
+          "max": 8,
+          "percentage": 28
+         },
+         {
+          "min": 9,
+          "max": 12,
+          "percentage": 12
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{encounter_type} == 'emergency'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 85
+         },
+         {
+          "value": 1,
+          "percentage": 15
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "icd10_code": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "I10",
+          "percentage": 8.108108108108109
+         },
+         {
+          "value": "E11.9",
+          "percentage": 6.306306306306307
+         },
+         {
+          "value": "J06.9",
+          "percentage": 5.405405405405405
+         },
+         {
+          "value": "M54.50",
+          "percentage": 4.504504504504505
+         },
+         {
+          "value": "N39.0",
+          "percentage": 4.054054054054054
+         },
+         {
+          "value": "R07.9",
+          "percentage": 4.054054054054054
+         },
+         {
+          "value": "E78.5",
+          "percentage": 3.6036036036036037
+         },
+         {
+          "value": "J45.909",
+          "percentage": 3.6036036036036037
+         },
+         {
+          "value": "K21.9",
+          "percentage": 3.6036036036036037
+         },
+         {
+          "value": "F41.9",
+          "percentage": 3.1531531531531534
+         },
+         {
+          "value": "R10.9",
+          "percentage": 3.1531531531531534
+         },
+         {
+          "value": "J18.9",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "I50.9",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "J44.9",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "F32.9",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "J02.9",
+          "percentage": 2.2522522522522523
+         },
+         {
+          "value": "M17.9",
+          "percentage": 2.2522522522522523
+         },
+         {
+          "value": "I48.91",
+          "percentage": 2.2522522522522523
+         },
+         {
+          "value": "R51.9",
+          "percentage": 2.2522522522522523
+         },
+         {
+          "value": "G43.909",
+          "percentage": 1.8018018018018018
+         },
+         {
+          "value": "N18.9",
+          "percentage": 1.8018018018018018
+         },
+         {
+          "value": "E03.9",
+          "percentage": 1.8018018018018018
+         },
+         {
+          "value": "D64.9",
+          "percentage": 1.8018018018018018
+         },
+         {
+          "value": "L03.90",
+          "percentage": 1.8018018018018018
+         },
+         {
+          "value": "J20.9",
+          "percentage": 1.8018018018018018
+         },
+         {
+          "value": "R05.9",
+          "percentage": 1.8018018018018018
+         },
+         {
+          "value": "A09",
+          "percentage": 1.8018018018018018
+         },
+         {
+          "value": "R42",
+          "percentage": 1.3513513513513513
+         },
+         {
+          "value": "I25.10",
+          "percentage": 1.3513513513513513
+         },
+         {
+          "value": "M25.561",
+          "percentage": 1.3513513513513513
+         },
+         {
+          "value": "H66.90",
+          "percentage": 1.3513513513513513
+         },
+         {
+          "value": "S93.401A",
+          "percentage": 1.3513513513513513
+         },
+         {
+          "value": "E66.9",
+          "percentage": 1.3513513513513513
+         },
+         {
+          "value": "N20.0",
+          "percentage": 0.9009009009009009
+         },
+         {
+          "value": "K35.80",
+          "percentage": 0.9009009009009009
+         },
+         {
+          "value": "K80.20",
+          "percentage": 0.9009009009009009
+         },
+         {
+          "value": "S52.501A",
+          "percentage": 0.9009009009009009
+         },
+         {
+          "value": "I63.9",
+          "percentage": 0.9009009009009009
+         },
+         {
+          "value": "K57.30",
+          "percentage": 0.9009009009009009
+         },
+         {
+          "value": "Z00.00",
+          "percentage": 2.7027027027027026
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "diagnosis": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'I10'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Essential (primary) hypertension",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'E11.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Type 2 diabetes mellitus without complications",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'J06.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Acute upper respiratory infection, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'M54.50'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Low back pain, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'N39.0'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Urinary tract infection, site not specified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'R07.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Chest pain, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'E78.5'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Hyperlipidemia, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'J45.909'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Unspecified asthma, uncomplicated",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'K21.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Gastro-esophageal reflux disease without esophagitis",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'F41.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Anxiety disorder, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'R10.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Unspecified abdominal pain",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'J18.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Pneumonia, unspecified organism",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'I50.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Heart failure, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'J44.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Chronic obstructive pulmonary disease, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'F32.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Major depressive disorder, single episode, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'J02.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Acute pharyngitis, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'M17.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Osteoarthritis of knee, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'I48.91'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Unspecified atrial fibrillation",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'R51.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Headache, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'G43.909'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Migraine, unspecified, not intractable, without status migrainosus",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'N18.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Chronic kidney disease, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'E03.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Hypothyroidism, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'D64.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Anemia, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'L03.90'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Cellulitis, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'J20.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Acute bronchitis, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'R05.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Cough, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'A09'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Infectious gastroenteritis and colitis, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'R42'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Dizziness and giddiness",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'I25.10'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'M25.561'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Pain in right knee",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'H66.90'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Otitis media, unspecified, unspecified ear",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'S93.401A'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Sprain of unspecified ligament of right ankle, initial encounter",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'E66.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Obesity, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'N20.0'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Calculus of kidney",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'K35.80'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Unspecified acute appendicitis",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'K80.20'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Calculus of gallbladder without cholecystitis without obstruction",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'S52.501A'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Unspecified fracture of the lower end of right radius, initial encounter for closed fracture",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'I63.9'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Cerebral infarction, unspecified",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{icd10_code} == 'K57.30'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Diverticulosis of large intestine without perforation or abscess without bleeding",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Encounter for general adult medical examination without abnormal findings",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "total_charge": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{encounter_type} == 'inpatient'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 4000,
+          "max": 15000,
+          "percentage": 60
+         },
+         {
+          "min": 15000,
+          "max": 60000,
+          "percentage": 40
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{encounter_type} == 'emergency'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 400,
+          "max": 2000,
+          "percentage": 70
+         },
+         {
+          "min": 2000,
+          "max": 6000,
+          "percentage": 30
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 80,
+          "max": 400,
+          "percentage": 75
+         },
+         {
+          "min": 400,
+          "max": 900,
+          "percentage": 25
+         }
+        ]
+       }
+      }
+     ]
+    }
+   },
+   "total_rows": 70000
+  },
+  "vitals": {
+   "dataset_type": "tabular",
+   "columns": {
+    "vital_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "encounter_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "encounters",
+        "target_column": "encounter_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.2
+       }
+      }
+     ]
+    },
+    "recorded_on": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({encounter_id.admit_date}, random_int(0, {encounter_id.length_of_stay}))"
+       }
+      }
+     ]
+    },
+    "heart_rate": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "gaussian",
+       "if": "DEFAULT",
+       "parameters": {
+        "mean": 78,
+        "std_dev": 12,
+        "min_clip": 50,
+        "max_clip": 130
+       }
+      }
+     ]
+    },
+    "systolic_bp": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "gaussian",
+       "if": "DEFAULT",
+       "parameters": {
+        "mean": 128,
+        "std_dev": 16,
+        "min_clip": 90,
+        "max_clip": 190
+       }
+      }
+     ]
+    },
+    "diastolic_bp": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "min(115, max(55, round({systolic_bp} * random_float(0.56, 0.68))))"
+       }
+      }
+     ]
+    },
+    "temperature_c": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "gaussian",
+       "if": "DEFAULT",
+       "parameters": {
+        "mean": 36.9,
+        "std_dev": 0.55,
+        "min_clip": 35.5,
+        "max_clip": 40.5
+       }
+      }
+     ]
+    },
+    "spo2": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "gaussian",
+       "if": "DEFAULT",
+       "parameters": {
+        "mean": 97,
+        "std_dev": 1.8,
+        "min_clip": 86,
+        "max_clip": 100
+       }
+      }
+     ]
+    },
+    "respiratory_rate": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "gaussian",
+       "if": "DEFAULT",
+       "parameters": {
+        "mean": 16,
+        "std_dev": 2.6,
+        "min_clip": 10,
+        "max_clip": 30
+       }
+      }
+     ]
+    }
+   },
+   "total_rows": 120000
+  },
+  "prescriptions": {
+   "dataset_type": "tabular",
+   "columns": {
+    "prescription_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "encounter_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "encounters",
+        "target_column": "encounter_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.3
+       }
+      }
+     ]
+    },
+    "drug_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "lisinopril",
+          "percentage": 4.0
+         },
+         {
+          "value": "metformin",
+          "percentage": 4.0
+         },
+         {
+          "value": "atorvastatin",
+          "percentage": 4.0
+         },
+         {
+          "value": "amoxicillin",
+          "percentage": 4.0
+         },
+         {
+          "value": "amlodipine",
+          "percentage": 4.0
+         },
+         {
+          "value": "omeprazole",
+          "percentage": 4.0
+         },
+         {
+          "value": "ibuprofen",
+          "percentage": 4.0
+         },
+         {
+          "value": "acetaminophen",
+          "percentage": 4.0
+         },
+         {
+          "value": "sertraline",
+          "percentage": 4.0
+         },
+         {
+          "value": "furosemide",
+          "percentage": 4.0
+         },
+         {
+          "value": "levothyroxine",
+          "percentage": 4.0
+         },
+         {
+          "value": "losartan",
+          "percentage": 4.0
+         },
+         {
+          "value": "metoprolol",
+          "percentage": 4.0
+         },
+         {
+          "value": "simvastatin",
+          "percentage": 4.0
+         },
+         {
+          "value": "gabapentin",
+          "percentage": 4.0
+         },
+         {
+          "value": "prednisone",
+          "percentage": 4.0
+         },
+         {
+          "value": "azithromycin",
+          "percentage": 4.0
+         },
+         {
+          "value": "ciprofloxacin",
+          "percentage": 4.0
+         },
+         {
+          "value": "hydrochlorothiazide",
+          "percentage": 4.0
+         },
+         {
+          "value": "warfarin",
+          "percentage": 4.0
+         },
+         {
+          "value": "clopidogrel",
+          "percentage": 4.0
+         },
+         {
+          "value": "pantoprazole",
+          "percentage": 4.0
+         },
+         {
+          "value": "cetirizine",
+          "percentage": 4.0
+         },
+         {
+          "value": "montelukast",
+          "percentage": 4.0
+         },
+         {
+          "value": "naproxen",
+          "percentage": 4.0
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "dose_mg": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'lisinopril'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 10,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'metformin'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 500,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'atorvastatin'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 20,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'amoxicillin'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 500,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'amlodipine'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 5,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'omeprazole'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 20,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'ibuprofen'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 400,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'acetaminophen'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 500,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'sertraline'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 50,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'furosemide'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 40,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'levothyroxine'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0.05,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'losartan'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 50,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'metoprolol'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 50,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'simvastatin'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 20,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'gabapentin'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 300,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'prednisone'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 20,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'azithromycin'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 250,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'ciprofloxacin'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 500,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'hydrochlorothiazide'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 25,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'warfarin'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 5,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'clopidogrel'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 75,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'pantoprazole'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 40,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'cetirizine'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 10,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{drug_name} == 'montelukast'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 10,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 250,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "frequency": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "once daily",
+          "percentage": 48
+         },
+         {
+          "value": "twice daily",
+          "percentage": 30
+         },
+         {
+          "value": "three times daily",
+          "percentage": 12
+         },
+         {
+          "value": "as needed",
+          "percentage": 10
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "days_supply": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 5,
+          "percentage": 14
+         },
+         {
+          "value": 7,
+          "percentage": 18
+         },
+         {
+          "value": 10,
+          "percentage": 12
+         },
+         {
+          "value": 14,
+          "percentage": 10
+         },
+         {
+          "value": 30,
+          "percentage": 30
+         },
+         {
+          "value": 90,
+          "percentage": 16
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "prescribed_on": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({encounter_id.admit_date}, random_int(0, {encounter_id.length_of_stay}))"
+       }
+      }
+     ]
+    }
+   },
+   "total_rows": 50000
+  },
+  "claims": {
+   "dataset_type": "tabular",
+   "columns": {
+    "claim_id": {
+     "data_type": "string",
+     "rules": []
+    },
+    "encounter_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "@anchor.encounter_id"
+       }
+      }
+     ],
+     "references": {
+      "table": "encounters",
+      "column": "encounter_id"
+     }
+    },
+    "payer": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "CuraHealth",
+          "percentage": 12.5
+         },
+         {
+          "value": "Northstar Mutual",
+          "percentage": 12.5
+         },
+         {
+          "value": "Bluewater Health Plan",
+          "percentage": 12.5
+         },
+         {
+          "value": "Evergreen Assurance",
+          "percentage": 12.5
+         },
+         {
+          "value": "Unity Care",
+          "percentage": 12.5
+         },
+         {
+          "value": "Summit Shield",
+          "percentage": 12.5
+         },
+         {
+          "value": "Pioneer Health",
+          "percentage": 12.5
+         },
+         {
+          "value": "State Medical Plan",
+          "percentage": 12.5
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "billed_amount": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "@anchor.total_charge"
+       }
+      }
+     ]
+    },
+    "allowed_amount": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round({billed_amount} * random_float(0.55, 0.95), 2)"
+       }
+      }
+     ]
+    },
+    "paid_amount": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "{status} == 'paid'",
+       "parameters": {
+        "equation": "round({allowed_amount} * random_float(0.80, 1.00), 2)"
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "status": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{@anchor.discharge_date} >= '2026-07-25'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "pending",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "paid",
+          "percentage": 84
+         },
+         {
+          "value": "denied",
+          "percentage": 10
+         },
+         {
+          "value": "appealed",
+          "percentage": 6
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "submitted_on": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "min(add_days({@anchor.discharge_date}, random_int(1, 20)), '2026-09-30')"
+       }
+      }
+     ]
+    },
+    "decided_on": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "null_injection",
+       "if": "{status} == 'pending'",
+       "parameters": {
+        "base_strategy": "calculated",
+        "base_parameters": {
+         "equation": "add_days({submitted_on}, random_int(5, 45))"
+        },
+        "null_rate": 1.0
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({submitted_on}, random_int(5, 45))"
+       }
+      }
+     ],
+     "nullable": true
+    }
+   },
+   "anchor": {
+    "table": "encounters",
+    "unique": true
+   },
+   "total_rows": 29400
+  }
+ },
+ "total_rows": 300000,
+ "dataset_name": "Synthetic Hospital Records (No Real Patients)"
+}

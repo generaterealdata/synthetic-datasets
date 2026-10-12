@@ -1,0 +1,28 @@
+{
+  "dataset": "ecommerce",
+  "title": "Synthetic E-commerce Database",
+  "generator": "GenerateRealData",
+  "generator_url": "https://generaterealdata.com/use-cases/relational-database-test-data/",
+  "generated_on": "2026-10-11",
+  "mode": "schema",
+  "plan": "plan.json",
+  "schema": "schema.sql",
+  "seed": 20261101,
+  "rows_requested": 500000,
+  "rows_generated": 499385,
+  "rows_per_table": {
+    "customers": 26000,
+    "products": 1500,
+    "orders": 90000,
+    "order_items": 200000,
+    "payments": 90000,
+    "shipments": 83885,
+    "returns": 8000
+  },
+  "ai_written_fields": [],
+  "ai_rows_used": 0,
+  "anomalies": false,
+  "format": "sql",
+  "dialect": "postgresql",
+  "licence": "CC-BY-4.0"
+}

@@ -1,0 +1,90 @@
+table,key_column,key,column,clean_value,dirty_value,defect
+customers,customer_id,9,email,richard.matthews9@example.com,N/A,placeholder text
+customers,customer_id,20,country,United States,UNKNOWN,placeholder text
+customers,customer_id,22,city,New York,UNKNOWN,placeholder text
+customers,customer_id,66,full_name,Jennifer Irwin,,empty string
+customers,customer_id,81,signup_date,2026-02-11,2026-02-07,plausible but wrong value
+customers,customer_id,88,phone,+1-602-555-0126,ERROR,placeholder text
+customers,customer_id,95,country,Italy,N/A,placeholder text
+customers,customer_id,99,full_name,Molly Thornton,UNKNOWN,placeholder text
+customers,customer_id,113,email,marcus.west113@example.com,N/A,placeholder text
+customers,customer_id,149,full_name,Mr. Frank Ford Jr.,Matthew Murphy PhD,plausible but wrong value
+customers,customer_id,201,country,France,N/A,placeholder text
+customers,customer_id,213,email,angela.mcguire213@example.com,UNKNOWN,placeholder text
+customers,customer_id,217,signup_date,2025-07-20,1900-01-01,sentinel date
+customers,customer_id,248,country,United States,,empty string
+customers,customer_id,300,city,Cologne,,empty string
+products,product_id,353,product_name,Compact Face Serum,ERROR,placeholder text
+products,product_id,356,unit_price,28.48,-28.48,sign flipped
+products,product_id,410,product_name,Everyday Hair Dryer,,empty string
+products,product_id,428,unit_price,36.53,365.3,ten times too large
+products,product_id,458,category,Books,Kitchen,plausible but wrong value
+products,product_id,593,stock_qty,236,2360,ten times too large
+products,product_id,597,category,Sports,,empty string
+products,product_id,626,category,Electronics,Beauty,plausible but wrong value
+products,product_id,748,product_name,Wireless Mixing Bowl Set,,empty string
+products,product_id,780,stock_qty,259,2590,ten times too large
+products,product_id,860,category,Books,Kitchen,plausible but wrong value
+products,product_id,869,unit_price,59.45,594.5,ten times too large
+products,product_id,881,stock_qty,82,0,zero
+products,product_id,976,product_name,Compact Body Lotion,N/A,placeholder text
+products,product_id,1090,category,Garden,N/A,placeholder text
+products,product_id,1184,product_name,Everyday Bluetooth Speaker,N/A,placeholder text
+products,product_id,1260,category,Toys,ERROR,placeholder text
+products,product_id,1322,category,Electronics,N/A,placeholder text
+products,product_id,1353,unit_price,68.45,-68.45,sign flipped
+products,product_id,1436,product_name,Travel Webcam,ERROR,placeholder text
+products,product_id,1553,stock_qty,27,-27,sign flipped
+products,product_id,1633,unit_price,158.71,1587.1,ten times too large
+products,product_id,1745,stock_qty,425,0,zero
+products,product_id,1775,unit_price,147.95,-147.95,sign flipped
+products,product_id,1884,product_name,Wireless Nonstick Pan,ERROR,placeholder text
+products,product_id,1997,product_name,Essential Table Lamp,Everyday Wall Clock,plausible but wrong value
+orders,order_id,59,order_date,2025-05-26,1900-01-01,sentinel date
+orders,order_id,171,country,Canada,,empty string
+orders,order_id,186,country,United Kingdom,N/A,placeholder text
+orders,order_id,189,order_date,2026-02-07,2025-12-26,plausible but wrong value
+orders,order_id,197,ship_date,2025-11-29,2099-12-31,sentinel date
+orders,order_id,219,ship_date,2025-05-18,1900-01-01,sentinel date
+orders,order_id,269,order_date,2025-08-07,1900-01-01,sentinel date
+orders,order_id,339,order_date,2026-07-27,2026-06-04,plausible but wrong value
+orders,order_id,363,ship_date,2026-08-20,2099-12-31,sentinel date
+orders,order_id,406,order_date,2026-02-07,2099-12-31,sentinel date
+orders,order_id,418,status,pending,delivered,plausible but wrong value
+orders,order_id,432,order_date,2025-11-24,2099-12-31,sentinel date
+orders,order_id,436,order_date,2026-01-25,1900-01-01,sentinel date
+orders,order_id,482,order_date,2026-05-21,2025-11-01,plausible but wrong value
+orders,order_id,501,ship_date,,2099-12-31,sentinel date
+orders,order_id,514,ship_date,2025-04-29,2025-04-28,plausible but wrong value
+order_items,order_item_id,74,quantity,1,-1,sign flipped
+order_items,order_item_id,164,quantity,1,0,zero
+order_items,order_item_id,167,unit_price,11.74,-11.74,sign flipped
+order_items,order_item_id,190,line_total,42.79,0,zero
+order_items,order_item_id,206,unit_price,105.43,1054.3,ten times too large
+order_items,order_item_id,215,quantity,2,-2,sign flipped
+order_items,order_item_id,314,quantity,3,-3,sign flipped
+order_items,order_item_id,342,quantity,1,0,zero
+order_items,order_item_id,347,quantity,1,0,zero
+order_items,order_item_id,365,quantity,4,0,zero
+order_items,order_item_id,377,quantity,1,10,ten times too large
+order_items,order_item_id,387,quantity,1,0,zero
+order_items,order_item_id,399,quantity,2,0,zero
+order_items,order_item_id,473,quantity,2,20,ten times too large
+order_items,order_item_id,476,quantity,1,10,ten times too large
+order_items,order_item_id,486,quantity,1,0,zero
+order_items,order_item_id,584,line_total,7.58,0,zero
+order_items,order_item_id,752,unit_price,38.63,0,zero
+order_items,order_item_id,773,unit_price,10.65,-10.65,sign flipped
+order_items,order_item_id,803,line_total,13.68,0,zero
+order_items,order_item_id,880,unit_price,105.8,1058,ten times too large
+order_items,order_item_id,884,quantity,2,-2,sign flipped
+order_items,order_item_id,904,unit_price,84.45,0,zero
+order_items,order_item_id,919,unit_price,15.44,154.4,ten times too large
+order_items,order_item_id,928,line_total,571.66,5716.6,ten times too large
+order_items,order_item_id,936,quantity,1,-1,sign flipped
+order_items,order_item_id,937,unit_price,47.87,478.7,ten times too large
+order_items,order_item_id,940,quantity,1,0,zero
+order_items,order_item_id,955,unit_price,95.23,0,zero
+order_items,order_item_id,963,quantity,2,-2,sign flipped
+order_items,order_item_id,981,unit_price,10.65,-10.65,sign flipped
+order_items,order_item_id,985,unit_price,10.65,106.5,ten times too large

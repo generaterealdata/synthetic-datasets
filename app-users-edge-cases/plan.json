@@ -1,0 +1,1505 @@
+{
+ "total_rows": 200000,
+ "dataset_type": "relational",
+ "tables": {
+  "audit_events": {
+   "columns": {
+    "org_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "organizations",
+      "column": "org_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "organizations",
+        "target_column": "org_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.8
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "action": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "user.login",
+          "percentage": 34.0
+         },
+         {
+          "value": "user.logout",
+          "percentage": 22.0
+         },
+         {
+          "value": "user.password_reset",
+          "percentage": 4.0
+         },
+         {
+          "value": "member.invite",
+          "percentage": 7.0
+         },
+         {
+          "value": "member.remove",
+          "percentage": 3.0
+         },
+         {
+          "value": "role.change",
+          "percentage": 4.0
+         },
+         {
+          "value": "token.create",
+          "percentage": 6.0
+         },
+         {
+          "value": "token.revoke",
+          "percentage": 3.0
+         },
+         {
+          "value": "org.update",
+          "percentage": 5.0
+         },
+         {
+          "value": "export.download",
+          "percentage": 12.0
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "occurred_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2023-01-01",
+        "end_date": "2026-09-30",
+        "include_time": true,
+        "precision": "seconds"
+       }
+      }
+     ],
+     "date_after": [
+      "org_id.created_at",
+      "user_id.created_at"
+     ],
+     "nullable": false,
+     "date_after_spread_days": 28
+    },
+    "ip_address": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "random_int(1, 100) <= 20",
+       "parameters": {
+        "primitive_type": "ipv6"
+       }
+      },
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "ipv4"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "target_type": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{action} == 'user.login'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "user",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{action} == 'user.logout'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "user",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{action} == 'user.password_reset'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "user",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{action} == 'member.invite'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "membership",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{action} == 'member.remove'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "membership",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{action} == 'role.change'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "membership",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{action} == 'token.create'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "token",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{action} == 'token.revoke'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "token",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{action} == 'org.update'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "organization",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "export",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "event_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "user_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "users",
+      "column": "user_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "users",
+        "target_column": "user_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.6
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 106000
+  },
+  "users": {
+   "columns": {
+    "deleted_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "{status} == 'deleted'",
+       "parameters": {
+        "start_date": "2021-01-01",
+        "end_date": "2026-09-30",
+        "include_time": true,
+        "precision": "seconds"
+       }
+      },
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "date_range",
+        "base_parameters": {
+         "start_date": "2021-01-01",
+         "end_date": "2026-09-30",
+         "include_time": true,
+         "precision": "seconds"
+        },
+        "null_rate": 1.0
+       }
+      }
+     ],
+     "date_after": [
+      "created_at"
+     ],
+     "nullable": true,
+     "date_after_spread_days": 15
+    },
+    "last_login_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "null_injection",
+       "if": "{status} == 'invited'",
+       "parameters": {
+        "base_strategy": "date_range",
+        "base_parameters": {
+         "start_date": "2021-01-01",
+         "end_date": "2026-09-30",
+         "include_time": true,
+         "precision": "seconds"
+        },
+        "null_rate": 1.0
+       }
+      },
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "date_range",
+        "base_parameters": {
+         "start_date": "2021-01-01",
+         "end_date": "2026-09-30",
+         "include_time": true,
+         "precision": "seconds"
+        },
+        "null_rate": 0.05
+       }
+      }
+     ],
+     "date_after": [
+      "created_at"
+     ],
+     "nullable": true,
+     "date_after_spread_days": 15
+    },
+    "email": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "{user_id} % 10 == 3",
+       "parameters": {
+        "equation": "concat('user', {user_id}, '+billing@example.com')"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{user_id} % 25 == 7",
+       "parameters": {
+        "equation": "concat('first.middle.last.with.a.very.long.local.part.', {user_id}, '@mail.example.org')"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{user_id} % 3 == 0",
+       "parameters": {
+        "equation": "concat('u', {user_id}, '@example.net')"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "concat('user.', {user_id}, '@example.com')"
+       }
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "locale": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "en-US",
+          "percentage": 21.62162162162162
+         },
+         {
+          "value": "en-GB",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "en-CA",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "en-AU",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "en-IN",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "en-IE",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "pt-BR",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "pt-PT",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "de-DE",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "de-AT",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "fr-FR",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "fr-CA",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "es-ES",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "es-MX",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "it-IT",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "nl-NL",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "sv-SE",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "pl-PL",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "tr-TR",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "ru-RU",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "el-GR",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "ar-AE",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "he-IL",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "hi-IN",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "zh-CN",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "zh-TW",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "ja-JP",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "ko-KR",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "vi-VN",
+          "percentage": 2.7027027027027026
+         },
+         {
+          "value": "id-ID",
+          "percentage": 2.7027027027027026
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "user_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "created_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2021-01-01",
+        "end_date": "2026-08-31",
+        "include_time": true,
+        "precision": "seconds"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "time_zone": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'en-US'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "America/New_York",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'en-GB'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/London",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'en-CA'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "America/Toronto",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'en-AU'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Australia/Sydney",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'en-IN'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Asia/Kolkata",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'en-IE'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Dublin",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'pt-BR'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "America/Sao_Paulo",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'pt-PT'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Lisbon",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'de-DE'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Berlin",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'de-AT'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Vienna",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'fr-FR'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Paris",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'fr-CA'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "America/Montreal",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'es-ES'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Madrid",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'es-MX'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "America/Mexico_City",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'it-IT'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Rome",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'nl-NL'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Amsterdam",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'sv-SE'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Stockholm",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'pl-PL'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Warsaw",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'tr-TR'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Istanbul",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'ru-RU'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Moscow",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'el-GR'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Europe/Athens",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'ar-AE'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Asia/Dubai",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'he-IL'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Asia/Jerusalem",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'hi-IN'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Asia/Kolkata",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'zh-CN'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Asia/Shanghai",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'zh-TW'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Asia/Taipei",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'ja-JP'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Asia/Tokyo",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'ko-KR'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Asia/Seoul",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{locale} == 'vi-VN'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Asia/Ho_Chi_Minh",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Asia/Jakarta",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "mfa_enabled": {
+     "data_type": "boolean",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 38
+         },
+         {
+          "value": "false",
+          "percentage": 62
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "display_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "random_int(1, 100) <= 85",
+       "parameters": {
+        "primitive_type": "name"
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Zoë Müller",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Siobhán Ní Bhriain",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "José Álvarez",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "François Lefèvre",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Łukasz Wiśniewski",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Nguyễn Thị Minh",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "李伟",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "山田太郎",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "김민준",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Дмитрий Иванов",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Αλέξανδρος Παπαδόπουλος",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "أحمد الفلاسي",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "דוד כהן",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "O'Connor",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Anne-Marie Smith-Jones",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "X",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Jo",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Maximilian Alexander Ferdinand von Hohenberg-Wittelsbach zu Löwenstein-Wertheim-Freudenberg the Third",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": " Leading Space",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Trailing Space ",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Robert'); DROP TABLE users;--",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "<script>alert(1)</script>",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Null",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "undefined",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Test User 🚀",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "🙂",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Ünïcödé Tëst",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "name with\ttab",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "0",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "-1",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Mary  Double  Space",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "ALL CAPS NAME",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "lowercase name",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Name, With Comma",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "Name \"Quoted\" Person",
+          "percentage": 2.7777777777777777
+         },
+         {
+          "value": "N/A",
+          "percentage": 2.7777777777777777
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "status": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "active",
+          "percentage": 80
+         },
+         {
+          "value": "invited",
+          "percentage": 9
+         },
+         {
+          "value": "suspended",
+          "percentage": 5
+         },
+         {
+          "value": "deleted",
+          "percentage": 6
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 40000
+  },
+  "organizations": {
+   "columns": {
+    "created_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2021-01-01",
+        "end_date": "2026-08-15",
+        "include_time": true,
+        "precision": "seconds"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "plan": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "free",
+          "percentage": 55
+         },
+         {
+          "value": "team",
+          "percentage": 28
+         },
+         {
+          "value": "business",
+          "percentage": 13
+         },
+         {
+          "value": "enterprise",
+          "percentage": 4
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "org_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "company"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "slug": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "concat('team-', {org_id})"
+       }
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "org_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 2000
+  },
+  "memberships": {
+   "columns": {
+    "membership_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "role": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "member",
+          "percentage": 70
+         },
+         {
+          "value": "admin",
+          "percentage": 14
+         },
+         {
+          "value": "viewer",
+          "percentage": 11
+         },
+         {
+          "value": "owner",
+          "percentage": 5
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "joined_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2021-01-01",
+        "end_date": "2026-09-29",
+        "include_time": true,
+        "precision": "seconds"
+       }
+      }
+     ],
+     "date_after": [
+      "org_id.created_at",
+      "user_id.created_at"
+     ],
+     "nullable": false,
+     "date_after_spread_days": 28
+    },
+    "user_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "users",
+      "column": "user_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "users",
+        "target_column": "user_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.1
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "org_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "organizations",
+      "column": "org_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "organizations",
+        "target_column": "org_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.6
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 46000
+  },
+  "api_tokens": {
+   "columns": {
+    "created_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2023-01-01",
+        "end_date": "2026-09-15",
+        "include_time": true,
+        "precision": "seconds"
+       }
+      }
+     ],
+     "date_after": [
+      "user_id.created_at"
+     ],
+     "nullable": false,
+     "date_after_spread_days": 28
+    },
+    "token_prefix": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "regex",
+       "if": "DEFAULT",
+       "parameters": {
+        "pattern": "tok_[a-z0-9]{6}"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "revoked_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "calculated",
+        "base_parameters": {
+         "equation": "add_days({created_at}, random_int(1, max(1, min(200, date_diff_days({expires_at}, {created_at}), date_diff_days('2026-09-30', {created_at})))))"
+        },
+        "null_rate": 0.85
+       }
+      }
+     ],
+     "nullable": true
+    },
+    "scopes": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "read",
+          "percentage": 48
+         },
+         {
+          "value": "read write",
+          "percentage": 34
+         },
+         {
+          "value": "read write admin",
+          "percentage": 10
+         },
+         {
+          "value": "billing",
+          "percentage": 8
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "expires_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({created_at}, random_int(31, 365))"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "user_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "users",
+      "column": "user_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "users",
+        "target_column": "user_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.5
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "token_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 6000
+  }
+ },
+ "dataset_name": "App Users with Edge Cases for QA Testing"
+}

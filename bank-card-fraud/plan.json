@@ -1,0 +1,1498 @@
+{
+ "total_rows": 500000,
+ "dataset_type": "relational",
+ "tables": {
+  "merchants": {
+   "columns": {
+    "city": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "parameters": {
+        "primitive_type": "city"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "country": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 40,
+          "value": "United States"
+         },
+         {
+          "percentage": 18,
+          "value": "United Kingdom"
+         },
+         {
+          "percentage": 12,
+          "value": "Germany"
+         },
+         {
+          "percentage": 10,
+          "value": "France"
+         },
+         {
+          "percentage": 8,
+          "value": "Spain"
+         },
+         {
+          "percentage": 7,
+          "value": "Canada"
+         },
+         {
+          "percentage": 5,
+          "value": "Netherlands"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "mcc": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "5411"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'grocery'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "5541"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'fuel'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "5812"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'restaurants'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "5814"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'fast food'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "5732"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'electronics'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "5651"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'clothing'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "5912"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'pharmacy'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "4511"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'travel'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "7011"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'hotels'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "5999"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'online marketplace'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "5947"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'gift cards'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "5944"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'jewellery'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "6051"
+         }
+        ]
+       },
+       "if": "\"{category}\" == 'crypto exchange'"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "6011"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "merchant_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "parameters": {
+        "primitive_type": "company"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "is_online": {
+     "data_type": "boolean",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 100,
+          "value": "true"
+         }
+        ]
+       },
+       "if": "\"{category}\" in ['online marketplace', 'gift cards', 'crypto exchange']"
+      },
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "context_columns": [
+         "category"
+        ],
+        "distribution": [
+         {
+          "percentage": 20,
+          "value": "true"
+         },
+         {
+          "percentage": 80,
+          "value": "false"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "merchant_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "category": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 15,
+          "value": "grocery"
+         },
+         {
+          "percentage": 10,
+          "value": "fuel"
+         },
+         {
+          "percentage": 15,
+          "value": "restaurants"
+         },
+         {
+          "percentage": 10,
+          "value": "fast food"
+         },
+         {
+          "percentage": 5,
+          "value": "electronics"
+         },
+         {
+          "percentage": 10,
+          "value": "clothing"
+         },
+         {
+          "percentage": 5,
+          "value": "pharmacy"
+         },
+         {
+          "percentage": 5,
+          "value": "travel"
+         },
+         {
+          "percentage": 5,
+          "value": "hotels"
+         },
+         {
+          "percentage": 10,
+          "value": "online marketplace"
+         },
+         {
+          "percentage": 3,
+          "value": "gift cards"
+         },
+         {
+          "percentage": 2,
+          "value": "jewellery"
+         },
+         {
+          "percentage": 2,
+          "value": "crypto exchange"
+         },
+         {
+          "percentage": 3,
+          "value": "ATM"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 5000
+  },
+  "customers": {
+   "columns": {
+    "joined_on": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2012-01-01",
+        "end_date": "2025-12-31",
+        "include_time": false
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "country": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "United States",
+          "percentage": 40
+         },
+         {
+          "value": "United Kingdom",
+          "percentage": 18
+         },
+         {
+          "value": "Germany",
+          "percentage": 12
+         },
+         {
+          "value": "France",
+          "percentage": 10
+         },
+         {
+          "value": "Spain",
+          "percentage": 8
+         },
+         {
+          "value": "Canada",
+          "percentage": 7
+         },
+         {
+          "value": "Netherlands",
+          "percentage": 5
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "full_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "parameters": {
+        "primitive_type": "name"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "risk_segment": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 78.0,
+          "value": "low"
+         },
+         {
+          "percentage": 18.0,
+          "value": "medium"
+         },
+         {
+          "percentage": 4.0,
+          "value": "high"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "date_of_birth": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "parameters": {
+        "start_date": "1941-01-01",
+        "end_date": "2008-01-01",
+        "include_time": false
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "city": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'United States'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "New York",
+          "percentage": 20.0
+         },
+         {
+          "value": "Los Angeles",
+          "percentage": 20.0
+         },
+         {
+          "value": "Chicago",
+          "percentage": 20.0
+         },
+         {
+          "value": "Houston",
+          "percentage": 20.0
+         },
+         {
+          "value": "Seattle",
+          "percentage": 20.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'United Kingdom'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "London",
+          "percentage": 20.0
+         },
+         {
+          "value": "Manchester",
+          "percentage": 20.0
+         },
+         {
+          "value": "Birmingham",
+          "percentage": 20.0
+         },
+         {
+          "value": "Leeds",
+          "percentage": 20.0
+         },
+         {
+          "value": "Glasgow",
+          "percentage": 20.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'Germany'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Berlin",
+          "percentage": 20.0
+         },
+         {
+          "value": "Munich",
+          "percentage": 20.0
+         },
+         {
+          "value": "Hamburg",
+          "percentage": 20.0
+         },
+         {
+          "value": "Frankfurt",
+          "percentage": 20.0
+         },
+         {
+          "value": "Cologne",
+          "percentage": 20.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'France'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Paris",
+          "percentage": 25.0
+         },
+         {
+          "value": "Lyon",
+          "percentage": 25.0
+         },
+         {
+          "value": "Marseille",
+          "percentage": 25.0
+         },
+         {
+          "value": "Toulouse",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'Spain'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Madrid",
+          "percentage": 25.0
+         },
+         {
+          "value": "Barcelona",
+          "percentage": 25.0
+         },
+         {
+          "value": "Valencia",
+          "percentage": 25.0
+         },
+         {
+          "value": "Seville",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'Canada'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Toronto",
+          "percentage": 25.0
+         },
+         {
+          "value": "Vancouver",
+          "percentage": 25.0
+         },
+         {
+          "value": "Montreal",
+          "percentage": 25.0
+         },
+         {
+          "value": "Calgary",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Amsterdam",
+          "percentage": 25.0
+         },
+         {
+          "value": "Rotterdam",
+          "percentage": 25.0
+         },
+         {
+          "value": "Utrecht",
+          "percentage": 25.0
+         },
+         {
+          "value": "Eindhoven",
+          "percentage": 25.0
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "customer_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 20000
+  },
+  "accounts": {
+   "columns": {
+    "account_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "iban": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "parameters": {
+        "primitive_type": "iban"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "account_type": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 60.0,
+          "value": "current"
+         },
+         {
+          "percentage": 30.0,
+          "value": "savings"
+         },
+         {
+          "percentage": 10.0,
+          "value": "premium"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "customer_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "customers",
+      "column": "customer_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "customers",
+        "target_column": "customer_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.3
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "currency": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{customer_id.country} == 'United States'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "USD",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{customer_id.country} == 'United Kingdom'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "GBP",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{customer_id.country} == 'Canada'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "CAD",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "EUR",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "status": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 90.0,
+          "value": "active"
+         },
+         {
+          "percentage": 5.0,
+          "value": "frozen"
+         },
+         {
+          "percentage": 5.0,
+          "value": "closed"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "opened_on": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2012-01-01",
+        "end_date": "2026-02-28",
+        "include_time": false
+       }
+      }
+     ],
+     "date_after": [
+      "customer_id.joined_on"
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 25000
+  },
+  "cards": {
+   "columns": {
+    "account_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "accounts",
+      "column": "account_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "accounts",
+        "target_column": "account_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.3
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "expiry_year": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "range",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 100,
+          "max": 2031,
+          "min": 2026
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "card_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "card_network": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 50.0,
+          "value": "visa"
+         },
+         {
+          "percentage": 40.0,
+          "value": "mastercard"
+         },
+         {
+          "percentage": 10.0,
+          "value": "amex"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "expiry_month": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "range",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 100,
+          "max": 12,
+          "min": 1
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "issued_on": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2019-01-01",
+        "end_date": "2026-03-31",
+        "include_time": false
+       }
+      }
+     ],
+     "date_after": [
+      "account_id.opened_on"
+     ],
+     "nullable": false
+    },
+    "is_virtual": {
+     "data_type": "boolean",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 20,
+          "value": "true"
+         },
+         {
+          "percentage": 80,
+          "value": "false"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "card_last4": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "regex",
+       "parameters": {
+        "pattern": "^[0-9]{4}$"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "status": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "active",
+          "percentage": 92
+         },
+         {
+          "value": "blocked",
+          "percentage": 5
+         },
+         {
+          "value": "expired",
+          "percentage": 3
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 30000
+  },
+  "transactions": {
+   "columns": {
+    "txn_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "txn_time": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2026-04-01",
+        "end_date": "2026-09-30",
+        "include_time": true,
+        "precision": "seconds"
+       }
+      }
+     ],
+     "date_after": [
+      "card_id.issued_on"
+     ],
+     "nullable": false
+    },
+    "entry_country": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{is_fraud} == True",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Romania",
+          "percentage": 20
+         },
+         {
+          "value": "Nigeria",
+          "percentage": 20
+         },
+         {
+          "value": "Brazil",
+          "percentage": 20
+         },
+         {
+          "value": "Vietnam",
+          "percentage": 15
+         },
+         {
+          "value": "Russia",
+          "percentage": 15
+         },
+         {
+          "value": "Turkey",
+          "percentage": 10
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "card_id.account_id.customer_id.country"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "txns_last_1h": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{is_fraud} == True",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 3,
+          "max": 9,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 1,
+          "percentage": 85
+         },
+         {
+          "value": 2,
+          "percentage": 15
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "card_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "cards",
+      "column": "card_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "cards",
+        "target_column": "card_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.5
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "is_fraud": {
+     "data_type": "boolean",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 1.5
+         },
+         {
+          "value": "false",
+          "percentage": 98.5
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "is_declined": {
+     "data_type": "boolean",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{is_fraud} == True",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 35
+         },
+         {
+          "value": "false",
+          "percentage": 65
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 2
+         },
+         {
+          "value": "false",
+          "percentage": 98
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "channel": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{is_fraud} == True",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "online",
+          "percentage": 80
+         },
+         {
+          "value": "chip",
+          "percentage": 8
+         },
+         {
+          "value": "contactless",
+          "percentage": 8
+         },
+         {
+          "value": "atm",
+          "percentage": 4
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "contactless",
+          "percentage": 45
+         },
+         {
+          "value": "chip",
+          "percentage": 30
+         },
+         {
+          "value": "online",
+          "percentage": 20
+         },
+         {
+          "value": "atm",
+          "percentage": 5
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "amount": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{is_fraud} == True",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 300,
+          "max": 3000,
+          "percentage": 85
+         },
+         {
+          "min": 20,
+          "max": 300,
+          "percentage": 15
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 2,
+          "max": 25,
+          "percentage": 38
+         },
+         {
+          "min": 25,
+          "max": 120,
+          "percentage": 47
+         },
+         {
+          "min": 120,
+          "max": 400,
+          "percentage": 12
+         },
+         {
+          "min": 400,
+          "max": 900,
+          "percentage": 3
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "km_from_last": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{is_fraud} == True",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 800,
+          "max": 9000,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0,
+          "max": 5,
+          "percentage": 55
+         },
+         {
+          "min": 5,
+          "max": 30,
+          "percentage": 37
+         },
+         {
+          "min": 30,
+          "max": 400,
+          "percentage": 8
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "currency": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "card_id.account_id.currency"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "merchant_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "merchants",
+      "column": "merchant_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "merchants",
+        "target_column": "merchant_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.9
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 420000
+  }
+ },
+ "dataset_name": "Synthetic Bank Card Transactions with Fraud Labels"
+}

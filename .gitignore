@@ -1,0 +1,9 @@
+# Never commit keys or downloaded data
+.env
+*.key
+kaggle.json
+__pycache__/
+downloads/
+*.zip
+*.sqlite
+*.db

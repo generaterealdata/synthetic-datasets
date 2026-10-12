@@ -1,0 +1,6 @@
+premise_id,address,city,postcode,premise_type,has_solar,has_ev
+1,23095 Bolton Skyway,Fort Collins,80526,house,0,1
+2,013 Vaughan Extension,Fort Collins,80526,apartment,0,1
+3,250 Jennifer Square Apt. 198,Fort Collins,80526,apartment,1,0
+4,331 Robbins Plains Suite 126,Fort Collins,80521,house,1,0
+5,426 Clark Fort,Fort Collins,80528,apartment,0,0

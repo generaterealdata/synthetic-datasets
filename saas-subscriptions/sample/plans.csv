@@ -1,0 +1,9 @@
+plan_id,plan_name,tier,monthly_price,seats_included
+1,Starter Monthly,starter,19,3
+2,Starter Annual,starter,15,3
+3,Team Monthly,team,39,10
+4,Team Annual,team,32,10
+5,Business Monthly,business,69,25
+6,Business Annual,business,57,25
+7,Enterprise Monthly,enterprise,109,100
+8,Enterprise Annual,enterprise,89,100

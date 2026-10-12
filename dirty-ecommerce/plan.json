@@ -1,0 +1,2890 @@
+{
+ "total_rows": 250000,
+ "dataset_type": "relational",
+ "tables": {
+  "orders": {
+   "columns": {
+    "ship_date": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "null_injection",
+       "if": "{status} in ('pending', 'cancelled')",
+       "parameters": {
+        "base_strategy": "calculated",
+        "base_parameters": {
+         "equation": "add_days({order_date}, random_int(1, 5))"
+        },
+        "null_rate": 1.0
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({order_date}, random_int(1, 5))"
+       }
+      }
+     ],
+     "date_after": [
+      "customer_id.signup_date"
+     ],
+     "nullable": true
+    },
+    "country": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "customer_id.country"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "order_total": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "aggregate",
+       "if": "DEFAULT",
+       "parameters": {
+        "child_table": "order_items",
+        "child_fk": "order_id",
+        "function": "sum",
+        "expression": "{line_total}"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "order_date": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2025-01-01",
+        "end_date": "2026-09-20",
+        "include_time": false
+       }
+      }
+     ],
+     "date_after": [
+      "customer_id.signup_date"
+     ],
+     "nullable": false,
+     "date_after_spread_days": 60
+    },
+    "customer_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "customers",
+      "column": "customer_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "customers",
+        "target_column": "customer_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.45
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "status": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "delivered",
+          "percentage": 70
+         },
+         {
+          "value": "shipped",
+          "percentage": 12
+         },
+         {
+          "value": "pending",
+          "percentage": 8
+         },
+         {
+          "value": "cancelled",
+          "percentage": 10
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "order_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 80000
+  },
+  "customers": {
+   "columns": {
+    "phone": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "regex",
+       "if": "{country} in ('United States', 'Canada')",
+       "parameters": {
+        "pattern": "\\+1-[2-9][0-9]{2}-555-01[0-9]{2}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{country} == 'United Kingdom'",
+       "parameters": {
+        "pattern": "\\+44 7700 900[0-9]{3}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{country} == 'Ireland'",
+       "parameters": {
+        "pattern": "\\+353 20 91[0-9] [0-9]{4}"
+       }
+      },
+      {
+       "generate_via": "regex",
+       "if": "{country} == 'Australia'",
+       "parameters": {
+        "pattern": "\\+61 491 570 [0-9]{3}"
+       }
+      },
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "regex",
+        "base_parameters": {
+         "pattern": "0"
+        },
+        "null_rate": 1.0
+       }
+      }
+     ],
+     "nullable": true
+    },
+    "customer_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "email": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "lowercase(concat(replace(replace({full_name}, ' ', '.'), '..', '.'), {customer_id}, '@example.com'))"
+       }
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "country": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "United States",
+          "percentage": 38
+         },
+         {
+          "value": "United Kingdom",
+          "percentage": 12
+         },
+         {
+          "value": "Canada",
+          "percentage": 9
+         },
+         {
+          "value": "Germany",
+          "percentage": 9
+         },
+         {
+          "value": "France",
+          "percentage": 7
+         },
+         {
+          "value": "Australia",
+          "percentage": 6
+         },
+         {
+          "value": "Netherlands",
+          "percentage": 4
+         },
+         {
+          "value": "Spain",
+          "percentage": 4
+         },
+         {
+          "value": "Italy",
+          "percentage": 4
+         },
+         {
+          "value": "Sweden",
+          "percentage": 3
+         },
+         {
+          "value": "Ireland",
+          "percentage": 2
+         },
+         {
+          "value": "New Zealand",
+          "percentage": 2
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "signup_date": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2024-06-01",
+        "end_date": "2026-06-30",
+        "include_time": false
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "full_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "parameters": {
+        "primitive_type": "name"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "city": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'United States'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "New York",
+          "percentage": 20.0
+         },
+         {
+          "value": "Los Angeles",
+          "percentage": 20.0
+         },
+         {
+          "value": "Chicago",
+          "percentage": 20.0
+         },
+         {
+          "value": "Houston",
+          "percentage": 20.0
+         },
+         {
+          "value": "Seattle",
+          "percentage": 20.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'United Kingdom'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "London",
+          "percentage": 20.0
+         },
+         {
+          "value": "Manchester",
+          "percentage": 20.0
+         },
+         {
+          "value": "Birmingham",
+          "percentage": 20.0
+         },
+         {
+          "value": "Leeds",
+          "percentage": 20.0
+         },
+         {
+          "value": "Glasgow",
+          "percentage": 20.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'Canada'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Toronto",
+          "percentage": 25.0
+         },
+         {
+          "value": "Vancouver",
+          "percentage": 25.0
+         },
+         {
+          "value": "Montreal",
+          "percentage": 25.0
+         },
+         {
+          "value": "Calgary",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'Germany'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Berlin",
+          "percentage": 20.0
+         },
+         {
+          "value": "Munich",
+          "percentage": 20.0
+         },
+         {
+          "value": "Hamburg",
+          "percentage": 20.0
+         },
+         {
+          "value": "Frankfurt",
+          "percentage": 20.0
+         },
+         {
+          "value": "Cologne",
+          "percentage": 20.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'France'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Paris",
+          "percentage": 25.0
+         },
+         {
+          "value": "Lyon",
+          "percentage": 25.0
+         },
+         {
+          "value": "Marseille",
+          "percentage": 25.0
+         },
+         {
+          "value": "Toulouse",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'Australia'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Sydney",
+          "percentage": 25.0
+         },
+         {
+          "value": "Melbourne",
+          "percentage": 25.0
+         },
+         {
+          "value": "Brisbane",
+          "percentage": 25.0
+         },
+         {
+          "value": "Perth",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'Netherlands'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Amsterdam",
+          "percentage": 25.0
+         },
+         {
+          "value": "Rotterdam",
+          "percentage": 25.0
+         },
+         {
+          "value": "Utrecht",
+          "percentage": 25.0
+         },
+         {
+          "value": "Eindhoven",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'Spain'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Madrid",
+          "percentage": 25.0
+         },
+         {
+          "value": "Barcelona",
+          "percentage": 25.0
+         },
+         {
+          "value": "Valencia",
+          "percentage": 25.0
+         },
+         {
+          "value": "Seville",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'Italy'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Rome",
+          "percentage": 25.0
+         },
+         {
+          "value": "Milan",
+          "percentage": 25.0
+         },
+         {
+          "value": "Turin",
+          "percentage": 25.0
+         },
+         {
+          "value": "Bologna",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'Sweden'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Stockholm",
+          "percentage": 25.0
+         },
+         {
+          "value": "Gothenburg",
+          "percentage": 25.0
+         },
+         {
+          "value": "Malmo",
+          "percentage": 25.0
+         },
+         {
+          "value": "Uppsala",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{country} == 'Ireland'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Dublin",
+          "percentage": 25.0
+         },
+         {
+          "value": "Cork",
+          "percentage": 25.0
+         },
+         {
+          "value": "Galway",
+          "percentage": 25.0
+         },
+         {
+          "value": "Limerick",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Auckland",
+          "percentage": 25.0
+         },
+         {
+          "value": "Wellington",
+          "percentage": 25.0
+         },
+         {
+          "value": "Christchurch",
+          "percentage": 25.0
+         },
+         {
+          "value": "Hamilton",
+          "percentage": 25.0
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "birth_date": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "date_range",
+        "base_parameters": {
+         "start_date": "1946-01-01",
+         "end_date": "2007-12-31",
+         "include_time": false
+        },
+        "null_rate": 0.08
+       }
+      }
+     ],
+     "nullable": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 40000
+  },
+  "order_items": {
+   "columns": {
+    "order_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "orders",
+      "column": "order_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "orders",
+        "target_column": "order_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.1
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "product_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "products",
+      "column": "product_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "products",
+        "target_column": "product_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.8
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "order_item_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "unit_price": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "product_id.unit_price"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "line_total": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round({quantity} * {unit_price}, 2)"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "quantity": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 1,
+          "percentage": 64
+         },
+         {
+          "value": 2,
+          "percentage": 22
+         },
+         {
+          "value": 3,
+          "percentage": 8
+         },
+         {
+          "value": 4,
+          "percentage": 4
+         },
+         {
+          "value": 5,
+          "percentage": 2
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 128000
+  },
+  "products": {
+   "columns": {
+    "product_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "unit_price": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 4,
+          "max": 50,
+          "percentage": 60
+         },
+         {
+          "min": 50,
+          "max": 150,
+          "percentage": 25
+         },
+         {
+          "min": 150,
+          "max": 300,
+          "percentage": 10
+         },
+         {
+          "min": 300,
+          "max": 600,
+          "percentage": 5
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "category": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Electronics",
+          "percentage": 12.5
+         },
+         {
+          "value": "Home",
+          "percentage": 12.5
+         },
+         {
+          "value": "Kitchen",
+          "percentage": 12.5
+         },
+         {
+          "value": "Toys",
+          "percentage": 12.5
+         },
+         {
+          "value": "Sports",
+          "percentage": 12.5
+         },
+         {
+          "value": "Beauty",
+          "percentage": 12.5
+         },
+         {
+          "value": "Books",
+          "percentage": 12.5
+         },
+         {
+          "value": "Garden",
+          "percentage": 12.5
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "product_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{category} == 'Electronics'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Compact Bluetooth Speaker",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Wireless Earbuds",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact USB-C Charger",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Power Bank",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Smart Plug",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Webcam",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Bluetooth Speaker",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Wireless Earbuds",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless USB-C Charger",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Power Bank",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Smart Plug",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Webcam",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Bluetooth Speaker",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Wireless Earbuds",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic USB-C Charger",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Power Bank",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Smart Plug",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Webcam",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Bluetooth Speaker",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Wireless Earbuds",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe USB-C Charger",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Power Bank",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Smart Plug",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Webcam",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Bluetooth Speaker",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Wireless Earbuds",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco USB-C Charger",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Power Bank",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Smart Plug",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Webcam",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Bluetooth Speaker",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Wireless Earbuds",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium USB-C Charger",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Power Bank",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Smart Plug",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Webcam",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Bluetooth Speaker",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Wireless Earbuds",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday USB-C Charger",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Power Bank",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Smart Plug",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Webcam",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Bluetooth Speaker",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Wireless Earbuds",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel USB-C Charger",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Power Bank",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Smart Plug",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Webcam",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Bluetooth Speaker",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Wireless Earbuds",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro USB-C Charger",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Power Bank",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Smart Plug",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Webcam",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Bluetooth Speaker",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Wireless Earbuds",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential USB-C Charger",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Power Bank",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Smart Plug",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Webcam",
+          "percentage": 1.6666666666666667
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{category} == 'Home'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Compact Throw Blanket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Table Lamp",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Storage Basket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Wall Clock",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Door Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Picture Frame",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Throw Blanket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Table Lamp",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Storage Basket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Wall Clock",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Door Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Picture Frame",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Throw Blanket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Table Lamp",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Storage Basket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Wall Clock",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Door Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Picture Frame",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Throw Blanket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Table Lamp",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Storage Basket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Wall Clock",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Door Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Picture Frame",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Throw Blanket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Table Lamp",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Storage Basket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Wall Clock",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Door Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Picture Frame",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Throw Blanket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Table Lamp",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Storage Basket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Wall Clock",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Door Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Picture Frame",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Throw Blanket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Table Lamp",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Storage Basket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Wall Clock",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Door Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Picture Frame",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Throw Blanket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Table Lamp",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Storage Basket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Wall Clock",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Door Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Picture Frame",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Throw Blanket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Table Lamp",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Storage Basket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Wall Clock",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Door Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Picture Frame",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Throw Blanket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Table Lamp",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Storage Basket",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Wall Clock",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Door Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Picture Frame",
+          "percentage": 1.6666666666666667
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{category} == 'Kitchen'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Compact Chef Knife",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Cutting Board",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Nonstick Pan",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Coffee Grinder",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Mixing Bowl Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Kettle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Chef Knife",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Cutting Board",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Nonstick Pan",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Coffee Grinder",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Mixing Bowl Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Kettle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Chef Knife",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Cutting Board",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Nonstick Pan",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Coffee Grinder",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Mixing Bowl Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Kettle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Chef Knife",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Cutting Board",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Nonstick Pan",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Coffee Grinder",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Mixing Bowl Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Kettle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Chef Knife",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Cutting Board",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Nonstick Pan",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Coffee Grinder",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Mixing Bowl Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Kettle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Chef Knife",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Cutting Board",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Nonstick Pan",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Coffee Grinder",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Mixing Bowl Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Kettle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Chef Knife",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Cutting Board",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Nonstick Pan",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Coffee Grinder",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Mixing Bowl Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Kettle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Chef Knife",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Cutting Board",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Nonstick Pan",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Coffee Grinder",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Mixing Bowl Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Kettle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Chef Knife",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Cutting Board",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Nonstick Pan",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Coffee Grinder",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Mixing Bowl Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Kettle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Chef Knife",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Cutting Board",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Nonstick Pan",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Coffee Grinder",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Mixing Bowl Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Kettle",
+          "percentage": 1.6666666666666667
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{category} == 'Toys'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Compact Building Blocks",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Puzzle Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Plush Bear",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Remote Car",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Art Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Board Game",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Building Blocks",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Puzzle Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Plush Bear",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Remote Car",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Art Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Board Game",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Building Blocks",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Puzzle Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Plush Bear",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Remote Car",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Art Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Board Game",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Building Blocks",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Puzzle Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Plush Bear",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Remote Car",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Art Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Board Game",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Building Blocks",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Puzzle Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Plush Bear",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Remote Car",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Art Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Board Game",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Building Blocks",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Puzzle Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Plush Bear",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Remote Car",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Art Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Board Game",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Building Blocks",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Puzzle Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Plush Bear",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Remote Car",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Art Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Board Game",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Building Blocks",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Puzzle Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Plush Bear",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Remote Car",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Art Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Board Game",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Building Blocks",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Puzzle Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Plush Bear",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Remote Car",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Art Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Board Game",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Building Blocks",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Puzzle Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Plush Bear",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Remote Car",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Art Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Board Game",
+          "percentage": 1.6666666666666667
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{category} == 'Sports'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Compact Yoga Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Resistance Bands",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Jump Rope",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Water Bottle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Foam Roller",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Gym Bag",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Yoga Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Resistance Bands",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Jump Rope",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Water Bottle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Foam Roller",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Gym Bag",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Yoga Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Resistance Bands",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Jump Rope",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Water Bottle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Foam Roller",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Gym Bag",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Yoga Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Resistance Bands",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Jump Rope",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Water Bottle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Foam Roller",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Gym Bag",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Yoga Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Resistance Bands",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Jump Rope",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Water Bottle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Foam Roller",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Gym Bag",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Yoga Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Resistance Bands",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Jump Rope",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Water Bottle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Foam Roller",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Gym Bag",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Yoga Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Resistance Bands",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Jump Rope",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Water Bottle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Foam Roller",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Gym Bag",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Yoga Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Resistance Bands",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Jump Rope",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Water Bottle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Foam Roller",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Gym Bag",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Yoga Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Resistance Bands",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Jump Rope",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Water Bottle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Foam Roller",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Gym Bag",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Yoga Mat",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Resistance Bands",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Jump Rope",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Water Bottle",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Foam Roller",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Gym Bag",
+          "percentage": 1.6666666666666667
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{category} == 'Beauty'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Compact Face Serum",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Hair Dryer",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Makeup Brush Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Body Lotion",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Nail Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Lip Balm Trio",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Face Serum",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Hair Dryer",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Makeup Brush Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Body Lotion",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Nail Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Lip Balm Trio",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Face Serum",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Hair Dryer",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Makeup Brush Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Body Lotion",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Nail Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Lip Balm Trio",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Face Serum",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Hair Dryer",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Makeup Brush Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Body Lotion",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Nail Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Lip Balm Trio",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Face Serum",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Hair Dryer",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Makeup Brush Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Body Lotion",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Nail Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Lip Balm Trio",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Face Serum",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Hair Dryer",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Makeup Brush Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Body Lotion",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Nail Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Lip Balm Trio",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Face Serum",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Hair Dryer",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Makeup Brush Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Body Lotion",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Nail Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Lip Balm Trio",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Face Serum",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Hair Dryer",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Makeup Brush Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Body Lotion",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Nail Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Lip Balm Trio",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Face Serum",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Hair Dryer",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Makeup Brush Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Body Lotion",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Nail Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Lip Balm Trio",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Face Serum",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Hair Dryer",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Makeup Brush Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Body Lotion",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Nail Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Lip Balm Trio",
+          "percentage": 1.6666666666666667
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{category} == 'Books'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Compact Cookbook",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Travel Guide",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Notebook Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Colouring Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Planner",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Puzzle Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Cookbook",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Travel Guide",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Notebook Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Colouring Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Planner",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Puzzle Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Cookbook",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Travel Guide",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Notebook Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Colouring Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Planner",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Puzzle Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Cookbook",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Travel Guide",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Notebook Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Colouring Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Planner",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Puzzle Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Cookbook",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Travel Guide",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Notebook Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Colouring Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Planner",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Puzzle Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Cookbook",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Travel Guide",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Notebook Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Colouring Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Planner",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Puzzle Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Cookbook",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Travel Guide",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Notebook Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Colouring Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Planner",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Puzzle Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Cookbook",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Travel Guide",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Notebook Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Colouring Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Planner",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Puzzle Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Cookbook",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Travel Guide",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Notebook Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Colouring Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Planner",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Puzzle Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Cookbook",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Travel Guide",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Notebook Set",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Colouring Book",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Planner",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Puzzle Book",
+          "percentage": 1.6666666666666667
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Compact Pruning Shears",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Garden Hose",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Planter Pot",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Seed Starter Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Hand Trowel",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Compact Watering Can",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Pruning Shears",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Garden Hose",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Planter Pot",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Seed Starter Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Hand Trowel",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Wireless Watering Can",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Pruning Shears",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Garden Hose",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Planter Pot",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Seed Starter Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Hand Trowel",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Classic Watering Can",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Pruning Shears",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Garden Hose",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Planter Pot",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Seed Starter Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Hand Trowel",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Deluxe Watering Can",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Pruning Shears",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Garden Hose",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Planter Pot",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Seed Starter Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Hand Trowel",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Eco Watering Can",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Pruning Shears",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Garden Hose",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Planter Pot",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Seed Starter Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Hand Trowel",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Premium Watering Can",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Pruning Shears",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Garden Hose",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Planter Pot",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Seed Starter Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Hand Trowel",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Everyday Watering Can",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Pruning Shears",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Garden Hose",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Planter Pot",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Seed Starter Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Hand Trowel",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Travel Watering Can",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Pruning Shears",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Garden Hose",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Planter Pot",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Seed Starter Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Hand Trowel",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Pro Watering Can",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Pruning Shears",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Garden Hose",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Planter Pot",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Seed Starter Kit",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Hand Trowel",
+          "percentage": 1.6666666666666667
+         },
+         {
+          "value": "Essential Watering Can",
+          "percentage": 1.6666666666666667
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "stock_qty": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "range",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 100,
+          "min": 0,
+          "max": 500
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 2000
+  }
+ },
+ "dataset_name": "Dirty E-commerce Data for Cleaning Practice"
+}

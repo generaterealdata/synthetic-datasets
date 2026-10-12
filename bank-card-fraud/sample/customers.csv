@@ -1,0 +1,47 @@
+customer_id,full_name,date_of_birth,country,city,risk_segment,joined_on
+1,Victoria Bennett,1978-12-16,France,Marseille,medium,2017-12-12
+2,Barbara Williams,2006-12-28,Germany,Berlin,low,2017-05-14
+3,Christina Mayer,1966-04-09,United Kingdom,Manchester,low,2025-11-27
+4,Lisa Madden PhD,1983-12-11,United States,New York,medium,2016-09-01
+5,Linda Padilla,1949-02-24,France,Paris,low,2016-05-21
+6,Robert Vargas,1943-12-30,Germany,Munich,low,2019-12-21
+7,Kimberly Shea,1997-03-16,United Kingdom,Birmingham,low,2023-08-07
+8,Brandon Hutchinson,1954-08-07,United States,Chicago,medium,2021-03-25
+9,Raymond Daniels,2003-09-29,United Kingdom,Leeds,low,2023-08-02
+10,Alicia Howard DDS,2007-09-11,United States,Chicago,low,2018-07-26
+11,Ryan Le,1982-05-02,Netherlands,Amsterdam,low,2021-03-01
+12,Barbara Walker,2006-06-24,United Kingdom,Birmingham,medium,2025-12-01
+13,Rebecca Garcia,1994-04-24,United Kingdom,Birmingham,low,2018-06-10
+14,Kelly Graham,2001-03-28,United States,Chicago,low,2014-05-28
+15,Matthew Carroll,1981-02-04,United States,Los Angeles,medium,2012-09-28
+16,Nathan Morris,1988-02-20,France,Lyon,low,2020-06-01
+17,Michael Johnson,1968-04-20,Germany,Frankfurt,low,2018-12-18
+18,Wayne Espinoza MD,1994-07-11,United States,Seattle,low,2017-12-19
+19,Jessica Sullivan,1980-09-10,United States,Houston,low,2024-07-18
+20,Jason Nelson,1994-09-21,Spain,Valencia,low,2019-07-29
+21,Eric Martin,1977-08-08,United Kingdom,Leeds,low,2025-03-21
+22,Brittany Michael,2007-10-20,Germany,Munich,medium,2021-04-12
+23,Jonathan Jimenez,1944-09-12,United Kingdom,Glasgow,low,2016-12-22
+24,Anna Franklin,1946-10-14,United States,Seattle,low,2023-01-04
+25,Catherine Cook,1999-08-26,Spain,Madrid,low,2020-02-26
+26,Charlene Griffith,1945-12-09,Canada,Toronto,low,2021-07-29
+27,Jacob Becker,1992-10-09,Netherlands,Rotterdam,low,2014-01-07
+28,Nicholas Rice,1977-05-08,Spain,Seville,low,2018-10-05
+29,Matthew Bailey,2007-05-21,United Kingdom,Leeds,low,2015-07-11
+30,Robin Washington,1942-05-04,United Kingdom,Manchester,medium,2025-11-04
+31,Andrew Cummings,1965-01-28,United States,Chicago,medium,2015-01-27
+32,Deborah Morales,1979-01-03,United States,Los Angeles,low,2019-08-22
+33,Justin Morrow,1945-09-04,Canada,Montreal,low,2013-09-26
+34,Monica Gonzalez,1997-09-14,United Kingdom,Birmingham,high,2025-08-14
+35,Matthew Martinez,1989-04-23,United Kingdom,Leeds,low,2012-12-17
+36,Tara Barker,1981-03-23,United States,Chicago,medium,2014-11-30
+37,Shawn Chan,1948-12-31,Canada,Montreal,low,2015-08-06
+38,Kristine Wilkins,1955-12-20,Spain,Valencia,low,2020-11-11
+39,Laura Holland,1974-08-28,Germany,Berlin,low,2019-06-11
+40,Dr. Debra Palmer,1994-02-01,United Kingdom,London,low,2018-04-27
+41,Robyn May,1947-08-21,United States,New York,high,2021-10-18
+42,Mr. Jordan Collins II,2000-04-17,United States,Los Angeles,low,2022-08-24
+43,Ms. Jennifer Holmes MD,1975-12-15,Netherlands,Utrecht,low,2016-12-02
+44,Sherry Turner,1970-03-27,United States,Los Angeles,low,2022-10-05
+45,Ronald Fields,1949-05-01,Germany,Cologne,low,2018-09-06
+46,Michelle Guerrero,1984-03-10,United States,Chicago,low,2023-04-16

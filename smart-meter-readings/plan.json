@@ -1,0 +1,584 @@
+{
+ "total_rows": 500000,
+ "dataset_type": "relational",
+ "tables": {
+  "premises": {
+   "columns": {
+    "address": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "parameters": {
+        "primitive_type": "street_address"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "has_ev": {
+     "data_type": "boolean",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 22
+         },
+         {
+          "value": "false",
+          "percentage": 78
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "has_solar": {
+     "data_type": "boolean",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 28
+         },
+         {
+          "value": "false",
+          "percentage": 72
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "premise_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "premise_type": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "house",
+          "percentage": 55
+         },
+         {
+          "value": "apartment",
+          "percentage": 33
+         },
+         {
+          "value": "small_business",
+          "percentage": 12
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "city": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Fort Collins",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "postcode": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "80521",
+          "percentage": 20.0
+         },
+         {
+          "value": "80524",
+          "percentage": 20.0
+         },
+         {
+          "value": "80525",
+          "percentage": 20.0
+         },
+         {
+          "value": "80526",
+          "percentage": 20.0
+         },
+         {
+          "value": "80528",
+          "percentage": 20.0
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 100
+  },
+  "readings": {
+   "entity_count": 100,
+   "dataset_type": "time_series",
+   "columns": {
+    "export_kwh": {
+     "data_type": "float",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.has_solar} == True and substring({interval_start}, 11, 2) >= '10' and substring({interval_start}, 11, 2) < '15'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.3,
+          "max": 1.2,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.has_solar} == True and substring({interval_start}, 11, 2) >= '07' and substring({interval_start}, 11, 2) < '19'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.02,
+          "max": 0.5,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "rate_per_kwh": {
+     "data_type": "float",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "if_else({is_peak}, 0.38, 0.24)"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "meter_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "meters",
+      "column": "meter_id"
+     },
+     "_fk_source": "inline",
+     "scope": "entity",
+     "nullable": false,
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "meters",
+        "target_column": "meter_id",
+        "fk_distribution": "uniform"
+       }
+      }
+     ]
+    },
+    "import_kwh": {
+     "data_type": "float",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.premise_type} == 'small_business' and substring({interval_start}, 11, 2) >= '08' and substring({interval_start}, 11, 2) < '18'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.6,
+          "max": 2.8,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.premise_type} == 'small_business'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.05,
+          "max": 0.35,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.has_ev} == True and substring({interval_start}, 11, 2) >= '21'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 1.2,
+          "max": 3.4,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "substring({interval_start}, 11, 2) < '06'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.04,
+          "max": 0.22,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "substring({interval_start}, 11, 2) < '09'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.2,
+          "max": 0.9,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "substring({interval_start}, 11, 2) < '17'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.1,
+          "max": 0.5,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "substring({interval_start}, 11, 2) < '21'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.6,
+          "max": 2.4,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.25,
+          "max": 0.9,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "reading_id": {
+     "data_type": "integer",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "if": "DEFAULT",
+       "parameters": {
+        "prefix": "",
+        "start": 1,
+        "step": 1,
+        "padding": 0
+       }
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "cost": {
+     "data_type": "float",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round({import_kwh} * {rate_per_kwh}, 2)"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "is_peak": {
+     "data_type": "boolean",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "substring({interval_start}, 11, 2) >= '17' and substring({interval_start}, 11, 2) < '21'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "false",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "interval_start": {
+     "data_type": "date",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "time_series_date",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2026-08-01T00:00:00",
+        "frequency": "minutely",
+        "interval": 15
+       }
+      }
+     ],
+     "date_after": [
+      "meter_id.installed_on"
+     ],
+     "nullable": false
+    },
+    "voltage_v": {
+     "data_type": "float",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "random_walk",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_min": 238,
+        "start_max": 242,
+        "max_step_variance": 0.6,
+        "min_clip": 228,
+        "max_clip": 252,
+        "mean_reversion": 0.2
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "frequency": "minutely",
+   "rows_per_entity": 4998,
+   "total_rows": 499800,
+   "entity_key": "meter_id"
+  },
+  "meters": {
+   "columns": {
+    "installed_on": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2019-01-01",
+        "end_date": "2025-12-31",
+        "include_time": false
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "tariff_code": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{premise_id.has_solar} == True",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "TOU-SOLAR",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{premise_id.has_ev} == True",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "TOU-EV",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "TOU-STD",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "premise_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "premises",
+      "column": "premise_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "premises",
+        "target_column": "premise_id",
+        "fk_distribution": "at_least_one"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "meter_serial": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "if": "DEFAULT",
+       "parameters": {
+        "prefix": "SM-",
+        "start": 1,
+        "step": 1,
+        "padding": 6
+       }
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "meter_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 100
+  }
+ },
+ "dataset_name": "Synthetic Smart Meter Readings (15-Minute Intervals)"
+}

@@ -1,0 +1,26 @@
+{
+  "dataset": "app-users-edge-cases",
+  "title": "App Users with Edge Cases for QA Testing",
+  "generator": "GenerateRealData",
+  "generator_url": "https://generaterealdata.com/industries/software-testing-qa/",
+  "generated_on": "2026-10-11",
+  "mode": "schema",
+  "plan": "plan.json",
+  "schema": "schema.sql",
+  "seed": 20261111,
+  "rows_requested": 200000,
+  "rows_generated": 200000,
+  "rows_per_table": {
+    "organizations": 2000,
+    "users": 40000,
+    "memberships": 46000,
+    "api_tokens": 6000,
+    "audit_events": 106000
+  },
+  "ai_written_fields": [],
+  "ai_rows_used": 0,
+  "anomalies": false,
+  "format": "sql",
+  "dialect": "postgresql",
+  "licence": "CC-BY-4.0"
+}

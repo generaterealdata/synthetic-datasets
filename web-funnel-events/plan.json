@@ -1,0 +1,908 @@
+{
+ "total_rows": 456000,
+ "dataset_type": "relational",
+ "tables": {
+  "events": {
+   "entity_count": 84000,
+   "dataset_type": "clustered",
+   "columns": {
+    "page_path": {
+     "data_type": "string",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "{event_name} == 'session_start'",
+       "parameters": {
+        "path": "session_id.landing_page"
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{event_name} == 'search'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "/search?q=tent",
+          "percentage": 12.5
+         },
+         {
+          "value": "/search?q=rain+jacket",
+          "percentage": 12.5
+         },
+         {
+          "value": "/search?q=hiking+boots",
+          "percentage": 12.5
+         },
+         {
+          "value": "/search?q=sleeping+bag",
+          "percentage": 12.5
+         },
+         {
+          "value": "/search?q=headlamp",
+          "percentage": 12.5
+         },
+         {
+          "value": "/search?q=backpack+45l",
+          "percentage": 12.5
+         },
+         {
+          "value": "/search?q=trekking+poles",
+          "percentage": 12.5
+         },
+         {
+          "value": "/search?q=gps+watch",
+          "percentage": 12.5
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{event_name} == 'view_product'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "/p/alpine-2-person-tent",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "/p/trail-runner-x",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "/p/summit-45l-backpack",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "/p/glacier-down-sleeping-bag",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "/p/ridge-rain-jacket",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "/p/nomad-headlamp",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "/p/canyon-trekking-poles",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "/p/vertex-gps-watch",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "/p/basecamp-camp-stove",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "/p/merino-base-layer",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "/p/horizon-hiking-boot",
+          "percentage": 8.333333333333334
+         },
+         {
+          "value": "/p/tundra-wool-beanie",
+          "percentage": 8.333333333333334
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{event_name} == 'add_to_cart'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "/cart",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{event_name} == 'begin_checkout'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "/checkout",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{event_name} == 'purchase'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "/checkout/thank-you",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "(left site)",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "session_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "sessions",
+      "column": "session_id"
+     },
+     "_fk_source": "inline",
+     "scope": "entity",
+     "nullable": false,
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "sessions",
+        "target_column": "session_id",
+        "fk_distribution": "uniform"
+       }
+      }
+     ]
+    },
+    "cart_value": {
+     "data_type": "float",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "{event_name} in ('add_to_cart', 'begin_checkout', 'purchase')",
+       "parameters": {
+        "equation": "round(15 + ({session_id} * 7919 % 58500) / 100, 2)"
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "secs_on_step": {
+     "data_type": "integer",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 3,
+          "max": 30,
+          "percentage": 45
+         },
+         {
+          "min": 30,
+          "max": 90,
+          "percentage": 35
+         },
+         {
+          "min": 90,
+          "max": 240,
+          "percentage": 20
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "occurred_at": {
+     "data_type": "date",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "time_series_date",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "{session_id.started_at}",
+        "frequency": "tick",
+        "mean_gap_seconds": 45,
+        "precision": "seconds"
+       }
+      }
+     ],
+     "date_after": [
+      "session_id.started_at"
+     ],
+     "nullable": false
+    },
+    "step_no": {
+     "data_type": "integer",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "if": "DEFAULT",
+       "parameters": {
+        "prefix": "",
+        "start": 1,
+        "step": 1,
+        "padding": 0
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "event_id": {
+     "data_type": "integer",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "if": "DEFAULT",
+       "parameters": {
+        "prefix": "",
+        "start": 1,
+        "step": 1,
+        "padding": 0
+       }
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "event_name": {
+     "data_type": "string",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "state_machine",
+       "if": "DEFAULT",
+       "parameters": {
+        "initial_state_weights": {
+         "session_start": 100
+        },
+        "transitions": {
+         "session_start": {
+          "view_product": 50,
+          "search": 25,
+          "exit": 25
+         },
+         "search": {
+          "view_product": 70,
+          "exit": 30
+         },
+         "view_product": {
+          "add_to_cart": 30,
+          "view_product": 25,
+          "exit": 45
+         },
+         "add_to_cart": {
+          "begin_checkout": 55,
+          "view_product": 15,
+          "exit": 30
+         },
+         "begin_checkout": {
+          "purchase": 62,
+          "exit": 38
+         },
+         "purchase": {},
+         "exit": {}
+        }
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "total_rows": 330000,
+   "rows_per_entity": 7,
+   "entity_key": "session_id"
+  },
+  "conversions": {
+   "columns": {
+    "conversion_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "items": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 1,
+          "percentage": 46
+         },
+         {
+          "value": 2,
+          "percentage": 30
+         },
+         {
+          "value": 3,
+          "percentage": 13
+         },
+         {
+          "value": 4,
+          "percentage": 6
+         },
+         {
+          "value": 5,
+          "percentage": 3
+         },
+         {
+          "value": 6,
+          "percentage": 2
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "converted_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "@anchor.occurred_at"
+       }
+      }
+     ],
+     "date_after": [
+      "session_id.started_at",
+      "@anchor.occurred_at",
+      "@anchor.session_id.started_at"
+     ],
+     "nullable": false
+    },
+    "coupon_code": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "categorical",
+        "base_parameters": {
+         "distribution": [
+          {
+           "value": "WELCOME10",
+           "percentage": 25.0
+          },
+          {
+           "value": "SUMMER15",
+           "percentage": 25.0
+          },
+          {
+           "value": "FREESHIP",
+           "percentage": 25.0
+          },
+          {
+           "value": "VIP20",
+           "percentage": 25.0
+          }
+         ]
+        },
+        "null_rate": 0.8
+       }
+      }
+     ],
+     "nullable": true
+    },
+    "order_value": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "@anchor.cart_value"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "session_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "sessions",
+      "column": "session_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "@anchor.session_id"
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 12000,
+   "anchor": {
+    "table": "events",
+    "unique": true,
+    "where": "{event_name} == 'purchase'"
+   }
+  },
+  "users": {
+   "columns": {
+    "country": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "United States",
+          "percentage": 38
+         },
+         {
+          "value": "United Kingdom",
+          "percentage": 12
+         },
+         {
+          "value": "Canada",
+          "percentage": 9
+         },
+         {
+          "value": "Germany",
+          "percentage": 9
+         },
+         {
+          "value": "France",
+          "percentage": 7
+         },
+         {
+          "value": "Australia",
+          "percentage": 6
+         },
+         {
+          "value": "Netherlands",
+          "percentage": 4
+         },
+         {
+          "value": "Spain",
+          "percentage": 4
+         },
+         {
+          "value": "Italy",
+          "percentage": 4
+         },
+         {
+          "value": "Sweden",
+          "percentage": 3
+         },
+         {
+          "value": "Ireland",
+          "percentage": 2
+         },
+         {
+          "value": "New Zealand",
+          "percentage": 2
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "signup_date": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2024-01-01",
+        "end_date": "2026-06-30",
+        "include_time": false
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "acquisition_channel": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "organic",
+          "percentage": 32
+         },
+         {
+          "value": "paid_search",
+          "percentage": 22
+         },
+         {
+          "value": "social",
+          "percentage": 18
+         },
+         {
+          "value": "direct",
+          "percentage": 14
+         },
+         {
+          "value": "email",
+          "percentage": 9
+         },
+         {
+          "value": "referral",
+          "percentage": 5
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "device_preference": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "mobile",
+          "percentage": 58
+         },
+         {
+          "value": "desktop",
+          "percentage": 34
+         },
+         {
+          "value": "tablet",
+          "percentage": 8
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "is_customer": {
+     "data_type": "boolean",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 24
+         },
+         {
+          "value": "false",
+          "percentage": 76
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "user_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 30000
+  },
+  "sessions": {
+   "columns": {
+    "session_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "user_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "users",
+      "column": "user_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "users",
+        "target_column": "user_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.8
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "started_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2026-07-01",
+        "end_date": "2026-09-30",
+        "include_time": true,
+        "precision": "seconds"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "browser": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Chrome",
+          "percentage": 52
+         },
+         {
+          "value": "Safari",
+          "percentage": 30
+         },
+         {
+          "value": "Edge",
+          "percentage": 8
+         },
+         {
+          "value": "Firefox",
+          "percentage": 7
+         },
+         {
+          "value": "Samsung Internet",
+          "percentage": 3
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "referrer": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "google",
+          "percentage": 38
+         },
+         {
+          "value": "direct",
+          "percentage": 24
+         },
+         {
+          "value": "instagram",
+          "percentage": 11
+         },
+         {
+          "value": "facebook",
+          "percentage": 9
+         },
+         {
+          "value": "newsletter",
+          "percentage": 8
+         },
+         {
+          "value": "bing",
+          "percentage": 5
+         },
+         {
+          "value": "partner site",
+          "percentage": 5
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "landing_page": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "/",
+          "percentage": 34
+         },
+         {
+          "value": "/sale",
+          "percentage": 16
+         },
+         {
+          "value": "/category/tents",
+          "percentage": 10
+         },
+         {
+          "value": "/category/footwear",
+          "percentage": 10
+         },
+         {
+          "value": "/p/trail-runner-x",
+          "percentage": 9
+         },
+         {
+          "value": "/p/alpine-2-person-tent",
+          "percentage": 7
+         },
+         {
+          "value": "/blog/packing-list",
+          "percentage": 8
+         },
+         {
+          "value": "/category/apparel",
+          "percentage": 6
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "device": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "mobile",
+          "percentage": 58
+         },
+         {
+          "value": "desktop",
+          "percentage": 34
+         },
+         {
+          "value": "tablet",
+          "percentage": 8
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "duration_s": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "aggregate",
+       "if": "DEFAULT",
+       "parameters": {
+        "child_table": "events",
+        "child_fk": "session_id",
+        "function": "sum",
+        "expression": "{secs_on_step}"
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 84000
+  }
+ },
+ "dataset_name": "Synthetic Web Analytics Funnel Events"
+}

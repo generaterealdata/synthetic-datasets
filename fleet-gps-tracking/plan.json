@@ -1,0 +1,972 @@
+{
+ "total_rows": 426500,
+ "dataset_type": "relational",
+ "tables": {
+  "trips": {
+   "columns": {
+    "distance_km": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "aggregate",
+       "if": "DEFAULT",
+       "parameters": {
+        "child_table": "pings",
+        "child_fk": "trip_id",
+        "function": "sum",
+        "expression": "{speed_kmh} * 30 / 3600"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "started_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2026-09-01",
+        "end_date": "2026-09-30",
+        "include_time": true,
+        "precision": "seconds"
+       }
+      }
+     ],
+     "date_after": [
+      "driver_id.hired_on"
+     ],
+     "nullable": false
+    },
+    "stops": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "aggregate",
+       "if": "DEFAULT",
+       "parameters": {
+        "child_table": "pings",
+        "child_fk": "trip_id",
+        "function": "sum",
+        "expression": "if_else({geofence_event} == 'customer_stop', 1, 0)"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "ended_at": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "parameters": {
+        "context_columns": [
+         "started_at"
+        ],
+        "equation": "add_days({started_at}, random_float(0.0138, 0.0833))"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "date_after": [
+      "started_at",
+      "driver_id.hired_on"
+     ],
+     "nullable": false
+    },
+    "driver_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "drivers",
+      "column": "driver_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "drivers",
+        "target_column": "driver_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.5
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "trip_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "vehicle_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "vehicles",
+      "column": "vehicle_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "vehicles",
+        "target_column": "vehicle_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.2
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "status": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 95.0,
+          "value": "completed"
+         },
+         {
+          "percentage": 3.0,
+          "value": "cancelled"
+         },
+         {
+          "percentage": 2.0,
+          "value": "in_progress"
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "ping_count": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "aggregate",
+       "if": "DEFAULT",
+       "parameters": {
+        "child_table": "pings",
+        "child_fk": "trip_id",
+        "function": "count"
+       }
+      }
+     ]
+    },
+    "duration_min": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "aggregate",
+       "if": "DEFAULT",
+       "parameters": {
+        "child_table": "pings",
+        "child_fk": "trip_id",
+        "function": "sum",
+        "expression": "0.5"
+       }
+      }
+     ]
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 6000
+  },
+  "pings": {
+   "entity_count": 6000,
+   "dataset_type": "time_series",
+   "columns": {
+    "ping_id": {
+     "data_type": "integer",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "if": "DEFAULT",
+       "parameters": {
+        "prefix": "",
+        "start": 1,
+        "step": 1,
+        "padding": 0
+       }
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "speed_kmh": {
+     "data_type": "float",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{geofence_event} == 'customer_stop'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{geofence_event} == 'school_zone'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 12,
+          "max": 25,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "random_walk",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_min": 18,
+        "start_max": 40,
+        "max_step_variance": 9,
+        "min_clip": 5,
+        "max_clip": 88,
+        "mean_reversion": 0.08
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "latitude": {
+     "data_type": "float",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "running_total",
+       "if": "{heading_deg} == 0",
+       "parameters": {
+        "equation": "{speed_kmh} * 30 / 3600 / 111.0",
+        "start_equation": "if_else({trip_id.vehicle_id.depot} == 'Elmhurst', 41.8995, if_else({trip_id.vehicle_id.depot} == 'Schaumburg', 42.0334, if_else({trip_id.vehicle_id.depot} == 'Naperville', 41.7508, if_else({trip_id.vehicle_id.depot} == 'Oak Brook', 41.8398, 41.6986)))) + random_float(-0.004, 0.004)",
+        "decimals": 6
+       }
+      },
+      {
+       "generate_via": "running_total",
+       "if": "{heading_deg} == 180",
+       "parameters": {
+        "equation": "0 - {speed_kmh} * 30 / 3600 / 111.0",
+        "start_equation": "if_else({trip_id.vehicle_id.depot} == 'Elmhurst', 41.8995, if_else({trip_id.vehicle_id.depot} == 'Schaumburg', 42.0334, if_else({trip_id.vehicle_id.depot} == 'Naperville', 41.7508, if_else({trip_id.vehicle_id.depot} == 'Oak Brook', 41.8398, 41.6986)))) + random_float(-0.004, 0.004)",
+        "decimals": 6
+       }
+      },
+      {
+       "generate_via": "running_total",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "0",
+        "start_equation": "if_else({trip_id.vehicle_id.depot} == 'Elmhurst', 41.8995, if_else({trip_id.vehicle_id.depot} == 'Schaumburg', 42.0334, if_else({trip_id.vehicle_id.depot} == 'Naperville', 41.7508, if_else({trip_id.vehicle_id.depot} == 'Oak Brook', 41.8398, 41.6986)))) + random_float(-0.004, 0.004)",
+        "decimals": 6
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "longitude": {
+     "data_type": "float",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "running_total",
+       "if": "{heading_deg} == 90",
+       "parameters": {
+        "equation": "{speed_kmh} * 30 / 3600 / 82.9",
+        "start_equation": "if_else({trip_id.vehicle_id.depot} == 'Elmhurst', -87.9403, if_else({trip_id.vehicle_id.depot} == 'Schaumburg', -88.0834, if_else({trip_id.vehicle_id.depot} == 'Naperville', -88.1535, if_else({trip_id.vehicle_id.depot} == 'Oak Brook', -87.9536, -88.0684)))) + random_float(-0.004, 0.004)",
+        "decimals": 6
+       }
+      },
+      {
+       "generate_via": "running_total",
+       "if": "{heading_deg} == 270",
+       "parameters": {
+        "equation": "0 - {speed_kmh} * 30 / 3600 / 82.9",
+        "start_equation": "if_else({trip_id.vehicle_id.depot} == 'Elmhurst', -87.9403, if_else({trip_id.vehicle_id.depot} == 'Schaumburg', -88.0834, if_else({trip_id.vehicle_id.depot} == 'Naperville', -88.1535, if_else({trip_id.vehicle_id.depot} == 'Oak Brook', -87.9536, -88.0684)))) + random_float(-0.004, 0.004)",
+        "decimals": 6
+       }
+      },
+      {
+       "generate_via": "running_total",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "0",
+        "start_equation": "if_else({trip_id.vehicle_id.depot} == 'Elmhurst', -87.9403, if_else({trip_id.vehicle_id.depot} == 'Schaumburg', -88.0834, if_else({trip_id.vehicle_id.depot} == 'Naperville', -88.1535, if_else({trip_id.vehicle_id.depot} == 'Oak Brook', -87.9536, -88.0684)))) + random_float(-0.004, 0.004)",
+        "decimals": 6
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "geofence_event": {
+     "data_type": "string",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "state_machine",
+       "if": "DEFAULT",
+       "parameters": {
+        "initial_state_weights": {
+         "depot_exit": 100
+        },
+        "transitions": {
+         "depot_exit": {
+          "none": 100
+         },
+         "none": {
+          "none": 96.3,
+          "customer_stop": 2.0,
+          "school_zone": 0.5,
+          "depot_enter": 1.2
+         },
+         "customer_stop": {
+          "none": 100
+         },
+         "school_zone": {
+          "school_zone": 55,
+          "none": 45
+         },
+         "depot_enter": {}
+        }
+       }
+      }
+     ],
+     "nullable": true
+    },
+    "odometer_km": {
+     "data_type": "float",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "running_total",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "{speed_kmh} * 30 / 3600",
+        "start_equation": "random_float(8000, 180000)",
+        "decimals": 3
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "recorded_at": {
+     "data_type": "date",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "time_series_date",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "{trip_id.started_at}",
+        "frequency": "secondly",
+        "interval": 30
+       }
+      }
+     ],
+     "date_after": [
+      "trip_id.started_at"
+     ],
+     "nullable": false
+    },
+    "trip_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "trips",
+      "column": "trip_id"
+     },
+     "_fk_source": "inline",
+     "scope": "entity",
+     "nullable": false,
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "trips",
+        "target_column": "trip_id",
+        "fk_distribution": "uniform"
+       }
+      }
+     ]
+    },
+    "heading_deg": {
+     "data_type": "integer",
+     "scope": "event",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{heading} == 'N'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{heading} == 'E'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 90,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{heading} == 'S'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 180,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 270,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "heading": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "state_machine",
+       "if": "DEFAULT",
+       "parameters": {
+        "initial_state_weights": {
+         "N": 25,
+         "E": 25,
+         "S": 25,
+         "W": 25
+        },
+        "transitions": {
+         "N": {
+          "N": 88,
+          "E": 6,
+          "W": 6
+         },
+         "E": {
+          "E": 88,
+          "S": 6,
+          "N": 6
+         },
+         "S": {
+          "S": 88,
+          "W": 6,
+          "E": 6
+         },
+         "W": {
+          "W": 88,
+          "N": 6,
+          "S": 6
+         }
+        }
+       }
+      }
+     ],
+     "scope": "event"
+    }
+   },
+   "frequency": "secondly",
+   "rows_per_entity": 120,
+   "total_rows": 420000,
+   "entity_key": "trip_id"
+  },
+  "vehicles": {
+   "columns": {
+    "vehicle_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "vin": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "vin"
+       }
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "fuel_type": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Transit'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "diesel",
+          "percentage": 60
+         },
+         {
+          "value": "petrol",
+          "percentage": 40
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'E-Transit'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "electric",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Sprinter'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "diesel",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'ProMaster'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "petrol",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Express'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "petrol",
+          "percentage": 70
+         },
+         {
+          "value": "diesel",
+          "percentage": 30
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'NV200'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "petrol",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'EDV'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "electric",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "diesel",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "depot": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Elmhurst",
+          "percentage": 20.0
+         },
+         {
+          "value": "Schaumburg",
+          "percentage": 20.0
+         },
+         {
+          "value": "Naperville",
+          "percentage": 20.0
+         },
+         {
+          "value": "Oak Brook",
+          "percentage": 20.0
+         },
+         {
+          "value": "Bolingbrook",
+          "percentage": 20.0
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "model": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Transit",
+          "percentage": 24
+         },
+         {
+          "value": "Sprinter",
+          "percentage": 18
+         },
+         {
+          "value": "ProMaster",
+          "percentage": 16
+         },
+         {
+          "value": "Express",
+          "percentage": 12
+         },
+         {
+          "value": "E-Transit",
+          "percentage": 10
+         },
+         {
+          "value": "NV200",
+          "percentage": 8
+         },
+         {
+          "value": "EDV",
+          "percentage": 7
+         },
+         {
+          "value": "NPR",
+          "percentage": 5
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "make": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Transit'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Ford",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'E-Transit'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Ford",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Sprinter'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Mercedes-Benz",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'ProMaster'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Ram",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'Express'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Chevrolet",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'NV200'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Nissan",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{model} == 'EDV'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Rivian",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Isuzu",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "model_year": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 2017,
+          "max": 2020,
+          "percentage": 30
+         },
+         {
+          "min": 2021,
+          "max": 2026,
+          "percentage": 70
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "plate_number": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "regex",
+       "if": "DEFAULT",
+       "parameters": {
+        "pattern": "[A-Z]{2} [0-9]{5}"
+       }
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 200
+  },
+  "drivers": {
+   "columns": {
+    "hired_on": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2012-01-01",
+        "end_date": "2026-06-30",
+        "include_time": false
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "full_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "name"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "driver_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "rating": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "gaussian",
+       "if": "DEFAULT",
+       "parameters": {
+        "mean": 4.4,
+        "std_dev": 0.35,
+        "min_clip": 3.0,
+        "max_clip": 5.0
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "license_no": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "regex",
+       "if": "DEFAULT",
+       "parameters": {
+        "pattern": "[A-Z][0-9]{3}-[0-9]{4}-[0-9]{4}"
+       }
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 300
+  }
+ },
+ "dataset_name": "Synthetic Fleet GPS Tracking"
+}

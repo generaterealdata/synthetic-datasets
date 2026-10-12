@@ -1,0 +1,24 @@
+{
+  "dataset": "smart-meter-readings",
+  "title": "Synthetic Smart Meter Readings (15-Minute Intervals)",
+  "generator": "GenerateRealData",
+  "generator_url": "https://generaterealdata.com/industries/energy-utilities/",
+  "generated_on": "2026-10-11",
+  "mode": "schema",
+  "plan": "plan.json",
+  "schema": "schema.sql",
+  "seed": 20261106,
+  "rows_requested": 500000,
+  "rows_generated": 500000,
+  "rows_per_table": {
+    "premises": 100,
+    "meters": 100,
+    "readings": 499800
+  },
+  "ai_written_fields": [],
+  "ai_rows_used": 0,
+  "anomalies": false,
+  "format": "sql",
+  "dialect": "postgresql",
+  "licence": "CC-BY-4.0"
+}

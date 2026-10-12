@@ -1,0 +1,25 @@
+{
+  "dataset": "web-funnel-events",
+  "title": "Synthetic Web Analytics Funnel Events",
+  "generator": "GenerateRealData",
+  "generator_url": "https://generaterealdata.com/use-cases/user-behavior-data/",
+  "generated_on": "2026-10-11",
+  "mode": "schema",
+  "plan": "plan.json",
+  "schema": "schema.sql",
+  "seed": 20261107,
+  "rows_requested": 456000,
+  "rows_generated": 425918,
+  "rows_per_table": {
+    "users": 30000,
+    "sessions": 84000,
+    "events": 304309,
+    "conversions": 7609
+  },
+  "ai_written_fields": [],
+  "ai_rows_used": 0,
+  "anomalies": false,
+  "format": "sql",
+  "dialect": "postgresql",
+  "licence": "CC-BY-4.0"
+}

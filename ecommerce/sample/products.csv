@@ -1,0 +1,507 @@
+product_id,sku,product_name,category,brand,unit_price,unit_cost,weight_kg,is_active,created_at
+1,OUT-00001,Nomad Down Vest (Sand),Apparel,Stonebrook,161.96,79.21,4.68,1,2022-04-18
+4,OUT-00004,Basecamp Sleeping Pad (Moss),Sleeping Bags,Halden,230.2,132.45,3.94,1,2023-03-27
+9,OUT-00009,Trail Climbing Harness (Moss),Climbing,Fernhollow,92.12,53.72,2.65,1,2023-02-28
+12,OUT-00012,Canyon Camp Lantern (Moss),Lighting,Northpeak,23.83,12.39,4.49,1,2022-10-11
+17,OUT-00017,Summit 45L Backpack (Ember),Backpacks,Kestrel & Co,245.7,153.01,2.04,1,2023-10-25
+18,OUT-00018,Glacier Fleece Pullover (Moss),Apparel,Wildhaven,136.52,65.03,2.49,1,2023-01-18
+19,OUT-00019,Horizon Daypack (Graphite),Backpacks,Kestrel & Co,139.91,76.9,4.08,1,2022-02-20
+20,OUT-00020,Tundra Dry Bag (Slate),Accessories,Kestrel & Co,27.55,10.32,1.82,1,2021-08-02
+22,OUT-00022,Ridge Insulated Mug (Sand),Cooking,Fernhollow,18.29,8.52,4.98,1,2021-03-29
+25,OUT-00025,Nomad Rain Jacket (Sand),Apparel,Kestrel & Co,91.4,51.36,3.11,1,2021-07-07
+29,OUT-00029,Tundra Approach Shoe (Cobalt),Footwear,Northpeak,89.46,44.76,3.18,1,2023-11-15
+33,OUT-00033,Solstice Down Vest (Slate),Apparel,Tarn Outfitters,35.77,14.92,3.83,1,2021-06-01
+34,OUT-00034,Summit 45L Backpack (Sand),Backpacks,Ironwood Trail,305.38,210.56,0.4,1,2023-02-09
+38,OUT-00038,Ridge Dry Bag (Sand),Accessories,Ravenridge,34.38,13.79,2.67,1,2021-11-09
+40,OUT-00040,Solstice Handheld GPS (Graphite),Navigation,Ravenridge,225.19,107.18,4.62,1,2021-05-09
+46,OUT-00046,Tundra Gaiters (Ember),Accessories,Larkspur,23.76,16.59,4.37,1,2022-11-11
+47,OUT-00047,Alpine Gaiters (Cobalt),Accessories,Ironwood Trail,35.59,12.55,3.02,1,2022-08-27
+55,OUT-00055,Canyon Daypack (Graphite),Backpacks,Bluecrest,258.58,177.78,2.32,1,2022-08-21
+56,OUT-00056,Solstice Sleeping Pad (Ember),Sleeping Bags,Northpeak,209.1,125.21,,1,2022-12-30
+61,OUT-00061,Nomad Compass (Sand),Navigation,Bluecrest,204.86,142.95,3.65,1,2021-08-10
+62,OUT-00062,Nomad Merino Base Layer (Ember),Apparel,Halden,74.51,37.38,4.15,1,2023-11-19
+64,OUT-00064,Alpine Climbing Harness (Ember),Climbing,Stonebrook,57.44,29.9,3.43,0,2021-07-14
+67,OUT-00067,Summit Handheld GPS (Moss),Navigation,Tarn Outfitters,320.28,174.54,2.2,1,2021-12-06
+69,OUT-00069,Alpine Down Sleeping Bag (Sand),Sleeping Bags,Larkspur,175.29,98.84,2.87,1,2022-05-05
+74,OUT-00074,Nomad Trekking Poles (Slate),Accessories,Fernhollow,22.58,15.62,1.67,1,2023-04-30
+79,OUT-00079,Trail 65L Expedition Pack (Ember),Backpacks,Cairnworks,152.65,92.6,3.4,1,2023-03-11
+81,OUT-00081,Glacier Titanium Cookset (Slate),Cooking,Kestrel & Co,43.01,28.89,3.1,1,2022-10-07
+85,OUT-00085,Glacier Headlamp (Slate),Lighting,Northpeak,28.78,15.25,4.75,1,2022-11-28
+86,OUT-00086,Tundra Gaiters (Slate),Accessories,Wildhaven,33.51,17.06,2.7,1,2021-09-17
+87,OUT-00087,Nomad Merino Base Layer (Slate),Apparel,Ironwood Trail,52.34,31.99,1.17,1,2021-06-19
+89,OUT-00089,Tundra Ultralight Tent (Cobalt),Tents,Halden,879.85,520.96,1.11,0,2021-05-18
+91,OUT-00091,Horizon Headlamp (Moss),Lighting,Larkspur,130.74,57.34,4.28,0,2022-01-23
+98,OUT-00098,Tundra Carabiner Set (Ember),Climbing,Stonebrook,156.28,81.58,2.19,1,2022-07-25
+100,OUT-00100,Trail Bike Light (Slate),Lighting,Wildhaven,128.04,49.32,1.84,0,2023-03-19
+102,OUT-00102,Solstice Dynamic Rope (Moss),Climbing,Fernhollow,29.56,13.4,1.67,0,2021-05-26
+105,OUT-00105,Summit Approach Shoe (Cobalt),Footwear,Ravenridge,104.29,53.73,,1,2021-07-08
+107,OUT-00107,Horizon Camp Sandal (Sand),Footwear,Kestrel & Co,269.66,95.55,1.21,1,2021-09-02
+108,OUT-00108,Summit Camp Lantern (Sand),Lighting,Stonebrook,43.53,28.34,4.61,1,2021-12-30
+109,OUT-00109,Nomad Camp Stove (Slate),Cooking,Cairnworks,42.28,15.12,1.09,1,2022-11-22
+112,OUT-00112,Solstice Ultralight Tent (Cobalt),Tents,Ravenridge,263.86,95.72,3.57,1,2022-06-19
+116,OUT-00116,Glacier Camp Stove (Sand),Cooking,Larkspur,67.72,46.04,3.05,1,2023-04-25
+117,OUT-00117,Nomad Sleeping Pad (Sand),Sleeping Bags,Larkspur,233.13,123.57,2.81,1,2023-12-09
+120,OUT-00120,Horizon Handheld GPS (Graphite),Navigation,Larkspur,330.1,169.05,1.74,1,2022-07-24
+125,OUT-00125,Canyon Titanium Cookset (Cobalt),Cooking,Bluecrest,73.35,47.48,,1,2023-02-07
+129,OUT-00129,Canyon Insulated Mug (Sand),Cooking,Kestrel & Co,21.41,11.7,0.32,1,2022-09-03
+133,OUT-00133,Solstice Hiking Boot (Moss),Footwear,Fernhollow,72.2,31.91,0.86,1,2023-12-15
+135,OUT-00135,Ridge Softshell Pant (Sand),Apparel,Kestrel & Co,100.42,48.33,3.67,1,2023-07-23
+138,OUT-00138,Nomad Water Filter (Graphite),Cooking,Bluecrest,22.55,8.55,0.35,0,2023-02-07
+139,OUT-00139,Trail Carabiner Set (Slate),Climbing,Fernhollow,36.79,21.17,3.11,1,2023-08-06
+142,OUT-00142,Tundra Headlamp (Slate),Lighting,Northpeak,23.4,14.69,4.61,1,2023-08-25
+147,OUT-00147,Solstice 45L Backpack (Graphite),Backpacks,Stonebrook,227.63,138.04,0.21,1,2021-06-29
+148,OUT-00148,Ridge Camp Sandal (Ember),Footwear,Bluecrest,246.36,169.58,3.67,1,2021-09-15
+149,OUT-00149,Canyon Handheld GPS (Ember),Navigation,Northpeak,234.69,97.52,2.73,0,2022-12-05
+154,OUT-00154,Solstice 65L Expedition Pack (Ember),Backpacks,Stonebrook,116.22,75.8,4.48,1,2023-09-29
+156,OUT-00156,Summit Camp Stove (Moss),Cooking,Ironwood Trail,59.77,28.99,1.81,1,2023-11-24
+157,OUT-00157,Basecamp Bike Light (Graphite),Lighting,Tarn Outfitters,64.59,40.23,3.76,1,2023-05-04
+161,OUT-00161,Glacier Climbing Helmet (Cobalt),Climbing,Ironwood Trail,248.21,149.18,0.5,1,2021-11-01
+164,OUT-00164,Ridge Handheld GPS (Ember),Navigation,Kestrel & Co,253.84,175.35,2,1,2022-11-11
+165,OUT-00165,Basecamp Gaiters (Graphite),Accessories,Halden,32.31,11.91,0.32,1,2021-10-26
+167,OUT-00167,Trail Trekking Poles (Ember),Accessories,Wildhaven,97.39,60.13,3.72,1,2021-05-25
+169,OUT-00169,Canyon Fleece Pullover (Slate),Apparel,Stonebrook,54.65,36.04,1.17,1,2021-10-18
+170,OUT-00170,Alpine Merino Base Layer (Ember),Apparel,Northpeak,65.12,33.44,1.58,1,2021-11-14
+173,OUT-00173,Vertex Camp Stove (Slate),Cooking,Halden,76.57,32.41,1.94,1,2021-05-17
+176,OUT-00176,Basecamp Handheld GPS (Sand),Navigation,Halden,238.69,160.45,0.21,1,2021-03-06
+181,OUT-00181,Vertex Ultralight Tent (Graphite),Tents,Fernhollow,210.24,101.3,2.45,1,2022-11-13
+183,OUT-00183,Glacier Climbing Harness (Slate),Climbing,Cairnworks,68.63,34.13,4.57,1,2023-01-10
+189,OUT-00189,Summit Trekking Poles (Slate),Accessories,Tarn Outfitters,34.77,19.35,0.29,1,2022-10-20
+190,OUT-00190,Basecamp Water Filter (Moss),Cooking,Ravenridge,26.88,10.84,1.96,1,2022-11-21
+191,OUT-00191,Alpine Hiking Boot (Graphite),Footwear,Larkspur,282.89,190.92,1.77,1,2022-02-08
+192,OUT-00192,Ridge Merino Base Layer (Moss),Apparel,Wildhaven,90.68,59.58,0.9,1,2021-08-21
+193,OUT-00193,Solstice Water Bottle (Sand),Accessories,Ravenridge,116.8,49.42,0.54,1,2023-12-22
+195,OUT-00195,Basecamp Wool Beanie (Cobalt),Accessories,Cairnworks,39.26,26.54,,1,2021-02-06
+199,OUT-00199,Trail Wool Beanie (Slate),Accessories,Ironwood Trail,12.22,5.4,0.69,1,2023-02-20
+201,OUT-00201,Ridge Climbing Helmet (Graphite),Climbing,Ironwood Trail,156.91,88.39,3.93,1,2021-11-07
+202,OUT-00202,Vertex Ultralight Tent (Sand),Tents,Cairnworks,233.35,84.27,2.6,1,2021-05-12
+205,OUT-00205,Canyon GPS Watch (Slate),Navigation,Kestrel & Co,290.03,137.95,4.42,1,2022-10-13
+208,OUT-00208,Summit Hydration Pack (Graphite),Backpacks,Ravenridge,314.73,185.97,4.14,1,2022-10-23
+209,OUT-00209,Basecamp Climbing Helmet (Ember),Climbing,Fernhollow,41.63,19.24,3.38,1,2023-04-15
+210,OUT-00210,Nomad Merino Base Layer (Moss),Apparel,Tarn Outfitters,92.61,57.7,1.17,1,2023-12-23
+212,OUT-00212,Solstice GPS Watch (Ember),Navigation,Halden,331.62,116.61,2.54,1,2021-03-11
+219,OUT-00219,Horizon 3-Season Sleeping Bag (Ember),Sleeping Bags,Fernhollow,399.09,179.3,1.95,1,2022-07-20
+221,OUT-00221,Vertex Dynamic Rope (Sand),Climbing,Northpeak,123.91,86.25,4.31,1,2022-05-30
+223,OUT-00223,Horizon Sleeping Pad (Moss),Sleeping Bags,Stonebrook,298.31,116.22,1.91,1,2021-02-15
+224,OUT-00224,Basecamp Down Sleeping Bag (Cobalt),Sleeping Bags,Bluecrest,186.86,92.67,,1,2023-08-25
+230,OUT-00230,Canyon Down Sleeping Bag (Slate),Sleeping Bags,Ironwood Trail,214.88,77.83,0.69,1,2023-01-01
+234,OUT-00234,Vertex 4-Season Tent (Ember),Tents,Larkspur,422.98,170.14,2.04,1,2023-07-25
+249,OUT-00249,Basecamp Gaiters (Sand),Accessories,Stonebrook,29.43,11.47,1.66,1,2023-02-24
+252,OUT-00252,Summit Hydration Pack (Slate),Backpacks,Stonebrook,103.81,42.87,0.4,1,2023-07-22
+258,OUT-00258,Canyon Fleece Pullover (Ember),Apparel,Fernhollow,91.37,63.08,1.59,1,2021-12-11
+260,OUT-00260,Summit Camp Stove (Sand),Cooking,Larkspur,37.01,17.25,1.59,1,2021-09-26
+263,OUT-00263,Canyon Water Bottle (Sand),Accessories,Ravenridge,27.11,18.68,4.58,1,2023-07-29
+265,OUT-00265,Glacier Ultralight Tent (Moss),Tents,Ironwood Trail,305.71,111.82,2.5,1,2023-05-23
+266,OUT-00266,Summit Down Vest (Moss),Apparel,Larkspur,35.73,13.8,1.43,1,2021-01-24
+267,OUT-00267,Trail Carabiner Set (Sand),Climbing,Ravenridge,30.21,19.68,2.66,0,2021-02-24
+268,OUT-00268,Canyon Compass (Graphite),Navigation,Fernhollow,189.31,83.04,0.77,1,2022-05-19
+269,OUT-00269,Nomad Daypack (Moss),Backpacks,Cairnworks,313.21,170.73,4.56,1,2023-10-12
+277,OUT-00277,Tundra 2-Person Tent (Sand),Tents,Cairnworks,683.38,341.57,4.74,1,2023-05-04
+280,OUT-00280,Ridge Trail Runner (Slate),Footwear,Wildhaven,152.51,82.82,2.38,1,2023-03-12
+284,OUT-00284,Solstice 65L Expedition Pack (Cobalt),Backpacks,Ironwood Trail,102.43,65.47,0.67,1,2022-11-28
+285,OUT-00285,Vertex Fleece Pullover (Graphite),Apparel,Tarn Outfitters,203.33,97.5,1.23,1,2022-03-19
+289,OUT-00289,Basecamp Camp Lantern (Moss),Lighting,Fernhollow,121.52,54.87,0.54,1,2021-09-15
+290,OUT-00290,Alpine GPS Watch (Moss),Navigation,Tarn Outfitters,130.23,79.36,2.54,1,2021-06-17
+296,OUT-00296,Alpine Trekking Poles (Moss),Accessories,Wildhaven,13.28,4.76,4.48,1,2023-10-21
+297,OUT-00297,Glacier Family Dome Tent (Cobalt),Tents,Wildhaven,714.46,329.89,3.53,1,2022-05-05
+302,OUT-00302,Horizon Hydration Pack (Graphite),Backpacks,Ironwood Trail,240.18,120.86,3.7,1,2022-11-20
+308,OUT-00308,Basecamp Softshell Pant (Cobalt),Apparel,Northpeak,43.36,28.99,1.57,0,2022-08-25
+309,OUT-00309,Horizon Headlamp (Cobalt),Lighting,Cairnworks,68.54,34.5,4.49,1,2021-09-19
+310,OUT-00310,Vertex Dry Bag (Moss),Accessories,Larkspur,118.14,82.22,2.83,1,2022-08-10
+313,OUT-00313,Glacier Dry Bag (Cobalt),Accessories,Kestrel & Co,12.79,4.86,1.53,1,2021-12-24
+315,OUT-00315,Summit Fleece Pullover (Moss),Apparel,Stonebrook,72.6,36.04,2.37,1,2021-07-30
+320,OUT-00320,Vertex Climbing Helmet (Moss),Climbing,Kestrel & Co,248.95,139.85,0.35,1,2021-09-28
+321,OUT-00321,Ridge Down Vest (Ember),Apparel,Halden,33.37,19.85,3.44,1,2021-08-11
+322,OUT-00322,Vertex 45L Backpack (Sand),Backpacks,Northpeak,150.25,92.94,3.05,1,2021-01-21
+324,OUT-00324,Summit Merino Base Layer (Moss),Apparel,Halden,93.87,42.42,4.33,1,2022-03-22
+325,OUT-00325,Nomad Handheld GPS (Ember),Navigation,Fernhollow,169.59,97.3,3.57,1,2022-09-26
+326,OUT-00326,Glacier Merino Base Layer (Sand),Apparel,Wildhaven,74.96,48.64,0.62,1,2022-05-15
+332,OUT-00332,Solstice Compass (Ember),Navigation,Tarn Outfitters,126.71,63.6,3.48,1,2022-04-24
+334,OUT-00334,Ridge Camp Stove (Moss),Cooking,Bluecrest,135.28,83.78,1.01,1,2021-04-10
+336,OUT-00336,Basecamp Sleeping Pad (Slate),Sleeping Bags,Bluecrest,216.46,124.45,1.72,1,2021-04-26
+338,OUT-00338,Trail Hydration Pack (Cobalt),Backpacks,Ravenridge,79.45,40.57,2.67,1,2023-12-27
+342,OUT-00342,Tundra Trail Runner (Cobalt),Footwear,Northpeak,254.18,93.28,,1,2023-05-02
+343,OUT-00343,Trail Trail Runner (Cobalt),Footwear,Bluecrest,214.82,99.75,3.48,1,2022-08-11
+347,OUT-00347,Canyon Fleece Pullover (Cobalt),Apparel,Ironwood Trail,87.91,37.2,0.71,1,2021-02-26
+354,OUT-00354,Canyon Compass (Cobalt),Navigation,Bluecrest,322.23,167.45,,1,2021-07-17
+355,OUT-00355,Summit Camp Stove (Cobalt),Cooking,Tarn Outfitters,24.43,9.98,4.09,1,2021-11-05
+361,OUT-00361,Alpine 65L Expedition Pack (Sand),Backpacks,Larkspur,88.23,56.98,2.2,1,2022-11-09
+366,OUT-00366,Tundra Bike Light (Graphite),Lighting,Halden,132.92,67.36,3.33,1,2023-01-22
+367,OUT-00367,Solstice Climbing Harness (Cobalt),Climbing,Bluecrest,89.04,62.26,3.9,1,2023-12-09
+375,OUT-00375,Trail Handheld GPS (Moss),Navigation,Kestrel & Co,537.43,357.74,1.2,1,2021-04-03
+384,OUT-00384,Glacier GPS Watch (Moss),Navigation,Halden,314.06,214.56,3.59,1,2021-11-05
+385,OUT-00385,Glacier GPS Watch (Sand),Navigation,Bluecrest,255.73,113.65,4.52,1,2022-03-25
+389,OUT-00389,Vertex Compass (Graphite),Navigation,Bluecrest,131.66,71.49,0.31,1,2021-07-01
+393,OUT-00393,Basecamp 2-Person Tent (Moss),Tents,Cairnworks,326.47,160.05,0.61,1,2022-02-26
+394,OUT-00394,Basecamp Family Dome Tent (Cobalt),Tents,Kestrel & Co,794.52,417.81,3.62,1,2022-12-06
+395,OUT-00395,Solstice Handheld GPS (Cobalt),Navigation,Cairnworks,382.16,155.4,0.39,0,2023-09-06
+404,OUT-00404,Ridge Wool Beanie (Ember),Accessories,Fernhollow,18.28,7.11,1.4,1,2023-02-18
+406,OUT-00406,Trail Softshell Pant (Graphite),Apparel,Ravenridge,242.04,167.04,1.85,1,2022-06-06
+409,OUT-00409,Solstice Softshell Pant (Moss),Apparel,Kestrel & Co,47.73,23.85,3.46,1,2023-12-08
+410,OUT-00410,Basecamp Family Dome Tent (Sand),Tents,Ravenridge,328.87,155.1,3.24,0,2023-12-09
+411,OUT-00411,Solstice GPS Watch (Graphite),Navigation,Larkspur,750.52,321.73,2.48,0,2023-04-09
+414,OUT-00414,Nomad Daypack (Sand),Backpacks,Bluecrest,170.44,105.86,1.38,1,2021-12-26
+415,OUT-00415,Horizon Merino Base Layer (Moss),Apparel,Ironwood Trail,121.93,52.31,2.74,1,2021-01-27
+416,OUT-00416,Glacier Carabiner Set (Sand),Climbing,Ravenridge,87.58,33.38,4.21,1,2021-02-27
+420,OUT-00420,Vertex Trail Runner (Ember),Footwear,Wildhaven,70.24,44.65,0.91,1,2022-12-15
+421,OUT-00421,Glacier Ultralight Tent (Sand),Tents,Tarn Outfitters,182.08,118.32,1.74,1,2022-02-19
+424,OUT-00424,Horizon Dynamic Rope (Ember),Climbing,Ironwood Trail,58.62,39.17,0.29,1,2022-01-07
+428,OUT-00428,Glacier Camp Stove (Slate),Cooking,Tarn Outfitters,16.53,9.41,1.04,1,2021-10-25
+430,OUT-00430,Solstice Approach Shoe (Slate),Footwear,Kestrel & Co,116.64,71.56,3.67,0,2023-02-11
+436,OUT-00436,Glacier 2-Person Tent (Ember),Tents,Wildhaven,241,91.41,2.71,1,2021-12-20
+438,OUT-00438,Ridge Fleece Pullover (Cobalt),Apparel,Cairnworks,203.57,82.24,4.98,1,2021-01-04
+440,OUT-00440,Nomad GPS Watch (Cobalt),Navigation,Tarn Outfitters,182.45,84.37,3.24,1,2022-11-24
+442,OUT-00442,Vertex Family Dome Tent (Cobalt),Tents,Stonebrook,246.04,128.09,1.58,1,2021-01-11
+443,OUT-00443,Summit Family Dome Tent (Sand),Tents,Bluecrest,604.07,262.87,4.87,1,2022-07-10
+445,OUT-00445,Solstice Trail Runner (Slate),Footwear,Fernhollow,109.89,56.16,2.93,1,2021-06-22
+446,OUT-00446,Nomad Bike Light (Graphite),Lighting,Northpeak,31.88,13.28,4.89,1,2022-07-07
+448,OUT-00448,Nomad 3-Season Sleeping Bag (Cobalt),Sleeping Bags,Northpeak,508.86,207.05,1.64,1,2023-07-17
+452,OUT-00452,Vertex Climbing Helmet (Graphite),Climbing,Kestrel & Co,82.68,30.3,2.97,1,2021-06-08
+454,OUT-00454,Tundra Trail Runner (Moss),Footwear,Ironwood Trail,66.92,36.57,0.92,1,2021-12-12
+455,OUT-00455,Vertex Daypack (Slate),Backpacks,Ravenridge,114.02,53.63,3.2,1,2022-02-24
+458,OUT-00458,Alpine 2-Person Tent (Slate),Tents,Halden,168.15,100.62,0.58,1,2021-11-05
+462,OUT-00462,Summit Dry Bag (Moss),Accessories,Kestrel & Co,59.25,38.81,0.12,1,2023-09-02
+468,OUT-00468,Nomad Titanium Cookset (Sand),Cooking,Cairnworks,44.07,16.15,0.29,1,2023-12-06
+469,OUT-00469,Ridge Bike Light (Moss),Lighting,Ironwood Trail,49.12,29.46,,1,2021-02-04
+477,OUT-00477,Ridge Down Vest (Graphite),Apparel,Fernhollow,51.77,34.28,1.49,1,2021-02-22
+481,OUT-00481,Alpine Camp Sandal (Moss),Footwear,Ravenridge,158.09,104.49,0.12,1,2023-06-14
+484,OUT-00484,Basecamp Sleeping Pad (Graphite),Sleeping Bags,Halden,271.32,178.73,2.27,1,2023-01-07
+486,OUT-00486,Basecamp Camp Stove (Ember),Cooking,Bluecrest,22.67,14.04,4.17,1,2021-04-02
+487,OUT-00487,Nomad Camp Stove (Ember),Cooking,Wildhaven,72.98,50.61,0.87,1,2022-02-18
+488,OUT-00488,Nomad Camp Stove (Sand),Cooking,Wildhaven,114.97,50.73,4.88,0,2022-08-30
+490,OUT-00490,Glacier 45L Backpack (Graphite),Backpacks,Halden,78.41,31.91,0.83,1,2022-02-03
+493,OUT-00493,Vertex Carabiner Set (Sand),Climbing,Wildhaven,133.06,69.32,0.32,1,2023-06-27
+497,OUT-00497,Canyon Ultralight Tent (Cobalt),Tents,Bluecrest,240.6,165.86,2.07,1,2022-08-09
+500,OUT-00500,Nomad Trail Runner (Sand),Footwear,Kestrel & Co,154.34,105.26,4.99,1,2023-12-28
+502,OUT-00502,Glacier Headlamp (Cobalt),Lighting,Larkspur,15.14,9.4,3.35,1,2023-12-05
+504,OUT-00504,Basecamp Daypack (Ember),Backpacks,Northpeak,148.23,95.77,3.81,1,2021-06-22
+506,OUT-00506,Canyon Water Bottle (Slate),Accessories,Kestrel & Co,134.8,86.34,4.46,1,2021-01-25
+507,OUT-00507,Tundra Family Dome Tent (Cobalt),Tents,Wildhaven,348.71,190.23,,1,2023-05-05
+509,OUT-00509,Trail Camp Lantern (Ember),Lighting,Larkspur,26.96,14.48,4.66,1,2023-11-19
+512,OUT-00512,Vertex Titanium Cookset (Slate),Cooking,Fernhollow,28.27,10.54,2.13,1,2023-01-28
+513,OUT-00513,Solstice Titanium Cookset (Ember),Cooking,Ironwood Trail,84.53,43.33,2.95,1,2023-06-13
+514,OUT-00514,Basecamp Merino Base Layer (Slate),Apparel,Kestrel & Co,98.16,39.85,0.97,1,2021-09-23
+518,OUT-00518,Tundra Hydration Pack (Moss),Backpacks,Northpeak,151.92,64.42,4.7,1,2021-06-13
+525,OUT-00525,Alpine Down Vest (Graphite),Apparel,Tarn Outfitters,97.34,66.62,1.86,1,2021-04-19
+526,OUT-00526,Ridge Down Sleeping Bag (Cobalt),Sleeping Bags,Ravenridge,247.67,158.34,2.14,1,2021-05-24
+529,OUT-00529,Canyon Dry Bag (Graphite),Accessories,Tarn Outfitters,20.8,9.65,3.36,1,2023-05-25
+532,OUT-00532,Solstice 4-Season Tent (Cobalt),Tents,Kestrel & Co,153.5,107.17,4.78,1,2023-09-08
+534,OUT-00534,Nomad Trail Runner (Slate),Footwear,Larkspur,171.66,77.13,0.36,1,2022-03-30
+537,OUT-00537,Horizon Approach Shoe (Ember),Footwear,Cairnworks,136.28,77.46,2.82,1,2022-09-05
+539,OUT-00539,Basecamp Water Bottle (Graphite),Accessories,Ironwood Trail,21.42,14.31,0.65,1,2021-11-17
+542,OUT-00542,Summit Family Dome Tent (Moss),Tents,Cairnworks,508.46,263.77,3.01,1,2023-07-21
+543,OUT-00543,Horizon Compass (Cobalt),Navigation,Fernhollow,283.92,136.57,0.52,1,2022-04-15
+544,OUT-00544,Glacier 65L Expedition Pack (Slate),Backpacks,Wildhaven,118.62,68.76,2.49,0,2022-07-11
+549,OUT-00549,Nomad Ultralight Tent (Moss),Tents,Fernhollow,189.51,75.17,1.5,1,2022-08-10
+554,OUT-00554,Trail 2-Person Tent (Ember),Tents,Stonebrook,813.91,387.87,1.55,1,2021-08-18
+556,OUT-00556,Glacier Compass (Slate),Navigation,Ironwood Trail,190.48,77.92,1.46,1,2023-03-28
+558,OUT-00558,Ridge Headlamp (Graphite),Lighting,Stonebrook,98.92,56.42,1.76,1,2022-01-06
+560,OUT-00560,Trail Down Sleeping Bag (Ember),Sleeping Bags,Ravenridge,377.71,235.16,4.46,1,2022-02-06
+562,OUT-00562,Alpine Family Dome Tent (Ember),Tents,Ravenridge,230.93,98.75,,1,2023-07-12
+566,OUT-00566,Ridge Family Dome Tent (Graphite),Tents,Tarn Outfitters,557.4,212.46,4.43,1,2023-10-03
+569,OUT-00569,Tundra Fleece Pullover (Cobalt),Apparel,Tarn Outfitters,77.73,44.44,2.01,1,2022-08-31
+571,OUT-00571,Trail Trekking Poles (Graphite),Accessories,Halden,29.34,11.1,0.89,1,2022-07-15
+578,OUT-00578,Ridge Camp Lantern (Sand),Lighting,Tarn Outfitters,21.15,8.22,4.45,1,2023-10-16
+579,OUT-00579,Alpine 45L Backpack (Ember),Backpacks,Halden,293.42,183.26,1.98,1,2022-01-19
+583,OUT-00583,Summit Climbing Helmet (Cobalt),Climbing,Wildhaven,43.6,29.84,3.32,1,2023-03-06
+584,OUT-00584,Vertex GPS Watch (Moss),Navigation,Kestrel & Co,168.74,93.72,2.5,1,2022-12-14
+585,OUT-00585,Canyon Dynamic Rope (Slate),Climbing,Cairnworks,268.7,144.36,0.85,1,2021-07-29
+587,OUT-00587,Vertex Climbing Harness (Ember),Climbing,Ironwood Trail,33.35,15,2.9,1,2023-06-09
+589,OUT-00589,Vertex Dry Bag (Slate),Accessories,Halden,107.46,42.88,2.12,1,2023-07-03
+594,OUT-00594,Glacier Merino Base Layer (Cobalt),Apparel,Ironwood Trail,74.57,43.64,2.73,1,2022-07-09
+595,OUT-00595,Glacier Camp Lantern (Graphite),Lighting,Northpeak,49.84,27.94,3.8,1,2023-09-25
+598,OUT-00598,Ridge Trail Runner (Graphite),Footwear,Tarn Outfitters,143.85,90.44,1.96,1,2023-10-02
+605,OUT-00605,Glacier Dynamic Rope (Moss),Climbing,Fernhollow,115.27,51.34,3.92,1,2022-04-27
+612,OUT-00612,Alpine Hydration Pack (Ember),Backpacks,Larkspur,141.69,85.72,2.26,1,2023-10-15
+615,OUT-00615,Solstice Headlamp (Slate),Lighting,Northpeak,129.73,59.39,0.94,1,2021-06-16
+620,OUT-00620,Vertex Hiking Boot (Cobalt),Footwear,Bluecrest,299.13,105.26,,1,2021-03-31
+624,OUT-00624,Trail Fleece Pullover (Graphite),Apparel,Fernhollow,94.88,46.56,1.42,1,2022-12-28
+626,OUT-00626,Nomad Water Filter (Sand),Cooking,Kestrel & Co,110.45,56.49,0.43,1,2022-07-29
+627,OUT-00627,Nomad Wool Beanie (Graphite),Accessories,Larkspur,96.2,60.65,4.04,1,2021-05-31
+633,OUT-00633,Solstice Gaiters (Sand),Accessories,Ironwood Trail,9.53,5.93,1.42,1,2023-09-05
+634,OUT-00634,Tundra Camp Sandal (Sand),Footwear,Halden,220.08,153.35,0.92,1,2022-12-20
+637,OUT-00637,Trail Family Dome Tent (Cobalt),Tents,Halden,451.24,265.93,2.74,1,2021-05-20
+641,OUT-00641,Horizon Camp Lantern (Slate),Lighting,Ironwood Trail,102.47,64.12,2.8,1,2021-11-07
+646,OUT-00646,Trail Trekking Poles (Sand),Accessories,Cairnworks,15.56,8.58,3.1,1,2022-09-13
+649,OUT-00649,Summit Down Sleeping Bag (Moss),Sleeping Bags,Halden,296.4,161.94,4.46,1,2021-04-25
+650,OUT-00650,Nomad 2-Person Tent (Slate),Tents,Ravenridge,228.59,125.99,4.91,1,2021-10-24
+653,OUT-00653,Trail Camp Lantern (Graphite),Lighting,Halden,55.02,23.25,0.71,1,2023-08-18
+654,OUT-00654,Canyon GPS Watch (Moss),Navigation,Ravenridge,292.99,167.02,2.57,1,2022-03-23
+655,OUT-00655,Alpine Trekking Poles (Ember),Accessories,Kestrel & Co,12.8,7.98,2.37,1,2021-08-05
+659,OUT-00659,Ridge Gaiters (Sand),Accessories,Cairnworks,29.8,17.91,4.32,1,2021-03-15
+661,OUT-00661,Summit 3-Season Sleeping Bag (Moss),Sleeping Bags,Larkspur,272.54,108.44,1.77,1,2022-12-22
+662,OUT-00662,Tundra Insulated Mug (Slate),Cooking,Kestrel & Co,78.8,51.24,4.51,1,2023-01-23
+667,OUT-00667,Basecamp 4-Season Tent (Cobalt),Tents,Ravenridge,175.82,102.07,4.22,1,2022-10-26
+674,OUT-00674,Vertex Wool Beanie (Graphite),Accessories,Larkspur,18.87,8.16,0.23,1,2022-11-26
+676,OUT-00676,Tundra Water Filter (Slate),Cooking,Ironwood Trail,13.39,9.14,3.14,1,2021-12-27
+677,OUT-00677,Vertex Softshell Pant (Graphite),Apparel,Ravenridge,30.3,11.15,2.75,1,2022-12-12
+680,OUT-00680,Tundra Bike Light (Cobalt),Lighting,Kestrel & Co,19.4,7.75,3.87,1,2021-01-31
+684,OUT-00684,Horizon Compass (Ember),Navigation,Tarn Outfitters,191.69,76.86,1.93,1,2021-05-08
+690,OUT-00690,Horizon Trekking Poles (Sand),Accessories,Bluecrest,36.87,19.71,,1,2023-04-09
+691,OUT-00691,Tundra Rain Jacket (Graphite),Apparel,Cairnworks,55.89,37.44,3.91,1,2021-11-15
+692,OUT-00692,Horizon Camp Stove (Slate),Cooking,Ravenridge,50.34,25.86,4.19,0,2023-03-01
+694,OUT-00694,Tundra 45L Backpack (Ember),Backpacks,Northpeak,216.45,133.45,4.05,1,2022-08-21
+695,OUT-00695,Basecamp Insulated Mug (Moss),Cooking,Bluecrest,63.45,34.03,0.11,1,2021-05-10
+697,OUT-00697,Trail Water Filter (Graphite),Cooking,Kestrel & Co,49.45,24.17,2.88,0,2022-07-24
+698,OUT-00698,Glacier Approach Shoe (Cobalt),Footwear,Cairnworks,209.94,97.08,1.54,1,2023-10-27
+704,OUT-00704,Vertex Bike Light (Graphite),Lighting,Wildhaven,33.49,20.15,3.53,1,2023-09-09
+705,OUT-00705,Ridge Titanium Cookset (Cobalt),Cooking,Ironwood Trail,16.86,8.61,4.7,1,2021-09-26
+707,OUT-00707,Canyon Titanium Cookset (Moss),Cooking,Northpeak,37.18,17.74,3.97,1,2023-10-12
+711,OUT-00711,Trail 65L Expedition Pack (Graphite),Backpacks,Stonebrook,275.79,189.23,3.55,0,2023-08-04
+713,OUT-00713,Alpine Daypack (Sand),Backpacks,Halden,176.55,82.93,5,1,2023-07-29
+714,OUT-00714,Solstice Bike Light (Ember),Lighting,Halden,83.78,47.26,,0,2021-12-17
+718,OUT-00718,Ridge GPS Watch (Sand),Navigation,Fernhollow,225.1,133.35,4.24,1,2023-07-07
+722,OUT-00722,Summit Trail Runner (Sand),Footwear,Stonebrook,211.64,145.64,3.7,1,2022-06-15
+724,OUT-00724,Trail Sleeping Pad (Slate),Sleeping Bags,Kestrel & Co,188.82,70.47,3.28,1,2021-04-02
+726,OUT-00726,Horizon Dry Bag (Cobalt),Accessories,Ironwood Trail,21.05,10.65,4.7,1,2021-08-20
+728,OUT-00728,Basecamp Handheld GPS (Ember),Navigation,Fernhollow,514.35,204.24,2.37,1,2023-06-22
+730,OUT-00730,Horizon Camp Sandal (Slate),Footwear,Ironwood Trail,68.5,36.31,2.33,0,2023-07-12
+731,OUT-00731,Nomad Bike Light (Cobalt),Lighting,Halden,45.78,19.68,2.83,1,2022-03-27
+734,OUT-00734,Horizon Dry Bag (Graphite),Accessories,Kestrel & Co,35.63,15.86,4.69,1,2022-12-29
+739,OUT-00739,Canyon 65L Expedition Pack (Slate),Backpacks,Bluecrest,160.23,69.07,0.41,1,2022-03-18
+741,OUT-00741,Summit Climbing Harness (Cobalt),Climbing,Bluecrest,25.59,16.97,0.23,1,2022-08-08
+744,OUT-00744,Nomad Wool Beanie (Moss),Accessories,Northpeak,64.47,36.4,0.21,1,2022-02-21
+745,OUT-00745,Horizon Wool Beanie (Ember),Accessories,Ironwood Trail,25.51,14.47,0.51,1,2022-01-25
+748,OUT-00748,Horizon Merino Base Layer (Slate),Apparel,Ironwood Trail,226.04,117.44,0.85,1,2023-08-13
+749,OUT-00749,Glacier Gaiters (Graphite),Accessories,Wildhaven,37.96,17.14,1.09,1,2021-12-14
+751,OUT-00751,Horizon Family Dome Tent (Sand),Tents,Fernhollow,553.08,236.61,0.95,1,2021-03-16
+753,OUT-00753,Solstice Camp Stove (Cobalt),Cooking,Halden,12.32,5.22,3.22,1,2022-02-11
+755,OUT-00755,Horizon Merino Base Layer (Sand),Apparel,Fernhollow,111.19,56.13,3.28,1,2023-03-01
+757,OUT-00757,Glacier Hydration Pack (Cobalt),Backpacks,Stonebrook,148.85,61.95,3.56,1,2021-08-01
+759,OUT-00759,Solstice 3-Season Sleeping Bag (Graphite),Sleeping Bags,Wildhaven,198.84,98.8,3.02,1,2022-02-06
+762,OUT-00762,Solstice 4-Season Tent (Slate),Tents,Stonebrook,627.8,389.69,2.95,1,2023-09-04
+763,OUT-00763,Basecamp 4-Season Tent (Moss),Tents,Bluecrest,144.64,52.07,3.6,1,2021-11-26
+764,OUT-00764,Solstice Titanium Cookset (Sand),Cooking,Stonebrook,25.77,12.75,2.93,1,2021-01-18
+765,OUT-00765,Tundra 2-Person Tent (Cobalt),Tents,Northpeak,477.19,212.04,0.26,1,2022-12-12
+770,OUT-00770,Canyon Softshell Pant (Sand),Apparel,Fernhollow,46.33,22.7,,1,2022-01-11
+773,OUT-00773,Trail Dry Bag (Cobalt),Accessories,Ironwood Trail,25.49,17.27,4.08,1,2022-01-07
+775,OUT-00775,Alpine 65L Expedition Pack (Slate),Backpacks,Larkspur,120.58,65.94,2.33,0,2022-07-16
+782,OUT-00782,Solstice Hiking Boot (Slate),Footwear,Ravenridge,86.88,42.39,1.64,1,2022-03-17
+783,OUT-00783,Canyon Handheld GPS (Cobalt),Navigation,Fernhollow,521.45,196.16,3.22,1,2023-06-12
+784,OUT-00784,Nomad Compass (Slate),Navigation,Stonebrook,160.09,73.71,4.27,1,2023-03-17
+786,OUT-00786,Alpine Family Dome Tent (Graphite),Tents,Tarn Outfitters,365.87,249.92,1.43,1,2022-09-24
+788,OUT-00788,Summit Water Bottle (Sand),Accessories,Ravenridge,111.54,47.64,4.05,1,2022-06-20
+790,OUT-00790,Basecamp Headlamp (Moss),Lighting,Larkspur,43.64,24.52,,1,2021-03-11
+797,OUT-00797,Vertex Rain Jacket (Graphite),Apparel,Northpeak,231.98,142.59,2.7,1,2022-07-08
+798,OUT-00798,Nomad Climbing Harness (Moss),Climbing,Kestrel & Co,183.56,73.56,1.75,1,2023-04-03
+799,OUT-00799,Vertex Headlamp (Slate),Lighting,Wildhaven,17.83,8.85,1.57,1,2023-12-25
+812,OUT-00812,Solstice Ultralight Tent (Moss),Tents,Tarn Outfitters,191.16,86.28,4.64,1,2022-06-22
+815,OUT-00815,Summit Down Sleeping Bag (Slate),Sleeping Bags,Ironwood Trail,388.04,220.53,3.59,1,2022-04-17
+822,OUT-00822,Summit 2-Person Tent (Slate),Tents,Kestrel & Co,241.02,165.69,2.19,1,2023-03-01
+829,OUT-00829,Alpine Wool Beanie (Sand),Accessories,Ironwood Trail,15.18,8.77,4,1,2022-12-27
+832,OUT-00832,Horizon Camp Lantern (Graphite),Lighting,Tarn Outfitters,25.03,15.19,3.48,1,2023-04-28
+840,OUT-00840,Solstice Trekking Poles (Cobalt),Accessories,Stonebrook,16.63,10.94,1.04,1,2022-12-16
+842,OUT-00842,Vertex Water Filter (Graphite),Cooking,Wildhaven,28.2,19.7,4.36,1,2021-11-01
+843,OUT-00843,Basecamp Hiking Boot (Cobalt),Footwear,Northpeak,119.12,63.53,1.59,1,2023-04-25
+850,OUT-00850,Horizon 3-Season Sleeping Bag (Sand),Sleeping Bags,Tarn Outfitters,202.16,107.66,2.74,1,2022-03-25
+853,OUT-00853,Basecamp 3-Season Sleeping Bag (Ember),Sleeping Bags,Stonebrook,337.79,174.82,1.79,1,2023-03-26
+857,OUT-00857,Alpine Headlamp (Moss),Lighting,Halden,44.27,28.31,3.91,1,2022-03-01
+859,OUT-00859,Trail Climbing Helmet (Graphite),Climbing,Wildhaven,209.33,119.55,3.46,1,2022-04-27
+860,OUT-00860,Summit Hydration Pack (Sand),Backpacks,Cairnworks,102.93,70.23,1.39,1,2023-10-17
+863,OUT-00863,Trail Camp Sandal (Slate),Footwear,Ironwood Trail,316.96,157.46,2.68,1,2021-07-19
+866,OUT-00866,Horizon Down Sleeping Bag (Cobalt),Sleeping Bags,Wildhaven,357.61,236.17,4.31,1,2023-10-16
+867,OUT-00867,Nomad Dynamic Rope (Slate),Climbing,Larkspur,109.36,65.45,3.91,1,2023-02-28
+869,OUT-00869,Basecamp 3-Season Sleeping Bag (Sand),Sleeping Bags,Kestrel & Co,144.82,75.68,1.47,1,2021-11-28
+870,OUT-00870,Tundra Handheld GPS (Cobalt),Navigation,Ravenridge,306.16,178.91,0.24,1,2023-02-25
+872,OUT-00872,Basecamp Insulated Mug (Sand),Cooking,Bluecrest,47.49,32.38,1.03,1,2022-08-17
+873,OUT-00873,Trail Trail Runner (Moss),Footwear,Ironwood Trail,127.15,65.06,3.5,1,2022-03-04
+876,OUT-00876,Tundra 4-Season Tent (Ember),Tents,Ravenridge,311.68,203.82,0.4,1,2022-02-06
+877,OUT-00877,Horizon Approach Shoe (Moss),Footwear,Fernhollow,158.96,70.99,0.66,1,2022-12-11
+881,OUT-00881,Basecamp Compass (Moss),Navigation,Bluecrest,338.6,143.11,3.87,1,2022-12-10
+882,OUT-00882,Glacier 45L Backpack (Ember),Backpacks,Kestrel & Co,107.09,56.9,1.75,1,2022-12-28
+884,OUT-00884,Vertex Merino Base Layer (Sand),Apparel,Bluecrest,62.94,26.58,0.77,1,2021-10-28
+885,OUT-00885,Canyon GPS Watch (Sand),Navigation,Halden,340.08,122.2,2.71,0,2023-10-01
+887,OUT-00887,Basecamp Down Sleeping Bag (Moss),Sleeping Bags,Stonebrook,250.03,99.47,1.45,1,2021-05-22
+890,OUT-00890,Ridge Bike Light (Cobalt),Lighting,Tarn Outfitters,37.83,25.2,3.34,1,2021-06-17
+893,OUT-00893,Alpine Water Bottle (Cobalt),Accessories,Kestrel & Co,33.84,12.41,0.61,1,2021-02-20
+900,OUT-00900,Ridge Titanium Cookset (Slate),Cooking,Fernhollow,58.66,23.41,2.96,1,2023-06-07
+901,OUT-00901,Trail Fleece Pullover (Cobalt),Apparel,Tarn Outfitters,96.81,58.97,2.26,1,2022-07-17
+904,OUT-00904,Tundra Family Dome Tent (Graphite),Tents,Ironwood Trail,214.43,143.15,1.32,1,2021-07-01
+910,OUT-00910,Nomad Gaiters (Cobalt),Accessories,Halden,25.96,17.43,1.26,1,2021-12-07
+913,OUT-00913,Summit Handheld GPS (Graphite),Navigation,Kestrel & Co,293.33,191.89,0.13,1,2023-06-15
+914,OUT-00914,Summit 4-Season Tent (Cobalt),Tents,Fernhollow,249.85,135.82,2.96,1,2023-09-23
+915,OUT-00915,Basecamp Down Vest (Sand),Apparel,Kestrel & Co,63.33,34,4.85,1,2023-01-20
+918,OUT-00918,Trail Water Filter (Ember),Cooking,Northpeak,48.87,26.06,1.76,0,2021-09-15
+919,OUT-00919,Solstice Wool Beanie (Moss),Accessories,Ravenridge,35.13,13.72,1.82,1,2021-09-16
+922,OUT-00922,Tundra Camp Lantern (Slate),Lighting,Ravenridge,45.42,23.82,2.41,1,2021-01-26
+927,OUT-00927,Basecamp Carabiner Set (Sand),Climbing,Northpeak,124.17,85.97,4.8,1,2023-01-23
+930,OUT-00930,Tundra Down Vest (Graphite),Apparel,Larkspur,76.18,53.23,3.28,1,2023-11-25
+931,OUT-00931,Glacier Titanium Cookset (Cobalt),Cooking,Stonebrook,37.68,18.52,1.71,1,2023-11-29
+933,OUT-00933,Glacier 4-Season Tent (Cobalt),Tents,Stonebrook,257.87,115.97,,1,2023-12-23
+934,OUT-00934,Nomad Bike Light (Ember),Lighting,Ravenridge,59.94,32.86,3.5,0,2023-07-28
+939,OUT-00939,Nomad Climbing Helmet (Graphite),Climbing,Tarn Outfitters,159.28,96.61,1.52,0,2022-09-23
+945,OUT-00945,Alpine 65L Expedition Pack (Graphite),Backpacks,Halden,101.53,46.31,1.46,1,2021-02-16
+947,OUT-00947,Canyon Softshell Pant (Graphite),Apparel,Ravenridge,90.46,47.42,1.87,1,2021-09-30
+948,OUT-00948,Basecamp Ultralight Tent (Moss),Tents,Kestrel & Co,131.36,83.59,0.34,1,2023-02-28
+950,OUT-00950,Nomad Camp Lantern (Moss),Lighting,Bluecrest,30.1,14.8,3.66,1,2021-01-12
+954,OUT-00954,Nomad Rain Jacket (Cobalt),Apparel,Wildhaven,38.19,20.49,4.11,1,2021-01-05
+956,OUT-00956,Canyon Trail Runner (Sand),Footwear,Bluecrest,134.65,49.17,3.62,1,2022-02-22
+957,OUT-00957,Ridge Camp Sandal (Moss),Footwear,Fernhollow,116.65,41.86,2.56,1,2023-09-24
+959,OUT-00959,Glacier Down Sleeping Bag (Sand),Sleeping Bags,Bluecrest,225.21,96.54,1.42,1,2021-01-21
+960,OUT-00960,Trail GPS Watch (Cobalt),Navigation,Ravenridge,595.69,356.06,4.08,1,2021-03-01
+965,OUT-00965,Basecamp Water Filter (Graphite),Cooking,Fernhollow,125.41,77.32,4.8,0,2021-01-07
+970,OUT-00970,Glacier Compass (Sand),Navigation,Kestrel & Co,230.62,84.93,0.88,1,2021-09-18
+974,OUT-00974,Summit Climbing Harness (Ember),Climbing,Cairnworks,75.45,36.28,3.51,1,2021-02-20
+975,OUT-00975,Trail Down Vest (Sand),Apparel,Bluecrest,103.17,45.21,4.21,1,2021-06-24
+976,OUT-00976,Vertex Carabiner Set (Graphite),Climbing,Stonebrook,115.05,55.86,3.93,1,2023-06-26
+978,OUT-00978,Solstice Climbing Harness (Moss),Climbing,Wildhaven,266.24,118.98,0.93,1,2021-03-26
+979,OUT-00979,Tundra GPS Watch (Slate),Navigation,Bluecrest,136.72,70.66,1.83,1,2021-07-22
+980,OUT-00980,Solstice Insulated Mug (Slate),Cooking,Northpeak,73.68,39.43,4.42,1,2021-11-12
+983,OUT-00983,Basecamp Handheld GPS (Moss),Navigation,Wildhaven,161.93,68.03,0.86,1,2022-08-24
+985,OUT-00985,Trail 45L Backpack (Cobalt),Backpacks,Bluecrest,92.86,56.65,2.33,1,2021-02-23
+990,OUT-00990,Alpine Down Sleeping Bag (Graphite),Sleeping Bags,Ravenridge,152.06,69.69,4.31,1,2021-04-09
+998,OUT-00998,Nomad Sleeping Pad (Moss),Sleeping Bags,Cairnworks,236.22,162.28,3.15,1,2021-09-25
+999,OUT-00999,Solstice 65L Expedition Pack (Sand),Backpacks,Stonebrook,197.79,82.06,4.56,1,2023-01-14
+1001,OUT-01001,Vertex Dry Bag (Cobalt),Accessories,Tarn Outfitters,34.92,18.49,2.4,0,2022-12-18
+1006,OUT-01006,Vertex Trekking Poles (Graphite),Accessories,Stonebrook,25.91,10.64,3.73,1,2022-04-01
+1007,OUT-01007,Summit Compass (Slate),Navigation,Northpeak,453.56,211.18,0.1,1,2023-02-24
+1017,OUT-01017,Ridge Water Filter (Ember),Cooking,Fernhollow,57.97,26.1,2.19,1,2021-01-28
+1023,OUT-01023,Solstice Rain Jacket (Cobalt),Apparel,Stonebrook,107.74,56,2.54,1,2022-06-23
+1030,OUT-01030,Glacier Wool Beanie (Slate),Accessories,Wildhaven,19.28,10.98,,1,2023-07-11
+1032,OUT-01032,Ridge Handheld GPS (Sand),Navigation,Fernhollow,712.81,469.72,2.33,0,2023-08-12
+1034,OUT-01034,Trail 2-Person Tent (Graphite),Tents,Stonebrook,376.95,196.72,3.58,1,2022-09-15
+1036,OUT-01036,Solstice Water Bottle (Ember),Accessories,Halden,99.23,61.31,2.3,1,2022-12-31
+1037,OUT-01037,Glacier Carabiner Set (Slate),Climbing,Stonebrook,67.87,47.11,4.89,1,2023-10-12
+1042,OUT-01042,Canyon 65L Expedition Pack (Sand),Backpacks,Fernhollow,91.91,59.05,1.38,1,2021-07-14
+1044,OUT-01044,Trail Daypack (Moss),Backpacks,Halden,109.09,72.34,0.49,1,2021-08-22
+1046,OUT-01046,Basecamp 2-Person Tent (Sand),Tents,Tarn Outfitters,256.07,136.2,2.84,1,2022-08-04
+1047,OUT-01047,Trail Sleeping Pad (Sand),Sleeping Bags,Cairnworks,193.69,88.07,0.83,1,2022-03-13
+1051,OUT-01051,Canyon Gaiters (Moss),Accessories,Stonebrook,124.4,57.08,4.35,1,2022-08-07
+1056,OUT-01056,Glacier Fleece Pullover (Slate),Apparel,Halden,41.8,25.91,2.32,1,2023-01-27
+1059,OUT-01059,Summit Sleeping Pad (Graphite),Sleeping Bags,Cairnworks,254.8,117.23,3.6,1,2022-03-18
+1061,OUT-01061,Glacier Softshell Pant (Slate),Apparel,Larkspur,198.5,119.67,1.55,1,2021-07-14
+1062,OUT-01062,Glacier Water Bottle (Moss),Accessories,Cairnworks,68.74,32.16,1.46,1,2023-03-29
+1070,OUT-01070,Solstice Bike Light (Sand),Lighting,Ironwood Trail,43.8,22.18,2.78,1,2022-02-09
+1072,OUT-01072,Trail Climbing Helmet (Ember),Climbing,Kestrel & Co,223.29,94.99,1.58,1,2022-10-19
+1075,OUT-01075,Tundra Climbing Helmet (Ember),Climbing,Halden,25.64,9.32,0.75,1,2021-04-08
+1082,OUT-01082,Canyon Climbing Helmet (Graphite),Climbing,Wildhaven,38.61,23.36,1.04,1,2021-03-18
+1083,OUT-01083,Vertex Down Vest (Graphite),Apparel,Larkspur,30.87,15.26,2.76,1,2021-04-07
+1084,OUT-01084,Glacier Rain Jacket (Cobalt),Apparel,Wildhaven,74.93,27.72,3.46,1,2022-12-04
+1085,OUT-01085,Basecamp Water Bottle (Sand),Accessories,Fernhollow,18,10.88,1.45,1,2022-07-23
+1096,OUT-01096,Horizon Camp Lantern (Ember),Lighting,Fernhollow,72.61,47.02,2.43,1,2021-05-08
+1097,OUT-01097,Basecamp Ultralight Tent (Cobalt),Tents,Northpeak,281.13,172.87,4.68,1,2023-09-13
+1098,OUT-01098,Tundra Climbing Harness (Ember),Climbing,Northpeak,35.05,14.24,4.59,1,2023-01-29
+1101,OUT-01101,Solstice Headlamp (Moss),Lighting,Northpeak,39.88,26.9,0.59,1,2021-12-08
+1103,OUT-01103,Canyon Down Sleeping Bag (Sand),Sleeping Bags,Bluecrest,531.96,338.27,2.62,1,2023-10-02
+1105,OUT-01105,Ridge Carabiner Set (Slate),Climbing,Kestrel & Co,218.9,139.62,4.43,1,2021-03-01
+1107,OUT-01107,Nomad Headlamp (Cobalt),Lighting,Stonebrook,18.76,8.69,1.89,0,2023-07-03
+1109,OUT-01109,Ridge Camp Lantern (Moss),Lighting,Halden,24.73,15.38,4.82,1,2022-11-30
+1111,OUT-01111,Canyon 4-Season Tent (Slate),Tents,Cairnworks,139.92,84.66,4.21,1,2022-01-19
+1115,OUT-01115,Canyon Bike Light (Cobalt),Lighting,Tarn Outfitters,47.48,18.93,4.12,1,2022-03-03
+1122,OUT-01122,Vertex Sleeping Pad (Ember),Sleeping Bags,Larkspur,179.93,124.76,0.81,1,2023-04-17
+1124,OUT-01124,Alpine Carabiner Set (Cobalt),Climbing,Tarn Outfitters,33.78,19.39,0.38,1,2023-07-31
+1133,OUT-01133,Tundra Softshell Pant (Ember),Apparel,Larkspur,66.99,37.13,1.81,1,2022-02-19
+1136,OUT-01136,Tundra Family Dome Tent (Sand),Tents,Ravenridge,202.66,122.24,3.89,1,2023-10-05
+1137,OUT-01137,Vertex Trail Runner (Graphite),Footwear,Halden,97.23,60.44,4.95,1,2022-11-09
+1138,OUT-01138,Solstice 2-Person Tent (Cobalt),Tents,Larkspur,387.87,201.7,4.43,1,2021-09-15
+1139,OUT-01139,Solstice Trekking Poles (Slate),Accessories,Larkspur,17.95,10.55,2.55,1,2023-02-28
+1142,OUT-01142,Ridge Handheld GPS (Moss),Navigation,Ravenridge,257.41,143.47,,1,2022-12-05
+1143,OUT-01143,Nomad Daypack (Slate),Backpacks,Bluecrest,220.66,107.18,2.74,1,2021-08-01
+1147,OUT-01147,Solstice Camp Sandal (Cobalt),Footwear,Ironwood Trail,109.26,75.82,0.87,0,2021-09-14
+1149,OUT-01149,Nomad Water Filter (Ember),Cooking,Tarn Outfitters,24.85,17.23,3.18,1,2022-02-24
+1150,OUT-01150,Nomad Softshell Pant (Graphite),Apparel,Cairnworks,93.18,38.9,4.66,1,2023-06-10
+1151,OUT-01151,Vertex Gaiters (Slate),Accessories,Northpeak,38.46,23.48,3.05,1,2021-12-11
+1152,OUT-01152,Solstice Camp Sandal (Slate),Footwear,Fernhollow,99.9,39.27,3.62,1,2022-07-21
+1154,OUT-01154,Summit Camp Stove (Ember),Cooking,Halden,57.42,30.61,0.11,1,2023-10-21
+1156,OUT-01156,Vertex Titanium Cookset (Sand),Cooking,Bluecrest,58.24,33.78,4.74,1,2022-01-15
+1158,OUT-01158,Tundra Trail Runner (Slate),Footwear,Ironwood Trail,70.02,26.25,,1,2021-01-29
+1167,OUT-01167,Alpine Climbing Harness (Sand),Climbing,Cairnworks,164.14,67.36,3.85,1,2021-07-24
+1172,OUT-01172,Alpine Insulated Mug (Cobalt),Cooking,Wildhaven,47.29,25.51,4.85,1,2021-07-15
+1173,OUT-01173,Summit 65L Expedition Pack (Ember),Backpacks,Kestrel & Co,313,205.16,4.54,1,2021-05-04
+1174,OUT-01174,Nomad Daypack (Ember),Backpacks,Stonebrook,124.13,55.51,3.81,1,2022-01-26
+1175,OUT-01175,Solstice 2-Person Tent (Moss),Tents,Tarn Outfitters,285.11,137.39,3.54,1,2021-08-21
+1179,OUT-01179,Glacier Hiking Boot (Ember),Footwear,Wildhaven,69.85,45.47,4.21,1,2021-05-17
+1181,OUT-01181,Alpine Water Bottle (Sand),Accessories,Ironwood Trail,17.6,9.51,0.44,1,2021-08-28
+1185,OUT-01185,Alpine Climbing Harness (Graphite),Climbing,Tarn Outfitters,34.71,12.27,,1,2023-09-30
+1186,OUT-01186,Alpine Camp Lantern (Sand),Lighting,Bluecrest,31.78,11.45,4.86,1,2023-04-18
+1194,OUT-01194,Canyon Approach Shoe (Sand),Footwear,Cairnworks,65.42,42.16,4.28,1,2022-02-05
+1195,OUT-01195,Summit Gaiters (Moss),Accessories,Halden,23.02,10.55,0.56,1,2021-03-27
+1197,OUT-01197,Ridge 2-Person Tent (Sand),Tents,Kestrel & Co,422.62,257.1,1.65,1,2022-06-13
+1198,OUT-01198,Vertex 45L Backpack (Cobalt),Backpacks,Stonebrook,316.02,190.42,2.66,1,2022-01-11
+1199,OUT-01199,Nomad Fleece Pullover (Slate),Apparel,Halden,134.56,72.34,2.06,1,2022-10-11
+1200,OUT-01200,Trail Wool Beanie (Ember),Accessories,Fernhollow,13.42,5.91,,1,2022-08-01
+1201,OUT-01201,Ridge Camp Stove (Sand),Cooking,Bluecrest,22.48,10.64,1.92,1,2022-05-05
+1202,OUT-01202,Horizon Family Dome Tent (Ember),Tents,Stonebrook,787.38,468.71,3.78,1,2021-03-18
+1209,OUT-01209,Canyon Insulated Mug (Cobalt),Cooking,Bluecrest,38.26,21.39,1.58,1,2022-08-20
+1210,OUT-01210,Basecamp Ultralight Tent (Slate),Tents,Stonebrook,209.46,101.56,2.09,0,2023-09-12
+1213,OUT-01213,Solstice Compass (Slate),Navigation,Northpeak,275.83,185.31,3.47,1,2021-09-15
+1215,OUT-01215,Nomad 65L Expedition Pack (Cobalt),Backpacks,Bluecrest,80.31,43.97,1.49,0,2023-01-19
+1217,OUT-01217,Canyon Headlamp (Graphite),Lighting,Ravenridge,21.06,10.79,2.32,1,2022-11-16
+1219,OUT-01219,Vertex Down Sleeping Bag (Moss),Sleeping Bags,Larkspur,198.47,90.53,3.85,1,2021-07-05
+1225,OUT-01225,Horizon Climbing Harness (Sand),Climbing,Tarn Outfitters,48.57,24.93,4.65,1,2022-04-10
+1226,OUT-01226,Solstice Water Filter (Moss),Cooking,Halden,58.73,21.87,0.85,1,2023-07-29
+1228,OUT-01228,Tundra Titanium Cookset (Graphite),Cooking,Cairnworks,37.55,26.08,1.3,1,2022-10-01
+1229,OUT-01229,Canyon 3-Season Sleeping Bag (Slate),Sleeping Bags,Northpeak,142.68,73.75,2.19,1,2023-05-24
+1230,OUT-01230,Alpine 2-Person Tent (Moss),Tents,Bluecrest,339.9,200.51,2.31,1,2023-08-08
+1231,OUT-01231,Tundra Dynamic Rope (Graphite),Climbing,Northpeak,181.09,78.64,3.39,1,2022-08-05
+1233,OUT-01233,Vertex 65L Expedition Pack (Cobalt),Backpacks,Tarn Outfitters,215.16,148.57,4.79,0,2021-09-16
+1235,OUT-01235,Solstice Camp Stove (Graphite),Cooking,Northpeak,117.28,62.22,3.44,1,2023-06-29
+1237,OUT-01237,Solstice Dry Bag (Sand),Accessories,Northpeak,36.98,14.67,2.8,1,2023-05-08
+1239,OUT-01239,Solstice GPS Watch (Moss),Navigation,Wildhaven,187.53,125.77,0.59,1,2023-10-17
+1240,OUT-01240,Ridge Insulated Mug (Cobalt),Cooking,Wildhaven,120.42,59.25,0.25,1,2021-02-12
+1247,OUT-01247,Summit Dynamic Rope (Cobalt),Climbing,Cairnworks,71.69,29.74,1.48,0,2022-01-23
+1248,OUT-01248,Solstice Down Vest (Moss),Apparel,Larkspur,108.85,60.52,0.23,1,2023-09-21
+1249,OUT-01249,Horizon Dry Bag (Moss),Accessories,Ironwood Trail,41.43,19.13,3.53,1,2021-10-25
+1250,OUT-01250,Summit Compass (Sand),Navigation,Kestrel & Co,513.74,293.26,4.06,1,2021-09-11
+1269,OUT-01269,Alpine 45L Backpack (Sand),Backpacks,Cairnworks,89.54,56.51,4.16,1,2021-04-12
+1277,OUT-01277,Solstice Daypack (Cobalt),Backpacks,Larkspur,126.32,57.47,0.52,1,2022-06-15
+1283,OUT-01283,Basecamp Climbing Harness (Sand),Climbing,Northpeak,29.02,12.46,2.53,1,2021-11-17
+1287,OUT-01287,Canyon Merino Base Layer (Ember),Apparel,Stonebrook,54.33,23.09,1.29,1,2021-06-16
+1291,OUT-01291,Tundra 45L Backpack (Graphite),Backpacks,Stonebrook,109.74,59.61,3.46,1,2023-05-06
+1293,OUT-01293,Ridge Water Filter (Sand),Cooking,Cairnworks,40.2,16.17,4.49,1,2023-02-07
+1297,OUT-01297,Tundra Camp Sandal (Ember),Footwear,Ravenridge,162.32,84.05,4.3,1,2021-04-09
+1301,OUT-01301,Horizon Compass (Graphite),Navigation,Northpeak,840.32,388.14,4.72,1,2021-03-11
+1306,OUT-01306,Horizon Softshell Pant (Ember),Apparel,Fernhollow,60,34.78,,0,2021-03-24
+1307,OUT-01307,Alpine 2-Person Tent (Graphite),Tents,Larkspur,378.87,201.44,2.97,0,2022-05-21
+1317,OUT-01317,Alpine Softshell Pant (Ember),Apparel,Larkspur,63.69,27.68,2.14,1,2021-11-02
+1318,OUT-01318,Solstice Camp Lantern (Sand),Lighting,Bluecrest,21.91,14.25,2.64,1,2022-04-21
+1319,OUT-01319,Nomad Titanium Cookset (Ember),Cooking,Cairnworks,81.94,38.31,4.16,1,2021-12-08
+1334,OUT-01334,Ridge Dynamic Rope (Ember),Climbing,Kestrel & Co,150.11,64.44,1.5,1,2021-01-09
+1339,OUT-01339,Vertex Merino Base Layer (Moss),Apparel,Ironwood Trail,99.65,55.76,3.64,1,2021-10-26
+1342,OUT-01342,Glacier Water Bottle (Graphite),Accessories,Kestrel & Co,133.66,80.43,2.41,0,2021-08-31
+1344,OUT-01344,Vertex Gaiters (Sand),Accessories,Cairnworks,8.55,3.62,0.4,0,2023-08-06
+1346,OUT-01346,Basecamp Camp Stove (Moss),Cooking,Fernhollow,124.91,48.01,0.61,1,2022-11-14
+1353,OUT-01353,Canyon Wool Beanie (Cobalt),Accessories,Cairnworks,24.66,14.42,,1,2021-08-11
+1354,OUT-01354,Ridge Compass (Cobalt),Navigation,Larkspur,619.87,318.87,4.98,1,2021-03-01
+1360,OUT-01360,Basecamp Compass (Graphite),Navigation,Bluecrest,163.49,96.68,4.28,1,2022-08-16
+1366,OUT-01366,Vertex Bike Light (Sand),Lighting,Ironwood Trail,23.41,15.17,,1,2022-02-16
+1368,OUT-01368,Horizon Camp Lantern (Sand),Lighting,Halden,71.42,41.86,1.25,0,2023-09-25
+1369,OUT-01369,Basecamp Trekking Poles (Ember),Accessories,Tarn Outfitters,64.92,41.84,4.63,1,2023-03-28
+1370,OUT-01370,Glacier Daypack (Ember),Backpacks,Stonebrook,86.88,36.63,0.34,1,2023-01-19
+1372,OUT-01372,Canyon Trail Runner (Slate),Footwear,Ironwood Trail,158.42,105.72,4.89,1,2023-03-22
+1377,OUT-01377,Trail Down Sleeping Bag (Slate),Sleeping Bags,Cairnworks,147.56,98.53,2.85,1,2021-07-08
+1378,OUT-01378,Alpine 3-Season Sleeping Bag (Slate),Sleeping Bags,Ravenridge,211.41,118.76,3.92,1,2021-04-29
+1380,OUT-01380,Trail 4-Season Tent (Cobalt),Tents,Northpeak,407.42,210.12,3.07,1,2021-10-23
+1382,OUT-01382,Basecamp Softshell Pant (Sand),Apparel,Fernhollow,73.6,42.62,1.48,1,2022-07-11
+1383,OUT-01383,Basecamp Dry Bag (Ember),Accessories,Wildhaven,19.85,8.59,4.01,0,2023-06-10
+1385,OUT-01385,Tundra Camp Lantern (Sand),Lighting,Fernhollow,34.18,19.2,4.47,1,2021-07-02
+1400,OUT-01400,Summit Titanium Cookset (Ember),Cooking,Halden,41.05,27.18,0.34,1,2022-05-14
+1407,OUT-01407,Canyon Hydration Pack (Graphite),Backpacks,Wildhaven,65.15,39.46,,1,2022-01-28
+1411,OUT-01411,Alpine Climbing Harness (Cobalt),Climbing,Kestrel & Co,81.68,37.07,0.63,1,2022-04-02
+1415,OUT-01415,Canyon Trail Runner (Moss),Footwear,Ironwood Trail,145.22,86.05,3,1,2022-01-04
+1416,OUT-01416,Glacier 4-Season Tent (Moss),Tents,Cairnworks,131.77,88.82,,1,2023-07-05
+1417,OUT-01417,Ridge Dynamic Rope (Cobalt),Climbing,Stonebrook,235.31,157.31,3.02,1,2021-01-03
+1418,OUT-01418,Basecamp Dry Bag (Sand),Accessories,Halden,24.8,13.95,0.17,1,2023-06-04
+1420,OUT-01420,Summit 4-Season Tent (Slate),Tents,Stonebrook,390.33,189.05,1.55,1,2021-01-13
+1425,OUT-01425,Trail Camp Lantern (Moss),Lighting,Halden,49.2,28.64,4.91,1,2023-05-05
+1427,OUT-01427,Basecamp Handheld GPS (Slate),Navigation,Ravenridge,221.78,77.95,2.83,1,2021-12-24
+1429,OUT-01429,Nomad Carabiner Set (Ember),Climbing,Northpeak,202.64,74.71,3.12,1,2022-11-29
+1437,OUT-01437,Tundra 4-Season Tent (Sand),Tents,Wildhaven,406.2,145.93,0.8,1,2021-12-25
+1443,OUT-01443,Glacier Gaiters (Slate),Accessories,Wildhaven,37.63,18.67,4.72,1,2022-01-08
+1445,OUT-01445,Ridge Insulated Mug (Slate),Cooking,Ravenridge,26.05,12.59,4.56,1,2022-07-05
+1446,OUT-01446,Ridge 4-Season Tent (Cobalt),Tents,Wildhaven,364.72,224.27,3.28,1,2021-05-11
+1453,OUT-01453,Basecamp GPS Watch (Slate),Navigation,Larkspur,249.06,157.06,0.91,1,2022-02-16
+1454,OUT-01454,Vertex 3-Season Sleeping Bag (Sand),Sleeping Bags,Tarn Outfitters,159.5,61.64,1.59,1,2022-02-18
+1456,OUT-01456,Horizon Headlamp (Ember),Lighting,Cairnworks,46.91,21.91,1.04,1,2023-09-22
+1462,OUT-01462,Tundra Down Sleeping Bag (Graphite),Sleeping Bags,Northpeak,272.81,148.63,1.56,1,2022-06-17
+1470,OUT-01470,Alpine Daypack (Ember),Backpacks,Northpeak,110.47,71.74,1.94,1,2021-05-08
+1471,OUT-01471,Horizon Trekking Poles (Moss),Accessories,Kestrel & Co,12.86,5.55,2.46,1,2023-04-26
+1472,OUT-01472,Nomad Softshell Pant (Sand),Apparel,Kestrel & Co,114.77,52.54,1.69,1,2022-08-10
+1473,OUT-01473,Summit Climbing Helmet (Sand),Climbing,Northpeak,85.47,50.99,4.54,1,2021-12-17
+1478,OUT-01478,Summit Family Dome Tent (Ember),Tents,Tarn Outfitters,703.18,413.52,3.78,1,2022-01-20
+1479,OUT-01479,Vertex Trekking Poles (Moss),Accessories,Wildhaven,14.29,7.8,4.09,1,2023-05-25
+1487,OUT-01487,Ridge Climbing Harness (Slate),Climbing,Northpeak,207.78,120.43,3.69,1,2021-12-16
+1488,OUT-01488,Solstice Climbing Helmet (Cobalt),Climbing,Tarn Outfitters,147.66,66.24,,1,2023-10-25
+1490,OUT-01490,Ridge Fleece Pullover (Moss),Apparel,Kestrel & Co,169.66,90.83,3.97,1,2023-04-06
+1492,OUT-01492,Glacier Merino Base Layer (Ember),Apparel,Bluecrest,91.4,55.38,2.89,0,2021-09-01
+1496,OUT-01496,Ridge Climbing Harness (Sand),Climbing,Fernhollow,39.28,17.56,0.96,1,2021-12-14
+1498,OUT-01498,Vertex Carabiner Set (Ember),Climbing,Fernhollow,247.17,144.51,3.32,1,2022-02-15

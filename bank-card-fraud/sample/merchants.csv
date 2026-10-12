@@ -1,0 +1,513 @@
+merchant_id,merchant_name,mcc,category,country,city,is_online
+4,"Watson, Lewis and Patel",7011,hotels,Spain,Michaelshire,0
+20,Allen-Garcia,5812,restaurants,United States,Anthonyborough,0
+22,Miller-Collier,5999,online marketplace,France,Annechester,1
+27,"Gonzales, Coleman and Nolan",5541,fuel,Germany,Moranmouth,1
+32,Lyons-Richardson,6011,ATM,Germany,Mendozastad,0
+36,"Gardner, Mcdonald and Morales",5541,fuel,United States,New Daniel,0
+49,"Palmer, Gordon and Williams",5999,online marketplace,Spain,Bushborough,1
+62,Scott-Bryant,4511,travel,United States,Baldwinbury,0
+66,Bray LLC,5812,restaurants,Netherlands,Johnsonmouth,0
+67,"Baldwin, Reed and Anderson",5812,restaurants,United Kingdom,Daviston,0
+73,Baxter Inc,5651,clothing,Netherlands,South Jessica,0
+76,Campbell-Palmer,5999,online marketplace,United States,Jamesmouth,1
+84,Reese-Meyers,5651,clothing,United States,North Michaelside,0
+85,"Griffin, Evans and Carpenter",5541,fuel,United Kingdom,West Karen,0
+94,Wright Inc,5651,clothing,United Kingdom,East Ryan,0
+99,Bennett-Massey,6051,crypto exchange,United States,North Amber,1
+108,Mitchell Ltd,7011,hotels,Canada,Douglasside,0
+113,Wilkerson-Pham,5812,restaurants,Germany,New Denise,0
+118,Lowe-Baldwin,5651,clothing,United States,West Sonyaburgh,1
+122,Johnson-Walters,5999,online marketplace,United States,North Marissa,1
+124,Garcia-Campbell,5912,pharmacy,United States,New Rebeccaville,1
+135,Jones-Russell,6051,crypto exchange,United Kingdom,Jacksonhaven,1
+140,Chapman and Sons,5947,gift cards,Spain,Burketon,1
+148,Bennett-Schwartz,5411,grocery,Netherlands,Vickimouth,0
+164,Jones PLC,5814,fast food,United Kingdom,New Wendyport,1
+171,Bush Ltd,5541,fuel,United States,Andreafurt,1
+184,Davidson LLC,5814,fast food,Canada,Williamport,0
+197,"Klein, Bishop and Lewis",5812,restaurants,Canada,South Bridgetfurt,0
+213,Adams-Cook,5411,grocery,United States,North Helen,0
+225,Mcgee-Martinez,5999,online marketplace,United States,Port David,1
+226,Contreras-Collins,5732,electronics,Germany,Davismouth,0
+232,Lopez-Jones,5912,pharmacy,Germany,Nicoleport,0
+248,"Ellis, Velasquez and Morgan",5812,restaurants,United States,Annview,1
+249,Roberts-Ward,5812,restaurants,Germany,Laurachester,0
+252,"Mitchell, Taylor and Pearson",5999,online marketplace,France,South Tracy,1
+260,Gomez Group,5812,restaurants,United States,West Roger,1
+268,Sullivan and Sons,5411,grocery,United States,Stewartstad,0
+284,Brown and Sons,6051,crypto exchange,Netherlands,New Michael,1
+287,Smith LLC,5541,fuel,United Kingdom,Petersonport,0
+293,Roach-Miller,5651,clothing,Germany,Thomaston,1
+318,Robinson Ltd,5541,fuel,United States,Jacobshaven,0
+333,Ferguson-Gonzalez,5947,gift cards,Germany,Lake Sandra,1
+337,Perkins PLC,5947,gift cards,United Kingdom,Mullenfurt,1
+351,Ortega-Fisher,5541,fuel,United States,Powersmouth,0
+358,"Massey, Garcia and Rich",5999,online marketplace,United States,Edwinbury,1
+377,Diaz LLC,5411,grocery,Germany,East Kevin,0
+392,Henderson-Clements,5999,online marketplace,United States,Port Stevenchester,1
+394,Mckenzie-Summers,5812,restaurants,Germany,Lake Sarah,1
+395,"Taylor, Hamilton and Meadows",5411,grocery,United States,Kellyburgh,0
+403,"Wilson, Perkins and Jones",5651,clothing,Germany,Christopherbury,0
+405,Casey Ltd,5541,fuel,United States,South Susantown,0
+406,"Anthony, Ramos and Smith",5411,grocery,United Kingdom,Thomasborough,0
+413,Brooks and Sons,5999,online marketplace,Spain,Bryantton,1
+414,Barber-Smith,7011,hotels,Netherlands,Kathleenside,0
+433,Foster PLC,6011,ATM,France,Jamesfort,0
+482,Davidson-Turner,5732,electronics,United Kingdom,North Lisa,0
+499,Smith PLC,4511,travel,United States,East Williamhaven,0
+502,Brooks PLC,5411,grocery,Spain,New Edward,1
+507,"Cooper, King and Landry",5944,jewellery,Spain,East Sierra,0
+526,"Sanchez, Leon and Wright",5651,clothing,United States,New Alice,0
+539,Sellers-Lin,7011,hotels,United States,New Kevin,1
+541,"Eaton, Perkins and Johnson",6051,crypto exchange,United Kingdom,Rickyshire,1
+543,Harris-Hill,5944,jewellery,Germany,Tanyafurt,1
+545,Brown-Taylor,5999,online marketplace,United Kingdom,Solomonshire,1
+580,Gallagher Ltd,6011,ATM,France,Michaelachester,0
+582,"Orr, Anderson and Owens",5814,fast food,Spain,Moorehaven,0
+588,Parker PLC,5812,restaurants,United States,Matthewmouth,0
+598,"Ortiz, Bray and Mcguire",5732,electronics,United States,West Kennethtown,0
+612,Roberts LLC,5651,clothing,Canada,Simmonstown,1
+619,"Williams, Richard and Lee",4511,travel,Netherlands,North Deborahfort,0
+621,Campbell-Fowler,5541,fuel,United States,Port Francisco,0
+624,Walker-Davidson,5541,fuel,United Kingdom,Santosborough,0
+638,Davis-Smith,4511,travel,United States,Port Stephen,1
+642,Wilson Inc,5812,restaurants,United States,West Kevin,0
+645,Contreras-Cortez,5732,electronics,Netherlands,Charlestown,0
+648,Cox and Sons,5812,restaurants,Germany,West Grantshire,0
+652,Solomon Group,5912,pharmacy,Spain,Hermanmouth,0
+653,Chaney and Sons,5411,grocery,Spain,Burnsberg,0
+677,"Meza, Silva and Miller",5814,fast food,France,New Deborahside,0
+678,"Gibson, Cook and Patterson",5411,grocery,United Kingdom,Nelsonton,0
+691,Martin PLC,5947,gift cards,United Kingdom,South Curtisport,1
+703,Terry-Thomas,5912,pharmacy,Germany,New Paul,0
+708,"Thornton, Short and Barrett",7011,hotels,Canada,Tiffanyview,0
+719,Compton and Sons,5812,restaurants,France,Martinezport,0
+722,"Hammond, Garcia and Brown",5732,electronics,United States,Luiston,0
+723,"Chandler, Alvarez and Grimes",5814,fast food,United States,Julieview,0
+728,"Wu, Williams and Contreras",5651,clothing,United States,South Aaronmouth,0
+738,"Gilmore, Cook and Morrison",5814,fast food,United States,East Bryanborough,1
+742,Moore-Palmer,5411,grocery,Germany,Williamsborough,1
+744,"Hamilton, Harvey and Matthews",7011,hotels,Spain,Port Markborough,0
+749,"Tate, Orr and Frazier",5651,clothing,United States,Michealfurt,0
+750,Sutton-Conrad,5912,pharmacy,United States,South Elizabethhaven,0
+759,"Oconnell, Cox and Thompson",5947,gift cards,Spain,Tiffanybury,1
+761,Meyer-Anderson,6051,crypto exchange,United States,North Jeffreytown,1
+769,Hill LLC,5411,grocery,Netherlands,North Brandon,0
+775,"Kennedy, Quinn and Owen",5411,grocery,United Kingdom,Stevenland,0
+793,Harris Group,5947,gift cards,Germany,Padillatown,1
+800,Hernandez-Stafford,5812,restaurants,Germany,East Matthew,0
+808,King-Moore,5912,pharmacy,France,Jamesborough,0
+815,Martinez-Nelson,5651,clothing,Germany,Carsonborough,0
+823,Ferguson and Sons,5814,fast food,United States,Nicholasburgh,0
+829,"Wong, Woodard and Carter",5912,pharmacy,United Kingdom,Lisaborough,0
+853,Dorsey-Strickland,5541,fuel,United States,East Jessestad,0
+860,Lee LLC,5812,restaurants,France,South Robert,0
+861,"Patel, Rivera and Aguilar",5411,grocery,Spain,New Henrymouth,0
+867,Simpson-Alexander,5541,fuel,United Kingdom,Robertaland,0
+872,Cannon-Peterson,5814,fast food,Canada,East Ericberg,0
+874,Hansen-Montgomery,5814,fast food,France,North Michelle,0
+889,"Wood, Dennis and Barajas",5541,fuel,Germany,East Meganborough,0
+898,"Cox, Stevens and Scott",5411,grocery,United Kingdom,Shannonmouth,0
+909,Cook-Lane,5541,fuel,United States,Combsport,0
+935,"Love, Ward and Hendrix",5999,online marketplace,United States,Travisport,1
+947,"Skinner, Hughes and Middleton",5651,clothing,Germany,Johnshire,0
+949,"Curtis, Willis and Mueller",5812,restaurants,Germany,Nolanfort,0
+968,"Ward, West and Jackson",5999,online marketplace,United States,West Marystad,1
+982,Wilkins-Palmer,5651,clothing,United Kingdom,Peterstad,0
+986,"Wade, Cross and Thomas",7011,hotels,United States,Port Michaelville,0
+1000,Welch Group,5814,fast food,United Kingdom,South Jason,0
+1003,Bailey-Morales,5814,fast food,United States,Jessicatown,1
+1016,Kramer-Mcguire,5812,restaurants,United Kingdom,Garciahaven,0
+1032,Hughes-Bell,5411,grocery,United States,Lake Andrew,0
+1047,Logan-Hoffman,5814,fast food,United States,Lake Juan,0
+1052,White-Ray,5541,fuel,United States,Mcknightland,1
+1068,Weber PLC,5651,clothing,Netherlands,Bradleyborough,1
+1073,Miller-Watts,5411,grocery,United States,Matthewtown,0
+1104,Hall Ltd,5411,grocery,Spain,Davidshire,0
+1111,Blair Group,5812,restaurants,United Kingdom,Port Mark,0
+1115,Jones Group,5411,grocery,Germany,Williamsstad,0
+1126,Pearson PLC,5814,fast food,United States,Gonzalezshire,1
+1160,"Stanton, Hendricks and Austin",5812,restaurants,United States,South Christianchester,1
+1161,Blair Ltd,5814,fast food,United Kingdom,East Charles,0
+1163,Brown Group,5411,grocery,Germany,Monicachester,0
+1165,Martinez Ltd,5912,pharmacy,United States,Paynetown,1
+1173,Green PLC,5947,gift cards,Germany,West Theresamouth,1
+1178,Gordon-Coleman,5812,restaurants,Germany,West Makayla,0
+1189,Moore LLC,5651,clothing,United States,Collinstad,0
+1198,"Martinez, Murray and Morrow",5999,online marketplace,United Kingdom,Port Melissashire,1
+1203,Powers-Morris,5812,restaurants,United States,East Melaniechester,0
+1206,Freeman PLC,5411,grocery,United States,West Michael,0
+1225,Smith-Wallace,5541,fuel,United States,Roseshire,0
+1237,"Baker, Salazar and Harris",5999,online marketplace,United Kingdom,Lake Maria,1
+1243,Thompson Inc,5541,fuel,United States,New Samantha,0
+1246,"Miller, Bush and Nunez",5732,electronics,United States,East Jose,0
+1253,"Nelson, Castillo and Alexander",5947,gift cards,Netherlands,Reneeberg,1
+1276,"Ellis, Maxwell and Henry",5651,clothing,Germany,Coxhaven,0
+1290,"Stanton, Koch and Coleman",5814,fast food,United States,Stanleyside,0
+1299,Williams Group,4511,travel,Canada,Huntshire,1
+1304,"Gibson, Henson and Riley",5912,pharmacy,Germany,Lake Andrewburgh,0
+1313,"Ramirez, Woods and Elliott",5732,electronics,United States,Lynnbury,1
+1328,Dalton-Bowen,5812,restaurants,United States,Travisfort,1
+1342,Wilkinson-Morgan,5814,fast food,Germany,Cobbborough,0
+1353,Miller Inc,5814,fast food,Spain,Jessicabury,0
+1355,Hall-Knox,5411,grocery,Spain,Michelletown,0
+1375,Rhodes Group,5947,gift cards,Germany,South Cheryl,1
+1385,"Myers, Campbell and Smith",5411,grocery,Germany,West Danielle,0
+1396,Mcintyre-Young,5651,clothing,Netherlands,Nortonview,0
+1428,Brown-Rodriguez,5651,clothing,Germany,East Lisaburgh,0
+1440,Kramer Ltd,5999,online marketplace,Germany,North Cynthiaberg,1
+1445,Howe LLC,5812,restaurants,Spain,New Zacharyside,0
+1450,"Moore, Collier and Harper",5812,restaurants,United States,Frenchtown,0
+1461,Williams PLC,6051,crypto exchange,United Kingdom,New Amyside,1
+1481,Stevenson-Walker,5814,fast food,United Kingdom,South Melissa,0
+1483,"Smith, Martinez and Herrera",5999,online marketplace,United Kingdom,Harrisside,1
+1488,Santana-Wood,6011,ATM,United States,West Paulport,0
+1497,Christensen and Sons,5812,restaurants,United States,Port David,0
+1512,"Krueger, Green and Perez",5651,clothing,United Kingdom,Marytown,0
+1514,Paul-Brewer,5651,clothing,United Kingdom,West Kathy,1
+1529,Perez-Logan,5732,electronics,United Kingdom,Noahbury,0
+1539,"Nelson, Adams and Gutierrez",5812,restaurants,France,Campbellfurt,0
+1549,"Garcia, Doyle and Alvarez",7011,hotels,United Kingdom,Ellisland,1
+1578,Hart Ltd,4511,travel,United Kingdom,Geraldshire,0
+1583,Nguyen LLC,5411,grocery,Germany,Martinborough,0
+1585,Burch PLC,7011,hotels,United Kingdom,East Jamesberg,0
+1589,"Richards, Atkinson and Meyers",5814,fast food,United States,North Paulview,0
+1612,Bridges-Deleon,5812,restaurants,United Kingdom,Orrstad,0
+1618,Farmer-Shelton,5912,pharmacy,United Kingdom,Donburgh,0
+1631,Combs-George,5651,clothing,France,Wallsburgh,0
+1634,Joseph Group,6011,ATM,United States,Ericksonmouth,0
+1660,"Ingram, White and Wood",5944,jewellery,France,Parkerstad,0
+1661,Hernandez LLC,6051,crypto exchange,United States,Ryanchester,1
+1672,"Jones, Watson and Nash",5999,online marketplace,Spain,West Kristinton,1
+1675,"Combs, Medina and Porter",7011,hotels,Netherlands,Beantown,1
+1676,Morgan LLC,5411,grocery,United States,New Ericburgh,1
+1682,Escobar-White,7011,hotels,United States,New Danielfurt,0
+1683,Rodriguez-Walsh,5812,restaurants,United States,Port Courtney,0
+1770,Reed-Baldwin,5812,restaurants,United States,Ryanfort,0
+1775,Roman-Watkins,7011,hotels,Netherlands,Jenniferborough,0
+1785,"Dixon, Mcdonald and Meyer",5944,jewellery,Spain,Lake Katie,0
+1793,Hansen LLC,7011,hotels,United Kingdom,Lake Bethview,0
+1796,"Simmons, Cameron and Price",5411,grocery,Netherlands,Morrisonshire,0
+1858,"Lowery, Martinez and Alvarado",6011,ATM,United Kingdom,Dylanfurt,0
+1866,"Moore, Ellis and Archer",5732,electronics,United States,West Angela,1
+1867,Reeves Inc,5947,gift cards,United Kingdom,Jenniferside,1
+1871,Obrien Inc,5651,clothing,Netherlands,Taylorshire,0
+1876,Davis-Johnson,5651,clothing,United States,Hesterton,0
+1890,Russell-Martin,5732,electronics,Netherlands,Robertburgh,0
+1895,Bowman-Walters,5999,online marketplace,Germany,Denisefort,1
+1924,Campbell-Bartlett,5999,online marketplace,United States,North Yvonnefort,1
+1928,Edwards LLC,7011,hotels,Canada,East Lauren,0
+1929,Turner Group,5411,grocery,Netherlands,Port Jasmine,0
+1937,Palmer-Dixon,5541,fuel,United Kingdom,Lynnfort,0
+1956,Thornton-Berry,5814,fast food,France,Ortizmouth,0
+1970,Mcneil-Mitchell,5812,restaurants,United States,Peterstad,0
+1981,"Murphy, Miller and Lopez",6051,crypto exchange,United States,Lake Tracyberg,1
+1990,Mcdowell Group,5812,restaurants,France,Port Joel,1
+2002,"Castillo, Miller and Bennett",5812,restaurants,United States,Salazarport,0
+2018,"Woodard, Herring and Davis",5651,clothing,United Kingdom,North Markfort,0
+2035,Wilson-Nelson,5732,electronics,Canada,Weaverbury,0
+2047,Cunningham Group,5411,grocery,France,North Kristyville,0
+2048,Dalton LLC,5651,clothing,Canada,South Joyburgh,1
+2064,Rodriguez PLC,5812,restaurants,Germany,West Lauren,0
+2068,Le and Sons,4511,travel,United States,North Tabithaview,0
+2079,Morris Ltd,5814,fast food,Germany,Port Rebecca,0
+2117,Wilson LLC,5411,grocery,United Kingdom,North Rebeccabury,0
+2140,Bishop Ltd,5812,restaurants,United States,Tanyaberg,0
+2143,"Wilkinson, Lopez and Wilson",5812,restaurants,United States,Michaelland,1
+2163,Hammond Ltd,5912,pharmacy,United States,East Jennifer,0
+2171,Camacho-Carter,5814,fast food,Germany,Lake Kayla,0
+2186,Guerrero-Watkins,5814,fast food,United States,Anthonymouth,0
+2187,"Larsen, Li and Jordan",5651,clothing,Spain,Nelsonfurt,0
+2200,Johnson-Nelson,5411,grocery,Spain,Lake Shelly,0
+2208,Bradley-Day,5732,electronics,United States,Kiddland,0
+2210,Taylor-Stewart,5812,restaurants,United States,Woodsport,0
+2246,Young-Murray,5912,pharmacy,Germany,Grahamborough,1
+2259,Brown-Taylor,6011,ATM,United Kingdom,Taylorfort,0
+2272,Hunt-Reid,5812,restaurants,France,North Karen,1
+2310,Gregory Group,5651,clothing,United Kingdom,Port Alexis,0
+2311,Brown-Smith,6051,crypto exchange,United States,Elizabethport,1
+2319,"Edwards, Marshall and Hernandez",5999,online marketplace,United States,Foleyfort,1
+2335,"White, Alvarado and Johnson",5411,grocery,United States,New Kristine,1
+2341,Simon-Chan,5812,restaurants,United States,East Michaelton,0
+2343,Collins PLC,5814,fast food,United States,Fergusonburgh,1
+2353,Griffin and Sons,5411,grocery,United States,Bryanport,0
+2372,Farmer and Sons,5947,gift cards,Canada,Port Scott,1
+2391,Lopez-Sanchez,5999,online marketplace,Canada,Edwardsside,1
+2394,Torres Inc,5411,grocery,United States,Curtisburgh,0
+2413,Mckay Inc,5812,restaurants,United Kingdom,Jessicaview,0
+2416,Fields Inc,5541,fuel,Spain,Stewartland,0
+2417,Douglas-Bradley,5732,electronics,Germany,Greenland,0
+2443,"Mcpherson, Black and Gonzalez",5947,gift cards,Germany,Oliviaview,1
+2468,Robinson-Graham,5651,clothing,United States,East Melissachester,1
+2471,Morales Group,5732,electronics,United Kingdom,Mollyside,0
+2490,Gibbs-Jones,5999,online marketplace,Germany,Hermanmouth,1
+2492,Rosales Ltd,5944,jewellery,Germany,Port Katie,1
+2499,Shelton and Sons,7011,hotels,Germany,Bartonmouth,0
+2506,Jackson-Ashley,5814,fast food,Canada,Lake Elizabeth,0
+2514,"Castillo, Garrison and Cole",5999,online marketplace,United States,Freemanfort,1
+2518,Watson Ltd,5814,fast food,Germany,East Monicaview,1
+2536,"Grant, Vang and Hayes",5651,clothing,Spain,Hernandezstad,1
+2550,"Green, Powell and Fisher",5912,pharmacy,United States,South Derricktown,0
+2554,Vance LLC,4511,travel,United States,West Christineville,0
+2571,Clayton-Garza,5999,online marketplace,Spain,North David,1
+2574,Williams PLC,6011,ATM,Canada,South Micheleberg,0
+2577,Jackson-Harper,5651,clothing,France,Justinport,0
+2580,Hall Inc,5411,grocery,France,Hannahview,0
+2581,Hooper LLC,5812,restaurants,United States,Garyton,0
+2582,Clark-Banks,6051,crypto exchange,United States,Thompsonmouth,1
+2583,Haynes-White,5814,fast food,Germany,North Christina,0
+2594,Hernandez Ltd,5947,gift cards,United States,Taylorhaven,1
+2597,"Duarte, Thompson and Allen",5999,online marketplace,France,Catherineshire,1
+2608,"Lloyd, Nguyen and Fleming",5411,grocery,United States,New Maryshire,0
+2632,Foster-Huff,5999,online marketplace,Netherlands,Ricardofort,1
+2633,Sanchez Group,5947,gift cards,United Kingdom,Port Martha,1
+2642,Fuentes Group,5999,online marketplace,United States,New Matthewfort,1
+2643,Black Inc,5411,grocery,Spain,New Geraldberg,0
+2649,Ramos-Suarez,5732,electronics,Canada,Wongport,1
+2664,Singleton Inc,5411,grocery,United States,Lewisborough,0
+2674,"Johnson, Brown and James",5411,grocery,Germany,Torrestown,0
+2679,"Armstrong, Thomas and Bridges",7011,hotels,United States,Andersonchester,1
+2680,Harris-Sparks,6051,crypto exchange,Netherlands,Cardenaston,1
+2704,Woods-Campbell,5411,grocery,France,Evansside,0
+2713,Lambert-Prince,5541,fuel,United Kingdom,Huntfort,0
+2719,Dudley-Dickson,4511,travel,Germany,East Heather,0
+2739,Castro-Washington,5912,pharmacy,Germany,East Laura,0
+2741,"Cobb, Johnson and Valentine",5812,restaurants,Germany,Pamelamouth,0
+2759,Dixon-Saunders,5411,grocery,Spain,Goldenburgh,0
+2766,"Blair, Alexander and Garcia",5999,online marketplace,Netherlands,Samanthatown,1
+2767,Zimmerman-Page,5411,grocery,United States,New Christopher,0
+2768,"Barnes, Bailey and Lopez",6011,ATM,Germany,New Charles,0
+2772,Reynolds-Kirk,5651,clothing,United Kingdom,Mariaberg,0
+2781,Parks PLC,5814,fast food,Spain,Carlsonmouth,0
+2789,Waters-Henry,7011,hotels,France,South Richard,0
+2799,Cooper-Bush,5541,fuel,United Kingdom,Romeroport,0
+2800,"Cook, Morris and Logan",5651,clothing,United Kingdom,East Steve,0
+2804,Martinez-Alvarado,5541,fuel,France,Carterburgh,1
+2811,Perry LLC,5812,restaurants,United Kingdom,Montoyaview,0
+2827,Smith-Brown,7011,hotels,Spain,Port Eric,0
+2828,Camacho-Martin,5411,grocery,Spain,Hernandezmouth,0
+2841,Donaldson Group,5411,grocery,United Kingdom,West Stanleyview,0
+2842,Rogers PLC,5999,online marketplace,Netherlands,Darrylshire,1
+2852,Carroll LLC,5411,grocery,France,Port Dawnfurt,0
+2860,"Baker, Kirk and Cummings",5651,clothing,United States,North Michaelberg,0
+2863,"Thompson, Fernandez and Wang",7011,hotels,United Kingdom,Lake Carrie,0
+2864,Schneider-Davis,5912,pharmacy,United States,Anthonyview,0
+2866,Rose-Schwartz,5411,grocery,Netherlands,Danielsberg,1
+2874,Wise PLC,5814,fast food,United Kingdom,Jacobmouth,0
+2878,Goodman LLC,5411,grocery,Spain,Courtneyview,0
+2879,Guerrero LLC,6011,ATM,United States,East Crystalmouth,0
+2882,Chan-Stone,5999,online marketplace,United States,Port Johnathanview,1
+2890,"Allen, Buckley and Pierce",5912,pharmacy,United States,Kristenborough,0
+2906,"West, Forbes and Smith",5411,grocery,United Kingdom,Liton,0
+2915,"Peck, Walker and Young",5732,electronics,United Kingdom,South Matthew,0
+2922,Mccullough-Carter,5814,fast food,Canada,Deborahtown,0
+2925,"Duran, Ramirez and Snyder",4511,travel,United States,New Judith,0
+2948,Harris-Gutierrez,5541,fuel,United States,Fernandeztown,0
+2949,"Yoder, Mclean and Ruiz",5541,fuel,United States,Coryview,0
+2956,Gibson and Sons,5812,restaurants,United Kingdom,West Veronicafurt,0
+2960,Calderon and Sons,4511,travel,Canada,West Jeremy,0
+2977,Davis-Johnson,5541,fuel,France,South Andrea,0
+2997,Hernandez Ltd,5812,restaurants,Canada,Williamsonmouth,1
+2999,Jones and Sons,4511,travel,United States,Makaylafurt,1
+3024,Thomas-Cardenas,5812,restaurants,United Kingdom,Jacquelinemouth,1
+3052,Baker and Sons,5814,fast food,United Kingdom,Hendersonchester,0
+3075,Rodriguez-Patel,5541,fuel,France,New Traci,0
+3081,Hood Inc,5411,grocery,United States,Garciabury,0
+3100,Dean PLC,5411,grocery,France,North Daryl,0
+3121,Riley and Sons,5541,fuel,Spain,Lake Laura,0
+3152,Smith Group,4511,travel,United States,East Morganbury,0
+3164,Miller-Kelly,4511,travel,United Kingdom,Garrisontown,0
+3182,Hall Group,5999,online marketplace,United Kingdom,Zacharyborough,1
+3203,Lopez and Sons,7011,hotels,France,Fernandezmouth,0
+3206,Underwood PLC,5411,grocery,United Kingdom,West Michael,0
+3217,"Terrell, Schaefer and Reilly",5411,grocery,Canada,Youngville,0
+3261,Yang and Sons,5411,grocery,Germany,Rodriguezton,0
+3297,Lee Group,5411,grocery,France,South Stacyport,0
+3321,Burke and Sons,5999,online marketplace,United Kingdom,East Crystal,1
+3331,"Smith, Gray and Miranda",6011,ATM,United Kingdom,West Nathaniel,0
+3343,Jimenez and Sons,5651,clothing,United States,East Joshuamouth,0
+3345,Watson Inc,5999,online marketplace,United Kingdom,Joshuastad,1
+3365,Haney PLC,6051,crypto exchange,United Kingdom,Leechester,1
+3366,Yates Inc,5651,clothing,United States,Port Paula,0
+3372,French-Logan,5814,fast food,United States,North Nicholas,1
+3391,"Frazier, Armstrong and Johnson",5411,grocery,United States,Hernandezfurt,0
+3403,"Kelly, Baxter and Jackson",5411,grocery,United States,South Cynthiastad,1
+3406,Cunningham and Sons,5541,fuel,Germany,Silvatown,1
+3421,Roberts-Steele,5541,fuel,Spain,Port Stephen,1
+3459,Bennett-Payne,5411,grocery,United Kingdom,Lake Jamesside,1
+3462,"Savage, Schroeder and Collins",5812,restaurants,United States,Bryanport,0
+3489,Kramer-Mueller,7011,hotels,United Kingdom,Vasquezmouth,0
+3495,Aguirre Inc,5912,pharmacy,France,West Michael,0
+3511,"Stevenson, Robinson and Harvey",5732,electronics,United States,New Nancy,0
+3523,Mcdonald PLC,5812,restaurants,Germany,South Barbarafort,0
+3531,Perez-Ryan,6051,crypto exchange,United Kingdom,West Josephstad,1
+3542,Roberts Inc,4511,travel,Netherlands,West Samuel,0
+3543,Moore-Fox,5732,electronics,United Kingdom,Gonzalezstad,0
+3556,Kelley and Sons,5947,gift cards,France,Lake Elizabethshire,1
+3565,Oconnor and Sons,5651,clothing,France,North Karen,0
+3614,"Brown, Wells and Moreno",5814,fast food,United States,West Davidchester,0
+3623,Aguirre-Flores,5411,grocery,United States,Russellshire,0
+3625,Moran-Hall,5999,online marketplace,United States,Danielsfurt,1
+3668,Wilson-Thomas,5812,restaurants,United Kingdom,New Franklin,0
+3685,Ortega PLC,5999,online marketplace,Germany,Codyton,1
+3698,"Thomas, Butler and Bates",5541,fuel,Netherlands,Port Thomaschester,0
+3708,Norris-Blair,5411,grocery,United States,Floydview,1
+3720,Wright PLC,5541,fuel,United States,Jamesside,1
+3725,"Gilbert, Howard and Jackson",4511,travel,Germany,Millerport,0
+3726,Aguilar-Gallagher,5411,grocery,Spain,Madisonstad,0
+3735,Fowler-Fernandez,5814,fast food,Spain,Susanside,0
+3747,Powell and Sons,5651,clothing,Germany,New Tyler,0
+3760,"Lewis, Ochoa and Navarro",5814,fast food,United States,Jennamouth,0
+3762,Ware Inc,5812,restaurants,Spain,Cynthiafurt,0
+3773,"Pacheco, Pena and Chapman",5947,gift cards,United Kingdom,East Jefferyside,1
+3789,"Mitchell, West and Sherman",5411,grocery,United States,Michaelmouth,0
+3792,"Glover, Shelton and Wheeler",5812,restaurants,United States,West Michael,0
+3806,"Welch, Hunter and Washington",5999,online marketplace,Canada,East Samantha,1
+3813,"Stevenson, Adams and Jackson",7011,hotels,United States,East Joshuaton,0
+3817,Frank-Mcguire,5912,pharmacy,United Kingdom,Mathewburgh,1
+3818,"Carter, Zimmerman and Booker",5814,fast food,United States,Christinatown,0
+3821,Rivera PLC,5812,restaurants,United States,New Brendafurt,0
+3853,"Wallace, Johnson and Brown",5999,online marketplace,Netherlands,Davidview,1
+3859,Williams Group,5651,clothing,United Kingdom,West Jerry,1
+3870,"Castaneda, Mills and Jensen",5999,online marketplace,Germany,Kerryton,1
+3875,"Miller, Scott and Fleming",5732,electronics,France,Markside,0
+3876,"Thornton, Greene and Wilson",5651,clothing,Netherlands,Owenshaven,1
+3888,Avila LLC,5732,electronics,Germany,Wellschester,0
+3889,"Maddox, Hall and Nicholson",5651,clothing,France,Lake Janetshire,1
+3894,Wheeler-Lewis,6051,crypto exchange,United States,Portertown,1
+3895,"Benson, Anderson and Welch",5651,clothing,United States,Anaburgh,0
+3906,Clark PLC,5812,restaurants,United States,East Seanstad,0
+3911,Lee-Miles,5999,online marketplace,Netherlands,Anthonyton,1
+3912,Flores-Decker,6051,crypto exchange,Spain,North John,1
+3914,Porter Ltd,5411,grocery,United States,Port Jennifer,0
+3918,"Wall, Rojas and Browning",5541,fuel,Canada,Devonshire,0
+3927,Stuart-Parker,5541,fuel,United States,Port Anthony,1
+3932,Kelly-Sellers,5732,electronics,United Kingdom,Garciaborough,0
+3937,Hill-Robinson,5814,fast food,United Kingdom,Anthonyshire,0
+3954,Vasquez-Hall,5814,fast food,Germany,Port Lisaport,0
+3955,Vincent Ltd,7011,hotels,United Kingdom,Port Ronaldburgh,0
+3958,Lara-Bryan,5912,pharmacy,United States,Lake Deniseborough,0
+3959,"Riley, Banks and Oconnor",5812,restaurants,Spain,Bruceland,0
+3967,"French, Roman and Mora",5732,electronics,United States,Willischester,0
+3982,Herman and Sons,5912,pharmacy,France,Williamsborough,0
+4006,Boyd-Allen,7011,hotels,Canada,Hamiltonland,0
+4020,Washington PLC,5812,restaurants,Germany,Angelaburgh,0
+4034,Ward Inc,5651,clothing,United States,North Shannon,0
+4038,Campbell-Price,5812,restaurants,Spain,Port Josephside,0
+4040,"Day, Martin and Watts",5999,online marketplace,United Kingdom,West Emily,1
+4046,"Duncan, Palmer and Johnson",5999,online marketplace,Canada,Williamsport,1
+4047,"Taylor, Perez and Soto",5541,fuel,United States,East Melanie,0
+4061,"Gomez, Green and Garcia",4511,travel,Netherlands,Amyview,0
+4062,Mcbride Inc,5411,grocery,United States,Jenniferton,0
+4069,Andrade LLC,5732,electronics,Canada,Colleenbury,0
+4072,"Sellers, Quinn and Montgomery",5999,online marketplace,United States,Williamshaven,1
+4076,"Mcbride, Taylor and Curtis",5812,restaurants,United States,East Christina,0
+4082,"Robles, Hammond and Collins",5999,online marketplace,Germany,East Karenmouth,1
+4085,Ross-Nguyen,5541,fuel,United States,Scottchester,0
+4101,Allen Ltd,5999,online marketplace,United States,Rachelfort,1
+4103,Berg-Edwards,5944,jewellery,United States,South Micheleberg,0
+4111,Booth LLC,7011,hotels,United Kingdom,Carolinemouth,0
+4112,Adams-Gonzalez,5411,grocery,United Kingdom,Jordanfurt,0
+4121,Brock Ltd,5651,clothing,United States,New James,1
+4127,"Cole, Walker and Carroll",5411,grocery,Netherlands,Samanthamouth,0
+4197,"Brewer, Romero and Luna",4511,travel,United States,Baileychester,0
+4199,Price Group,5912,pharmacy,United States,South Amanda,0
+4202,"Rodriguez, Richardson and Garcia",6051,crypto exchange,France,Kennethborough,1
+4204,"Reyes, Aguirre and Lopez",5732,electronics,Spain,Port Jennifer,0
+4206,Jones Group,5411,grocery,Germany,Port Michellemouth,0
+4222,Ellis and Sons,5411,grocery,United Kingdom,South Marcus,0
+4228,Mason-Williams,4511,travel,Spain,West Stephen,1
+4248,"Carter, Graham and Mack",7011,hotels,United States,South Theresa,0
+4256,Stephens-Weaver,5411,grocery,United States,West Bryan,0
+4262,Thompson-Morris,7011,hotels,Germany,North Victoria,0
+4264,Lopez LLC,5651,clothing,Germany,Lake Becky,0
+4268,"Scott, Johnson and Shaw",5411,grocery,United Kingdom,Bryanview,0
+4276,Richard-Freeman,5411,grocery,United Kingdom,New Theresa,1
+4281,Estrada PLC,5732,electronics,United Kingdom,Gardnerberg,0
+4282,"Valencia, Brooks and Butler",7011,hotels,United States,New Susan,0
+4286,Lewis LLC,5732,electronics,Germany,Nicoleborough,0
+4287,"George, Cooper and Johnson",5812,restaurants,Spain,Craigchester,0
+4288,Baker Ltd,5812,restaurants,Germany,North Michael,0
+4290,Rodriguez-Roberts,6051,crypto exchange,Spain,North Brandonview,1
+4317,"Mann, Johnson and Tran",5651,clothing,United States,North Jasmine,0
+4318,Turner Ltd,5651,clothing,United States,East Jeremy,1
+4326,Nunez-Gould,5541,fuel,United States,New Robert,0
+4361,"Wheeler, Medina and Wilson",5411,grocery,France,Carrmouth,0
+4363,Lloyd and Sons,4511,travel,United States,Kristiborough,0
+4377,Wood Group,5999,online marketplace,United Kingdom,Reginaldfort,1
+4380,Jones-Norris,5947,gift cards,United Kingdom,North Carlaton,1
+4390,"Hale, Nguyen and Pineda",5732,electronics,France,North Stephaniestad,0
+4391,"Nichols, Donaldson and Olsen",5999,online marketplace,United States,North Markburgh,1
+4399,Adams Group,5814,fast food,United States,South Jessicafort,0
+4413,"Mitchell, Owen and Rodriguez",4511,travel,United Kingdom,East Billymouth,0
+4416,Duncan-Calhoun,7011,hotels,United States,Port Jennifermouth,0
+4428,"Mills, Flores and Day",6051,crypto exchange,United Kingdom,East Judithfurt,1
+4439,Clark-Foster,5651,clothing,Spain,Morganmouth,0
+4442,Sandoval-Oliver,5944,jewellery,United States,South Linda,0
+4456,Davidson LLC,5944,jewellery,Germany,Wardland,0
+4476,Pacheco-Hunter,5999,online marketplace,Spain,Walkermouth,1
+4477,Sanchez Inc,5812,restaurants,United Kingdom,Vargastown,0
+4479,Brown Group,7011,hotels,Spain,South Lisaton,0
+4480,"Beasley, Dunn and White",5947,gift cards,France,Port Carol,1
+4484,Middleton Ltd,5541,fuel,United States,South Jared,0
+4489,Bryant-Garcia,5651,clothing,United States,East Christine,0
+4501,"Dennis, Hogan and Stewart",7011,hotels,United States,Paynemouth,0
+4512,Kaufman Inc,5812,restaurants,United States,Carterfurt,0
+4514,Cooke and Sons,5812,restaurants,United States,Lake Alexander,0
+4517,King Inc,5541,fuel,Netherlands,East Theodore,0
+4528,"Thomas, Kramer and Nunez",5947,gift cards,France,Dunnbury,1
+4536,Alexander and Sons,5812,restaurants,Germany,Danaport,1
+4540,"Stephens, Reyes and Butler",5732,electronics,United States,New Angela,0
+4549,"Johnson, Smith and Davis",5411,grocery,United Kingdom,New Carol,0
+4578,"White, Brown and Hicks",5999,online marketplace,Germany,Bridgesstad,1
+4581,"Smith, Foster and Garcia",5541,fuel,United States,Stacyhaven,0
+4594,"Carr, Robinson and Jennings",5999,online marketplace,Spain,Danielstad,1
+4607,Melendez Group,5541,fuel,United Kingdom,Kathyborough,0
+4614,Best Inc,5411,grocery,United Kingdom,Diazburgh,0
+4622,Flowers-Burch,5411,grocery,Germany,Josemouth,1
+4647,May and Sons,4511,travel,Germany,Lake Matthew,1
+4650,Bradley-Ruiz,5541,fuel,United Kingdom,Coryside,0
+4652,Williams-Smith,5812,restaurants,United Kingdom,West Aprilport,0
+4665,"Ellis, Smith and Clark",5651,clothing,France,Michelebury,0
+4668,Ramirez-Humphrey,5812,restaurants,United Kingdom,South Erikamouth,0
+4675,"Cooper, Lawrence and Alvarez",5999,online marketplace,United Kingdom,Thompsonmouth,1
+4681,Cohen-Stephens,5651,clothing,United States,Carrillochester,0
+4682,Lee-Williams,5812,restaurants,United Kingdom,New Dorisport,0
+4684,Blair-Gonzalez,5999,online marketplace,Germany,Port Benjamin,1
+4693,"Ellis, Warren and Fisher",5814,fast food,United Kingdom,Lake Jeffrey,0
+4720,Rogers and Sons,5541,fuel,France,West Alexanderborough,0
+4723,Roberts PLC,5411,grocery,Germany,East Morganberg,1
+4724,Owens-Richards,5999,online marketplace,Canada,Muellerfort,1
+4727,Johnson and Sons,7011,hotels,Germany,Lake Danielbury,0
+4757,Young-Berg,5541,fuel,Netherlands,Port Michaelview,1
+4768,"Hall, Erickson and Butler",5732,electronics,United States,Lake Gregory,0
+4771,"Browning, Ward and Martinez",6011,ATM,United States,Davidshire,0
+4774,Gonzalez LLC,5812,restaurants,France,Gatestown,0
+4781,"Jones, Lopez and Mahoney",4511,travel,Germany,Wilsonview,0
+4786,Chapman LLC,5411,grocery,United Kingdom,Nelsonton,0
+4805,Rodriguez-Miles,5411,grocery,United States,East Tiffanyborough,0
+4818,Rivers and Sons,5651,clothing,United Kingdom,East Carriemouth,0
+4821,"Campbell, Thompson and Carter",5732,electronics,Spain,Isaacmouth,0
+4836,Jones-Russell,5541,fuel,Spain,Lake Jeffrey,0
+4838,Woods-Adams,5812,restaurants,United States,Jasonfort,0
+4847,Miller-Hudson,5999,online marketplace,United States,New Randy,1
+4852,Taylor and Sons,7011,hotels,France,Jameston,0
+4859,"Williams, Smith and Cook",5814,fast food,United States,North Sheena,0
+4866,Simpson-Austin,5812,restaurants,United Kingdom,Tatefort,1
+4884,"Jackson, Hernandez and Shaw",5541,fuel,Spain,Wuburgh,1
+4889,Levine Ltd,5541,fuel,Germany,East William,0
+4900,"Martin, Irwin and Stewart",5912,pharmacy,United States,New Michelle,1
+4915,Conley Group,5651,clothing,Netherlands,Jennifertown,1
+4918,Cummings-Warner,5411,grocery,United States,East Courtneyfurt,1
+4925,"Flores, Roach and Fletcher",5812,restaurants,Canada,Johnhaven,0
+4946,"Cruz, Sanders and Johnson",5651,clothing,Germany,East Michaelfort,0
+4952,"Harding, Decker and Morrison",5541,fuel,Germany,Connorside,0
+4954,Hutchinson Group,5541,fuel,United States,North Calvin,0
+4968,"Wallace, Turner and Patrick",5651,clothing,United Kingdom,West Charles,0
+4978,Allen-Vazquez,5912,pharmacy,United Kingdom,West Michaelport,0
+4990,"Tate, Powell and Jones",5411,grocery,United States,Paultown,0
+4995,"Schneider, Reese and Cross",5411,grocery,Spain,Josemouth,1
+4996,Rodriguez Ltd,5812,restaurants,Canada,Bradyfurt,0
+4998,Ho-Vasquez,6051,crypto exchange,Germany,South Christophershire,1
+5000,"Bailey, Gutierrez and Ramos",5411,grocery,France,Port Ianstad,0

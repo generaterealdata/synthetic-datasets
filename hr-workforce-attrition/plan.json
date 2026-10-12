@@ -1,0 +1,1443 @@
+{
+ "total_rows": 150000,
+ "dataset_type": "relational",
+ "tables": {
+  "employees": {
+   "columns": {
+    "last_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "last_name"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "first_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "first_name"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "hire_date": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 2200",
+       "parameters": {
+        "start_date": "2015-01-01",
+        "end_date": "2018-12-31",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 3333",
+       "parameters": {
+        "start_date": "2019-01-01",
+        "end_date": "2021-12-31",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 6154",
+       "parameters": {
+        "start_date": "2022-01-01",
+        "end_date": "2024-12-31",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2025-01-01",
+        "end_date": "2026-08-31",
+        "include_time": false
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "email": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "lowercase(concat(replace({first_name}, ' ', ''), '.', replace({last_name}, ' ', ''), {employee_id}, '@corp.example.com'))"
+       }
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "job_title": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "{job_level} == 1",
+       "parameters": {
+        "equation": "concat('Associate, ', {department_id.department_name})"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{job_level} == 2",
+       "parameters": {
+        "equation": "concat('Specialist, ', {department_id.department_name})"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{job_level} == 3",
+       "parameters": {
+        "equation": "concat('Senior Specialist, ', {department_id.department_name})"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{job_level} == 4",
+       "parameters": {
+        "equation": "concat('Lead, ', {department_id.department_name})"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{job_level} == 5",
+       "parameters": {
+        "equation": "concat('Manager, ', {department_id.department_name})"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{job_level} == 6",
+       "parameters": {
+        "equation": "concat('Director, ', {department_id.department_name})"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "concat('Vice President, ', {department_id.department_name})"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "termination_date": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "{employment_status} == 'terminated'",
+       "parameters": {
+        "equation": "min(add_months({hire_date}, random_int(3, 90)), '2026-09-30')"
+       }
+      },
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "calculated",
+        "base_parameters": {
+         "equation": "min(add_months({hire_date}, random_int(3, 90)), '2026-09-30')"
+        },
+        "null_rate": 1.0
+       }
+      }
+     ],
+     "date_after": [
+      "hire_date"
+     ],
+     "nullable": true
+    },
+    "work_mode": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "hybrid",
+          "percentage": 48
+         },
+         {
+          "value": "office",
+          "percentage": 30
+         },
+         {
+          "value": "remote",
+          "percentage": 22
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "gender": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Female",
+          "percentage": 47
+         },
+         {
+          "value": "Male",
+          "percentage": 50
+         },
+         {
+          "value": "Non-binary",
+          "percentage": 3
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "job_level": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 1,
+          "percentage": 30
+         },
+         {
+          "value": 2,
+          "percentage": 27
+         },
+         {
+          "value": 3,
+          "percentage": 20
+         },
+         {
+          "value": 4,
+          "percentage": 12
+         },
+         {
+          "value": 5,
+          "percentage": 7
+         },
+         {
+          "value": 6,
+          "percentage": 3
+         },
+         {
+          "value": 7,
+          "percentage": 1
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "date_of_birth": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "sub_days({hire_date}, random_int(7700, 23300))"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "department_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "departments",
+      "column": "department_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "departments",
+        "target_column": "department_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.5
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "employment_status": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "active",
+          "percentage": 82
+         },
+         {
+          "value": "terminated",
+          "percentage": 15
+         },
+         {
+          "value": "on_leave",
+          "percentage": 3
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "employee_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 20000
+  },
+  "performance_reviews": {
+   "columns": {
+    "review_year": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "range",
+       "parameters": {
+        "distribution": [
+         {
+          "percentage": 100,
+          "min": 2016,
+          "max": 2026
+         }
+        ]
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "promotion_recommended": {
+     "data_type": "boolean",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{rating} == 5",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 60
+         },
+         {
+          "value": "false",
+          "percentage": 40
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{rating} == 4",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 25
+         },
+         {
+          "value": "false",
+          "percentage": 75
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "false",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "goals_met_pct": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{rating} == 1",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 20,
+          "max": 55,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{rating} == 2",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 45,
+          "max": 70,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{rating} == 3",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 65,
+          "max": 88,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{rating} == 4",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 82,
+          "max": 97,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 93,
+          "max": 100,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "review_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "employee_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "employees",
+      "column": "employee_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "employees",
+        "target_column": "employee_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.2
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "rating": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 1,
+          "percentage": 4
+         },
+         {
+          "value": 2,
+          "percentage": 14
+         },
+         {
+          "value": 3,
+          "percentage": 46
+         },
+         {
+          "value": 4,
+          "percentage": 28
+         },
+         {
+          "value": 5,
+          "percentage": 8
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "review_date": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2016-01-01",
+        "end_date": "2026-09-30",
+        "include_time": false
+       }
+      }
+     ],
+     "date_after": [
+      "employee_id.hire_date"
+     ],
+     "date_after_spread_days": 30
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 60000
+  },
+  "departments": {
+   "max_rows": 40,
+   "dataset_type": "tabular",
+   "columns": {
+    "location": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "parameters": {
+        "primitive_type": "city"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "department_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "division": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "parameters": {
+        "primitive_type": "word"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false
+    },
+    "department_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "parameters": {
+        "primitive_type": "word"
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    }
+   },
+   "total_rows": 40,
+   "fixed_rows": [
+    {
+     "department_id": 1,
+     "department_name": "Platform Engineering",
+     "division": "Technology",
+     "location": "Toronto"
+    },
+    {
+     "department_id": 2,
+     "department_name": "Data Science",
+     "division": "Technology",
+     "location": "New York"
+    },
+    {
+     "department_id": 3,
+     "department_name": "Mobile Engineering",
+     "division": "Technology",
+     "location": "Dublin"
+    },
+    {
+     "department_id": 4,
+     "department_name": "Web Engineering",
+     "division": "Technology",
+     "location": "Chicago"
+    },
+    {
+     "department_id": 5,
+     "department_name": "Infrastructure",
+     "division": "Technology",
+     "location": "London"
+    },
+    {
+     "department_id": 6,
+     "department_name": "Security Engineering",
+     "division": "Technology",
+     "location": "Bengaluru"
+    },
+    {
+     "department_id": 7,
+     "department_name": "Quality Assurance",
+     "division": "Technology",
+     "location": "Sydney"
+    },
+    {
+     "department_id": 8,
+     "department_name": "IT Support",
+     "division": "Technology",
+     "location": "Austin"
+    },
+    {
+     "department_id": 9,
+     "department_name": "Product Management",
+     "division": "Product",
+     "location": "Toronto"
+    },
+    {
+     "department_id": 10,
+     "department_name": "Product Design",
+     "division": "Product",
+     "location": "New York"
+    },
+    {
+     "department_id": 11,
+     "department_name": "User Research",
+     "division": "Product",
+     "location": "Dublin"
+    },
+    {
+     "department_id": 12,
+     "department_name": "Technical Writing",
+     "division": "Product",
+     "location": "Chicago"
+    },
+    {
+     "department_id": 13,
+     "department_name": "Enterprise Sales",
+     "division": "Sales",
+     "location": "London"
+    },
+    {
+     "department_id": 14,
+     "department_name": "Mid-Market Sales",
+     "division": "Sales",
+     "location": "Bengaluru"
+    },
+    {
+     "department_id": 15,
+     "department_name": "SMB Sales",
+     "division": "Sales",
+     "location": "Sydney"
+    },
+    {
+     "department_id": 16,
+     "department_name": "Sales Development",
+     "division": "Sales",
+     "location": "Austin"
+    },
+    {
+     "department_id": 17,
+     "department_name": "Sales Operations",
+     "division": "Sales",
+     "location": "Toronto"
+    },
+    {
+     "department_id": 18,
+     "department_name": "Partnerships",
+     "division": "Sales",
+     "location": "New York"
+    },
+    {
+     "department_id": 19,
+     "department_name": "Brand Marketing",
+     "division": "Marketing",
+     "location": "Dublin"
+    },
+    {
+     "department_id": 20,
+     "department_name": "Growth Marketing",
+     "division": "Marketing",
+     "location": "Chicago"
+    },
+    {
+     "department_id": 21,
+     "department_name": "Content",
+     "division": "Marketing",
+     "location": "London"
+    },
+    {
+     "department_id": 22,
+     "department_name": "Events",
+     "division": "Marketing",
+     "location": "Bengaluru"
+    },
+    {
+     "department_id": 23,
+     "department_name": "Product Marketing",
+     "division": "Marketing",
+     "location": "Sydney"
+    },
+    {
+     "department_id": 24,
+     "department_name": "Customer Support",
+     "division": "Operations",
+     "location": "Austin"
+    },
+    {
+     "department_id": 25,
+     "department_name": "Customer Success",
+     "division": "Operations",
+     "location": "Toronto"
+    },
+    {
+     "department_id": 26,
+     "department_name": "Professional Services",
+     "division": "Operations",
+     "location": "New York"
+    },
+    {
+     "department_id": 27,
+     "department_name": "Logistics",
+     "division": "Operations",
+     "location": "Dublin"
+    },
+    {
+     "department_id": 28,
+     "department_name": "Procurement",
+     "division": "Operations",
+     "location": "Chicago"
+    },
+    {
+     "department_id": 29,
+     "department_name": "Facilities",
+     "division": "Operations",
+     "location": "London"
+    },
+    {
+     "department_id": 30,
+     "department_name": "Accounting",
+     "division": "Finance",
+     "location": "Bengaluru"
+    },
+    {
+     "department_id": 31,
+     "department_name": "Payroll",
+     "division": "Finance",
+     "location": "Sydney"
+    },
+    {
+     "department_id": 32,
+     "department_name": "Financial Planning",
+     "division": "Finance",
+     "location": "Austin"
+    },
+    {
+     "department_id": 33,
+     "department_name": "Tax",
+     "division": "Finance",
+     "location": "Toronto"
+    },
+    {
+     "department_id": 34,
+     "department_name": "Internal Audit",
+     "division": "Finance",
+     "location": "New York"
+    },
+    {
+     "department_id": 35,
+     "department_name": "Talent Acquisition",
+     "division": "People",
+     "location": "Dublin"
+    },
+    {
+     "department_id": 36,
+     "department_name": "People Operations",
+     "division": "People",
+     "location": "Chicago"
+    },
+    {
+     "department_id": 37,
+     "department_name": "Learning & Development",
+     "division": "People",
+     "location": "London"
+    },
+    {
+     "department_id": 38,
+     "department_name": "Compensation & Benefits",
+     "division": "People",
+     "location": "Bengaluru"
+    },
+    {
+     "department_id": 39,
+     "department_name": "Legal",
+     "division": "Legal",
+     "location": "Sydney"
+    },
+    {
+     "department_id": 40,
+     "department_name": "Compliance",
+     "division": "Legal",
+     "location": "Austin"
+    }
+   ]
+  },
+  "absences": {
+   "columns": {
+    "start_date": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2015-01-01",
+        "end_date": "2026-09-15",
+        "include_time": false
+       }
+      }
+     ],
+     "date_after": [
+      "employee_id.hire_date"
+     ],
+     "nullable": false,
+     "date_after_spread_days": 30
+    },
+    "end_date": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "add_days({start_date}, {days} - 1)"
+       }
+      }
+     ],
+     "date_after": [
+      "employee_id.hire_date",
+      "start_date"
+     ],
+     "nullable": false
+    },
+    "absence_type": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "vacation",
+          "percentage": 58
+         },
+         {
+          "value": "sick",
+          "percentage": 27
+         },
+         {
+          "value": "training",
+          "percentage": 8
+         },
+         {
+          "value": "parental",
+          "percentage": 4
+         },
+         {
+          "value": "unpaid",
+          "percentage": 3
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "absence_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "employee_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "employees",
+      "column": "employee_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "employees",
+        "target_column": "employee_id",
+        "fk_distribution": "skewed",
+        "fk_skew": 0.6
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "days": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{absence_type} == 'vacation'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 1,
+          "max": 10,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{absence_type} == 'sick'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 1,
+          "max": 5,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{absence_type} == 'training'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 1,
+          "max": 3,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{absence_type} == 'parental'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 30,
+          "max": 120,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 1,
+          "max": 20,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 21760
+  },
+  "attrition_events": {
+   "columns": {
+    "voluntary": {
+     "data_type": "boolean",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{reason} in ('performance', 'redundancy')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "false",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "attrition_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "employee_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "employees",
+      "column": "employee_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "@anchor.employee_id"
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "reason": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "better_offer",
+          "percentage": 34
+         },
+         {
+          "value": "career_change",
+          "percentage": 16
+         },
+         {
+          "value": "relocation",
+          "percentage": 12
+         },
+         {
+          "value": "personal",
+          "percentage": 12
+         },
+         {
+          "value": "performance",
+          "percentage": 12
+         },
+         {
+          "value": "redundancy",
+          "percentage": 9
+         },
+         {
+          "value": "retirement",
+          "percentage": 5
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "exit_interview_score": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "range",
+        "base_parameters": {
+         "distribution": [
+          {
+           "min": 1,
+           "max": 10,
+           "percentage": 100
+          }
+         ]
+        },
+        "null_rate": 0.2
+       }
+      }
+     ],
+     "nullable": true
+    },
+    "left_on": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "@anchor.termination_date"
+       }
+      }
+     ],
+     "date_after": [
+      "employee_id.hire_date",
+      "@anchor.hire_date"
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 3200,
+   "anchor": {
+    "table": "employees",
+    "unique": true,
+    "where": "{employment_status} == 'terminated'"
+   }
+  },
+  "salaries": {
+   "columns": {
+    "base_salary": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{employee_id.job_level} == 1",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 38000,
+          "max": 58000,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{employee_id.job_level} == 2",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 52000,
+          "max": 78000,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{employee_id.job_level} == 3",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 70000,
+          "max": 105000,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{employee_id.job_level} == 4",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 95000,
+          "max": 140000,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{employee_id.job_level} == 5",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 130000,
+          "max": 190000,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{employee_id.job_level} == 6",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 175000,
+          "max": 260000,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 240000,
+          "max": 420000,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "salary_id": {
+     "data_type": "integer",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "parameters": {
+        "step": 1,
+        "start": 1,
+        "prefix": "",
+        "padding": 0
+       },
+       "if": "DEFAULT"
+      }
+     ],
+     "nullable": false,
+     "unique": true
+    },
+    "bonus_pct": {
+     "data_type": "float",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{employee_id.job_level} <= 3",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0,
+          "max": 10,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 10,
+          "max": 40,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "effective_from": {
+     "data_type": "date",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2015-01-01",
+        "end_date": "2026-09-30",
+        "include_time": false
+       }
+      }
+     ],
+     "date_after": [
+      "employee_id.hire_date"
+     ],
+     "nullable": false,
+     "date_after_spread_days": 30
+    },
+    "employee_id": {
+     "data_type": "integer",
+     "references": {
+      "table": "employees",
+      "column": "employee_id"
+     },
+     "_fk_source": "inline",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "employees",
+        "target_column": "employee_id",
+        "fk_distribution": "at_least_one",
+        "fk_skew": 0.2
+       }
+      }
+     ],
+     "nullable": false
+    },
+    "currency": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "USD",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": false
+    }
+   },
+   "dataset_type": "tabular",
+   "total_rows": 45000
+  }
+ },
+ "dataset_name": "Synthetic HR, Workforce and Attrition"
+}

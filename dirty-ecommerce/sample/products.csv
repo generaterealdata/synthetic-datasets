@@ -1,0 +1,534 @@
+product_id,product_name,category,unit_price,stock_qty
+9,Wireless Pruning Shears,Garden,72.62,474
+14,Everyday Pruning Shears,Garden,22.9,457
+17,Travel Table Lamp,Home,110.43,494
+20,Travel Chef Knife,Kitchen,5.09,118
+28,Premium Cutting Board,Kitchen,44.46,60
+31,Compact Throw Blanket,Home,121.22,227
+35,Pro Cookbook,Books,11.37,478
+36,Wireless Door Mat,Home,30.15,388
+38,Premium Coffee Grinder,Kitchen,209.71,274
+39,Classic Colouring Book,Books,13.65,434
+48,Essential Foam Roller,Sports,6.33,40
+50,Deluxe Table Lamp,Home,12.32,318
+56,Eco Wireless Earbuds,Electronics,53.46,193
+58,Everyday Makeup Brush Set,Beauty,62.49,305
+60,Travel Power Bank,Electronics,105.21,413
+62,Wireless Smart Plug,Electronics,113.89,302
+65,Classic Door Mat,Home,21.29,179
+69,Wireless Nail Kit,Beauty,24.63,284
+70,Deluxe Smart Plug,Electronics,22.13,95
+74,Essential Puzzle Set,Toys,196.74,81
+79,Travel Cutting Board,Kitchen,119.86,441
+80,Pro Cutting Board,Kitchen,36.67,132
+85,Travel Door Mat,Home,43.5,221
+87,Premium Smart Plug,Electronics,29.83,127
+98,Travel Power Bank,Electronics,24.6,63
+104,Deluxe Water Bottle,Sports,31.85,476
+105,Premium Cookbook,Books,148.52,379
+106,Compact Art Kit,Toys,276.24,331
+107,Wireless Jump Rope,Sports,13.16,274
+116,Pro Kettle,Kitchen,37.39,42
+118,Travel Colouring Book,Books,12.79,116
+146,Classic Throw Blanket,Home,23.66,335
+149,Essential Smart Plug,Electronics,123.7,15
+152,Compact Wall Clock,Home,44.06,299
+158,Eco Webcam,Electronics,25.24,492
+159,Essential Jump Rope,Sports,127.81,470
+175,Travel Gym Bag,Sports,145.57,219
+177,Deluxe Colouring Book,Books,14.35,16
+195,Wireless Art Kit,Toys,99.32,260
+204,Compact Puzzle Book,Books,10.21,476
+208,Everyday Body Lotion,Beauty,10.61,0
+209,Deluxe Art Kit,Toys,48.19,166
+212,Wireless Seed Starter Kit,Garden,34.62,190
+213,Wireless Jump Rope,Sports,17.24,200
+215,Everyday Makeup Brush Set,Beauty,272.58,95
+222,Everyday Face Serum,Beauty,267.49,124
+225,Classic Cutting Board,Kitchen,31.16,145
+227,Everyday Board Game,Toys,12.16,122
+229,Deluxe Nonstick Pan,Kitchen,50.85,141
+236,Travel Hair Dryer,Beauty,16.31,54
+241,Travel Hand Trowel,Garden,105.8,412
+248,Essential Cutting Board,Kitchen,35.67,301
+255,Essential Nonstick Pan,Kitchen,34.29,363
+257,Classic Board Game,Toys,181.51,128
+263,Travel Nonstick Pan,Kitchen,108.72,450
+268,Everyday Body Lotion,Beauty,14.96,118
+269,Pro Storage Basket,Home,207.12,108
+275,Eco Kettle,Kitchen,11.09,180
+278,Eco Cookbook,Books,22.56,290
+279,Wireless Cutting Board,Kitchen,187.91,239
+282,Compact Travel Guide,Books,41.55,482
+284,Classic Table Lamp,Home,12.16,7
+291,Everyday Notebook Set,Books,134.9,53
+297,Travel Notebook Set,Books,35.17,141
+300,Eco Hair Dryer,Beauty,11.84,309
+306,Eco Water Bottle,Sports,22.4,486
+309,Everyday Puzzle Book,Books,34.04,51
+310,Classic Kettle,Kitchen,32.93,207
+312,Everyday Art Kit,Toys,14.22,180
+316,Eco Cookbook,Books,48.89,476
+317,Pro Water Bottle,Sports,70.61,279
+323,Everyday Nonstick Pan,Kitchen,42.51,424
+329,Essential Planter Pot,Garden,156.24,369
+334,Deluxe Coffee Grinder,Kitchen,28.72,439
+335,Classic Makeup Brush Set,Beauty,40.08,89
+336,Premium Chef Knife,Kitchen,4.85,93
+338,Wireless Plush Bear,Toys,222.89,236
+343,Pro Jump Rope,Sports,272.84,155
+347,Compact Water Bottle,Sports,47.83,36
+352,Everyday Face Serum,Beauty,12.3,32
+353,ERROR,Beauty,16.63,161
+356,Essential Makeup Brush Set,Beauty,-28.48,73
+358,Wireless Art Kit,Toys,22.83,92
+362,Wireless Board Game,Toys,45.27,97
+368,Wireless Pruning Shears,Garden,21.56,392
+370,Everyday Remote Car,Toys,133.42,348
+371,Pro Nail Kit,Beauty,26.2,309
+375,Essential Puzzle Book,Books,518.97,377
+376,Eco Colouring Book,Books,93.55,466
+385,Deluxe Seed Starter Kit,Garden,44.77,462
+388,Premium Power Bank,Electronics,150.94,80
+391,Pro Lip Balm Trio,Beauty,22.04,396
+395,Everyday Gym Bag,Sports,44.23,70
+397,Travel Coffee Grinder,Kitchen,48.94,194
+401,Classic Body Lotion,Beauty,30.44,499
+403,Premium Colouring Book,Books,31.82,156
+404,Wireless Building Blocks,Toys,122.57,395
+406,Deluxe Foam Roller,Sports,60.71,112
+410,,Beauty,28.47,206
+411,Premium Storage Basket,Home,73.67,179
+414,Classic Garden Hose,Garden,11.92,339
+420,Travel USB-C Charger,Electronics,47.34,374
+421,Everyday Water Bottle,Sports,491.62,29
+422,Eco Webcam,Electronics,26.53,353
+425,Travel Smart Plug,Electronics,16.76,475
+426,Pro Pruning Shears,Garden,6.13,333
+428,Essential Storage Basket,Home,365.3,352
+431,Eco Throw Blanket,Home,40.66,248
+434,Essential Plush Bear,Toys,281.75,65
+448,Eco Wireless Earbuds,Electronics,37.03,21
+451,Travel Webcam,Electronics,46.25,167
+456,Eco Building Blocks,Toys,199.67,210
+458,Premium Planner,Kitchen,122.6,122
+462,Premium Planner,Books,48.24,494
+465,Eco Makeup Brush Set,Beauty,80.59,170
+467,Eco Planter Pot,Garden,135.58,467
+469,Everyday Nail Kit,Beauty,10.65,365
+471,Compact Art Kit,Toys,27.94,112
+479,Travel Water Bottle,Sports,15.44,379
+483,Travel Smart Plug,Electronics,4.3,158
+485,Premium Face Serum,Beauty,12.18,71
+495,Pro Picture Frame,Home,95.23,321
+496,Premium Throw Blanket,Home,21.3,432
+500,Everyday Puzzle Book,Books,174.06,164
+502,Everyday Seed Starter Kit,Garden,106.01,325
+503,Classic Body Lotion,Beauty,19.36,35
+504,Pro Mixing Bowl Set,Kitchen,44.93,77
+505,Classic Smart Plug,Electronics,24.24,407
+507,Essential Pruning Shears,Garden,38.58,185
+515,Eco Watering Can,Garden,30.89,264
+517,Everyday Puzzle Book,Books,49.56,342
+518,Eco Webcam,Electronics,142.9,301
+533,Everyday Storage Basket,Home,24.81,241
+534,Compact Art Kit,Toys,47.67,100
+536,Premium Travel Guide,Books,25.87,340
+537,Travel Remote Car,Toys,189.52,230
+538,Essential Pruning Shears,Garden,42.03,154
+540,Deluxe Foam Roller,Sports,60.5,194
+544,Deluxe Webcam,Electronics,20.69,27
+546,Essential Nail Kit,Beauty,262.32,357
+547,Pro Gym Bag,Sports,225.77,352
+551,Deluxe Puzzle Set,Toys,100.94,258
+557,Essential Remote Car,Toys,11.65,314
+560,Eco Chef Knife,Kitchen,4.7,72
+561,Pro Nonstick Pan,Kitchen,4.62,396
+565,Premium Seed Starter Kit,Garden,35.43,291
+568,Compact Power Bank,Electronics,10.75,176
+571,Deluxe Art Kit,Toys,4.1,281
+577,Pro Picture Frame,Home,21.19,286
+580,Wireless Notebook Set,Books,19.98,38
+582,Classic Hair Dryer,Beauty,34.91,201
+586,Wireless Coffee Grinder,Kitchen,51.18,325
+592,Travel Wall Clock,Home,39.13,150
+593,Classic Webcam,Electronics,164.67,2360
+594,Eco Water Bottle,Sports,41.01,172
+595,Deluxe Travel Guide,Books,13.37,439
+596,Classic Body Lotion,Beauty,66.21,351
+597,Travel Resistance Bands,,54.3,123
+599,Travel Notebook Set,Books,63.86,305
+602,Pro Colouring Book,Books,11.74,261
+606,Everyday Watering Can,Garden,121.41,335
+608,Everyday Colouring Book,Books,92.06,441
+615,Premium Smart Plug,Electronics,24.35,50
+617,Classic Seed Starter Kit,Garden,251.5,249
+622,Deluxe Board Game,Toys,16.14,124
+625,Compact Hair Dryer,Beauty,32.43,108
+626,Travel Bluetooth Speaker,Beauty,536.05,111
+627,Premium Puzzle Set,Toys,23.01,138
+628,Deluxe Board Game,Toys,7.03,40
+633,Everyday Yoga Mat,Sports,19.19,420
+634,Everyday Face Serum,Beauty,14.93,234
+635,Wireless Kettle,Kitchen,21.48,124
+639,Compact Puzzle Book,Books,373.7,14
+641,Essential Board Game,Toys,12.53,475
+642,Travel Storage Basket,Home,278.66,125
+654,Classic Puzzle Book,Books,7.6,138
+657,Pro Seed Starter Kit,Garden,102.6,242
+670,Premium Gym Bag,Sports,7.2,293
+671,Compact Wireless Earbuds,Electronics,88.52,227
+682,Wireless Throw Blanket,Home,11.39,175
+687,Travel USB-C Charger,Electronics,31.38,109
+698,Travel Yoga Mat,Sports,430.4,316
+700,Classic USB-C Charger,Electronics,268.84,352
+703,Compact Remote Car,Toys,19.09,463
+705,Classic Building Blocks,Toys,116.33,497
+706,Essential Wireless Earbuds,Electronics,145.69,362
+707,Wireless Power Bank,Electronics,58.16,77
+708,Eco Chef Knife,Kitchen,239.72,57
+713,Eco Remote Car,Toys,48.21,351
+719,Classic Bluetooth Speaker,Electronics,5.69,277
+721,Compact Table Lamp,Home,18.6,84
+728,Compact Cutting Board,Kitchen,4.41,283
+729,Pro Table Lamp,Home,12.67,361
+731,Classic Building Blocks,Toys,275.8,358
+733,Essential Kettle,Kitchen,29.18,459
+739,Deluxe Table Lamp,Home,20.01,71
+742,Essential USB-C Charger,Electronics,191.59,195
+747,Compact Notebook Set,Books,118.73,439
+748,,Kitchen,41.71,25
+751,Essential Kettle,Kitchen,37.32,372
+755,Classic Gym Bag,Sports,147.55,333
+757,Pro Travel Guide,Books,18.58,120
+761,Pro Cutting Board,Kitchen,66.57,473
+765,Pro Hair Dryer,Beauty,109.43,285
+766,Eco Water Bottle,Sports,40.31,404
+772,Premium Seed Starter Kit,Garden,21.38,433
+773,Classic Seed Starter Kit,Garden,114.25,283
+775,Essential Throw Blanket,Home,46.71,26
+779,Pro Lip Balm Trio,Beauty,103.73,196
+780,Essential Puzzle Set,Toys,36.48,2590
+785,Wireless Seed Starter Kit,Garden,45,309
+792,Premium Face Serum,Beauty,14.08,156
+793,Essential Puzzle Set,Toys,9.58,79
+797,Everyday USB-C Charger,Electronics,10.84,325
+799,Wireless Planter Pot,Garden,111.39,101
+801,Classic Cookbook,Books,120.85,487
+805,Wireless Colouring Book,Books,531.67,337
+806,Premium Remote Car,Toys,41.31,415
+811,Travel Watering Can,Garden,87.99,476
+816,Premium Pruning Shears,Garden,36.38,450
+821,Pro Throw Blanket,Home,109.21,42
+822,Premium Power Bank,Electronics,74.85,93
+823,Travel Kettle,Kitchen,28.44,374
+824,Eco Foam Roller,Sports,6.62,422
+830,Pro Garden Hose,Garden,30.35,288
+835,Classic Nail Kit,Beauty,32.86,11
+836,Essential Face Serum,Beauty,43.28,457
+837,Classic Storage Basket,Home,48.85,183
+839,Classic Throw Blanket,Home,35.18,71
+843,Everyday Throw Blanket,Home,76.42,277
+854,Essential Colouring Book,Books,47.23,498
+860,Pro Notebook Set,Kitchen,37.6,281
+863,Pro Hand Trowel,Garden,26.57,324
+865,Essential Puzzle Book,Books,15.33,476
+868,Premium Wireless Earbuds,Electronics,40.33,163
+869,Travel Body Lotion,Beauty,594.5,270
+876,Eco Storage Basket,Home,47.87,434
+878,Pro Lip Balm Trio,Beauty,84.45,104
+881,Wireless Nail Kit,Beauty,52.58,0
+886,Travel Notebook Set,Books,38.26,33
+891,Wireless Picture Frame,Home,29.89,490
+912,Premium Coffee Grinder,Kitchen,41.01,198
+913,Deluxe Nonstick Pan,Kitchen,6.91,183
+916,Essential Nail Kit,Beauty,16.85,301
+920,Deluxe Board Game,Toys,4.4,31
+922,Pro Watering Can,Garden,32.25,104
+927,Pro Door Mat,Home,141.92,378
+928,Classic Face Serum,Beauty,41.39,472
+930,Wireless Plush Bear,Toys,149.81,95
+936,Compact USB-C Charger,Electronics,46.52,417
+939,Travel Puzzle Set,Toys,45.4,414
+943,Compact Wall Clock,Home,90.09,392
+949,Deluxe Hair Dryer,Beauty,93.92,198
+951,Essential Pruning Shears,Garden,117.97,311
+954,Deluxe Kettle,Kitchen,38.92,404
+957,Deluxe Jump Rope,Sports,33.46,487
+959,Everyday Kettle,Kitchen,35.64,325
+967,Essential Nonstick Pan,Kitchen,37.46,449
+968,Deluxe Plush Bear,Toys,484.78,332
+972,Classic Puzzle Set,Toys,286.92,158
+975,Wireless Board Game,Toys,9.4,90
+976,N/A,Beauty,80.73,334
+992,Classic Building Blocks,Toys,5.35,418
+997,Wireless Hair Dryer,Beauty,42.91,71
+998,Deluxe Picture Frame,Home,25.74,245
+999,Travel Mixing Bowl Set,Kitchen,123.1,127
+1002,Compact Jump Rope,Sports,6.58,255
+1006,Travel Cookbook,Books,40.03,57
+1008,Pro Door Mat,Home,16.3,128
+1014,Premium Planter Pot,Garden,20.11,306
+1015,Essential Table Lamp,Home,177.88,366
+1027,Eco Wireless Earbuds,Electronics,330.09,499
+1028,Premium Seed Starter Kit,Garden,49.24,373
+1035,Travel Power Bank,Electronics,221.13,28
+1038,Travel Bluetooth Speaker,Electronics,125.65,467
+1039,Wireless Water Bottle,Sports,52.84,90
+1041,Travel Yoga Mat,Sports,25.24,238
+1042,Wireless Colouring Book,Books,39.3,179
+1048,Essential Building Blocks,Toys,175.14,193
+1052,Compact Hand Trowel,Garden,316.65,303
+1053,Compact Remote Car,Toys,17.29,220
+1063,Premium Art Kit,Toys,546.98,253
+1064,Eco Makeup Brush Set,Beauty,138.18,417
+1067,Travel Cookbook,Books,11.03,349
+1076,Compact USB-C Charger,Electronics,126.77,329
+1079,Essential Makeup Brush Set,Beauty,27.81,421
+1080,Premium Watering Can,Garden,236.66,82
+1081,Compact Cookbook,Books,44.89,29
+1082,Wireless Watering Can,Garden,42.79,208
+1083,Essential Cookbook,Books,17.82,93
+1090,Premium Hand Trowel,N/A,132.6,135
+1092,Deluxe Hair Dryer,Beauty,23.69,314
+1094,Deluxe Body Lotion,Beauty,22.24,133
+1095,Eco Pruning Shears,Garden,41.19,167
+1103,Eco Yoga Mat,Sports,19.16,185
+1104,Essential Smart Plug,Electronics,85.21,257
+1107,Everyday Jump Rope,Sports,40.65,499
+1109,Pro Garden Hose,Garden,17.23,273
+1111,Premium Art Kit,Toys,19.03,408
+1112,Premium Picture Frame,Home,352.46,364
+1121,Pro Smart Plug,Electronics,130.76,497
+1122,Premium Remote Car,Toys,20.75,154
+1129,Classic Table Lamp,Home,91.07,188
+1130,Pro Smart Plug,Electronics,202.16,141
+1132,Classic Watering Can,Garden,22.79,217
+1134,Everyday Picture Frame,Home,268.7,93
+1137,Classic Yoga Mat,Sports,108.93,479
+1138,Premium Puzzle Book,Books,20.76,110
+1139,Classic Remote Car,Toys,127.1,184
+1140,Classic Gym Bag,Sports,103.83,493
+1147,Essential Garden Hose,Garden,40.22,268
+1151,Wireless Cookbook,Books,15.82,462
+1152,Essential Throw Blanket,Home,40.8,99
+1157,Deluxe Chef Knife,Kitchen,18.55,413
+1158,Travel Body Lotion,Beauty,51.66,94
+1159,Classic Yoga Mat,Sports,8.95,240
+1164,Deluxe Watering Can,Garden,26.25,346
+1167,Eco Coffee Grinder,Kitchen,88.06,297
+1170,Essential Table Lamp,Home,587.08,143
+1171,Compact Kettle,Kitchen,31.36,344
+1175,Everyday Pruning Shears,Garden,26.22,82
+1178,Wireless USB-C Charger,Electronics,69.87,414
+1179,Compact Nail Kit,Beauty,43.06,84
+1184,N/A,Electronics,20.3,235
+1190,Travel Storage Basket,Home,213.79,66
+1198,Wireless Door Mat,Home,93.53,456
+1201,Premium Puzzle Book,Books,18.92,300
+1205,Essential Colouring Book,Books,38.63,361
+1212,Premium Pruning Shears,Garden,4.71,334
+1215,Deluxe Resistance Bands,Sports,543.3,23
+1217,Classic Makeup Brush Set,Beauty,110.78,408
+1219,Pro Door Mat,Home,7.72,132
+1226,Compact Planter Pot,Garden,23.03,186
+1228,Essential Table Lamp,Home,162.77,433
+1241,Premium Chef Knife,Kitchen,38.35,359
+1243,Eco Power Bank,Electronics,93.72,194
+1248,Deluxe Art Kit,Toys,9.68,458
+1250,Essential Coffee Grinder,Kitchen,15.7,394
+1255,Wireless Webcam,Electronics,88.29,390
+1258,Travel Planner,Books,22.44,464
+1260,Premium Art Kit,ERROR,37.21,71
+1264,Compact Cookbook,Books,36.52,315
+1267,Deluxe Garden Hose,Garden,24.72,112
+1270,Everyday Lip Balm Trio,Beauty,6.48,169
+1281,Travel Hair Dryer,Beauty,105.43,40
+1283,Travel Puzzle Book,Books,24.15,45
+1286,Travel Cutting Board,Kitchen,44.23,387
+1291,Compact Board Game,Toys,35.11,232
+1298,Premium Lip Balm Trio,Beauty,59.72,318
+1299,Eco Wall Clock,Home,130.87,170
+1302,Compact Storage Basket,Home,19.08,390
+1305,Pro Resistance Bands,Sports,118.77,300
+1308,Travel Hand Trowel,Garden,6.78,103
+1311,Eco Cutting Board,Kitchen,123.24,24
+1316,Travel Mixing Bowl Set,Kitchen,4.27,134
+1320,Deluxe Kettle,Kitchen,25.84,185
+1322,Wireless Wireless Earbuds,N/A,29.22,313
+1327,Premium Building Blocks,Toys,349.8,189
+1329,Pro Travel Guide,Books,25.14,391
+1333,Pro Power Bank,Electronics,41.21,31
+1334,Essential Colouring Book,Books,366.48,148
+1335,Eco Webcam,Electronics,165.63,194
+1337,Premium Pruning Shears,Garden,27.09,377
+1338,Everyday Puzzle Set,Toys,30.65,41
+1340,Eco Door Mat,Home,12.65,180
+1341,Eco Makeup Brush Set,Beauty,263.25,18
+1347,Wireless Smart Plug,Electronics,112.21,375
+1349,Classic Board Game,Toys,45.61,17
+1353,Deluxe Foam Roller,Sports,-68.45,379
+1362,Essential Bluetooth Speaker,Electronics,40.33,308
+1363,Pro Colouring Book,Books,30.87,410
+1367,Pro Watering Can,Garden,92.6,438
+1377,Premium Nail Kit,Beauty,15.63,321
+1379,Travel Notebook Set,Books,13.68,357
+1386,Compact Face Serum,Beauty,11.23,427
+1387,Compact Board Game,Toys,25.75,171
+1388,Classic Notebook Set,Books,24.64,150
+1390,Premium Wall Clock,Home,328.61,33
+1391,Compact Table Lamp,Home,32.54,476
+1392,Compact Lip Balm Trio,Beauty,146.56,436
+1394,Compact Seed Starter Kit,Garden,22.3,113
+1398,Classic Coffee Grinder,Kitchen,39.01,145
+1401,Essential Nail Kit,Beauty,36.55,21
+1408,Everyday Foam Roller,Sports,22.65,175
+1414,Classic Kettle,Kitchen,137.93,451
+1416,Essential Bluetooth Speaker,Electronics,35.68,358
+1424,Wireless Travel Guide,Books,24.02,258
+1433,Pro Chef Knife,Kitchen,195.96,401
+1434,Pro Pruning Shears,Garden,55.58,360
+1436,ERROR,Electronics,18.11,359
+1439,Deluxe Cutting Board,Kitchen,19,399
+1443,Premium Planner,Books,36.31,386
+1449,Essential Puzzle Book,Books,46.47,194
+1464,Deluxe Watering Can,Garden,25.85,163
+1467,Eco Water Bottle,Sports,27,160
+1470,Essential Nonstick Pan,Kitchen,32.09,40
+1484,Classic Lip Balm Trio,Beauty,26.39,490
+1486,Essential Notebook Set,Books,11.92,464
+1488,Everyday Gym Bag,Sports,65.2,364
+1489,Wireless Chef Knife,Kitchen,26.31,234
+1491,Essential Puzzle Set,Toys,20.14,318
+1506,Premium Pruning Shears,Garden,42.68,238
+1508,Travel Pruning Shears,Garden,13.06,467
+1514,Classic Pruning Shears,Garden,98.84,114
+1520,Essential Wall Clock,Home,45.19,186
+1524,Deluxe Cookbook,Books,130.95,280
+1530,Pro Table Lamp,Home,27.92,63
+1535,Eco USB-C Charger,Electronics,284.94,118
+1540,Wireless Body Lotion,Beauty,114.9,442
+1549,Travel Cutting Board,Kitchen,33.93,277
+1553,Wireless Puzzle Book,Books,129.85,-27
+1556,Everyday Lip Balm Trio,Beauty,12.83,500
+1559,Eco Board Game,Toys,16.71,12
+1560,Eco Board Game,Toys,269.41,387
+1564,Wireless Resistance Bands,Sports,130.88,23
+1571,Compact Table Lamp,Home,17.03,410
+1573,Compact Picture Frame,Home,43.68,438
+1574,Wireless Wireless Earbuds,Electronics,182.63,275
+1577,Classic Puzzle Set,Toys,279.43,185
+1588,Premium Webcam,Electronics,10.45,318
+1593,Eco Nail Kit,Beauty,218.74,183
+1594,Wireless Planner,Books,75.22,244
+1599,Compact Travel Guide,Books,136.52,325
+1612,Wireless Mixing Bowl Set,Kitchen,198.02,143
+1614,Pro Picture Frame,Home,21.32,119
+1615,Travel Building Blocks,Toys,46.16,498
+1617,Deluxe Puzzle Set,Toys,28.63,189
+1622,Wireless Travel Guide,Books,77.57,213
+1630,Everyday Travel Guide,Books,493.54,360
+1633,Compact Cutting Board,Kitchen,1587.1,112
+1640,Premium Gym Bag,Sports,32.76,141
+1644,Essential Hand Trowel,Garden,61.56,97
+1647,Eco Wireless Earbuds,Electronics,35.9,458
+1656,Eco Planner,Books,69.92,112
+1658,Deluxe Table Lamp,Home,566.01,412
+1659,Pro Nail Kit,Beauty,72.79,73
+1661,Everyday Garden Hose,Garden,49.39,365
+1663,Everyday Water Bottle,Sports,205.35,176
+1668,Essential Watering Can,Garden,28.79,461
+1675,Pro Storage Basket,Home,15.11,310
+1683,Premium Table Lamp,Home,22.28,90
+1688,Classic Smart Plug,Electronics,335.42,143
+1697,Wireless Power Bank,Electronics,39.96,308
+1714,Classic Water Bottle,Sports,8.82,277
+1719,Wireless Chef Knife,Kitchen,29.31,129
+1720,Essential Jump Rope,Sports,71.34,51
+1724,Travel Water Bottle,Sports,13.18,200
+1729,Essential Makeup Brush Set,Beauty,148.1,146
+1732,Deluxe Storage Basket,Home,46.57,164
+1733,Essential Coffee Grinder,Kitchen,54.73,23
+1741,Compact Cutting Board,Kitchen,10.73,205
+1745,Wireless Coffee Grinder,Kitchen,8.59,0
+1747,Everyday Face Serum,Beauty,28.44,340
+1749,Deluxe Mixing Bowl Set,Kitchen,128.45,315
+1750,Eco Bluetooth Speaker,Electronics,32.5,435
+1756,Everyday Storage Basket,Home,56.17,400
+1759,Travel Door Mat,Home,265.96,53
+1761,Deluxe Door Mat,Home,55.04,360
+1764,Deluxe Art Kit,Toys,7.65,446
+1766,Wireless USB-C Charger,Electronics,76.26,138
+1769,Deluxe Art Kit,Toys,120.38,16
+1770,Everyday Throw Blanket,Home,44.34,99
+1775,Pro Bluetooth Speaker,Electronics,-147.95,334
+1781,Essential Mixing Bowl Set,Kitchen,111.62,266
+1789,Wireless Face Serum,Beauty,8.48,111
+1791,Premium Hair Dryer,Beauty,20.17,336
+1794,Eco Webcam,Electronics,98.01,6
+1799,Eco Wall Clock,Home,15.75,105
+1803,Travel Cutting Board,Kitchen,49.7,394
+1807,Premium Body Lotion,Beauty,8.9,15
+1809,Compact Nonstick Pan,Kitchen,27.41,187
+1815,Pro USB-C Charger,Electronics,23.34,332
+1816,Premium Smart Plug,Electronics,31.76,264
+1818,Everyday Seed Starter Kit,Garden,43.24,180
+1824,Essential Travel Guide,Books,18.36,151
+1825,Pro Power Bank,Electronics,43.78,309
+1828,Eco Nonstick Pan,Kitchen,24.06,308
+1830,Travel Art Kit,Toys,44.5,290
+1831,Eco Cutting Board,Kitchen,43.43,221
+1832,Eco Picture Frame,Home,599.47,3
+1834,Deluxe Nonstick Pan,Kitchen,84.26,76
+1845,Eco Notebook Set,Books,162.84,120
+1847,Everyday Coffee Grinder,Kitchen,226.27,261
+1850,Premium Colouring Book,Books,95.5,457
+1851,Essential Cutting Board,Kitchen,131.03,202
+1855,Premium Table Lamp,Home,86.78,271
+1859,Travel Resistance Bands,Sports,214.97,142
+1861,Everyday Body Lotion,Beauty,37.58,446
+1866,Classic Webcam,Electronics,229.84,141
+1874,Deluxe Planner,Books,285.83,396
+1876,Deluxe Body Lotion,Beauty,13.48,115
+1877,Deluxe Table Lamp,Home,144.95,29
+1884,ERROR,Kitchen,28.55,47
+1887,Wireless Plush Bear,Toys,20.08,251
+1892,Compact Makeup Brush Set,Beauty,40.47,315
+1894,Essential Cutting Board,Kitchen,8.99,348
+1896,Compact Nonstick Pan,Kitchen,252.37,26
+1899,Wireless Planner,Books,16.42,38
+1900,Travel Wireless Earbuds,Electronics,44.49,373
+1902,Travel Throw Blanket,Home,82.21,149
+1903,Pro Wall Clock,Home,94.97,375
+1904,Wireless Resistance Bands,Sports,8.6,8
+1906,Deluxe Gym Bag,Sports,44.24,326
+1909,Classic Power Bank,Electronics,55.72,117
+1910,Everyday Cutting Board,Kitchen,5.77,154
+1913,Travel Bluetooth Speaker,Electronics,49.2,313
+1917,Compact Smart Plug,Electronics,36,173
+1919,Everyday Remote Car,Toys,17.07,331
+1928,Travel Wireless Earbuds,Electronics,4.17,74
+1932,Wireless Bluetooth Speaker,Electronics,15.96,3
+1934,Pro Wall Clock,Home,21.24,459
+1939,Essential Table Lamp,Home,40.32,185
+1941,Premium Bluetooth Speaker,Electronics,16.23,439
+1944,Eco Watering Can,Garden,7.58,412
+1945,Pro Throw Blanket,Home,21.67,14
+1949,Travel Wall Clock,Home,56.65,431
+1950,Essential Kettle,Kitchen,114.18,482
+1952,Pro Coffee Grinder,Kitchen,38.2,63
+1957,Eco Watering Can,Garden,25.44,407
+1959,Essential Door Mat,Home,472.34,177
+1962,Classic Nonstick Pan,Kitchen,31.75,57
+1969,Essential Hair Dryer,Beauty,427.32,96
+1970,Premium Colouring Book,Books,139.25,491
+1972,Essential Plush Bear,Toys,47.46,140
+1976,Travel Chef Knife,Kitchen,45.14,77
+1978,Travel Mixing Bowl Set,Kitchen,9.66,314
+1979,Travel Resistance Bands,Sports,9.4,346
+1985,Deluxe Hair Dryer,Beauty,226.42,229
+1986,Wireless Lip Balm Trio,Beauty,29.33,260
+1990,Travel Gym Bag,Sports,463.88,43
+1993,Compact Garden Hose,Garden,31.47,320
+1997,Everyday Wall Clock,Home,27.06,298
+1998,Travel Water Bottle,Sports,144,497
