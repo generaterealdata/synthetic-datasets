@@ -8,7 +8,7 @@ One hundred homes and small businesses in one city, each with a smart meter read
 |---|---|
 | Tables | 3 |
 | Rows | 500,000 |
-| Full data | Kaggle (coming soon): CSV files and a SQLite database |
+| Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-smart-meter-readings): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
 | Made with | [GenerateRealData](https://generaterealdata.com/industries/energy-utilities/), fully synthetic, no real records |

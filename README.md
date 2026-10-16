@@ -14,9 +14,9 @@ No real person, company or transaction appears in any file, so the data can be u
 | [Synthetic Hospital Records (No Real Patients)](hospital-records/) | 6 | 300,000 | Healthcare analytics and software testing without privacy risk | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-hospital-records) |
 | [App Users with Edge Cases for QA Testing](app-users-edge-cases/) | 5 | 200,000 | QA seed data: Unicode, injection strings, soft deletes | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/app-users-edge-cases-qa-testing) |
 | [Synthetic HR, Workforce and Attrition](hr-workforce-attrition/) | 6 | 155,186 | People analytics: headcount, pay bands, turnover | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-hr-workforce-attrition) |
-| [Synthetic Smart Meter Readings (15-Minute Intervals)](smart-meter-readings/) | 3 | 500,000 | Time-series analysis of 15-minute energy readings | Kaggle (coming soon) |
-| [Synthetic Auto Insurance Policies and Claims](auto-insurance-claims/) | 5 | 192,843 | Claims analytics: frequency, severity, reserves | Kaggle (coming soon) |
-| [Synthetic Fleet GPS Tracking](fleet-gps-tracking/) | 4 | 404,052 | Trajectory analysis, geofencing, telematics testing | Kaggle (coming soon) |
+| [Synthetic Smart Meter Readings (15-Minute Intervals)](smart-meter-readings/) | 3 | 500,000 | Time-series analysis of 15-minute energy readings | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-smart-meter-readings) |
+| [Synthetic Auto Insurance Policies and Claims](auto-insurance-claims/) | 5 | 192,843 | Claims analytics: frequency, severity, reserves | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-auto-insurance-claims) |
+| [Synthetic Fleet GPS Tracking](fleet-gps-tracking/) | 4 | 404,052 | Trajectory analysis, geofencing, telematics testing | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-fleet-gps-tracking) |
 
 ## What is in each folder
 

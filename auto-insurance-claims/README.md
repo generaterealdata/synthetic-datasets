@@ -8,7 +8,7 @@ A US auto insurer writing one-year policies from January 2023, seen as of 30 Sep
 |---|---|
 | Tables | 5 |
 | Rows | 192,843 |
-| Full data | Kaggle (coming soon): CSV files and a SQLite database |
+| Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-auto-insurance-claims): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
 | Made with | [GenerateRealData](https://generaterealdata.com/industries/insurance/), fully synthetic, no real records |

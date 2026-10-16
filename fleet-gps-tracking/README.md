@@ -8,7 +8,7 @@ A delivery fleet of 200 vans and 300 drivers working from five depots in Chicago
 |---|---|
 | Tables | 4 |
 | Rows | 404,052 |
-| Full data | Kaggle (coming soon): CSV files and a SQLite database |
+| Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-fleet-gps-tracking): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
 | Made with | [GenerateRealData](https://generaterealdata.com/use-cases/geospatial-tracking-data/), fully synthetic, no real records |
@@ -167,6 +167,7 @@ Seven more are in [`questions.sql`](questions.sql). All ten run as written on th
 - Vans move on a compass grid (north, east, south or west only), not along real streets, so tracks will not match a road map.
 - Trips start at any hour of the day and last at most 60 minutes. About three in four end with a depot_enter ping; the rest are cut off at the 60-minute mark. The depot entered is not necessarily the one the van left.
 - A vehicle's odometer starts each trip at an unrelated reading, so it is continuous within a trip but not across trips.
+- Every customer stop is a single 30-second ping, so dwell times do not vary.
 - Drivers are assigned to trips independently of vehicle and depot.
 - Yes/no columns hold 1 and 0. Empty cells in the CSV files mean no value (NULL in the database files).
 - The CSV files are UTF-8. Dates are `YYYY-MM-DD` and timestamps `YYYY-MM-DD HH:MM:SS`.
