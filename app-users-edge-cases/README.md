@@ -8,7 +8,7 @@ Seed data for testing a multi-tenant web application: organizations, users, memb
 |---|---|
 | Tables | 5 |
 | Rows | 200,000 |
-| Full data | [CSV](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/app-users-edge-cases-csv.zip) · [SQLite](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/app-users-edge-cases-sqlite.zip) · [PostgreSQL script](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/app-users-edge-cases-postgresql.zip) · [Kaggle](https://www.kaggle.com/datasets/generaterealdata/app-users-edge-cases-qa-testing) |
+| Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/app-users-edge-cases-qa-testing): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
 | Made with | [GenerateRealData](https://generaterealdata.com/industries/software-testing-qa/), fully synthetic, no real records |

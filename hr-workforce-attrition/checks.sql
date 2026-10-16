@@ -85,3 +85,12 @@ SELECT COUNT(*) FROM performance_reviews WHERE date(review_date) > '2026-09-30';
 
 -- no absence starts after 2026-09-30
 SELECT COUNT(*) FROM absences WHERE date(start_date) > '2026-09-30';
+
+-- salaries, reviews and absences never start after the employee's last day
+SELECT (SELECT COUNT(*) FROM salaries s JOIN employees e USING (employee_id) WHERE date(s.effective_from) > date(e.termination_date)) + (SELECT COUNT(*) FROM performance_reviews r JOIN employees e USING (employee_id) WHERE date(r.review_date) > date(e.termination_date)) + (SELECT COUNT(*) FROM absences a JOIN employees e USING (employee_id) WHERE date(a.start_date) > date(e.termination_date));
+
+-- nobody is older than 67 on 2026-09-30
+SELECT COUNT(*) FROM employees WHERE date(date_of_birth) < '1959-10-01';
+
+-- no single day has more than 1% of all leavers
+SELECT CASE WHEN MAX(n) > 0.01 * (SELECT COUNT(*) FROM attrition_events) THEN 1 ELSE 0 END FROM (SELECT left_on, COUNT(*) n FROM attrition_events GROUP BY left_on);

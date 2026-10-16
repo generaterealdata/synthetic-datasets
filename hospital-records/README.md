@@ -8,7 +8,7 @@ A regional hospital from 1 January 2025 to 30 September 2026. Thirty thousand fi
 |---|---|
 | Tables | 6 |
 | Rows | 300,000 |
-| Full data | [CSV](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/hospital-records-csv.zip) · [SQLite](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/hospital-records-sqlite.zip) · [PostgreSQL script](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/hospital-records-postgresql.zip) · [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-hospital-records) |
+| Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-hospital-records): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
 | Made with | [GenerateRealData](https://generaterealdata.com/industries/healthcare/), fully synthetic, no real records |

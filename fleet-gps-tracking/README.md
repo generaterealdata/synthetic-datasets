@@ -8,7 +8,7 @@ A delivery fleet of 200 vans and 300 drivers working from five depots in Chicago
 |---|---|
 | Tables | 4 |
 | Rows | 404,052 |
-| Full data | [CSV](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/fleet-gps-tracking-csv.zip) · [SQLite](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/fleet-gps-tracking-sqlite.zip) · [PostgreSQL script](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/fleet-gps-tracking-postgresql.zip) · [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-fleet-gps-tracking) |
+| Full data | Kaggle (coming soon): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
 | Made with | [GenerateRealData](https://generaterealdata.com/use-cases/geospatial-tracking-data/), fully synthetic, no real records |

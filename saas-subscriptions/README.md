@@ -7,8 +7,8 @@ A business-software company from January 2023 to 30 September 2026. Companies si
 | | |
 |---|---|
 | Tables | 6 |
-| Rows | 249,815 |
-| Full data | [CSV](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/saas-subscriptions-csv.zip) · [SQLite](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/saas-subscriptions-sqlite.zip) · [PostgreSQL script](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/saas-subscriptions-postgresql.zip) · [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-saas-subscriptions-churn) |
+| Rows | 249,113 |
+| Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-saas-subscriptions-churn): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
 | Made with | [GenerateRealData](https://generaterealdata.com/use-cases/test-data-from-sql-schema/), fully synthetic, no real records |
@@ -40,11 +40,11 @@ erDiagram
 | `users` | 60,000 | People with a login. Every account has at least one. |
 | `subscriptions` | 15,000 | Subscriptions. Every account has at least one; some have an earlier one too. |
 | `invoices` | 159,792 | Invoices for subscriptions. Every subscription has at least one. |
-| `churn_events` | 3,015 | One row for each cancelled subscription. |
+| `churn_events` | 2,313 | One row for each cancelled subscription. |
 
 ## Rules you can rely on
 
-30 rules were checked on the full dataset and all 30 hold. Each rule is a query that counts the rows breaking it, and every count is 0. The queries are in [`checks.sql`](checks.sql).
+31 rules were checked on the full dataset and all 31 hold. Each rule is a query that counts the rows breaking it, and every count is 0. The queries are in [`checks.sql`](checks.sql).
 
 - plans.plan_id is unique
 - accounts.account_id is unique
@@ -76,6 +76,7 @@ erDiagram
 - No invoice period starts after 2026-09-30
 - No user was created or logged in after 2026-09-30
 - Seats are between 1 and 500
+- No single day has more than 1% of all cancellations
 
 ## Column dictionary
 
@@ -104,7 +105,7 @@ Customer companies.
 | `industry` | VARCHAR(40) | Industry sector. | `Telecommunications` 8.7%, `Media` 8.6%, `Finance` 8.6%, `Education` 8.5%, `Healthcare` 8.4%, `Technology` 8.3%, `Real Estate` 8.3%, `Manufacturing` 8.3% and 4 more |
 | `country` | VARCHAR(60) | Country of the company. | `United States` 37.5%, `United Kingdom` 11.9%, `Germany` 9.3%, `Canada` 8.8%, `France` 7%, `Australia` 6%, `Spain` 4.2%, `Netherlands` 3.9% and 4 more |
 | `employee_band` | VARCHAR(10) | Company size. | `1-10` 34.4%, `11-50` 32.6%, `51-200` 19.8%, `201-1000` 10%, `1000+` 3.3% |
-| `signup_date` | DATE | Date the company signed up. | 2023-01-01 to 2026-06-29 |
+| `signup_date` | DATE | Date the company signed up. | 2023-01-01 to 2026-09-14 |
 | `acquisition_channel` | VARCHAR(16) | How the company found the product. | `organic` 29.9%, `paid_search` 20.3%, `referral` 15.4%, `outbound` 14.6%, `event` 10.1%, `partner` 9.8% |
 
 ### `users` (60,000 rows)
@@ -116,10 +117,10 @@ People with a login. Every account has at least one.
 | `user_id` (PK) | INTEGER | User number (primary key). | 1 to 60,000 |
 | `account_id` → `accounts.account_id` | INTEGER | The company the user belongs to. | 1 to 12,000 |
 | `email` | VARCHAR(160) | Unique login email at an example domain. | 60,000 different values, e.g. `abaker@example.net`, `adamlambert@example.org` |
-| `role` | VARCHAR(8) | Permission level. | `member` 71.9%, `admin` 15%, `viewer` 9.1%, `owner` 4% |
-| `created_at` | TIMESTAMP | When the user was created; never before the account's signup_date. | 2023-01-19 10:02:17 to 2026-08-30 22:40:13 |
-| `last_login_at` | TIMESTAMP | Most recent login, after created_at; empty for users who never logged in. | 2023-02-23 08:18:16 to 2026-09-29 23:43:55; 7% empty |
-| `is_active` | BOOLEAN | Whether the login is enabled (1 = yes). | `1` 87.8%, `0` 12.2% |
+| `role` | VARCHAR(8) | Permission level. | `member` 72.2%, `admin` 14.9%, `viewer` 9%, `owner` 3.9% |
+| `created_at` | TIMESTAMP | When the user was created; never before the account's signup_date. | 2023-01-09 07:12:18 to 2026-09-30 23:43:59 |
+| `last_login_at` | TIMESTAMP | Most recent login, after created_at; empty for users who never logged in. | 2023-02-06 10:15:11 to 2026-09-30 23:59:17; 7% empty |
+| `is_active` | BOOLEAN | Whether the login is enabled (1 = yes). | `1` 88.1%, `0` 11.9% |
 
 ### `subscriptions` (15,000 rows)
 
@@ -130,12 +131,12 @@ Subscriptions. Every account has at least one; some have an earlier one too.
 | `subscription_id` (PK) | INTEGER | Subscription number (primary key). | 1 to 15,000 |
 | `account_id` → `accounts.account_id` | INTEGER | The subscribing company. | 1 to 12,000 |
 | `plan_id` → `plans.plan_id` | INTEGER | The plan bought. | `4` 13%, `2` 12.7%, `6` 12.6%, `1` 12.5%, `8` 12.5%, `3` 12.4%, `7` 12.2%, `5` 12.2% |
-| `seats` | INTEGER | Seats bought; fits the company's employee_band. | 1 to 498 |
+| `seats` | INTEGER | Seats bought; fits the company's employee_band. | 1 to 497 |
 | `billing_cycle` | VARCHAR(8) | monthly or annual; matches the plan name. | `annual` 50.8%, `monthly` 49.2% |
-| `started_on` | DATE | Start date; on or after the account's signup_date. | 2023-01-11 to 2026-08-14 |
-| `ended_on` | DATE | End date; set only for cancelled subscriptions. | 2023-08-10 to 2026-09-30; 79.9% empty |
-| `status` | VARCHAR(10) | active, past_due or cancelled. | `active` 76.1%, `cancelled` 20.1%, `past_due` 3.8% |
-| `mrr` | NUMERIC(12,2) | Monthly recurring revenue in USD = seats x the plan's monthly_price. | 15 to 54,282 |
+| `started_on` | DATE | Start date; on or after the account's signup_date. | 2023-01-21 to 2026-09-29 |
+| `ended_on` | DATE | End date; set only for cancelled subscriptions. | 2023-07-03 to 2026-09-30; 84.6% empty |
+| `status` | VARCHAR(10) | active, past_due or cancelled. | `active` 80.7%, `cancelled` 15.4%, `past_due` 3.9% |
+| `mrr` | NUMERIC(12,2) | Monthly recurring revenue in USD = seats x the plan's monthly_price. | 15 to 54,064 |
 
 ### `invoices` (159,792 rows)
 
@@ -145,25 +146,25 @@ Invoices for subscriptions. Every subscription has at least one.
 |---|---|---|---|
 | `invoice_id` (PK) | INTEGER | Invoice number (primary key). | 1 to 159,792 |
 | `subscription_id` → `subscriptions.subscription_id` | INTEGER | The subscription billed. | 1 to 15,000 |
-| `period_start` | DATE | First day of the billed month; on or after the subscription start. | 2023-01-29 to 2026-09-13 |
-| `period_end` | DATE | One month after period_start. | 2023-02-28 to 2026-10-13 |
-| `amount_due` | NUMERIC(12,2) | Equals the subscription's mrr. | 15 to 54,282 |
-| `amount_paid` | NUMERIC(12,2) | amount_due when paid, otherwise 0. | 0 to 54,282 |
+| `period_start` | DATE | First day of the billed month; on or after the subscription start. | 2023-01-24 to 2026-09-29 |
+| `period_end` | DATE | One month after period_start. | 2023-02-24 to 2026-10-29 |
+| `amount_due` | NUMERIC(12,2) | Equals the subscription's mrr. | 15 to 54,064 |
+| `amount_paid` | NUMERIC(12,2) | amount_due when paid, otherwise 0. | 0 to 54,064 |
 | `status` | VARCHAR(10) | paid, open, past_due or void. | `paid` 91%, `open` 4%, `past_due` 3%, `void` 2% |
-| `issued_on` | DATE | Issue date; equals period_start. | 2023-01-29 to 2026-09-13 |
-| `paid_on` | DATE | Payment date, 0-20 days after issued_on; empty unless paid. | 2023-02-27 to 2026-10-01; 9% empty |
+| `issued_on` | DATE | Issue date; equals period_start. | 2023-01-24 to 2026-09-29 |
+| `paid_on` | DATE | Payment date, 0-20 days after issued_on; empty unless paid. | 2023-02-10 to 2026-10-19; 9% empty |
 
-### `churn_events` (3,015 rows)
+### `churn_events` (2,313 rows)
 
 One row for each cancelled subscription.
 
 | Column | Type | Meaning | In this dataset |
 |---|---|---|---|
-| `churn_id` (PK) | INTEGER | Churn event number (primary key). | 1 to 3,015 |
-| `subscription_id` → `subscriptions.subscription_id` | INTEGER | The subscription that was cancelled (each appears once). | 2 to 14,995 |
-| `churned_on` | DATE | Equals the subscription's ended_on. | 2023-08-10 to 2026-09-30 |
-| `reason` | VARCHAR(20) | Main reason given for cancelling. | `price` 28%, `low_usage` 24.6%, `switched_tool` 19.8%, `missing_feature` 16.6%, `support` 6.6%, `company_closed` 4.5% |
-| `feedback_score` | INTEGER | Exit survey score, 1 (unhappy) to 10 (happy). | `8` 13.5%, `7` 13.3%, `9` 12.9%, `6` 12.8%, `5` 9.9%, `4` 9.5%, `2` 9.2%, `3` 8.3% and 2 more |
+| `churn_id` (PK) | INTEGER | Churn event number (primary key). | 1 to 2,313 |
+| `subscription_id` → `subscriptions.subscription_id` | INTEGER | The subscription that was cancelled (each appears once). | 9 to 14,985 |
+| `churned_on` | DATE | Equals the subscription's ended_on. | 2023-07-03 to 2026-09-30 |
+| `reason` | VARCHAR(20) | Main reason given for cancelling. | `price` 26.7%, `low_usage` 25%, `switched_tool` 20.5%, `missing_feature` 16.6%, `support` 6.7%, `company_closed` 4.5% |
+| `feedback_score` | INTEGER | Exit survey score, 1 (unhappy) to 10 (happy). | `6` 13.9%, `8` 13.4%, `7` 12.7%, `5` 12.3%, `9` 11.8%, `3` 8.7%, `4` 7.6%, `2` 7.6% and 2 more |
 
 ## Questions to try
 
@@ -196,7 +197,7 @@ Seven more are in [`questions.sql`](questions.sql). All ten run as written on th
 ## Good to know
 
 - Invoices are dated at random within the subscription's life rather than one per month: a subscription can have two invoices for the same period, and some are dated after a cancelled subscription ended. Use them for collections and payment analysis, not to rebuild revenue month by month.
-- Churn does not depend on the plan, the company size or how long the subscription has run; the feedback score does depend on the reason.
+- Churn does not depend on the plan or the company size, only on how long the subscription has run; the feedback score does depend on the reason.
 - User emails are generic example addresses and do not follow the company name.
 - Yes/no columns hold 1 and 0. Empty cells in the CSV files mean no value (NULL in the database files).
 - The CSV files are UTF-8. Dates are `YYYY-MM-DD` and timestamps `YYYY-MM-DD HH:MM:SS`.
@@ -210,7 +211,7 @@ Seven more are in [`questions.sql`](questions.sql). All ten run as written on th
 | `plan.json` | The full generation plan: one rule set per column |
 | `checks.sql` | One query per rule above; each returns 0 on the full dataset |
 | `questions.sql` | Ten practice questions with their queries |
-| `sample/` | `plans.csv` 8 rows; `accounts.csv` 82 rows; `users.csv` 393 rows; `subscriptions.csv` 93 rows; `invoices.csv` 996 rows; `churn_events.csv` 23 rows |
+| `sample/` | `plans.csv` 8 rows; `accounts.csv` 79 rows; `users.csv` 317 rows; `subscriptions.csv` 89 rows; `invoices.csv` 986 rows; `churn_events.csv` 20 rows |
 
 ## Re-create it
 

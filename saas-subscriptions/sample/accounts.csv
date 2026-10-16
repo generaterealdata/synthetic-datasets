@@ -1,14 +1,14 @@
 account_id,company_name,industry,country,employee_band,signup_date,acquisition_channel
 1,"Welch, Morris and Jimenez",Transportation,United States,1-10,2024-10-19,outbound
-2,Perez Inc,Finance,Canada,201-1000,2026-04-08,organic
-3,"Callahan, Willis and Pineda",Manufacturing,United States,51-200,2026-02-21,referral
+2,Perez Inc,Finance,Canada,201-1000,2026-05-19,organic
+3,"Callahan, Willis and Pineda",Manufacturing,United States,51-200,2026-03-16,referral
 4,"Rivers, Ellis and Liu",Construction,United States,11-50,2024-12-14,outbound
 5,Hendrix-Kidd,Finance,Canada,11-50,2024-08-28,paid_search
-6,Atkins Group,Technology,France,1-10,2026-01-25,paid_search
+6,Atkins Group,Technology,France,1-10,2026-02-04,paid_search
 7,"Allen, Randall and Vincent",Energy,Canada,1-10,2025-12-21,organic
 8,Barker-Lewis,Construction,United Kingdom,51-200,2025-11-13,outbound
 9,"Flores, Gordon and Jimenez",Telecommunications,United States,51-200,2024-05-15,organic
-10,"Harrington, Cruz and Hayes",Transportation,United States,1-10,2026-02-26,organic
+10,"Harrington, Cruz and Hayes",Transportation,United States,1-10,2026-03-22,organic
 11,White-Butler,Technology,United Kingdom,1-10,2025-03-27,event
 12,Whitney PLC,Manufacturing,Netherlands,201-1000,2023-12-21,organic
 13,Shelton PLC,Technology,Netherlands,11-50,2025-01-08,paid_search
@@ -16,9 +16,9 @@ account_id,company_name,industry,country,employee_band,signup_date,acquisition_c
 15,"Bell, James and Lee",Telecommunications,United States,11-50,2024-08-29,paid_search
 16,"Allison, Hatfield and Mccormick",Healthcare,Sweden,1-10,2023-05-10,paid_search
 17,Rose Group,Real Estate,United States,11-50,2024-11-18,outbound
-18,"Walker, Collins and Beck",Transportation,United States,11-50,2026-06-29,paid_search
+18,"Walker, Collins and Beck",Transportation,United States,11-50,2026-09-14,paid_search
 19,Walsh-Garcia,Energy,United States,11-50,2025-11-18,outbound
-20,Cooper Group,Media,Spain,1-10,2026-01-25,paid_search
+20,Cooper Group,Media,Spain,1-10,2026-02-04,paid_search
 21,Paul Ltd,Healthcare,United States,11-50,2025-03-31,outbound
 22,"Mcclure, Sweeney and Parsons",Retail,Italy,1-10,2024-02-11,organic
 23,"Rangel, Brown and Miller",Retail,United Kingdom,51-200,2023-04-02,outbound
@@ -27,21 +27,21 @@ account_id,company_name,industry,country,employee_band,signup_date,acquisition_c
 26,Garcia Ltd,Retail,United Kingdom,1-10,2023-08-09,organic
 27,Welch Inc,Real Estate,United States,1-10,2025-05-04,paid_search
 28,"Larson, Rice and Sharp",Education,France,1-10,2023-08-12,referral
-29,"Hughes, Davis and Welch",Real Estate,Sweden,201-1000,2026-02-09,paid_search
+29,"Hughes, Davis and Welch",Real Estate,Sweden,201-1000,2026-02-25,paid_search
 30,"Lane, Saunders and Osborne",Education,Sweden,11-50,2025-06-07,paid_search
 31,"Harris, Collins and Vega",Real Estate,Canada,11-50,2024-10-13,organic
 32,Turner PLC,Telecommunications,Netherlands,201-1000,2025-03-16,event
 33,Francis Ltd,Finance,Sweden,1-10,2024-10-24,referral
 34,"Mcdonald, Meyer and Schultz",Manufacturing,Italy,1-10,2024-08-05,referral
-35,Lyons Inc,Finance,United States,11-50,2026-01-31,organic
+35,Lyons Inc,Finance,United States,11-50,2026-02-13,organic
 36,"Turner, Tucker and Wilson",Healthcare,United States,51-200,2024-02-19,outbound
 37,Jennings-Martin,Finance,France,1-10,2025-09-01,organic
-38,Baker Inc,Technology,United States,11-50,2026-04-13,referral
+38,Baker Inc,Technology,United States,11-50,2026-05-27,referral
 39,Nelson Group,Telecommunications,Canada,1-10,2024-10-27,event
-40,Callahan-Li,Real Estate,Canada,11-50,2026-05-30,organic
-41,Zimmerman Group,Transportation,Canada,51-200,2026-03-04,organic
-42,Mercado-Jackson,Real Estate,United States,11-50,2026-01-02,paid_search
-43,Flowers-Barnes,Media,United States,1-10,2026-04-05,organic
+40,Callahan-Li,Real Estate,Canada,11-50,2026-08-02,organic
+41,Zimmerman Group,Transportation,Canada,51-200,2026-03-30,organic
+42,Mercado-Jackson,Real Estate,United States,11-50,2026-01-03,paid_search
+43,Flowers-Barnes,Media,United States,1-10,2026-05-16,organic
 44,"Nolan, Carter and Howard",Manufacturing,Canada,11-50,2025-08-21,outbound
 45,Vazquez-Stevens,Manufacturing,Germany,11-50,2025-08-17,organic
 46,"Gonzalez, Madden and Smith",Finance,United States,51-200,2023-05-05,outbound
@@ -51,33 +51,30 @@ account_id,company_name,industry,country,employee_band,signup_date,acquisition_c
 50,Harper and Sons,Media,United Kingdom,1-10,2024-01-29,referral
 51,Gaines and Sons,Technology,United States,1-10,2024-03-14,organic
 52,Tate-Alexander,Transportation,Germany,1-10,2025-07-05,outbound
-53,"Davis, Pearson and Morgan",Real Estate,Canada,11-50,2026-03-21,paid_search
+53,"Davis, Pearson and Morgan",Real Estate,Canada,11-50,2026-04-24,paid_search
 54,Lee-Hudson,Real Estate,United States,1-10,2025-08-04,referral
-55,Arnold PLC,Media,Netherlands,1-10,2026-04-24,partner
+55,Arnold PLC,Media,Netherlands,1-10,2026-06-12,partner
 56,"Wright, Brown and Maddox",Telecommunications,Ireland,1-10,2023-10-21,organic
-57,Hernandez Inc,Education,United States,1-10,2026-01-05,outbound
+57,Hernandez Inc,Education,United States,1-10,2026-01-07,outbound
 58,King LLC,Technology,Italy,11-50,2025-07-22,outbound
 59,"Hogan, Hughes and Mcbride",Real Estate,United States,51-200,2024-02-02,paid_search
 60,Reed Inc,Manufacturing,United Kingdom,11-50,2024-12-19,referral
 61,"Murillo, Summers and Smith",Education,Germany,11-50,2023-12-22,referral
 62,Andrews-Hayes,Transportation,Canada,1-10,2024-02-02,organic
 63,Brown and Sons,Transportation,Sweden,1-10,2025-07-20,outbound
-64,Ferrell Ltd,Real Estate,France,1-10,2026-06-05,referral
+64,Ferrell Ltd,Real Estate,France,1-10,2026-08-11,referral
 65,Jensen Group,Technology,United States,51-200,2024-01-11,referral
 66,Jones Group,Telecommunications,France,1-10,2025-03-04,event
 67,Carter Group,Retail,United States,1-10,2024-05-03,organic
 68,Walters LLC,Energy,United States,51-200,2025-12-14,outbound
-69,Wright-Mcclain,Technology,Sweden,1-10,2026-04-08,referral
+69,Wright-Mcclain,Technology,Sweden,1-10,2026-05-20,referral
 70,Arellano-Gonzales,Technology,Netherlands,1000+,2025-01-30,organic
 71,Clay-Green,Transportation,France,1-10,2023-05-27,organic
 72,Smith Ltd,Manufacturing,Germany,11-50,2025-02-25,referral
-73,Harris Inc,Retail,Australia,1-10,2026-05-25,referral
-74,Rodriguez Group,Telecommunications,Canada,1-10,2026-01-11,event
+73,Harris Inc,Retail,Australia,1-10,2026-07-26,referral
+74,Rodriguez Group,Telecommunications,Canada,1-10,2026-01-15,event
 75,Brown-Sanchez,Finance,United States,11-50,2025-04-16,organic
 76,Morton-Fowler,Education,Sweden,1-10,2024-12-21,paid_search
 77,"Davis, Rodgers and Johnson",Healthcare,United States,1-10,2025-08-31,partner
 78,Bailey and Sons,Retail,United Kingdom,51-200,2024-11-18,organic
 79,Pugh-Case,Transportation,United States,51-200,2023-04-13,outbound
-80,"Griffith, Skinner and Willis",Media,France,1-10,2023-01-30,outbound
-81,Walker Inc,Construction,Canada,1-10,2026-01-23,organic
-82,Jones Group,Healthcare,United States,51-200,2026-01-05,organic

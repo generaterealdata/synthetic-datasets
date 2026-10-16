@@ -91,3 +91,6 @@ SELECT COUNT(*) FROM users WHERE date(created_at) > '2026-09-30' OR date(last_lo
 
 -- seats are between 1 and 500
 SELECT COUNT(*) FROM subscriptions WHERE seats NOT BETWEEN 1 AND 500;
+
+-- no single day has more than 1% of all cancellations
+SELECT CASE WHEN MAX(n) > 0.01 * (SELECT COUNT(*) FROM churn_events) THEN 1 ELSE 0 END FROM (SELECT churned_on, COUNT(*) n FROM churn_events GROUP BY churned_on);

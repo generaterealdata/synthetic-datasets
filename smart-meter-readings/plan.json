@@ -170,12 +170,25 @@
      "rules": [
       {
        "generate_via": "range",
-       "if": "{meter_id.premise_id.has_solar} == True and substring({interval_start}, 11, 2) >= '10' and substring({interval_start}, 11, 2) < '15'",
+       "if": "{meter_id.premise_id.has_solar} == True and substring({interval_start}, 11, 2) >= '11' and substring({interval_start}, 11, 2) < '14'",
        "parameters": {
         "distribution": [
          {
-          "min": 0.3,
-          "max": 1.2,
+          "min": 0.45,
+          "max": 0.8,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.has_solar} == True and substring({interval_start}, 11, 2) >= '09' and substring({interval_start}, 11, 2) < '16'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.2,
+          "max": 0.5,
           "percentage": 100
          }
         ]
@@ -188,19 +201,20 @@
         "distribution": [
          {
           "min": 0.02,
-          "max": 0.5,
+          "max": 0.15,
           "percentage": 100
          }
         ]
        }
       },
       {
-       "generate_via": "categorical",
+       "generate_via": "range",
        "if": "DEFAULT",
        "parameters": {
         "distribution": [
          {
-          "value": 0,
+          "min": 0.0,
+          "max": 0.0,
           "percentage": 100
          }
         ]
@@ -254,8 +268,21 @@
        "parameters": {
         "distribution": [
          {
-          "min": 0.6,
-          "max": 2.8,
+          "min": 0.8,
+          "max": 1.6,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.premise_type} == 'small_business' and (substring({interval_start}, 11, 2) == '07' or substring({interval_start}, 11, 2) == '18')",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.3,
+          "max": 0.6,
           "percentage": 100
          }
         ]
@@ -267,8 +294,8 @@
        "parameters": {
         "distribution": [
          {
-          "min": 0.05,
-          "max": 0.35,
+          "min": 0.08,
+          "max": 0.18,
           "percentage": 100
          }
         ]
@@ -276,12 +303,103 @@
       },
       {
        "generate_via": "range",
-       "if": "{meter_id.premise_id.has_ev} == True and substring({interval_start}, 11, 2) >= '21'",
+       "if": "{meter_id.premise_id.has_ev} == True and (substring({interval_start}, 11, 2) >= '22' or substring({interval_start}, 11, 2) < '02')",
        "parameters": {
         "distribution": [
          {
-          "min": 1.2,
-          "max": 3.4,
+          "min": 1.6,
+          "max": 2.2,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.has_solar} == True and substring({interval_start}, 11, 2) >= '10' and substring({interval_start}, 11, 2) < '15'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.02,
+          "max": 0.1,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.has_solar} == True and substring({interval_start}, 11, 2) >= '08' and substring({interval_start}, 11, 2) < '17'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.06,
+          "max": 0.2,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.premise_type} == 'apartment' and substring({interval_start}, 11, 2) < '06'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.05,
+          "max": 0.1,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.premise_type} == 'apartment' and substring({interval_start}, 11, 2) < '09'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.12,
+          "max": 0.3,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.premise_type} == 'apartment' and substring({interval_start}, 11, 2) < '17'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.08,
+          "max": 0.18,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.premise_type} == 'apartment' and substring({interval_start}, 11, 2) < '21'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.15,
+          "max": 0.4,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{meter_id.premise_id.premise_type} == 'apartment'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.1,
+          "max": 0.2,
           "percentage": 100
          }
         ]
@@ -293,8 +411,8 @@
        "parameters": {
         "distribution": [
          {
-          "min": 0.04,
-          "max": 0.22,
+          "min": 0.1,
+          "max": 0.2,
           "percentage": 100
          }
         ]
@@ -306,8 +424,8 @@
        "parameters": {
         "distribution": [
          {
-          "min": 0.2,
-          "max": 0.9,
+          "min": 0.25,
+          "max": 0.6,
           "percentage": 100
          }
         ]
@@ -319,8 +437,8 @@
        "parameters": {
         "distribution": [
          {
-          "min": 0.1,
-          "max": 0.5,
+          "min": 0.15,
+          "max": 0.35,
           "percentage": 100
          }
         ]
@@ -332,8 +450,8 @@
        "parameters": {
         "distribution": [
          {
-          "min": 0.6,
-          "max": 2.4,
+          "min": 0.3,
+          "max": 0.8,
           "percentage": 100
          }
         ]
@@ -345,8 +463,8 @@
        "parameters": {
         "distribution": [
          {
-          "min": 0.25,
-          "max": 0.9,
+          "min": 0.2,
+          "max": 0.4,
           "percentage": 100
          }
         ]

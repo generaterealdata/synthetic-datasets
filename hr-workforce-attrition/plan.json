@@ -1,5 +1,5 @@
 {
- "total_rows": 150000,
+ "total_rows": 156300,
  "dataset_type": "relational",
  "tables": {
   "employees": {
@@ -148,7 +148,7 @@
        "generate_via": "calculated",
        "if": "{employment_status} == 'terminated'",
        "parameters": {
-        "equation": "min(add_months({hire_date}, random_int(3, 90)), '2026-09-30')"
+        "equation": "add_days({hire_date}, random_int(min(30, date_diff_days('2026-09-30', {hire_date})), min(2190, date_diff_days('2026-09-30', {hire_date}))))"
        }
       },
       {
@@ -157,7 +157,7 @@
        "parameters": {
         "base_strategy": "calculated",
         "base_parameters": {
-         "equation": "min(add_months({hire_date}, random_int(3, 90)), '2026-09-30')"
+         "equation": "add_days({hire_date}, random_int(min(30, date_diff_days('2026-09-30', {hire_date})), min(2190, date_diff_days('2026-09-30', {hire_date}))))"
         },
         "null_rate": 1.0
        }
@@ -269,7 +269,7 @@
        "generate_via": "calculated",
        "if": "DEFAULT",
        "parameters": {
-        "equation": "sub_days({hire_date}, random_int(7700, 23300))"
+        "equation": "sub_days({hire_date}, random_int(7700, min(23300, date_diff_days({hire_date}, '1959-10-01'))))"
        }
       }
      ],
@@ -301,20 +301,120 @@
      "rules": [
       {
        "generate_via": "categorical",
-       "if": "DEFAULT",
+       "if": "{hire_date} < '2019-01-01'",
        "parameters": {
         "distribution": [
          {
-          "value": "active",
-          "percentage": 82
-         },
-         {
           "value": "terminated",
-          "percentage": 15
+          "percentage": 70
          },
          {
           "value": "on_leave",
           "percentage": 3
+         },
+         {
+          "value": "active",
+          "percentage": 27
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{hire_date} < '2021-01-01'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "terminated",
+          "percentage": 58
+         },
+         {
+          "value": "on_leave",
+          "percentage": 3
+         },
+         {
+          "value": "active",
+          "percentage": 39
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{hire_date} < '2023-01-01'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "terminated",
+          "percentage": 45
+         },
+         {
+          "value": "on_leave",
+          "percentage": 3
+         },
+         {
+          "value": "active",
+          "percentage": 52
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{hire_date} < '2024-07-01'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "terminated",
+          "percentage": 30
+         },
+         {
+          "value": "on_leave",
+          "percentage": 3
+         },
+         {
+          "value": "active",
+          "percentage": 67
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{hire_date} < '2025-07-01'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "terminated",
+          "percentage": 18
+         },
+         {
+          "value": "on_leave",
+          "percentage": 3
+         },
+         {
+          "value": "active",
+          "percentage": 79
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "terminated",
+          "percentage": 7
+         },
+         {
+          "value": "on_leave",
+          "percentage": 3
+         },
+         {
+          "value": "active",
+          "percentage": 90
          }
         ]
        }
@@ -573,7 +673,10 @@
      "date_after": [
       "employee_id.hire_date"
      ],
-     "date_after_spread_days": 30
+     "date_after_spread_days": 30,
+     "date_before": [
+      "employee_id.termination_date"
+     ]
     }
    },
    "dataset_type": "tabular",
@@ -904,7 +1007,10 @@
       "employee_id.hire_date"
      ],
      "nullable": false,
-     "date_after_spread_days": 30
+     "date_after_spread_days": 30,
+     "date_before": [
+      "employee_id.termination_date"
+     ]
     },
     "end_date": {
      "data_type": "date",
@@ -1221,7 +1327,7 @@
     }
    },
    "dataset_type": "tabular",
-   "total_rows": 3200,
+   "total_rows": 9500,
    "anchor": {
     "table": "employees",
     "unique": true,
@@ -1393,7 +1499,10 @@
       "employee_id.hire_date"
      ],
      "nullable": false,
-     "date_after_spread_days": 30
+     "date_after_spread_days": 30,
+     "date_before": [
+      "employee_id.termination_date"
+     ]
     },
     "employee_id": {
      "data_type": "integer",

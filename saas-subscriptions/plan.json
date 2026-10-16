@@ -241,7 +241,10 @@
       "subscription_id.started_on"
      ],
      "nullable": false,
-     "date_after_spread_days": 30
+     "date_after_spread_days": 30,
+     "date_before": [
+      "2026-09-30"
+     ]
     },
     "paid_on": {
      "data_type": "date",
@@ -435,7 +438,7 @@
        "if": "DEFAULT",
        "parameters": {
         "start_date": "2023-01-01",
-        "end_date": "2026-08-15",
+        "end_date": "2026-09-29",
         "include_time": false
        }
       }
@@ -444,7 +447,10 @@
       "account_id.signup_date"
      ],
      "nullable": false,
-     "date_after_spread_days": 45
+     "date_after_spread_days": 45,
+     "date_before": [
+      "2026-09-29"
+     ]
     },
     "plan_id": {
      "data_type": "integer",
@@ -503,7 +509,7 @@
        "generate_via": "calculated",
        "if": "{status} == 'cancelled'",
        "parameters": {
-        "equation": "min(add_months({started_on}, random_int(1, 30)), '2026-09-30')"
+        "equation": "add_days({started_on}, random_int(min(14, date_diff_days('2026-09-30', {started_on})), date_diff_days('2026-09-30', {started_on})))"
        }
       },
       {
@@ -512,7 +518,7 @@
        "parameters": {
         "base_strategy": "calculated",
         "base_parameters": {
-         "equation": "min(add_months({started_on}, random_int(1, 30)), '2026-09-30')"
+         "equation": "add_days({started_on}, random_int(min(14, date_diff_days('2026-09-30', {started_on})), date_diff_days('2026-09-30', {started_on})))"
         },
         "null_rate": 1.0
        }
@@ -630,20 +636,136 @@
      "rules": [
       {
        "generate_via": "categorical",
-       "if": "DEFAULT",
+       "if": "{started_on} < '2024-01-01'",
        "parameters": {
         "distribution": [
          {
-          "value": "active",
-          "percentage": 76
-         },
-         {
           "value": "cancelled",
-          "percentage": 20
+          "percentage": 40
          },
          {
           "value": "past_due",
           "percentage": 4
+         },
+         {
+          "value": "active",
+          "percentage": 56
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{started_on} < '2025-01-01'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "cancelled",
+          "percentage": 30
+         },
+         {
+          "value": "past_due",
+          "percentage": 4
+         },
+         {
+          "value": "active",
+          "percentage": 66
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{started_on} < '2025-07-01'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "cancelled",
+          "percentage": 22
+         },
+         {
+          "value": "past_due",
+          "percentage": 4
+         },
+         {
+          "value": "active",
+          "percentage": 74
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{started_on} < '2026-01-01'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "cancelled",
+          "percentage": 15
+         },
+         {
+          "value": "past_due",
+          "percentage": 4
+         },
+         {
+          "value": "active",
+          "percentage": 81
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{started_on} < '2026-06-01'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "cancelled",
+          "percentage": 9
+         },
+         {
+          "value": "past_due",
+          "percentage": 4
+         },
+         {
+          "value": "active",
+          "percentage": 87
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{started_on} < '2026-09-16'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "cancelled",
+          "percentage": 4
+         },
+         {
+          "value": "past_due",
+          "percentage": 4
+         },
+         {
+          "value": "active",
+          "percentage": 92
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "past_due",
+          "percentage": 4
+         },
+         {
+          "value": "active",
+          "percentage": 96
          }
         ]
        }
@@ -686,7 +808,7 @@
        "if": "DEFAULT",
        "parameters": {
         "start_date": "2023-01-01",
-        "end_date": "2026-08-31",
+        "end_date": "2026-09-30",
         "include_time": true
        }
       }
@@ -695,7 +817,10 @@
       "account_id.signup_date"
      ],
      "nullable": false,
-     "date_after_spread_days": 30
+     "date_after_spread_days": 30,
+     "date_before": [
+      "2026-09-30"
+     ]
     },
     "is_active": {
      "data_type": "boolean",
@@ -740,7 +865,10 @@
       "created_at"
      ],
      "nullable": true,
-     "date_after_spread_days": 30
+     "date_after_spread_days": 30,
+     "date_before": [
+      "2026-09-30"
+     ]
     },
     "role": {
      "data_type": "string",
@@ -957,7 +1085,7 @@
        "if": "DEFAULT",
        "parameters": {
         "start_date": "2026-01-01",
-        "end_date": "2026-06-30",
+        "end_date": "2026-09-15",
         "include_time": false
        }
       }

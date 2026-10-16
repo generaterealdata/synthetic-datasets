@@ -8,7 +8,7 @@ One hundred homes and small businesses in one city, each with a smart meter read
 |---|---|
 | Tables | 3 |
 | Rows | 500,000 |
-| Full data | [CSV](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/smart-meter-readings-csv.zip) · [SQLite](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/smart-meter-readings-sqlite.zip) · [PostgreSQL script](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/smart-meter-readings-postgresql.zip) · [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-smart-meter-readings) |
+| Full data | Kaggle (coming soon): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
 | Made with | [GenerateRealData](https://generaterealdata.com/industries/energy-utilities/), fully synthetic, no real records |
@@ -16,8 +16,9 @@ One hundred homes and small businesses in one city, each with a smart meter read
 ## What makes it useful
 
 - A complete, regular time series: every meter has exactly 4,998 readings, exactly 15 minutes apart.
-- Daily load shapes: homes are quiet overnight, pick up in the morning and peak from 17:00 to 21:00; small businesses use most in working hours; homes with an EV draw heavily late in the evening.
-- Solar behaves like solar: only premises with panels export, only between 07:00 and 19:00, most around midday.
+- Daily load shapes: homes are quiet overnight, pick up in the morning and peak from 17:00 to 21:00; small businesses use most in working hours; each meter moves between levels gradually rather than in steps.
+- Realistic amounts: about 35 kWh a day for a house, 20 for an apartment and 58 for a small business; electric cars charge from 22:00 to about 02:00.
+- Solar behaves like solar: only premises with panels export, only between 07:00 and 19:00, peaking around noon, and panels cut the grid power a house draws at midday by about three quarters.
 - Billing is exact: the rate is 0.38 in the 17:00-21:00 peak and 0.24 otherwise, and cost = import x rate in every row.
 
 **Good for:** Time-series analysis and forecasting practice; Testing metering, billing and energy dashboards; Load-profile clustering (home, business, EV, solar); SQL practice with window functions on timestamps.
@@ -100,12 +101,12 @@ One row per meter per 15-minute interval.
 | `reading_id` (PK) | INTEGER | Reading number (primary key). | 1 to 499,800 |
 | `meter_id` → `meters.meter_id` | INTEGER | The meter read. | 1 to 100 |
 | `interval_start` | TIMESTAMP | Start of the 15-minute interval. | 2026-08-01 00:00:00 to 2026-09-22 01:15:00 |
-| `import_kwh` | NUMERIC(8,3) | Energy taken from the grid in the interval, in kWh. | 0.04 to 3.4 |
-| `export_kwh` | NUMERIC(8,3) | Energy sent to the grid in the interval, in kWh; above 0 only for solar premises in daylight. | 0 to 1.2 |
+| `import_kwh` | NUMERIC(8,3) | Energy taken from the grid in the interval, in kWh. | 0.02 to 2.2 |
+| `export_kwh` | NUMERIC(8,3) | Energy sent to the grid in the interval, in kWh; above 0 only for solar premises in daylight. | 0 to 0.8 |
 | `voltage_v` | NUMERIC(5,1) | Supply voltage in volts; drifts around 240. | 236 to 243.8 |
 | `is_peak` | BOOLEAN | 1 from 17:00 up to 21:00, otherwise 0. | `0` 83.4%, `1` 16.6% |
 | `rate_per_kwh` | NUMERIC(5,2) | Price per kWh: 0.38 at peak, 0.24 otherwise. | `0.24` 83.4%, `0.38` 16.6% |
-| `cost` | NUMERIC(8,2) | import_kwh x rate_per_kwh, rounded to cents. | 0.01 to 1.06 |
+| `cost` | NUMERIC(8,2) | import_kwh x rate_per_kwh, rounded to cents. | 0 to 0.59 |
 
 ## Questions to try
 
@@ -140,7 +141,7 @@ Seven more are in [`questions.sql`](questions.sql). All ten run as written on th
 
 ## Good to know
 
-- Each reading is drawn within a band for its hour and premise type, so consecutive readings are not smoothed and a meter has no personal baseline.
+- Meters of the same kind follow one shared daily pattern: small businesses in particular are near-identical, and every electric car starts charging at 22:00 every night.
 - There is no weekday/weekend, weather or seasonal effect, and solar output does not depend on the day.
 - The series ends at 01:15 on 22 September 2026 (4,998 intervals).
 - Street addresses are invented.

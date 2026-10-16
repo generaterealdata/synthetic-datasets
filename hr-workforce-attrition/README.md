@@ -1,14 +1,14 @@
 # Synthetic HR, Workforce and Attrition
 
-**150K rows: employees, salaries, reviews, absences and who left, in 6 tables.**
+**155K rows: employees, salaries, reviews, absences and who left, in 6 tables.**
 
 A company of 20,000 current and former employees in 40 departments across eight offices, hired between 2015 and August 2026. Six tables hold the organisation, each person's job and level, salary records, performance reviews, absences and one attrition event for everyone who left. All people are fictional.
 
 | | |
 |---|---|
 | Tables | 6 |
-| Rows | 149,798 |
-| Full data | [CSV](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/hr-workforce-attrition-csv.zip) · [SQLite](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/hr-workforce-attrition-sqlite.zip) · [PostgreSQL script](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/hr-workforce-attrition-postgresql.zip) · [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-hr-workforce-attrition) |
+| Rows | 155,186 |
+| Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-hr-workforce-attrition): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
 | Made with | [GenerateRealData](https://generaterealdata.com/industries/hr-recruiting/), fully synthetic, no real records |
@@ -18,7 +18,8 @@ A company of 20,000 current and former employees in 40 departments across eight 
 - A realistic pyramid: seven job levels with far fewer people at the top, job titles that follow the level and name the department, and salary bands that rise with the level.
 - Leaving is consistent across tables: every terminated employee has a termination date and exactly one attrition event on that date; nobody else has either.
 - Reviews hang together: goals met follows the rating, and promotion is recommended only for ratings 4 and 5.
-- Dates respect employment: salaries, reviews and absences never start before the hire date, and an absence's end date = start date + days - 1.
+- Dates respect employment: salaries, reviews and absences fall between the hire date and the last day, and an absence's end date = start date + days - 1.
+- Turnover looks like a real company's: the longer ago people joined, the likelier they have left, giving about 11-14% turnover a year with most leavers going in their first few years.
 
 **Good for:** People-analytics dashboards: headcount, turnover, pay bands, absence; SQL practice with dates and multi-table joins; Testing HR and payroll systems; Teaching attrition analysis.
 
@@ -40,11 +41,11 @@ erDiagram
 | `salaries` | 45,000 | Salary records. Every employee has at least one. |
 | `performance_reviews` | 60,000 | Performance reviews. Every employee has at least one. |
 | `absences` | 21,760 | Periods of absence. |
-| `attrition_events` | 2,998 | One row for each employee who left. |
+| `attrition_events` | 8,386 | One row for each employee who left. |
 
 ## Rules you can rely on
 
-28 rules were checked on the full dataset and all 28 hold. Each rule is a query that counts the rows breaking it, and every count is 0. The queries are in [`checks.sql`](checks.sql).
+31 rules were checked on the full dataset and all 31 hold. Each rule is a query that counts the rows breaking it, and every count is 0. The queries are in [`checks.sql`](checks.sql).
 
 - departments.department_id is unique
 - employees.employee_id is unique
@@ -74,6 +75,9 @@ erDiagram
 - No salary record starts after 2026-09-30
 - No review is dated after 2026-09-30
 - No absence starts after 2026-09-30
+- Salaries, reviews and absences never start after the employee's last day
+- Nobody is older than 67 on 2026-09-30
+- No single day has more than 1% of all leavers
 
 ## Column dictionary
 
@@ -104,11 +108,11 @@ One row per current or former employee.
 | `job_title` | VARCHAR(80) | Level title plus department, e.g. 'Lead, People Operations'. | 280 different values, e.g. `Lead, People Operations`, `Associate, Financial Planning` |
 | `job_level` | INTEGER | 1 (Associate) to 7 (Vice President). | `1` 30%, `2` 26.2%, `3` 20.3%, `4` 12.1%, `5` 7.5%, `6` 2.9%, `7` 1% |
 | `hire_date` | DATE | First day at the company. | 2015-01-01 to 2026-08-30 |
-| `termination_date` | DATE | Last day; set only for terminated employees, always after hire_date and never after 30 September 2026. | 2015-04-20 to 2026-09-30; 85% empty |
-| `employment_status` | VARCHAR(12) | active, on_leave or terminated. | `active` 82.2%, `terminated` 15%, `on_leave` 2.8% |
-| `gender` | VARCHAR(12) | Female, Male or Non-binary. | `Male` 49.7%, `Female` 47.2%, `Non-binary` 3.1% |
-| `date_of_birth` | DATE | Date of birth; everyone was 21-64 when hired. | 1951-06-06 to 2005-05-04 |
-| `work_mode` | VARCHAR(8) | office, hybrid or remote. | `hybrid` 48%, `office` 29.9%, `remote` 22.1% |
+| `termination_date` | DATE | Last day; set only for terminated employees, 30 days to 6 years after hire_date and never after 30 September 2026. | 2015-02-19 to 2026-09-30; 58.1% empty |
+| `employment_status` | VARCHAR(12) | active, on_leave or terminated. | `active` 54.9%, `terminated` 41.9%, `on_leave` 3.2% |
+| `gender` | VARCHAR(12) | Female, Male or Non-binary. | `Male` 49.6%, `Female` 47.6%, `Non-binary` 2.8% |
+| `date_of_birth` | DATE | Date of birth; everyone was 21-64 when hired, and nobody is older than 67 on 30 September 2026. | 1959-10-04 to 2005-06-09 |
+| `work_mode` | VARCHAR(8) | office, hybrid or remote. | `hybrid` 47.7%, `office` 30.4%, `remote` 21.9% |
 
 ### `salaries` (45,000 rows)
 
@@ -118,8 +122,8 @@ Salary records. Every employee has at least one.
 |---|---|---|---|
 | `salary_id` (PK) | INTEGER | Salary record number (primary key). | 1 to 45,000 |
 | `employee_id` → `employees.employee_id` | INTEGER | The employee paid. | 1 to 20,000 |
-| `effective_from` | DATE | Date the salary applies from; never before the hire date. | 2015-01-29 to 2026-09-29 |
-| `base_salary` | NUMERIC(12,2) | Yearly base salary in USD, within the band of the employee's job level. | 38,000.93 to 419,162.07 |
+| `effective_from` | DATE | Date the salary applies from; never before the hire date or after the last day. | 2015-01-17 to 2026-09-29 |
+| `base_salary` | NUMERIC(12,2) | Yearly base salary in USD, within the band of the employee's job level. | 38,001.24 to 419,935.46 |
 | `bonus_pct` | NUMERIC(4,1) | Target bonus as a percentage of base: 0-10 for levels 1-3, 10-40 for levels 4-7. | 0 to 40 |
 | `currency` | CHAR(3) | Always USD. | `USD` 100% |
 
@@ -131,8 +135,8 @@ Performance reviews. Every employee has at least one.
 |---|---|---|---|
 | `review_id` (PK) | INTEGER | Review number (primary key). | 1 to 60,000 |
 | `employee_id` → `employees.employee_id` | INTEGER | The employee reviewed. | 1 to 20,000 |
-| `review_date` | DATE | Date of the review; never before the hire date. | 2016-01-01 to 2026-09-29 |
-| `rating` | INTEGER | 1 (poor) to 5 (outstanding), centred on 3. | `3` 46.2%, `4` 28%, `2` 13.9%, `5` 8%, `1` 3.9% |
+| `review_date` | DATE | Date of the review; never before the hire date or after the last day. | 2015-01-03 to 2026-09-29 |
+| `rating` | INTEGER | 1 (poor) to 5 (outstanding), centred on 3. | `3` 46.4%, `4` 27.9%, `2` 13.6%, `5` 8.1%, `1` 4.1% |
 | `goals_met_pct` | INTEGER | Share of goals met, in percent; higher for higher ratings. | 20 to 100 |
 | `promotion_recommended` | BOOLEAN | 1 if promotion was recommended; only possible for ratings 4 and 5. | `0` 88.3%, `1` 11.7% |
 
@@ -143,24 +147,24 @@ Periods of absence.
 | Column | Type | Meaning | In this dataset |
 |---|---|---|---|
 | `absence_id` (PK) | INTEGER | Absence number (primary key). | 1 to 21,760 |
-| `employee_id` → `employees.employee_id` | INTEGER | The absent employee. | 7 to 20,000 |
-| `start_date` | DATE | First day absent; never before the hire date. | 2015-02-06 to 2026-09-28 |
-| `end_date` | DATE | Last day absent = start_date + days - 1. | 2015-02-07 to 2026-12-25 |
-| `absence_type` | VARCHAR(12) | vacation, sick, training, parental or unpaid. | `vacation` 58.5%, `sick` 26.3%, `training` 8%, `parental` 4.1%, `unpaid` 3.1% |
+| `employee_id` → `employees.employee_id` | INTEGER | The absent employee. | 1 to 20,000 |
+| `start_date` | DATE | First day absent; never before the hire date or after the last day. | 2015-01-18 to 2026-09-15 |
+| `end_date` | DATE | Last day absent = start_date + days - 1. | 2015-01-24 to 2026-12-09 |
+| `absence_type` | VARCHAR(12) | vacation, sick, training, parental or unpaid. | `vacation` 58%, `sick` 26.9%, `training` 8%, `parental` 4.1%, `unpaid` 3% |
 | `days` | INTEGER | Length in days; the range depends on the type (parental leave is 30-120 days). | 1 to 120 |
 
-### `attrition_events` (2,998 rows)
+### `attrition_events` (8,386 rows)
 
 One row for each employee who left.
 
 | Column | Type | Meaning | In this dataset |
 |---|---|---|---|
-| `attrition_id` (PK) | INTEGER | Attrition event number (primary key). | 1 to 2,998 |
-| `employee_id` → `employees.employee_id` | INTEGER | The employee who left (each appears once). | 8 to 19,982 |
-| `left_on` | DATE | Equals the employee's termination_date. | 2015-04-20 to 2026-09-30 |
-| `reason` | VARCHAR(20) | Main reason for leaving. | `better_offer` 34.5%, `career_change` 16%, `performance` 12.8%, `personal` 11.9%, `relocation` 11.3%, `redundancy` 8.5%, `retirement` 5% |
-| `voluntary` | BOOLEAN | 0 for performance and redundancy exits, 1 for all others. | `1` 78.7%, `0` 21.3% |
-| `exit_interview_score` | INTEGER | Exit interview score, 1-10; empty when no interview took place. | `3` 10.4%, `8` 9.7%, `6` 9.6%, `7` 9.5%, `9` 9.1%, `2` 8.7%, `4` 7.8%, `5` 7.3% and 2 more; 19.4% empty |
+| `attrition_id` (PK) | INTEGER | Attrition event number (primary key). | 1 to 8,386 |
+| `employee_id` → `employees.employee_id` | INTEGER | The employee who left (each appears once). | 2 to 20,000 |
+| `left_on` | DATE | Equals the employee's termination_date. | 2015-02-19 to 2026-09-30 |
+| `reason` | VARCHAR(20) | Main reason for leaving. | `better_offer` 32.6%, `career_change` 16.6%, `personal` 12.5%, `relocation` 12.4%, `performance` 11.7%, `redundancy` 9.1%, `retirement` 5.1% |
+| `voluntary` | BOOLEAN | 0 for performance and redundancy exits, 1 for all others. | `1` 79.2%, `0` 20.8% |
+| `exit_interview_score` | INTEGER | Exit interview score, 1-10; empty when no interview took place. | `2` 9.5%, `5` 9%, `3` 8.9%, `7` 8.9%, `9` 8.8%, `8` 8.7%, `4` 8.7%, `6` 8.4% and 2 more; 20.4% empty |
 
 ## Questions to try
 
@@ -192,9 +196,8 @@ Seven more are in [`questions.sql`](questions.sql). All ten run as written on th
 
 ## Good to know
 
-- Attrition is not driven by performance, level or tenure, so a model will find no real signal in them; the dataset suits reporting and SQL more than prediction.
+- Who leaves depends only on when they joined, not on performance, level, pay or department, so a model will find little real signal; the dataset suits reporting and SQL more than prediction.
 - An employee's salary records are drawn independently within the level's band; they are not a sequence of raises.
-- Reviews, absences and salary records can be dated after a terminated employee's last day.
 - Names are English-style for every office.
 - Yes/no columns hold 1 and 0. Empty cells in the CSV files mean no value (NULL in the database files).
 - The CSV files are UTF-8. Dates are `YYYY-MM-DD` and timestamps `YYYY-MM-DD HH:MM:SS`.
@@ -208,7 +211,7 @@ Seven more are in [`questions.sql`](questions.sql). All ten run as written on th
 | `plan.json` | The full generation plan: one rule set per column |
 | `checks.sql` | One query per rule above; each returns 0 on the full dataset |
 | `questions.sql` | Ten practice questions with their queries |
-| `sample/` | `departments.csv` 40 rows; `employees.csv` 323 rows; `salaries.csv` 705 rows; `performance_reviews.csv` 999 rows; `absences.csv` 350 rows; `attrition_events.csv` 54 rows |
+| `sample/` | `departments.csv` 40 rows; `employees.csv` 332 rows; `salaries.csv` 742 rows; `performance_reviews.csv` 998 rows; `absences.csv` 319 rows; `attrition_events.csv` 146 rows |
 
 ## Re-create it
 

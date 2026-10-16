@@ -8,7 +8,7 @@ A retail bank's card payments from 1 April to 30 September 2026. Customers in se
 |---|---|
 | Tables | 5 |
 | Rows | 500,000 |
-| Full data | [CSV](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/bank-card-fraud-csv.zip) · [SQLite](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/bank-card-fraud-sqlite.zip) · [PostgreSQL script](https://github.com/generaterealdata/synthetic-datasets/releases/download/v1.0/bank-card-fraud-postgresql.zip) · [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-card-transactions-fraud-labels) |
+| Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-card-transactions-fraud-labels): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
 | Made with | [GenerateRealData](https://generaterealdata.com/use-cases/fraud-detection-data/), fully synthetic, no real records |
