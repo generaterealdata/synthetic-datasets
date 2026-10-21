@@ -59,11 +59,11 @@ It prints one line per rule and ends with a line such as `48 of 48 rules hold.`
 
 ## How the data is made
 
-The datasets are generated with [GenerateRealData](https://generaterealdata.com) from a database schema plus rules in plain terms (for example: a payment equals its order total; a cancelled order has no shipment). Each run uses a fixed seed, so it can be repeated exactly: [`scripts/recreate.py`](scripts/recreate.py) rebuilds any dataset here through the [API](https://generaterealdata.com/docs/api/). No value is edited after generation, and no field is written by AI.
+The datasets are generated with [GenerateRealData](https://generaterealdata.com?ref=github) from a database schema plus rules in plain terms (for example: a payment equals its order total; a cancelled order has no shipment). Each run uses a fixed seed, so it can be repeated exactly: [`scripts/recreate.py`](scripts/recreate.py) rebuilds any dataset here through the [API](https://generaterealdata.com/docs/api/?ref=github). No value is edited after generation, and no field is written by AI.
 
 Each data card also has a *Good to know* section listing what the dataset does not model. Read it before drawing conclusions: these are teaching and testing datasets, not samples of a real population.
 
-Need a different schema, more rows or your own rules? Generate your own at [generaterealdata.com](https://generaterealdata.com). Code examples for the API are in the [API examples repository](https://github.com/generaterealdata/api-examples).
+Need a different schema, more rows or your own rules? Generate your own at [generaterealdata.com](https://generaterealdata.com?ref=github). Code examples for the API are in the [API examples repository](https://github.com/generaterealdata/api-examples).
 
 ## Licence and credit
 

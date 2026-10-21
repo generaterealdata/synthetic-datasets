@@ -11,7 +11,7 @@ A company of 20,000 current and former employees in 40 departments across eight 
 | Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-hr-workforce-attrition): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
-| Made with | [GenerateRealData](https://generaterealdata.com/industries/hr-recruiting/), fully synthetic, no real records |
+| Made with | [GenerateRealData](https://generaterealdata.com/industries/hr-recruiting/?ref=github), fully synthetic, no real records |
 
 ## What makes it useful
 
@@ -221,11 +221,11 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py hr-workforce-attrition
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/industries/hr-recruiting/](https://generaterealdata.com/industries/hr-recruiting/).
+To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/industries/hr-recruiting/](https://generaterealdata.com/industries/hr-recruiting/?ref=github).
 
 ## How it was made
 
-Fully synthetic: generated with [GenerateRealData](https://generaterealdata.com/industries/hr-recruiting/) from a database schema and a set of rules, using a fixed seed. No real person, company or transaction is in the data, and no value was edited after generation. No field was written by AI. 
+Fully synthetic: generated with [GenerateRealData](https://generaterealdata.com/industries/hr-recruiting/?ref=github) from a database schema and a set of rules, using a fixed seed. No real person, company or transaction is in the data, and no value was edited after generation. No field was written by AI. 
 
 ## Licence
 

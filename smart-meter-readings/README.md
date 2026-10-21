@@ -11,7 +11,7 @@ One hundred homes and small businesses in one city, each with a smart meter read
 | Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-smart-meter-readings): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
-| Made with | [GenerateRealData](https://generaterealdata.com/industries/energy-utilities/), fully synthetic, no real records |
+| Made with | [GenerateRealData](https://generaterealdata.com/industries/energy-utilities/?ref=github), fully synthetic, no real records |
 
 ## What makes it useful
 
@@ -167,11 +167,11 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py smart-meter-readings
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/industries/energy-utilities/](https://generaterealdata.com/industries/energy-utilities/).
+To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/industries/energy-utilities/](https://generaterealdata.com/industries/energy-utilities/?ref=github).
 
 ## How it was made
 
-Fully synthetic: generated with [GenerateRealData](https://generaterealdata.com/industries/energy-utilities/) from a database schema and a set of rules, using a fixed seed. No real person, company or transaction is in the data, and no value was edited after generation. No field was written by AI. 
+Fully synthetic: generated with [GenerateRealData](https://generaterealdata.com/industries/energy-utilities/?ref=github) from a database schema and a set of rules, using a fixed seed. No real person, company or transaction is in the data, and no value was edited after generation. No field was written by AI. 
 
 ## Licence
 
