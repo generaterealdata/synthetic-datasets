@@ -11,7 +11,7 @@ A delivery fleet of 200 vans and 300 drivers working from five depots in Chicago
 | Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-fleet-gps-tracking): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
-| Made with | [GenerateRealData](https://generaterealdata.com/use-cases/geospatial-tracking-data/?ref=github), fully synthetic, no real records |
+| Made with | [GenerateRealData](https://www.generaterealdata.com/use-cases/geospatial-tracking-data/?ref=github), fully synthetic, no real records |
 
 ## What makes it useful
 
@@ -191,12 +191,12 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py fleet-gps-tracking
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/use-cases/geospatial-tracking-data/](https://generaterealdata.com/use-cases/geospatial-tracking-data/?ref=github).
+To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/use-cases/geospatial-tracking-data/](https://www.generaterealdata.com/use-cases/geospatial-tracking-data/?ref=github).
 
 ## How it was made
 
-Fully synthetic: generated with [GenerateRealData](https://generaterealdata.com/use-cases/geospatial-tracking-data/?ref=github) from a database schema and a set of rules, using a fixed seed. No real person, company or transaction is in the data, and no value was edited after generation. No field was written by AI. 
+Fully synthetic: generated with [GenerateRealData](https://www.generaterealdata.com/use-cases/geospatial-tracking-data/?ref=github) from a database schema and a set of rules, using a fixed seed. No real person, company or transaction is in the data, and no value was edited after generation. No field was written by AI. 
 
 ## Licence
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it for anything, including commercial work; please credit "Synthetic Fleet GPS Tracking, GenerateRealData" with a link to https://generaterealdata.com.
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it for anything, including commercial work; please credit "Synthetic Fleet GPS Tracking, GenerateRealData" with a link to https://www.generaterealdata.com.

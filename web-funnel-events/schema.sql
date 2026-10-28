@@ -1,5 +1,5 @@
 -- Synthetic Web Analytics Funnel Events
--- Schema used to generate this dataset with GenerateRealData (https://generaterealdata.com).
+-- Schema used to generate this dataset with GenerateRealData (https://www.generaterealdata.com).
 -- PostgreSQL syntax; structure only.
 
 CREATE TABLE users (

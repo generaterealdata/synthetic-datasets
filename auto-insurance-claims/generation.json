@@ -2,7 +2,7 @@
   "dataset": "auto-insurance-claims",
   "title": "Synthetic Auto Insurance Policies and Claims",
   "generator": "GenerateRealData",
-  "generator_url": "https://generaterealdata.com/industries/insurance/",
+  "generator_url": "https://www.generaterealdata.com/industries/insurance/",
   "generated_on": "2026-10-11",
   "mode": "schema",
   "plan": "plan.json",

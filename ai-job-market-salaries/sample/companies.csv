@@ -1,0 +1,306 @@
+company_id,company_name,industry,company_size,funding_stage,founded_year,ai_maturity,company_rating
+3,Pinecrest Foods,Healthcare and Pharma,Small,Series A,2018,Exploring,4.3
+4,Monarch Capital,Education,Mid-size,Private,2002,Exploring,3.5
+5,Lighthouse Bank,Technology,Large,Public,2004,Piloting,3.6
+6,Quartz Data,Finance and Banking,Startup,Seed,2019,Piloting,3.9
+8,Talon Media,Finance and Banking,Large,Public,1962,Scaling,3.5
+10,Cobalt Dynamics,Finance and Banking,Small,Series C+,2021,Piloting,4.6
+11,Kestrel Robotics,Manufacturing,Small,Bootstrapped,2014,Piloting,4
+15,Quartz Partners,Telecommunications,Large,Public,1994,Scaling,3.3
+19,Lattice Solutions,Media and Entertainment,Small,Series B,2018,Piloting,3.3
+20,Cobalt Robotics,Finance and Banking,Startup,Series B,2020,AI-native,4.1
+21,Orbit Logistics,Finance and Banking,Small,Series C+,2018,Piloting,3.3
+22,Granite Learning,Technology,Startup,Series B,2022,AI-native,3.9
+23,Falcon Partners,Technology,Startup,Seed,2019,AI-native,3.5
+24,Delta Group,Telecommunications,Startup,Seed,2021,AI-native,4.1
+26,Riverstone Bank,Technology,Mid-size,Series C+,1999,Piloting,3.6
+27,Nexus Insights,Media and Entertainment,Startup,Seed,2023,Piloting,4.6
+28,Verdant Robotics,Technology,Small,Series B,2021,Scaling,4.2
+29,Mosaic Health,Technology,Startup,Series A,2019,Piloting,3.8
+33,Quartz Foods,Technology,Large,Public,1959,Exploring,4.6
+35,Riverstone Media,Retail and E-commerce,Small,Series C+,2020,Piloting,4.5
+36,Radiant Bank,Technology,Small,Series B,2016,Piloting,4.7
+38,Mosaic Bank,Healthcare and Pharma,Mid-size,Series C+,2000,Piloting,4.5
+40,Meridian Works,Retail and E-commerce,Mid-size,Public,2007,Piloting,4.1
+41,Cinder Software,Media and Entertainment,Startup,Seed,2019,AI-native,3.2
+43,Arcadia Networks,Manufacturing,Mid-size,Series C+,2017,Piloting,4
+44,Horizon Solutions,Technology,Startup,Bootstrapped,2020,Piloting,3.5
+45,Harbor Retail,Finance and Banking,Mid-size,Series C+,1999,Exploring,3.8
+46,Ironbark Digital,Technology,Mid-size,Private,1996,AI-native,3.9
+47,Willow Retail,Retail and E-commerce,Enterprise,Public,1994,Scaling,3.9
+48,Meridian Dynamics,Technology,Small,Series B,2018,Piloting,4.5
+50,Nimbus Analytics,Technology,Large,Private,2006,Scaling,3.4
+52,Wavelength Dynamics,Finance and Banking,Mid-size,Public,2005,Scaling,3.5
+53,Vantage Dynamics,Technology,Enterprise,Private,1990,Exploring,3.5
+54,Keystone Health,Technology,Startup,Bootstrapped,2019,AI-native,3.8
+57,Radiant Software,Education,Startup,Series A,2022,Piloting,4.8
+58,Quill Insights,Education,Startup,Series B,2022,Exploring,4.1
+59,Cobalt AI,Energy,Small,Series B,2018,AI-native,3.5
+61,Summit Group,Government and Public Sector,Startup,Seed,2020,Scaling,4.8
+62,Falcon Bank,Technology,Small,Bootstrapped,2014,Scaling,3.6
+64,Helix Health,Manufacturing,Startup,Seed,2023,AI-native,3.8
+65,Beacon Cloud,Manufacturing,Mid-size,Series C+,2000,Piloting,4.2
+66,Pinecrest Group,Healthcare and Pharma,Mid-size,Private,2007,Piloting,3.8
+67,Meridian Foods,Media and Entertainment,Mid-size,Series C+,1997,Piloting,3.1
+71,Mosaic Software,Consulting,Startup,Series A,2020,Scaling,5
+72,Umbra Dynamics,Technology,Enterprise,Public,1951,Scaling,4.6
+75,Lumen Bank,Consulting,Large,Public,2007,Exploring,3.7
+76,Uplift Mobility,Technology,Mid-size,Public,2007,Scaling,4.3
+78,Arcadia Logistics,Healthcare and Pharma,Small,Bootstrapped,2018,AI-native,3.9
+79,Nova Insights,Healthcare and Pharma,Mid-size,Public,2005,AI-native,4.2
+80,Juniper Intelligence,Healthcare and Pharma,Large,Public,1950,Exploring,3.9
+81,Monarch Software,Technology,Enterprise,Private,1959,Scaling,3.7
+82,Glacier Insights,Manufacturing,Mid-size,Series C+,2005,Piloting,4.1
+84,Kinetic Labs,Healthcare and Pharma,Mid-size,Private,2006,AI-native,4.1
+86,Aster Security,Technology,Large,Private,1988,Exploring,4
+88,Kinetic Cloud,Media and Entertainment,Mid-size,Series C+,1996,Piloting,2.8
+89,Quartz Energy,Government and Public Sector,Startup,Series A,2023,Scaling,3.8
+90,Juniper Logistics,Technology,Large,Private,1976,Scaling,4.5
+91,Redwood Media,Consulting,Startup,Seed,2021,Scaling,4.6
+92,Nexus Mobility,Consulting,Startup,Seed,2025,Scaling,4
+93,Jade Digital,Healthcare and Pharma,Startup,Series B,2021,AI-native,3.4
+94,Lighthouse Solutions,Education,Enterprise,Private,1972,Piloting,3.5
+95,Kinetic AI,Healthcare and Pharma,Small,Bootstrapped,2019,Scaling,4.6
+96,Sable Digital,Manufacturing,Small,Series B,2017,AI-native,4.1
+97,Redwood Foods,Retail and E-commerce,Enterprise,Public,1957,Exploring,4.3
+98,Umbra Labs,Retail and E-commerce,Large,Private,1998,Piloting,3.4
+100,Nova Capital,Media and Entertainment,Small,Bootstrapped,2015,Exploring,2.6
+103,Quill Robotics,Healthcare and Pharma,Small,Series B,2011,Exploring,4.4
+107,Orbit Systems,Finance and Banking,Startup,Series B,2021,Piloting,4
+108,Quanta Bank,Government and Public Sector,Large,Private,1982,AI-native,3.9
+110,Beacon Mobility,Retail and E-commerce,Mid-size,Public,2013,Piloting,4.1
+111,Monarch Security,Government and Public Sector,Startup,Seed,2018,Scaling,3.5
+112,Monarch Bank,Technology,Small,Series B,2020,Exploring,4.3
+113,Harbor Foods,Telecommunications,Startup,Series A,2020,AI-native,4.5
+116,Aster Media,Government and Public Sector,Startup,Series A,2024,Piloting,4.5
+120,Juniper Learning,Technology,Enterprise,Public,2009,AI-native,4.2
+121,Keystone Solutions,Finance and Banking,Startup,Seed,2020,Piloting,3.8
+122,Horizon Works,Manufacturing,Small,Series A,2023,Piloting,3.6
+123,Orbit Bio,Retail and E-commerce,Small,Bootstrapped,2020,Scaling,3.8
+124,Aster Systems,Consulting,Startup,Bootstrapped,2022,Scaling,4
+125,Vector Mobility,Technology,Mid-size,Public,2017,Scaling,4.5
+126,Evergreen Insights,Consulting,Small,Series C+,2019,Scaling,4
+127,Wavelength Media,Retail and E-commerce,Large,Public,1976,Scaling,4.2
+130,Sable AI,Technology,Small,Series C+,2012,Scaling,4.3
+132,Meridian Health,Energy,Mid-size,Private,2003,Piloting,3.3
+134,Jade Intelligence,Energy,Small,Series B,2012,Piloting,3.5
+135,Glacier Energy,Technology,Large,Public,1954,Scaling,4.5
+136,Glacier Intelligence,Finance and Banking,Mid-size,Private,2002,Piloting,4.2
+137,Northwind Data,Technology,Startup,Series A,2023,AI-native,3.9
+139,Yarrow Media,Consulting,Small,Bootstrapped,2018,Scaling,4.4
+140,Evergreen Security,Media and Entertainment,Large,Public,1958,Piloting,4.8
+141,Mosaic Labs,Technology,Startup,Series A,2019,Piloting,4.3
+142,Lattice Health,Technology,Startup,Series A,2022,Exploring,4
+143,Yarrow AI,Technology,Enterprise,Public,1987,Piloting,3.7
+145,Verdant Media,Technology,Large,Public,2005,Piloting,4.8
+146,Juniper Analytics,Technology,Startup,Bootstrapped,2022,Piloting,4.5
+153,Mosaic Robotics,Automotive,Mid-size,Public,2019,Piloting,4.2
+154,Wavelength Robotics,Healthcare and Pharma,Startup,Seed,2020,Piloting,4.1
+155,Radiant Retail,Technology,Small,Series A,2011,Piloting,3.4
+156,Falcon Group,Energy,Large,Public,1961,Piloting,4.2
+157,Summit Foods,Technology,Startup,Series B,2023,Piloting,4
+158,Riverstone Works,Automotive,Startup,Seed,2019,AI-native,3.4
+159,Willow Foods,Retail and E-commerce,Mid-size,Private,2009,Exploring,4.3
+163,Wavelength Group,Finance and Banking,Small,Series A,2021,Piloting,3.5
+164,Cobalt Insights,Technology,Small,Series B,2013,Piloting,3.6
+165,Cobalt Security,Healthcare and Pharma,Small,Series A,2013,Exploring,3.7
+167,Harbor Robotics,Finance and Banking,Mid-size,Private,2008,Piloting,3.7
+171,Ember Data,Technology,Large,Private,1956,Piloting,4.3
+176,Lumen Security,Finance and Banking,Large,Private,1957,AI-native,4.1
+179,Falcon Intelligence,Manufacturing,Mid-size,Private,2001,Piloting,3.8
+180,Wavelength Labs,Technology,Mid-size,Series C+,2016,Scaling,4.6
+181,Arcadia Group,Healthcare and Pharma,Enterprise,Public,2002,Exploring,4.2
+183,Umbra Cloud,Healthcare and Pharma,Mid-size,Public,2009,Scaling,4.4
+187,Lumen Partners,Healthcare and Pharma,Large,Public,1994,AI-native,4.7
+188,Falcon Security,Healthcare and Pharma,Large,Public,1965,Piloting,3.5
+189,Umbra Foods,Technology,Mid-size,Private,2002,Piloting,4.4
+193,Prism Group,Finance and Banking,Large,Public,1978,Scaling,3.8
+194,Quanta Works,Technology,Large,Private,2013,Piloting,4.2
+196,Kestrel Labs,Technology,Enterprise,Public,1974,Piloting,4.1
+198,Cascade Group,Consulting,Mid-size,Private,2019,Exploring,3.5
+199,Arcadia Works,Technology,Mid-size,Private,2001,Piloting,4.1
+200,Granite Technologies,Education,Small,Series C+,2022,Exploring,5
+202,Granite Bio,Retail and E-commerce,Enterprise,Public,1969,Exploring,4
+205,Oakridge Intelligence,Manufacturing,Startup,Seed,2022,AI-native,4.6
+207,Aster Learning,Healthcare and Pharma,Large,Private,1994,Piloting,3.8
+208,Vector Energy,Education,Enterprise,Public,1983,Scaling,4.1
+209,Indigo Insights,Automotive,Small,Series A,2022,Scaling,3.9
+210,Kinetic Capital,Finance and Banking,Large,Public,1956,Exploring,4
+212,Vantage Intelligence,Technology,Small,Series B,2020,AI-native,4.7
+213,Riverstone Energy,Technology,Startup,Bootstrapped,2024,Piloting,4.1
+214,Northwind Capital,Consulting,Small,Series B,2019,Scaling,3.8
+218,Beacon Robotics,Automotive,Large,Private,1962,Scaling,4.7
+221,Vector Dynamics,Technology,Small,Series B,2022,Piloting,3.5
+223,Prism Software,Technology,Startup,Series B,2020,Scaling,4
+224,Cobalt Networks,Finance and Banking,Mid-size,Private,1999,Piloting,4.1
+225,Nimbus Learning,Healthcare and Pharma,Startup,Series B,2018,AI-native,4.5
+226,Tidewater Robotics,Energy,Enterprise,Public,2003,Scaling,4.3
+227,Wavelength Capital,Retail and E-commerce,Startup,Series A,2020,AI-native,3.5
+228,Meridian Data,Manufacturing,Startup,Seed,2021,Piloting,4.2
+230,Silverline Logistics,Consulting,Enterprise,Public,1997,AI-native,3.9
+231,Kinetic Analytics,Healthcare and Pharma,Enterprise,Public,1988,Piloting,4
+234,Pinecrest Works,Technology,Large,Public,2014,Scaling,4.2
+235,Riverstone Dynamics,Retail and E-commerce,Mid-size,Private,2008,Piloting,4.6
+236,Quill Bank,Technology,Mid-size,Private,2015,Scaling,3.6
+237,Juniper Energy,Technology,Small,Bootstrapped,2011,Exploring,3.6
+238,Horizon Security,Government and Public Sector,Large,Private,1969,Exploring,2.8
+241,Evergreen Intelligence,Government and Public Sector,Large,Public,2009,Piloting,4.3
+242,Orbit Analytics,Technology,Large,Public,1996,Piloting,3.5
+243,Oakridge Technologies,Education,Large,Private,2006,AI-native,3.3
+246,Granite Group,Technology,Large,Public,1969,Scaling,3.6
+247,Radiant Data,Energy,Startup,Seed,2021,Exploring,3.5
+249,Yarrow Software,Education,Startup,Seed,2025,Scaling,4.3
+250,Riverstone Intelligence,Telecommunications,Small,Series B,2020,Piloting,3.3
+251,Umbra Robotics,Technology,Small,Series B,2021,Scaling,3.8
+253,Northwind Group,Technology,Small,Series B,2017,Piloting,4.1
+254,Redwood Security,Finance and Banking,Large,Public,1956,Piloting,3.9
+255,Granite Systems,Finance and Banking,Startup,Series B,2021,Scaling,4.8
+256,Lighthouse Insights,Healthcare and Pharma,Large,Public,1998,Exploring,4.2
+258,Prism Partners,Technology,Startup,Series B,2019,AI-native,4.3
+259,Willow Robotics,Finance and Banking,Large,Public,1997,Piloting,4.5
+260,Lattice Dynamics,Retail and E-commerce,Startup,Seed,2022,AI-native,4.1
+263,Quartz Digital,Government and Public Sector,Startup,Series B,2019,AI-native,3.8
+265,Onyx Robotics,Technology,Startup,Seed,2021,Piloting,3.1
+266,Lattice Security,Finance and Banking,Startup,Seed,2019,Scaling,3.4
+267,Keystone Energy,Technology,Mid-size,Private,2008,Scaling,3.7
+268,Evergreen Labs,Technology,Large,Private,1972,Scaling,3.5
+271,Bluefin Energy,Finance and Banking,Large,Public,1966,Piloting,3.4
+272,Jade Energy,Manufacturing,Large,Public,1960,Exploring,4
+275,Juniper Solutions,Telecommunications,Mid-size,Private,2001,AI-native,4.2
+276,Jade Insights,Media and Entertainment,Startup,Seed,2019,AI-native,4
+285,Horizon Energy,Retail and E-commerce,Small,Bootstrapped,2018,Scaling,4
+286,Horizon Labs,Telecommunications,Startup,Series A,2022,Exploring,4.4
+291,Nexus Energy,Retail and E-commerce,Enterprise,Private,1992,Piloting,4.5
+292,Vantage Systems,Education,Small,Bootstrapped,2012,Piloting,4.8
+293,Keystone Media,Technology,Startup,Series A,2021,Scaling,3.2
+294,Uplift Foods,Education,Mid-size,Series C+,2005,Exploring,3.8
+297,Orbit Bank,Healthcare and Pharma,Startup,Series A,2024,Scaling,3.8
+298,Quanta Retail,Finance and Banking,Enterprise,Public,1971,Scaling,4.5
+300,Quartz Cloud,Manufacturing,Startup,Bootstrapped,2022,Scaling,3.8
+301,Indigo Analytics,Technology,Small,Series B,2020,Scaling,3.5
+302,Prism Analytics,Energy,Enterprise,Private,1969,Scaling,4.1
+304,Cascade Solutions,Technology,Small,Series B,2022,AI-native,4
+307,Willow Networks,Automotive,Large,Public,1991,Exploring,3.5
+308,Uplift Cloud,Media and Entertainment,Mid-size,Private,2001,Scaling,4.6
+309,Kestrel Capital,Finance and Banking,Small,Series B,2019,AI-native,4.2
+310,Cascade Systems,Manufacturing,Large,Private,1976,Exploring,3.8
+311,Delta Capital,Government and Public Sector,Small,Series A,2016,Exploring,4.6
+312,Vantage Analytics,Finance and Banking,Startup,Seed,2020,AI-native,4.2
+314,Horizon Retail,Technology,Startup,Seed,2021,AI-native,3.8
+315,Harbor Cloud,Technology,Small,Series C+,2014,Piloting,4
+316,Sable Data,Government and Public Sector,Large,Public,1952,Exploring,4.1
+317,Juniper Cloud,Media and Entertainment,Mid-size,Series C+,2001,Scaling,3.6
+318,Vantage Foods,Government and Public Sector,Large,Public,1964,Piloting,4.2
+319,Nexus Networks,Telecommunications,Enterprise,Public,2011,Exploring,4.5
+320,Nimbus Media,Healthcare and Pharma,Large,Public,1952,Scaling,3.2
+321,Talon Retail,Healthcare and Pharma,Startup,Seed,2022,Scaling,4
+323,Falcon AI,Manufacturing,Large,Private,1974,Scaling,5
+324,Ironbark Health,Education,Large,Private,1973,AI-native,3.9
+325,Glacier Capital,Technology,Mid-size,Public,2011,Scaling,4.4
+328,Lighthouse Security,Government and Public Sector,Mid-size,Public,2014,Scaling,4
+329,Ironbark Capital,Technology,Mid-size,Series C+,2010,Piloting,4.6
+333,Prism Digital,Technology,Large,Public,1980,Scaling,3.9
+337,Cinder Partners,Technology,Mid-size,Private,2000,Exploring,4.2
+343,Cinder Logistics,Manufacturing,Startup,Series B,2020,AI-native,4.1
+346,Glacier Security,Technology,Large,Public,1975,Scaling,3.6
+347,Willow Systems,Technology,Small,Bootstrapped,2017,Exploring,3.5
+348,Vantage Group,Technology,Small,Series C+,2020,Piloting,3.9
+349,Ember Foods,Media and Entertainment,Large,Public,1986,Exploring,4.4
+350,Juniper Media,Manufacturing,Mid-size,Public,2012,Scaling,4.2
+353,Lighthouse Energy,Retail and E-commerce,Small,Bootstrapped,2011,Piloting,3.9
+354,Lighthouse Partners,Healthcare and Pharma,Startup,Series A,2020,AI-native,3.8
+355,Silverline Mobility,Technology,Startup,Seed,2019,AI-native,4
+357,Beacon Software,Automotive,Small,Series B,2012,Piloting,4
+358,Oakridge Networks,Technology,Large,Public,1984,Exploring,3.5
+360,Zephyr Digital,Government and Public Sector,Mid-size,Public,2005,AI-native,3.9
+361,Beacon Solutions,Technology,Startup,Seed,2024,AI-native,3.9
+362,Prism Media,Retail and E-commerce,Enterprise,Public,1990,Exploring,4.3
+366,Indigo Retail,Retail and E-commerce,Large,Private,2014,Piloting,3.3
+367,Talon Insights,Education,Startup,Series A,2018,Piloting,3.5
+368,Lumen Robotics,Technology,Small,Series B,2016,Piloting,4
+372,Orbit Data,Finance and Banking,Small,Series B,2016,AI-native,3.5
+373,Radiant Security,Consulting,Enterprise,Public,1974,Piloting,4.2
+374,Summit Bio,Healthcare and Pharma,Mid-size,Public,2013,Piloting,3.9
+375,Talon Systems,Energy,Startup,Seed,2022,Piloting,3.7
+376,Jade Bank,Technology,Mid-size,Series C+,2011,Scaling,4.1
+379,Quill Works,Technology,Enterprise,Private,1976,Exploring,3.6
+380,Cascade Health,Manufacturing,Startup,Series A,2019,Scaling,4.6
+384,Monarch Robotics,Education,Enterprise,Private,1964,Scaling,3.6
+385,Orbit Security,Retail and E-commerce,Enterprise,Private,1957,Scaling,3.1
+386,Meridian Robotics,Technology,Startup,Seed,2020,Scaling,3.1
+388,Silverline Capital,Manufacturing,Large,Private,2010,Piloting,3.5
+389,Silverline Partners,Education,Small,Series B,2016,Exploring,4.3
+391,Lighthouse Analytics,Retail and E-commerce,Large,Public,1983,Exploring,2.3
+392,Arcadia Intelligence,Manufacturing,Mid-size,Series C+,2004,Piloting,4.3
+393,Indigo Bio,Automotive,Startup,Series A,2021,AI-native,4.3
+395,Lighthouse Robotics,Retail and E-commerce,Startup,Seed,2023,Piloting,3.8
+396,Lighthouse Foods,Manufacturing,Startup,Series B,2021,Exploring,3.7
+397,Ironbark Retail,Government and Public Sector,Large,Public,1981,Scaling,4.4
+401,Zephyr Insights,Retail and E-commerce,Startup,Bootstrapped,2019,AI-native,3.6
+402,Mosaic Technologies,Retail and E-commerce,Large,Public,1982,Piloting,4
+403,Vector Learning,Healthcare and Pharma,Startup,Seed,2020,Piloting,4
+404,Oakridge Capital,Automotive,Startup,Series B,2020,Scaling,4.2
+405,Lattice Foods,Technology,Startup,Seed,2022,AI-native,4.8
+410,Onyx Labs,Technology,Mid-size,Public,2009,Exploring,3.2
+411,Delta Intelligence,Technology,Large,Private,1963,Piloting,3.9
+413,Zenith Partners,Government and Public Sector,Startup,Series A,2021,AI-native,4.2
+414,Uplift Dynamics,Technology,Mid-size,Private,2017,Exploring,4.3
+416,Sable Works,Retail and E-commerce,Large,Public,2008,Scaling,3.7
+417,Yarrow Insights,Technology,Small,Series B,2012,Scaling,3.4
+419,Falcon Energy,Technology,Large,Public,1958,Piloting,3.5
+420,Verdant Foods,Consulting,Large,Private,1983,Piloting,4
+421,Helix Partners,Technology,Enterprise,Public,1985,Exploring,3.9
+422,Indigo Technologies,Technology,Enterprise,Public,1958,Scaling,4.9
+423,Nexus Solutions,Healthcare and Pharma,Mid-size,Private,2005,Scaling,3.7
+425,Quartz Networks,Education,Small,Bootstrapped,2022,Scaling,4.8
+426,Talon Technologies,Manufacturing,Large,Public,2005,Exploring,4
+430,Verdant Labs,Finance and Banking,Enterprise,Public,2009,Piloting,4.6
+432,Uplift Logistics,Healthcare and Pharma,Small,Series B,2010,Scaling,3.9
+434,Nimbus Data,Retail and E-commerce,Small,Series C+,2021,Scaling,4.5
+435,Oakridge Insights,Government and Public Sector,Small,Series C+,2019,Scaling,3.8
+436,Cinder Energy,Finance and Banking,Large,Public,1975,Scaling,4.1
+438,Northwind Mobility,Consulting,Small,Series A,2023,Piloting,3.4
+440,Harbor Dynamics,Government and Public Sector,Mid-size,Private,2013,Piloting,4.3
+441,Cascade Robotics,Consulting,Startup,Series A,2021,AI-native,3.5
+442,Lattice Partners,Telecommunications,Startup,Seed,2021,AI-native,3.7
+447,Nexus Works,Finance and Banking,Enterprise,Public,2012,Exploring,3.5
+448,Helix Works,Finance and Banking,Small,Series A,2015,Piloting,3.5
+449,Aster Energy,Finance and Banking,Mid-size,Series C+,2020,AI-native,3.6
+450,Radiant Systems,Technology,Mid-size,Private,2007,Scaling,3.8
+451,Juniper AI,Government and Public Sector,Mid-size,Series C+,2012,AI-native,4
+452,Silverline Data,Healthcare and Pharma,Enterprise,Public,1968,AI-native,3.9
+453,Nimbus Foods,Energy,Small,Series A,2020,Scaling,3.7
+455,Arcadia Digital,Education,Startup,Seed,2021,Scaling,3.8
+456,Meridian Energy,Technology,Small,Series C+,2017,Scaling,4.4
+457,Cascade Labs,Technology,Mid-size,Series C+,2002,Scaling,4.2
+458,Willow Bank,Finance and Banking,Mid-size,Series C+,2009,Scaling,3.9
+459,Onyx Retail,Technology,Startup,Seed,2019,Scaling,4.5
+460,Nexus Digital,Technology,Small,Series B,2019,Piloting,3.8
+461,Glacier Dynamics,Education,Startup,Series A,2020,AI-native,4
+462,Sable Security,Manufacturing,Startup,Series A,2019,Scaling,4.8
+464,Lumen Dynamics,Finance and Banking,Startup,Series A,2019,Scaling,3.6
+465,Wavelength Software,Technology,Startup,Series A,2019,Scaling,5
+470,Arcadia Security,Healthcare and Pharma,Mid-size,Public,2013,Piloting,4.1
+471,Pinecrest Insights,Technology,Large,Public,2009,Piloting,3.3
+472,Tidewater Software,Technology,Mid-size,Series C+,2011,Exploring,3.3
+474,Bluefin Dynamics,Healthcare and Pharma,Startup,Series B,2024,AI-native,3.9
+478,Vector Digital,Retail and E-commerce,Small,Series C+,2023,AI-native,4.3
+479,Redwood Cloud,Energy,Mid-size,Series C+,2013,Piloting,4.5
+480,Nova Energy,Automotive,Enterprise,Private,1964,Exploring,4.5
+481,Monarch Labs,Healthcare and Pharma,Large,Private,1971,Scaling,4.2
+482,Cobalt Learning,Finance and Banking,Large,Private,2011,Scaling,4.5
+484,Ironbark Systems,Telecommunications,Large,Private,1981,Scaling,3.7
+485,Lumen Labs,Technology,Small,Series A,2021,Piloting,3.2
+492,Lighthouse AI,Healthcare and Pharma,Mid-size,Private,2004,Exploring,4.2
+493,Monarch Digital,Education,Enterprise,Public,1993,Exploring,3.5
+496,Tidewater Learning,Consulting,Large,Public,1981,Piloting,3.6
+498,Keystone Systems,Consulting,Mid-size,Series C+,2006,Scaling,4.3
+499,Helix Dynamics,Finance and Banking,Mid-size,Series C+,2011,Exploring,3.9
+501,Ember Capital,Consulting,Startup,Series A,2022,Piloting,3.6
+502,Sable Dynamics,Consulting,Startup,Series B,2021,Scaling,4.7
+503,Granite Partners,Technology,Small,Series B,2020,Scaling,4.6
+504,Granite Retail,Technology,Small,Bootstrapped,2018,Scaling,4.3
+506,Granite Networks,Government and Public Sector,Startup,Seed,2023,Piloting,3.9
+507,Uplift Intelligence,Government and Public Sector,Large,Private,1991,Scaling,4.6
+508,Yarrow Capital,Retail and E-commerce,Small,Series C+,2013,Piloting,3.5
+510,Vantage Energy,Technology,Small,Series B,2019,Piloting,3.8

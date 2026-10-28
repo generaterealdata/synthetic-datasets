@@ -11,7 +11,7 @@ A US auto insurer writing one-year policies from January 2023, seen as of 30 Sep
 | Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-auto-insurance-claims): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
-| Made with | [GenerateRealData](https://generaterealdata.com/industries/insurance/?ref=github), fully synthetic, no real records |
+| Made with | [GenerateRealData](https://www.generaterealdata.com/industries/insurance/?ref=github), fully synthetic, no real records |
 
 ## What makes it useful
 
@@ -218,12 +218,12 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py auto-insurance-claims
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/industries/insurance/](https://generaterealdata.com/industries/insurance/?ref=github).
+To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/industries/insurance/](https://www.generaterealdata.com/industries/insurance/?ref=github).
 
 ## How it was made
 
-Fully synthetic: generated with [GenerateRealData](https://generaterealdata.com/industries/insurance/?ref=github) from a database schema and a set of rules, using a fixed seed. No real person, company or transaction is in the data, and no value was edited after generation. No field was written by AI. 
+Fully synthetic: generated with [GenerateRealData](https://www.generaterealdata.com/industries/insurance/?ref=github) from a database schema and a set of rules, using a fixed seed. No real person, company or transaction is in the data, and no value was edited after generation. No field was written by AI. 
 
 ## Licence
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it for anything, including commercial work; please credit "Synthetic Auto Insurance Policies and Claims, GenerateRealData" with a link to https://generaterealdata.com.
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Use it for anything, including commercial work; please credit "Synthetic Auto Insurance Policies and Claims, GenerateRealData" with a link to https://www.generaterealdata.com.

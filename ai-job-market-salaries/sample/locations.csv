@@ -1,0 +1,50 @@
+location_id,city,country,region,currency,usd_to_local,cost_of_living_index
+1,San Francisco,United States,North America,USD,1,128
+2,New York,United States,North America,USD,1,122
+3,Seattle,United States,North America,USD,1,116
+4,Boston,United States,North America,USD,1,114
+5,Los Angeles,United States,North America,USD,1,110
+6,Austin,United States,North America,USD,1,100
+7,Chicago,United States,North America,USD,1,99
+8,Washington,United States,North America,USD,1,108
+9,Denver,United States,North America,USD,1,98
+10,Atlanta,United States,North America,USD,1,94
+11,Dallas,United States,North America,USD,1,93
+12,Raleigh,United States,North America,USD,1,90
+13,San Diego,United States,North America,USD,1,109
+14,Pittsburgh,United States,North America,USD,1,88
+15,Toronto,Canada,North America,CAD,1.37,78
+16,Vancouver,Canada,North America,CAD,1.37,80
+17,Montreal,Canada,North America,CAD,1.37,72
+18,London,United Kingdom,Europe,GBP,0.79,82
+19,Manchester,United Kingdom,Europe,GBP,0.79,66
+20,Cambridge,United Kingdom,Europe,GBP,0.79,72
+21,Edinburgh,United Kingdom,Europe,GBP,0.79,64
+22,Berlin,Germany,Europe,EUR,0.92,70
+23,Munich,Germany,Europe,EUR,0.92,76
+24,Hamburg,Germany,Europe,EUR,0.92,70
+25,Paris,France,Europe,EUR,0.92,68
+26,Amsterdam,Netherlands,Europe,EUR,0.92,74
+27,Zurich,Switzerland,Europe,CHF,0.88,118
+28,Dublin,Ireland,Europe,EUR,0.92,76
+29,Stockholm,Sweden,Europe,SEK,10.5,62
+30,Warsaw,Poland,Europe,PLN,4,42
+31,Madrid,Spain,Europe,EUR,0.92,50
+32,Bengaluru,India,South Asia,INR,84,22
+33,Hyderabad,India,South Asia,INR,84,20
+34,Pune,India,South Asia,INR,84,19
+35,Gurugram,India,South Asia,INR,84,21
+36,Chennai,India,South Asia,INR,84,18
+37,Mumbai,India,South Asia,INR,84,23
+38,Singapore,Singapore,East Asia and Pacific,SGD,1.34,84
+39,Tokyo,Japan,East Asia and Pacific,JPY,150,56
+40,Seoul,South Korea,East Asia and Pacific,KRW,1350,52
+41,Shanghai,China,East Asia and Pacific,CNY,7.2,42
+42,Beijing,China,East Asia and Pacific,CNY,7.2,42
+43,Shenzhen,China,East Asia and Pacific,CNY,7.2,40
+44,Sydney,Australia,East Asia and Pacific,AUD,1.52,78
+45,Melbourne,Australia,East Asia and Pacific,AUD,1.52,74
+46,Tel Aviv,Israel,Middle East,ILS,3.7,80
+47,Dubai,United Arab Emirates,Middle East,AED,3.67,78
+48,Sao Paulo,Brazil,Latin America,BRL,5.4,30
+49,Mexico City,Mexico,Latin America,MXN,18,32

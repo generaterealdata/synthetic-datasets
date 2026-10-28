@@ -2,7 +2,7 @@
   "dataset": "saas-subscriptions",
   "title": "Synthetic SaaS Subscriptions and Churn",
   "generator": "GenerateRealData",
-  "generator_url": "https://generaterealdata.com/use-cases/test-data-from-sql-schema/",
+  "generator_url": "https://www.generaterealdata.com/use-cases/test-data-from-sql-schema/",
   "generated_on": "2026-10-16",
   "mode": "schema",
   "plan": "plan.json",

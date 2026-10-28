@@ -1,5 +1,5 @@
 -- Synthetic Smart Meter Readings (15-Minute Intervals)
--- Schema used to generate this dataset with GenerateRealData (https://generaterealdata.com).
+-- Schema used to generate this dataset with GenerateRealData (https://www.generaterealdata.com).
 -- PostgreSQL syntax; structure only.
 
 CREATE TABLE premises (

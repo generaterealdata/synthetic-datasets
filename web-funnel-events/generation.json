@@ -2,7 +2,7 @@
   "dataset": "web-funnel-events",
   "title": "Synthetic Web Analytics Funnel Events",
   "generator": "GenerateRealData",
-  "generator_url": "https://generaterealdata.com/use-cases/user-behavior-data/",
+  "generator_url": "https://www.generaterealdata.com/use-cases/user-behavior-data/",
   "generated_on": "2026-10-11",
   "mode": "schema",
   "plan": "plan.json",

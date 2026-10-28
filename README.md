@@ -1,6 +1,6 @@
 # Synthetic datasets
 
-**11 free, realistic, fully synthetic databases (3.7 million rows) for SQL practice, software testing, analytics and teaching.** Each one is a set of related tables whose keys match, totals add up and dates are in order, and each comes with the queries that prove it.
+**12 free, realistic, fully synthetic databases (4.2 million rows) for SQL practice, software testing, analytics and teaching.** Each one is a set of related tables whose keys match, totals add up and dates are in order, and each comes with the queries that prove it.
 
 No real person, company or transaction appears in any file, so the data can be used and shared without privacy approval. Licence: [CC BY 4.0](LICENSE).
 
@@ -17,6 +17,7 @@ No real person, company or transaction appears in any file, so the data can be u
 | [Synthetic Smart Meter Readings (15-Minute Intervals)](smart-meter-readings/) | 3 | 500,000 | Time-series analysis of 15-minute energy readings | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-smart-meter-readings) |
 | [Synthetic Auto Insurance Policies and Claims](auto-insurance-claims/) | 5 | 192,843 | Claims analytics: frequency, severity, reserves | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-auto-insurance-claims) |
 | [Synthetic Fleet GPS Tracking](fleet-gps-tracking/) | 4 | 404,052 | Trajectory analysis, geofencing, telematics testing | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-fleet-gps-tracking) |
+| [500K AI Jobs & Salaries Dataset (2024-2026)](ai-job-market-salaries/) | 3 | 510,000 | Salary prediction and AI hiring analysis on one wide table | Kaggle (coming soon) |
 
 ## What is in each folder
 
@@ -59,14 +60,14 @@ It prints one line per rule and ends with a line such as `48 of 48 rules hold.`
 
 ## How the data is made
 
-The datasets are generated with [GenerateRealData](https://generaterealdata.com?ref=github) from a database schema plus rules in plain terms (for example: a payment equals its order total; a cancelled order has no shipment). Each run uses a fixed seed, so it can be repeated exactly: [`scripts/recreate.py`](scripts/recreate.py) rebuilds any dataset here through the [API](https://generaterealdata.com/docs/api/?ref=github). No value is edited after generation, and no field is written by AI.
+The datasets are generated with [GenerateRealData](https://www.generaterealdata.com) from a database schema plus rules in plain terms (for example: a payment equals its order total; a cancelled order has no shipment). Each run uses a fixed seed, so it can be repeated exactly: [`scripts/recreate.py`](scripts/recreate.py) rebuilds any dataset here through the [API](https://www.generaterealdata.com/docs/api/). No value is edited after generation, and no field is written by AI.
 
 Each data card also has a *Good to know* section listing what the dataset does not model. Read it before drawing conclusions: these are teaching and testing datasets, not samples of a real population.
 
-Need a different schema, more rows or your own rules? Generate your own at [generaterealdata.com](https://generaterealdata.com?ref=github). Code examples for the API are in the [API examples repository](https://github.com/generaterealdata/api-examples).
+Need a different schema, more rows or your own rules? Generate your own at [generaterealdata.com](https://www.generaterealdata.com). Code examples for the API are in the [API examples repository](https://github.com/generaterealdata/api-examples).
 
 ## Licence and credit
 
-The data and documentation are licensed under [CC BY 4.0](LICENSE): use them for anything, including commercial work, and credit "GenerateRealData" with a link to https://generaterealdata.com. The scripts are also available under the MIT licence.
+The data and documentation are licensed under [CC BY 4.0](LICENSE): use them for anything, including commercial work, and credit "GenerateRealData" with a link to https://www.generaterealdata.com. The scripts are also available under the MIT licence.
 
 Found a problem in a dataset? Please open an issue.

@@ -1,5 +1,5 @@
 -- Synthetic Bank Card Transactions with Fraud Labels
--- Schema used to generate this dataset with GenerateRealData (https://generaterealdata.com).
+-- Schema used to generate this dataset with GenerateRealData (https://www.generaterealdata.com).
 -- PostgreSQL syntax; structure only.
 
 CREATE TABLE customers (

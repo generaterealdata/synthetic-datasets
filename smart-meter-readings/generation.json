@@ -2,7 +2,7 @@
   "dataset": "smart-meter-readings",
   "title": "Synthetic Smart Meter Readings (15-Minute Intervals)",
   "generator": "GenerateRealData",
-  "generator_url": "https://generaterealdata.com/industries/energy-utilities/",
+  "generator_url": "https://www.generaterealdata.com/industries/energy-utilities/",
   "generated_on": "2026-10-16",
   "mode": "schema",
   "plan": "plan.json",

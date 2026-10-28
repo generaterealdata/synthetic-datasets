@@ -2,7 +2,7 @@
   "dataset": "dirty-ecommerce",
   "title": "Dirty E-commerce Data for Cleaning Practice",
   "generator": "GenerateRealData",
-  "generator_url": "https://generaterealdata.com/use-cases/data-quality-testing-data/",
+  "generator_url": "https://www.generaterealdata.com/use-cases/data-quality-testing-data/",
   "generated_on": "2026-10-11",
   "mode": "schema",
   "plan": "plan.json",

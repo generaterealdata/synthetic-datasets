@@ -7,7 +7,7 @@
 
 It sends the dataset's plan.json, schema.sql and seed, so the result is the same data as the published files.
 Each generated row uses one Core row of your plan; no AI rows are used. Files are saved to ./downloads/.
-API reference: https://generaterealdata.com/docs/api/
+API reference: https://www.generaterealdata.com/docs/api/
 """
 import json
 import os
@@ -17,7 +17,7 @@ from pathlib import Path
 
 import requests
 
-API = "https://generaterealdata.com/api/v1"
+API = "https://www.generaterealdata.com/api/v1"
 ROOT = Path(__file__).resolve().parent.parent
 
 

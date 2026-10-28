@@ -2,7 +2,7 @@
   "dataset": "hr-workforce-attrition",
   "title": "Synthetic HR, Workforce and Attrition",
   "generator": "GenerateRealData",
-  "generator_url": "https://generaterealdata.com/industries/hr-recruiting/",
+  "generator_url": "https://www.generaterealdata.com/industries/hr-recruiting/",
   "generated_on": "2026-10-16",
   "mode": "schema",
   "plan": "plan.json",

@@ -1,0 +1,24 @@
+{
+  "dataset": "ai-job-market-salaries",
+  "title": "500K AI Jobs & Salaries Dataset (2024-2026)",
+  "generator": "GenerateRealData",
+  "generator_url": "https://www.generaterealdata.com/use-cases/machine-learning-training-data/",
+  "generated_on": "2026-10-27",
+  "mode": "schema",
+  "plan": "plan.json",
+  "schema": "schema.sql",
+  "seed": 20261227,
+  "rows_requested": 500000,
+  "rows_generated": 510000,
+  "rows_per_table": {
+    "locations": 49,
+    "companies": 510,
+    "ai_job_postings": 509441
+  },
+  "ai_written_fields": [],
+  "ai_rows_used": 0,
+  "anomalies": false,
+  "format": "csv",
+  "note": "delivered as CSV; the SQLite file holds the same values",
+  "licence": "CC-BY-4.0"
+}

@@ -2,7 +2,7 @@
   "dataset": "bank-card-fraud",
   "title": "Synthetic Bank Card Transactions with Fraud Labels",
   "generator": "GenerateRealData",
-  "generator_url": "https://generaterealdata.com/use-cases/fraud-detection-data/",
+  "generator_url": "https://www.generaterealdata.com/use-cases/fraud-detection-data/",
   "generated_on": "2026-10-11",
   "mode": "schema",
   "plan": "plan.json",

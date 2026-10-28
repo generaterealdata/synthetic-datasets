@@ -2,7 +2,7 @@
   "dataset": "hospital-records",
   "title": "Synthetic Hospital Records (No Real Patients)",
   "generator": "GenerateRealData",
-  "generator_url": "https://generaterealdata.com/industries/healthcare/",
+  "generator_url": "https://www.generaterealdata.com/industries/healthcare/",
   "generated_on": "2026-10-11",
   "mode": "schema",
   "plan": "plan.json",
