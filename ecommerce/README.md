@@ -265,7 +265,7 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py ecommerce
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/use-cases/relational-database-test-data/](https://www.generaterealdata.com/use-cases/relational-database-test-data/?ref=github).
+To build your own version, change the row counts or rules, or start from your own schema: [www.generaterealdata.com/use-cases/relational-database-test-data/](https://www.generaterealdata.com/use-cases/relational-database-test-data/?ref=github).
 
 ## How it was made
 

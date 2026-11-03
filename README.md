@@ -1,6 +1,6 @@
 # Synthetic datasets
 
-**12 free, realistic, fully synthetic databases (4.2 million rows) for SQL practice, software testing, analytics and teaching.** Each one is a set of related tables whose keys match, totals add up and dates are in order, and each comes with the queries that prove it.
+**13 free, realistic, fully synthetic databases (4.6 million rows) for SQL practice, software testing, analytics and teaching.** Each one is a set of related tables whose keys match, totals add up and dates are in order, and each comes with the queries that prove it.
 
 No real person, company or transaction appears in any file, so the data can be used and shared without privacy approval. Licence: [CC BY 4.0](LICENSE).
 
@@ -17,7 +17,8 @@ No real person, company or transaction appears in any file, so the data can be u
 | [Synthetic Smart Meter Readings (15-Minute Intervals)](smart-meter-readings/) | 3 | 500,000 | Time-series analysis of 15-minute energy readings | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-smart-meter-readings) |
 | [Synthetic Auto Insurance Policies and Claims](auto-insurance-claims/) | 5 | 192,843 | Claims analytics: frequency, severity, reserves | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-auto-insurance-claims) |
 | [Synthetic Fleet GPS Tracking](fleet-gps-tracking/) | 4 | 404,052 | Trajectory analysis, geofencing, telematics testing | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-fleet-gps-tracking) |
-| [500K AI Jobs & Salaries Dataset (2024-2026)](ai-job-market-salaries/) | 3 | 510,000 | Salary prediction and AI hiring analysis on one wide table | Kaggle (coming soon) |
+| [500K AI Jobs & Salaries Dataset (2024-2026)](ai-job-market-salaries/) | 3 | 510,000 | Salary prediction and AI hiring analysis on one wide table | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/500k-ai-jobs-and-salaries-dataset) |
+| [Black Friday and Cyber Week Sales 2023-2025](black-friday-sales/) | 1 | 408,000 | Holiday sales analysis and return prediction | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/black-friday-and-cyber-week-sales) |
 
 ## What is in each folder
 

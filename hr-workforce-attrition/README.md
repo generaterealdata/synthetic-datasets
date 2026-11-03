@@ -221,7 +221,7 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py hr-workforce-attrition
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/industries/hr-recruiting/](https://www.generaterealdata.com/industries/hr-recruiting/?ref=github).
+To build your own version, change the row counts or rules, or start from your own schema: [www.generaterealdata.com/industries/hr-recruiting/](https://www.generaterealdata.com/industries/hr-recruiting/?ref=github).
 
 ## How it was made
 

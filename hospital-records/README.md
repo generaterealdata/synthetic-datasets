@@ -230,7 +230,7 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py hospital-records
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/industries/healthcare/](https://www.generaterealdata.com/industries/healthcare/?ref=github).
+To build your own version, change the row counts or rules, or start from your own schema: [www.generaterealdata.com/industries/healthcare/](https://www.generaterealdata.com/industries/healthcare/?ref=github).
 
 ## How it was made
 

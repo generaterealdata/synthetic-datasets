@@ -218,7 +218,7 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py auto-insurance-claims
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/industries/insurance/](https://www.generaterealdata.com/industries/insurance/?ref=github).
+To build your own version, change the row counts or rules, or start from your own schema: [www.generaterealdata.com/industries/insurance/](https://www.generaterealdata.com/industries/insurance/?ref=github).
 
 ## How it was made
 

@@ -1,0 +1,2454 @@
+{
+ "dataset_type": "relational",
+ "tables": {
+  "purchases": {
+   "dataset_type": "tabular",
+   "columns": {
+    "purchase_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "if": "DEFAULT",
+       "parameters": {
+        "prefix": "BF-",
+        "start": 1,
+        "step": 1,
+        "padding": 7
+       }
+      }
+     ],
+     "unique": true
+    },
+    "order_date": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 360",
+       "parameters": {
+        "start_date": "2023-11-01",
+        "end_date": "2023-11-19",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 280",
+       "parameters": {
+        "start_date": "2023-11-20",
+        "end_date": "2023-11-22",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 224",
+       "parameters": {
+        "start_date": "2023-11-23",
+        "end_date": "2023-11-23",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 852",
+       "parameters": {
+        "start_date": "2023-11-24",
+        "end_date": "2023-11-24",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 573",
+       "parameters": {
+        "start_date": "2023-11-25",
+        "end_date": "2023-11-26",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 759",
+       "parameters": {
+        "start_date": "2023-11-27",
+        "end_date": "2023-11-27",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 411",
+       "parameters": {
+        "start_date": "2023-11-28",
+        "end_date": "2023-12-01",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 566",
+       "parameters": {
+        "start_date": "2024-11-01",
+        "end_date": "2024-11-24",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 450",
+       "parameters": {
+        "start_date": "2024-11-25",
+        "end_date": "2024-11-27",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 366",
+       "parameters": {
+        "start_date": "2024-11-28",
+        "end_date": "2024-11-28",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 1412",
+       "parameters": {
+        "start_date": "2024-11-29",
+        "end_date": "2024-11-29",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 1012",
+       "parameters": {
+        "start_date": "2024-11-30",
+        "end_date": "2024-12-01",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 1407",
+       "parameters": {
+        "start_date": "2024-12-02",
+        "end_date": "2024-12-02",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 819",
+       "parameters": {
+        "start_date": "2024-12-03",
+        "end_date": "2024-12-06",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 1200",
+       "parameters": {
+        "start_date": "2025-11-01",
+        "end_date": "2025-11-23",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 1023",
+       "parameters": {
+        "start_date": "2025-11-24",
+        "end_date": "2025-11-26",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 886",
+       "parameters": {
+        "start_date": "2025-11-27",
+        "end_date": "2025-11-27",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 3611",
+       "parameters": {
+        "start_date": "2025-11-28",
+        "end_date": "2025-11-28",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 3478",
+       "parameters": {
+        "start_date": "2025-11-29",
+        "end_date": "2025-11-30",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "random_int(1, 10000) <= 6667",
+       "parameters": {
+        "start_date": "2025-12-01",
+        "end_date": "2025-12-01",
+        "include_time": false
+       }
+      },
+      {
+       "generate_via": "date_range",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2025-12-02",
+        "end_date": "2025-12-05",
+        "include_time": false
+       }
+      }
+     ]
+    },
+    "year": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "substring({order_date}, 0, 4)"
+       }
+      }
+     ]
+    },
+    "event_day": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{order_date} in ('2023-11-23', '2024-11-28', '2025-11-27')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Thanksgiving",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{order_date} in ('2023-11-24', '2024-11-29', '2025-11-28')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Black Friday",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{order_date} in ('2023-11-25', '2024-11-30', '2025-11-29', '2023-11-26', '2024-12-01', '2025-11-30')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Black Friday weekend",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{order_date} in ('2023-11-27', '2024-12-02', '2025-12-01')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Cyber Monday",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "({order_date} >= '2023-11-20' and {order_date} <= '2023-11-22') or ({order_date} >= '2024-11-25' and {order_date} <= '2024-11-27') or ({order_date} >= '2025-11-24' and {order_date} <= '2025-11-26')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Thanksgiving week",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "({order_date} >= '2023-11-28' and {order_date} <= '2023-12-01') or ({order_date} >= '2024-12-03' and {order_date} <= '2024-12-06') or ({order_date} >= '2025-12-02' and {order_date} <= '2025-12-05')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Cyber Week",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Early November",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "order_hour": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{event_day} == 'Black Friday'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 4.9504950495049505
+         },
+         {
+          "value": 1,
+          "percentage": 2.9702970297029703
+         },
+         {
+          "value": 2,
+          "percentage": 1.9801980198019802
+         },
+         {
+          "value": 3,
+          "percentage": 1.4851485148514851
+         },
+         {
+          "value": 4,
+          "percentage": 1.4851485148514851
+         },
+         {
+          "value": 5,
+          "percentage": 2.9702970297029703
+         },
+         {
+          "value": 6,
+          "percentage": 5.9405940594059405
+         },
+         {
+          "value": 7,
+          "percentage": 6.930693069306931
+         },
+         {
+          "value": 8,
+          "percentage": 5.9405940594059405
+         },
+         {
+          "value": 9,
+          "percentage": 4.9504950495049505
+         },
+         {
+          "value": 10,
+          "percentage": 4.9504950495049505
+         },
+         {
+          "value": 11,
+          "percentage": 4.9504950495049505
+         },
+         {
+          "value": 12,
+          "percentage": 4.9504950495049505
+         },
+         {
+          "value": 13,
+          "percentage": 4.455445544554456
+         },
+         {
+          "value": 14,
+          "percentage": 3.9603960396039604
+         },
+         {
+          "value": 15,
+          "percentage": 3.9603960396039604
+         },
+         {
+          "value": 16,
+          "percentage": 3.9603960396039604
+         },
+         {
+          "value": 17,
+          "percentage": 4.455445544554456
+         },
+         {
+          "value": 18,
+          "percentage": 4.9504950495049505
+         },
+         {
+          "value": 19,
+          "percentage": 4.9504950495049505
+         },
+         {
+          "value": 20,
+          "percentage": 4.455445544554456
+         },
+         {
+          "value": 21,
+          "percentage": 3.9603960396039604
+         },
+         {
+          "value": 22,
+          "percentage": 3.4653465346534653
+         },
+         {
+          "value": 23,
+          "percentage": 2.9702970297029703
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{event_day} == 'Cyber Monday'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 5.267778753292362
+         },
+         {
+          "value": 1,
+          "percentage": 2.633889376646181
+         },
+         {
+          "value": 2,
+          "percentage": 1.3169446883230904
+         },
+         {
+          "value": 3,
+          "percentage": 0.7023705004389815
+         },
+         {
+          "value": 4,
+          "percentage": 0.43898156277436345
+         },
+         {
+          "value": 5,
+          "percentage": 0.5267778753292361
+         },
+         {
+          "value": 6,
+          "percentage": 1.3169446883230904
+         },
+         {
+          "value": 7,
+          "percentage": 2.633889376646181
+         },
+         {
+          "value": 8,
+          "percentage": 3.5118525021949076
+         },
+         {
+          "value": 9,
+          "percentage": 4.389815627743634
+         },
+         {
+          "value": 10,
+          "percentage": 4.828797190517998
+         },
+         {
+          "value": 11,
+          "percentage": 5.267778753292362
+         },
+         {
+          "value": 12,
+          "percentage": 5.267778753292362
+         },
+         {
+          "value": 13,
+          "percentage": 5.267778753292362
+         },
+         {
+          "value": 14,
+          "percentage": 5.267778753292362
+         },
+         {
+          "value": 15,
+          "percentage": 5.267778753292362
+         },
+         {
+          "value": 16,
+          "percentage": 5.267778753292362
+         },
+         {
+          "value": 17,
+          "percentage": 5.706760316066725
+         },
+         {
+          "value": 18,
+          "percentage": 6.145741878841088
+         },
+         {
+          "value": 19,
+          "percentage": 6.584723441615452
+         },
+         {
+          "value": 20,
+          "percentage": 6.584723441615452
+         },
+         {
+          "value": 21,
+          "percentage": 6.145741878841088
+         },
+         {
+          "value": 22,
+          "percentage": 5.267778753292362
+         },
+         {
+          "value": 23,
+          "percentage": 4.389815627743634
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{event_day} == 'Thanksgiving'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 1.5360983102918588
+         },
+         {
+          "value": 1,
+          "percentage": 0.7680491551459294
+         },
+         {
+          "value": 2,
+          "percentage": 0.46082949308755766
+         },
+         {
+          "value": 3,
+          "percentage": 0.30721966205837176
+         },
+         {
+          "value": 4,
+          "percentage": 0.30721966205837176
+         },
+         {
+          "value": 5,
+          "percentage": 0.46082949308755766
+         },
+         {
+          "value": 6,
+          "percentage": 0.9216589861751153
+         },
+         {
+          "value": 7,
+          "percentage": 1.5360983102918588
+         },
+         {
+          "value": 8,
+          "percentage": 2.3041474654377883
+         },
+         {
+          "value": 9,
+          "percentage": 3.0721966205837177
+         },
+         {
+          "value": 10,
+          "percentage": 3.0721966205837177
+         },
+         {
+          "value": 11,
+          "percentage": 3.0721966205837177
+         },
+         {
+          "value": 12,
+          "percentage": 3.0721966205837177
+         },
+         {
+          "value": 13,
+          "percentage": 2.3041474654377883
+         },
+         {
+          "value": 14,
+          "percentage": 2.3041474654377883
+         },
+         {
+          "value": 15,
+          "percentage": 3.0721966205837177
+         },
+         {
+          "value": 16,
+          "percentage": 4.6082949308755765
+         },
+         {
+          "value": 17,
+          "percentage": 6.912442396313365
+         },
+         {
+          "value": 18,
+          "percentage": 9.216589861751153
+         },
+         {
+          "value": 19,
+          "percentage": 11.520737327188941
+         },
+         {
+          "value": 20,
+          "percentage": 12.28878648233487
+         },
+         {
+          "value": 21,
+          "percentage": 11.520737327188941
+         },
+         {
+          "value": 22,
+          "percentage": 9.216589861751153
+         },
+         {
+          "value": 23,
+          "percentage": 6.144393241167435
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 1.0799136069114472
+         },
+         {
+          "value": 1,
+          "percentage": 0.5399568034557236
+         },
+         {
+          "value": 2,
+          "percentage": 0.32397408207343414
+         },
+         {
+          "value": 3,
+          "percentage": 0.21598272138228944
+         },
+         {
+          "value": 4,
+          "percentage": 0.21598272138228944
+         },
+         {
+          "value": 5,
+          "percentage": 0.4319654427645789
+         },
+         {
+          "value": 6,
+          "percentage": 1.0799136069114472
+         },
+         {
+          "value": 7,
+          "percentage": 2.1598272138228944
+         },
+         {
+          "value": 8,
+          "percentage": 3.2397408207343417
+         },
+         {
+          "value": 9,
+          "percentage": 4.319654427645789
+         },
+         {
+          "value": 10,
+          "percentage": 5.399568034557236
+         },
+         {
+          "value": 11,
+          "percentage": 5.939524838012959
+         },
+         {
+          "value": 12,
+          "percentage": 6.479481641468683
+         },
+         {
+          "value": 13,
+          "percentage": 6.479481641468683
+         },
+         {
+          "value": 14,
+          "percentage": 5.939524838012959
+         },
+         {
+          "value": 15,
+          "percentage": 5.939524838012959
+         },
+         {
+          "value": 16,
+          "percentage": 6.479481641468683
+         },
+         {
+          "value": 17,
+          "percentage": 7.019438444924407
+         },
+         {
+          "value": 18,
+          "percentage": 7.55939524838013
+         },
+         {
+          "value": 19,
+          "percentage": 8.099352051835854
+         },
+         {
+          "value": 20,
+          "percentage": 7.55939524838013
+         },
+         {
+          "value": 21,
+          "percentage": 6.479481641468683
+         },
+         {
+          "value": 22,
+          "percentage": 4.319654427645789
+         },
+         {
+          "value": 23,
+          "percentage": 2.699784017278618
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "channel": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{event_day} == 'Thanksgiving'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Web",
+          "percentage": 52
+         },
+         {
+          "value": "App",
+          "percentage": 45
+         },
+         {
+          "value": "Store",
+          "percentage": 3
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{event_day} == 'Black Friday'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Web",
+          "percentage": 35
+         },
+         {
+          "value": "App",
+          "percentage": 30
+         },
+         {
+          "value": "Store",
+          "percentage": 35
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{event_day} == 'Black Friday weekend'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Web",
+          "percentage": 40
+         },
+         {
+          "value": "App",
+          "percentage": 35
+         },
+         {
+          "value": "Store",
+          "percentage": 25
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Web",
+          "percentage": 46
+         },
+         {
+          "value": "App",
+          "percentage": 40
+         },
+         {
+          "value": "Store",
+          "percentage": 14
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "device": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{channel} == 'Store'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "In store",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{channel} == 'App'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Mobile",
+          "percentage": 88
+         },
+         {
+          "value": "Tablet",
+          "percentage": 12
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Mobile",
+          "percentage": 52
+         },
+         {
+          "value": "Desktop",
+          "percentage": 40
+         },
+         {
+          "value": "Tablet",
+          "percentage": 8
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "customer_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 1,
+          "max": 150000,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "customer_segment": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "New",
+          "percentage": 30
+         },
+         {
+          "value": "Returning",
+          "percentage": 46
+         },
+         {
+          "value": "Loyalty member",
+          "percentage": 24
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "age_group": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "18-24",
+          "percentage": 14
+         },
+         {
+          "value": "25-34",
+          "percentage": 26
+         },
+         {
+          "value": "35-44",
+          "percentage": 24
+         },
+         {
+          "value": "45-54",
+          "percentage": 17
+         },
+         {
+          "value": "55-64",
+          "percentage": 12
+         },
+         {
+          "value": "65+",
+          "percentage": 7
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "gender": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Female",
+          "percentage": 50
+         },
+         {
+          "value": "Male",
+          "percentage": 47
+         },
+         {
+          "value": "Not stated",
+          "percentage": 3
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "state": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "primitive",
+       "if": "DEFAULT",
+       "parameters": {
+        "primitive_type": "us_state"
+       }
+      }
+     ]
+    },
+    "product_category": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Electronics",
+          "percentage": 24
+         },
+         {
+          "value": "Apparel",
+          "percentage": 18
+         },
+         {
+          "value": "Home & Kitchen",
+          "percentage": 14
+         },
+         {
+          "value": "Toys & Games",
+          "percentage": 12
+         },
+         {
+          "value": "Beauty",
+          "percentage": 8
+         },
+         {
+          "value": "Sports & Outdoors",
+          "percentage": 7
+         },
+         {
+          "value": "Video Games",
+          "percentage": 6
+         },
+         {
+          "value": "Books",
+          "percentage": 4
+         },
+         {
+          "value": "Jewelry",
+          "percentage": 4
+         },
+         {
+          "value": "Smart Home",
+          "percentage": 3
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "product_type": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Electronics'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "4K Smart TV",
+          "percentage": 14.285714285714286
+         },
+         {
+          "value": "Wireless Earbuds",
+          "percentage": 14.285714285714286
+         },
+         {
+          "value": "Laptop",
+          "percentage": 14.285714285714286
+         },
+         {
+          "value": "Tablet",
+          "percentage": 14.285714285714286
+         },
+         {
+          "value": "Smartwatch",
+          "percentage": 14.285714285714286
+         },
+         {
+          "value": "Bluetooth Speaker",
+          "percentage": 14.285714285714286
+         },
+         {
+          "value": "Noise-Cancelling Headphones",
+          "percentage": 14.285714285714286
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Apparel'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Puffer Jacket",
+          "percentage": 16.666666666666668
+         },
+         {
+          "value": "Jeans",
+          "percentage": 16.666666666666668
+         },
+         {
+          "value": "Sneakers",
+          "percentage": 16.666666666666668
+         },
+         {
+          "value": "Hoodie",
+          "percentage": 16.666666666666668
+         },
+         {
+          "value": "Winter Boots",
+          "percentage": 16.666666666666668
+         },
+         {
+          "value": "Sweater",
+          "percentage": 16.666666666666668
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Home & Kitchen'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Air Fryer",
+          "percentage": 16.666666666666668
+         },
+         {
+          "value": "Robot Vacuum",
+          "percentage": 16.666666666666668
+         },
+         {
+          "value": "Stand Mixer",
+          "percentage": 16.666666666666668
+         },
+         {
+          "value": "Coffee Maker",
+          "percentage": 16.666666666666668
+         },
+         {
+          "value": "Cookware Set",
+          "percentage": 16.666666666666668
+         },
+         {
+          "value": "Bedding Set",
+          "percentage": 16.666666666666668
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Toys & Games'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Building Set",
+          "percentage": 20.0
+         },
+         {
+          "value": "Board Game",
+          "percentage": 20.0
+         },
+         {
+          "value": "Remote Control Car",
+          "percentage": 20.0
+         },
+         {
+          "value": "Doll House",
+          "percentage": 20.0
+         },
+         {
+          "value": "Plush Toy",
+          "percentage": 20.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Beauty'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Hair Dryer",
+          "percentage": 25.0
+         },
+         {
+          "value": "Skincare Set",
+          "percentage": 25.0
+         },
+         {
+          "value": "Perfume",
+          "percentage": 25.0
+         },
+         {
+          "value": "Makeup Palette",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Sports & Outdoors'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Fitness Tracker",
+          "percentage": 20.0
+         },
+         {
+          "value": "Yoga Mat",
+          "percentage": 20.0
+         },
+         {
+          "value": "Camping Tent",
+          "percentage": 20.0
+         },
+         {
+          "value": "Dumbbell Set",
+          "percentage": 20.0
+         },
+         {
+          "value": "Electric Scooter",
+          "percentage": 20.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Video Games'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Game Console",
+          "percentage": 25.0
+         },
+         {
+          "value": "Video Game",
+          "percentage": 25.0
+         },
+         {
+          "value": "Gaming Headset",
+          "percentage": 25.0
+         },
+         {
+          "value": "Controller",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Books'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Hardcover Novel",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Cookbook",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Picture Book",
+          "percentage": 33.333333333333336
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Jewelry'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Necklace",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Earrings",
+          "percentage": 33.333333333333336
+         },
+         {
+          "value": "Watch",
+          "percentage": 33.333333333333336
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Smart Speaker",
+          "percentage": 25.0
+         },
+         {
+          "value": "Video Doorbell",
+          "percentage": 25.0
+         },
+         {
+          "value": "Smart Thermostat",
+          "percentage": 25.0
+         },
+         {
+          "value": "Security Camera",
+          "percentage": 25.0
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "product_name": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "concat({brand}, ' ', {product_type})"
+       }
+      }
+     ]
+    },
+    "brand": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Electronics'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Voltrix",
+          "percentage": 25.0
+         },
+         {
+          "value": "Lumora",
+          "percentage": 25.0
+         },
+         {
+          "value": "Nexwave",
+          "percentage": 25.0
+         },
+         {
+          "value": "Orbitek",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Apparel'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Northline",
+          "percentage": 25.0
+         },
+         {
+          "value": "Willow & Pine",
+          "percentage": 25.0
+         },
+         {
+          "value": "Urban Thread",
+          "percentage": 25.0
+         },
+         {
+          "value": "Cobalt Co",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Home & Kitchen'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Hearthly",
+          "percentage": 25.0
+         },
+         {
+          "value": "Kitchora",
+          "percentage": 25.0
+         },
+         {
+          "value": "Casa Verde",
+          "percentage": 25.0
+         },
+         {
+          "value": "Brightnest",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Toys & Games'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Playforge",
+          "percentage": 25.0
+         },
+         {
+          "value": "Tiny Titans",
+          "percentage": 25.0
+         },
+         {
+          "value": "Brickwell",
+          "percentage": 25.0
+         },
+         {
+          "value": "Jumbly",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Beauty'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Glowra",
+          "percentage": 25.0
+         },
+         {
+          "value": "Velvet Bloom",
+          "percentage": 25.0
+         },
+         {
+          "value": "Purely",
+          "percentage": 25.0
+         },
+         {
+          "value": "Luxe Lab",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Sports & Outdoors'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Trailcore",
+          "percentage": 25.0
+         },
+         {
+          "value": "Peakfit",
+          "percentage": 25.0
+         },
+         {
+          "value": "Ridgeway",
+          "percentage": 25.0
+         },
+         {
+          "value": "Strive",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Video Games'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Pixelon",
+          "percentage": 25.0
+         },
+         {
+          "value": "Questra",
+          "percentage": 25.0
+         },
+         {
+          "value": "Arcadia Play",
+          "percentage": 25.0
+         },
+         {
+          "value": "Nova Gaming",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Books'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Pagewell Press",
+          "percentage": 25.0
+         },
+         {
+          "value": "Inkhouse",
+          "percentage": 25.0
+         },
+         {
+          "value": "Lantern Books",
+          "percentage": 25.0
+         },
+         {
+          "value": "Folio & Co",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{product_category} == 'Jewelry'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Aurelle",
+          "percentage": 25.0
+         },
+         {
+          "value": "Silverleaf",
+          "percentage": 25.0
+         },
+         {
+          "value": "Gemora",
+          "percentage": 25.0
+         },
+         {
+          "value": "Halo & Stone",
+          "percentage": 25.0
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Homewise",
+          "percentage": 25.0
+         },
+         {
+          "value": "Nestora",
+          "percentage": 25.0
+         },
+         {
+          "value": "Sentry Labs",
+          "percentage": 25.0
+         },
+         {
+          "value": "Brightloop",
+          "percentage": 25.0
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "list_price": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == '4K Smart TV'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(250, 1025.0), random_float(1025.0, 1800))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Wireless Earbuds'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(39, 144.0), random_float(144.0, 249))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Laptop'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(399, 1149.0), random_float(1149.0, 1899))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Tablet'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(129, 514.0), random_float(514.0, 899))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Smartwatch'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(99, 274.0), random_float(274.0, 449))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Bluetooth Speaker'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(29, 114.0), random_float(114.0, 199))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Noise-Cancelling Headphones'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(79, 239.0), random_float(239.0, 399))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Puffer Jacket'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(49, 149.0), random_float(149.0, 249))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Jeans'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(29, 74.0), random_float(74.0, 119))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Sneakers'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(49, 114.0), random_float(114.0, 179))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Hoodie'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(25, 57.0), random_float(57.0, 89))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Winter Boots'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(59, 129.0), random_float(129.0, 199))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Sweater'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(29, 79.0), random_float(79.0, 129))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Air Fryer'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(49, 124.0), random_float(124.0, 199))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Robot Vacuum'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(149, 424.0), random_float(424.0, 699))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Stand Mixer'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(149, 324.0), random_float(324.0, 499))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Coffee Maker'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(39, 169.0), random_float(169.0, 299))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Cookware Set'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(59, 204.0), random_float(204.0, 349))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Bedding Set'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(39, 119.0), random_float(119.0, 199))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Building Set'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(19, 84.0), random_float(84.0, 149))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Board Game'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(15, 37.0), random_float(37.0, 59))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Remote Control Car'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(29, 79.0), random_float(79.0, 129))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Doll House'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(49, 124.0), random_float(124.0, 199))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Plush Toy'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(9, 24.0), random_float(24.0, 39))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Hair Dryer'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(39, 184.0), random_float(184.0, 329))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Skincare Set'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(25, 87.0), random_float(87.0, 149))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Perfume'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(39, 99.0), random_float(99.0, 159))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Makeup Palette'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(19, 44.0), random_float(44.0, 69))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Fitness Tracker'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(49, 124.0), random_float(124.0, 199))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Yoga Mat'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(19, 49.0), random_float(49.0, 79))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Camping Tent'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(79, 239.0), random_float(239.0, 399))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Dumbbell Set'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(39, 144.0), random_float(144.0, 249))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Electric Scooter'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(299, 599.0), random_float(599.0, 899))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Game Console'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(299, 424.0), random_float(424.0, 549))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Video Game'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(29, 49.0), random_float(49.0, 69))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Gaming Headset'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(39, 119.0), random_float(119.0, 199))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Controller'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(49, 64.0), random_float(64.0, 79))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Hardcover Novel'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(15, 25.0), random_float(25.0, 35))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Cookbook'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(18, 31.5), random_float(31.5, 45))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Picture Book'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(8, 16.5), random_float(16.5, 25))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Necklace'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(39, 269.0), random_float(269.0, 499))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Earrings'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(29, 164.0), random_float(164.0, 299))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Watch'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(79, 339.0), random_float(339.0, 599))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Smart Speaker'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(29, 114.0), random_float(114.0, 199))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Video Doorbell'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(59, 154.0), random_float(154.0, 249))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "{product_type} == 'Smart Thermostat'",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(99, 189.0), random_float(189.0, 279))) - 0.01"
+       }
+      },
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(if_else(random_int(1, 100) <= 70, random_float(39, 119.0), random_float(119.0, 199))) - 0.01"
+       }
+      }
+     ]
+    },
+    "discount_pct": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "max(0, min(70, random_int(if_else({event_day} == 'Black Friday', 20, if_else({event_day} == 'Cyber Monday', 15, if_else({event_day} == 'Thanksgiving', 15, if_else({event_day} == 'Black Friday weekend', 10, if_else({event_day} == 'Cyber Week', 5, if_else({event_day} == 'Thanksgiving week', 5, if_else({event_day} == 'Early November', 0, 0))))))), if_else({event_day} == 'Black Friday', 50, if_else({event_day} == 'Cyber Monday', 45, if_else({event_day} == 'Thanksgiving', 40, if_else({event_day} == 'Black Friday weekend', 35, if_else({event_day} == 'Cyber Week', 30, if_else({event_day} == 'Thanksgiving week', 25, if_else({event_day} == 'Early November', 15, 15)))))))) + if_else({product_category} == 'Electronics', 5, if_else({product_category} == 'Apparel', 8, if_else({product_category} == 'Home & Kitchen', 0, if_else({product_category} == 'Toys & Games', 5, if_else({product_category} == 'Beauty', 0, if_else({product_category} == 'Sports & Outdoors', 0, if_else({product_category} == 'Video Games', 3, if_else({product_category} == 'Books', -5, if_else({product_category} == 'Jewelry', 5, if_else({product_category} == 'Smart Home', 0, 0))))))))))))"
+       }
+      }
+     ]
+    },
+    "unit_price": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round({list_price} * (100 - {discount_pct}) / 100, 2)"
+       }
+      }
+     ]
+    },
+    "quantity": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 1,
+          "percentage": 74
+         },
+         {
+          "value": 2,
+          "percentage": 17
+         },
+         {
+          "value": 3,
+          "percentage": 5
+         },
+         {
+          "value": 4,
+          "percentage": 2.5
+         },
+         {
+          "value": 5,
+          "percentage": 1.5
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "line_total": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round({unit_price} * {quantity}, 2)"
+       }
+      }
+     ]
+    },
+    "coupon_used": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{event_day} in ('Black Friday', 'Cyber Monday')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 26
+         },
+         {
+          "value": "false",
+          "percentage": 74
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 16
+         },
+         {
+          "value": "false",
+          "percentage": 84
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "coupon_savings": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "if_else({coupon_used}, round({line_total} * random_float(0.05, 0.15), 2), 0)"
+       }
+      }
+     ]
+    },
+    "order_total": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round({line_total} - {coupon_savings}, 2)"
+       }
+      }
+     ]
+    },
+    "payment_method": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{order_total} >= 400",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Credit card",
+          "percentage": 46
+         },
+         {
+          "value": "Buy now, pay later",
+          "percentage": 18
+         },
+         {
+          "value": "Debit card",
+          "percentage": 14
+         },
+         {
+          "value": "PayPal",
+          "percentage": 12
+         },
+         {
+          "value": "Apple Pay",
+          "percentage": 7
+         },
+         {
+          "value": "Gift card",
+          "percentage": 3
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Credit card",
+          "percentage": 40
+         },
+         {
+          "value": "Debit card",
+          "percentage": 24
+         },
+         {
+          "value": "PayPal",
+          "percentage": 15
+         },
+         {
+          "value": "Apple Pay",
+          "percentage": 10
+         },
+         {
+          "value": "Buy now, pay later",
+          "percentage": 6
+         },
+         {
+          "value": "Gift card",
+          "percentage": 5
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "fulfilment": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{channel} == 'Store'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Store purchase",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{customer_segment} == 'Loyalty member'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Free 2-day shipping",
+          "percentage": 40
+         },
+         {
+          "value": "Standard shipping",
+          "percentage": 35
+         },
+         {
+          "value": "Express shipping",
+          "percentage": 10
+         },
+         {
+          "value": "Pick up in store",
+          "percentage": 15
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Standard shipping",
+          "percentage": 66
+         },
+         {
+          "value": "Express shipping",
+          "percentage": 18
+         },
+         {
+          "value": "Pick up in store",
+          "percentage": 16
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "delivery_days": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "null_injection",
+       "if": "{fulfilment} == 'Store purchase'",
+       "parameters": {
+        "base_strategy": "range",
+        "base_parameters": {
+         "distribution": [
+          {
+           "min": 0,
+           "max": 0,
+           "percentage": 100
+          }
+         ]
+        },
+        "null_rate": 1.0
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{fulfilment} == 'Pick up in store'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0,
+          "max": 1,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{fulfilment} == 'Express shipping'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 1,
+          "max": 2,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{fulfilment} == 'Free 2-day shipping'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 2,
+          "max": 3,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{event_day} in ('Black Friday', 'Black Friday weekend', 'Cyber Monday')",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 4,
+          "max": 10,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 3,
+          "max": 8,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ],
+     "nullable": true
+    },
+    "is_returned": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "random_float(0, 1) < (if_else({product_category} == 'Electronics', 0.08, if_else({product_category} == 'Apparel', 0.3, if_else({product_category} == 'Home & Kitchen', 0.08, if_else({product_category} == 'Toys & Games', 0.07, if_else({product_category} == 'Beauty', 0.03, if_else({product_category} == 'Sports & Outdoors', 0.09, if_else({product_category} == 'Video Games', 0.03, if_else({product_category} == 'Books', 0.01, if_else({product_category} == 'Jewelry', 0.18, if_else({product_category} == 'Smart Home', 0.1, 0.08)))))))))) + 0.007 * max(0, {discount_pct} - 25) + if_else({customer_segment} == 'New', 0.08, if_else({customer_segment} == 'Loyalty member', -0.05, 0)) + if_else({payment_method} == 'Buy now, pay later', 0.10, 0) + if_else({quantity} > 1, 0.07, 0) + if_else({channel} == 'Store', -0.07, 0) + if_else({order_hour} < 5, 0.07, 0) + if_else(coalesce({delivery_days}, 0) >= 7, 0.10, 0))",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "false",
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "return_reason": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{is_returned} == True and {product_category} == 'Apparel'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Wrong size",
+          "percentage": 55
+         },
+         {
+          "value": "Changed mind",
+          "percentage": 20
+         },
+         {
+          "value": "Not as described",
+          "percentage": 15
+         },
+         {
+          "value": "Defective",
+          "percentage": 5
+         },
+         {
+          "value": "Arrived late",
+          "percentage": 5
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{is_returned} == True and {product_category} in ('Electronics', 'Smart Home', 'Video Games')",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Defective",
+          "percentage": 30
+         },
+         {
+          "value": "Changed mind",
+          "percentage": 25
+         },
+         {
+          "value": "Better price found",
+          "percentage": 20
+         },
+         {
+          "value": "Not as described",
+          "percentage": 15
+         },
+         {
+          "value": "Arrived late",
+          "percentage": 10
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{is_returned} == True",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Changed mind",
+          "percentage": 35
+         },
+         {
+          "value": "Not as described",
+          "percentage": 20
+         },
+         {
+          "value": "Defective",
+          "percentage": 15
+         },
+         {
+          "value": "Better price found",
+          "percentage": 15
+         },
+         {
+          "value": "Arrived late",
+          "percentage": 15
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "categorical",
+        "base_parameters": {
+         "distribution": [
+          {
+           "value": "x",
+           "percentage": 100
+          }
+         ]
+        },
+        "null_rate": 1.0
+       }
+      }
+     ],
+     "nullable": true
+    },
+    "customer_rating": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "null_injection",
+       "if": "{is_returned} == True",
+       "parameters": {
+        "base_strategy": "categorical",
+        "base_parameters": {
+         "distribution": [
+          {
+           "value": 1,
+           "percentage": 30
+          },
+          {
+           "value": 2,
+           "percentage": 40
+          },
+          {
+           "value": 3,
+           "percentage": 30
+          }
+         ]
+        },
+        "null_rate": 0.4
+       }
+      },
+      {
+       "generate_via": "null_injection",
+       "if": "DEFAULT",
+       "parameters": {
+        "base_strategy": "categorical",
+        "base_parameters": {
+         "distribution": [
+          {
+           "value": 3,
+           "percentage": 10
+          },
+          {
+           "value": 4,
+           "percentage": 35
+          },
+          {
+           "value": 5,
+           "percentage": 55
+          }
+         ]
+        },
+        "null_rate": 0.65
+       }
+      }
+     ],
+     "nullable": true
+    }
+   },
+   "total_rows": 400000
+  }
+ },
+ "total_rows": 400000,
+ "dataset_name": "Black Friday and Cyber Week Sales 2023-2025"
+}

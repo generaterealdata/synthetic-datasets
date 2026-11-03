@@ -216,7 +216,7 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py dirty-ecommerce
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/use-cases/data-quality-testing-data/](https://www.generaterealdata.com/use-cases/data-quality-testing-data/?ref=github).
+To build your own version, change the row counts or rules, or start from your own schema: [www.generaterealdata.com/use-cases/data-quality-testing-data/](https://www.generaterealdata.com/use-cases/data-quality-testing-data/?ref=github).
 
 ## How it was made
 

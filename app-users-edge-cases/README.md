@@ -203,7 +203,7 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py app-users-edge-cases
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/industries/software-testing-qa/](https://www.generaterealdata.com/industries/software-testing-qa/?ref=github).
+To build your own version, change the row counts or rules, or start from your own schema: [www.generaterealdata.com/industries/software-testing-qa/](https://www.generaterealdata.com/industries/software-testing-qa/?ref=github).
 
 ## How it was made
 

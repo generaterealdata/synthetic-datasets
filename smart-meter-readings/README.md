@@ -167,7 +167,7 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py smart-meter-readings
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/industries/energy-utilities/](https://www.generaterealdata.com/industries/energy-utilities/?ref=github).
+To build your own version, change the row counts or rules, or start from your own schema: [www.generaterealdata.com/industries/energy-utilities/](https://www.generaterealdata.com/industries/energy-utilities/?ref=github).
 
 ## How it was made
 

@@ -221,7 +221,7 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py saas-subscriptions
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/use-cases/test-data-from-sql-schema/](https://www.generaterealdata.com/use-cases/test-data-from-sql-schema/?ref=github).
+To build your own version, change the row counts or rules, or start from your own schema: [www.generaterealdata.com/use-cases/test-data-from-sql-schema/](https://www.generaterealdata.com/use-cases/test-data-from-sql-schema/?ref=github).
 
 ## How it was made
 

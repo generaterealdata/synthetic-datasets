@@ -8,10 +8,10 @@
 |---|---|
 | Tables | 3 |
 | Rows | 510,000 |
-| Full data | Kaggle (coming soon): CSV files and a SQLite database |
+| Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/500k-ai-jobs-and-salaries-dataset): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
-| Made with | [GenerateRealData](https://www.generaterealdata.com/use-cases/machine-learning-training-data/), fully synthetic, no real records |
+| Made with | [GenerateRealData](https://www.generaterealdata.com/use-cases/machine-learning-training-data/?ref=github), fully synthetic, no real records |
 
 ## What makes it useful
 
@@ -208,11 +208,11 @@ The dataset is reproducible. With a GenerateRealData API key, [`scripts/recreate
 python scripts/recreate.py ai-job-market-salaries
 ```
 
-To build your own version, change the row counts or rules, or start from your own schema: [generaterealdata.com/use-cases/machine-learning-training-data/](https://www.generaterealdata.com/use-cases/machine-learning-training-data/).
+To build your own version, change the row counts or rules, or start from your own schema: [www.generaterealdata.com/use-cases/machine-learning-training-data/](https://www.generaterealdata.com/use-cases/machine-learning-training-data/?ref=github).
 
 ## How it was made
 
-Fully synthetic: generated with [GenerateRealData](https://www.generaterealdata.com/use-cases/machine-learning-training-data/) from a database schema and a set of rules, using a fixed seed. No real person, company or transaction is in the data, and no value was edited after generation. No field was written by AI. 
+Fully synthetic: generated with [GenerateRealData](https://www.generaterealdata.com/use-cases/machine-learning-training-data/?ref=github) from a database schema and a set of rules, using a fixed seed. No real person, company or transaction is in the data, and no value was edited after generation. No field was written by AI. 
 
 ## Licence
 
