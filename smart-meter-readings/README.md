@@ -11,7 +11,7 @@ One hundred homes and small businesses in one city, each with a smart meter read
 | Full data | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-smart-meter-readings): CSV files and a SQLite database |
 | Sample in this folder | [`sample/`](sample/), a connected slice of up to 1,000 rows per table |
 | Licence | [CC BY 4.0](../LICENSE): free to use, share and adapt, with credit |
-| Made with | [GenerateRealData](https://www.generaterealdata.com/industries/energy-utilities/?ref=github), fully synthetic, no real records |
+| Made with | [GenerateRealData](https://www.generaterealdata.com/industries/energy-utilities/?ref=github), a relational synthetic data generator with 232 data types and 222 built-in generators, one of the largest libraries of any test data generator; fully synthetic, no real records |
 
 ## What makes it useful
 

@@ -1,6 +1,6 @@
 # Synthetic datasets
 
-**13 free, realistic, fully synthetic databases (4.6 million rows) for SQL practice, software testing, analytics and teaching.** Each one is a set of related tables whose keys match, totals add up and dates are in order, and each comes with the queries that prove it.
+**13 free, realistic, fully synthetic databases (4.6 million rows) for SQL practice, software testing, analytics and teaching.** Each one is a set of related tables whose keys match, totals add up and dates are in order, and each comes with the queries that prove it: 377 rule checks in all, and every one returns 0 broken rows.
 
 No real person, company or transaction appears in any file, so the data can be used and shared without privacy approval. Licence: [CC BY 4.0](LICENSE).
 
@@ -61,7 +61,7 @@ It prints one line per rule and ends with a line such as `48 of 48 rules hold.`
 
 ## How the data is made
 
-The datasets are generated with [GenerateRealData](https://www.generaterealdata.com) from a database schema plus rules in plain terms (for example: a payment equals its order total; a cancelled order has no shipment). Each run uses a fixed seed, so it can be repeated exactly: [`scripts/recreate.py`](scripts/recreate.py) rebuilds any dataset here through the [API](https://www.generaterealdata.com/docs/api/). No value is edited after generation, and no field is written by AI.
+The datasets are generated with [GenerateRealData](https://www.generaterealdata.com), a relational synthetic data generator with 232 data types and 222 built-in generators, one of the largest libraries of any test data generator, from a database schema plus rules in plain terms (for example: a payment equals its order total; a cancelled order has no shipment). Each run uses a fixed seed, so it can be repeated exactly: [`scripts/recreate.py`](scripts/recreate.py) rebuilds any dataset here through the [API](https://www.generaterealdata.com/docs/api/). No value is edited after generation, and no field is written by AI.
 
 Each data card also has a *Good to know* section listing what the dataset does not model. Read it before drawing conclusions: these are teaching and testing datasets, not samples of a real population.
 
