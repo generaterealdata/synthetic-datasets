@@ -2,6 +2,8 @@
 
 **300K rows: patients, encounters, ICD-10 diagnoses, vitals, prescriptions, claims.**
 
+> **Made with [GenerateRealData](https://www.generaterealdata.com?ref=github).** You can create your own realistic datasets like this one in minutes, from a single table to a full database with many linked tables. Just describe what you need in plain English, or upload your SQL schema. IDs match across tables, totals add up, and your business rules hold on every row. With 232 data types and 222 built-in generators, it has one of the largest libraries of any test data generator. **Try it free at [www.generaterealdata.com](https://www.generaterealdata.com?ref=github)**, or write to support@generaterealdata.com.
+
 A regional hospital from 1 January 2025 to 30 September 2026. Thirty thousand fictional patients have 70,000 outpatient, emergency and inpatient encounters with 600 providers. Each encounter carries an ICD-10 diagnosis and a charge, and links to vital-sign readings, prescriptions and an insurance claim. No row describes a real person, so the data can be used and shared without privacy approval.
 
 | | |

@@ -2,6 +2,8 @@
 
 **408K US holiday purchases: discounts, channels, payments and returns.**
 
+> **Made with [GenerateRealData](https://www.generaterealdata.com?ref=github).** You can create your own realistic datasets like this one in minutes, from a single table to a full database with many linked tables. Just describe what you need in plain English, or upload your SQL schema. IDs match across tables, totals add up, and your business rules hold on every row. With 232 data types and 222 built-in generators, it has one of the largest libraries of any test data generator. **Try it free at [www.generaterealdata.com](https://www.generaterealdata.com?ref=github)**, or write to support@generaterealdata.com.
+
 408,000 purchases from a US retailer's holiday season in 2023, 2024 and 2025: early November, the days before Thanksgiving, Thanksgiving Day, Black Friday, the weekend after, Cyber Monday and Cyber Week. Each row is one purchase with when it happened (date, event day, hour), how (web, app or store, device, payment, fulfilment), who bought it (segment, age group, gender, state), what was bought (category, product, brand), the money (list price, discount, unit price, quantity, coupon, order total) and what happened next (delivery days, returned or not, return reason, rating). One wide table that works on its own; all brands and products are fictional.
 
 | | |

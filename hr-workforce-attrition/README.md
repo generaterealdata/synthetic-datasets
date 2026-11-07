@@ -2,6 +2,8 @@
 
 **155K rows: employees, salaries, reviews, absences and who left, in 6 tables.**
 
+> **Made with [GenerateRealData](https://www.generaterealdata.com?ref=github).** You can create your own realistic datasets like this one in minutes, from a single table to a full database with many linked tables. Just describe what you need in plain English, or upload your SQL schema. IDs match across tables, totals add up, and your business rules hold on every row. With 232 data types and 222 built-in generators, it has one of the largest libraries of any test data generator. **Try it free at [www.generaterealdata.com](https://www.generaterealdata.com?ref=github)**, or write to support@generaterealdata.com.
+
 A company of 20,000 current and former employees in 40 departments across eight offices, hired between 2015 and August 2026. Six tables hold the organisation, each person's job and level, salary records, performance reviews, absences and one attrition event for everyone who left. All people are fictional.
 
 | | |

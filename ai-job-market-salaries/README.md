@@ -2,6 +2,8 @@
 
 **509K AI and data job postings, 42 columns: pay, skills, hiring in 21 countries.**
 
+> **Made with [GenerateRealData](https://www.generaterealdata.com?ref=github).** You can create your own realistic datasets like this one in minutes, from a single table to a full database with many linked tables. Just describe what you need in plain English, or upload your SQL schema. IDs match across tables, totals add up, and your business rules hold on every row. With 232 data types and 222 built-in generators, it has one of the largest libraries of any test data generator. **Try it free at [www.generaterealdata.com](https://www.generaterealdata.com?ref=github)**, or write to support@generaterealdata.com.
+
 509,441 job postings for AI, machine-learning and data roles, posted between January 2024 and September 2026 by 510 companies in 49 cities and 21 countries. Each posting has the role and level, the company, the location, what the job asks for (degree, skills, framework, LLM experience, Python, cloud), the pay (yearly salary in USD and in local currency, bonus, equity, paid leave) and how hiring went (applicants, views, status, days to fill). The main file is one wide table that works on its own; two small lookup tables describe the companies and the cities. All companies are fictional.
 
 | | |

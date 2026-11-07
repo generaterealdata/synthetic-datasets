@@ -2,6 +2,8 @@
 
 **250K rows: plans, accounts, users, subscriptions, invoices and churn events.**
 
+> **Made with [GenerateRealData](https://www.generaterealdata.com?ref=github).** You can create your own realistic datasets like this one in minutes, from a single table to a full database with many linked tables. Just describe what you need in plain English, or upload your SQL schema. IDs match across tables, totals add up, and your business rules hold on every row. With 232 data types and 222 built-in generators, it has one of the largest libraries of any test data generator. **Try it free at [www.generaterealdata.com](https://www.generaterealdata.com?ref=github)**, or write to support@generaterealdata.com.
+
 A business-software company from January 2023 to 30 September 2026. Companies sign up, pick one of eight plans, buy seats, get invoiced and sometimes cancel. Six tables cover the full subscription business: the price list, customer accounts and their users, subscriptions with monthly recurring revenue, invoices and churn events.
 
 | | |

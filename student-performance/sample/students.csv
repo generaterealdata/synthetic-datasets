@@ -1,0 +1,1001 @@
+student_id,grade_level,age,gender,school_type,school_location,parental_education,family_income,internet_access,distance_to_school_km,motivation_level,study_hours_per_week,attendance_pct,part_time_job,screen_time_hours_per_day,social_media_hours_per_day,sleep_hours_per_night,physical_activity_hours_per_week,extracurricular_activities,tutoring_sessions_per_month,teacher_quality,peer_influence,learning_disability,stress_level,previous_score,exam_score,final_grade,passed
+STU-000001,9,15,Male,Public,Suburban,High school,Middle,1,10,Medium,15.8,90.9,0,6,1.8,8.3,2.5,1,6,Medium,Negative,0,5,58,67,D,1
+STU-000002,11,16,Male,Charter,Rural,Some college,Middle,1,13.9,Medium,9.5,81.2,1,5.1,2.3,7.1,7,0,0,Low,Negative,0,6,46,47,F,0
+STU-000003,12,17,Male,Private,Urban,Bachelor's,Middle,1,1.8,Low,12.6,79.8,1,2.7,1.2,8.3,4.3,1,6,Medium,Neutral,0,4,80,80,B,1
+STU-000004,12,17,Male,Public,Suburban,Bachelor's,High,1,9.8,High,8.8,83.1,0,4.7,3.4,7.2,2.3,4,0,High,Neutral,0,5,86,79,C,1
+STU-000005,9,14,Male,Public,Rural,Bachelor's,High,0,8.6,Medium,7.2,94.5,0,4.4,1.4,7.7,2.2,0,0,Medium,Neutral,0,2,62,62,D,1
+STU-000006,12,17,Male,Public,Suburban,High school,Middle,1,3.8,High,17,91,1,6.5,3,5.9,8.1,1,0,Medium,Neutral,0,6,57,66,D,1
+STU-000007,10,16,Female,Public,Rural,Bachelor's,Low,0,12.7,High,13.4,82.6,0,5.2,3.6,7.9,0.1,1,2,High,Positive,0,4,89,89,B,1
+STU-000008,9,14,Male,Public,Suburban,Bachelor's,Middle,1,3,Medium,7.4,92.8,0,2.6,0.8,7.7,5.4,3,0,Medium,Negative,0,2,65,63,D,1
+STU-000009,9,15,Female,Public,Urban,Master's,Middle,1,3,High,24.3,97.5,0,4.7,2.8,7.1,6,1,0,Medium,Neutral,0,5,67,85,B,1
+STU-000010,9,14,Male,Private,Suburban,Bachelor's,High,1,8.8,Medium,18.4,97.3,0,2.7,0.9,6.9,4.3,3,1,High,Positive,0,7,68,88,B,1
+STU-000011,11,17,Female,Public,Suburban,Bachelor's,High,1,1.4,Medium,8.8,89.3,1,4.2,2.2,7,7.2,0,0,High,Neutral,0,5,54,60,D,1
+STU-000012,11,16,Female,Public,Suburban,Bachelor's,High,1,1.9,High,19.4,93.3,1,4.6,2.2,8.3,0,2,1,Medium,Positive,0,6,65,87,B,1
+STU-000013,10,16,Male,Public,Urban,Bachelor's,High,1,0.7,Low,4.7,74.8,1,7.8,3,6.3,5.2,0,0,Medium,Neutral,0,5,63,58,F,0
+STU-000014,12,17,Female,Public,Suburban,Master's,Middle,1,5.6,Low,9.6,90.7,0,3.9,1.8,7.4,1.8,2,0,Medium,Positive,0,3,74,77,C,1
+STU-000015,11,17,Male,Public,Rural,Some college,Middle,1,13.5,High,14.7,92.4,0,7.2,2.6,7.3,6.8,2,0,Low,Positive,0,4,90,96,A,1
+STU-000016,12,18,Female,Public,Urban,Bachelor's,Middle,1,4.4,Medium,8.4,79.7,1,3.6,1.2,7.5,6.8,0,0,Low,Negative,0,4,58,60,D,1
+STU-000017,11,16,Female,Public,Rural,High school,Middle,0,15,Medium,18.9,85.7,0,9.3,2.4,6.4,2.8,1,0,Medium,Negative,0,6,47,59,F,0
+STU-000018,12,17,Female,Public,Suburban,Some college,Middle,1,5.8,High,10.7,79.4,1,7.2,5,6.1,2.4,1,2,Medium,Positive,0,7,84,71,C,1
+STU-000019,10,15,Male,Public,Suburban,Bachelor's,High,1,3,Low,4.2,78.9,0,3.5,1.3,8.4,0,1,0,High,Negative,0,1,88,69,D,1
+STU-000020,12,17,Female,Public,Urban,High school,Low,1,4.2,Medium,15.3,87.8,0,6.5,2.6,6.6,8.9,1,0,Medium,Neutral,0,6,66,73,C,1
+STU-000021,10,15,Male,Public,Urban,Master's,High,1,1.1,High,10.4,96.1,0,4.4,2.8,8,4.2,3,0,Medium,Negative,0,5,75,82,B,1
+STU-000022,9,15,Female,Public,Urban,Doctorate,Middle,1,1,Medium,10.9,88.5,0,6.4,2.8,8.1,0,2,0,Medium,Positive,0,4,52,58,F,0
+STU-000023,9,14,Female,Public,Suburban,High school,Middle,1,8.6,Medium,25,97.6,0,3.4,1,6.9,3.1,1,0,High,Negative,0,8,48,65,D,1
+STU-000024,10,15,Male,Charter,Suburban,Master's,High,1,4.6,Medium,7.2,83.8,1,3.7,2.4,7.9,1.6,2,0,Medium,Neutral,0,3,61,65,D,1
+STU-000025,12,17,Female,Public,Urban,High school,Low,1,3,Medium,6.7,87,0,6.5,3.7,7.3,5.4,1,0,Low,Negative,0,5,80,72,C,1
+STU-000026,11,16,Male,Public,Urban,High school,Middle,1,0.4,Low,5.5,79,1,4.5,2.5,8.1,10.2,1,0,High,Neutral,0,5,59,51,F,0
+STU-000027,11,16,Female,Public,Urban,Master's,High,1,2,High,13.9,92.7,0,4.1,1.1,7.7,0.4,1,0,Medium,Positive,0,6,55,73,C,1
+STU-000028,12,17,Female,Private,Suburban,Master's,High,1,2.4,Medium,16,89.9,0,4.3,2.4,8.4,6.6,3,6,Medium,Negative,0,5,84,84,B,1
+STU-000029,11,16,Male,Public,Rural,Master's,Middle,1,22.3,Low,10.5,88.6,0,6.5,1.8,7.3,4.7,0,0,High,Negative,1,4,60,58,F,0
+STU-000030,11,16,Male,Charter,Urban,Some college,Low,1,2.2,Medium,8.8,94.2,1,2.8,1.5,7.3,2.5,1,0,High,Neutral,0,4,77,75,C,1
+STU-000031,10,15,Female,Private,Suburban,Some college,Low,1,11.7,Medium,14.8,83.2,0,6.2,3.4,8.4,3.1,2,6,Medium,Negative,1,3,81,70,C,1
+STU-000032,10,15,Female,Public,Urban,Some college,Low,1,0.8,High,8.5,77.4,1,3.8,2.3,6.6,5.2,4,0,High,Negative,0,3,61,63,D,1
+STU-000033,12,17,Female,Public,Rural,Some college,High,1,12.3,Medium,12.4,86,1,5.4,3,6,4.6,3,0,Medium,Positive,0,5,65,71,C,1
+STU-000034,12,17,Male,Public,Urban,Bachelor's,Middle,1,2,Medium,14.3,96.6,0,4,1.5,8.2,2.5,0,2,Low,Neutral,0,6,71,80,B,1
+STU-000035,10,15,Male,Private,Suburban,High school,High,1,6.8,Medium,2.2,87.5,0,2,0.7,8.3,0.4,3,0,High,Neutral,0,1,74,73,C,1
+STU-000036,10,15,Female,Public,Urban,Bachelor's,Low,1,2,Medium,12.1,90.9,0,5.5,1.5,8.5,7.4,1,0,Low,Positive,0,3,81,85,B,1
+STU-000037,11,17,Male,Public,Suburban,Some college,Middle,1,8.3,Low,6.8,89.2,0,5.7,1.7,7.1,6.8,2,6,Medium,Negative,1,3,57,48,F,0
+STU-000038,10,16,Female,Private,Urban,High school,Middle,1,3.9,Low,11.1,87.4,0,2.9,0.9,7.6,0.9,0,0,High,Neutral,1,4,62,62,D,1
+STU-000039,9,14,Male,Public,Urban,Some college,Middle,0,1.7,High,19.1,87.8,1,5.3,1.3,7.2,0,0,0,Medium,Neutral,0,6,61,78,C,1
+STU-000040,10,15,Female,Private,Rural,Bachelor's,High,0,4.5,Medium,8.7,82.3,0,5.8,1.7,8.4,3.6,0,1,Medium,Neutral,0,1,53,61,D,1
+STU-000041,11,16,Female,Public,Urban,Some college,Middle,1,4.5,Medium,11.3,87.2,0,2.5,1.4,7,3.1,2,0,Medium,Neutral,0,2,89,86,B,1
+STU-000042,11,16,Male,Public,Suburban,Some college,Middle,1,10.6,Medium,6.9,92.2,0,8.2,3.5,5.8,6.5,2,0,High,Positive,0,3,91,81,B,1
+STU-000043,9,14,Female,Public,Rural,Bachelor's,Middle,1,6.2,Medium,14.8,91.5,0,6.6,2.3,6.2,4.7,0,0,Low,Neutral,0,5,51,56,F,0
+STU-000044,11,16,Female,Private,Urban,High school,Low,1,4.7,Medium,13.1,97.2,0,4,2.3,8,1.8,0,2,Low,Neutral,0,3,54,64,D,1
+STU-000045,11,16,Female,Private,Urban,High school,Low,1,1.2,High,6.8,96.9,0,6.6,1.7,6.3,6.1,4,6,High,Neutral,0,5,81,92,A,1
+STU-000046,11,16,Female,Public,Urban,Master's,Middle,0,4.1,High,20,96,0,3,0.9,7.1,3.8,0,0,Low,Positive,0,4,48,64,D,1
+STU-000047,10,16,Female,Public,Suburban,Some college,Middle,1,11.3,High,25.4,88.5,0,6.4,4.4,7.3,3.9,1,0,High,Neutral,0,7,66,84,B,1
+STU-000048,12,17,Female,Public,Rural,Bachelor's,Middle,1,15.1,Low,4.6,85.1,1,3.1,1.1,8.2,0.1,2,1,Medium,Neutral,0,5,61,55,F,0
+STU-000049,10,15,Female,Public,Urban,Some college,Middle,1,5,Low,5.3,81.4,0,3.6,1.8,8.4,0,2,0,Medium,Positive,0,1,73,72,C,1
+STU-000050,9,14,Male,Public,Urban,Some college,Middle,1,4.2,Medium,10.9,94.5,0,3.4,1.8,8.4,1.4,2,0,Medium,Positive,0,3,85,89,B,1
+STU-000051,9,14,Female,Public,Suburban,Master's,High,1,10.4,Low,11.6,89.6,1,7.6,3.1,6,2.7,3,0,High,Neutral,0,8,55,60,D,1
+STU-000052,9,14,Female,Public,Urban,Bachelor's,High,1,4.6,Low,4.6,97.6,0,6.2,2.8,6.5,6,1,2,Medium,Positive,0,2,64,67,D,1
+STU-000053,9,14,Male,Private,Suburban,Bachelor's,Middle,1,2.9,High,21.6,87.6,0,3.5,2.6,6.7,6.9,1,4,High,Neutral,0,5,94,100,A,1
+STU-000054,9,14,Male,Public,Urban,Master's,High,1,2.1,High,15,93.8,0,7.2,1.9,8.1,5.4,2,0,Medium,Positive,0,5,57,75,C,1
+STU-000055,11,16,Male,Public,Urban,Bachelor's,Middle,1,1.3,Low,7.4,78,1,6.2,3.1,7.5,5.1,2,0,High,Positive,0,4,53,52,F,0
+STU-000056,9,15,Female,Private,Urban,Some college,Middle,1,1.4,Low,4.7,90.1,0,8.3,5.3,8.1,1.9,0,4,Medium,Negative,1,1,89,69,D,1
+STU-000057,9,14,Non-binary,Public,Suburban,Bachelor's,Middle,1,3.6,Medium,17.2,98.8,0,2.7,1.3,9.2,6.6,1,0,Medium,Negative,0,6,83,96,A,1
+STU-000058,9,14,Male,Public,Rural,Some college,Middle,1,6.2,Medium,14.3,83.3,0,6.4,4.7,7.8,8.1,3,4,Medium,Positive,0,4,83,87,B,1
+STU-000059,12,17,Male,Public,Rural,High school,Low,0,5.1,High,24.9,93.2,0,8.6,3.7,6.1,1.9,1,0,Medium,Negative,0,8,75,80,B,1
+STU-000060,11,16,Female,Charter,Suburban,High school,Middle,1,7.9,Medium,10.6,90.9,0,1.5,0.5,7.9,4.8,1,0,Medium,Positive,0,5,51,61,D,1
+STU-000061,11,16,Female,Public,Suburban,Master's,Middle,1,8,Medium,6.3,93.4,0,7,2.8,8,2.7,2,2,High,Negative,0,3,78,80,B,1
+STU-000062,12,17,Male,Private,Rural,Bachelor's,Middle,1,8.4,Medium,8.5,85.6,0,4.5,3,8.7,7.8,1,0,Medium,Negative,0,5,86,75,C,1
+STU-000063,11,16,Female,Public,Suburban,High school,Middle,1,10.6,Low,6.6,87.3,0,6.2,1.7,7.1,2.2,1,1,High,Neutral,0,1,75,76,C,1
+STU-000064,10,15,Non-binary,Public,Urban,High school,Low,1,0.3,Medium,16.9,82.8,0,3.2,1.4,8.1,3.2,1,0,High,Negative,0,6,48,63,D,1
+STU-000065,10,15,Male,Private,Rural,Some college,Low,1,6.5,Medium,14.2,85.4,1,0.5,0.3,8,4.8,1,4,Medium,Positive,0,5,88,96,A,1
+STU-000066,12,18,Female,Public,Urban,Master's,Middle,1,2.7,Medium,17.6,81,1,7.9,3.8,5.5,3.2,1,1,Low,Positive,0,6,87,74,C,1
+STU-000067,11,17,Male,Public,Urban,Doctorate,High,1,4.4,Medium,15.6,96.7,1,8.3,3,6.2,8,3,2,Low,Negative,1,7,65,55,F,0
+STU-000068,12,17,Female,Public,Rural,Doctorate,Middle,0,30.7,Medium,8.4,83.1,0,5.3,1.7,6.8,0.4,1,4,Low,Neutral,0,3,67,58,F,0
+STU-000069,11,16,Female,Private,Urban,Bachelor's,High,1,4.6,Low,8.3,95.7,0,4.5,3.3,8.7,3.8,0,0,High,Neutral,0,3,74,67,D,1
+STU-000070,11,16,Male,Public,Rural,Doctorate,Middle,1,8.8,High,13.1,79.3,1,4.4,1.8,8.2,0,2,0,High,Positive,0,5,78,84,B,1
+STU-000071,10,15,Female,Public,Rural,Master's,High,1,25.1,Low,5.5,80.8,0,4.7,1.7,8.1,6,1,2,Low,Neutral,0,1,74,67,D,1
+STU-000072,10,15,Female,Public,Rural,Some college,Low,1,10,Low,7.2,83.3,0,6.6,2.9,7.9,2.6,0,0,High,Neutral,0,2,60,66,D,1
+STU-000073,11,16,Female,Public,Suburban,Some college,Low,1,4.6,Medium,6.5,93.7,0,2.9,0.8,8.8,9.6,0,0,Medium,Negative,0,1,67,62,D,1
+STU-000074,10,15,Female,Public,Suburban,High school,Low,1,8.9,Medium,7.2,86.9,0,4.4,1.4,8,6.6,1,2,Medium,Neutral,0,4,40,50,F,0
+STU-000075,10,16,Male,Private,Rural,High school,Low,1,30.6,High,12.8,94.1,0,7.4,3.5,6.4,0,3,0,High,Neutral,0,3,70,80,B,1
+STU-000076,11,16,Female,Public,Rural,Some college,Low,1,7.6,Medium,12.5,96,0,6.3,2,6.5,5.6,0,0,Low,Neutral,0,4,82,75,C,1
+STU-000077,9,14,Female,Public,Urban,Bachelor's,High,1,3.2,High,11.1,87,0,2.8,1,7.2,4.9,0,0,Low,Neutral,0,3,79,77,C,1
+STU-000078,10,15,Male,Public,Suburban,High school,Middle,1,9,Low,8.9,82.3,0,8.5,5.4,6.9,6.9,2,2,Medium,Negative,0,3,41,49,F,0
+STU-000079,9,14,Female,Public,Suburban,Some college,Middle,1,4.5,Medium,16.8,87.6,0,0.5,0.1,8.4,0,1,1,Medium,Positive,0,6,85,89,B,1
+STU-000080,9,14,Male,Charter,Urban,Bachelor's,Middle,1,4.9,Medium,14.2,88.5,0,6.8,4,6.2,0.8,2,0,Medium,Neutral,0,7,90,74,C,1
+STU-000081,11,17,Male,Public,Suburban,High school,Middle,1,9.9,Medium,10.6,94.6,1,3.9,2,6.3,6,3,0,Medium,Negative,0,5,54,52,F,0
+STU-000082,11,17,Female,Public,Urban,Doctorate,Middle,1,0.9,Low,10.9,76,0,5.3,2.6,6.5,5.3,0,0,High,Negative,0,4,52,48,F,0
+STU-000083,9,14,Female,Public,Urban,Bachelor's,Middle,1,4.7,Low,4.3,89.5,0,3.5,0.9,9,5.9,2,0,Low,Neutral,0,2,91,76,C,1
+STU-000084,9,15,Male,Private,Urban,Bachelor's,Low,1,4.5,High,11.7,81.9,1,5.6,1.7,5.9,2.8,0,0,High,Negative,0,6,47,61,D,1
+STU-000085,9,14,Male,Public,Urban,Master's,High,1,3.7,Medium,16.7,84.3,0,2.3,1.4,8,8.3,1,0,Low,Neutral,0,6,75,78,C,1
+STU-000086,10,15,Male,Public,Urban,High school,Middle,1,4.8,Low,7.3,89.3,0,3.1,2,8.4,2.8,1,0,Medium,Negative,0,1,80,63,D,1
+STU-000087,12,17,Male,Public,Urban,High school,Middle,1,1,Medium,13.8,82.4,0,6.1,4.2,8.4,2.2,1,2,Medium,Neutral,0,6,49,61,D,1
+STU-000088,9,14,Female,Private,Rural,High school,High,1,10.8,Low,1.1,78.4,0,7,4.4,7.3,0,2,0,High,Negative,0,3,92,71,C,1
+STU-000089,10,15,Female,Public,Suburban,Master's,Middle,1,4.2,Medium,14.3,89.5,0,3.8,1.5,8,3.7,2,1,Medium,Neutral,0,4,52,60,D,1
+STU-000090,9,15,Female,Private,Suburban,Some college,Middle,1,7.6,Medium,13.7,87.6,0,3.6,2.1,8.1,1,2,1,Medium,Neutral,0,4,79,73,C,1
+STU-000091,11,16,Female,Public,Suburban,Bachelor's,High,1,2.1,Medium,14.9,94.8,0,5.2,2.3,6.9,0,3,2,High,Neutral,0,3,53,67,D,1
+STU-000092,11,16,Female,Public,Suburban,Bachelor's,Middle,1,11.3,Medium,7.1,97.8,0,4.2,3.2,7,2.7,0,2,Low,Positive,0,3,48,62,D,1
+STU-000093,9,14,Female,Public,Urban,Doctorate,Middle,1,2.8,Medium,16.9,91.2,0,3.3,0.9,7.8,3.9,0,0,Medium,Positive,0,6,61,68,D,1
+STU-000094,10,15,Female,Public,Rural,Some college,Middle,0,13.3,Medium,10.8,91.7,0,4.7,2.2,6.7,1,2,1,Medium,Positive,0,6,63,64,D,1
+STU-000095,10,15,Female,Public,Urban,Master's,High,1,2.2,Medium,15,91.6,0,2,1.2,7.4,4.5,3,0,Medium,Neutral,0,3,53,59,F,0
+STU-000096,12,17,Female,Private,Rural,Bachelor's,High,1,25.2,Low,9.8,87.8,0,2.3,0.6,9,0,4,1,Low,Neutral,0,2,85,68,D,1
+STU-000097,11,16,Male,Public,Suburban,Bachelor's,Middle,1,11,High,15.2,85.6,1,3.3,0.9,8.2,8.6,1,6,Medium,Neutral,0,7,66,73,C,1
+STU-000098,11,16,Male,Private,Rural,Bachelor's,Middle,0,9.9,Medium,15.2,89.3,1,4.5,1.8,6.6,8,0,0,High,Negative,0,6,65,73,C,1
+STU-000099,10,15,Male,Public,Suburban,Master's,High,1,7.8,High,22.6,92.2,0,0.7,0.3,8.1,2.4,2,1,High,Positive,0,6,71,85,B,1
+STU-000100,11,16,Male,Public,Suburban,High school,Low,1,4.5,Low,0.6,75.8,0,1.7,0.7,9,4.9,0,0,Medium,Neutral,0,3,47,48,F,0
+STU-000101,11,16,Male,Private,Rural,Doctorate,Middle,0,21.1,Low,7.5,77.2,1,4,2.1,7.3,1.6,0,4,High,Negative,0,4,71,54,F,0
+STU-000102,10,15,Male,Private,Urban,High school,Middle,1,3.9,Low,1.6,84.1,0,4.4,1.6,8.3,4.8,1,2,High,Neutral,0,2,62,63,D,1
+STU-000103,12,17,Female,Public,Urban,Bachelor's,High,1,0.5,Low,0.5,82.9,0,7.1,2.7,6.4,7.2,0,0,Medium,Positive,0,2,59,45,F,0
+STU-000104,11,16,Female,Private,Rural,Bachelor's,Middle,1,27.8,Medium,14.6,91.7,0,7.7,2.6,6.9,5.7,0,6,High,Neutral,0,3,55,74,C,1
+STU-000105,12,17,Female,Public,Rural,Master's,High,1,22.5,High,9.1,78.8,1,3,0.8,7,0,1,6,Medium,Negative,0,4,79,77,C,1
+STU-000106,11,16,Male,Public,Urban,High school,Low,0,4.6,Medium,18,95,0,8.2,4.6,6.2,0,1,4,Low,Negative,0,4,36,40,F,0
+STU-000107,11,16,Male,Private,Urban,Some college,Middle,1,3.6,Medium,16,96.5,0,4.7,2.9,8.7,5.9,2,4,Medium,Positive,0,4,79,93,A,1
+STU-000108,11,17,Female,Private,Urban,Bachelor's,Middle,1,3.8,High,4.1,80.7,1,2.4,1.7,8.1,0.9,0,0,Medium,Neutral,0,5,90,80,B,1
+STU-000109,12,17,Male,Private,Urban,High school,High,1,2.5,Medium,12.5,95.6,0,5.4,3.9,8.5,5.1,3,1,High,Neutral,0,3,89,86,B,1
+STU-000110,10,16,Non-binary,Public,Urban,Master's,Middle,1,1.8,Low,7,89.6,0,6,2.2,6.5,3.7,1,1,Medium,Neutral,0,2,56,54,F,0
+STU-000111,10,15,Female,Public,Suburban,High school,Middle,1,9.1,High,17,86.6,0,6.8,2,6.2,3.2,1,1,Medium,Neutral,1,3,48,63,D,1
+STU-000112,12,17,Male,Private,Urban,Bachelor's,Low,1,4,Low,3.6,90.4,0,1.6,1.2,9.1,4,0,0,High,Positive,0,2,52,59,F,0
+STU-000113,9,14,Female,Charter,Suburban,Bachelor's,High,1,7.6,Medium,16.4,97,0,6.8,2.8,7.1,9.3,2,0,Medium,Neutral,0,6,58,69,D,1
+STU-000114,11,16,Non-binary,Public,Urban,Some college,Low,1,3.4,Low,12.6,93.3,0,3.6,1.2,7,3.8,0,0,Medium,Neutral,0,4,87,85,B,1
+STU-000115,9,14,Male,Public,Urban,Bachelor's,Middle,1,3.9,Low,1.2,71.1,1,3.9,1.7,8.3,0.8,0,0,Low,Neutral,0,2,54,46,F,0
+STU-000116,12,17,Male,Public,Suburban,Some college,Middle,1,7.5,Medium,13.1,83.6,0,3.1,1.9,8.1,4.5,1,0,Medium,Positive,0,5,43,52,F,0
+STU-000117,9,14,Female,Private,Suburban,Bachelor's,Middle,1,10.3,Medium,14.2,93.5,0,5.2,2.9,8.3,6.3,0,0,High,Neutral,0,5,64,78,C,1
+STU-000118,10,16,Male,Public,Urban,Master's,High,1,4.9,Low,12.1,91.9,0,4.1,2.8,7.1,2.7,2,0,Medium,Negative,0,6,90,85,B,1
+STU-000119,12,18,Female,Private,Suburban,High school,Middle,1,7.6,Medium,8,84.1,1,7,3,6.5,3,2,0,High,Negative,0,6,62,56,F,0
+STU-000120,12,17,Female,Public,Suburban,Some college,High,1,8.1,Low,4.6,84.3,1,5.6,1.7,6.6,2.8,0,0,High,Neutral,0,3,58,61,D,1
+STU-000121,10,15,Female,Public,Suburban,High school,Middle,1,3.9,Medium,7.9,86.9,0,3.5,2.5,8.8,5.3,2,0,Low,Neutral,0,3,69,62,D,1
+STU-000122,9,14,Male,Public,Rural,Master's,Middle,1,17.4,Medium,18.2,91.5,0,6.4,3.8,6.9,5,1,0,Medium,Neutral,0,6,79,82,B,1
+STU-000123,12,18,Male,Public,Rural,Some college,Low,1,10.6,Medium,13.1,85.6,1,4.7,2.4,6.9,3.6,2,0,Medium,Neutral,0,7,74,68,D,1
+STU-000124,11,16,Male,Charter,Suburban,Master's,High,1,11.3,Low,8.9,77.6,0,4,2.2,7.3,3.5,1,0,Low,Neutral,0,3,78,67,D,1
+STU-000125,9,15,Male,Private,Urban,Bachelor's,Middle,1,2.1,Low,7.3,80.7,0,4.4,3.2,7.3,2.5,1,0,High,Neutral,0,2,65,57,F,0
+STU-000126,10,16,Female,Public,Suburban,Bachelor's,Low,0,5.5,High,12.6,83.2,0,5.6,1.8,7.8,0.5,1,2,Medium,Negative,0,5,66,58,F,0
+STU-000127,10,16,Non-binary,Public,Suburban,High school,Middle,1,6.4,Medium,14.6,91.7,0,6.2,4,8.4,4,1,0,High,Neutral,0,5,63,82,B,1
+STU-000128,9,15,Female,Public,Urban,High school,Low,1,2.2,Medium,8.3,87.7,0,2.6,1,9,3,2,1,Medium,Positive,0,4,38,47,F,0
+STU-000129,11,16,Male,Public,Suburban,High school,Middle,1,1.1,Medium,16.7,84.3,1,7.1,2.1,6.8,5.9,2,0,Medium,Positive,0,8,81,81,B,1
+STU-000130,12,17,Male,Public,Urban,Bachelor's,High,1,3.6,Low,8.4,81.3,0,5.3,3.5,7.5,5.7,1,0,Medium,Negative,0,4,98,80,B,1
+STU-000131,12,17,Male,Public,Urban,Some college,Middle,1,1.4,Medium,8.2,94.7,0,3.1,2,8.6,2.2,3,0,High,Positive,0,4,57,73,C,1
+STU-000132,9,14,Female,Private,Urban,Doctorate,High,1,2.9,High,27.7,96,0,5.3,2.1,7.8,6.8,3,0,High,Neutral,0,7,52,83,B,1
+STU-000133,11,17,Male,Public,Suburban,Master's,Middle,1,1.1,Low,7,84.9,0,4.3,2.4,8.8,10.6,3,1,High,Neutral,1,4,65,63,D,1
+STU-000134,11,16,Female,Public,Urban,High school,Low,1,1.2,Low,4.8,88.3,0,7,3.1,8.4,5.5,3,0,High,Neutral,0,3,36,50,F,0
+STU-000135,12,17,Male,Public,Urban,Bachelor's,Middle,1,0.6,High,16.4,94.5,0,2.8,1.1,9,2.8,1,1,Low,Negative,1,4,58,60,D,1
+STU-000136,11,17,Male,Private,Suburban,Bachelor's,Middle,1,3.2,Medium,5.4,98.3,0,3.6,1.8,8.8,1.4,3,0,Medium,Positive,0,3,73,77,C,1
+STU-000137,12,17,Female,Public,Suburban,Bachelor's,Middle,1,8,Medium,12.7,96.2,0,3.5,1.8,9,7.2,4,2,High,Negative,0,5,81,83,B,1
+STU-000138,9,14,Female,Public,Urban,High school,Middle,1,4.9,Low,8,88.6,0,0.7,0.3,9.4,5.7,4,0,Medium,Neutral,0,3,76,67,D,1
+STU-000139,12,17,Female,Public,Urban,Bachelor's,Low,1,2.4,Medium,4.7,89,0,5.5,2.3,7.9,6.6,3,0,Medium,Neutral,0,1,69,64,D,1
+STU-000140,10,16,Non-binary,Public,Urban,Bachelor's,Low,1,3.2,Medium,17.9,84.6,0,3.2,0.9,8.4,2.3,1,8,Medium,Positive,0,4,68,88,B,1
+STU-000141,9,14,Female,Public,Suburban,Doctorate,Low,0,11.2,Medium,19.4,82.1,0,5.4,2,6.7,5,2,0,Medium,Neutral,0,7,87,85,B,1
+STU-000142,11,16,Male,Private,Urban,Master's,Middle,0,0.8,Medium,14.2,85.1,0,6.3,1.8,7.5,7.5,2,6,High,Positive,0,6,96,99,A,1
+STU-000143,12,17,Male,Public,Suburban,Doctorate,Middle,1,7.5,Low,11.3,74.1,1,0.5,0.2,7.8,3.9,1,0,Medium,Neutral,0,4,51,46,F,0
+STU-000144,10,16,Female,Public,Urban,Bachelor's,Middle,1,3.1,Low,12.8,90.3,0,4.8,2.1,7.1,3.2,2,0,Medium,Positive,0,4,82,79,C,1
+STU-000145,11,16,Male,Public,Urban,Some college,High,1,2,Medium,16.6,90.2,0,5.1,1.3,6.8,5.1,4,0,Medium,Positive,0,4,79,79,C,1
+STU-000146,11,16,Male,Public,Urban,Doctorate,High,1,0.6,Medium,20.8,89.6,0,4.2,2.5,7.2,3.5,1,1,Low,Negative,0,7,66,70,C,1
+STU-000147,9,14,Male,Public,Urban,Bachelor's,High,1,2.1,High,22.9,97.6,0,5.7,3.7,6.3,6,0,0,Low,Negative,0,7,75,85,B,1
+STU-000148,9,14,Non-binary,Public,Urban,High school,Low,0,4.7,High,21.4,92.4,0,4.7,2.9,8.5,1.3,0,0,Medium,Positive,0,4,76,84,B,1
+STU-000149,9,14,Female,Public,Suburban,Doctorate,High,1,9.5,Low,11.7,90.3,0,3.4,1.8,7.4,1.7,0,0,Medium,Positive,0,3,91,89,B,1
+STU-000150,9,14,Female,Charter,Urban,Bachelor's,Middle,1,0.9,Low,7.9,78.8,0,3.8,2.6,8,4.7,1,0,Medium,Neutral,0,4,85,69,D,1
+STU-000151,10,15,Male,Public,Rural,Master's,High,1,34.6,Medium,15.8,77.7,0,0.5,0.2,8.6,3.9,1,0,High,Neutral,0,6,54,69,D,1
+STU-000152,11,16,Female,Public,Rural,High school,High,1,28.4,Medium,12.5,78.1,0,5.2,1.4,6.6,3.3,1,0,Medium,Neutral,0,4,89,86,B,1
+STU-000153,11,17,Male,Public,Rural,High school,Middle,1,13,Medium,8.7,83,1,3.7,2.7,7.9,5.9,2,0,Medium,Positive,0,7,46,54,F,0
+STU-000154,10,15,Male,Public,Urban,Master's,High,1,3.1,Low,6.6,97.4,0,4,2.7,8.3,6.4,4,0,Medium,Neutral,0,3,92,83,B,1
+STU-000155,9,14,Male,Public,Urban,Bachelor's,High,1,3.5,Low,6.6,93.2,1,3.5,1.9,8,7.8,0,0,High,Negative,0,5,94,80,B,1
+STU-000156,9,14,Female,Public,Urban,Bachelor's,Low,1,4.6,Medium,13.8,94.7,0,3.6,0.9,7,0.6,1,4,Medium,Neutral,0,3,76,74,C,1
+STU-000157,9,14,Female,Public,Rural,High school,Low,1,21.1,High,21.4,90,0,8.1,2.1,6.5,0.1,2,0,Low,Positive,0,5,73,82,B,1
+STU-000158,11,16,Female,Public,Urban,High school,Low,1,1.7,Low,10.5,90.1,0,6.2,4.5,8.5,0,3,0,Low,Neutral,0,5,65,56,F,0
+STU-000159,12,17,Male,Public,Suburban,High school,Middle,1,4.9,Low,1.7,94.4,0,2.4,1,9.2,2.7,3,6,High,Neutral,0,1,51,60,D,1
+STU-000160,10,15,Female,Public,Suburban,Bachelor's,High,1,1.9,Medium,18.1,97.1,0,5.9,2.7,6.5,1.1,1,1,Medium,Positive,0,6,50,67,D,1
+STU-000161,11,16,Female,Public,Rural,Bachelor's,Middle,1,13.7,High,16.5,89.8,0,4.7,1.3,6.7,0,2,0,Low,Negative,0,3,85,83,B,1
+STU-000162,12,18,Male,Private,Rural,Master's,High,0,20.6,High,23.7,84,0,5,1.4,7.1,8.4,1,1,High,Negative,0,7,57,78,C,1
+STU-000163,9,14,Female,Charter,Suburban,Some college,Middle,1,10.9,Medium,15.3,86.9,0,3.9,2.2,7.1,2.3,1,1,High,Negative,0,5,52,70,C,1
+STU-000164,11,16,Female,Public,Urban,High school,Middle,1,3.7,Medium,5.2,93.6,1,8.7,4.8,5.2,4.3,1,0,Medium,Positive,0,3,66,63,D,1
+STU-000165,10,15,Male,Public,Urban,Bachelor's,Middle,1,3.6,Medium,12.9,91.1,0,2.6,1.8,7.6,12.7,0,1,Medium,Negative,0,3,61,68,D,1
+STU-000166,11,17,Male,Public,Suburban,Some college,High,1,7.8,Low,11.7,87.8,0,0.5,0.2,7.3,4.2,0,6,Medium,Neutral,0,6,69,72,C,1
+STU-000167,12,17,Female,Private,Suburban,Master's,High,1,10.8,Medium,13.8,95.6,0,1.5,1,9.2,5.9,0,6,High,Neutral,0,2,60,73,C,1
+STU-000168,11,16,Female,Charter,Suburban,High school,Middle,1,9,Low,0,89.9,1,4.6,1.2,7,0.1,1,0,Medium,Neutral,0,5,44,49,F,0
+STU-000169,11,17,Male,Public,Suburban,Bachelor's,High,1,10.1,Medium,14.7,92.7,0,3.6,2.3,8,4.7,1,0,Medium,Positive,0,5,66,83,B,1
+STU-000170,12,17,Female,Public,Rural,Some college,Middle,0,4.8,Medium,5.3,90.7,0,3.6,2.2,8,0,4,0,Medium,Neutral,0,4,51,51,F,0
+STU-000171,11,16,Female,Private,Suburban,Some college,Middle,1,4.4,High,17.7,98.5,0,6.8,2.8,6.9,0.8,3,0,High,Neutral,0,5,45,75,C,1
+STU-000172,10,16,Male,Public,Rural,Bachelor's,High,1,11.7,Medium,16.9,98.6,0,2.7,1.2,7,9.2,2,8,High,Neutral,0,5,83,89,B,1
+STU-000173,9,14,Non-binary,Public,Urban,Bachelor's,Middle,1,2,High,18.4,95,0,4.7,2.2,6.6,0.8,1,6,Medium,Neutral,0,6,92,93,A,1
+STU-000174,11,16,Male,Public,Urban,Some college,Middle,1,0.6,Medium,17.6,82.3,1,6,4,5.9,3.6,4,0,High,Neutral,0,6,91,84,B,1
+STU-000175,11,16,Female,Private,Urban,Doctorate,High,1,3,Medium,15.9,84.7,0,4.7,2.8,7.4,7.9,1,2,High,Positive,0,5,67,80,B,1
+STU-000176,10,15,Female,Public,Suburban,Bachelor's,Middle,1,9.4,High,19.9,84.9,0,3.5,1.5,7.6,6.9,3,0,Medium,Neutral,0,6,67,76,C,1
+STU-000177,10,15,Female,Public,Rural,Some college,Middle,0,25.8,High,13.8,83,0,3.9,1.4,6.7,4.3,3,1,Medium,Neutral,0,4,49,64,D,1
+STU-000178,12,18,Male,Public,Suburban,Bachelor's,Middle,1,7.8,Low,10.5,86.4,0,3,1.2,7.6,5.7,2,0,Low,Positive,0,4,63,64,D,1
+STU-000179,11,16,Female,Public,Suburban,Bachelor's,High,1,1.3,Medium,13.4,85.8,0,4.2,3,8.8,4,0,0,Low,Negative,0,3,63,69,D,1
+STU-000180,9,15,Male,Public,Urban,High school,Middle,1,3,Low,4.7,90,1,7.2,3.5,7.2,8.1,1,0,Low,Positive,0,3,44,42,F,0
+STU-000181,11,16,Male,Public,Suburban,High school,Low,1,3.6,Low,8.8,86.7,1,4.7,2.1,6.7,5.2,0,4,High,Neutral,0,5,48,52,F,0
+STU-000182,9,14,Male,Public,Suburban,Master's,Middle,1,6.5,High,19.9,83.8,0,4.8,3.4,6.7,4.8,2,1,Medium,Neutral,0,5,52,67,D,1
+STU-000183,12,18,Female,Private,Suburban,Doctorate,Middle,1,5.1,Medium,17.2,82.8,0,4.5,1.4,7.8,3.7,1,0,Medium,Neutral,0,5,69,81,B,1
+STU-000184,9,14,Male,Private,Suburban,High school,Low,1,3.4,High,19.1,95.8,0,5.1,2.4,6.8,4.1,1,6,High,Neutral,0,7,68,84,B,1
+STU-000185,10,16,Male,Private,Suburban,Some college,Low,1,1.5,Low,4,86.8,0,6.9,4,6.9,3.5,1,0,High,Neutral,0,3,85,70,C,1
+STU-000186,11,16,Female,Public,Rural,Some college,Middle,1,22.7,High,25.7,79.8,0,2.6,1.6,8.4,1.8,0,0,High,Neutral,0,4,46,76,C,1
+STU-000187,11,16,Female,Public,Urban,Some college,Low,1,3.9,High,14.9,98.8,0,5.2,1.8,7.7,2.1,0,0,Medium,Neutral,0,5,55,72,C,1
+STU-000188,12,17,Female,Private,Urban,Some college,High,1,4.2,High,12,92.2,0,3.3,0.9,8,2.7,1,6,Medium,Positive,0,3,61,74,C,1
+STU-000189,11,17,Female,Public,Suburban,Bachelor's,Low,1,6.2,Medium,16.4,93.7,0,6.7,4.9,7.8,1.4,2,0,Medium,Neutral,0,6,89,91,A,1
+STU-000190,11,16,Male,Public,Suburban,Master's,Middle,1,8.1,High,23.7,92.1,0,2.9,1.8,7.7,1.2,4,0,High,Neutral,0,8,92,100,A,1
+STU-000191,10,16,Male,Private,Suburban,Some college,High,1,3.1,High,12.4,82.5,0,3.3,1.6,8.5,5.9,1,4,Medium,Negative,0,6,87,86,B,1
+STU-000192,10,15,Female,Public,Urban,Some college,High,1,2,High,12.8,90.7,0,4,2.7,7.7,5.8,1,2,Medium,Negative,0,4,49,66,D,1
+STU-000193,10,15,Male,Public,Urban,Bachelor's,High,1,2.5,Medium,14.3,94.2,0,5,1.5,7.1,3.7,1,1,Medium,Negative,0,3,50,54,F,0
+STU-000194,9,14,Female,Private,Rural,Master's,Low,1,32.8,Low,8.1,88.6,0,6.7,1.8,7,2.2,2,0,High,Positive,0,5,78,74,C,1
+STU-000195,11,17,Female,Private,Suburban,Bachelor's,Middle,1,2.2,High,17.8,86.7,0,0.5,0.1,8.7,3.9,3,0,Medium,Positive,0,6,60,79,C,1
+STU-000196,12,18,Female,Private,Suburban,High school,Low,1,9.1,Low,12.3,79,0,5.4,3.6,8.6,6.7,0,4,Medium,Neutral,0,5,72,70,C,1
+STU-000197,12,18,Male,Private,Suburban,High school,Low,1,9.9,Low,11.6,78.1,0,5.8,2.7,8.5,6.2,1,0,Low,Negative,0,2,43,37,F,0
+STU-000198,9,14,Female,Public,Suburban,Bachelor's,Middle,1,4.3,Low,5.2,82.2,0,2.3,1.2,7,1.1,3,4,Low,Positive,0,4,61,52,F,0
+STU-000199,11,16,Female,Public,Suburban,High school,Low,1,7.3,Medium,17.3,83.1,0,6.2,4.3,7.1,7.4,2,0,High,Neutral,0,5,85,79,C,1
+STU-000200,11,16,Male,Public,Rural,Bachelor's,Middle,1,4.5,Low,9.4,87.7,0,3.3,1.5,7.5,9.2,0,4,Medium,Neutral,0,4,91,79,C,1
+STU-000201,11,17,Male,Charter,Urban,High school,Middle,1,4.7,Medium,16.2,91.9,0,5.5,1.7,6.4,8.5,2,0,Medium,Positive,0,4,59,77,C,1
+STU-000202,12,17,Female,Public,Urban,Bachelor's,Middle,1,3.6,Medium,8.7,93.4,0,4.7,1.4,7,5.8,4,0,High,Neutral,0,5,93,93,A,1
+STU-000203,10,15,Male,Charter,Rural,High school,Low,1,32.6,High,10.1,96.8,0,9.1,6,5.7,6.1,1,1,Medium,Neutral,0,4,38,49,F,0
+STU-000204,9,14,Female,Public,Suburban,Some college,Middle,1,10.8,Medium,11.3,94.9,0,5,2.1,7.9,6.2,1,2,High,Positive,0,4,82,94,A,1
+STU-000205,11,16,Female,Public,Urban,Bachelor's,Middle,1,3.3,High,20.3,79.7,1,4.4,2.9,6.4,6.7,3,0,Medium,Positive,0,7,84,84,B,1
+STU-000206,10,15,Female,Public,Suburban,Master's,Middle,1,3.8,Medium,19.1,99,0,7.2,4.4,6.3,1.2,1,0,Medium,Positive,0,5,62,70,C,1
+STU-000207,10,15,Male,Public,Urban,Bachelor's,Middle,1,3,Low,7,74.9,0,5.4,3.7,7.5,1.5,0,0,Medium,Positive,0,2,73,58,F,0
+STU-000208,11,16,Female,Public,Urban,Bachelor's,High,1,1.4,Medium,18.5,84.9,0,5,2.5,7,7,2,1,Medium,Positive,0,7,61,75,C,1
+STU-000209,9,14,Male,Public,Rural,High school,Middle,1,23,Low,5.3,71.5,0,5.6,2.1,6.6,3,1,0,High,Positive,0,2,68,57,F,0
+STU-000210,12,17,Male,Public,Urban,High school,Low,1,2.7,Medium,6.8,89.9,1,5.7,2.4,7.6,3.6,1,1,Medium,Neutral,0,3,61,63,D,1
+STU-000211,11,17,Female,Charter,Urban,Bachelor's,Middle,1,1.3,Low,5.3,73.5,0,2.3,1.2,8.8,5.5,2,0,High,Positive,0,2,88,79,C,1
+STU-000212,9,15,Female,Private,Urban,Bachelor's,High,1,4.6,Medium,22.4,95.5,0,4.2,2.9,8.3,1.9,1,4,High,Negative,0,5,50,82,B,1
+STU-000213,9,14,Male,Private,Urban,High school,Low,1,1.9,Medium,17.7,86.1,0,4.8,1.5,7.2,4.1,1,0,High,Neutral,0,4,61,71,C,1
+STU-000214,12,17,Male,Public,Rural,Bachelor's,Middle,0,22.4,Low,4.9,77.2,0,7.5,1.9,7.1,0,3,0,Medium,Neutral,0,3,64,51,F,0
+STU-000215,11,17,Female,Public,Suburban,High school,Middle,1,4,Low,6.6,91,0,6.8,4.6,6.6,5.5,1,0,Medium,Neutral,0,4,67,64,D,1
+STU-000216,9,15,Female,Public,Suburban,High school,High,1,11.5,Low,4.7,84.7,1,4,2.1,6.8,3.6,0,0,Low,Neutral,0,5,58,45,F,0
+STU-000217,10,15,Female,Private,Suburban,Doctorate,Middle,1,10.6,Medium,1.5,97,0,6.2,3.5,6.9,2.3,0,1,High,Negative,0,3,49,50,F,0
+STU-000218,12,18,Male,Public,Rural,Master's,Middle,1,25.5,High,16.8,91.9,0,3.8,1.5,6.7,6.6,2,0,Medium,Positive,0,5,63,85,B,1
+STU-000219,11,16,Female,Charter,Urban,Doctorate,Middle,1,0.7,Medium,12.2,82.6,0,0.5,0.3,9.4,8.8,0,2,High,Negative,0,4,80,89,B,1
+STU-000220,12,18,Male,Public,Urban,Master's,Middle,1,1.5,High,9,83.5,1,4.1,1.1,6.2,1.1,1,0,High,Positive,0,6,73,75,C,1
+STU-000221,10,16,Male,Public,Suburban,Master's,High,1,1.8,Low,7.9,91,0,5.9,4,8.2,2.3,2,0,Medium,Positive,0,2,77,75,C,1
+STU-000222,9,14,Female,Public,Urban,Some college,Middle,1,1.4,Low,5.7,83.9,0,4,1.3,6.7,0.6,1,2,Medium,Negative,1,5,90,62,D,1
+STU-000223,10,15,Female,Public,Rural,Bachelor's,High,0,14.6,High,18.1,87.5,0,5.3,3,7.1,0.1,1,0,Medium,Negative,1,4,65,55,F,0
+STU-000224,11,16,Female,Public,Suburban,Some college,Middle,1,5.8,High,17.1,83.9,0,2.3,0.8,8.6,0,0,0,Medium,Neutral,0,3,69,76,C,1
+STU-000225,11,16,Male,Public,Suburban,High school,Middle,1,7.5,Medium,13.3,92.6,0,8.2,2.2,7.4,6.8,0,1,Medium,Negative,1,4,54,56,F,0
+STU-000226,9,15,Female,Public,Suburban,Bachelor's,High,1,8.1,Low,8.7,86.1,0,4.4,1.5,7.1,0,2,1,Medium,Neutral,1,5,56,46,F,0
+STU-000227,10,15,Male,Public,Urban,High school,Low,1,1,High,22.1,92.5,0,6.8,4.8,7.6,6.5,1,0,Medium,Negative,0,7,45,70,C,1
+STU-000228,9,14,Male,Public,Suburban,High school,Middle,1,9.9,Medium,4.8,85.3,0,3.8,1.1,8.4,0.9,1,0,Medium,Positive,0,1,87,72,C,1
+STU-000229,9,15,Male,Public,Urban,Bachelor's,High,1,0.4,Medium,9.9,88.3,0,6.5,2.5,8.3,1.5,2,4,Medium,Neutral,0,2,50,63,D,1
+STU-000230,10,15,Male,Public,Suburban,Some college,Low,1,6.2,Medium,14.2,85.5,0,3.1,2,9,9.7,2,1,High,Positive,0,2,56,79,C,1
+STU-000231,11,17,Male,Public,Urban,Bachelor's,Middle,1,2.2,Low,8.8,91,0,10.1,5.1,7.2,0,0,0,Medium,Neutral,0,2,55,56,F,0
+STU-000232,11,16,Female,Private,Urban,High school,Middle,1,0.8,Medium,10,91.3,0,3.5,1.9,7,4.6,2,0,Medium,Neutral,0,3,63,66,D,1
+STU-000233,9,15,Male,Public,Suburban,Master's,High,1,3.3,High,18.3,86.6,0,6.3,4.7,8.4,0.6,0,1,Low,Negative,0,4,93,84,B,1
+STU-000234,9,14,Female,Charter,Suburban,Some college,High,1,11.6,High,19.2,97.6,0,0.7,0.4,7.8,5.3,1,0,Medium,Neutral,0,6,84,96,A,1
+STU-000235,11,16,Female,Public,Urban,Some college,Low,1,1.1,Medium,11.6,83.5,0,2.6,1.7,7.5,6.6,1,0,Medium,Negative,0,5,77,73,C,1
+STU-000236,10,16,Female,Private,Suburban,High school,Middle,1,11.8,Medium,20.9,93.5,0,7,2.7,6.5,9.9,0,4,Medium,Positive,0,5,56,85,B,1
+STU-000237,10,15,Male,Public,Urban,High school,Middle,1,2.7,Medium,15.2,82.9,0,5,2.6,6.5,4,0,1,Medium,Negative,0,5,53,51,F,0
+STU-000238,10,15,Male,Public,Suburban,Some college,Middle,0,7.2,Medium,10.7,98.4,0,5.6,3.9,6.7,5.3,4,0,Medium,Positive,0,4,89,78,C,1
+STU-000239,12,17,Female,Private,Suburban,Some college,Middle,1,6.3,Medium,13,84.2,0,5.4,1.8,8.6,4.8,0,0,Medium,Neutral,0,2,85,75,C,1
+STU-000240,12,17,Female,Public,Urban,Bachelor's,Middle,1,4,Low,6.5,91.5,0,3.1,1.5,8.1,0.9,1,0,Medium,Neutral,0,1,62,65,D,1
+STU-000241,11,17,Male,Public,Rural,Bachelor's,High,1,19.5,High,14.6,95.8,0,4.6,2.5,7.2,2.7,4,0,Medium,Neutral,0,6,85,84,B,1
+STU-000242,11,16,Female,Public,Urban,High school,Middle,1,4.9,Medium,5.1,85.6,1,7.5,4.9,6.1,3.9,2,0,Medium,Positive,0,5,71,62,D,1
+STU-000243,12,17,Male,Private,Urban,High school,Middle,1,4.1,Low,6.2,92,1,6.7,3.4,6.9,9.1,0,4,Low,Neutral,0,6,63,66,D,1
+STU-000244,11,16,Female,Public,Suburban,Some college,Low,1,11.8,High,24.8,79.9,1,3.9,1.6,6.5,3.7,0,1,Medium,Positive,1,9,80,90,A,1
+STU-000245,10,16,Male,Charter,Urban,Master's,Middle,1,1.1,High,21.6,94.7,0,3,1.9,7.4,6.8,4,2,Medium,Positive,0,4,61,89,B,1
+STU-000246,11,16,Female,Public,Suburban,High school,Low,1,8.4,Low,6.2,79.1,0,1.4,1,8.6,2.5,0,0,Medium,Neutral,0,4,80,74,C,1
+STU-000247,11,17,Female,Public,Urban,Bachelor's,Middle,1,1.5,Low,12.5,74.7,0,0.5,0.2,7.6,7.3,0,0,Medium,Neutral,1,5,67,55,F,0
+STU-000248,11,16,Non-binary,Private,Urban,Master's,High,1,1.4,Medium,11.4,95.5,0,7.8,2.1,8.1,2,2,4,Medium,Positive,0,2,82,87,B,1
+STU-000249,11,16,Female,Public,Urban,Some college,Middle,1,3.7,Low,4.4,81.9,0,5.3,1.4,6.5,2,0,0,Medium,Negative,0,2,44,33,F,0
+STU-000250,12,17,Female,Public,Suburban,High school,Low,1,11.2,Medium,8.1,89.3,0,2.1,0.7,9.1,3.8,1,0,Medium,Positive,0,1,75,69,D,1
+STU-000251,11,17,Male,Public,Urban,High school,Low,1,2.1,Low,11.9,81.3,1,3.7,1,7.1,6.1,3,2,High,Positive,0,4,58,63,D,1
+STU-000252,10,15,Female,Public,Urban,Some college,Low,1,1.8,Medium,15,88.1,0,4.6,3.4,7.4,3.3,3,0,Medium,Positive,0,7,77,78,C,1
+STU-000253,10,15,Male,Public,Urban,Master's,High,1,3.8,Medium,6.9,97.4,0,8.6,4.9,7.9,5.6,0,0,Medium,Neutral,0,3,76,67,D,1
+STU-000254,11,16,Male,Public,Rural,Bachelor's,High,1,32.5,High,20.4,86.1,0,6.9,4.9,8.4,8,1,2,Medium,Neutral,0,5,73,83,B,1
+STU-000255,10,15,Female,Public,Urban,Some college,Low,1,2.6,Low,9.5,78.6,0,8.1,3.5,6.1,1.6,0,0,Medium,Neutral,0,3,84,76,C,1
+STU-000256,11,17,Male,Public,Suburban,High school,Low,1,11.2,Medium,10,85.1,0,7.1,3.3,6.4,3.6,0,0,High,Neutral,0,4,76,78,C,1
+STU-000257,11,17,Male,Public,Urban,Some college,Middle,1,2.9,Low,5.2,88.2,0,7,3.2,8.1,8,0,0,Low,Neutral,0,2,87,77,C,1
+STU-000258,9,15,Female,Public,Suburban,Master's,High,1,1.4,Low,11.2,79.1,0,2.9,1,8.3,7.4,0,0,High,Neutral,0,5,74,75,C,1
+STU-000259,12,18,Female,Public,Rural,Bachelor's,High,1,22.8,Low,6,78.9,1,3.6,2,7.9,2.8,3,0,Medium,Neutral,0,5,64,61,D,1
+STU-000260,9,14,Male,Public,Urban,High school,Middle,1,1.3,Medium,13.3,92.2,0,6.3,2.7,8.2,5.8,0,0,Low,Positive,0,6,72,83,B,1
+STU-000261,10,15,Male,Public,Urban,Master's,Middle,1,1.5,Medium,1.7,90.6,1,6.8,2.6,7.5,1.9,2,0,Medium,Neutral,0,4,84,72,C,1
+STU-000262,9,14,Female,Public,Suburban,Bachelor's,Middle,1,3.9,Medium,10.9,92.7,0,7.3,3.8,6,4.8,0,0,Medium,Neutral,0,4,63,60,D,1
+STU-000263,11,16,Male,Private,Suburban,High school,Low,1,9,Low,8.6,87.7,0,1.2,0.8,7.2,8.3,2,0,Medium,Neutral,0,4,80,64,D,1
+STU-000264,10,15,Female,Public,Urban,High school,Middle,1,3.5,Medium,15.2,85.7,0,5.8,2,7,8.3,0,0,Medium,Neutral,0,7,89,91,A,1
+STU-000265,10,16,Female,Public,Urban,Doctorate,High,1,1.6,High,17,93.5,0,5,3.7,6.7,0,0,0,Medium,Neutral,0,3,70,72,C,1
+STU-000266,10,15,Male,Public,Urban,Master's,Middle,1,1.9,Medium,17.4,91.6,1,5.4,3,7.6,3.3,2,4,Medium,Neutral,0,5,82,84,B,1
+STU-000267,11,17,Female,Public,Rural,High school,Low,1,16.6,Medium,19.2,90.9,1,4.8,1.5,6.3,2.7,1,0,High,Neutral,0,5,77,88,B,1
+STU-000268,12,18,Female,Private,Urban,Some college,Low,1,2.6,Low,7.8,83.3,1,3.6,1.2,6.2,5.5,1,6,High,Neutral,0,4,57,63,D,1
+STU-000269,10,15,Female,Public,Urban,Some college,Low,1,1,Low,6.7,77.7,1,4.8,3.6,7.7,4.7,1,0,High,Positive,0,3,70,60,D,1
+STU-000270,12,17,Female,Private,Urban,Bachelor's,Middle,1,0.8,Medium,14.8,86,0,6.1,3.3,6.9,6,2,0,Medium,Neutral,0,6,90,91,A,1
+STU-000271,10,15,Male,Private,Rural,High school,Low,1,31.9,Low,2.3,82.3,0,0.5,0.2,8.4,6.2,2,0,Low,Negative,0,2,66,45,F,0
+STU-000272,10,15,Male,Public,Suburban,High school,Middle,1,4.1,Medium,19.8,92.1,0,6.5,2.7,7.7,5,1,4,Low,Negative,0,6,63,69,D,1
+STU-000273,11,17,Female,Public,Suburban,High school,Low,1,9.1,Medium,18.1,78.9,1,3.4,2.5,8.6,4.7,1,0,Medium,Neutral,0,6,61,66,D,1
+STU-000274,10,15,Male,Private,Suburban,Bachelor's,High,1,12,Medium,13.1,94.8,0,1.4,0.6,8.9,6,0,6,Medium,Neutral,0,3,67,72,C,1
+STU-000275,11,17,Female,Public,Urban,Bachelor's,Middle,1,2.5,Low,5,80.8,0,8,2.3,5.8,5,1,6,Medium,Neutral,0,5,72,63,D,1
+STU-000276,12,17,Male,Public,Urban,Bachelor's,High,1,2.9,Low,9,81.2,0,4,1.4,8.9,3.4,1,0,High,Neutral,0,4,91,83,B,1
+STU-000277,11,16,Female,Charter,Urban,Some college,Low,1,0.6,Low,7.9,92.4,1,5.3,1.6,7.7,7.5,1,0,High,Positive,0,4,72,77,C,1
+STU-000278,10,15,Male,Public,Rural,High school,Low,1,4.9,Low,7.4,89.2,0,2.8,1.6,7.6,4.9,0,0,Medium,Neutral,0,2,76,72,C,1
+STU-000279,10,15,Female,Public,Urban,High school,Middle,1,2.5,Medium,8.7,95.3,0,5.1,2.3,6.9,3.1,1,1,Low,Positive,0,5,54,56,F,0
+STU-000280,11,16,Female,Public,Rural,Master's,Middle,0,27.4,Medium,14.4,72.8,1,1.2,0.4,8.1,1.3,3,0,Medium,Negative,0,8,67,58,F,0
+STU-000281,10,15,Female,Private,Suburban,High school,Low,1,10.4,Medium,16.1,98.9,0,4.2,1.3,8.1,5.7,2,0,High,Negative,1,3,58,63,D,1
+STU-000282,11,16,Male,Public,Urban,Some college,Middle,1,4,Medium,10,96.6,0,7,4.7,7.9,8.7,0,0,High,Neutral,0,3,72,80,B,1
+STU-000283,11,17,Male,Private,Urban,Bachelor's,Middle,1,1.7,Low,4.6,88.4,0,3.1,2.1,7.5,3.2,2,4,Medium,Positive,0,4,47,53,F,0
+STU-000284,12,18,Female,Public,Suburban,Master's,High,1,8.9,High,14.9,82.4,0,8.5,2.7,6.9,0.2,0,6,High,Neutral,0,4,60,71,C,1
+STU-000285,9,14,Female,Charter,Urban,High school,Middle,1,0.6,Medium,3.8,88.8,0,3.1,1.6,7.7,1.7,1,0,High,Neutral,0,3,83,83,B,1
+STU-000286,9,14,Male,Public,Urban,Doctorate,Low,1,4.9,High,10.3,91.9,0,3.1,0.9,8.1,3.1,1,1,High,Negative,0,2,52,69,D,1
+STU-000287,12,17,Female,Public,Suburban,High school,Low,1,10.5,Medium,16.8,84.5,0,2.1,0.6,8.1,1.8,1,0,High,Neutral,0,5,76,78,C,1
+STU-000288,12,17,Female,Public,Urban,High school,Middle,1,2.1,Medium,18.7,91.9,0,1.3,0.9,7.7,1,0,2,Medium,Negative,0,3,81,88,B,1
+STU-000289,10,15,Male,Public,Urban,High school,Middle,1,2.8,Medium,13.1,96.3,0,5,1.6,8.6,2.2,2,0,Medium,Negative,0,3,60,62,D,1
+STU-000290,11,16,Male,Public,Urban,Bachelor's,Middle,1,1.2,High,4.4,86.1,0,5.9,1.9,6.4,8.4,0,2,High,Positive,0,3,53,55,F,0
+STU-000291,12,18,Male,Public,Suburban,Some college,Middle,1,3.3,Low,9.9,87.2,0,3.1,0.8,7.5,5.7,2,0,Medium,Positive,0,5,50,56,F,0
+STU-000292,12,17,Male,Public,Urban,Bachelor's,High,1,2.5,Medium,10.3,79.8,1,5.9,2.4,7.1,4,0,0,Low,Neutral,0,7,83,77,C,1
+STU-000293,11,16,Female,Public,Urban,Some college,Low,0,2.1,Low,6.5,83.9,0,1.1,0.8,7.4,1.9,3,0,High,Neutral,0,4,78,66,D,1
+STU-000294,11,16,Female,Private,Urban,Bachelor's,High,1,0.8,High,19.4,98.1,0,6.6,2.2,7,6.7,0,4,High,Positive,0,6,71,88,B,1
+STU-000295,12,18,Male,Public,Suburban,Bachelor's,Low,1,11.4,High,18.3,96,0,4.5,2.7,6.7,2.8,1,0,High,Neutral,0,5,85,92,A,1
+STU-000296,10,15,Female,Public,Urban,Doctorate,High,1,5,Medium,21.5,89.2,0,3.8,1.2,7,1,1,0,Medium,Neutral,0,7,54,75,C,1
+STU-000297,12,18,Female,Public,Suburban,Some college,Middle,0,8,Medium,4.9,83.1,0,5.9,4,7.2,3.6,2,0,High,Neutral,0,3,66,65,D,1
+STU-000298,11,17,Female,Public,Urban,Master's,Middle,1,4,Medium,16.5,85.1,0,4.1,2.1,6.6,8,4,0,Low,Neutral,0,5,60,71,C,1
+STU-000299,10,15,Male,Public,Urban,Master's,Middle,1,1.3,High,18.9,83,0,2.8,0.7,7.6,4.7,2,0,Medium,Positive,0,6,63,78,C,1
+STU-000300,9,14,Male,Public,Urban,High school,Middle,1,1.3,Medium,9.5,89,0,7.1,4.7,8.1,6.4,0,4,Low,Neutral,0,5,57,65,D,1
+STU-000301,10,15,Male,Private,Urban,Master's,High,1,0.9,High,17.8,87.7,0,7,3.9,6.9,5.5,3,4,Medium,Negative,0,4,61,76,C,1
+STU-000302,10,16,Male,Private,Rural,Master's,Low,1,16,Medium,3.4,97.7,0,8,5.8,7.5,5.7,1,4,High,Neutral,0,4,51,54,F,0
+STU-000303,11,16,Male,Public,Urban,Doctorate,Middle,1,1.1,Low,2.7,78.3,0,1.6,0.6,9.2,4.8,0,8,Low,Neutral,0,3,64,53,F,0
+STU-000304,9,14,Female,Public,Suburban,Master's,Middle,1,6.1,High,22,90.4,0,10.3,7.2,7.5,4,3,6,Medium,Neutral,0,7,61,79,C,1
+STU-000305,11,16,Male,Public,Urban,Bachelor's,High,1,4,Low,4.8,76.4,0,7.1,1.8,7.4,2.3,0,0,High,Neutral,0,4,49,56,F,0
+STU-000306,10,15,Male,Public,Rural,High school,Low,1,31.5,Medium,13.4,85,0,5,2,7,8.2,2,1,Medium,Neutral,0,3,73,79,C,1
+STU-000307,12,17,Non-binary,Public,Urban,Doctorate,Middle,1,4.5,High,20.5,81.1,1,2.8,1.4,7,0.6,2,0,High,Neutral,0,6,92,95,A,1
+STU-000308,12,18,Male,Public,Suburban,Bachelor's,Low,1,6.7,Low,8,84,0,4.5,1.5,7,7.6,2,0,Medium,Negative,0,5,66,62,D,1
+STU-000309,9,14,Female,Public,Suburban,Some college,High,0,6.9,Medium,13.5,91,1,5.8,1.5,6.4,7.8,2,0,Low,Neutral,0,5,45,60,D,1
+STU-000310,9,15,Male,Public,Urban,Bachelor's,High,1,2.2,Medium,21,94.1,0,4.8,3.6,7,3.1,2,0,High,Neutral,0,4,95,93,A,1
+STU-000311,12,17,Non-binary,Public,Urban,Bachelor's,Middle,1,1.4,High,14.2,85.7,0,3.3,0.8,7.3,4.9,2,2,Medium,Negative,0,2,69,68,D,1
+STU-000312,12,17,Male,Public,Urban,Master's,Middle,1,4.3,Medium,23.7,82.3,0,5.2,3.8,8.1,0,2,0,Low,Neutral,0,5,53,66,D,1
+STU-000313,10,16,Female,Public,Rural,Bachelor's,Middle,1,7.8,Medium,15.1,86.2,0,5,2.2,6.9,0,0,0,Medium,Positive,0,6,81,75,C,1
+STU-000314,11,16,Female,Public,Rural,High school,Low,1,24.5,Low,7.4,82.9,1,1.8,0.6,8.5,2.5,1,0,Medium,Neutral,0,5,38,48,F,0
+STU-000315,12,18,Male,Public,Urban,Some college,High,1,4.8,Medium,15.5,87.7,1,5.4,2.4,8.2,5.4,2,4,Medium,Neutral,0,6,65,81,B,1
+STU-000316,9,14,Male,Public,Suburban,Bachelor's,Low,1,7.3,Medium,12.6,90.2,0,3.8,1.8,7.1,1.9,1,0,Medium,Positive,0,3,70,81,B,1
+STU-000317,10,15,Male,Public,Urban,Master's,Middle,1,4.3,Low,7,76.3,0,5,1.7,8.4,4.7,0,0,Medium,Positive,1,2,74,59,F,0
+STU-000318,12,17,Male,Private,Suburban,Bachelor's,High,1,8.4,Medium,14.7,91.2,0,6.8,3.3,6.1,6.4,2,8,Medium,Neutral,0,3,85,88,B,1
+STU-000319,11,17,Male,Public,Urban,High school,Low,1,1.2,Low,8.4,77.3,0,5.3,1.8,7.4,0.7,0,4,Medium,Positive,0,5,69,65,D,1
+STU-000320,10,15,Male,Public,Suburban,Master's,Middle,1,4.3,Low,4,80.4,0,4.6,1.2,7.2,5.6,0,0,Medium,Negative,0,3,49,40,F,0
+STU-000321,10,15,Female,Public,Urban,Some college,Middle,1,1.5,Low,9.7,75.4,1,5.3,1.3,7.6,10.1,2,0,Medium,Positive,0,4,42,49,F,0
+STU-000322,11,17,Female,Public,Rural,High school,Middle,1,12.4,Low,6.6,86.3,1,2.9,1.4,7.2,4.4,2,2,High,Neutral,0,4,77,69,D,1
+STU-000323,11,16,Female,Public,Urban,Bachelor's,High,1,3.5,Medium,12.1,94.9,0,0.8,0.4,9.3,4.6,3,0,Medium,Neutral,0,2,90,96,A,1
+STU-000324,10,16,Male,Public,Urban,Bachelor's,High,1,2.9,Medium,5.8,95.8,1,6.8,3.1,6,7,1,0,Medium,Positive,0,6,83,73,C,1
+STU-000325,10,15,Female,Public,Urban,Doctorate,Middle,1,4.1,Medium,15,94.7,0,3.6,2.6,8.1,0.9,1,0,Medium,Neutral,0,4,49,57,F,0
+STU-000326,10,15,Male,Public,Rural,Master's,Middle,1,16.9,Medium,14.6,88.4,1,5.7,1.8,6.4,6.2,1,0,Low,Neutral,0,5,63,58,F,0
+STU-000327,11,16,Female,Private,Urban,Doctorate,Middle,1,2.8,High,18.8,95,1,7.7,2.4,5.6,2.1,0,2,Low,Neutral,0,7,64,70,C,1
+STU-000328,12,17,Female,Private,Urban,Master's,High,1,3.1,Medium,13.4,84.1,0,3.3,1.2,7.5,3.4,2,0,High,Negative,0,3,63,61,D,1
+STU-000329,12,18,Female,Public,Suburban,High school,Middle,1,7.8,Medium,12.2,86.5,1,6.5,4.5,6.9,6.4,0,0,Medium,Neutral,0,7,60,56,F,0
+STU-000330,10,15,Male,Public,Urban,Some college,Low,1,4.5,Low,9.8,87.8,0,5.6,1.9,6.6,5.5,2,2,Medium,Neutral,0,2,62,56,F,0
+STU-000331,12,17,Male,Public,Urban,Bachelor's,High,1,4.8,Medium,16.2,97.4,0,1.6,0.6,7.4,4.2,1,0,Medium,Neutral,0,6,54,63,D,1
+STU-000332,11,16,Female,Public,Rural,Bachelor's,High,1,20.8,Low,7.2,76.8,0,4.8,1.4,6.8,4.6,3,0,Medium,Negative,0,4,62,56,F,0
+STU-000333,12,18,Female,Public,Urban,Some college,Middle,1,4,Low,4.5,86.1,0,5.7,2.3,7.2,8,2,0,High,Neutral,0,3,79,76,C,1
+STU-000334,12,17,Female,Public,Urban,High school,Middle,1,4.5,Medium,15.2,91.2,1,8.7,3.4,6.5,1.1,0,0,High,Positive,0,6,42,54,F,0
+STU-000335,10,15,Male,Public,Urban,High school,Low,1,3.8,High,13.1,86.3,0,7.4,4.4,6.8,3.2,0,0,Medium,Negative,0,5,53,62,D,1
+STU-000336,9,15,Female,Public,Urban,Master's,Middle,1,2.6,Medium,4.4,96.2,0,6.3,3.3,7.6,3.4,2,1,High,Positive,0,1,55,59,F,0
+STU-000337,11,16,Female,Private,Urban,High school,Low,1,2.1,Medium,6.4,82.1,0,6.5,2,7,7.7,1,0,Medium,Positive,0,3,79,65,D,1
+STU-000338,10,15,Male,Public,Rural,Bachelor's,Middle,0,4.2,Medium,12.8,92.9,0,5.7,3.4,7.8,6.9,0,0,Medium,Neutral,0,5,52,56,F,0
+STU-000339,10,16,Male,Public,Suburban,Some college,High,0,7.8,Medium,15.5,84.7,0,3,1.6,6.9,6.2,0,0,Medium,Neutral,0,6,75,75,C,1
+STU-000340,12,18,Male,Public,Suburban,Bachelor's,Low,1,7.4,Low,1.1,78.5,0,7.4,4.2,7.3,9.5,1,0,Medium,Positive,0,2,59,51,F,0
+STU-000341,9,14,Non-binary,Public,Urban,Some college,Middle,1,2.4,Medium,12.1,91.7,0,0.5,0.3,7.7,4.3,3,2,Medium,Negative,0,5,43,50,F,0
+STU-000342,10,15,Male,Public,Urban,Bachelor's,Middle,1,1.1,Low,1,78.8,0,3.8,2.1,7.5,5.2,1,0,Medium,Neutral,0,2,85,64,D,1
+STU-000343,10,15,Male,Private,Suburban,Some college,High,1,10.1,Medium,18.1,82.6,0,3.5,1.3,7.7,4.4,0,0,High,Negative,0,5,85,84,B,1
+STU-000344,9,14,Male,Public,Urban,High school,Middle,1,1.1,High,19,91,0,3.6,2.6,7.5,8.8,1,0,Medium,Positive,0,6,59,78,C,1
+STU-000345,11,16,Male,Private,Urban,Master's,High,1,1.8,Medium,12.8,93.5,0,6.8,4.3,7.4,6.5,1,0,Medium,Positive,0,5,79,78,C,1
+STU-000346,11,17,Male,Public,Suburban,Bachelor's,High,1,1.1,Low,9.2,76.3,0,4.5,2.4,7,8.2,0,0,Medium,Neutral,0,4,57,59,F,0
+STU-000347,11,17,Male,Public,Urban,Bachelor's,High,1,3.1,Medium,19,83.6,0,6.1,2.7,7.3,6.1,1,0,Medium,Neutral,0,5,62,77,C,1
+STU-000348,9,14,Female,Public,Rural,Bachelor's,High,1,29.2,High,12.4,89,0,9.1,6.1,7.4,8.3,2,0,Medium,Neutral,0,4,68,65,D,1
+STU-000349,11,16,Female,Public,Rural,Bachelor's,High,1,5.3,Medium,14,89.7,1,6.5,3.9,7.6,4.7,2,0,Medium,Negative,0,4,62,63,D,1
+STU-000350,10,15,Male,Charter,Suburban,High school,Low,1,3.7,High,13.8,82.2,0,3.2,1.4,6.9,2.2,1,0,Medium,Neutral,0,5,45,55,F,0
+STU-000351,11,17,Male,Public,Suburban,High school,Middle,1,5.6,Low,12.5,88.2,0,4.9,2.8,8.8,4.1,1,0,Medium,Positive,0,4,53,68,D,1
+STU-000352,10,16,Female,Private,Rural,High school,Low,1,34.8,Low,10,91.5,0,5.7,2.9,8.5,4.4,1,0,Medium,Positive,0,3,54,65,D,1
+STU-000353,12,17,Male,Public,Rural,Bachelor's,Middle,1,6,High,24.9,93.7,0,4.6,1.9,8.7,0.2,1,0,Low,Neutral,0,6,92,95,A,1
+STU-000354,11,16,Female,Public,Urban,Bachelor's,Middle,1,4.1,Low,14,76.1,0,6.3,3.1,7.3,2.8,1,0,High,Neutral,0,5,53,59,F,0
+STU-000355,9,15,Male,Public,Suburban,High school,Low,1,6,High,32.5,82.2,0,3.1,1.6,8,5.5,1,0,Medium,Neutral,0,8,39,64,D,1
+STU-000356,11,17,Female,Public,Suburban,Some college,Middle,1,1,Medium,11.1,89.8,1,5.8,1.9,6.5,5.9,2,0,High,Positive,0,5,88,81,B,1
+STU-000357,12,17,Male,Public,Suburban,Master's,Middle,1,7.9,Low,13.7,78.9,0,3.9,2.7,7.3,4.5,0,0,Low,Positive,0,5,96,79,C,1
+STU-000358,9,14,Male,Private,Suburban,High school,Middle,1,4.7,High,12.4,86.3,0,7.5,3.9,7.9,0,0,6,Medium,Positive,0,6,49,65,D,1
+STU-000359,11,16,Male,Public,Urban,High school,Low,0,4.4,Medium,12.2,82.5,0,4.5,2.4,7.2,4,0,0,Low,Positive,1,3,80,63,D,1
+STU-000360,11,16,Non-binary,Public,Suburban,Master's,Middle,1,11.3,Medium,11.9,92.5,1,3.2,2,6.8,2.9,2,0,Medium,Neutral,0,6,62,61,D,1
+STU-000361,10,15,Female,Private,Suburban,Bachelor's,High,1,4.5,High,11.7,94.7,0,5.9,3.5,8.5,4.7,1,2,High,Negative,0,4,76,82,B,1
+STU-000362,11,16,Female,Private,Suburban,Master's,Middle,1,3,Medium,17.2,94.2,0,5.1,1.6,6.7,8.1,0,8,Medium,Neutral,0,7,64,77,C,1
+STU-000363,11,16,Male,Public,Urban,Some college,Middle,1,1.3,Medium,16.5,83.9,0,5.5,3.9,8.6,10,2,0,Low,Neutral,0,5,85,90,A,1
+STU-000364,10,15,Male,Public,Suburban,Some college,High,1,10.8,Medium,11.2,86.5,0,3.2,2.3,8.4,9.6,0,4,Medium,Neutral,0,3,65,70,C,1
+STU-000365,11,16,Male,Public,Urban,Bachelor's,Middle,1,3.5,Low,10,82.1,0,3.6,2.5,7.7,2.5,1,4,Medium,Positive,0,2,68,75,C,1
+STU-000366,9,15,Female,Public,Urban,Master's,Middle,1,4.4,Medium,8.7,85.4,1,2.2,1.6,8.7,9.4,4,0,Medium,Positive,0,5,89,77,C,1
+STU-000367,10,15,Male,Private,Urban,High school,Middle,1,4.8,High,19.9,85.5,0,4.2,2.5,7.1,5.9,2,0,Medium,Positive,1,4,42,57,F,0
+STU-000368,11,16,Male,Public,Rural,Bachelor's,High,1,21.2,Medium,13.6,89.1,0,5.9,1.7,7.6,4.6,1,0,Medium,Negative,0,3,64,67,D,1
+STU-000369,9,14,Male,Public,Urban,Bachelor's,High,1,4.5,High,15.2,94.6,0,3.2,2,9.1,5.8,0,0,Medium,Positive,0,3,51,74,C,1
+STU-000370,11,16,Female,Private,Urban,Bachelor's,Middle,1,1.7,Medium,8.6,95,1,6.1,2,7.9,5,2,6,High,Positive,0,4,82,95,A,1
+STU-000371,10,15,Female,Public,Suburban,High school,Low,1,9.9,Medium,9.5,97.9,0,4.3,3,8.5,2.1,0,1,High,Positive,0,1,43,65,D,1
+STU-000372,10,15,Female,Public,Urban,Bachelor's,Middle,1,2.2,Medium,17.1,91.1,0,4.8,2.8,7.1,3.9,1,0,Medium,Positive,0,5,68,73,C,1
+STU-000373,10,15,Female,Private,Urban,Some college,High,1,4.8,Medium,8,87.8,0,4.1,2.1,8.2,6.3,0,0,Medium,Neutral,0,2,62,66,D,1
+STU-000374,11,16,Male,Public,Rural,Master's,Middle,0,19.4,Low,5.1,75.9,0,7.3,4.2,6.9,6.4,3,4,High,Neutral,0,1,77,63,D,1
+STU-000375,12,17,Male,Public,Rural,Bachelor's,Middle,1,34.5,Medium,11.6,78.2,0,7.4,2,6,5.2,3,6,High,Neutral,0,6,72,68,D,1
+STU-000376,10,16,Female,Public,Suburban,Some college,Middle,1,10.3,High,16.1,83.7,0,2.4,1.1,8.7,5.7,1,1,High,Neutral,0,5,90,100,A,1
+STU-000377,9,14,Non-binary,Public,Urban,High school,Middle,1,4.5,Low,4.8,78.7,0,2,0.9,9.3,4.1,4,0,Medium,Negative,0,4,59,48,F,0
+STU-000378,10,16,Male,Public,Urban,Master's,High,1,3.2,Medium,8.5,96.6,0,5.3,1.6,8.4,3.3,0,0,Medium,Neutral,0,3,57,58,F,0
+STU-000379,11,17,Male,Public,Urban,Bachelor's,Low,0,3.7,High,15.2,99,0,8.3,5.7,8.1,4.5,1,0,Medium,Neutral,0,5,42,64,D,1
+STU-000380,9,14,Male,Charter,Rural,Some college,Middle,1,11.6,Medium,11,77.8,1,3,1.3,6.4,5,0,2,Low,Neutral,0,6,63,62,D,1
+STU-000381,10,15,Male,Public,Suburban,Some college,High,1,12,Low,8.1,82.7,1,7.8,4.9,6.1,2.8,1,0,High,Positive,0,6,94,79,C,1
+STU-000382,12,17,Male,Public,Suburban,High school,Low,1,9.5,Medium,18.6,92.9,0,6.4,1.9,7.1,10.7,3,0,Medium,Neutral,0,4,76,86,B,1
+STU-000383,10,15,Female,Private,Suburban,Master's,High,1,11,Medium,3.1,85.5,0,7.5,4.2,8.2,1.6,1,8,High,Positive,0,4,71,79,C,1
+STU-000384,11,16,Female,Public,Suburban,Bachelor's,Low,1,10.8,High,13.9,94.9,0,4,1.1,7.6,4.4,1,0,Medium,Neutral,0,5,49,68,D,1
+STU-000385,11,16,Male,Private,Suburban,Bachelor's,Middle,0,2.1,Medium,15.5,85.1,1,7.1,4.9,6.2,6,1,0,Low,Neutral,0,8,63,61,D,1
+STU-000386,11,16,Male,Public,Suburban,Bachelor's,Low,1,8.6,Medium,9.7,91.3,0,7,3.1,6.5,3.6,0,0,Low,Neutral,0,4,79,66,D,1
+STU-000387,11,17,Male,Public,Rural,Master's,Middle,0,34.3,High,16.9,91.3,0,1.3,0.9,8.4,0.1,3,1,Medium,Neutral,0,4,57,67,D,1
+STU-000388,12,17,Female,Public,Urban,High school,Low,1,0.6,Medium,9.7,88.5,1,3.2,2.2,7.3,6.3,0,0,Medium,Neutral,0,5,54,58,F,0
+STU-000389,9,15,Female,Public,Suburban,Bachelor's,High,1,6.8,Medium,15,83,0,5.4,2.4,8.3,3.5,0,0,Medium,Negative,0,5,97,83,B,1
+STU-000390,9,14,Male,Private,Urban,High school,Middle,1,2.9,High,14.3,86.6,0,3.5,1.2,8.3,7.2,1,0,Medium,Positive,0,5,88,95,A,1
+STU-000391,10,16,Male,Public,Urban,Some college,Middle,1,0.3,Medium,19.3,94.5,0,3.3,1.7,7.5,5.4,1,6,Medium,Negative,0,7,64,78,C,1
+STU-000392,12,17,Female,Public,Urban,Master's,Low,1,2.2,Medium,10.7,86.8,1,7,2.7,7.4,2.2,0,6,High,Negative,0,6,91,77,C,1
+STU-000393,12,17,Female,Public,Suburban,High school,Middle,0,7.9,High,24.7,86.2,0,4.9,2.4,6.8,8.7,0,0,Medium,Neutral,0,7,87,90,A,1
+STU-000394,11,17,Male,Public,Rural,Bachelor's,High,1,19.4,Medium,5.8,96.9,0,4.2,1.6,8.3,5.8,2,0,Low,Negative,0,2,56,59,F,0
+STU-000395,10,15,Female,Public,Urban,High school,Low,1,0.4,Low,6.3,82.7,0,3.9,1.4,7.3,3,4,0,Medium,Neutral,0,2,44,45,F,0
+STU-000396,9,14,Male,Public,Urban,High school,Middle,1,2.2,Medium,14.9,91.6,1,5.4,4,6.3,4.5,1,0,High,Positive,0,8,69,77,C,1
+STU-000397,12,17,Male,Charter,Suburban,High school,Low,1,1.8,Medium,12.9,79.6,1,3.9,2.7,6.7,6.5,1,0,High,Negative,0,7,37,46,F,0
+STU-000398,12,17,Female,Public,Suburban,Bachelor's,Middle,1,7.1,High,11.9,85,0,2.5,1.5,8.9,5.3,0,4,Low,Positive,0,5,82,90,A,1
+STU-000399,12,17,Female,Private,Suburban,Some college,High,1,1.2,High,16.9,98.3,0,0.5,0.3,8.6,0,2,2,Medium,Positive,0,3,54,80,B,1
+STU-000400,9,14,Male,Private,Urban,Some college,Middle,1,1.6,Medium,13.1,98.2,0,0.8,0.6,7.6,1.2,1,0,Medium,Positive,0,3,66,71,C,1
+STU-000401,9,14,Female,Public,Suburban,Doctorate,Low,1,6.9,High,13.4,85,0,7.3,4.8,7.2,0,0,1,High,Neutral,1,5,58,65,D,1
+STU-000402,9,14,Male,Private,Rural,Bachelor's,High,1,15,Medium,10.6,89.3,0,6,4.2,6.7,5.2,1,0,Medium,Positive,0,4,51,58,F,0
+STU-000403,11,16,Male,Public,Suburban,Bachelor's,High,1,5.6,High,14.6,84.9,0,5.9,4,8.1,3.8,4,0,Medium,Negative,0,4,89,91,A,1
+STU-000404,11,16,Female,Public,Suburban,High school,Middle,0,8.6,Low,13,79.4,1,5,1.5,7.7,2.5,1,0,High,Positive,0,7,64,61,D,1
+STU-000405,12,18,Male,Private,Suburban,High school,Middle,1,3.8,Low,1.2,93.3,0,2.1,1.1,7.5,7.8,0,2,High,Positive,0,2,45,53,F,0
+STU-000406,9,15,Male,Public,Suburban,High school,Low,1,3,High,24.4,89,0,1.7,1,9.1,3.6,2,0,Medium,Neutral,0,6,71,96,A,1
+STU-000407,10,15,Female,Public,Suburban,Doctorate,Middle,1,4.6,Medium,20.3,86.3,0,8.5,2.2,6.4,0.1,3,4,Medium,Negative,0,8,72,68,D,1
+STU-000408,10,16,Male,Private,Suburban,Master's,High,1,5.3,High,19.6,99,0,5.8,2.7,8.4,3.3,1,0,Medium,Positive,0,4,79,93,A,1
+STU-000409,9,14,Male,Public,Suburban,Bachelor's,High,1,4,High,21.5,88.2,0,3.6,1.2,8.7,0,2,0,Medium,Positive,1,6,62,69,D,1
+STU-000410,9,14,Male,Public,Suburban,Bachelor's,Middle,1,8.2,Medium,17.8,85.8,1,6.7,4.2,5.9,11.1,4,0,Medium,Positive,0,8,72,76,C,1
+STU-000411,12,17,Female,Public,Suburban,Some college,Low,0,4.6,Medium,12.1,84.8,1,3.4,1.7,7.3,0,3,0,High,Negative,0,4,86,76,C,1
+STU-000412,11,17,Male,Public,Rural,Bachelor's,High,1,23.1,High,15.2,85.4,0,3.6,1.2,6.7,4.6,0,0,Medium,Neutral,0,6,69,82,B,1
+STU-000413,10,16,Female,Charter,Suburban,Some college,Middle,1,3.1,Medium,11,85.6,0,3.9,2.1,8,4.6,0,4,High,Negative,0,2,67,65,D,1
+STU-000414,12,17,Male,Public,Urban,Bachelor's,Low,1,2.3,Medium,10,94.1,0,4.2,2.3,8.8,3.5,1,0,Medium,Positive,0,2,55,70,C,1
+STU-000415,11,16,Male,Public,Suburban,Master's,Middle,1,5.7,Medium,13.7,98.4,0,8.9,6.1,6.2,4.5,3,2,High,Negative,1,5,90,78,C,1
+STU-000416,10,15,Female,Public,Urban,Master's,High,1,2.8,Medium,13.9,94.7,0,4.8,2.9,7,5.9,3,0,Medium,Neutral,0,3,64,74,C,1
+STU-000417,11,16,Male,Public,Urban,Some college,Middle,1,1.9,Low,2.2,86,0,2.2,0.8,7.6,1.6,0,6,Medium,Neutral,0,1,52,44,F,0
+STU-000418,9,14,Male,Public,Rural,Bachelor's,Middle,1,24.9,Low,6.6,71.7,0,7.1,2.7,7.7,2.6,2,0,High,Positive,0,5,72,71,C,1
+STU-000419,9,14,Female,Public,Urban,Master's,Middle,1,2.8,High,22.2,86.4,1,5.1,2.6,7.3,4.4,1,8,High,Neutral,0,7,64,83,B,1
+STU-000420,9,14,Male,Public,Urban,Doctorate,High,1,0.3,Medium,1.9,94.1,0,6.6,3.1,7.2,2.1,1,0,High,Positive,0,2,72,72,C,1
+STU-000421,12,17,Male,Charter,Suburban,Bachelor's,Middle,1,9.6,Low,13.3,87.5,0,3.1,1.5,7.2,7.1,0,8,Medium,Negative,0,5,86,78,C,1
+STU-000422,11,17,Male,Public,Rural,Some college,Low,1,30.4,Medium,14.2,90.7,0,6.6,2.5,6.9,2.6,0,1,Medium,Neutral,0,4,73,83,B,1
+STU-000423,12,17,Male,Public,Urban,High school,Low,1,3.6,Low,6,85.8,0,4.7,2.9,6.5,5.3,1,0,Medium,Neutral,0,3,39,39,F,0
+STU-000424,11,16,Female,Public,Suburban,High school,Low,1,4.6,Low,4.6,81.5,0,5.6,3,7.6,9.2,0,1,High,Neutral,0,3,69,69,D,1
+STU-000425,10,15,Male,Private,Urban,Bachelor's,Middle,1,2.9,Medium,18.5,90.7,0,9,6.4,6.5,0,1,0,High,Negative,0,4,58,62,D,1
+STU-000426,9,14,Male,Public,Urban,High school,High,1,3.4,Low,6.5,87.2,0,6.6,3.7,7.9,0.7,0,0,High,Neutral,0,4,71,73,C,1
+STU-000427,11,16,Male,Public,Urban,Bachelor's,High,1,4.1,Medium,13.8,88.6,1,3.3,2.3,6.4,2.1,1,0,Low,Neutral,0,6,72,75,C,1
+STU-000428,12,17,Female,Public,Urban,Bachelor's,High,1,1.1,Medium,12.9,89.1,0,4.7,2.2,7.7,6.6,1,1,High,Neutral,0,3,94,98,A,1
+STU-000429,10,16,Female,Public,Urban,Some college,Middle,1,2.8,Low,3.1,83.4,0,5.2,2.7,8.2,0.6,0,0,Medium,Neutral,0,2,84,66,D,1
+STU-000430,9,14,Male,Charter,Urban,Some college,High,1,1.4,Medium,10.5,92,0,1.4,0.5,9,1.5,1,2,Medium,Negative,0,4,84,88,B,1
+STU-000431,11,16,Female,Public,Suburban,High school,Middle,1,1.2,Medium,8.9,97.9,0,6,3.7,7.8,4.8,1,2,Medium,Neutral,0,3,52,59,F,0
+STU-000432,12,17,Female,Public,Urban,Some college,Middle,1,0.8,Medium,10.3,96.6,0,3.5,2.6,6.9,2,2,0,Medium,Neutral,0,3,56,71,C,1
+STU-000433,10,15,Female,Public,Urban,Master's,Middle,1,1.1,Low,12.3,92.3,0,4.3,2.3,6.6,2.5,1,0,Medium,Neutral,0,4,85,75,C,1
+STU-000434,11,17,Female,Public,Urban,Bachelor's,Middle,1,2.3,Medium,12.3,84,1,6.9,2.3,6.9,5.6,0,2,Medium,Neutral,0,6,47,63,D,1
+STU-000435,12,17,Male,Private,Urban,Master's,Middle,1,1.9,Medium,6.4,84.8,1,0.7,0.4,7,3.1,2,2,Medium,Negative,0,4,89,80,B,1
+STU-000436,11,16,Female,Public,Urban,Bachelor's,Low,1,4.7,High,27.7,81.3,1,5.8,2.2,6.9,1.4,1,0,Medium,Neutral,0,9,86,98,A,1
+STU-000437,9,14,Male,Public,Urban,Master's,Middle,1,0.6,Low,0,75.1,0,3.7,1.7,7.4,6.2,0,0,Low,Neutral,0,3,63,46,F,0
+STU-000438,9,14,Female,Public,Urban,Bachelor's,Middle,1,4.1,High,18.6,88.8,0,3.7,2.4,8,4.7,1,0,Medium,Neutral,0,5,95,100,A,1
+STU-000439,11,17,Female,Public,Urban,High school,Low,1,1.2,High,19.3,84.8,1,4,2.3,7.2,0,2,0,Medium,Neutral,0,7,82,82,B,1
+STU-000440,10,15,Female,Public,Urban,Bachelor's,Middle,1,2.4,Low,6.6,87,0,7.2,3.3,6.3,6.1,2,0,High,Negative,1,2,60,54,F,0
+STU-000441,12,18,Female,Public,Suburban,Bachelor's,High,1,11,Medium,9.4,82.9,0,3.5,2.5,7.1,2.4,0,0,High,Neutral,0,3,73,71,C,1
+STU-000442,10,15,Male,Public,Suburban,High school,Middle,1,3.6,Low,12.4,89.9,0,3.5,1.8,8.4,5.8,2,0,High,Neutral,0,6,83,79,C,1
+STU-000443,9,14,Male,Private,Urban,Bachelor's,High,1,2,High,11.6,87,0,2.9,1.9,7.4,2.5,3,0,High,Neutral,0,5,94,85,B,1
+STU-000444,12,17,Male,Charter,Urban,Bachelor's,Low,1,4.3,Medium,6.1,93.3,0,4.3,1.8,7.5,4.3,0,0,Medium,Neutral,1,3,70,57,F,0
+STU-000445,10,15,Male,Private,Urban,Bachelor's,Low,1,4.9,Medium,14.4,96.8,0,4.5,1.9,6.6,3.5,3,2,Medium,Neutral,0,3,52,64,D,1
+STU-000446,11,17,Female,Public,Urban,Bachelor's,Low,0,4.2,Medium,15.4,95.9,0,6.1,3.1,8.4,1.8,2,0,High,Negative,0,4,91,92,A,1
+STU-000447,10,16,Female,Public,Rural,Bachelor's,Low,1,34.8,High,10.3,97.7,0,6.6,3.9,7.6,7.2,0,4,Medium,Negative,0,4,62,65,D,1
+STU-000448,12,18,Male,Public,Urban,High school,Middle,1,4,Low,5,83.2,1,3,1,7.8,1.7,0,0,Medium,Positive,0,5,46,44,F,0
+STU-000449,10,15,Female,Public,Urban,Some college,High,1,3.3,Medium,18.6,88.7,0,5.5,1.5,6.4,4,3,0,Medium,Positive,0,6,89,90,A,1
+STU-000450,12,17,Female,Public,Rural,High school,Low,1,21.1,Medium,4.5,87.4,0,5.1,2.3,6.8,7.7,1,0,Medium,Neutral,0,5,71,70,C,1
+STU-000451,9,14,Female,Public,Rural,Some college,Middle,1,16,Medium,6.5,92.4,0,6.7,4.3,6.8,3.9,0,0,Medium,Neutral,0,2,86,75,C,1
+STU-000452,11,16,Male,Private,Urban,Some college,Middle,1,1.2,High,16.3,83.8,0,1.3,0.8,7.6,5.6,1,4,Medium,Neutral,0,6,66,81,B,1
+STU-000453,11,16,Male,Public,Urban,Some college,Middle,1,4.1,Medium,11.7,85,1,7.4,5.1,6.7,5.2,0,0,Medium,Neutral,0,5,90,77,C,1
+STU-000454,12,17,Female,Public,Rural,Some college,High,0,24.3,Low,1.7,88.7,0,1.9,0.9,8.9,1.4,2,0,Medium,Positive,0,3,71,58,F,0
+STU-000455,11,16,Male,Public,Urban,High school,Middle,1,1.8,High,23.4,91.2,1,5.5,2.7,7.7,4.1,1,1,Medium,Neutral,1,8,39,67,D,1
+STU-000456,11,16,Female,Public,Suburban,High school,Middle,1,5.2,High,7.3,94.6,0,4.8,2.7,7.2,5.6,1,0,Low,Neutral,0,4,64,71,C,1
+STU-000457,11,16,Female,Public,Suburban,Master's,Low,1,11.4,Medium,9.9,94.2,1,5.3,1.5,7.6,6.7,1,0,Medium,Positive,0,5,46,57,F,0
+STU-000458,12,18,Female,Public,Rural,Bachelor's,Middle,1,15.2,High,10.5,84.4,0,3.6,1.9,7.3,2.9,1,1,Low,Neutral,0,5,95,91,A,1
+STU-000459,9,14,Male,Public,Urban,High school,Middle,0,2.9,Low,7.1,84.1,0,8.3,5.5,7.7,2,1,6,Medium,Neutral,0,4,66,57,F,0
+STU-000460,11,16,Female,Public,Suburban,High school,Low,1,4.6,Medium,8.1,81.1,1,5.1,1.6,6.6,3.6,2,0,Low,Neutral,0,3,86,65,D,1
+STU-000461,9,15,Non-binary,Public,Urban,Master's,Middle,1,4.5,Low,6.9,77.1,0,6,3.3,8.1,5.4,1,0,Medium,Negative,0,1,76,62,D,1
+STU-000462,11,17,Male,Public,Rural,High school,Low,0,33.1,High,13.3,84.8,1,5.3,3.7,6.5,3.5,0,4,Medium,Neutral,1,5,80,69,D,1
+STU-000463,10,15,Male,Public,Urban,Master's,Middle,1,1.1,Low,3,88.7,0,2.7,1.4,8.4,5.1,1,0,Medium,Negative,0,2,50,45,F,0
+STU-000464,9,15,Male,Public,Suburban,Some college,Middle,0,5.5,Low,6.8,82.9,0,3.5,2.1,8.2,0.8,0,0,High,Neutral,0,4,74,71,C,1
+STU-000465,12,17,Female,Public,Urban,Master's,Middle,1,0.4,High,18.5,93.5,1,5.8,3.3,7.1,4,1,0,Medium,Positive,0,6,71,82,B,1
+STU-000466,12,18,Female,Public,Urban,Some college,Low,1,3.7,Medium,7.8,97.9,0,5.3,2.3,8.7,4.6,1,0,Medium,Neutral,0,1,77,78,C,1
+STU-000467,9,14,Female,Public,Rural,Bachelor's,High,1,23.7,Low,10.4,85.6,0,3.8,2.6,6.9,1.9,2,4,Medium,Positive,0,3,70,63,D,1
+STU-000468,9,14,Female,Public,Urban,Some college,Low,0,1.7,High,15.8,90.9,0,4.5,3.2,6.6,0,3,0,Medium,Neutral,0,4,80,84,B,1
+STU-000469,9,14,Female,Public,Urban,Bachelor's,Middle,1,2.8,Medium,6.8,85.2,0,7.1,2.3,6.3,7,1,2,Medium,Neutral,0,5,89,80,B,1
+STU-000470,11,16,Female,Public,Rural,Bachelor's,High,0,31.4,Medium,14.3,82.6,1,6.2,3.5,5.9,3.7,4,0,Low,Neutral,0,5,68,66,D,1
+STU-000471,10,15,Female,Public,Urban,High school,Low,1,1.4,High,22.9,89.9,0,3.8,1.9,7.6,7,1,6,Medium,Positive,0,5,67,90,A,1
+STU-000472,12,18,Male,Private,Urban,Master's,Low,1,3.9,Medium,5.6,93,0,0.5,0.3,7.5,0.9,1,0,Medium,Neutral,0,4,54,60,D,1
+STU-000473,11,16,Male,Public,Suburban,Doctorate,Low,1,7.2,High,11.7,82.9,0,4.9,3.1,6.6,4.8,2,0,Medium,Positive,0,6,56,67,D,1
+STU-000474,9,14,Female,Public,Urban,High school,Middle,1,3.1,Low,9.5,75.4,1,3.2,2.3,6.6,1.7,0,4,High,Neutral,0,7,79,62,D,1
+STU-000475,10,16,Male,Public,Rural,Some college,Middle,1,18.4,Medium,17.1,82.1,0,5.9,4.4,6.9,2.5,1,0,High,Neutral,0,5,74,80,B,1
+STU-000476,11,17,Male,Public,Suburban,Bachelor's,High,1,4.1,Low,6.9,77.8,1,4.9,1.9,7.5,1.5,1,0,Medium,Neutral,0,5,74,55,F,0
+STU-000477,12,17,Female,Public,Suburban,High school,Low,1,2.9,High,15.7,88.5,0,5.3,3.6,7.7,1.1,1,0,Medium,Positive,0,3,70,81,B,1
+STU-000478,10,15,Male,Public,Urban,Bachelor's,High,1,3.5,Medium,14.2,82.3,1,7,5.1,6.1,4,0,0,Medium,Negative,0,6,89,76,C,1
+STU-000479,11,16,Female,Public,Suburban,Bachelor's,High,1,2.7,Medium,16.3,84.3,0,6.6,3.2,6.3,8.8,0,1,Low,Neutral,0,5,48,53,F,0
+STU-000480,11,17,Male,Public,Urban,High school,Middle,1,1.3,High,18.6,90,0,6.1,2.2,6.2,4,0,0,Medium,Neutral,0,5,79,86,B,1
+STU-000481,12,17,Male,Public,Suburban,Bachelor's,Middle,1,7.3,High,20.7,86.9,0,2.4,1.5,7.3,2.4,1,4,Medium,Positive,0,5,46,76,C,1
+STU-000482,10,15,Male,Private,Suburban,Doctorate,High,1,3.3,Medium,4.2,91.5,1,5.6,3.9,8,6.3,0,6,High,Positive,0,5,83,75,C,1
+STU-000483,11,17,Male,Public,Suburban,Some college,Middle,1,7.6,Medium,11.6,93.1,1,2.8,2.1,8.7,0.6,0,0,Low,Negative,0,6,58,58,F,0
+STU-000484,11,16,Female,Public,Urban,High school,Low,1,3.9,Low,8.6,75.2,0,7.2,2.9,8.1,6.2,1,0,Medium,Positive,0,5,38,38,F,0
+STU-000485,11,16,Male,Charter,Suburban,Bachelor's,High,1,7.4,Medium,13.7,98.8,0,2.5,1.3,7,4.4,0,1,Medium,Neutral,0,6,51,64,D,1
+STU-000486,12,17,Female,Public,Rural,Doctorate,Low,1,21,Medium,12,86.7,0,8.2,5.8,7.1,3.9,1,0,Low,Neutral,0,3,63,59,F,0
+STU-000487,9,14,Male,Public,Urban,Bachelor's,Middle,1,1.4,Low,4.1,82,0,4.5,2.3,8.4,4.4,0,1,Medium,Positive,0,1,64,68,D,1
+STU-000488,10,15,Male,Public,Urban,Some college,Middle,1,2.3,Medium,12.9,83.6,0,5.6,2,7.4,1.7,1,1,Low,Neutral,0,3,90,83,B,1
+STU-000489,11,17,Male,Public,Suburban,Bachelor's,High,1,3.1,Low,3.2,75.8,1,3.1,2,6.6,6.6,2,0,Medium,Neutral,0,2,70,61,D,1
+STU-000490,11,16,Male,Public,Urban,Some college,Middle,1,4,Low,10,79.8,0,6.7,4.1,8.4,6.3,0,0,Low,Negative,0,5,50,54,F,0
+STU-000491,9,14,Female,Public,Rural,Master's,Middle,1,21.9,High,22.5,82.9,0,4.7,2.6,7.7,6.3,0,0,Medium,Negative,0,5,61,68,D,1
+STU-000492,9,14,Male,Public,Suburban,High school,High,1,1.6,Low,7.1,79.6,0,3.9,2.6,8.8,1.9,0,4,Medium,Neutral,0,4,63,53,F,0
+STU-000493,9,14,Female,Public,Rural,Some college,Middle,0,6.2,Medium,8.3,96.7,0,5.4,2.5,8.5,3.1,1,0,Medium,Neutral,0,2,84,75,C,1
+STU-000494,9,14,Male,Public,Rural,Some college,High,1,3.9,High,21.8,94.4,0,3,1.9,8.9,6.8,1,0,Low,Neutral,1,6,85,86,B,1
+STU-000495,9,14,Male,Private,Suburban,Some college,Middle,1,2.7,Low,5.1,92.9,0,7.9,2.8,8,5.5,2,2,Medium,Neutral,0,2,43,47,F,0
+STU-000496,9,15,Male,Public,Urban,Bachelor's,Middle,1,1.9,Medium,6.3,91.6,0,4.8,2.6,7,4.8,0,0,Medium,Negative,0,3,69,61,D,1
+STU-000497,12,17,Male,Public,Rural,Bachelor's,Middle,1,23.6,Low,8.6,86.5,0,6.1,3.1,8.2,2.5,1,0,Medium,Positive,0,2,88,81,B,1
+STU-000498,12,18,Male,Public,Suburban,Some college,Middle,1,7.7,Medium,12.9,84.4,0,4,1.5,7.7,1.9,3,0,High,Neutral,0,3,61,76,C,1
+STU-000499,11,16,Female,Public,Suburban,Doctorate,High,1,10.7,High,17,88.3,1,1.2,0.6,7.6,0.3,3,0,Low,Negative,0,6,93,87,B,1
+STU-000500,10,15,Male,Public,Suburban,Doctorate,Middle,1,5.5,High,14.2,92.6,0,7.4,3.1,7.2,7.3,3,0,Low,Negative,1,4,85,70,C,1
+STU-000501,9,15,Female,Public,Rural,Bachelor's,Middle,1,22.2,Medium,8,86.8,0,2.9,0.9,7.6,9.9,3,8,Medium,Neutral,0,3,91,82,B,1
+STU-000502,10,16,Female,Public,Urban,Bachelor's,Low,0,3.9,Medium,13.4,96.2,0,3.6,2.5,6.7,0,2,4,Medium,Neutral,0,5,53,62,D,1
+STU-000503,12,18,Female,Private,Rural,Bachelor's,Middle,1,33,High,9.8,95.4,0,7.9,5.4,8.1,3,0,1,High,Positive,0,4,93,87,B,1
+STU-000504,10,16,Male,Public,Urban,Bachelor's,Middle,1,1.9,High,10.6,86.8,0,1.2,0.8,8,10.1,1,0,High,Neutral,1,3,78,83,B,1
+STU-000505,10,15,Female,Charter,Suburban,High school,Low,1,2.6,Low,1.2,83.8,0,4.4,3,8.7,4.3,3,0,Low,Positive,0,3,67,51,F,0
+STU-000506,11,17,Female,Public,Suburban,Some college,High,1,6,High,21.4,83.9,0,7.3,3.1,7.7,3.5,2,0,Medium,Negative,0,6,60,78,C,1
+STU-000507,12,18,Male,Public,Rural,High school,High,1,27.7,Medium,9.3,92.5,0,7.5,2,8.1,3.1,1,4,Medium,Neutral,0,3,58,72,C,1
+STU-000508,12,17,Male,Public,Suburban,Bachelor's,High,1,3.6,Medium,7.2,93.7,0,5.8,4.1,6.8,0,0,0,Medium,Positive,0,5,61,62,D,1
+STU-000509,9,15,Female,Public,Urban,Master's,Middle,1,1,Low,3.5,89.1,0,7.5,4.1,7,2.3,1,0,Low,Neutral,0,4,85,60,D,1
+STU-000510,9,14,Male,Public,Suburban,High school,Middle,1,1.2,High,13.8,86.6,0,2.6,1.9,7.6,3.2,1,2,Medium,Negative,0,3,50,64,D,1
+STU-000511,11,17,Female,Public,Urban,Doctorate,High,1,4.9,Medium,10.7,90.8,1,6.2,2.6,5.9,7,1,6,High,Positive,0,7,68,80,B,1
+STU-000512,10,15,Male,Public,Rural,Some college,Middle,1,20.3,Medium,15.7,90.2,0,5.7,1.7,7,4.2,0,0,Medium,Negative,0,3,59,59,F,0
+STU-000513,12,17,Male,Public,Urban,Doctorate,Middle,1,2.4,Low,12.9,82.5,0,8.7,2.4,6.7,3.2,0,0,High,Neutral,0,5,90,74,C,1
+STU-000514,11,16,Male,Public,Suburban,High school,Low,1,2.6,Medium,13.8,91.8,1,4.8,1.2,8.2,4.5,1,0,High,Positive,0,5,65,75,C,1
+STU-000515,9,15,Female,Public,Urban,High school,Low,1,0.9,Medium,13.2,92.7,0,8.7,4.5,6.7,3.6,0,0,High,Negative,0,4,65,72,C,1
+STU-000516,9,14,Male,Public,Urban,Doctorate,Middle,1,4.9,Medium,6.7,93,0,0.5,0.3,7.6,5.5,0,4,Low,Neutral,0,2,59,64,D,1
+STU-000517,11,16,Female,Public,Rural,Bachelor's,Middle,1,3.7,Medium,11,85.2,0,4.1,1.9,8.2,4.9,1,0,Medium,Neutral,0,2,80,75,C,1
+STU-000518,10,16,Female,Public,Rural,Bachelor's,Middle,1,26.8,High,16.3,78.2,1,1.1,0.4,7.7,6.5,0,0,Low,Neutral,0,6,79,72,C,1
+STU-000519,9,15,Male,Public,Urban,High school,High,1,1,Medium,12.4,89.7,0,2.3,1.2,8.2,7,0,0,High,Neutral,0,3,45,57,F,0
+STU-000520,10,16,Female,Charter,Urban,Bachelor's,Low,1,3.5,Low,8.7,86.6,0,2.4,1.2,7.4,5.7,0,0,Medium,Negative,0,4,60,51,F,0
+STU-000521,11,16,Female,Public,Rural,Bachelor's,Middle,1,22.3,Medium,5.5,92.1,0,7.2,3.7,7.4,3.5,1,0,Medium,Negative,0,1,79,62,D,1
+STU-000522,10,15,Male,Public,Urban,Some college,Middle,1,1.1,Low,9.5,98.1,0,4.1,2.9,8.8,7.8,1,0,Medium,Neutral,0,4,84,74,C,1
+STU-000523,12,17,Female,Public,Suburban,High school,Middle,1,11.7,Medium,10.4,95.7,0,4.9,2.9,6.6,2.8,2,4,Low,Neutral,0,2,89,81,B,1
+STU-000524,12,18,Non-binary,Private,Urban,High school,High,1,3.3,Low,3.9,87.2,0,1.7,1.1,9,0,1,6,Medium,Negative,0,1,53,46,F,0
+STU-000525,12,17,Male,Public,Suburban,High school,Middle,1,2.4,Low,5.7,95,0,4.2,2.5,8,0,0,0,Medium,Neutral,0,1,75,65,D,1
+STU-000526,12,17,Female,Public,Urban,High school,Low,1,4.7,Medium,13,98,1,4.5,1.5,7.2,6.5,0,0,Low,Positive,0,8,58,67,D,1
+STU-000527,9,14,Male,Private,Suburban,Some college,Low,1,4.7,High,7.7,92.6,0,4.4,2.9,6.6,0.9,2,2,High,Neutral,0,3,81,85,B,1
+STU-000528,11,16,Male,Public,Rural,Bachelor's,Middle,1,26.4,Medium,11.1,88.1,1,5.9,2.7,7.8,1.7,0,1,Medium,Neutral,0,3,83,84,B,1
+STU-000529,10,15,Female,Public,Urban,Bachelor's,High,1,2,Medium,13.3,93.3,0,5,2.9,7.1,1.5,3,0,High,Negative,0,5,64,73,C,1
+STU-000530,10,15,Female,Public,Urban,High school,Low,1,3.4,High,16,83.2,0,4.3,1.7,6.6,5.6,3,4,High,Positive,1,5,50,68,D,1
+STU-000531,11,17,Male,Public,Urban,Some college,Low,1,4.7,Low,13.2,85.1,0,6.5,3.5,8.4,4.6,4,2,Medium,Positive,0,3,52,60,D,1
+STU-000532,9,14,Male,Private,Suburban,High school,Low,1,8.7,Low,7.8,78.3,0,5.9,4.4,7.8,5.5,0,0,Medium,Neutral,0,5,73,61,D,1
+STU-000533,11,16,Female,Public,Suburban,Some college,Middle,1,3.7,High,7.7,86.5,0,2,0.9,8.7,1.7,0,0,Low,Negative,0,2,58,60,D,1
+STU-000534,9,14,Non-binary,Public,Urban,Bachelor's,High,1,2.3,High,17.5,90.7,0,2.3,1.5,8,1.9,3,0,Medium,Negative,0,5,59,65,D,1
+STU-000535,11,17,Male,Public,Suburban,High school,Middle,1,11.4,Medium,12.2,82.5,0,2.2,0.9,8.9,3.3,0,0,Medium,Positive,0,2,66,78,C,1
+STU-000536,10,15,Male,Public,Suburban,Doctorate,High,1,11.4,Medium,8.9,84.4,0,6.4,2,7.6,7.2,4,1,Medium,Positive,1,3,81,65,D,1
+STU-000537,9,14,Female,Public,Urban,High school,Low,1,3.9,Medium,8.9,82.1,0,8.4,2.2,7.1,10.5,1,0,Medium,Neutral,0,3,79,69,D,1
+STU-000538,12,17,Male,Public,Suburban,Master's,Middle,1,11.1,Low,9.7,80.8,0,3.6,2.4,7.1,0.6,0,2,Medium,Neutral,0,4,83,77,C,1
+STU-000539,12,17,Male,Private,Suburban,Master's,Middle,1,11.6,Low,6.8,86.5,0,6.7,4.7,7.1,3.8,1,6,Low,Neutral,0,2,91,70,C,1
+STU-000540,10,15,Male,Public,Urban,Doctorate,Middle,1,3.5,High,11.6,98,0,3,1.8,8.2,5.6,1,2,Medium,Negative,0,2,93,90,A,1
+STU-000541,9,14,Male,Private,Rural,Master's,High,0,16.7,High,22.3,94,0,7.2,3.4,7.6,8.5,0,0,Medium,Positive,0,6,72,88,B,1
+STU-000542,10,16,Female,Private,Urban,High school,Low,1,4.9,Low,9.7,83.1,1,0.5,0.4,8.6,5.3,1,0,Low,Negative,0,6,79,65,D,1
+STU-000543,10,16,Female,Public,Suburban,Some college,High,1,5.1,Medium,11.1,92.4,0,4.2,2,7.7,2.9,1,0,Medium,Positive,0,4,55,71,C,1
+STU-000544,12,18,Male,Private,Suburban,High school,Low,1,11.7,Low,5,86.5,0,5.4,1.5,8.5,6.8,3,6,High,Positive,0,1,67,63,D,1
+STU-000545,10,15,Male,Public,Urban,High school,Middle,1,3.2,Medium,11.6,94,0,4.4,3.3,8.5,7.3,1,0,Medium,Negative,0,2,55,66,D,1
+STU-000546,11,16,Female,Public,Urban,Some college,Middle,1,3.7,Medium,11.9,83.4,1,4.7,2.9,6,6.2,4,0,Medium,Neutral,0,4,84,76,C,1
+STU-000547,9,14,Female,Private,Urban,Master's,Low,1,4,Low,8.1,91.1,0,4.8,2.1,7.9,6.7,4,2,Low,Positive,0,1,79,67,D,1
+STU-000548,11,16,Male,Public,Suburban,High school,Low,1,5.3,High,13.8,90.9,0,4,2.5,8.5,0,0,0,Medium,Positive,0,3,74,85,B,1
+STU-000549,10,15,Female,Public,Urban,Bachelor's,Middle,1,1.5,Medium,16.5,89.8,0,7.6,3.6,7.9,7.2,1,0,High,Negative,0,6,83,88,B,1
+STU-000550,9,14,Male,Public,Urban,Bachelor's,Low,1,4.7,Medium,7.6,96.1,0,1.7,0.9,9.3,2.9,2,0,Medium,Neutral,0,3,57,69,D,1
+STU-000551,9,14,Female,Public,Suburban,Some college,Low,1,6.5,Medium,16.2,88.4,0,6.2,2.5,8.5,3.3,0,0,Medium,Negative,0,5,58,60,D,1
+STU-000552,10,16,Female,Public,Suburban,Some college,Middle,1,11.6,High,24.1,87.9,0,7.5,2.1,6.1,0,1,2,Low,Neutral,0,9,88,90,A,1
+STU-000553,12,17,Male,Public,Suburban,Bachelor's,High,1,9.6,Medium,7.6,92.2,1,6.3,2.1,7.2,2.3,2,0,High,Negative,0,4,48,48,F,0
+STU-000554,12,18,Male,Public,Urban,Bachelor's,Low,1,4.7,Medium,12.2,81.5,1,2.6,1.7,7.8,2.5,0,2,High,Positive,1,6,80,82,B,1
+STU-000555,12,17,Female,Public,Rural,Bachelor's,Middle,1,18.4,High,17.4,90.7,0,6.2,2.3,6.5,5.6,1,0,Medium,Neutral,0,7,92,88,B,1
+STU-000556,9,14,Female,Public,Urban,Bachelor's,Middle,1,0.9,Low,6.5,86.8,0,7.6,3.6,7.9,1.7,0,0,Medium,Positive,0,3,81,65,D,1
+STU-000557,12,17,Male,Public,Urban,Bachelor's,Middle,1,1.6,Medium,15.1,94.8,0,8.4,4.3,5.9,0.1,1,0,High,Neutral,0,5,62,75,C,1
+STU-000558,9,14,Female,Public,Suburban,Some college,Middle,1,6.5,Low,3.6,96.3,0,5,2.9,8.2,3.8,3,0,High,Negative,0,1,44,42,F,0
+STU-000559,10,15,Female,Public,Suburban,Bachelor's,Low,1,7.5,Medium,9,83.1,0,5.8,2.9,6.7,4.4,2,0,Low,Negative,0,3,58,55,F,0
+STU-000560,12,18,Female,Public,Urban,Some college,Middle,1,3.6,Medium,10.6,92.7,0,4.9,1.3,7.7,2.6,3,0,High,Neutral,0,2,79,86,B,1
+STU-000561,10,16,Male,Public,Suburban,Bachelor's,Low,1,1.9,High,13.1,89.6,0,2.5,1.3,8.2,3.2,0,1,Low,Positive,0,2,64,75,C,1
+STU-000562,11,16,Male,Public,Suburban,Master's,High,1,9.8,Medium,9.3,87.6,0,6.7,2,8.4,6.5,1,0,Low,Neutral,0,4,74,63,D,1
+STU-000563,9,15,Female,Public,Rural,Doctorate,High,1,15.4,Medium,15.3,96.6,0,3.6,1.9,7.4,6.5,1,6,Medium,Neutral,0,4,99,96,A,1
+STU-000564,11,17,Male,Charter,Suburban,Master's,High,1,1.3,High,9,82.4,0,1.9,1.2,8.5,1.4,2,0,Low,Neutral,0,4,58,55,F,0
+STU-000565,10,15,Female,Public,Urban,Bachelor's,High,1,4.4,Medium,12.2,82.5,0,2.8,2,8.5,1,0,0,Medium,Negative,0,2,83,82,B,1
+STU-000566,10,16,Female,Public,Urban,Some college,Middle,1,4.4,Low,1.8,76.2,0,3.8,1.4,7.6,0,1,0,High,Neutral,0,2,50,43,F,0
+STU-000567,12,17,Female,Private,Urban,Bachelor's,Middle,1,1.3,Low,13,78.6,1,5.3,3.7,6,2.5,2,0,Medium,Neutral,0,8,49,51,F,0
+STU-000568,11,16,Male,Public,Urban,Master's,Low,1,4.1,Medium,10.6,85.1,1,4,2.5,7.9,4,2,6,High,Positive,1,5,67,64,D,1
+STU-000569,12,18,Male,Public,Suburban,High school,Low,1,4,Medium,7.4,86.7,0,6.9,3.5,6.4,1.1,1,0,Medium,Neutral,0,5,50,47,F,0
+STU-000570,9,15,Male,Public,Urban,Bachelor's,Middle,1,1.7,High,18.6,87.7,1,5.5,2.8,7.8,0.3,0,0,Medium,Neutral,0,5,70,72,C,1
+STU-000571,9,15,Female,Public,Suburban,Master's,High,1,9.9,Low,11.2,81,0,5.5,3.1,6.5,3.3,2,0,High,Neutral,0,4,91,85,B,1
+STU-000572,9,14,Female,Public,Urban,Bachelor's,Low,1,0.9,Medium,14.2,92,0,4.1,1.9,8.8,6.6,2,0,High,Neutral,1,4,82,77,C,1
+STU-000573,10,15,Female,Public,Urban,High school,Middle,1,3,Medium,15.1,93.2,0,6.9,4.2,7.6,3.7,0,0,High,Neutral,0,5,88,89,B,1
+STU-000574,11,16,Male,Charter,Rural,High school,Middle,1,14.1,Medium,12.3,83,1,1.2,0.5,7.6,6.3,3,0,Medium,Neutral,1,5,53,50,F,0
+STU-000575,9,14,Male,Public,Suburban,Master's,Middle,1,5.3,Medium,17.1,95.8,0,7.2,5.2,7.8,3.4,1,0,High,Neutral,0,4,55,70,C,1
+STU-000576,12,17,Female,Private,Urban,Master's,Middle,1,4.3,High,14,96.1,0,5.3,3.7,7.6,2.4,2,0,Medium,Positive,0,3,73,85,B,1
+STU-000577,10,15,Male,Public,Suburban,Bachelor's,Middle,1,2.8,Medium,19.3,95.7,0,3.7,1.3,8.2,1.5,1,0,High,Neutral,0,5,61,82,B,1
+STU-000578,9,15,Male,Public,Rural,Master's,Middle,0,4.3,Medium,19.2,96.8,0,5.5,2.4,6.9,2.6,1,0,Medium,Neutral,0,7,96,90,A,1
+STU-000579,10,15,Male,Private,Suburban,Some college,Middle,1,7.1,High,18,96.3,0,5.4,2.7,7.2,3.9,0,2,Medium,Negative,0,7,81,79,C,1
+STU-000580,10,16,Male,Public,Suburban,High school,Middle,1,9.1,Medium,7.5,89.1,0,5.3,3.5,7.2,0,2,0,Medium,Neutral,0,1,47,60,D,1
+STU-000581,9,14,Female,Public,Rural,Bachelor's,High,0,15.3,High,18.6,79.3,1,3.4,1.5,8.6,5.5,1,0,High,Neutral,0,4,63,76,C,1
+STU-000582,11,16,Male,Public,Suburban,High school,Low,1,2.2,Medium,8.4,95.7,0,6.3,4.6,7.7,1.8,0,0,Medium,Neutral,0,1,78,79,C,1
+STU-000583,12,17,Female,Public,Urban,Some college,High,1,1.6,Medium,5.3,84.5,1,6.4,3.9,6.7,1.6,0,0,Medium,Neutral,0,4,56,53,F,0
+STU-000584,10,16,Male,Public,Suburban,Bachelor's,Low,1,10.4,High,20.3,95.8,0,4.4,3.2,8.5,2.6,0,0,Medium,Positive,0,4,69,93,A,1
+STU-000585,9,14,Female,Public,Urban,Some college,Low,1,3.4,Medium,9.1,88.7,0,2.4,1.5,8.1,4.8,2,1,High,Neutral,0,5,49,64,D,1
+STU-000586,12,17,Female,Public,Urban,Bachelor's,High,1,3,Medium,22.6,96.4,0,6.4,3.4,8.4,4.8,2,0,High,Positive,0,5,56,90,A,1
+STU-000587,12,17,Male,Private,Urban,Doctorate,High,1,3.5,Low,11,87.5,1,7.2,1.9,7.2,5.9,2,0,Medium,Negative,0,7,88,81,B,1
+STU-000588,12,18,Female,Private,Urban,High school,Low,1,4.4,Low,13.7,85.5,0,4.7,1.2,8.4,2,0,0,High,Positive,0,2,61,62,D,1
+STU-000589,12,18,Male,Public,Urban,Some college,Middle,1,1.7,Medium,1.9,86.5,0,5.9,2.6,7.3,6.1,1,0,Low,Negative,0,1,75,66,D,1
+STU-000590,10,16,Female,Private,Rural,Some college,Middle,0,9.8,High,15.8,92,0,3.5,2.2,8.2,6.3,2,0,Medium,Negative,0,6,48,67,D,1
+STU-000591,9,15,Male,Public,Urban,Master's,Low,1,2.2,Low,9.3,90.4,0,6.3,2.5,7.6,4.2,1,0,Low,Neutral,0,3,77,67,D,1
+STU-000592,9,14,Male,Public,Suburban,Master's,Low,0,7.5,Medium,3.3,88.3,0,4.7,2.1,6.5,2.7,0,0,Medium,Neutral,0,3,74,63,D,1
+STU-000593,9,15,Female,Public,Urban,Some college,Low,0,2.5,Low,3.9,79.6,0,1.8,0.7,8.4,0.2,1,1,Medium,Positive,0,2,82,67,D,1
+STU-000594,11,16,Male,Public,Suburban,Some college,Low,1,2.7,Medium,5.1,96,0,7.2,2.4,6.8,7.5,2,0,Medium,Positive,0,3,73,76,C,1
+STU-000595,10,15,Female,Public,Suburban,Master's,Middle,0,7.4,Medium,11.6,91.9,0,6.9,4.4,6.7,0,2,0,Medium,Positive,0,5,53,65,D,1
+STU-000596,10,15,Female,Private,Suburban,Bachelor's,High,1,2.2,High,22.4,88,0,0.7,0.3,8.6,0,2,0,High,Neutral,0,5,48,81,B,1
+STU-000597,10,15,Female,Public,Suburban,Some college,Middle,0,9.3,Medium,18.2,92.6,0,4.9,1.3,7.9,7.2,1,0,Low,Positive,1,5,83,73,C,1
+STU-000598,12,17,Female,Charter,Rural,Some college,Low,1,9.3,Medium,16.9,96.6,0,2.4,1.7,7.7,3.1,1,0,Medium,Neutral,0,4,80,79,C,1
+STU-000599,9,15,Female,Public,Urban,Bachelor's,Middle,1,4,High,20.8,97.7,0,5,3.6,7.8,6,0,0,Medium,Positive,0,4,78,99,A,1
+STU-000600,9,14,Male,Private,Urban,Some college,Middle,1,4.3,High,15.1,87.1,0,2.1,0.8,8.7,4.9,0,4,Low,Neutral,0,3,66,74,C,1
+STU-000601,11,16,Male,Public,Rural,Master's,High,1,24.9,Low,8.1,86.5,1,4.7,3,6.5,5.5,0,1,Medium,Neutral,0,6,87,66,D,1
+STU-000602,11,16,Male,Public,Urban,Some college,Low,1,1.6,High,23.8,86.5,0,4,2.3,8.3,2.9,2,8,Medium,Neutral,0,6,79,87,B,1
+STU-000603,10,16,Male,Public,Rural,Master's,Low,0,31.1,High,17.7,97.3,0,8.1,4.8,6.1,4,1,0,Medium,Positive,1,5,75,81,B,1
+STU-000604,12,18,Male,Public,Rural,High school,Low,1,30.5,Low,4.8,80,1,2.2,1.1,7.9,1.4,0,2,Medium,Positive,0,3,71,62,D,1
+STU-000605,11,16,Male,Charter,Urban,Bachelor's,High,1,4.4,Medium,4.1,89.7,1,1.5,0.9,7.7,10.7,1,4,Medium,Negative,0,5,69,66,D,1
+STU-000606,12,17,Female,Public,Rural,Some college,Middle,1,20.9,Medium,5.1,91.2,0,9.3,5.7,6.4,3.2,2,0,High,Positive,0,3,85,68,D,1
+STU-000607,9,14,Female,Private,Urban,Doctorate,Middle,1,3.6,Low,8.4,93.1,1,2.6,0.8,7.2,3.9,0,0,Medium,Neutral,0,5,67,72,C,1
+STU-000608,9,14,Female,Public,Suburban,High school,Low,1,9.1,Low,3.9,88.2,0,1.6,1,8.8,3.6,1,0,Medium,Negative,0,1,84,68,D,1
+STU-000609,11,17,Male,Public,Urban,Bachelor's,High,1,1.6,Medium,10.1,98.9,0,6.4,3.1,8.2,3.7,2,4,Low,Neutral,0,4,95,87,B,1
+STU-000610,10,15,Female,Private,Urban,High school,Low,1,0.9,High,17.7,91.3,0,4,2.1,8.3,2.7,1,0,High,Negative,0,5,84,86,B,1
+STU-000611,11,16,Male,Private,Suburban,Doctorate,Middle,1,2,Medium,8.4,94.9,0,2.5,1.1,8.1,4.6,3,6,Medium,Neutral,0,2,73,71,C,1
+STU-000612,12,17,Female,Public,Suburban,Master's,High,1,11.8,High,15.3,90.7,0,5.4,2.8,8.1,6.4,1,0,Medium,Neutral,0,4,74,83,B,1
+STU-000613,11,16,Female,Public,Suburban,Bachelor's,Middle,1,1.4,Medium,19.7,88.8,0,3,2.1,8.5,5.3,0,0,Medium,Neutral,0,7,93,97,A,1
+STU-000614,9,15,Female,Private,Suburban,High school,Middle,1,11.7,High,16,88,0,5.3,2.4,6.6,5.7,1,4,Medium,Negative,0,5,51,65,D,1
+STU-000615,11,17,Male,Public,Urban,Bachelor's,High,1,2.6,Medium,15.1,96,0,5.3,1.4,6.8,6,3,0,Medium,Neutral,0,6,69,72,C,1
+STU-000616,11,17,Male,Public,Suburban,Bachelor's,Low,1,7.7,Low,7.5,76.3,1,3.7,2.1,6.5,6.8,0,0,Medium,Negative,0,3,53,46,F,0
+STU-000617,11,16,Female,Public,Urban,Some college,High,1,1.1,High,19.4,86.4,1,8.4,4.1,6.9,1.4,0,0,High,Positive,0,9,85,96,A,1
+STU-000618,10,15,Male,Public,Urban,Master's,High,1,4.5,Medium,13.1,86.9,0,1.7,1.1,7.2,6.8,1,4,High,Positive,0,3,79,87,B,1
+STU-000619,12,17,Male,Public,Rural,Some college,High,1,10.2,Medium,12.4,87.3,0,4,1.6,8.5,1.1,0,0,Medium,Neutral,0,4,87,78,C,1
+STU-000620,10,15,Male,Public,Urban,Bachelor's,Low,1,4.2,Low,8.8,87.1,0,4.6,3.3,8,3.5,2,0,High,Positive,0,5,45,53,F,0
+STU-000621,11,16,Female,Public,Urban,Master's,Middle,1,1.8,Medium,11.5,94.2,0,5.6,3.8,6.8,2.2,0,6,Medium,Negative,0,2,62,64,D,1
+STU-000622,12,18,Male,Public,Suburban,Master's,Middle,1,4.3,Medium,20.7,81.3,1,2.9,1.2,8.4,4.3,0,4,Medium,Neutral,0,6,85,87,B,1
+STU-000623,10,15,Female,Public,Suburban,High school,Low,0,1.7,Medium,17,84.6,0,7.6,3,7.4,6.9,1,0,Medium,Neutral,0,6,70,72,C,1
+STU-000624,12,17,Female,Private,Suburban,Master's,Middle,1,9.3,Low,2.5,87.2,0,4.9,2.3,7.9,4.3,2,8,Medium,Neutral,0,3,52,61,D,1
+STU-000625,9,15,Male,Public,Suburban,Some college,Middle,1,6.1,Medium,7.9,96,0,3.7,1.9,7.8,6.5,0,6,Medium,Neutral,0,3,51,60,D,1
+STU-000626,10,16,Male,Public,Urban,Some college,Low,1,3.6,Medium,18.1,98,0,4.3,1.9,8,3.1,0,0,Medium,Neutral,0,5,73,82,B,1
+STU-000627,12,17,Female,Public,Suburban,Bachelor's,Middle,1,6.5,High,18.3,94.6,0,3.2,1.6,9.1,1.9,1,1,Medium,Negative,0,4,50,66,D,1
+STU-000628,11,16,Male,Public,Urban,Master's,Middle,1,3.2,Low,8.4,88.8,1,4.9,2.4,6.6,1.1,0,2,Medium,Neutral,0,4,54,60,D,1
+STU-000629,9,14,Male,Public,Suburban,High school,Middle,1,7.9,Medium,8.1,88.4,0,3.8,1.7,8.4,7.9,0,0,High,Neutral,0,5,85,85,B,1
+STU-000630,10,16,Female,Public,Rural,Master's,Middle,0,28.7,Low,10,90.5,0,3.4,1.8,7.4,6.4,3,0,High,Positive,0,3,75,67,D,1
+STU-000631,10,15,Female,Public,Rural,Bachelor's,Low,1,5.8,Medium,14.7,86.8,0,4.6,2.3,8.3,4,2,0,Low,Negative,0,5,63,67,D,1
+STU-000632,10,15,Male,Public,Suburban,Master's,Middle,1,5.3,Medium,21,85.1,0,4.6,2.3,7.8,7.1,1,1,Medium,Neutral,1,7,94,85,B,1
+STU-000633,9,14,Male,Public,Urban,Bachelor's,Middle,1,3.4,Medium,8.2,92.3,1,5.8,1.5,5.8,5.9,2,4,Medium,Negative,0,7,66,69,D,1
+STU-000634,10,15,Male,Public,Urban,Some college,Middle,1,3.3,Low,5.4,81.4,0,5.4,3.7,6.8,0.1,0,0,Medium,Negative,0,4,51,37,F,0
+STU-000635,10,16,Male,Private,Urban,Master's,Middle,1,1,Medium,8.2,96.7,1,6.2,4.3,6.2,1.9,0,0,Medium,Negative,0,6,53,55,F,0
+STU-000636,9,14,Male,Public,Rural,Master's,High,0,6.1,Low,4.7,95.6,1,4,2,7.5,4.4,1,1,Low,Positive,0,5,96,77,C,1
+STU-000637,9,14,Female,Private,Suburban,Bachelor's,Middle,1,5.5,Low,5.9,80.1,0,4.1,2.9,7.6,0,0,0,High,Neutral,0,2,74,59,F,0
+STU-000638,11,17,Male,Public,Suburban,Bachelor's,Middle,1,7.1,Medium,15.3,83.8,0,1.4,0.8,8.4,4.8,0,0,High,Positive,0,4,93,99,A,1
+STU-000639,12,18,Male,Public,Suburban,Some college,Middle,1,4.6,Low,9.4,88.6,1,0.5,0.3,7.8,6,0,0,Medium,Neutral,0,4,69,68,D,1
+STU-000640,9,14,Male,Public,Urban,Master's,Middle,1,1.6,Low,3.3,89.7,0,4.7,2.6,7.7,2.1,1,0,High,Negative,0,1,50,57,F,0
+STU-000641,11,16,Female,Private,Urban,Bachelor's,Middle,1,0.9,Low,12,81.1,1,5.8,3.7,7.1,1.2,3,2,Medium,Neutral,0,6,52,60,D,1
+STU-000642,10,15,Male,Private,Urban,Some college,Low,1,1.8,Medium,10.8,91.5,0,3,2.1,7.6,3.8,1,0,High,Positive,0,6,66,73,C,1
+STU-000643,11,16,Male,Private,Suburban,Some college,Middle,1,2.7,Medium,13.5,96.2,0,5,3.4,7.5,4.2,2,2,Medium,Positive,0,4,64,81,B,1
+STU-000644,10,16,Female,Public,Urban,High school,High,1,3.7,High,14.8,78.9,1,5.9,3.2,6.8,4,1,0,Medium,Positive,0,8,89,80,B,1
+STU-000645,12,18,Male,Public,Urban,Bachelor's,Low,1,1,Medium,8.2,89.9,0,4.5,1.5,7.2,3.6,0,8,High,Positive,0,2,91,96,A,1
+STU-000646,9,15,Female,Public,Suburban,Bachelor's,High,1,7.4,High,17.6,87,0,1,0.5,8.9,5.9,4,4,Low,Neutral,0,6,66,73,C,1
+STU-000647,11,16,Male,Public,Urban,High school,Low,0,0.6,Low,6,85,0,6,3.3,7.3,5.6,0,0,Medium,Neutral,0,2,38,41,F,0
+STU-000648,12,17,Male,Public,Suburban,Bachelor's,Middle,1,10.5,Medium,12.9,84.2,0,1.7,1.2,8.5,2.7,3,0,High,Negative,0,2,91,88,B,1
+STU-000649,12,17,Female,Public,Suburban,Bachelor's,Low,1,5.2,Medium,12.9,87.6,0,0.5,0.3,9.1,9,2,0,Low,Neutral,0,3,42,61,D,1
+STU-000650,11,16,Female,Public,Urban,Bachelor's,Middle,1,1.5,Low,7.9,94.7,1,2.1,1.2,7.5,3.5,0,2,Medium,Negative,0,4,67,69,D,1
+STU-000651,9,15,Male,Public,Suburban,High school,Low,1,5.8,High,11.6,84.7,0,3,1.2,6.9,0,1,0,Medium,Neutral,1,4,80,70,C,1
+STU-000652,12,18,Female,Public,Urban,Bachelor's,Middle,1,4.7,Medium,20.1,93.2,0,4.3,2.4,8.1,4.7,0,0,Medium,Positive,0,4,46,70,C,1
+STU-000653,12,18,Male,Public,Urban,Bachelor's,Middle,1,3.4,Medium,13.4,93.1,0,3.3,1,8.7,4,0,0,Medium,Neutral,0,4,91,92,A,1
+STU-000654,11,16,Male,Private,Urban,Some college,Middle,1,2.5,Medium,9.5,91.2,0,5,2.6,8.3,2.3,0,0,Medium,Neutral,1,1,51,48,F,0
+STU-000655,10,15,Male,Public,Suburban,Some college,Middle,1,7.7,Medium,14.4,84.6,0,5.1,2.4,6.9,6,1,0,High,Negative,0,3,57,57,F,0
+STU-000656,9,15,Female,Public,Urban,Bachelor's,High,1,4,Low,3.6,91.6,0,5.2,1.5,8.4,6.3,2,0,High,Neutral,0,1,68,61,D,1
+STU-000657,10,15,Female,Public,Rural,Some college,Low,1,29,High,18,91.7,0,5.1,3,8,9.5,0,0,Medium,Positive,0,4,77,92,A,1
+STU-000658,9,14,Non-binary,Public,Urban,Master's,Middle,1,3.2,Medium,15.7,86.2,0,1.9,0.8,8.8,2.9,1,0,Medium,Positive,1,3,51,55,F,0
+STU-000659,12,18,Female,Private,Rural,Some college,Middle,1,34.1,High,13.5,78.1,0,7,2.4,6.1,10,0,2,Medium,Neutral,0,6,47,63,D,1
+STU-000660,11,16,Male,Public,Suburban,Bachelor's,Middle,1,1.8,Medium,10.8,86.8,1,4.3,1.8,7.1,4.4,0,0,High,Positive,0,6,81,89,B,1
+STU-000661,11,16,Female,Public,Suburban,Master's,Low,1,11.2,High,15.9,93.7,0,4.6,2.6,7.4,8.9,1,0,Medium,Neutral,0,5,46,63,D,1
+STU-000662,9,14,Female,Public,Rural,Master's,Middle,0,32.4,Medium,13.8,79.2,0,4,2.3,7,8.6,0,0,Medium,Positive,0,4,85,80,B,1
+STU-000663,12,17,Male,Public,Rural,Bachelor's,High,1,24.1,Medium,13.6,95.5,0,3.2,0.9,7.2,5.8,2,4,Medium,Positive,1,2,71,74,C,1
+STU-000664,9,15,Female,Public,Rural,Some college,Low,0,29.2,Low,9.4,84.6,0,6.7,4.5,8.3,2.1,0,0,Medium,Negative,0,2,53,51,F,0
+STU-000665,10,15,Non-binary,Private,Rural,Doctorate,Middle,1,8.4,Medium,14.9,95.5,0,6.6,4.3,8.4,3.7,2,0,Medium,Positive,0,4,55,75,C,1
+STU-000666,11,17,Female,Charter,Suburban,Bachelor's,High,1,1.2,High,15.7,91.6,0,2.9,1.5,8.1,7.8,0,1,High,Neutral,0,5,78,96,A,1
+STU-000667,11,17,Female,Public,Urban,Bachelor's,High,1,4.9,Medium,18,80.3,1,4.2,2.6,7.8,2.7,1,0,Medium,Positive,0,8,86,91,A,1
+STU-000668,10,15,Female,Public,Rural,Doctorate,Low,1,34.8,High,5.7,86,0,4.3,2.6,8.5,7.1,2,4,Low,Neutral,0,3,47,59,F,0
+STU-000669,12,18,Female,Charter,Urban,Bachelor's,Low,1,1.6,High,16.4,84.8,0,4.1,1.3,8.7,5.3,0,0,High,Neutral,1,4,91,85,B,1
+STU-000670,10,15,Male,Public,Urban,Bachelor's,High,1,4.4,Low,6.5,96.7,0,7.1,3.3,6.3,9.7,1,0,Medium,Positive,0,2,48,58,F,0
+STU-000671,11,17,Female,Public,Urban,High school,Middle,1,1.8,Medium,16.1,89.9,0,3.4,1.1,7.2,6.2,0,0,High,Positive,0,5,63,75,C,1
+STU-000672,10,15,Male,Private,Suburban,Master's,Middle,1,4.2,Low,3.2,84.9,0,4.1,1.3,8.9,2.8,3,1,High,Neutral,0,1,61,55,F,0
+STU-000673,10,16,Female,Public,Urban,Doctorate,Middle,1,2.2,Low,10,88.4,0,3.5,1.6,8.8,0,2,0,Medium,Neutral,0,4,62,65,D,1
+STU-000674,12,17,Female,Private,Rural,High school,Middle,1,27.1,Low,1.6,81.3,1,4.6,1.9,7.1,6.9,0,4,Medium,Negative,0,4,74,62,D,1
+STU-000675,10,15,Male,Public,Urban,High school,Low,1,2,Low,2.8,93.3,0,3,0.8,8.2,7.7,1,2,Medium,Neutral,0,1,43,46,F,0
+STU-000676,10,15,Female,Public,Rural,High school,Low,1,25.7,Low,6,82.8,0,7.7,5.6,6.7,6.3,0,1,Medium,Positive,0,2,57,57,F,0
+STU-000677,9,14,Female,Public,Rural,Master's,Low,1,3.4,Low,3.8,90.8,0,3.7,2.2,8.3,5.3,1,1,High,Negative,0,1,73,65,D,1
+STU-000678,12,18,Male,Public,Suburban,High school,Low,1,1.9,Medium,11.1,95.3,0,5.2,3.7,7.7,6.2,1,0,Medium,Positive,0,6,53,70,C,1
+STU-000679,9,14,Female,Private,Suburban,High school,Low,1,3.7,Low,2.9,93.7,0,5.4,3.8,8,4.2,1,0,Low,Positive,0,1,62,57,F,0
+STU-000680,12,17,Male,Public,Suburban,High school,Low,1,5,Low,5.5,96.2,0,4.6,1.4,6.7,4.5,0,0,Medium,Positive,0,1,79,77,C,1
+STU-000681,12,17,Female,Private,Suburban,High school,Low,1,9.8,Medium,11.3,87.6,1,7.1,3.6,7.5,0,0,2,High,Positive,0,5,52,62,D,1
+STU-000682,10,15,Male,Public,Suburban,Master's,Middle,1,10.9,Low,10.3,94.5,0,2.8,0.8,9.2,6.9,3,0,Low,Positive,0,3,59,61,D,1
+STU-000683,11,16,Female,Public,Urban,Some college,Low,1,2.8,Medium,13.4,84.9,0,4,1.1,8,2,1,6,Low,Neutral,0,5,60,67,D,1
+STU-000684,9,14,Male,Private,Urban,High school,Low,1,2.5,Medium,15.2,88.7,0,1.3,0.9,9.1,4.9,0,0,Medium,Positive,0,3,84,90,A,1
+STU-000685,11,17,Female,Public,Rural,Bachelor's,High,1,18.4,High,14.7,90.2,0,5.1,1.5,8.8,0,1,0,Low,Neutral,0,4,89,87,B,1
+STU-000686,10,15,Male,Public,Urban,Master's,Middle,1,1.2,Medium,14.4,88.7,0,3,1.8,8,6.5,1,0,Medium,Neutral,0,5,81,78,C,1
+STU-000687,9,14,Female,Private,Urban,High school,Middle,1,3.3,Medium,14.2,97.1,0,3.3,1.6,6.9,6.4,1,1,Medium,Neutral,1,5,82,85,B,1
+STU-000688,10,15,Female,Public,Suburban,Master's,Low,1,1.7,High,22.4,96.3,1,7.6,4.9,7.7,2.7,1,2,Medium,Positive,0,9,68,83,B,1
+STU-000689,10,15,Female,Public,Rural,High school,Middle,1,18.6,High,17.3,94.8,0,4.6,1.6,7.9,7,2,0,High,Neutral,0,4,58,73,C,1
+STU-000690,9,14,Male,Public,Suburban,High school,Low,1,6.3,High,23.7,84.3,0,4.1,2,8.9,3.2,1,0,High,Neutral,0,4,51,76,C,1
+STU-000691,12,17,Female,Public,Urban,Bachelor's,Middle,1,3.6,Medium,16.1,95.9,0,3.9,2,7.2,0.9,0,0,Medium,Neutral,0,3,76,86,B,1
+STU-000692,9,15,Female,Public,Rural,High school,Low,1,20.5,Medium,9.5,93.8,0,7.6,3.1,7.2,5.8,0,0,Medium,Negative,0,4,50,59,F,0
+STU-000693,11,17,Female,Public,Urban,High school,High,1,4.8,Medium,18.9,80.5,1,3.4,2.1,8.6,12.2,0,0,Low,Positive,0,5,85,88,B,1
+STU-000694,12,17,Female,Public,Urban,Some college,Middle,1,1.9,High,19.1,79.9,1,5,3,7,3.4,1,0,Medium,Neutral,0,5,73,86,B,1
+STU-000695,12,18,Female,Public,Suburban,Bachelor's,Low,1,5.4,High,13.1,93.6,0,5.6,3.3,7.8,4,3,4,Medium,Neutral,0,5,79,79,C,1
+STU-000696,11,16,Male,Public,Suburban,Bachelor's,High,1,2.1,Low,6.4,85.3,0,3.1,0.9,8.3,7.2,0,0,Low,Positive,1,4,63,59,F,0
+STU-000697,9,14,Male,Public,Suburban,Bachelor's,High,1,5.7,Low,2.1,84,0,7.6,4.7,6,6.2,1,0,Medium,Neutral,0,2,90,74,C,1
+STU-000698,11,16,Female,Public,Urban,Some college,Middle,1,2.6,Medium,19.2,81.9,1,6.8,4.2,6.9,5.8,0,0,High,Negative,1,8,72,72,C,1
+STU-000699,9,14,Female,Public,Urban,Some college,Middle,1,3.7,Low,7.6,78.2,0,3.8,2.2,8.6,6.4,2,4,Low,Neutral,0,4,47,46,F,0
+STU-000700,9,14,Male,Private,Rural,High school,Low,1,11.9,Medium,10.6,88.4,0,4.4,2.2,6.6,5.2,4,0,Medium,Neutral,0,5,62,62,D,1
+STU-000701,12,18,Female,Public,Urban,High school,High,1,1.4,High,15,95.2,0,1.6,0.9,7.3,4.6,0,0,Medium,Neutral,1,3,84,80,B,1
+STU-000702,11,16,Male,Public,Rural,High school,Low,1,9,High,19,90,0,6.3,1.9,7.6,0,3,0,Medium,Negative,0,6,55,75,C,1
+STU-000703,9,14,Female,Private,Urban,High school,High,1,1.8,Medium,11.7,88.6,1,6,1.6,6.3,7.4,0,0,High,Neutral,0,4,57,72,C,1
+STU-000704,12,17,Female,Public,Urban,Master's,High,1,2,Medium,4.2,85.1,0,3.2,1,8.3,6,1,6,Medium,Neutral,0,4,92,81,B,1
+STU-000705,11,16,Male,Public,Rural,Some college,High,1,7.7,High,18.7,94.7,0,5.1,2.7,6.4,0,1,0,Medium,Negative,0,6,57,72,C,1
+STU-000706,12,18,Male,Public,Suburban,High school,Low,1,10.7,Medium,10.5,85.2,0,3.4,1.9,8.2,6.6,1,4,Medium,Neutral,0,3,70,76,C,1
+STU-000707,12,17,Male,Public,Urban,High school,Low,1,1.4,Medium,19.4,82.6,0,3.8,2.6,8.1,5,2,4,Medium,Neutral,0,6,65,78,C,1
+STU-000708,12,18,Female,Private,Urban,High school,Low,0,0.9,High,8,85.8,0,7,2,8.1,6.1,0,8,High,Neutral,0,1,48,58,F,0
+STU-000709,11,16,Male,Public,Suburban,Bachelor's,Middle,1,4.7,Medium,3.7,85.4,0,3.7,1.1,8.6,2.3,1,0,Low,Negative,0,3,93,74,C,1
+STU-000710,12,17,Male,Public,Suburban,Some college,High,1,8.5,Medium,9.6,98.6,0,7,4.2,8.2,4.2,2,0,High,Negative,0,2,89,89,B,1
+STU-000711,12,17,Female,Public,Urban,Bachelor's,High,1,2.2,Medium,6.2,89.8,1,5.8,4.2,6.9,5.4,2,8,High,Neutral,0,3,75,72,C,1
+STU-000712,12,17,Female,Public,Urban,Master's,High,1,0.6,High,18.5,86.1,1,1.4,1,6.8,2.9,0,0,Low,Positive,0,6,79,77,C,1
+STU-000713,12,18,Female,Public,Suburban,Bachelor's,High,1,10.3,High,21.9,91.8,1,3.1,1.7,7.7,0.1,1,1,Medium,Positive,0,6,69,80,B,1
+STU-000714,12,18,Female,Public,Suburban,Some college,Middle,1,10.4,Medium,3.1,91.1,0,3.5,2.5,8.9,0,1,0,Medium,Neutral,0,3,83,71,C,1
+STU-000715,9,14,Female,Private,Suburban,High school,High,1,11,Medium,12.8,94.6,0,4.3,1.5,7.5,6.2,1,0,Medium,Positive,0,5,59,66,D,1
+STU-000716,10,15,Female,Public,Urban,Some college,Middle,1,5,High,11,84.6,0,3.1,2.2,6.8,4.5,1,0,Medium,Neutral,0,6,50,53,F,0
+STU-000717,10,15,Male,Public,Urban,High school,Low,1,1,High,17.4,89.8,0,4.1,2,7.7,5.8,3,4,Low,Negative,0,5,75,81,B,1
+STU-000718,12,17,Female,Public,Urban,Master's,Middle,1,3.6,Low,3.2,90.6,0,2.8,0.9,8,4.3,2,0,High,Negative,0,2,56,48,F,0
+STU-000719,9,14,Female,Public,Urban,High school,Middle,0,3.9,Medium,8.2,93.6,0,3.8,1.8,8.4,2,3,1,Medium,Neutral,0,4,71,72,C,1
+STU-000720,9,14,Male,Public,Urban,High school,Middle,1,2.9,Low,1.2,72.3,1,1.7,0.7,7.7,3.5,0,0,Low,Neutral,0,5,89,67,D,1
+STU-000721,10,16,Male,Public,Rural,High school,Low,1,25.7,Medium,11.9,82.9,1,6.4,4.5,6.5,2.2,2,0,High,Neutral,0,7,83,77,C,1
+STU-000722,12,17,Female,Public,Urban,Bachelor's,High,1,1.5,Medium,16.8,82.1,0,7.9,4.6,7.1,9,4,4,High,Negative,0,3,48,58,F,0
+STU-000723,10,16,Male,Public,Urban,Some college,High,1,4.6,Medium,6,85.7,0,2.1,0.9,8.9,2,1,0,High,Neutral,0,3,53,57,F,0
+STU-000724,12,17,Female,Public,Suburban,Doctorate,High,1,1.7,Medium,11.1,89.4,0,5.1,2.8,7.5,8.7,2,0,Medium,Negative,0,4,86,81,B,1
+STU-000725,11,16,Male,Public,Urban,Master's,High,1,3.4,Medium,16.2,86.4,1,4,3,6.9,3.5,1,0,High,Positive,0,7,92,84,B,1
+STU-000726,9,14,Female,Private,Urban,High school,Low,1,0.7,Medium,10.7,87.9,0,3.1,2.3,6.9,3.5,0,0,Medium,Neutral,0,4,83,84,B,1
+STU-000727,10,15,Male,Public,Suburban,Master's,High,1,1.4,Low,9.1,92,0,4.9,3.6,8.7,5.2,0,0,Medium,Neutral,0,4,75,65,D,1
+STU-000728,10,15,Male,Public,Rural,Master's,Middle,0,30.1,Medium,7,78.9,1,2.9,0.9,6.4,1.2,1,2,High,Neutral,0,7,65,54,F,0
+STU-000729,10,16,Female,Charter,Urban,Bachelor's,High,1,1.4,Medium,13.9,92.4,0,7,3.4,7.6,4.7,1,0,Medium,Neutral,0,4,79,76,C,1
+STU-000730,12,17,Male,Public,Rural,Bachelor's,High,1,24.7,Medium,17.4,85.1,0,6.7,4.6,6.2,1.2,4,1,High,Neutral,0,7,75,79,C,1
+STU-000731,12,17,Male,Charter,Urban,Bachelor's,High,1,1.9,Low,1.7,88.7,0,5.9,1.9,6.9,3.5,0,0,High,Neutral,0,2,90,81,B,1
+STU-000732,12,17,Female,Public,Urban,High school,Middle,1,0.7,Low,9.5,82.3,0,7,2.6,8,0,2,0,Low,Negative,0,5,82,72,C,1
+STU-000733,12,18,Female,Charter,Suburban,High school,Middle,1,2.3,High,23.7,96.8,0,4.9,2.4,7,2.2,2,1,Medium,Positive,1,6,82,83,B,1
+STU-000734,11,16,Male,Public,Urban,Master's,Middle,1,0.4,Low,1.9,91.8,0,6.3,4.5,8,2.9,1,0,Medium,Negative,1,3,47,31,F,0
+STU-000735,12,18,Male,Public,Rural,Master's,High,1,6.1,Medium,11.8,92.1,0,2.4,1.2,7.7,7.4,0,0,Medium,Positive,0,4,90,88,B,1
+STU-000736,12,17,Male,Public,Urban,Doctorate,High,1,1.9,Low,9.2,73.4,1,7.7,4.8,7,0,3,1,Medium,Neutral,0,7,84,61,D,1
+STU-000737,11,16,Male,Charter,Suburban,Master's,Middle,1,2.5,Low,5.9,86.9,1,6.5,4.5,7.2,4.3,1,0,Medium,Neutral,0,5,87,68,D,1
+STU-000738,12,17,Male,Private,Urban,Master's,High,1,2.2,Medium,16.4,89.9,1,2.5,0.7,7,4.9,1,0,Medium,Neutral,0,6,75,81,B,1
+STU-000739,11,16,Male,Private,Suburban,Some college,Low,1,9.1,Medium,7.4,98.8,0,7.7,4.9,7,4.7,2,0,Low,Neutral,1,4,87,70,C,1
+STU-000740,12,17,Female,Public,Suburban,Bachelor's,High,1,6.2,Low,8.2,84.6,0,2.6,1.3,7.4,3.8,3,1,Medium,Neutral,0,3,67,65,D,1
+STU-000741,11,16,Male,Public,Urban,Master's,High,1,3.2,Medium,12.9,84.1,0,8.4,5.4,7.1,0.9,4,2,Medium,Positive,0,5,85,80,B,1
+STU-000742,10,16,Female,Public,Rural,High school,Low,1,30.3,Low,10,77.7,0,7.4,4.6,6.6,7.7,3,0,Medium,Neutral,0,3,37,34,F,0
+STU-000743,9,14,Female,Public,Urban,Bachelor's,Middle,1,0.7,High,21.9,97.7,0,7.7,3.2,6.5,5.4,2,0,Medium,Neutral,0,7,93,100,A,1
+STU-000744,11,16,Female,Public,Urban,Some college,Low,1,1.7,Low,5.5,89.1,0,4.4,2.3,7.9,7.2,0,1,High,Neutral,0,2,85,79,C,1
+STU-000745,12,17,Male,Public,Suburban,Bachelor's,Middle,1,5.3,High,25.9,95.5,0,7.1,3.8,8,6.2,1,0,High,Positive,1,5,75,85,B,1
+STU-000746,9,14,Female,Public,Urban,Bachelor's,Low,1,4.8,Low,6.1,78.2,0,2.1,0.6,8,2.6,1,0,Medium,Neutral,0,1,78,64,D,1
+STU-000747,10,15,Male,Public,Urban,High school,Middle,1,2.2,High,19.7,83.5,0,4.6,1.8,8.1,6.5,0,0,Medium,Positive,0,5,75,81,B,1
+STU-000748,11,16,Female,Public,Urban,Doctorate,Middle,1,3.8,High,21.6,91.8,0,2.2,1.4,7,5.3,1,0,Medium,Neutral,0,7,54,75,C,1
+STU-000749,9,14,Male,Private,Urban,Bachelor's,Middle,1,1.1,Low,6,96.3,0,1.8,0.8,8.8,1.6,0,0,Medium,Neutral,0,1,80,69,D,1
+STU-000750,12,18,Female,Public,Suburban,High school,Middle,1,3.3,High,14.8,91.4,0,3.8,1.2,7.6,7,1,2,Medium,Neutral,0,4,77,87,B,1
+STU-000751,9,14,Male,Public,Rural,Bachelor's,Middle,1,6.2,High,13.5,90.7,0,1.9,1.1,8.5,10.4,3,6,Medium,Negative,0,2,71,88,B,1
+STU-000752,10,16,Female,Public,Urban,High school,Low,1,3.8,Medium,12.4,90,1,4.8,2.5,6.6,5.2,1,2,Medium,Neutral,0,4,53,56,F,0
+STU-000753,10,15,Male,Public,Urban,Bachelor's,High,1,1.2,Medium,11.2,84.6,0,7.2,3.1,6.5,9.2,1,0,Medium,Neutral,0,3,76,78,C,1
+STU-000754,9,15,Female,Public,Urban,High school,Middle,1,4,High,5.4,83.2,0,4.9,2.6,6.6,4.6,1,0,Medium,Neutral,0,1,48,50,F,0
+STU-000755,11,17,Non-binary,Public,Suburban,Some college,Middle,1,9.9,Medium,3.9,91,0,3.9,1.5,7.7,8,3,0,High,Positive,0,2,47,52,F,0
+STU-000756,9,14,Male,Public,Urban,High school,Low,1,1.4,High,5.3,93.4,1,4.5,1.8,6.7,3.2,0,0,High,Neutral,0,4,70,77,C,1
+STU-000757,11,16,Male,Public,Rural,Some college,Middle,1,8.2,Low,6.5,90.7,0,4.8,3.4,7.4,0,0,1,Medium,Neutral,0,4,88,72,C,1
+STU-000758,12,17,Male,Public,Suburban,Bachelor's,Middle,1,10.6,Medium,9.4,89.2,0,4.3,1.5,8.5,3.9,1,0,Low,Negative,0,2,62,63,D,1
+STU-000759,9,14,Male,Public,Suburban,High school,High,1,8.1,High,6.3,94.9,0,4,1.2,7.3,5.3,1,6,Medium,Positive,0,2,84,84,B,1
+STU-000760,9,14,Female,Public,Urban,Bachelor's,Middle,1,4.1,Medium,14.2,90,0,6.7,3.3,6.4,4.1,0,0,Medium,Positive,0,4,64,75,C,1
+STU-000761,10,15,Male,Private,Urban,Some college,High,1,0.7,High,12.8,83.4,0,1.1,0.5,7.4,7.4,2,0,Medium,Positive,0,3,57,74,C,1
+STU-000762,9,14,Male,Charter,Suburban,Some college,High,1,8.5,Medium,5.3,95.9,0,2.8,1.3,8.2,3,1,0,Medium,Positive,0,3,54,59,F,0
+STU-000763,12,18,Male,Private,Suburban,Some college,High,1,8.5,Medium,11.6,78.7,1,4.2,1.5,6.8,3.2,0,6,High,Neutral,0,5,90,88,B,1
+STU-000764,10,15,Male,Public,Rural,High school,Middle,1,4,Low,1.7,87.5,0,1.1,0.5,8.3,6,2,1,Medium,Positive,0,1,82,66,D,1
+STU-000765,11,16,Male,Private,Suburban,Some college,High,1,8.5,Low,5.8,83.3,0,4,1.2,8,2.3,0,1,Medium,Negative,0,1,62,49,F,0
+STU-000766,12,17,Female,Private,Suburban,High school,Middle,1,10,Medium,16.3,92.3,0,2.9,1.9,7.2,1.2,1,0,Medium,Negative,0,4,55,63,D,1
+STU-000767,11,16,Male,Public,Suburban,High school,Low,1,7.8,Low,11.4,87.3,0,8.2,2.3,7.7,3.2,1,8,Medium,Neutral,0,4,64,71,C,1
+STU-000768,10,15,Male,Public,Rural,High school,Low,1,3.6,Medium,14,93.1,0,1.8,1,9.3,5,4,2,Low,Positive,0,5,74,88,B,1
+STU-000769,9,14,Female,Public,Rural,Doctorate,High,1,29.9,High,11.7,92.9,0,3.4,2.4,8.1,8,0,1,High,Positive,0,3,65,81,B,1
+STU-000770,10,15,Female,Public,Urban,Some college,High,1,4,Low,6.4,90.5,0,3.7,2.4,7.1,1.6,0,0,Medium,Negative,0,2,50,47,F,0
+STU-000771,9,14,Male,Private,Urban,Some college,High,1,4,Low,7.1,86.3,0,5.7,3.1,7,0,2,0,High,Negative,0,2,49,46,F,0
+STU-000772,11,16,Female,Private,Urban,High school,Low,1,3,Low,7.2,94.3,0,5,2.2,6.6,6.4,1,1,High,Positive,0,2,85,82,B,1
+STU-000773,10,16,Male,Public,Suburban,High school,Middle,1,1.9,High,29.9,86.5,0,4.2,2.7,6.6,1.7,1,0,High,Neutral,0,8,88,100,A,1
+STU-000774,11,17,Male,Private,Urban,High school,Middle,1,0.5,Medium,17.5,82.2,1,7,4.4,6,5.7,2,2,Medium,Neutral,0,7,54,59,F,0
+STU-000775,10,15,Female,Private,Suburban,High school,Middle,1,6.9,Low,5.8,77.9,0,2.3,1,8.7,2.5,1,0,Medium,Positive,0,2,49,49,F,0
+STU-000776,9,14,Male,Public,Suburban,Some college,Middle,1,11.3,Medium,6,89.9,0,6.5,2.3,7,3,1,2,Medium,Neutral,0,5,53,49,F,0
+STU-000777,11,17,Male,Public,Suburban,High school,Low,1,8.2,Medium,11.3,82.1,0,5.7,2.5,7.7,4.3,0,0,Medium,Neutral,0,3,80,78,C,1
+STU-000778,11,16,Female,Public,Suburban,Bachelor's,High,1,4.6,High,22.8,86.6,0,3.8,2.8,8.1,8.6,2,0,Medium,Negative,0,4,64,85,B,1
+STU-000779,9,14,Female,Private,Urban,High school,Low,0,4,Medium,17.8,82.3,0,0.7,0.4,9.4,6,0,0,High,Neutral,0,4,62,66,D,1
+STU-000780,9,14,Male,Public,Suburban,Some college,Middle,1,6.6,Medium,8.3,87.9,0,5.1,1.7,7.4,1.3,2,0,High,Neutral,0,3,91,88,B,1
+STU-000781,12,17,Male,Private,Urban,Master's,Middle,1,4.4,High,16.8,87.6,0,6.3,3.7,8.3,0.8,1,4,Medium,Negative,0,3,56,65,D,1
+STU-000782,12,17,Female,Public,Rural,Bachelor's,High,1,28.7,High,14.5,81.7,0,3.7,1.1,7.3,6.7,0,4,Medium,Neutral,0,6,98,91,A,1
+STU-000783,9,14,Male,Public,Rural,High school,Middle,1,29.2,High,13.5,83.5,0,4.1,1.3,7.5,7,2,4,Medium,Positive,0,5,69,79,C,1
+STU-000784,12,17,Female,Public,Urban,High school,Low,1,0.5,Low,9.5,95.5,0,6.5,4.9,8,7.7,3,0,Low,Neutral,0,4,55,61,D,1
+STU-000785,12,17,Male,Private,Urban,High school,Middle,1,2.3,Low,8.2,97.5,0,3,2,8.4,5.8,3,0,High,Positive,1,3,65,66,D,1
+STU-000786,10,15,Female,Private,Rural,High school,Middle,1,28.1,Medium,8.7,88.9,0,7,2,7.2,2.9,2,0,Medium,Negative,0,2,45,42,F,0
+STU-000787,10,16,Male,Public,Urban,Master's,Middle,1,0.5,High,16.8,85.5,0,6.2,2.1,8.3,0.1,0,0,Low,Neutral,0,5,49,64,D,1
+STU-000788,9,14,Male,Public,Urban,Bachelor's,High,1,3.2,Low,4.9,83,0,5.2,2.5,8.1,7.1,3,0,High,Neutral,0,2,77,63,D,1
+STU-000789,10,15,Female,Public,Rural,Bachelor's,High,1,17.6,Medium,10.9,92.7,0,3.3,1.4,7.9,3.4,1,2,High,Negative,0,2,91,83,B,1
+STU-000790,9,14,Male,Public,Urban,Master's,Middle,1,0.4,Medium,7.5,98.7,0,1.4,0.9,8.3,3.3,0,0,High,Neutral,0,2,71,70,C,1
+STU-000791,12,17,Female,Private,Suburban,Some college,Low,1,4.2,Medium,7.2,97.8,0,5,3.1,7.2,4.2,0,6,Medium,Positive,0,3,57,67,D,1
+STU-000792,10,16,Female,Public,Urban,High school,Middle,1,3.5,Medium,17.2,84.3,0,7.7,3.6,7.6,5.9,1,0,Medium,Positive,0,6,64,75,C,1
+STU-000793,10,16,Male,Public,Suburban,Bachelor's,Middle,1,9.1,Medium,11.9,91.9,0,4.7,1.3,6.9,0,1,0,Medium,Neutral,0,2,70,71,C,1
+STU-000794,10,16,Female,Private,Suburban,High school,Middle,1,9.3,Medium,7.5,84.6,0,7.5,4.9,6.2,1.2,2,1,Medium,Neutral,0,2,55,53,F,0
+STU-000795,11,16,Male,Private,Urban,High school,Middle,1,1,High,20.7,88.3,1,4.6,1.6,7.1,6,3,1,High,Negative,0,7,71,84,B,1
+STU-000796,10,15,Male,Public,Suburban,Bachelor's,Middle,1,5.8,High,12.5,85.9,0,4.9,3.5,6.7,1.5,3,6,Medium,Neutral,0,3,71,73,C,1
+STU-000797,10,15,Male,Private,Suburban,Some college,Middle,1,9.6,Medium,15.4,97.2,0,3.9,1.7,8.8,4.2,1,6,Medium,Neutral,0,5,84,85,B,1
+STU-000798,11,16,Female,Private,Urban,Doctorate,High,1,3.2,Medium,10.3,93.1,0,3.8,1.7,8.5,5.7,0,6,Low,Neutral,0,3,90,82,B,1
+STU-000799,9,14,Female,Public,Suburban,Some college,Middle,1,9.6,Low,4.5,91.1,0,2.5,0.6,7.1,2.7,2,0,High,Negative,1,4,86,74,C,1
+STU-000800,11,17,Female,Public,Suburban,Master's,High,1,3.5,Medium,16.1,86.1,0,0.9,0.5,9.6,0,1,0,Medium,Negative,0,6,91,81,B,1
+STU-000801,9,14,Female,Public,Urban,Master's,Middle,1,4.2,High,15.8,90.3,0,3.7,2.1,7,5.7,0,0,Medium,Neutral,0,6,54,64,D,1
+STU-000802,11,16,Female,Public,Urban,High school,Low,1,1.7,Medium,14.2,80.7,1,2.9,1.7,6.8,4.9,1,0,High,Negative,0,6,72,67,D,1
+STU-000803,11,16,Female,Public,Rural,Some college,Middle,1,30.3,Medium,12.4,88.1,1,5.2,1.6,6.6,3,2,6,Low,Neutral,0,8,50,60,D,1
+STU-000804,10,16,Female,Public,Suburban,High school,Middle,1,11.3,Low,5.9,79,0,3,1.3,8,9.5,2,0,High,Neutral,0,4,63,61,D,1
+STU-000805,9,15,Female,Public,Urban,High school,Low,1,2.3,Medium,8.8,86.7,0,4.5,2.6,7.3,0.7,0,4,Medium,Neutral,0,5,63,69,D,1
+STU-000806,10,15,Female,Public,Urban,Bachelor's,High,1,0.3,High,13.3,88,0,4,1.9,8.7,1.4,3,0,Medium,Neutral,0,3,55,68,D,1
+STU-000807,12,17,Male,Public,Urban,Bachelor's,Low,1,1.7,Low,12.6,86.9,0,2.7,2,7.5,0,1,0,Medium,Positive,0,4,66,68,D,1
+STU-000808,9,15,Female,Public,Urban,Bachelor's,High,1,4.3,Medium,16.1,83.9,0,8.3,2.8,6,7.2,0,0,Medium,Neutral,0,3,85,81,B,1
+STU-000809,9,15,Male,Public,Suburban,Some college,High,1,8.8,High,19.4,89.1,0,5.4,1.4,7.9,6.9,0,1,Low,Positive,0,6,67,82,B,1
+STU-000810,10,15,Female,Private,Suburban,Bachelor's,Middle,1,2.2,Low,7,87.9,0,7.4,2.6,6.5,8,0,4,High,Neutral,0,2,46,53,F,0
+STU-000811,12,17,Male,Private,Urban,Bachelor's,Middle,1,4.7,Low,6.4,85.4,1,8.4,4,6.8,6.2,1,0,Low,Negative,1,6,61,37,F,0
+STU-000812,12,17,Female,Public,Suburban,Bachelor's,Middle,1,8.4,Medium,10.7,94.4,0,2.5,1.3,9,2.1,1,0,Medium,Positive,0,4,80,84,B,1
+STU-000813,10,16,Female,Public,Rural,Master's,Middle,1,11.2,Medium,21.2,97.5,0,6.8,2.2,6.1,8,1,0,High,Neutral,0,5,49,70,C,1
+STU-000814,11,16,Female,Public,Suburban,Bachelor's,Middle,1,7.7,Medium,16.2,87.2,0,6.9,1.9,7.1,3,2,0,Medium,Neutral,0,4,69,74,C,1
+STU-000815,11,16,Female,Public,Urban,Bachelor's,High,1,4.8,Medium,17.8,90,1,12,8.9,5.9,0.9,1,1,Low,Neutral,0,8,83,67,D,1
+STU-000816,10,16,Male,Private,Suburban,Doctorate,Middle,1,3.8,Medium,8,93.2,0,1.4,1.1,9,4.5,0,1,Medium,Neutral,0,5,64,70,C,1
+STU-000817,11,17,Female,Public,Rural,High school,Low,1,6.7,Medium,15.3,94.7,0,3.9,1.9,6.8,10.1,0,0,Low,Positive,0,5,61,74,C,1
+STU-000818,10,15,Female,Private,Rural,Some college,Low,1,9.9,Medium,4.9,85.4,0,2.4,1.3,9,2.1,1,0,Medium,Negative,0,3,87,81,B,1
+STU-000819,11,16,Male,Public,Suburban,High school,Middle,1,11.8,High,12.2,85.5,0,0.7,0.4,8.3,7,4,0,High,Negative,1,4,71,65,D,1
+STU-000820,10,15,Female,Public,Suburban,Some college,Middle,1,4.8,Medium,7.9,91.9,0,1.6,0.6,9.4,3.9,0,0,Medium,Neutral,0,2,45,65,D,1
+STU-000821,10,15,Female,Private,Urban,Bachelor's,Middle,1,3.1,Medium,7.7,97.3,0,3.7,1.2,8.9,9.8,1,1,Low,Neutral,0,5,70,78,C,1
+STU-000822,12,17,Female,Public,Urban,Bachelor's,Low,1,3.5,Medium,12.7,92.6,0,3.5,2.5,7.7,2.2,2,1,Medium,Positive,0,4,75,80,B,1
+STU-000823,9,14,Female,Charter,Urban,Some college,Middle,1,2.9,Medium,15.8,89.6,0,2.3,0.9,9.3,7.6,0,4,Medium,Negative,0,3,63,76,C,1
+STU-000824,12,17,Male,Private,Urban,Bachelor's,Low,1,2.7,Low,10.6,77.1,1,5.8,4.2,7.4,4.4,2,2,Medium,Positive,0,6,67,61,D,1
+STU-000825,9,14,Male,Public,Suburban,Bachelor's,High,1,1.4,Medium,10.4,93.7,0,6.8,2.2,7.7,8.6,2,0,Low,Negative,0,4,77,70,C,1
+STU-000826,12,17,Female,Private,Urban,Bachelor's,Middle,1,3.2,Medium,6.6,89.9,1,4.6,1.9,7.6,4.7,0,2,Medium,Negative,0,3,59,53,F,0
+STU-000827,12,17,Male,Public,Suburban,Bachelor's,Middle,1,3.7,Medium,15.6,89.6,1,7.4,2.8,5.8,6.5,2,0,Medium,Positive,0,6,86,83,B,1
+STU-000828,10,15,Female,Public,Rural,Some college,Middle,1,4.1,High,16.3,85.1,0,5.4,2.4,8.3,5.8,1,0,Medium,Negative,0,3,64,71,C,1
+STU-000829,11,16,Male,Public,Rural,Doctorate,High,1,4.9,Medium,18.2,86.9,0,4.4,1.5,8.5,4.7,0,0,Medium,Negative,0,6,61,78,C,1
+STU-000830,12,17,Male,Public,Suburban,High school,Low,1,5.3,Low,8.4,87.6,0,3.5,1.7,8.9,4.5,1,0,Medium,Neutral,0,3,61,66,D,1
+STU-000831,9,14,Female,Public,Suburban,Bachelor's,Middle,1,3.4,Medium,15.4,92.1,0,0.9,0.4,8.5,2.4,0,0,High,Neutral,0,4,61,70,C,1
+STU-000832,9,14,Male,Public,Rural,Doctorate,High,1,14.4,Medium,13.8,86.7,1,6.9,4.8,5.8,3.2,2,0,Medium,Positive,0,6,100,81,B,1
+STU-000833,10,15,Male,Public,Urban,Some college,High,1,2.3,Medium,21.2,86.1,0,6.2,4.5,8.1,1.1,3,6,High,Positive,0,6,68,84,B,1
+STU-000834,11,16,Female,Public,Urban,Some college,High,1,1.5,High,19.5,83.4,0,6.1,4.5,6.5,5.3,2,1,High,Neutral,0,6,80,86,B,1
+STU-000835,10,15,Male,Public,Urban,Bachelor's,High,1,1.3,High,10.5,90.9,0,1,0.4,8.2,7.7,1,0,Low,Negative,0,5,65,65,D,1
+STU-000836,10,15,Female,Public,Urban,Some college,Middle,1,3.5,Low,8.5,95.2,0,3.2,2.1,8.8,8.6,1,0,Medium,Positive,0,2,91,90,A,1
+STU-000837,9,14,Male,Public,Suburban,Bachelor's,Middle,1,9.8,Low,5.2,82.8,0,3.3,1.8,8.4,5.2,0,2,Medium,Neutral,1,1,69,54,F,0
+STU-000838,11,16,Male,Public,Suburban,High school,Middle,1,11.4,Low,4.7,74.1,1,4.6,1.3,6.9,6.6,2,6,Medium,Negative,0,4,59,53,F,0
+STU-000839,12,17,Male,Public,Suburban,High school,Low,1,9.9,Medium,13.1,87.4,1,3.8,2.2,7.4,7,0,0,High,Neutral,0,5,54,66,D,1
+STU-000840,11,17,Female,Public,Suburban,Bachelor's,Middle,1,3,Medium,14.8,86.2,0,4.1,1.2,8.5,8.3,2,0,Medium,Neutral,0,4,54,64,D,1
+STU-000841,9,14,Male,Private,Suburban,Doctorate,High,1,3.3,Low,7.5,89.6,0,5.7,3.4,7.3,3.8,1,4,Medium,Neutral,0,4,70,71,C,1
+STU-000842,10,15,Female,Private,Suburban,High school,Low,1,8.7,Medium,14.6,94.5,0,3.6,2.3,8.1,3.2,1,0,High,Negative,0,2,48,64,D,1
+STU-000843,9,15,Female,Public,Suburban,High school,Middle,1,8.1,High,21.7,83.7,0,3.9,1.9,6.8,5.6,0,0,Low,Negative,0,5,70,72,C,1
+STU-000844,12,17,Male,Public,Rural,High school,Low,1,30.6,Low,6.2,87.2,1,7.5,4.9,6.1,4.1,1,0,Medium,Neutral,0,4,80,66,D,1
+STU-000845,12,17,Female,Public,Urban,Some college,Middle,1,2.5,High,18.4,82.7,0,2.6,1.9,8.2,3.9,0,2,Medium,Negative,0,3,87,84,B,1
+STU-000846,12,17,Male,Private,Suburban,Some college,High,1,1.7,Low,6.7,88,0,4.8,3,7.1,5.4,2,0,Medium,Neutral,0,2,66,66,D,1
+STU-000847,9,15,Male,Private,Rural,High school,Middle,0,16.4,Medium,10.1,95.7,0,5.8,2.4,6.5,2.1,2,1,Medium,Neutral,0,3,71,68,D,1
+STU-000848,12,17,Male,Public,Urban,Bachelor's,Middle,1,3,High,13.2,88.2,0,4.1,2.2,8.8,4.8,2,0,Low,Negative,0,2,80,71,C,1
+STU-000849,9,14,Male,Public,Urban,Bachelor's,High,1,3.9,High,14.5,80,1,5.1,3.2,6.5,0,0,1,High,Positive,0,7,54,67,D,1
+STU-000850,11,17,Female,Public,Urban,High school,Middle,1,2.2,High,18.2,83.7,0,5.3,2.6,8.6,6.2,2,0,High,Neutral,0,5,69,79,C,1
+STU-000851,10,15,Male,Public,Rural,High school,Low,1,10.9,High,14.1,90.8,0,2,1.4,8.7,7.8,1,0,Medium,Neutral,0,4,79,85,B,1
+STU-000852,11,16,Female,Private,Urban,High school,Middle,1,0.6,High,16.9,92.7,0,7.2,2.7,6.4,7.1,1,8,Medium,Neutral,0,5,87,86,B,1
+STU-000853,9,15,Female,Public,Urban,High school,Middle,1,4.4,High,21.9,87.1,1,0.5,0.2,8.1,7,3,2,Medium,Negative,0,7,40,61,D,1
+STU-000854,10,15,Female,Private,Suburban,High school,Low,1,8.5,Medium,12.4,85,0,3.4,0.9,7.4,6.3,1,4,Medium,Negative,0,5,75,72,C,1
+STU-000855,12,17,Male,Public,Suburban,Bachelor's,High,1,9.2,Low,10.4,88.7,0,7.3,5.5,7.5,0,0,8,Medium,Positive,0,5,74,73,C,1
+STU-000856,12,17,Female,Public,Suburban,Bachelor's,Middle,1,3.8,Medium,18.4,84.9,1,5.8,1.7,5.9,2.6,1,0,Low,Positive,1,9,73,65,D,1
+STU-000857,11,17,Female,Public,Rural,Bachelor's,Middle,1,29.2,Medium,14.8,92.2,1,3.2,1,7.6,4.6,1,0,Low,Neutral,0,7,93,92,A,1
+STU-000858,9,14,Female,Public,Rural,High school,Low,1,14.6,High,12.3,94.8,1,3.8,1.5,7.2,1.2,1,0,Medium,Positive,0,6,47,66,D,1
+STU-000859,11,16,Male,Public,Urban,Bachelor's,Middle,1,4.7,Medium,15.5,90,0,6.2,2.4,7.3,5.5,1,0,High,Positive,0,5,78,89,B,1
+STU-000860,10,16,Female,Private,Urban,Bachelor's,Middle,1,3.2,Low,9.7,87,0,4.5,2.6,7,0.8,1,0,High,Negative,0,3,68,61,D,1
+STU-000861,9,14,Female,Private,Rural,High school,Low,1,30.8,Medium,17.5,88.7,0,8,5.4,7.5,2.2,0,0,Medium,Positive,0,4,63,65,D,1
+STU-000862,11,16,Female,Public,Urban,Doctorate,High,1,2.5,Low,1.5,84.5,1,6.3,3.5,6.1,1.6,1,0,Medium,Positive,0,5,72,65,D,1
+STU-000863,10,15,Male,Public,Rural,High school,Low,1,18.3,Medium,6.5,86,0,3.5,2.2,7.4,2.6,1,0,High,Neutral,1,4,81,74,C,1
+STU-000864,9,15,Female,Public,Suburban,Master's,Middle,1,11,Low,12.2,79.8,0,4.2,2,8.5,4.3,2,0,Low,Neutral,0,2,49,59,F,0
+STU-000865,9,15,Male,Public,Suburban,Some college,Low,1,10.3,Low,10.9,87.9,1,5.3,2.3,7.3,2.5,1,0,High,Negative,0,5,74,70,C,1
+STU-000866,9,14,Male,Public,Rural,Master's,Middle,0,3.9,Medium,9.3,82.7,0,2.5,0.9,8.1,2.5,3,0,Medium,Negative,0,5,78,71,C,1
+STU-000867,11,16,Male,Public,Rural,Bachelor's,High,0,12.6,Medium,10.6,84,1,8.4,2.5,5.8,3.6,1,6,Medium,Neutral,0,5,95,78,C,1
+STU-000868,11,16,Female,Public,Urban,Bachelor's,Middle,1,2.1,Low,9.7,86.3,0,0.5,0.3,9.5,6.7,3,0,Medium,Neutral,0,2,55,68,D,1
+STU-000869,10,16,Female,Charter,Urban,Master's,Middle,1,0.8,Low,10.7,77.4,0,7.1,5.2,7.3,0,2,1,Medium,Positive,1,2,90,73,C,1
+STU-000870,9,14,Male,Public,Urban,Bachelor's,Middle,1,3.6,Medium,16,97.8,0,7.1,5.2,8.3,8.1,2,0,Medium,Neutral,1,6,57,68,D,1
+STU-000871,12,17,Male,Public,Urban,Master's,High,1,3,Medium,9.3,86.6,0,6,2.2,8,7.3,1,0,Low,Negative,0,3,62,54,F,0
+STU-000872,11,16,Female,Private,Urban,Master's,High,1,2.7,High,21.6,90.9,0,5.4,2.9,6.6,0.8,1,4,High,Neutral,0,7,69,79,C,1
+STU-000873,9,14,Female,Public,Urban,Some college,Low,0,3.7,Medium,11.1,87.4,0,4.9,2.7,6.5,6.4,0,0,Medium,Negative,0,6,49,45,F,0
+STU-000874,11,17,Female,Public,Suburban,Some college,Low,1,5.4,Medium,12,89,0,4.4,2.9,6.6,5.6,2,0,Medium,Positive,0,5,82,73,C,1
+STU-000875,9,15,Female,Public,Urban,Master's,Low,1,3.7,Medium,10.3,82.4,0,7.6,4,8.2,5.8,2,0,Medium,Neutral,0,5,87,75,C,1
+STU-000876,11,17,Male,Public,Urban,Doctorate,Middle,1,1.1,High,18.1,94.7,0,3.5,2.4,8.1,2.6,2,0,Medium,Neutral,0,4,84,94,A,1
+STU-000877,10,15,Female,Charter,Suburban,Some college,Middle,0,10.2,Medium,15.9,95.4,0,5.2,2.2,8.5,5.2,1,0,High,Positive,0,5,86,87,B,1
+STU-000878,12,17,Male,Public,Suburban,Master's,Middle,1,6.4,Medium,5.4,84,0,8.3,4.3,7.2,0.5,2,4,High,Positive,1,1,69,68,D,1
+STU-000879,12,17,Female,Public,Suburban,Some college,High,1,4.3,Low,8.4,86.1,0,6.9,1.9,6.9,5.9,2,2,Low,Neutral,0,3,60,56,F,0
+STU-000880,9,14,Male,Public,Suburban,Bachelor's,Middle,1,6.4,Medium,7.7,82.8,0,4,1.6,8.8,1,0,0,Medium,Neutral,0,1,70,63,D,1
+STU-000881,9,14,Female,Public,Urban,Master's,Middle,0,2,Medium,12.6,82.8,0,4.2,2.4,6.6,1.3,0,2,Medium,Negative,1,5,68,59,F,0
+STU-000882,9,14,Male,Public,Suburban,High school,High,1,12,Low,3.7,84.6,0,3.1,1.3,6.9,2.6,0,4,Medium,Positive,0,4,60,50,F,0
+STU-000883,12,17,Female,Public,Urban,Bachelor's,High,1,1.3,Medium,17,89,0,4.6,3.3,6.9,4.2,1,0,Medium,Neutral,0,7,64,77,C,1
+STU-000884,12,17,Male,Public,Suburban,Bachelor's,Middle,1,3.6,Medium,8.9,93.5,0,3.9,2.8,7.5,2.6,0,4,Medium,Neutral,1,3,75,67,D,1
+STU-000885,12,17,Female,Public,Suburban,Bachelor's,Middle,1,5.5,Medium,8.8,79.6,1,3.3,1.7,7,4.5,0,0,Medium,Negative,0,6,60,49,F,0
+STU-000886,9,14,Female,Public,Urban,High school,Middle,1,3,Medium,14.6,97.7,0,3.4,1.2,8,6.8,3,0,Medium,Neutral,0,4,81,83,B,1
+STU-000887,12,17,Female,Private,Urban,Doctorate,High,1,2.7,Medium,11.8,92.5,0,5.3,3.8,8.6,4,4,0,Medium,Negative,0,2,75,75,C,1
+STU-000888,10,16,Female,Public,Suburban,High school,Middle,1,8.7,High,24.2,84.1,0,7.8,2.3,6.3,2.8,1,2,Medium,Neutral,0,6,49,63,D,1
+STU-000889,12,17,Female,Public,Suburban,Master's,Middle,1,1.1,Low,14.3,94.7,0,5.7,1.7,6.7,1.6,1,0,Medium,Positive,0,5,57,64,D,1
+STU-000890,10,15,Female,Private,Urban,High school,Middle,1,1.4,Medium,13.6,84.3,0,5.4,2.8,8.3,0,2,2,Medium,Negative,0,6,65,67,D,1
+STU-000891,12,17,Male,Public,Rural,High school,Low,0,17.3,Medium,14.5,93.9,1,1.9,1.4,7.2,4.7,2,0,High,Neutral,0,6,38,62,D,1
+STU-000892,9,15,Male,Charter,Rural,Some college,Low,1,30.4,Medium,1.1,92.7,1,1.7,0.5,8.2,10.7,2,0,High,Neutral,0,4,62,64,D,1
+STU-000893,10,15,Male,Public,Urban,Bachelor's,Middle,1,0.6,Medium,19.6,82.1,0,8.1,4.1,6.2,0,1,0,Medium,Positive,0,5,85,83,B,1
+STU-000894,10,16,Male,Charter,Suburban,Bachelor's,Middle,1,8,Medium,15.1,92.4,0,0.5,0.3,7.3,4.3,0,0,High,Positive,0,6,51,66,D,1
+STU-000895,11,16,Female,Public,Urban,Bachelor's,Middle,1,2.5,Low,8.3,84.7,0,2.6,1.3,8.7,3.5,1,1,High,Neutral,0,4,50,61,D,1
+STU-000896,11,17,Male,Public,Urban,High school,Low,1,1.7,High,8.8,89.8,0,3,1.9,8.8,7.9,2,0,Medium,Neutral,0,4,65,67,D,1
+STU-000897,11,17,Male,Public,Suburban,Some college,High,1,4.8,High,18.3,78.1,1,1.4,0.6,6.9,0.7,2,0,Medium,Neutral,0,7,59,65,D,1
+STU-000898,12,17,Male,Public,Urban,High school,Middle,1,4.3,Medium,15.6,77.4,1,5,3.2,8.2,3.3,1,4,High,Negative,0,7,49,61,D,1
+STU-000899,11,17,Female,Public,Rural,High school,Middle,1,32,High,12.7,79.4,1,4,1.6,6.2,4.7,2,1,Medium,Positive,0,7,49,68,D,1
+STU-000900,12,17,Female,Charter,Rural,Bachelor's,Low,1,24.5,Medium,15.3,78.5,0,7.3,3.9,6.6,4.6,0,0,Low,Neutral,0,5,72,70,C,1
+STU-000901,11,16,Female,Public,Urban,Doctorate,High,1,0.9,Medium,7.9,82.8,0,6.7,5,7.7,6.5,2,6,Medium,Positive,0,2,61,61,D,1
+STU-000902,11,17,Male,Public,Urban,High school,Middle,1,4.6,Low,10,83.9,0,5.3,2.4,7.7,5.2,0,1,Medium,Neutral,0,3,81,66,D,1
+STU-000903,11,17,Male,Public,Urban,Master's,Middle,1,0.8,Medium,17.9,96.1,1,3.5,2.2,7.8,5.1,1,0,Medium,Positive,0,8,53,71,C,1
+STU-000904,9,14,Male,Public,Rural,Bachelor's,High,0,19.5,Low,4.8,90.4,0,6.3,4.1,7.8,6.4,1,0,Medium,Neutral,0,3,93,74,C,1
+STU-000905,9,14,Male,Public,Urban,Bachelor's,Middle,1,1.9,Medium,16.6,89.1,0,5.2,1.6,7.9,6.1,0,0,Medium,Negative,0,5,61,67,D,1
+STU-000906,9,14,Female,Public,Suburban,Master's,Middle,1,3.1,High,11.4,86.8,0,3.6,1.8,7.8,1.9,1,2,Medium,Neutral,1,2,86,80,B,1
+STU-000907,10,15,Male,Public,Suburban,High school,Low,1,6,Medium,10,86.6,0,5,3.5,8.2,7.1,2,4,Medium,Negative,0,4,69,76,C,1
+STU-000908,10,16,Male,Public,Suburban,Bachelor's,Middle,1,7.5,Medium,8.4,89.9,0,4.2,2.6,7,6.4,0,0,Medium,Neutral,0,4,74,68,D,1
+STU-000909,9,14,Female,Public,Urban,Master's,Middle,1,4,Medium,5.8,97.8,0,6.3,2.1,7.6,0.9,3,0,Medium,Negative,0,2,91,83,B,1
+STU-000910,12,18,Female,Charter,Suburban,Master's,Middle,1,3.5,Medium,10.9,94.2,0,5.6,2.7,6.4,0.5,1,0,Low,Neutral,0,6,84,74,C,1
+STU-000911,9,14,Male,Public,Rural,Some college,Middle,1,7.4,Low,5.3,86.9,0,5,2.2,6.9,0.4,1,0,Medium,Positive,0,2,80,75,C,1
+STU-000912,10,16,Female,Public,Urban,Master's,Middle,1,3.4,Medium,8.1,91.4,0,6.8,1.8,7.3,1,2,1,Low,Positive,0,4,88,79,C,1
+STU-000913,11,16,Male,Public,Suburban,Bachelor's,Middle,1,4.6,High,8.2,91.4,0,10,5.8,6.9,4.7,2,0,Medium,Negative,0,3,74,71,C,1
+STU-000914,9,15,Female,Public,Urban,High school,Low,1,3.4,Medium,4.7,97.5,0,2.8,1.4,7.1,1.5,0,0,Medium,Neutral,0,3,71,60,D,1
+STU-000915,12,17,Female,Public,Rural,Bachelor's,High,1,31.6,Medium,8.3,82.5,1,2,1.1,7.3,4.8,2,0,Low,Negative,0,6,93,77,C,1
+STU-000916,10,15,Female,Public,Suburban,Bachelor's,Middle,1,7.8,Medium,11.8,83.8,0,7.6,4.3,7.8,5.2,0,2,Medium,Neutral,0,3,67,75,C,1
+STU-000917,10,15,Female,Private,Suburban,Some college,High,1,5.8,Medium,18.2,86.1,0,4.5,2.1,8.3,4.5,3,6,High,Neutral,0,3,69,88,B,1
+STU-000918,12,17,Female,Public,Suburban,Bachelor's,Middle,1,2.2,Low,0,91.3,0,3.8,2.7,8.1,6.4,0,8,Medium,Neutral,0,2,65,59,F,0
+STU-000919,10,15,Non-binary,Private,Rural,Bachelor's,High,1,15.2,Medium,9.8,95.9,0,3.1,2.2,8.8,7,2,0,High,Neutral,0,3,73,76,C,1
+STU-000920,12,17,Male,Public,Suburban,High school,Low,1,8.6,High,24,92.3,0,5.9,3.3,7.3,7.5,2,0,Medium,Neutral,0,6,68,78,C,1
+STU-000921,12,18,Female,Public,Rural,Bachelor's,High,0,18.6,Low,5.2,94.4,0,4.1,1.8,7.6,5.7,0,0,High,Neutral,0,4,84,75,C,1
+STU-000922,11,16,Female,Public,Suburban,Master's,High,1,6.3,Low,7.6,80.1,0,3.8,1.9,7.8,3.9,1,0,High,Positive,1,4,71,58,F,0
+STU-000923,9,14,Male,Charter,Suburban,High school,Middle,1,4.3,Low,11.5,83.4,0,4.2,1.8,8.4,0.6,3,4,High,Neutral,0,5,41,55,F,0
+STU-000924,12,17,Female,Private,Urban,High school,Middle,1,3.4,Medium,8.3,97.8,0,6.1,2.7,7.1,3.2,2,6,High,Neutral,0,3,66,67,D,1
+STU-000925,11,16,Male,Public,Urban,High school,Low,0,0.8,Medium,11.5,93.2,0,0.8,0.5,9.6,2.3,1,4,Medium,Neutral,0,4,65,74,C,1
+STU-000926,9,14,Female,Public,Urban,High school,Low,1,1.5,Medium,12.3,89.1,0,3,1.3,8.4,7.8,0,0,Medium,Positive,0,4,43,61,D,1
+STU-000927,10,16,Female,Public,Rural,Doctorate,Middle,1,9.2,High,22.9,88.9,0,2.7,0.8,9,2.2,1,0,Medium,Neutral,0,5,55,76,C,1
+STU-000928,9,14,Female,Public,Urban,Some college,Low,1,4.4,Medium,11.7,82.4,0,3,1,7,4.4,0,2,Medium,Neutral,0,6,61,62,D,1
+STU-000929,12,18,Female,Public,Rural,Bachelor's,Middle,1,15,High,12.5,91.9,1,5.6,1.8,7.7,4.2,1,0,Low,Neutral,0,6,52,58,F,0
+STU-000930,10,16,Male,Private,Suburban,Bachelor's,Middle,1,6.2,High,24.1,97.2,0,3.6,2,7.9,3.6,4,0,Medium,Neutral,0,5,88,100,A,1
+STU-000931,12,18,Male,Public,Urban,Bachelor's,Middle,1,3.7,High,17.4,95.7,0,3.1,0.8,7,6.2,2,4,Medium,Neutral,0,7,64,82,B,1
+STU-000932,11,16,Male,Public,Suburban,Bachelor's,High,1,6.4,Low,1.4,81.8,0,2.4,1.4,8.3,5.3,2,0,Low,Neutral,0,1,70,59,F,0
+STU-000933,11,16,Female,Private,Urban,Some college,High,1,2.9,High,7.9,89.7,0,2.3,1.4,8.7,7.6,0,0,High,Negative,0,4,78,72,C,1
+STU-000934,9,15,Female,Public,Urban,Doctorate,High,1,1.4,High,8.6,86.5,0,4.1,1.1,8.9,7.1,0,0,High,Negative,0,2,93,94,A,1
+STU-000935,9,15,Female,Public,Suburban,High school,Low,1,10.3,High,15.9,91.7,1,2.8,0.9,7.1,2.8,4,0,Medium,Neutral,0,8,75,79,C,1
+STU-000936,12,17,Female,Public,Urban,Bachelor's,Middle,1,4.9,Medium,4.1,95.7,0,4.4,2.1,7.4,4.3,2,2,Medium,Negative,0,4,85,73,C,1
+STU-000937,9,14,Male,Public,Suburban,Bachelor's,Low,1,11.7,Medium,12.2,92.3,0,6.2,2.2,7.5,6,1,1,Medium,Negative,1,4,43,48,F,0
+STU-000938,9,14,Male,Public,Urban,High school,Middle,1,2.1,Low,10.9,82.5,1,4.3,1.6,6.8,3.9,4,0,High,Negative,0,6,84,69,D,1
+STU-000939,9,14,Male,Public,Rural,Bachelor's,Low,1,28,High,13.9,92.9,0,5.4,3.3,6.7,4.7,4,0,Medium,Neutral,0,4,51,73,C,1
+STU-000940,11,16,Male,Public,Suburban,Some college,Middle,1,1.6,High,11.8,85.5,0,3.1,1.6,8.2,6.5,2,0,High,Neutral,1,3,61,69,D,1
+STU-000941,11,16,Female,Public,Suburban,Some college,Middle,1,11.6,Medium,15.8,77.2,1,8.1,4.8,6.5,1.8,1,2,Medium,Neutral,0,6,71,63,D,1
+STU-000942,12,18,Male,Private,Suburban,Master's,High,1,3.8,Low,6.6,92.7,0,5.7,3.9,8.6,5.9,1,0,High,Neutral,0,1,67,73,C,1
+STU-000943,11,17,Male,Public,Suburban,Bachelor's,Low,1,1.3,Low,5.8,97.9,0,6.6,3.4,7.5,6.2,1,2,Medium,Negative,0,1,75,64,D,1
+STU-000944,11,16,Female,Public,Suburban,High school,High,1,1.4,Medium,6.4,98.8,0,3.4,2.1,6.8,7.8,1,2,High,Positive,0,1,51,71,C,1
+STU-000945,11,16,Male,Public,Urban,Bachelor's,Middle,1,3.7,Medium,14.6,91.9,0,8.7,2.9,7.8,4.1,0,2,Medium,Neutral,0,6,72,78,C,1
+STU-000946,10,15,Female,Private,Suburban,Bachelor's,High,1,2.8,High,7.4,95.9,0,7,3.7,8.3,7,3,0,High,Neutral,0,2,89,88,B,1
+STU-000947,10,16,Female,Public,Urban,Bachelor's,Middle,1,4.8,Medium,16.7,85.8,0,5.1,2.8,7.6,0,2,8,Medium,Neutral,0,4,94,86,B,1
+STU-000948,10,15,Female,Public,Urban,Some college,Low,1,2.6,Medium,11.6,88.4,0,5.4,2.8,7.6,1.6,1,0,High,Neutral,0,5,48,60,D,1
+STU-000949,9,14,Male,Public,Suburban,Some college,Middle,1,4.8,Medium,1.8,83.3,0,4.4,3.3,7.5,6.3,3,4,Medium,Negative,0,1,85,73,C,1
+STU-000950,11,16,Female,Public,Suburban,Master's,High,1,10.4,Low,2.5,74.8,1,3,1.7,7.7,3.8,1,4,Medium,Negative,0,3,71,62,D,1
+STU-000951,9,14,Male,Public,Suburban,Bachelor's,High,1,8.6,Low,7.9,92.7,0,6.5,2.8,6.7,7,1,2,Low,Neutral,0,4,64,62,D,1
+STU-000952,11,16,Female,Public,Rural,Master's,Middle,0,7.2,Medium,11.1,81.3,1,5.9,2.8,6.7,2.5,3,0,Medium,Negative,0,6,68,56,F,0
+STU-000953,9,14,Male,Public,Rural,High school,Middle,0,8.1,Low,7.2,78,0,6.6,3.9,7.6,1.4,0,0,Medium,Neutral,0,1,54,49,F,0
+STU-000954,11,16,Male,Public,Suburban,Some college,Middle,1,4.6,Low,2.2,93.1,0,7,4,8.3,2.8,2,1,High,Positive,0,2,88,82,B,1
+STU-000955,10,15,Female,Public,Suburban,High school,Low,1,11.2,Low,6.2,85.5,0,1.9,1,8.9,1.7,2,0,High,Neutral,0,1,44,48,F,0
+STU-000956,12,18,Male,Public,Urban,Some college,High,1,2,Low,9.7,84.6,1,5,3,6.7,4.6,0,4,Medium,Negative,0,6,80,77,C,1
+STU-000957,9,14,Female,Public,Rural,Bachelor's,Middle,1,9.4,Medium,2.4,84.2,1,0.6,0.4,7.3,4.6,0,0,Medium,Positive,0,2,51,55,F,0
+STU-000958,10,16,Male,Private,Rural,Bachelor's,Low,1,14.8,High,6.7,93.1,0,5,1.7,7.3,4.2,1,0,Medium,Neutral,0,2,86,77,C,1
+STU-000959,11,16,Male,Public,Suburban,Doctorate,Middle,1,1.7,Medium,11.2,86.9,1,0.5,0.2,7.5,1.2,1,0,Low,Neutral,0,4,92,79,C,1
+STU-000960,10,15,Female,Private,Suburban,High school,Low,1,2.6,Medium,13.8,91.1,0,8.1,5.3,6.6,3.3,1,2,Medium,Negative,0,5,80,70,C,1
+STU-000961,11,16,Male,Public,Urban,High school,Middle,1,4.8,High,17.7,84.7,0,11.4,4.9,6.9,6.2,3,0,High,Positive,0,4,71,85,B,1
+STU-000962,12,17,Female,Public,Suburban,Master's,Middle,1,7.6,High,10.1,96.3,0,3.6,2.6,8.1,4.5,3,0,High,Neutral,0,4,65,79,C,1
+STU-000963,9,15,Female,Public,Suburban,Bachelor's,Middle,1,6.5,Medium,4.8,82.6,0,6.2,2.3,7.7,4.9,1,0,Medium,Positive,0,1,78,77,C,1
+STU-000964,9,14,Male,Public,Suburban,Bachelor's,Middle,0,7.5,Medium,9.6,87.7,0,8.9,6,6.2,11.7,2,0,Medium,Neutral,0,5,45,42,F,0
+STU-000965,10,15,Female,Public,Urban,Bachelor's,Middle,1,2.2,Medium,9.1,87.6,0,2.4,1.3,7,0,2,0,Medium,Positive,0,3,78,80,B,1
+STU-000966,12,18,Male,Public,Suburban,High school,High,1,6.4,Medium,13.4,84.7,1,4.7,2.4,7.4,3.1,1,2,High,Negative,0,5,57,65,D,1
+STU-000967,12,17,Male,Public,Suburban,Bachelor's,Middle,1,6.2,Low,8.4,97.8,0,5.2,1.8,8.2,4.9,1,1,Medium,Neutral,0,3,77,81,B,1
+STU-000968,9,14,Female,Private,Suburban,Doctorate,High,1,11.6,Low,6.2,80,0,6.6,2.6,6.9,9,1,0,Medium,Neutral,0,2,84,63,D,1
+STU-000969,12,18,Female,Public,Suburban,Bachelor's,Middle,1,8.8,High,18.9,88.1,0,8.1,4.3,5.8,3,2,1,Medium,Neutral,0,6,52,65,D,1
+STU-000970,11,16,Female,Public,Rural,Bachelor's,High,1,13.3,Medium,5.9,91.2,1,1.8,0.7,7.6,8.8,2,0,Low,Neutral,0,3,69,62,D,1
+STU-000971,11,17,Female,Public,Suburban,Bachelor's,Middle,1,6.8,Medium,15.8,89.9,0,2.1,0.9,9.1,6.6,1,0,High,Neutral,0,3,46,60,D,1
+STU-000972,12,17,Male,Private,Urban,Some college,Middle,1,2.8,Medium,3.8,88,0,3.7,1.5,6.7,8.8,3,1,High,Neutral,0,2,84,81,B,1
+STU-000973,9,14,Female,Public,Suburban,Bachelor's,Middle,1,9.9,Medium,9.4,87.4,0,8.6,6.4,7,5,1,0,High,Neutral,0,3,47,53,F,0
+STU-000974,12,17,Male,Public,Suburban,Bachelor's,High,1,2.3,Low,4.2,81.9,0,0.7,0.3,8.8,2.8,2,6,High,Neutral,0,1,72,72,C,1
+STU-000975,12,18,Male,Public,Urban,High school,High,1,2,Medium,16.2,86.9,0,5,3.7,8.7,3.3,1,0,High,Positive,0,4,48,75,C,1
+STU-000976,10,15,Male,Private,Suburban,High school,Low,1,8,High,26.2,85.4,0,5.3,2.5,7.6,3,2,8,Medium,Positive,0,8,84,100,A,1
+STU-000977,11,16,Female,Private,Urban,Bachelor's,High,1,2.8,High,19.8,94.9,0,3.6,2.6,7.7,4.2,4,6,Medium,Neutral,0,6,59,87,B,1
+STU-000978,11,16,Female,Public,Suburban,High school,Middle,1,11.8,Medium,14.5,90.8,0,5.4,3.7,7.7,6.2,0,0,High,Neutral,0,6,40,64,D,1
+STU-000979,12,17,Female,Public,Suburban,Bachelor's,Low,1,9.8,Medium,10.6,87.5,1,3.4,2.2,7.7,0,0,2,Medium,Positive,0,5,79,72,C,1
+STU-000980,12,17,Female,Public,Rural,Bachelor's,Low,1,32.7,High,21.1,94.6,1,4.5,2.1,7,9,0,0,High,Neutral,0,8,60,84,B,1
+STU-000981,12,17,Female,Private,Suburban,High school,Low,1,12,Medium,17.8,97.3,0,5.2,1.8,6.4,5.8,3,1,High,Neutral,0,7,77,85,B,1
+STU-000982,10,15,Male,Private,Rural,High school,Middle,1,3.1,Medium,7,82.8,0,6.5,3.2,7.9,5.7,2,2,Low,Neutral,0,4,75,60,D,1
+STU-000983,12,17,Male,Public,Rural,Bachelor's,High,1,23.9,Low,8.4,74.1,1,0.5,0.3,8.3,5.8,3,1,Medium,Neutral,0,5,77,72,C,1
+STU-000984,11,16,Male,Public,Urban,Bachelor's,High,1,4,Medium,12.3,84.3,1,1,0.3,6.9,3.9,2,0,Medium,Positive,0,6,97,87,B,1
+STU-000985,10,16,Male,Public,Urban,Master's,High,1,1.4,Medium,11.8,93.4,0,3.5,1.7,8.4,3.7,0,0,Medium,Neutral,0,5,53,67,D,1
+STU-000986,11,17,Female,Public,Urban,High school,Middle,1,2.5,Low,10.3,95.5,0,3.2,1.5,8.5,5,0,0,Medium,Neutral,0,1,57,71,C,1
+STU-000987,11,16,Male,Public,Suburban,Bachelor's,Middle,1,6.2,High,22.7,85.5,0,4.6,3.1,8.6,3,2,0,High,Neutral,0,6,90,100,A,1
+STU-000988,9,14,Male,Public,Rural,High school,Low,1,26.9,Medium,17.1,96.5,0,3.2,0.8,8.5,4.2,1,0,High,Neutral,0,6,70,92,A,1
+STU-000989,12,18,Female,Charter,Urban,Doctorate,High,1,1.3,Medium,17.6,87.2,0,7,2.6,6.3,0,1,2,High,Neutral,1,5,75,74,C,1
+STU-000990,12,17,Male,Public,Urban,Master's,High,1,1.8,High,19.6,88.9,0,5.8,2.6,8.5,4.3,2,6,High,Positive,1,3,55,72,C,1
+STU-000991,9,14,Male,Public,Rural,Doctorate,Middle,0,5.7,Medium,14.2,95.6,0,5.2,3.1,8.1,4.7,0,0,Medium,Neutral,0,6,73,78,C,1
+STU-000992,11,17,Male,Public,Urban,Some college,Low,1,3,Medium,15.5,88.1,1,4.7,2.6,7.2,2,1,0,Medium,Neutral,0,7,65,73,C,1
+STU-000993,10,15,Male,Public,Urban,Bachelor's,High,1,2.7,Medium,9.6,88.4,0,5.6,3.1,8,6.2,1,0,Medium,Neutral,0,5,65,76,C,1
+STU-000994,11,17,Female,Public,Urban,Bachelor's,High,1,4.5,Low,3.4,94.2,0,3.1,0.9,8.8,7.4,0,1,Medium,Negative,0,3,88,75,C,1
+STU-000995,12,18,Female,Public,Suburban,High school,High,1,5,Medium,7.2,89.6,0,5.9,2.6,7.2,6.2,3,4,High,Positive,0,2,73,80,B,1
+STU-000996,9,14,Female,Private,Urban,Master's,Middle,1,0.6,High,18.5,98.7,0,3.6,2.6,7.1,4.9,0,0,High,Negative,0,5,74,80,B,1
+STU-000997,9,15,Male,Public,Urban,Master's,Middle,1,0.4,Medium,20.8,94.6,0,2.8,0.9,7.6,5,2,0,Medium,Positive,1,7,77,80,B,1
+STU-000998,11,17,Non-binary,Public,Urban,Master's,Middle,1,5,Low,6.7,84,0,4.3,1.8,6.6,4.8,1,2,Medium,Neutral,0,3,67,53,F,0
+STU-000999,12,18,Female,Public,Urban,High school,Low,1,1.4,Medium,20.3,90.8,0,4.8,2.3,8.8,5.8,0,2,Medium,Neutral,0,6,48,68,D,1
+STU-001000,10,16,Female,Public,Urban,Bachelor's,Middle,1,1,Low,7.2,87.7,0,3.2,0.8,6.9,1.3,0,0,Medium,Neutral,0,5,70,69,D,1

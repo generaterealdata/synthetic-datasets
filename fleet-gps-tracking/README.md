@@ -2,6 +2,8 @@
 
 **400K GPS pings on 6,000 delivery trips, with speed, heading and odometer.**
 
+> **Made with [GenerateRealData](https://www.generaterealdata.com?ref=github).** You can create your own realistic datasets like this one in minutes, from a single table to a full database with many linked tables. Just describe what you need in plain English, or upload your SQL schema. IDs match across tables, totals add up, and your business rules hold on every row. With 232 data types and 222 built-in generators, it has one of the largest libraries of any test data generator. **Try it free at [www.generaterealdata.com](https://www.generaterealdata.com?ref=github)**, or write to support@generaterealdata.com.
+
 A delivery fleet of 200 vans and 300 drivers working from five depots in Chicago's western suburbs during September 2026. Each of the 6,000 trips is a continuous track of GPS pings 30 seconds apart: position, speed, heading, odometer and geofence events from leaving the depot to coming back.
 
 | | |

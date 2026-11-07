@@ -2,6 +2,8 @@
 
 **190K rows: policyholders, vehicles, policies, claims and claim payments.**
 
+> **Made with [GenerateRealData](https://www.generaterealdata.com?ref=github).** You can create your own realistic datasets like this one in minutes, from a single table to a full database with many linked tables. Just describe what you need in plain English, or upload your SQL schema. IDs match across tables, totals add up, and your business rules hold on every row. With 232 data types and 222 built-in generators, it has one of the largest libraries of any test data generator. **Try it free at [www.generaterealdata.com](https://www.generaterealdata.com?ref=github)**, or write to support@generaterealdata.com.
+
 A US auto insurer writing one-year policies from January 2023, seen as of 30 September 2026. Thirty thousand policyholders in thirteen states insure 37,000 vehicles, and 50,000 claims move from filed to paid or denied. Perils follow geography: hail in the plains states, flood on the Gulf coast. All people and vehicles are fictional.
 
 | | |

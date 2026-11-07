@@ -2,6 +2,8 @@
 
 **500K rows of orders, items, payments, shipments and returns that add up.**
 
+> **Made with [GenerateRealData](https://www.generaterealdata.com?ref=github).** You can create your own realistic datasets like this one in minutes, from a single table to a full database with many linked tables. Just describe what you need in plain English, or upload your SQL schema. IDs match across tables, totals add up, and your business rules hold on every row. With 232 data types and 222 built-in generators, it has one of the largest libraries of any test data generator. **Try it free at [www.generaterealdata.com](https://www.generaterealdata.com?ref=github)**, or write to support@generaterealdata.com.
+
 An online outdoor-gear store, from 1 January 2024 to 30 September 2026. Customers in twelve countries buy tents, boots and backpacks through the web shop, the app, a marketplace and a physical store. Seven tables hold the whole order lifecycle: who bought, what was in the basket, how it was paid, when it shipped and what came back.
 
 | | |

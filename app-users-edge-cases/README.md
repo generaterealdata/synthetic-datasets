@@ -2,6 +2,8 @@
 
 **Seed data that breaks naive code: Unicode, injection strings, soft deletes.**
 
+> **Made with [GenerateRealData](https://www.generaterealdata.com?ref=github).** You can create your own realistic datasets like this one in minutes, from a single table to a full database with many linked tables. Just describe what you need in plain English, or upload your SQL schema. IDs match across tables, totals add up, and your business rules hold on every row. With 232 data types and 222 built-in generators, it has one of the largest libraries of any test data generator. **Try it free at [www.generaterealdata.com](https://www.generaterealdata.com?ref=github)**, or write to support@generaterealdata.com.
+
 Seed data for testing a multi-tenant web application: organizations, users, memberships, API tokens and an audit log. Most rows are ordinary. A deliberate share are the cases real applications trip over: names in Arabic, Hebrew, Chinese, Japanese, Korean, Cyrillic and Greek, emoji, one-character and 100-character names, leading and trailing spaces, SQL and HTML injection strings, plus-addressed emails, soft-deleted and never-logged-in users, expired and revoked tokens, IPv6 addresses.
 
 | | |

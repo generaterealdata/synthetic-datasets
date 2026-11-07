@@ -2,6 +2,8 @@
 
 **250K rows with planted defects, plus the clean version and an answer key.**
 
+> **Made with [GenerateRealData](https://www.generaterealdata.com?ref=github).** You can create your own realistic datasets like this one in minutes, from a single table to a full database with many linked tables. Just describe what you need in plain English, or upload your SQL schema. IDs match across tables, totals add up, and your business rules hold on every row. With 232 data types and 222 built-in generators, it has one of the largest libraries of any test data generator. **Try it free at [www.generaterealdata.com](https://www.generaterealdata.com?ref=github)**, or write to support@generaterealdata.com.
+
 The exports of an online shop, 1 January 2025 to 30 September 2026, with about 5% of rows deliberately broken. It comes in two versions generated from the same settings: a clean one where every rule holds, and a dirty one where placeholder text, impossible dates, wrong signs, values ten times too large, blanks and plausible-but-wrong values have been planted. An answer key lists every changed cell, so you can score your own cleaning.
 
 | | |

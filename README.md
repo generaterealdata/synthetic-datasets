@@ -1,6 +1,6 @@
 # Synthetic datasets
 
-**13 free, realistic, fully synthetic databases (4.6 million rows) for SQL practice, software testing, analytics and teaching.** Each one is a set of related tables whose keys match, totals add up and dates are in order, and each comes with the queries that prove it: 377 rule checks in all, and every one returns 0 broken rows.
+**14 free, realistic, fully synthetic databases (4.7 million rows) for SQL practice, software testing, analytics and teaching.** Each one is a set of related tables whose keys match, totals add up and dates are in order, and each comes with the queries that prove it: 388 rule checks in all, and every one returns 0 broken rows.
 
 No real person, company or transaction appears in any file, so the data can be used and shared without privacy approval. Licence: [CC BY 4.0](LICENSE).
 
@@ -19,6 +19,7 @@ No real person, company or transaction appears in any file, so the data can be u
 | [Synthetic Fleet GPS Tracking](fleet-gps-tracking/) | 4 | 404,052 | Trajectory analysis, geofencing, telematics testing | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/synthetic-fleet-gps-tracking) |
 | [500K AI Jobs & Salaries Dataset (2024-2026)](ai-job-market-salaries/) | 3 | 510,000 | Salary prediction and AI hiring analysis on one wide table | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/500k-ai-jobs-and-salaries-dataset) |
 | [Black Friday and Cyber Week Sales 2023-2025](black-friday-sales/) | 1 | 408,000 | Holiday sales analysis and return prediction | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/black-friday-and-cyber-week-sales) |
+| [Student Performance and Lifestyle](student-performance/) | 1 | 102,000 | Exam score prediction and teaching statistics | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/student-performance-and-lifestyle) |
 
 ## What is in each folder
 

@@ -2,6 +2,8 @@
 
 **500K interval readings from 100 homes and businesses with solar and EVs.**
 
+> **Made with [GenerateRealData](https://www.generaterealdata.com?ref=github).** You can create your own realistic datasets like this one in minutes, from a single table to a full database with many linked tables. Just describe what you need in plain English, or upload your SQL schema. IDs match across tables, totals add up, and your business rules hold on every row. With 232 data types and 222 built-in generators, it has one of the largest libraries of any test data generator. **Try it free at [www.generaterealdata.com](https://www.generaterealdata.com?ref=github)**, or write to support@generaterealdata.com.
+
 One hundred homes and small businesses in one city, each with a smart meter read every 15 minutes for 52 days from 1 August 2026. That is 4,998 consecutive readings per meter with no gaps and no repeats: energy taken from the grid, energy exported by rooftop solar, voltage, the time-of-use rate and the cost of every interval.
 
 | | |

@@ -1,0 +1,756 @@
+{
+ "dataset_type": "relational",
+ "tables": {
+  "students": {
+   "dataset_type": "tabular",
+   "columns": {
+    "student_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "if": "DEFAULT",
+       "parameters": {
+        "prefix": "STU-",
+        "start": 1,
+        "step": 1,
+        "padding": 6
+       }
+      }
+     ],
+     "unique": true
+    },
+    "grade_level": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 9,
+          "percentage": 25.0
+         },
+         {
+          "value": 10,
+          "percentage": 25.0
+         },
+         {
+          "value": 11,
+          "percentage": 25.0
+         },
+         {
+          "value": 12,
+          "percentage": 25.0
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "age": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "{grade_level} + 5 + if_else(random_int(1, 100) <= 70, 0, 1)"
+       }
+      }
+     ]
+    },
+    "gender": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Female",
+          "percentage": 49
+         },
+         {
+          "value": "Male",
+          "percentage": 49
+         },
+         {
+          "value": "Non-binary",
+          "percentage": 2
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "school_type": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Public",
+          "percentage": 78
+         },
+         {
+          "value": "Private",
+          "percentage": 16
+         },
+         {
+          "value": "Charter",
+          "percentage": 6
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "school_location": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Urban",
+          "percentage": 45
+         },
+         {
+          "value": "Suburban",
+          "percentage": 38
+         },
+         {
+          "value": "Rural",
+          "percentage": 17
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "parental_education": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "High school",
+          "percentage": 28
+         },
+         {
+          "value": "Some college",
+          "percentage": 22
+         },
+         {
+          "value": "Bachelor's",
+          "percentage": 30
+         },
+         {
+          "value": "Master's",
+          "percentage": 15
+         },
+         {
+          "value": "Doctorate",
+          "percentage": 5
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "family_income": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{parental_education} == 'High school'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Low",
+          "percentage": 50
+         },
+         {
+          "value": "Middle",
+          "percentage": 42
+         },
+         {
+          "value": "High",
+          "percentage": 8
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{parental_education} == 'Some college'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Low",
+          "percentage": 30
+         },
+         {
+          "value": "Middle",
+          "percentage": 52
+         },
+         {
+          "value": "High",
+          "percentage": 18
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Low",
+          "percentage": 14
+         },
+         {
+          "value": "Middle",
+          "percentage": 50
+         },
+         {
+          "value": "High",
+          "percentage": 36
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "internet_access": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{school_location} == 'Rural'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 82
+         },
+         {
+          "value": "false",
+          "percentage": 18
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "{family_income} == 'Low'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 88
+         },
+         {
+          "value": "false",
+          "percentage": 12
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 97
+         },
+         {
+          "value": "false",
+          "percentage": 3
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "distance_to_school_km": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "range",
+       "if": "{school_location} == 'Urban'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 0.3,
+          "max": 5,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "{school_location} == 'Suburban'",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 1,
+          "max": 12,
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "range",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "min": 3,
+          "max": 35,
+          "percentage": 100
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "motivation_level": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Low",
+          "percentage": 25
+         },
+         {
+          "value": "Medium",
+          "percentage": 50
+         },
+         {
+          "value": "High",
+          "percentage": 25
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "study_hours_per_week": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "gaussian",
+       "if": "{motivation_level} == 'Low'",
+       "parameters": {
+        "mean": 7,
+        "std_dev": 3.5,
+        "min_clip": 0,
+        "max_clip": 30
+       }
+      },
+      {
+       "generate_via": "gaussian",
+       "if": "{motivation_level} == 'High'",
+       "parameters": {
+        "mean": 17,
+        "std_dev": 5,
+        "min_clip": 2,
+        "max_clip": 40
+       }
+      },
+      {
+       "generate_via": "gaussian",
+       "if": "DEFAULT",
+       "parameters": {
+        "mean": 12,
+        "std_dev": 4.5,
+        "min_clip": 0,
+        "max_clip": 35
+       }
+      }
+     ]
+    },
+    "attendance_pct": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(100, max(50, random_float(82, 99) - if_else({part_time_job}, random_float(0, 6), 0) - if_else({motivation_level} == 'Low', random_float(0, 10), 0) - if_else({distance_to_school_km} > 20, random_float(0, 5), 0))), 1)"
+       }
+      }
+     ]
+    },
+    "part_time_job": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{grade_level} >= 11",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 28
+         },
+         {
+          "value": "false",
+          "percentage": 72
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 9
+         },
+         {
+          "value": "false",
+          "percentage": 91
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "screen_time_hours_per_day": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "gaussian",
+       "if": "DEFAULT",
+       "parameters": {
+        "mean": 4.6,
+        "std_dev": 2.1,
+        "min_clip": 0.5,
+        "max_clip": 12
+       }
+      }
+     ]
+    },
+    "social_media_hours_per_day": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(10, max(0, {screen_time_hours_per_day} * random_float(0.25, 0.75))), 1)"
+       }
+      }
+     ]
+    },
+    "sleep_hours_per_night": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(10, max(4, 8.6 - 0.2 * {screen_time_hours_per_day} - if_else({part_time_job}, 0.5, 0) + random_float(-1.2, 1.2))), 1)"
+       }
+      }
+     ]
+    },
+    "physical_activity_hours_per_week": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "gaussian",
+       "if": "DEFAULT",
+       "parameters": {
+        "mean": 4.2,
+        "std_dev": 2.6,
+        "min_clip": 0,
+        "max_clip": 15
+       }
+      }
+     ]
+    },
+    "extracurricular_activities": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 30
+         },
+         {
+          "value": 1,
+          "percentage": 34
+         },
+         {
+          "value": 2,
+          "percentage": 22
+         },
+         {
+          "value": 3,
+          "percentage": 10
+         },
+         {
+          "value": 4,
+          "percentage": 4
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "tutoring_sessions_per_month": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{school_type} == 'Private'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 45
+         },
+         {
+          "value": 1,
+          "percentage": 10
+         },
+         {
+          "value": 2,
+          "percentage": 12
+         },
+         {
+          "value": 4,
+          "percentage": 15
+         },
+         {
+          "value": 6,
+          "percentage": 10
+         },
+         {
+          "value": 8,
+          "percentage": 8
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 66
+         },
+         {
+          "value": 1,
+          "percentage": 8
+         },
+         {
+          "value": 2,
+          "percentage": 10
+         },
+         {
+          "value": 4,
+          "percentage": 9
+         },
+         {
+          "value": 6,
+          "percentage": 4
+         },
+         {
+          "value": 8,
+          "percentage": 3
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "teacher_quality": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{school_type} == 'Private'",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Low",
+          "percentage": 10
+         },
+         {
+          "value": "Medium",
+          "percentage": 50
+         },
+         {
+          "value": "High",
+          "percentage": 40
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Low",
+          "percentage": 16
+         },
+         {
+          "value": "Medium",
+          "percentage": 56
+         },
+         {
+          "value": "High",
+          "percentage": 28
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "peer_influence": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Negative",
+          "percentage": 20
+         },
+         {
+          "value": "Neutral",
+          "percentage": 50
+         },
+         {
+          "value": "Positive",
+          "percentage": 30
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "learning_disability": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 7
+         },
+         {
+          "value": "false",
+          "percentage": 93
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "stress_level": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(10, max(1, 2 + 0.18 * {study_hours_per_week} + if_else({part_time_job}, 1.5, 0) - 0.4 * ({sleep_hours_per_night} - 7) + random_float(-2, 2))))"
+       }
+      }
+     ]
+    },
+    "previous_score": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(100, max(20, 68 + if_else({parental_education} == 'High school', -4, if_else({parental_education} == 'Some college', -1, if_else({parental_education} == \"Bachelor's\", 2, if_else({parental_education} == \"Master's\", 4, if_else({parental_education} == 'Doctorate', 5, 0))))) + if_else({family_income} == 'Low', -3, if_else({family_income} == 'Middle', 0, if_else({family_income} == 'High', 3, 0))) + random_float(-25, 25))))"
+       }
+      }
+     ]
+    },
+    "exam_score": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(100, max(0, 16 + 0.6 * {previous_score} + 0.9 * min({study_hours_per_week}, 30) + 0.35 * ({attendance_pct} - 85) + 1.6 * ({sleep_hours_per_night} - 7) - 1.2 * max(0, {social_media_hours_per_day} - 3) + 0.5 * {tutoring_sessions_per_month} + if_else({teacher_quality} == 'Low', -3, if_else({teacher_quality} == 'High', 3, 0)) + if_else({peer_influence} == 'Negative', -3, if_else({peer_influence} == 'Positive', 2, 0)) + if_else({motivation_level} == 'Low', -3, if_else({motivation_level} == 'High', 3, 0)) - if_else({learning_disability}, 6, 0) - if_else({internet_access}, 0, 3) - 0.6 * max(0, {stress_level} - 6) + 0.25 * {physical_activity_hours_per_week} + random_float(-8, 8))))"
+       }
+      }
+     ]
+    },
+    "final_grade": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "if_else({exam_score} >= 90, 'A', if_else({exam_score} >= 80, 'B', if_else({exam_score} >= 70, 'C', if_else({exam_score} >= 60, 'D', 'F'))))"
+       }
+      }
+     ]
+    },
+    "passed": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "{exam_score} >= 60"
+       }
+      }
+     ]
+    }
+   },
+   "total_rows": 100000
+  }
+ },
+ "total_rows": 100000,
+ "dataset_name": "Student Performance and Lifestyle"
+}
