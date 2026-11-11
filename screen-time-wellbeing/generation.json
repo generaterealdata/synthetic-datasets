@@ -1,0 +1,23 @@
+{
+  "dataset": "screen-time-wellbeing",
+  "title": "Screen Time, Sleep and Mental Health",
+  "generator": "GenerateRealData",
+  "generator_url": "https://www.generaterealdata.com/industries/healthcare/",
+  "generated_on": "2026-10-27",
+  "mode": "schema",
+  "plan": "plan.json",
+  "schema": "schema.sql",
+  "seed": 20261515,
+  "rows_requested": 465000,
+  "rows_generated": 474300,
+  "rows_per_table": {
+    "people": 15300,
+    "daily_logs": 459000
+  },
+  "ai_written_fields": [],
+  "ai_rows_used": 0,
+  "anomalies": false,
+  "format": "csv",
+  "note": "delivered as CSV; the SQLite file holds the same values",
+  "licence": "CC-BY-4.0"
+}

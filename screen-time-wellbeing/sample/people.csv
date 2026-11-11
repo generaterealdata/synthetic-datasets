@@ -1,0 +1,34 @@
+person_id,age,gender,country,occupation,chronotype,has_children,fitness_level,typical_screen_hours,diagnosed_anxiety
+1,35,Female,India,Student,Intermediate,1,Medium,6,0
+2,46,Female,India,Office worker,Intermediate,0,Low,5.4,0
+3,23,Male,Australia,Healthcare worker,Intermediate,0,High,7.3,0
+4,30,Male,India,Teacher,Morning type,0,Low,5.2,0
+5,45,Male,Brazil,Healthcare worker,Intermediate,1,Low,2.1,0
+6,42,Male,Germany,Self-employed,Intermediate,0,Medium,6.5,0
+7,48,Female,United States,Office worker,Evening type,1,High,4,0
+8,30,Male,Canada,Office worker,Intermediate,0,High,8.3,0
+9,29,Female,United Kingdom,Healthcare worker,Morning type,1,Low,4.7,0
+10,32,Female,United States,Unemployed,Intermediate,0,Medium,5.7,0
+11,31,Female,United States,Healthcare worker,Intermediate,0,Low,7.5,0
+12,48,Female,United States,Software developer,Intermediate,1,Medium,3.5,0
+13,22,Male,United States,Student,Evening type,0,Low,6.9,0
+14,28,Female,India,Office worker,Evening type,0,Low,6,0
+15,24,Female,Brazil,Teacher,Evening type,0,Low,8.4,1
+16,49,Female,India,Teacher,Evening type,1,High,5.8,1
+17,17,Female,Brazil,Student,Intermediate,0,High,6,0
+18,30,Male,United States,Retail worker,Intermediate,0,High,7.5,0
+19,58,Female,Germany,Office worker,Morning type,0,Low,2.2,1
+20,23,Female,Germany,Software developer,Evening type,1,Medium,5.7,0
+21,36,Female,Australia,Retail worker,Morning type,0,Low,8.4,1
+22,20,Male,United Kingdom,Student,Evening type,0,Low,8,0
+23,27,Female,Canada,Retail worker,Morning type,0,Low,8.3,0
+24,28,Female,United States,Teacher,Intermediate,0,High,5.2,0
+25,43,Male,United States,Student,Intermediate,0,Low,3.6,0
+26,16,Male,United States,Student,Morning type,0,Medium,5.8,0
+27,32,Male,Australia,Software developer,Intermediate,1,Medium,5.5,0
+28,28,Male,India,Office worker,Intermediate,0,Low,4.9,0
+29,32,Female,Australia,Student,Morning type,0,Medium,8.5,0
+30,42,Male,Germany,Student,Intermediate,0,Low,2.7,0
+31,36,Female,India,Retail worker,Morning type,1,High,4.1,0
+32,30,Female,Canada,Student,Morning type,1,Low,4.3,0
+33,33,Female,United States,Software developer,Morning type,1,Medium,6.9,0

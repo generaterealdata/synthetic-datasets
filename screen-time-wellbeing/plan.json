@@ -1,0 +1,723 @@
+{
+ "dataset_type": "relational",
+ "tables": {
+  "people": {
+   "dataset_type": "tabular",
+   "columns": {
+    "person_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "if": "DEFAULT",
+       "parameters": {
+        "prefix": "",
+        "start": 1,
+        "step": 1,
+        "padding": 0
+       }
+      }
+     ],
+     "unique": true
+    },
+    "age": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "gaussian",
+       "if": "DEFAULT",
+       "parameters": {
+        "mean": 33,
+        "std_dev": 11,
+        "min_clip": 16,
+        "max_clip": 70
+       }
+      }
+     ]
+    },
+    "gender": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Female",
+          "percentage": 50
+         },
+         {
+          "value": "Male",
+          "percentage": 48
+         },
+         {
+          "value": "Non-binary",
+          "percentage": 2
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "country": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "United States",
+          "percentage": 34
+         },
+         {
+          "value": "India",
+          "percentage": 22
+         },
+         {
+          "value": "United Kingdom",
+          "percentage": 12
+         },
+         {
+          "value": "Canada",
+          "percentage": 9
+         },
+         {
+          "value": "Germany",
+          "percentage": 8
+         },
+         {
+          "value": "Australia",
+          "percentage": 7
+         },
+         {
+          "value": "Brazil",
+          "percentage": 8
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "occupation": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{age} <= 22",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Student",
+          "percentage": 100
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Office worker",
+          "percentage": 28
+         },
+         {
+          "value": "Software developer",
+          "percentage": 14
+         },
+         {
+          "value": "Healthcare worker",
+          "percentage": 12
+         },
+         {
+          "value": "Retail worker",
+          "percentage": 12
+         },
+         {
+          "value": "Teacher",
+          "percentage": 9
+         },
+         {
+          "value": "Self-employed",
+          "percentage": 12
+         },
+         {
+          "value": "Unemployed",
+          "percentage": 8
+         },
+         {
+          "value": "Student",
+          "percentage": 5
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "chronotype": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{age} < 25",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Evening type",
+          "percentage": 45
+         },
+         {
+          "value": "Intermediate",
+          "percentage": 45
+         },
+         {
+          "value": "Morning type",
+          "percentage": 10
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Morning type",
+          "percentage": 30
+         },
+         {
+          "value": "Intermediate",
+          "percentage": 48
+         },
+         {
+          "value": "Evening type",
+          "percentage": 22
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "has_children": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{age} < 25",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 5
+         },
+         {
+          "value": "false",
+          "percentage": 95
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 48
+         },
+         {
+          "value": "false",
+          "percentage": 52
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "fitness_level": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "Low",
+          "percentage": 35
+         },
+         {
+          "value": "Medium",
+          "percentage": 45
+         },
+         {
+          "value": "High",
+          "percentage": 20
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "typical_screen_hours": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(14, max(1, if_else({age} < 25, 7.5, if_else({age} < 40, 6, 4.5)) + random_float(-2.5, 2.5))), 1)"
+       }
+      }
+     ]
+    },
+    "diagnosed_anxiety": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": "true",
+          "percentage": 12
+         },
+         {
+          "value": "false",
+          "percentage": 88
+         }
+        ]
+       }
+      }
+     ]
+    }
+   },
+   "total_rows": 15000
+  },
+  "daily_logs": {
+   "dataset_type": "time_series",
+   "columns": {
+    "log_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "sequence",
+       "if": "DEFAULT",
+       "parameters": {
+        "prefix": "",
+        "start": 1,
+        "step": 1,
+        "padding": 0
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "person_id": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "foreign_key",
+       "if": "DEFAULT",
+       "parameters": {
+        "target_table": "people",
+        "target_column": "person_id",
+        "fk_distribution": "uniform"
+       }
+      }
+     ],
+     "scope": "entity"
+    },
+    "log_date": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "time_series_date",
+       "if": "DEFAULT",
+       "parameters": {
+        "start_date": "2026-08-03",
+        "frequency": "daily"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "day_of_week": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "if_else((date_diff_days({log_date}, '2024-01-01') % 7) == 0, 'Monday', if_else((date_diff_days({log_date}, '2024-01-01') % 7) == 1, 'Tuesday', if_else((date_diff_days({log_date}, '2024-01-01') % 7) == 2, 'Wednesday', if_else((date_diff_days({log_date}, '2024-01-01') % 7) == 3, 'Thursday', if_else((date_diff_days({log_date}, '2024-01-01') % 7) == 4, 'Friday', if_else((date_diff_days({log_date}, '2024-01-01') % 7) == 5, 'Saturday', if_else((date_diff_days({log_date}, '2024-01-01') % 7) == 6, 'Sunday', 'Sunday')))))))"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "is_weekend": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "(date_diff_days({log_date}, '2024-01-01') % 7) >= 5"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "age": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "person_id.age"
+       }
+      }
+     ],
+     "scope": "entity"
+    },
+    "gender": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "person_id.gender"
+       }
+      }
+     ],
+     "scope": "entity"
+    },
+    "occupation": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "person_id.occupation"
+       }
+      }
+     ],
+     "scope": "entity"
+    },
+    "chronotype": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "person_id.chronotype"
+       }
+      }
+     ],
+     "scope": "entity"
+    },
+    "has_children": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "person_id.has_children"
+       }
+      }
+     ],
+     "scope": "entity"
+    },
+    "fitness_level": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "person_id.fitness_level"
+       }
+      }
+     ],
+     "scope": "entity"
+    },
+    "diagnosed_anxiety": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "lookup",
+       "if": "DEFAULT",
+       "parameters": {
+        "path": "person_id.diagnosed_anxiety"
+       }
+      }
+     ],
+     "scope": "entity"
+    },
+    "work_hours": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(14, max(0, if_else({is_weekend}, if_else({occupation} == 'Student', 6.5, if_else({occupation} == 'Office worker', 8.5, if_else({occupation} == 'Healthcare worker', 9.5, if_else({occupation} == 'Software developer', 8.5, if_else({occupation} == 'Retail worker', 8, if_else({occupation} == 'Teacher', 8.5, if_else({occupation} == 'Self-employed', 7, if_else({occupation} == 'Unemployed', 0.5, 8)))))))) * random_float(0, 0.35), if_else({occupation} == 'Student', 6.5, if_else({occupation} == 'Office worker', 8.5, if_else({occupation} == 'Healthcare worker', 9.5, if_else({occupation} == 'Software developer', 8.5, if_else({occupation} == 'Retail worker', 8, if_else({occupation} == 'Teacher', 8.5, if_else({occupation} == 'Self-employed', 7, if_else({occupation} == 'Unemployed', 0.5, 8)))))))) + random_float(-1.5, 2)))), 1)"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "screen_time_hours": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(16, max(0.3, {person_id.typical_screen_hours} * if_else({is_weekend}, 1.25, 1) + random_float(-1.8, 1.8))), 1)"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "social_media_minutes": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(720, {screen_time_hours} * 60 * random_float(0.2, 0.55) + if_else({age} < 25, 30, 0)))"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "screen_after_10pm_minutes": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(240, max(0, {screen_time_hours} * random_float(3, 12) + if_else({chronotype} == 'Evening type', 45, if_else({chronotype} == 'Morning type', -20, 10)))))"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "caffeine_mg": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(max(0, if_else({occupation} == 'Healthcare worker' or {occupation} == 'Software developer', 240, 160) + random_float(-150, 150)))"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "alcohol_units": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "categorical",
+       "if": "{is_weekend} == True",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 55
+         },
+         {
+          "value": 1,
+          "percentage": 15
+         },
+         {
+          "value": 2,
+          "percentage": 14
+         },
+         {
+          "value": 3,
+          "percentage": 8
+         },
+         {
+          "value": 4,
+          "percentage": 5
+         },
+         {
+          "value": 6,
+          "percentage": 3
+         }
+        ]
+       }
+      },
+      {
+       "generate_via": "categorical",
+       "if": "DEFAULT",
+       "parameters": {
+        "distribution": [
+         {
+          "value": 0,
+          "percentage": 80
+         },
+         {
+          "value": 1,
+          "percentage": 12
+         },
+         {
+          "value": 2,
+          "percentage": 6
+         },
+         {
+          "value": 3,
+          "percentage": 2
+         }
+        ]
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "exercise_minutes": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(max(0, if_else({fitness_level} == 'High', 50, if_else({fitness_level} == 'Medium', 25, 8)) * random_float(0, 2) + if_else({is_weekend}, 10, 0)))"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "steps": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(2500 + {exercise_minutes} * 95 + random_int(0, 6500))"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "outdoor_minutes": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(max(0, if_else({is_weekend}, 75, 25) * random_float(0.2, 1.8)))"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "bedtime_hour": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(22.6 + if_else({chronotype} == 'Evening type', 1.2, if_else({chronotype} == 'Morning type', -0.8, 0)) + 0.006 * {screen_after_10pm_minutes} + if_else({is_weekend}, 0.7, 0) + random_float(-0.8, 0.8), 2) % 24"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "sleep_hours": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(11, max(3, 8.3 - 0.45 * max(0, if_else({bedtime_hour} < 12, {bedtime_hour} + 24, {bedtime_hour}) - 23) - 0.004 * {screen_after_10pm_minutes} - 0.0016 * {caffeine_mg} - if_else({has_children}, 0.4, 0) + if_else({is_weekend}, 0.6, 0) - 0.08 * {alcohol_units} + random_float(-0.9, 0.9))), 1)"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "sleep_quality": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(10, max(1, 5.5 + 0.9 * ({sleep_hours} - 7) - 0.008 * {screen_after_10pm_minutes} - 0.003 * {caffeine_mg} - 0.25 * {alcohol_units} + random_float(-1.5, 1.5))))"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "mood_score": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(10, max(1, 6.5 + 0.45 * ({sleep_hours} - 7) + 0.015 * {exercise_minutes} + 0.006 * {outdoor_minutes} - 0.35 * ({stress_level} - 5) - 0.12 * max(0, {screen_time_hours} - 7) + random_float(-1.3, 1.3))))"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "stress_level": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(10, max(1, 2.2 + 0.32 * {work_hours} - 0.55 * ({sleep_hours} - 7) + 0.004 * {social_media_minutes} - 0.012 * {exercise_minutes} - 0.004 * {outdoor_minutes} + if_else({diagnosed_anxiety}, 1.6, 0) + if_else({has_children}, 0.5, 0) + random_float(-1.5, 1.5))))"
+       }
+      }
+     ],
+     "scope": "event"
+    },
+    "productivity_score": {
+     "data_type": "string",
+     "rules": [
+      {
+       "generate_via": "calculated",
+       "if": "DEFAULT",
+       "parameters": {
+        "equation": "round(min(10, max(1, 5.5 + 0.35 * ({sleep_quality} - 5) - 0.3 * max(0, {stress_level} - 6) - 0.006 * max(0, {social_media_minutes} - 90) + random_float(-1.5, 1.5))))"
+       }
+      }
+     ],
+     "scope": "event"
+    }
+   },
+   "total_rows": 450000,
+   "entity_key": "person_id",
+   "entity_count": 15000,
+   "rows_per_entity": 30,
+   "frequency": "daily"
+  }
+ },
+ "total_rows": 465000,
+ "dataset_name": "Screen Time, Sleep and Mental Health"
+}
