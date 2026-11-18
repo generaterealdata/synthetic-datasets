@@ -1,0 +1,101 @@
+:ID(Merchant),merchant_id:string,name:string
+MER-01001,MER-01001,"Reyes, Guzman and Smith"
+MER-01002,MER-01002,Rodriguez Ltd
+MER-01003,MER-01003,Hernandez-Cardenas
+MER-01004,MER-01004,Peters Ltd
+MER-01005,MER-01005,"Gonzalez, Bowman and Powell"
+MER-01006,MER-01006,Hernandez-Salas
+MER-01007,MER-01007,Robles-Mcmahon
+MER-01008,MER-01008,Garrett-Dougherty
+MER-01009,MER-01009,Hernandez PLC
+MER-01010,MER-01010,Cordova-Thomas
+MER-01011,MER-01011,Merritt LLC
+MER-01012,MER-01012,"Flores, Stone and Boyd"
+MER-01013,MER-01013,"Turner, Barton and Williams"
+MER-01014,MER-01014,Watson-Smith
+MER-01015,MER-01015,"Villegas, Fitzgerald and Patrick"
+MER-01016,MER-01016,Garcia PLC
+MER-01017,MER-01017,Martinez-Lewis
+MER-01018,MER-01018,"Hooper, Wilson and Cox"
+MER-01019,MER-01019,"Combs, Lara and Avery"
+MER-01020,MER-01020,Jacobson-Huerta
+MER-01021,MER-01021,Benson LLC
+MER-01022,MER-01022,"Long, Lambert and Thomas"
+MER-01023,MER-01023,Young PLC
+MER-01024,MER-01024,Jarvis and Sons
+MER-01025,MER-01025,"Howell, Boyer and Williams"
+MER-01026,MER-01026,"Knight, Beard and Keith"
+MER-01027,MER-01027,Thomas-Jensen
+MER-01028,MER-01028,Collins Group
+MER-01029,MER-01029,Singleton-Curry
+MER-01030,MER-01030,Davis PLC
+MER-01031,MER-01031,Delacruz-Cervantes
+MER-01032,MER-01032,"Lozano, Rodriguez and Williams"
+MER-01033,MER-01033,Adams-Lee
+MER-01034,MER-01034,Flores PLC
+MER-01035,MER-01035,Hutchinson-Gibbs
+MER-01036,MER-01036,Smith-Richardson
+MER-01037,MER-01037,Stevens and Sons
+MER-01038,MER-01038,Castillo-Wilson
+MER-01039,MER-01039,Edwards-Murphy
+MER-01040,MER-01040,Smith LLC
+MER-01041,MER-01041,"Christensen, Ramirez and Romero"
+MER-01042,MER-01042,"Wall, Martin and Johnson"
+MER-01043,MER-01043,Allen-Scott
+MER-01044,MER-01044,"Ochoa, Rangel and Crawford"
+MER-01045,MER-01045,Mcdowell Group
+MER-01046,MER-01046,"Young, Keller and Wood"
+MER-01047,MER-01047,Williams Inc
+MER-01048,MER-01048,"Fox, Moss and Williams"
+MER-01049,MER-01049,Munoz LLC
+MER-01050,MER-01050,Howard LLC
+MER-01051,MER-01051,"Larsen, Brown and Ortiz"
+MER-01052,MER-01052,Hall-Castillo
+MER-01053,MER-01053,"Ortega, Jensen and Sanders"
+MER-01054,MER-01054,"Vang, Fields and Campbell"
+MER-01055,MER-01055,Brown-Knight
+MER-01056,MER-01056,Burton PLC
+MER-01057,MER-01057,Anderson-Willis
+MER-01058,MER-01058,"Barron, Armstrong and Martinez"
+MER-01059,MER-01059,Gonzalez Group
+MER-01060,MER-01060,Osborne Ltd
+MER-01061,MER-01061,Gray-Fitzgerald
+MER-01062,MER-01062,Garcia LLC
+MER-01063,MER-01063,Bryant PLC
+MER-01064,MER-01064,"Taylor, Williams and Hardy"
+MER-01065,MER-01065,Wilson-Carter
+MER-01066,MER-01066,Alexander-Cantrell
+MER-01067,MER-01067,"Anderson, Sims and Jackson"
+MER-01068,MER-01068,"Oconnor, Davis and Boyd"
+MER-01069,MER-01069,Bradley-Stephens
+MER-01070,MER-01070,"Lynch, Hammond and Johnson"
+MER-01071,MER-01071,Miller-Dougherty
+MER-01072,MER-01072,Williams PLC
+MER-01073,MER-01073,"Brown, Lynn and Ortiz"
+MER-01074,MER-01074,Pena-Gonzales
+MER-01075,MER-01075,"Mcintyre, King and Thompson"
+MER-01076,MER-01076,"Snow, Herring and Martinez"
+MER-01077,MER-01077,Grant-Parks
+MER-01078,MER-01078,Koch-Price
+MER-01079,MER-01079,Kim-Rivera
+MER-01080,MER-01080,"Cooper, Mcdonald and Crane"
+MER-01081,MER-01081,"Curtis, Velez and Davis"
+MER-01082,MER-01082,Lewis-Anderson
+MER-01083,MER-01083,"Lee, Williams and Cox"
+MER-01084,MER-01084,Ramos-Nunez
+MER-01085,MER-01085,Murillo-Miller
+MER-01086,MER-01086,Perry-Sexton
+MER-01087,MER-01087,Smith and Sons
+MER-01088,MER-01088,"Gray, Hunt and Washington"
+MER-01089,MER-01089,"Brown, Harmon and Stephens"
+MER-01090,MER-01090,"Galloway, Walker and Weeks"
+MER-01091,MER-01091,Knox Group
+MER-01092,MER-01092,"Kelly, Williams and Ruiz"
+MER-01093,MER-01093,Maldonado-Crawford
+MER-01094,MER-01094,Lopez Ltd
+MER-01095,MER-01095,"Kim, Ramirez and Walters"
+MER-01096,MER-01096,"Woodward, Brewer and Garcia"
+MER-01097,MER-01097,Flores-Hernandez
+MER-01098,MER-01098,Rogers Ltd
+MER-01099,MER-01099,Mccarty-Moore
+MER-01100,MER-01100,Johnson-Cook

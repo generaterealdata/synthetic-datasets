@@ -1,0 +1,36 @@
+{
+ "dataset": "Food Delivery NoSQL Database (MongoDB)",
+ "made_with": "GenerateRealData (https://www.generaterealdata.com), NoSQL documents mode, MongoDB target",
+ "design": "Drafted by AI from a plain-English description of a food delivery platform; see design.json",
+ "seed": 2026,
+ "documents_asked_for": {
+  "restaurant_menu_items": 7200,
+  "couriers": 2000,
+  "orders": 310000,
+  "reviews": 125000,
+  "restaurants": 300,
+  "customers": 58000
+ },
+ "documents": {
+  "couriers": 2040,
+  "customers": 59160,
+  "orders": 316200,
+  "restaurant_menu_items": 7344,
+  "restaurants": 306,
+  "reviews": 127500
+ },
+ "documents_total": 512550,
+ "records_with_embedded_documents": 1452495,
+ "generated_on": "2026-11-18",
+ "realism_rules_applied": [
+  "references meet at the same restaurant (menu items, courier city)",
+  "each dish once per order",
+  "each dish once per menu",
+  "each address label once per customer",
+  "each cuisine once per restaurant",
+  "coordinates and zip codes follow the city",
+  "emails follow the name",
+  "restaurant names read like restaurants",
+  "lunch and dinner peaks in order times"
+ ]
+}

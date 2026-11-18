@@ -1,0 +1,101 @@
+:ID(Branch),branch_id:string,branch_District:string,name:string
+BR-001,BR-001,Central Plaza,New York Central Plaza Branch #01
+BR-002,BR-002,Eastside,New York Eastside Branch #02
+BR-003,BR-003,Financial District,New York Financial District Branch #03
+BR-004,BR-004,North,New York North Branch #04
+BR-005,BR-005,North,New York North Branch #05
+BR-006,BR-006,Midtown,New York Midtown Branch #06
+BR-007,BR-007,Central Plaza,New York Central Plaza Branch #07
+BR-008,BR-008,Central Plaza,New York Central Plaza Branch #08
+BR-009,BR-009,Downtown,New York Downtown Branch #09
+BR-010,BR-010,Midtown,New York Midtown Branch #10
+BR-011,BR-011,Downtown,New York Downtown Branch #11
+BR-012,BR-012,Financial District,New York Financial District Branch #12
+BR-013,BR-013,Midtown,New York Midtown Branch #13
+BR-014,BR-014,South,New York South Branch #14
+BR-015,BR-015,Midtown,New York Midtown Branch #15
+BR-016,BR-016,Central Plaza,New York Central Plaza Branch #16
+BR-017,BR-017,South,New York South Branch #17
+BR-018,BR-018,Financial District,New York Financial District Branch #18
+BR-019,BR-019,Downtown,New York Downtown Branch #19
+BR-020,BR-020,North,New York North Branch #20
+BR-021,BR-021,Midtown,New York Midtown Branch #21
+BR-022,BR-022,Financial District,New York Financial District Branch #22
+BR-023,BR-023,North,New York North Branch #23
+BR-024,BR-024,Midtown,New York Midtown Branch #24
+BR-025,BR-025,Downtown,New York Downtown Branch #25
+BR-026,BR-026,South,New York South Branch #26
+BR-027,BR-027,Midtown,New York Midtown Branch #27
+BR-028,BR-028,South,New York South Branch #28
+BR-029,BR-029,Eastside,New York Eastside Branch #29
+BR-030,BR-030,Eastside,New York Eastside Branch #30
+BR-031,BR-031,South,New York South Branch #31
+BR-032,BR-032,Midtown,New York Midtown Branch #32
+BR-033,BR-033,South,New York South Branch #33
+BR-034,BR-034,Midtown,New York Midtown Branch #34
+BR-035,BR-035,Downtown,New York Downtown Branch #35
+BR-036,BR-036,Downtown,New York Downtown Branch #36
+BR-037,BR-037,Financial District,New York Financial District Branch #37
+BR-038,BR-038,North,New York North Branch #38
+BR-039,BR-039,Eastside,New York Eastside Branch #39
+BR-040,BR-040,South,New York South Branch #40
+BR-041,BR-041,Downtown,New York Downtown Branch #41
+BR-042,BR-042,Central Plaza,New York Central Plaza Branch #42
+BR-043,BR-043,North,New York North Branch #43
+BR-044,BR-044,Midtown,New York Midtown Branch #44
+BR-045,BR-045,Westside,New York Westside Branch #45
+BR-046,BR-046,Downtown,New York Downtown Branch #46
+BR-047,BR-047,Financial District,New York Financial District Branch #47
+BR-048,BR-048,Financial District,New York Financial District Branch #48
+BR-049,BR-049,Westside,New York Westside Branch #49
+BR-050,BR-050,North,New York North Branch #50
+BR-051,BR-051,Midtown,New York Midtown Branch #51
+BR-052,BR-052,South,New York South Branch #52
+BR-053,BR-053,Financial District,New York Financial District Branch #53
+BR-054,BR-054,Midtown,New York Midtown Branch #54
+BR-055,BR-055,Downtown,New York Downtown Branch #55
+BR-056,BR-056,North,New York North Branch #56
+BR-057,BR-057,Central Plaza,New York Central Plaza Branch #57
+BR-058,BR-058,South,New York South Branch #58
+BR-059,BR-059,Westside,New York Westside Branch #59
+BR-060,BR-060,North,New York North Branch #60
+BR-061,BR-061,Financial District,New York Financial District Branch #61
+BR-062,BR-062,Midtown,New York Midtown Branch #62
+BR-063,BR-063,Eastside,New York Eastside Branch #63
+BR-064,BR-064,Central Plaza,New York Central Plaza Branch #64
+BR-065,BR-065,Westside,New York Westside Branch #65
+BR-066,BR-066,Downtown,New York Downtown Branch #66
+BR-067,BR-067,Financial District,New York Financial District Branch #67
+BR-068,BR-068,Downtown,New York Downtown Branch #68
+BR-069,BR-069,Midtown,New York Midtown Branch #69
+BR-070,BR-070,North,New York North Branch #70
+BR-071,BR-071,South,New York South Branch #71
+BR-072,BR-072,Midtown,New York Midtown Branch #72
+BR-073,BR-073,Midtown,New York Midtown Branch #73
+BR-074,BR-074,Downtown,New York Downtown Branch #74
+BR-075,BR-075,Downtown,New York Downtown Branch #75
+BR-076,BR-076,North,New York North Branch #76
+BR-077,BR-077,Westside,New York Westside Branch #77
+BR-078,BR-078,Downtown,New York Downtown Branch #78
+BR-079,BR-079,Midtown,New York Midtown Branch #79
+BR-080,BR-080,Financial District,New York Financial District Branch #80
+BR-081,BR-081,North,New York North Branch #81
+BR-082,BR-082,Financial District,New York Financial District Branch #82
+BR-083,BR-083,North,New York North Branch #83
+BR-084,BR-084,Westside,New York Westside Branch #84
+BR-085,BR-085,Midtown,New York Midtown Branch #85
+BR-086,BR-086,Midtown,New York Midtown Branch #86
+BR-087,BR-087,Westside,New York Westside Branch #87
+BR-088,BR-088,Downtown,New York Downtown Branch #88
+BR-089,BR-089,Downtown,New York Downtown Branch #89
+BR-090,BR-090,North,New York North Branch #90
+BR-091,BR-091,Financial District,New York Financial District Branch #91
+BR-092,BR-092,Eastside,New York Eastside Branch #92
+BR-093,BR-093,Westside,New York Westside Branch #93
+BR-094,BR-094,Financial District,New York Financial District Branch #94
+BR-095,BR-095,Financial District,New York Financial District Branch #95
+BR-096,BR-096,Financial District,New York Financial District Branch #96
+BR-097,BR-097,Downtown,New York Downtown Branch #97
+BR-098,BR-098,Financial District,New York Financial District Branch #98
+BR-099,BR-099,Westside,New York Westside Branch #99
+BR-100,BR-100,Financial District,New York Financial District Branch #00

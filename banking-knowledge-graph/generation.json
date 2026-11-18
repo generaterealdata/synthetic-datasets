@@ -1,0 +1,30 @@
+{
+ "dataset": "Banking and Payments Knowledge Graph (Neo4j)",
+ "made_with": "GenerateRealData (https://www.generaterealdata.com), knowledge graph mode, Neo4j target",
+ "design": "Drafted by AI from a plain-English description of a US retail bank (description.txt); see design.json",
+ "seed": 2026,
+ "count_asked_for": 2000000,
+ "records_charged": 2000000,
+ "records_made": 2040000,
+ "rows_per_table": {
+  "merchants": 28617,
+  "accounts": 95253,
+  "persons": 76243,
+  "joint_holder_of": 8585,
+  "referred": 14309,
+  "cities": 30,
+  "devices": 133374,
+  "businesses": 11446,
+  "paid": 523991,
+  "used_ip": 171496,
+  "signed_in": 238233,
+  "branches": 3781,
+  "merchant_categories": 10,
+  "cards": 104860,
+  "transferred_to": 523993,
+  "ip_addresses": 85747,
+  "director_of": 20032
+ },
+ "generated_on": "2026-11-18",
+ "repeatability": "generated twice with the same design and seed (datasets 2qE1u0m6DMsYxEnChxaO and yO2j2vnqsViOYqaCvvEA): all 33 files byte-identical"
+}

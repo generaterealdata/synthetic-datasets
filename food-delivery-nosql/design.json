@@ -1,0 +1,462 @@
+{
+ "_ai_per_record": 0,
+ "_backed": "relational",
+ "collections": {
+  "couriers": {
+   "count": 231,
+   "fields": {
+    "_id": {
+     "digits": 6,
+     "prefix": "ID-",
+     "type": "string"
+    },
+    "city": {
+     "type": "string",
+     "values": {
+      "Austin": 15,
+      "Chicago": 15,
+      "Los Angeles": 20,
+      "New York": 25,
+      "San Francisco": 15,
+      "Seattle": 10
+     }
+    },
+    "full_name": {
+     "type": "string"
+    },
+    "is_active": {
+     "type": "bool",
+     "values": {
+      "false": 12,
+      "true": 88
+     }
+    },
+    "joined_date": {
+     "from": "2022-06-01",
+     "to": "2025-12-31",
+     "type": "day"
+    },
+    "rating": {
+     "type": "double"
+    },
+    "vehicle_type": {
+     "type": "string",
+     "values": {
+      "bicycle": 17,
+      "car": 55,
+      "scooter": 28
+     }
+    }
+   }
+  },
+  "customers": {
+   "count": 1443,
+   "fields": {
+    "_id": {
+     "digits": 6,
+     "prefix": "ID-",
+     "type": "string"
+    },
+    "addresses": {
+     "_avg": 1.8,
+     "_planned": 2597,
+     "fields": {
+      "city": {
+       "type": "string",
+       "values": {
+        "Austin": 15,
+        "Chicago": 15,
+        "Los Angeles": 20,
+        "New York": 25,
+        "San Francisco": 15,
+        "Seattle": 10
+       }
+      },
+      "label": {
+       "type": "string",
+       "values": {
+        "home": 60,
+        "other": 12,
+        "work": 28
+       }
+      },
+      "latitude": {
+       "type": "double"
+      },
+      "longitude": {
+       "type": "double"
+      },
+      "street": {
+       "type": "string"
+      },
+      "zip_code": {
+       "type": "string"
+      }
+     },
+     "max": 1000,
+     "min": 0,
+     "of": "object",
+     "type": "array"
+    },
+    "email": {
+     "type": "string",
+     "unique": true
+    },
+    "full_name": {
+     "type": "string"
+    },
+    "loyalty_tier": {
+     "type": "string",
+     "values": {
+      "Bronze": 50,
+      "Gold": 15,
+      "Platinum": 5,
+      "Silver": 30
+     }
+    },
+    "phone": {
+     "optional": 0.15,
+     "type": "string"
+    },
+    "referral_code": {
+     "optional": 0.65,
+     "type": "string"
+    },
+    "signup_date": {
+     "from": "2023-01-01",
+     "to": "2025-12-31",
+     "type": "day"
+    }
+   }
+  },
+  "orders": {
+   "count": 3175,
+   "fields": {
+    "_id": {
+     "digits": 6,
+     "prefix": "ID-",
+     "type": "string"
+    },
+    "accepted_at": {
+     "note": "= add_minutes(placed_at, random_int(1, 8)); after customer_id.signup_date, courier_id.joined_date",
+     "type": "date"
+    },
+    "card": {
+     "fields": {
+      "brand": {
+       "note": "depends on other fields (business rule)",
+       "optional": 0.05,
+       "type": "string"
+      },
+      "last4": {
+       "note": "depends on other fields (business rule)",
+       "optional": 0.05,
+       "type": "string"
+      }
+     },
+     "type": "object"
+    },
+    "courier_id": {
+     "to": "couriers",
+     "type": "ref"
+    },
+    "customer_id": {
+     "to": "customers",
+     "type": "ref"
+    },
+    "delivered_at": {
+     "note": "depends on other fields (business rule)",
+     "optional": 0.05,
+     "type": "date"
+    },
+    "delivery_fee": {
+     "type": "decimal",
+     "values": {
+      "1.99": 25,
+      "2.99": 35,
+      "3.99": 25,
+      "4.99": 15
+     }
+    },
+    "discount": {
+     "type": "decimal",
+     "values": {
+      "0.0": 75,
+      "10.0": 5,
+      "2.0": 10,
+      "5.0": 10
+     }
+    },
+    "items": {
+     "_avg": 2.6,
+     "_planned": 8369,
+     "fields": {
+      "item_name": {
+       "note": "copied from menu_item_id.item_name",
+       "type": "string"
+      },
+      "line_total": {
+       "note": "= round(quantity * unit_price, 2)",
+       "type": "decimal"
+      },
+      "menu_item_id": {
+       "to": "restaurant_menu_items",
+       "type": "ref"
+      },
+      "quantity": {
+       "type": "int",
+       "values": {
+        "1": 68,
+        "2": 22,
+        "3": 7,
+        "4": 3
+       }
+      },
+      "unit_price": {
+       "note": "copied from menu_item_id.price",
+       "type": "decimal"
+      }
+     },
+     "max": 1000,
+     "min": 0,
+     "of": "object",
+     "type": "array"
+    },
+    "payment_method": {
+     "type": "string",
+     "values": {
+      "card": 65,
+      "cash": 10,
+      "wallet": 25
+     }
+    },
+    "picked_up_at": {
+     "note": "depends on other fields (business rule)",
+     "optional": 0.05,
+     "type": "date"
+    },
+    "placed_at": {
+     "from": "2025-01-01",
+     "note": "after customer_id.signup_date, courier_id.joined_date",
+     "to": "2026-03-31",
+     "type": "date"
+    },
+    "platform": {
+     "type": "string",
+     "values": {
+      "android": 38,
+      "ios": 48,
+      "web": 14
+     }
+    },
+    "restaurant_id": {
+     "to": "restaurants",
+     "type": "ref"
+    },
+    "status": {
+     "type": "string",
+     "values": {
+      "cancelled": 8,
+      "delivered": 92
+     }
+    },
+    "subtotal": {
+     "note": "sum of order_items: {line_total}",
+     "type": "decimal"
+    },
+    "tip": {
+     "max": 12,
+     "min": 1,
+     "optional": 0.15,
+     "type": "decimal"
+    },
+    "total": {
+     "note": "= round(max(0, subtotal + delivery_fee + coalesce(tip, 0) - discount), 2)",
+     "type": "decimal"
+    },
+    "wallet_name": {
+     "note": "depends on other fields (business rule)",
+     "optional": 0.05,
+     "type": "string"
+    }
+   }
+  },
+  "restaurant_menu_items": {
+   "count": 2078,
+   "fields": {
+    "_id": {
+     "digits": 6,
+     "prefix": "ID-",
+     "type": "string"
+    },
+    "category": {
+     "type": "string",
+     "values": {
+      "dessert": 15,
+      "drink": 15,
+      "main": 48,
+      "starter": 22
+     }
+    },
+    "is_available": {
+     "type": "bool",
+     "values": {
+      "false": 6,
+      "true": 94
+     }
+    },
+    "is_vegetarian": {
+     "type": "bool",
+     "values": {
+      "false": 65,
+      "true": 35
+     }
+    },
+    "item_name": {
+     "note": "depends on other fields (business rule)",
+     "optional": 0.05,
+     "type": "string"
+    },
+    "price": {
+     "note": "depends on other fields (business rule)",
+     "optional": 0.05,
+     "type": "decimal"
+    },
+    "restaurant_id": {
+     "to": "restaurants",
+     "type": "ref"
+    }
+   }
+  },
+  "restaurants": {
+   "count": 87,
+   "fields": {
+    "_id": {
+     "digits": 6,
+     "prefix": "ID-",
+     "type": "string"
+    },
+    "average_rating": {
+     "type": "double"
+    },
+    "city": {
+     "type": "string",
+     "values": {
+      "Austin": 15,
+      "Chicago": 15,
+      "Los Angeles": 20,
+      "New York": 25,
+      "San Francisco": 15,
+      "Seattle": 10
+     }
+    },
+    "closing_hour": {
+     "type": "string",
+     "values": {
+      "00:00": 10,
+      "21:00": 25,
+      "22:00": 45,
+      "23:00": 20
+     }
+    },
+    "cuisines": {
+     "_avg": 2,
+     "_planned": 173,
+     "max": 1000,
+     "min": 0,
+     "of": "string",
+     "type": "array",
+     "values": {
+      "American": 14,
+      "Burgers": 7,
+      "Chinese": 10,
+      "Indian": 9,
+      "Italian": 14,
+      "Japanese": 10,
+      "Mediterranean": 7,
+      "Mexican": 14,
+      "Pizza": 7,
+      "Thai": 8
+     }
+    },
+    "is_active": {
+     "type": "bool",
+     "values": {
+      "false": 8,
+      "true": 92
+     }
+    },
+    "latitude": {
+     "type": "double"
+    },
+    "longitude": {
+     "type": "double"
+    },
+    "name": {
+     "type": "string"
+    },
+    "opening_hour": {
+     "type": "string",
+     "values": {
+      "08:00": 20,
+      "09:00": 25,
+      "10:00": 35,
+      "11:00": 20
+     }
+    },
+    "price_level": {
+     "type": "int",
+     "values": {
+      "1": 25,
+      "2": 50,
+      "3": 20,
+      "4": 5
+     }
+    }
+   }
+  },
+  "reviews": {
+   "count": 1847,
+   "fields": {
+    "_id": {
+     "digits": 6,
+     "prefix": "ID-",
+     "type": "string"
+    },
+    "comment": {
+     "note": "depends on other fields (business rule)",
+     "optional": 0.05,
+     "type": "string"
+    },
+    "created_at": {
+     "note": "= add_minutes(@anchor.delivered_at, random_int(15, 720)); after order_id.delivered_at, customer_id.signup_date, @anchor.customer_id.signup_date, @anchor.courier_id.joined_date",
+     "type": "date"
+    },
+    "customer_id": {
+     "to": "customers",
+     "type": "ref"
+    },
+    "order_id": {
+     "to": "orders",
+     "type": "ref"
+    },
+    "rating": {
+     "type": "int",
+     "values": {
+      "1": 5,
+      "2": 5,
+      "3": 10,
+      "4": 25,
+      "5": 55
+     }
+    },
+    "restaurant_id": {
+     "to": "restaurants",
+     "type": "ref"
+    }
+   }
+  }
+ },
+ "name": "food_delivery_platform_nosql",
+ "target": "mongodb"
+}

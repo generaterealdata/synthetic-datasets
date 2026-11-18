@@ -1,0 +1,868 @@
+[
+  {
+    "_id": "REV-010001",
+    "rating": 5,
+    "order_id": "ORD-153447",
+    "restaurant_id": "REST-1051",
+    "created_at": "2025-09-27T00:43:15Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-027212"
+  },
+  {
+    "_id": "REV-010002",
+    "rating": 5,
+    "order_id": "ORD-286743",
+    "restaurant_id": "REST-1024",
+    "created_at": "2025-08-16T00:37:36Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-040238"
+  },
+  {
+    "_id": "REV-010003",
+    "rating": 5,
+    "order_id": "ORD-276029",
+    "restaurant_id": "REST-1076",
+    "created_at": "2026-02-19T18:16:26Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-062256"
+  },
+  {
+    "_id": "REV-010004",
+    "rating": 4,
+    "order_id": "ORD-305819",
+    "restaurant_id": "REST-1128",
+    "created_at": "2025-06-17T02:16:54Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-026681"
+  },
+  {
+    "_id": "REV-010005",
+    "rating": 2,
+    "order_id": "ORD-168369",
+    "restaurant_id": "REST-1191",
+    "created_at": "2026-03-08T02:18:57Z",
+    "customer_id": "CUST-025025"
+  },
+  {
+    "_id": "REV-010006",
+    "rating": 2,
+    "order_id": "ORD-234024",
+    "restaurant_id": "REST-1174",
+    "created_at": "2026-01-14T14:01:24Z",
+    "comment": "Order was late and the food was cold.",
+    "customer_id": "CUST-041888"
+  },
+  {
+    "_id": "REV-010007",
+    "rating": 5,
+    "order_id": "ORD-388432",
+    "restaurant_id": "REST-1074",
+    "created_at": "2025-10-17T20:53:29Z",
+    "customer_id": "CUST-036498"
+  },
+  {
+    "_id": "REV-010008",
+    "rating": 2,
+    "order_id": "ORD-380110",
+    "restaurant_id": "REST-1161",
+    "created_at": "2026-02-27T04:03:15Z",
+    "comment": "Disappointing quality for the price.",
+    "customer_id": "CUST-015122"
+  },
+  {
+    "_id": "REV-010009",
+    "rating": 5,
+    "order_id": "ORD-214406",
+    "restaurant_id": "REST-1261",
+    "created_at": "2025-03-28T04:01:02Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-061000"
+  },
+  {
+    "_id": "REV-010010",
+    "rating": 5,
+    "order_id": "ORD-282155",
+    "restaurant_id": "REST-1198",
+    "created_at": "2025-10-23T19:36:49Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-054924"
+  },
+  {
+    "_id": "REV-010011",
+    "rating": 4,
+    "order_id": "ORD-414743",
+    "restaurant_id": "REST-1128",
+    "created_at": "2025-03-17T22:49:14Z",
+    "comment": "Delicious food and generous portions.",
+    "customer_id": "CUST-013961"
+  },
+  {
+    "_id": "REV-010012",
+    "rating": 5,
+    "order_id": "ORD-170621",
+    "restaurant_id": "REST-1220",
+    "created_at": "2025-12-27T20:39:51Z",
+    "customer_id": "CUST-037420"
+  },
+  {
+    "_id": "REV-010013",
+    "rating": 5,
+    "order_id": "ORD-227101",
+    "restaurant_id": "REST-1261",
+    "created_at": "2025-08-25T20:37:24Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-036103"
+  },
+  {
+    "_id": "REV-010014",
+    "rating": 4,
+    "order_id": "ORD-398079",
+    "restaurant_id": "REST-1208",
+    "created_at": "2025-12-25T16:32:36Z",
+    "comment": "Delicious food and generous portions.",
+    "customer_id": "CUST-041265"
+  },
+  {
+    "_id": "REV-010015",
+    "rating": 5,
+    "order_id": "ORD-286963",
+    "restaurant_id": "REST-1129",
+    "created_at": "2026-02-16T19:13:12Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-051919"
+  },
+  {
+    "_id": "REV-010016",
+    "rating": 5,
+    "order_id": "ORD-415327",
+    "restaurant_id": "REST-1091",
+    "created_at": "2025-10-05T22:27:22Z",
+    "customer_id": "CUST-067434"
+  },
+  {
+    "_id": "REV-010017",
+    "rating": 5,
+    "order_id": "ORD-221823",
+    "restaurant_id": "REST-1080",
+    "created_at": "2025-01-15T00:21:29Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-032125"
+  },
+  {
+    "_id": "REV-010018",
+    "rating": 4,
+    "order_id": "ORD-317681",
+    "restaurant_id": "REST-1021",
+    "created_at": "2025-12-28T17:20:28Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-037113"
+  },
+  {
+    "_id": "REV-010019",
+    "rating": 5,
+    "order_id": "ORD-393429",
+    "restaurant_id": "REST-1112",
+    "created_at": "2025-12-26T01:37:51Z",
+    "customer_id": "CUST-065160"
+  },
+  {
+    "_id": "REV-010020",
+    "rating": 5,
+    "order_id": "ORD-127702",
+    "restaurant_id": "REST-1201",
+    "created_at": "2025-05-26T15:01:54Z",
+    "comment": "Delicious food and generous portions.",
+    "customer_id": "CUST-062436"
+  },
+  {
+    "_id": "REV-010021",
+    "rating": 5,
+    "order_id": "ORD-110662",
+    "restaurant_id": "REST-1128",
+    "created_at": "2025-08-25T17:09:22Z",
+    "customer_id": "CUST-067642"
+  },
+  {
+    "_id": "REV-010022",
+    "rating": 5,
+    "order_id": "ORD-392017",
+    "restaurant_id": "REST-1201",
+    "created_at": "2025-11-23T17:28:05Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-019623"
+  },
+  {
+    "_id": "REV-010023",
+    "rating": 5,
+    "order_id": "ORD-226499",
+    "restaurant_id": "REST-1258",
+    "created_at": "2025-10-27T02:38:52Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-037122"
+  },
+  {
+    "_id": "REV-010024",
+    "rating": 5,
+    "order_id": "ORD-129838",
+    "restaurant_id": "REST-1017",
+    "created_at": "2025-06-28T03:10:35Z",
+    "customer_id": "CUST-055373"
+  },
+  {
+    "_id": "REV-010025",
+    "rating": 2,
+    "order_id": "ORD-152688",
+    "restaurant_id": "REST-1053",
+    "created_at": "2025-11-26T23:46:54Z",
+    "comment": "Order was late and the food was cold.",
+    "customer_id": "CUST-019927"
+  },
+  {
+    "_id": "REV-010026",
+    "rating": 4,
+    "order_id": "ORD-191291",
+    "restaurant_id": "REST-1048",
+    "created_at": "2025-07-01T07:43:50Z",
+    "customer_id": "CUST-018076"
+  },
+  {
+    "_id": "REV-010027",
+    "rating": 4,
+    "order_id": "ORD-114394",
+    "restaurant_id": "REST-1129",
+    "created_at": "2025-08-11T21:47:27Z",
+    "customer_id": "CUST-063223"
+  },
+  {
+    "_id": "REV-010028",
+    "rating": 1,
+    "order_id": "ORD-212475",
+    "restaurant_id": "REST-1011",
+    "created_at": "2025-12-30T07:25:10Z",
+    "comment": "Order was late and the food was cold.",
+    "customer_id": "CUST-012174"
+  },
+  {
+    "_id": "REV-010029",
+    "rating": 3,
+    "order_id": "ORD-190996",
+    "restaurant_id": "REST-1191",
+    "created_at": "2025-10-13T15:10:37Z",
+    "customer_id": "CUST-049495"
+  },
+  {
+    "_id": "REV-010030",
+    "rating": 5,
+    "order_id": "ORD-326340",
+    "restaurant_id": "REST-1191",
+    "created_at": "2025-11-16T18:27:17Z",
+    "customer_id": "CUST-044151"
+  },
+  {
+    "_id": "REV-010031",
+    "rating": 5,
+    "order_id": "ORD-152640",
+    "restaurant_id": "REST-1178",
+    "created_at": "2026-03-04T15:35:41Z",
+    "customer_id": "CUST-051070"
+  },
+  {
+    "_id": "REV-010032",
+    "rating": 1,
+    "order_id": "ORD-210405",
+    "restaurant_id": "REST-1057",
+    "created_at": "2025-10-30T05:13:05Z",
+    "comment": "Order was late and the food was cold.",
+    "customer_id": "CUST-041078"
+  },
+  {
+    "_id": "REV-010033",
+    "rating": 5,
+    "order_id": "ORD-273388",
+    "restaurant_id": "REST-1251",
+    "created_at": "2025-11-25T21:55:59Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-022784"
+  },
+  {
+    "_id": "REV-010034",
+    "rating": 5,
+    "order_id": "ORD-348960",
+    "restaurant_id": "REST-1116",
+    "created_at": "2026-01-02T19:51:06Z",
+    "customer_id": "CUST-025637"
+  },
+  {
+    "_id": "REV-010035",
+    "rating": 5,
+    "order_id": "ORD-371621",
+    "restaurant_id": "REST-1220",
+    "created_at": "2025-06-13T11:56:39Z",
+    "comment": "Delicious food and generous portions.",
+    "customer_id": "CUST-040038"
+  },
+  {
+    "_id": "REV-010036",
+    "rating": 5,
+    "order_id": "ORD-246722",
+    "restaurant_id": "REST-1191",
+    "created_at": "2025-02-09T23:45:58Z",
+    "customer_id": "CUST-037121"
+  },
+  {
+    "_id": "REV-010037",
+    "rating": 5,
+    "order_id": "ORD-127165",
+    "restaurant_id": "REST-1091",
+    "created_at": "2026-02-14T22:06:33Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-054280"
+  },
+  {
+    "_id": "REV-010038",
+    "rating": 5,
+    "order_id": "ORD-292960",
+    "restaurant_id": "REST-1200",
+    "created_at": "2026-01-23T14:11:26Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-045748"
+  },
+  {
+    "_id": "REV-010039",
+    "rating": 3,
+    "order_id": "ORD-114496",
+    "restaurant_id": "REST-1158",
+    "created_at": "2025-06-23T03:42:41Z",
+    "customer_id": "CUST-056420"
+  },
+  {
+    "_id": "REV-010040",
+    "rating": 5,
+    "order_id": "ORD-250102",
+    "restaurant_id": "REST-1129",
+    "created_at": "2025-10-09T22:45:36Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-068714"
+  },
+  {
+    "_id": "REV-010041",
+    "rating": 5,
+    "order_id": "ORD-406222",
+    "restaurant_id": "REST-1182",
+    "created_at": "2025-05-10T06:45:36Z",
+    "comment": "Delicious food and generous portions.",
+    "customer_id": "CUST-067629"
+  },
+  {
+    "_id": "REV-010042",
+    "rating": 1,
+    "order_id": "ORD-405086",
+    "restaurant_id": "REST-1071",
+    "created_at": "2026-01-26T18:01:32Z",
+    "comment": "Missing items from the bag and no utensils included.",
+    "customer_id": "CUST-057800"
+  },
+  {
+    "_id": "REV-010043",
+    "rating": 4,
+    "order_id": "ORD-276726",
+    "restaurant_id": "REST-1128",
+    "created_at": "2025-10-06T04:49:00Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-055833"
+  },
+  {
+    "_id": "REV-010044",
+    "rating": 5,
+    "order_id": "ORD-256283",
+    "restaurant_id": "REST-1191",
+    "created_at": "2025-06-25T05:45:47Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-058410"
+  },
+  {
+    "_id": "REV-010045",
+    "rating": 5,
+    "order_id": "ORD-181942",
+    "restaurant_id": "REST-1098",
+    "created_at": "2025-09-01T22:31:05Z",
+    "customer_id": "CUST-023385"
+  },
+  {
+    "_id": "REV-010046",
+    "rating": 3,
+    "order_id": "ORD-373769",
+    "restaurant_id": "REST-1173",
+    "created_at": "2025-10-29T13:26:36Z",
+    "comment": "Good flavors, though delivery took a bit longer than expected.",
+    "customer_id": "CUST-067307"
+  },
+  {
+    "_id": "REV-010047",
+    "rating": 5,
+    "order_id": "ORD-144629",
+    "restaurant_id": "REST-1129",
+    "created_at": "2026-02-24T23:14:53Z",
+    "customer_id": "CUST-044954"
+  },
+  {
+    "_id": "REV-010048",
+    "rating": 5,
+    "order_id": "ORD-279307",
+    "restaurant_id": "REST-1035",
+    "created_at": "2025-11-26T00:01:17Z",
+    "customer_id": "CUST-022618"
+  },
+  {
+    "_id": "REV-010049",
+    "rating": 5,
+    "order_id": "ORD-347960",
+    "restaurant_id": "REST-1203",
+    "created_at": "2025-10-30T18:43:43Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-034663"
+  },
+  {
+    "_id": "REV-010050",
+    "rating": 5,
+    "order_id": "ORD-415968",
+    "restaurant_id": "REST-1053",
+    "created_at": "2026-02-18T16:06:57Z",
+    "customer_id": "CUST-027744"
+  },
+  {
+    "_id": "REV-010051",
+    "rating": 5,
+    "order_id": "ORD-291596",
+    "restaurant_id": "REST-1138",
+    "created_at": "2026-02-06T22:22:55Z",
+    "comment": "Delicious food and generous portions.",
+    "customer_id": "CUST-020731"
+  },
+  {
+    "_id": "REV-010052",
+    "rating": 5,
+    "order_id": "ORD-408302",
+    "restaurant_id": "REST-1045",
+    "created_at": "2025-11-04T01:54:28Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-029302"
+  },
+  {
+    "_id": "REV-010053",
+    "rating": 4,
+    "order_id": "ORD-341732",
+    "restaurant_id": "REST-1269",
+    "created_at": "2026-02-02T01:27:20Z",
+    "customer_id": "CUST-018312"
+  },
+  {
+    "_id": "REV-010054",
+    "rating": 4,
+    "order_id": "ORD-340015",
+    "restaurant_id": "REST-1203",
+    "created_at": "2025-09-15T15:20:39Z",
+    "comment": "Delicious food and generous portions.",
+    "customer_id": "CUST-052822"
+  },
+  {
+    "_id": "REV-010055",
+    "rating": 3,
+    "order_id": "ORD-229838",
+    "restaurant_id": "REST-1182",
+    "created_at": "2025-12-04T14:21:28Z",
+    "comment": "Good flavors, though delivery took a bit longer than expected.",
+    "customer_id": "CUST-049888"
+  },
+  {
+    "_id": "REV-010056",
+    "rating": 5,
+    "order_id": "ORD-367685",
+    "restaurant_id": "REST-1103",
+    "created_at": "2026-03-27T00:24:47Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-047995"
+  },
+  {
+    "_id": "REV-010057",
+    "rating": 5,
+    "order_id": "ORD-285402",
+    "restaurant_id": "REST-1037",
+    "created_at": "2026-01-05T02:46:36Z",
+    "customer_id": "CUST-046034"
+  },
+  {
+    "_id": "REV-010058",
+    "rating": 4,
+    "order_id": "ORD-403816",
+    "restaurant_id": "REST-1201",
+    "created_at": "2025-09-10T14:15:55Z",
+    "customer_id": "CUST-068662"
+  },
+  {
+    "_id": "REV-010059",
+    "rating": 5,
+    "order_id": "ORD-348547",
+    "restaurant_id": "REST-1131",
+    "created_at": "2025-09-30T18:00:31Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-048381"
+  },
+  {
+    "_id": "REV-010060",
+    "rating": 5,
+    "order_id": "ORD-125668",
+    "restaurant_id": "REST-1162",
+    "created_at": "2025-05-30T15:18:23Z",
+    "customer_id": "CUST-020207"
+  },
+  {
+    "_id": "REV-010061",
+    "rating": 4,
+    "order_id": "ORD-286613",
+    "restaurant_id": "REST-1193",
+    "created_at": "2025-12-05T17:53:20Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-060243"
+  },
+  {
+    "_id": "REV-010062",
+    "rating": 5,
+    "order_id": "ORD-340089",
+    "restaurant_id": "REST-1181",
+    "created_at": "2025-02-19T03:10:03Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-047298"
+  },
+  {
+    "_id": "REV-010063",
+    "rating": 5,
+    "order_id": "ORD-308244",
+    "restaurant_id": "REST-1197",
+    "created_at": "2025-12-29T23:34:58Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-044080"
+  },
+  {
+    "_id": "REV-010064",
+    "rating": 5,
+    "order_id": "ORD-215042",
+    "restaurant_id": "REST-1131",
+    "created_at": "2025-08-09T02:39:11Z",
+    "comment": "Delicious food and generous portions.",
+    "customer_id": "CUST-030305"
+  },
+  {
+    "_id": "REV-010065",
+    "rating": 5,
+    "order_id": "ORD-407298",
+    "restaurant_id": "REST-1131",
+    "created_at": "2026-02-13T01:40:22Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-030603"
+  },
+  {
+    "_id": "REV-010066",
+    "rating": 5,
+    "order_id": "ORD-185031",
+    "restaurant_id": "REST-1197",
+    "created_at": "2025-02-15T23:56:51Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-049394"
+  },
+  {
+    "_id": "REV-010067",
+    "rating": 5,
+    "order_id": "ORD-108026",
+    "restaurant_id": "REST-1021",
+    "created_at": "2025-12-29T19:16:53Z",
+    "customer_id": "CUST-054962"
+  },
+  {
+    "_id": "REV-010068",
+    "rating": 5,
+    "order_id": "ORD-281778",
+    "restaurant_id": "REST-1112",
+    "created_at": "2025-08-16T21:55:49Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-017232"
+  },
+  {
+    "_id": "REV-010069",
+    "rating": 5,
+    "order_id": "ORD-295905",
+    "restaurant_id": "REST-1300",
+    "created_at": "2025-12-05T22:31:44Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-044919"
+  },
+  {
+    "_id": "REV-010070",
+    "rating": 4,
+    "order_id": "ORD-404530",
+    "restaurant_id": "REST-1016",
+    "created_at": "2025-01-02T00:23:59Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-037190"
+  },
+  {
+    "_id": "REV-010071",
+    "rating": 5,
+    "order_id": "ORD-268128",
+    "restaurant_id": "REST-1279",
+    "created_at": "2025-10-26T20:55:34Z",
+    "comment": "Delicious food and generous portions.",
+    "customer_id": "CUST-040970"
+  },
+  {
+    "_id": "REV-010072",
+    "rating": 4,
+    "order_id": "ORD-268406",
+    "restaurant_id": "REST-1158",
+    "created_at": "2026-02-24T12:06:53Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-053552"
+  },
+  {
+    "_id": "REV-010073",
+    "rating": 5,
+    "order_id": "ORD-252324",
+    "restaurant_id": "REST-1201",
+    "created_at": "2025-12-25T15:56:16Z",
+    "customer_id": "CUST-069013"
+  },
+  {
+    "_id": "REV-010074",
+    "rating": 4,
+    "order_id": "ORD-402446",
+    "restaurant_id": "REST-1076",
+    "created_at": "2025-05-04T23:36:25Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-039860"
+  },
+  {
+    "_id": "REV-010075",
+    "rating": 5,
+    "order_id": "ORD-356344",
+    "restaurant_id": "REST-1220",
+    "created_at": "2025-04-25T02:40:22Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-045747"
+  },
+  {
+    "_id": "REV-010076",
+    "rating": 1,
+    "order_id": "ORD-384104",
+    "restaurant_id": "REST-1236",
+    "created_at": "2025-08-20T07:18:36Z",
+    "comment": "Order was late and the food was cold.",
+    "customer_id": "CUST-066151"
+  },
+  {
+    "_id": "REV-010077",
+    "rating": 1,
+    "order_id": "ORD-376312",
+    "restaurant_id": "REST-1134",
+    "created_at": "2025-10-13T22:48:51Z",
+    "comment": "Missing items from the bag and no utensils included.",
+    "customer_id": "CUST-042224"
+  },
+  {
+    "_id": "REV-010078",
+    "rating": 5,
+    "order_id": "ORD-208207",
+    "restaurant_id": "REST-1202",
+    "created_at": "2025-05-08T02:24:38Z",
+    "customer_id": "CUST-069123"
+  },
+  {
+    "_id": "REV-010079",
+    "rating": 4,
+    "order_id": "ORD-397352",
+    "restaurant_id": "REST-1201",
+    "created_at": "2026-02-09T14:35:04Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-046111"
+  },
+  {
+    "_id": "REV-010080",
+    "rating": 3,
+    "order_id": "ORD-408501",
+    "restaurant_id": "REST-1113",
+    "created_at": "2026-01-22T07:04:56Z",
+    "customer_id": "CUST-046969"
+  },
+  {
+    "_id": "REV-010081",
+    "rating": 5,
+    "order_id": "ORD-407457",
+    "restaurant_id": "REST-1046",
+    "created_at": "2025-08-17T17:50:21Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-013975"
+  },
+  {
+    "_id": "REV-010082",
+    "rating": 4,
+    "order_id": "ORD-184960",
+    "restaurant_id": "REST-1138",
+    "created_at": "2026-03-26T18:23:00Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-054207"
+  },
+  {
+    "_id": "REV-010083",
+    "rating": 2,
+    "order_id": "ORD-375479",
+    "restaurant_id": "REST-1169",
+    "created_at": "2026-02-05T23:03:59Z",
+    "comment": "Disappointing quality for the price.",
+    "customer_id": "CUST-010027"
+  },
+  {
+    "_id": "REV-010084",
+    "rating": 4,
+    "order_id": "ORD-332668",
+    "restaurant_id": "REST-1203",
+    "created_at": "2025-03-03T01:44:10Z",
+    "customer_id": "CUST-034974"
+  },
+  {
+    "_id": "REV-010085",
+    "rating": 5,
+    "order_id": "ORD-304705",
+    "restaurant_id": "REST-1259",
+    "created_at": "2025-12-25T23:36:05Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-038255"
+  },
+  {
+    "_id": "REV-010086",
+    "rating": 2,
+    "order_id": "ORD-215787",
+    "restaurant_id": "REST-1066",
+    "created_at": "2026-01-13T18:46:58Z",
+    "customer_id": "CUST-030284"
+  },
+  {
+    "_id": "REV-010087",
+    "rating": 3,
+    "order_id": "ORD-152885",
+    "restaurant_id": "REST-1228",
+    "created_at": "2025-02-23T11:11:55Z",
+    "customer_id": "CUST-011577"
+  },
+  {
+    "_id": "REV-010088",
+    "rating": 4,
+    "order_id": "ORD-375735",
+    "restaurant_id": "REST-1081",
+    "created_at": "2025-03-27T17:40:08Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-045743"
+  },
+  {
+    "_id": "REV-010089",
+    "rating": 3,
+    "order_id": "ORD-184843",
+    "restaurant_id": "REST-1191",
+    "created_at": "2025-10-02T05:45:48Z",
+    "comment": "Good flavors, though delivery took a bit longer than expected.",
+    "customer_id": "CUST-055085"
+  },
+  {
+    "_id": "REV-010090",
+    "rating": 5,
+    "order_id": "ORD-288218",
+    "restaurant_id": "REST-1004",
+    "created_at": "2026-02-27T23:01:03Z",
+    "customer_id": "CUST-035273"
+  },
+  {
+    "_id": "REV-010091",
+    "rating": 5,
+    "order_id": "ORD-408223",
+    "restaurant_id": "REST-1238",
+    "created_at": "2026-02-10T16:33:23Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-015909"
+  },
+  {
+    "_id": "REV-010092",
+    "rating": 4,
+    "order_id": "ORD-152909",
+    "restaurant_id": "REST-1201",
+    "created_at": "2025-11-01T07:02:08Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-045030"
+  },
+  {
+    "_id": "REV-010093",
+    "rating": 4,
+    "order_id": "ORD-393572",
+    "restaurant_id": "REST-1026",
+    "created_at": "2025-08-27T03:49:15Z",
+    "customer_id": "CUST-063036"
+  },
+  {
+    "_id": "REV-010094",
+    "rating": 5,
+    "order_id": "ORD-394046",
+    "restaurant_id": "REST-1287",
+    "created_at": "2025-12-24T14:52:57Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-035041"
+  },
+  {
+    "_id": "REV-010095",
+    "rating": 5,
+    "order_id": "ORD-374968",
+    "restaurant_id": "REST-1201",
+    "created_at": "2025-11-16T19:58:34Z",
+    "comment": "Will definitely order from here again!",
+    "customer_id": "CUST-065328"
+  },
+  {
+    "_id": "REV-010096",
+    "rating": 4,
+    "order_id": "ORD-385423",
+    "restaurant_id": "REST-1274",
+    "created_at": "2026-01-04T14:14:05Z",
+    "comment": "Hot and fresh, arrived right on time!",
+    "customer_id": "CUST-023074"
+  },
+  {
+    "_id": "REV-010097",
+    "rating": 5,
+    "order_id": "ORD-323546",
+    "restaurant_id": "REST-1191",
+    "created_at": "2025-11-06T19:11:53Z",
+    "comment": "Great packaging and super fast delivery.",
+    "customer_id": "CUST-063471"
+  },
+  {
+    "_id": "REV-010098",
+    "rating": 5,
+    "order_id": "ORD-199216",
+    "restaurant_id": "REST-1045",
+    "created_at": "2025-07-23T23:02:20Z",
+    "customer_id": "CUST-028117"
+  },
+  {
+    "_id": "REV-010099",
+    "rating": 5,
+    "order_id": "ORD-158407",
+    "restaurant_id": "REST-1220",
+    "created_at": "2025-08-24T18:19:46Z",
+    "customer_id": "CUST-024685"
+  },
+  {
+    "_id": "REV-010100",
+    "rating": 3,
+    "order_id": "ORD-404455",
+    "restaurant_id": "REST-1220",
+    "created_at": "2025-01-28T06:15:58Z",
+    "comment": "Good flavors, though delivery took a bit longer than expected.",
+    "customer_id": "CUST-064754"
+  }
+]

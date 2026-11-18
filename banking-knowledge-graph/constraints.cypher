@@ -1,0 +1,15 @@
+CREATE CONSTRAINT account_account_id_unique IF NOT EXISTS FOR (n:Account) REQUIRE n.account_id IS UNIQUE;
+CREATE CONSTRAINT account_account_number_unique IF NOT EXISTS FOR (n:Account) REQUIRE n.account_number IS UNIQUE;
+CREATE CONSTRAINT branch_branch_id_unique IF NOT EXISTS FOR (n:Branch) REQUIRE n.branch_id IS UNIQUE;
+CREATE CONSTRAINT branch_name_unique IF NOT EXISTS FOR (n:Branch) REQUIRE n.name IS UNIQUE;
+CREATE CONSTRAINT business_business_id_unique IF NOT EXISTS FOR (n:Business) REQUIRE n.business_id IS UNIQUE;
+CREATE CONSTRAINT business_legal_name_unique IF NOT EXISTS FOR (n:Business) REQUIRE n.legal_name IS UNIQUE;
+CREATE CONSTRAINT card_card_id_unique IF NOT EXISTS FOR (n:Card) REQUIRE n.card_id IS UNIQUE;
+CREATE CONSTRAINT city_city_id_unique IF NOT EXISTS FOR (n:City) REQUIRE n.city_id IS UNIQUE;
+CREATE CONSTRAINT device_device_id_unique IF NOT EXISTS FOR (n:Device) REQUIRE n.device_id IS UNIQUE;
+CREATE CONSTRAINT ipaddress_ip_address_unique IF NOT EXISTS FOR (n:IpAddress) REQUIRE n.ip_address IS UNIQUE;
+CREATE CONSTRAINT merchantcategory_category_unique IF NOT EXISTS FOR (n:MerchantCategory) REQUIRE n.category IS UNIQUE;
+CREATE CONSTRAINT merchant_merchant_id_unique IF NOT EXISTS FOR (n:Merchant) REQUIRE n.merchant_id IS UNIQUE;
+CREATE CONSTRAINT merchant_name_unique IF NOT EXISTS FOR (n:Merchant) REQUIRE n.name IS UNIQUE;
+CREATE CONSTRAINT person_person_id_unique IF NOT EXISTS FOR (n:Person) REQUIRE n.person_id IS UNIQUE;
+CREATE CONSTRAINT person_email_unique IF NOT EXISTS FOR (n:Person) REQUIRE n.email IS UNIQUE;

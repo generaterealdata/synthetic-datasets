@@ -1,0 +1,31 @@
+:ID(City),city_id:string,city_name:string,state:string
+CIT-001,CIT-001,New York,NY
+CIT-002,CIT-002,Los Angeles,CA
+CIT-003,CIT-003,Chicago,IL
+CIT-004,CIT-004,Houston,TX
+CIT-005,CIT-005,Phoenix,AZ
+CIT-006,CIT-006,Philadelphia,PA
+CIT-007,CIT-007,San Antonio,TX
+CIT-008,CIT-008,San Diego,CA
+CIT-009,CIT-009,Dallas,TX
+CIT-010,CIT-010,San Jose,CA
+CIT-011,CIT-011,Austin,TX
+CIT-012,CIT-012,Jacksonville,FL
+CIT-013,CIT-013,Fort Worth,TX
+CIT-014,CIT-014,Columbus,OH
+CIT-015,CIT-015,Charlotte,NC
+CIT-016,CIT-016,San Francisco,CA
+CIT-017,CIT-017,Indianapolis,IN
+CIT-018,CIT-018,Seattle,WA
+CIT-019,CIT-019,Denver,CO
+CIT-020,CIT-020,Boston,MA
+CIT-021,CIT-021,Nashville,TN
+CIT-022,CIT-022,Detroit,MI
+CIT-023,CIT-023,Portland,OR
+CIT-024,CIT-024,Las Vegas,NV
+CIT-025,CIT-025,Miami,FL
+CIT-026,CIT-026,Atlanta,GA
+CIT-027,CIT-027,Minneapolis,MN
+CIT-028,CIT-028,Tampa,FL
+CIT-029,CIT-029,Orlando,FL
+CIT-030,CIT-030,Cleveland,OH

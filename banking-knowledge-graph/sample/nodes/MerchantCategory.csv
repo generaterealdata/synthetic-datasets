@@ -1,0 +1,11 @@
+:ID(MerchantCategory),category:string
+grocery,grocery
+fuel,fuel
+restaurants,restaurants
+travel,travel
+electronics,electronics
+clothing,clothing
+online gambling,online gambling
+crypto exchange,crypto exchange
+money transfer,money transfer
+utilities,utilities

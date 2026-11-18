@@ -1,0 +1,101 @@
+:ID(Business),business_id:string,legal_name:string,industry:string,state_of_registration:string,incorporation_date:date,kyc_risk_rating:string
+BUS-0101,BUS-0101,Flores PLC,Retail & Wholesale,NV,2007-06-29,medium
+BUS-0102,BUS-0102,"Heath, Garcia and Walker",Retail & Wholesale,CA,2015-07-06,medium
+BUS-0103,BUS-0103,"Howell, Fisher and Armstrong",Technology & SaaS,CA,2015-09-15,medium
+BUS-0104,BUS-0104,"Frank, Henry and Mejia",Technology & SaaS,NV,2022-12-26,low
+BUS-0105,BUS-0105,Allen-Mendez,Money Services & FinTech,DE,2007-02-23,low
+BUS-0106,BUS-0106,Mitchell Inc,Hospitality & Food Service,NY,2009-09-02,low
+BUS-0107,BUS-0107,Smith-Macdonald,Technology & SaaS,TX,2017-07-27,low
+BUS-0108,BUS-0108,Shelton-Clark,Retail & Wholesale,FL,2016-08-21,medium
+BUS-0109,BUS-0109,Bailey-Duarte,Money Services & FinTech,FL,2021-05-20,low
+BUS-0110,BUS-0110,Trujillo-Key,Hospitality & Food Service,NV,2016-06-16,medium
+BUS-0111,BUS-0111,"Little, Sharp and Davis",Hospitality & Food Service,NY,2020-04-11,low
+BUS-0112,BUS-0112,"Carter, Ellis and Walter",Professional Services,WY,2021-01-23,medium
+BUS-0113,BUS-0113,"Moran, Parker and Abbott",Hospitality & Food Service,DE,2020-09-15,medium
+BUS-0114,BUS-0114,Cox-Henderson,Construction & Real Estate,DE,2017-04-07,medium
+BUS-0115,BUS-0115,Macdonald-Spencer,Hospitality & Food Service,TX,2010-01-07,low
+BUS-0116,BUS-0116,Coleman PLC,Retail & Wholesale,DE,2017-11-05,low
+BUS-0117,BUS-0117,Sanders-Warren,Technology & SaaS,NY,2007-04-26,medium
+BUS-0118,BUS-0118,Elliott-Hendrix,Technology & SaaS,WY,2022-01-30,medium
+BUS-0119,BUS-0119,"Holmes, Johnson and Walker",Retail & Wholesale,DE,2014-05-28,low
+BUS-0120,BUS-0120,Meyers Ltd,Professional Services,DE,2022-01-15,medium
+BUS-0121,BUS-0121,"Eaton, Garcia and Dean",Professional Services,DE,2019-05-01,low
+BUS-0122,BUS-0122,Thomas-Wilkerson,Technology & SaaS,TX,2019-03-18,low
+BUS-0123,BUS-0123,Sims Group,Money Services & FinTech,DE,2009-05-25,high
+BUS-0124,BUS-0124,"Harrison, Noble and Archer",Technology & SaaS,NY,2010-04-06,low
+BUS-0125,BUS-0125,"King, Morales and Bolton",Retail & Wholesale,DE,2025-06-29,low
+BUS-0126,BUS-0126,"Marsh, Shaw and Mendoza",Technology & SaaS,FL,2024-06-08,low
+BUS-0127,BUS-0127,Hamilton-Phillips,Construction & Real Estate,CA,2021-11-02,low
+BUS-0128,BUS-0128,Smith-Hernandez,Logistics & Import/Export,CA,2025-11-27,medium
+BUS-0129,BUS-0129,"Yu, Lara and Mcintosh",Retail & Wholesale,FL,2015-09-28,medium
+BUS-0130,BUS-0130,Dorsey-Green,Retail & Wholesale,NY,2006-08-06,low
+BUS-0131,BUS-0131,Owens-Wang,Construction & Real Estate,DE,2012-02-13,low
+BUS-0132,BUS-0132,Morton-Grant,Construction & Real Estate,CA,2016-08-28,low
+BUS-0133,BUS-0133,Guerra LLC,Professional Services,WY,2011-02-10,low
+BUS-0134,BUS-0134,Rangel-Garcia,Retail & Wholesale,FL,2014-07-26,low
+BUS-0135,BUS-0135,"Moran, Rivers and Green",Construction & Real Estate,DE,2023-05-01,low
+BUS-0136,BUS-0136,Coffey Ltd,Professional Services,IL,2019-09-21,low
+BUS-0137,BUS-0137,Bentley-Wong,Construction & Real Estate,DE,2017-01-28,low
+BUS-0138,BUS-0138,Wood-Lee,Retail & Wholesale,NV,2005-07-08,low
+BUS-0139,BUS-0139,Thomas-Hendricks,Retail & Wholesale,FL,2019-11-13,low
+BUS-0140,BUS-0140,Smith PLC,Professional Services,TX,2012-08-08,low
+BUS-0141,BUS-0141,"Randolph, Miller and Leon",Retail & Wholesale,WY,2013-10-30,low
+BUS-0142,BUS-0142,Martinez Inc,Technology & SaaS,NV,2013-05-04,medium
+BUS-0143,BUS-0143,"Huber, Barnett and Reid",Money Services & FinTech,DE,2017-04-01,low
+BUS-0144,BUS-0144,Smith Ltd,Technology & SaaS,IL,2015-06-05,low
+BUS-0145,BUS-0145,"Andrews, Howe and Valencia",Technology & SaaS,DE,2007-06-09,low
+BUS-0146,BUS-0146,"Le, Taylor and Walker",Construction & Real Estate,DE,2015-08-04,low
+BUS-0147,BUS-0147,"Anderson, George and Schwartz",Professional Services,DE,2020-09-08,low
+BUS-0148,BUS-0148,Miller-Barnett,Professional Services,CA,2017-07-21,low
+BUS-0149,BUS-0149,Logan PLC,Professional Services,CA,2015-04-09,low
+BUS-0150,BUS-0150,Romero-Myers,Professional Services,TX,2024-03-04,low
+BUS-0151,BUS-0151,Meyer and Sons,Precious Metals & Jewelry,DE,2010-05-30,medium
+BUS-0152,BUS-0152,Smith-Rodriguez,Retail & Wholesale,DE,2013-10-13,medium
+BUS-0153,BUS-0153,Williams LLC,Hospitality & Food Service,CA,2024-05-15,low
+BUS-0154,BUS-0154,"Gomez, Hammond and Johnson",Retail & Wholesale,WY,2015-01-09,low
+BUS-0155,BUS-0155,"Alvarez, Vega and Cole",Construction & Real Estate,DE,2015-11-01,low
+BUS-0156,BUS-0156,Jimenez Group,Construction & Real Estate,TX,2005-07-13,low
+BUS-0157,BUS-0157,"Montgomery, Jackson and Garza",Construction & Real Estate,DE,2009-09-11,medium
+BUS-0158,BUS-0158,Hamilton LLC,Retail & Wholesale,FL,2007-09-13,low
+BUS-0159,BUS-0159,George-Gregory,Money Services & FinTech,CA,2006-01-09,high
+BUS-0160,BUS-0160,Kelley Inc,Professional Services,NV,2019-09-27,low
+BUS-0161,BUS-0161,Holland and Sons,Retail & Wholesale,CA,2023-07-19,low
+BUS-0162,BUS-0162,Wong Inc,Technology & SaaS,CA,2007-02-23,low
+BUS-0163,BUS-0163,Parrish-Davidson,Retail & Wholesale,NY,2018-01-06,medium
+BUS-0164,BUS-0164,Page-Rich,Technology & SaaS,CA,2014-10-31,high
+BUS-0165,BUS-0165,Brewer and Sons,Professional Services,FL,2015-01-31,low
+BUS-0166,BUS-0166,"Kline, Taylor and Stanley",Professional Services,DE,2009-10-15,low
+BUS-0167,BUS-0167,Price Group,Technology & SaaS,NY,2023-07-12,low
+BUS-0168,BUS-0168,"Gutierrez, Miller and Torres",Precious Metals & Jewelry,DE,2018-02-08,low
+BUS-0169,BUS-0169,Thompson-Marshall,Construction & Real Estate,CA,2014-07-22,low
+BUS-0170,BUS-0170,Roberts-Thompson,Professional Services,FL,2014-10-26,low
+BUS-0171,BUS-0171,"Olson, Wilson and Hogan",Money Services & FinTech,DE,2024-06-09,low
+BUS-0172,BUS-0172,Cabrera-Abbott,Money Services & FinTech,TX,2025-08-24,medium
+BUS-0173,BUS-0173,Smith Inc,Money Services & FinTech,CA,2016-05-30,low
+BUS-0174,BUS-0174,Brewer-Russell,Money Services & FinTech,CA,2016-09-15,high
+BUS-0175,BUS-0175,"White, Johnson and Bradford",Logistics & Import/Export,CA,2019-01-03,medium
+BUS-0176,BUS-0176,Hoffman-Armstrong,Logistics & Import/Export,DE,2011-06-08,high
+BUS-0177,BUS-0177,"Robinson, Oliver and Ramirez",Technology & SaaS,IL,2021-09-22,low
+BUS-0178,BUS-0178,"Simon, Hudson and Hart",Retail & Wholesale,DE,2015-07-01,low
+BUS-0179,BUS-0179,"Peters, Garcia and Baker",Hospitality & Food Service,TX,2015-01-06,medium
+BUS-0180,BUS-0180,Jackson-Cohen,Professional Services,FL,2023-07-01,low
+BUS-0181,BUS-0181,Bowen-Lopez,Retail & Wholesale,DE,2014-01-21,low
+BUS-0182,BUS-0182,"Rodriguez, Edwards and Chapman",Hospitality & Food Service,DE,2011-02-27,low
+BUS-0183,BUS-0183,Carter LLC,Retail & Wholesale,TX,2010-08-17,low
+BUS-0184,BUS-0184,Green Inc,Retail & Wholesale,DE,2005-09-10,low
+BUS-0185,BUS-0185,Jenkins LLC,Logistics & Import/Export,NY,2018-09-17,high
+BUS-0186,BUS-0186,Sanford-Brown,Professional Services,FL,2017-06-28,medium
+BUS-0187,BUS-0187,Johnson Inc,Money Services & FinTech,NV,2014-08-01,high
+BUS-0188,BUS-0188,Jennings PLC,Professional Services,DE,2015-12-08,low
+BUS-0189,BUS-0189,Edwards-Bryant,Retail & Wholesale,FL,2015-03-28,low
+BUS-0190,BUS-0190,"Pena, Gilbert and Middleton",Hospitality & Food Service,DE,2024-04-09,low
+BUS-0191,BUS-0191,Franklin-Wheeler,Technology & SaaS,CA,2010-06-10,low
+BUS-0192,BUS-0192,Werner-Johns,Construction & Real Estate,WY,2015-02-26,low
+BUS-0193,BUS-0193,"Brooks, Mason and Mccann",Hospitality & Food Service,NY,2015-09-11,low
+BUS-0194,BUS-0194,Price-Valentine,Hospitality & Food Service,TX,2022-04-12,low
+BUS-0195,BUS-0195,Brown-Espinoza,Hospitality & Food Service,IL,2021-11-24,low
+BUS-0196,BUS-0196,Campbell LLC,Precious Metals & Jewelry,DE,2016-08-31,medium
+BUS-0197,BUS-0197,Acosta-Hammond,Professional Services,DE,2023-12-22,low
+BUS-0198,BUS-0198,Phillips Group,Professional Services,CA,2022-05-22,low
+BUS-0199,BUS-0199,Richards-Smith,Precious Metals & Jewelry,DE,2011-08-16,low
+BUS-0200,BUS-0200,Gonzalez-Brown,Construction & Real Estate,DE,2024-03-04,low

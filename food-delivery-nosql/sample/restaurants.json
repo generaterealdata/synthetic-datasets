@@ -1,0 +1,1612 @@
+[
+  {
+    "_id": "REST-1001",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -74.003844,
+    "opening_hour": "09:00",
+    "average_rating": 4.41,
+    "city": "New York",
+    "latitude": 40.698128,
+    "name": "Grace's Kitchen",
+    "cuisines": [
+      "American",
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1002",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -73.955997,
+    "opening_hour": "10:00",
+    "average_rating": 4.86,
+    "city": "New York",
+    "latitude": 40.661439,
+    "name": "Bruno's Eatery",
+    "cuisines": [
+      "Italian",
+      "Pizza"
+    ]
+  },
+  {
+    "_id": "REST-1003",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -122.478819,
+    "opening_hour": "08:00",
+    "average_rating": 4.26,
+    "city": "San Francisco",
+    "latitude": 37.807977,
+    "name": "The Old Saffron",
+    "cuisines": [
+      "American",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1004",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -73.989284,
+    "opening_hour": "10:00",
+    "average_rating": 3.43,
+    "city": "New York",
+    "latitude": 40.687602,
+    "name": "The Humble Kettle",
+    "cuisines": [
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1005",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -122.321729,
+    "opening_hour": "08:00",
+    "average_rating": 4.28,
+    "city": "Seattle",
+    "latitude": 47.676917,
+    "name": "Hugo's Diner",
+    "cuisines": [
+      "American",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1006",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -122.376532,
+    "opening_hour": "08:00",
+    "average_rating": 4.14,
+    "city": "San Francisco",
+    "latitude": 37.767278,
+    "name": "The Salty Hearth",
+    "cuisines": [
+      "Chinese",
+      "Burgers",
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1007",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -118.302348,
+    "opening_hour": "09:00",
+    "average_rating": 4.01,
+    "city": "Los Angeles",
+    "latitude": 34.073339,
+    "name": "Luca's Kitchen",
+    "cuisines": [
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1008",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -74.014136,
+    "opening_hour": "11:00",
+    "average_rating": 3.72,
+    "city": "New York",
+    "latitude": 40.76608,
+    "name": "The Blue Lantern",
+    "cuisines": [
+      "Mediterranean",
+      "Mexican",
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1009",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -122.330812,
+    "opening_hour": "09:00",
+    "average_rating": 4.66,
+    "city": "Seattle",
+    "latitude": 47.668713,
+    "name": "Paolo's Grill",
+    "cuisines": [
+      "Chinese",
+      "Pizza",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1010",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -87.659573,
+    "opening_hour": "08:00",
+    "average_rating": 4.46,
+    "city": "Chicago",
+    "latitude": 41.866088,
+    "name": "Kenji's Canteen",
+    "cuisines": [
+      "American",
+      "Indian",
+      "Mexican",
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1011",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -74.004251,
+    "opening_hour": "11:00",
+    "average_rating": 4.39,
+    "city": "New York",
+    "latitude": 40.778983,
+    "name": "The Blue Willow",
+    "cuisines": [
+      "American",
+      "Mexican",
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1012",
+    "price_level": 3,
+    "is_active": false,
+    "closing_hour": "22:00",
+    "longitude": -74.030028,
+    "opening_hour": "09:00",
+    "average_rating": 4.64,
+    "city": "New York",
+    "latitude": 40.721641,
+    "name": "Amara's Canteen",
+    "cuisines": [
+      "Thai"
+    ]
+  },
+  {
+    "_id": "REST-1013",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -87.599108,
+    "opening_hour": "10:00",
+    "average_rating": 3.97,
+    "city": "Chicago",
+    "latitude": 41.869503,
+    "name": "Ravi's Table",
+    "cuisines": [
+      "Mexican",
+      "Burgers"
+    ]
+  },
+  {
+    "_id": "REST-1014",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -118.220839,
+    "opening_hour": "10:00",
+    "average_rating": 4.91,
+    "city": "Los Angeles",
+    "latitude": 34.047105,
+    "name": "The Blue Harbor",
+    "cuisines": [
+      "Italian",
+      "Chinese",
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1015",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -74.026394,
+    "opening_hour": "10:00",
+    "average_rating": 4.6,
+    "city": "New York",
+    "latitude": 40.675529,
+    "name": "The Lucky Lantern",
+    "cuisines": [
+      "Thai",
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1016",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -74.00328,
+    "opening_hour": "09:00",
+    "average_rating": 4.48,
+    "city": "New York",
+    "latitude": 40.768515,
+    "name": "Theo's Diner",
+    "cuisines": [
+      "Burgers"
+    ]
+  },
+  {
+    "_id": "REST-1017",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -74.015202,
+    "opening_hour": "10:00",
+    "average_rating": 4.62,
+    "city": "New York",
+    "latitude": 40.742258,
+    "name": "The Copper Fig",
+    "cuisines": [
+      "American",
+      "Mexican",
+      "Burgers"
+    ]
+  },
+  {
+    "_id": "REST-1018",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -122.331349,
+    "opening_hour": "08:00",
+    "average_rating": 4.56,
+    "city": "Seattle",
+    "latitude": 47.637036,
+    "name": "The Crimson Table",
+    "cuisines": [
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1019",
+    "price_level": 3,
+    "is_active": false,
+    "closing_hour": "22:00",
+    "longitude": -118.295818,
+    "opening_hour": "10:00",
+    "average_rating": 4.35,
+    "city": "Los Angeles",
+    "latitude": 34.10029,
+    "name": "Marco's Table",
+    "cuisines": [
+      "Italian",
+      "Indian",
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1020",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -118.295391,
+    "opening_hour": "11:00",
+    "average_rating": 4.25,
+    "city": "Los Angeles",
+    "latitude": 34.023543,
+    "name": "Arjun's Dining Room",
+    "cuisines": [
+      "Pizza"
+    ]
+  },
+  {
+    "_id": "REST-1021",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -122.254966,
+    "opening_hour": "11:00",
+    "average_rating": 4.4,
+    "city": "Seattle",
+    "latitude": 47.534671,
+    "name": "Ravi's Diner",
+    "cuisines": [
+      "Mediterranean",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1022",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -74.013204,
+    "opening_hour": "10:00",
+    "average_rating": 4.04,
+    "city": "New York",
+    "latitude": 40.7761,
+    "name": "Sam's Eatery",
+    "cuisines": [
+      "Italian",
+      "Indian"
+    ]
+  },
+  {
+    "_id": "REST-1023",
+    "price_level": 3,
+    "is_active": false,
+    "closing_hour": "22:00",
+    "longitude": -73.966124,
+    "opening_hour": "10:00",
+    "average_rating": 4.53,
+    "city": "New York",
+    "latitude": 40.783639,
+    "name": "Bruno's Bar & Grill",
+    "cuisines": [
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1024",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -87.628285,
+    "opening_hour": "10:00",
+    "average_rating": 3.6,
+    "city": "Chicago",
+    "latitude": 41.835669,
+    "name": "Marco's Supper Club",
+    "cuisines": [
+      "Burgers",
+      "Thai"
+    ]
+  },
+  {
+    "_id": "REST-1025",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -97.783113,
+    "opening_hour": "10:00",
+    "average_rating": 4.34,
+    "city": "Austin",
+    "latitude": 30.335107,
+    "name": "The Velvet Table",
+    "cuisines": [
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1026",
+    "price_level": 2,
+    "is_active": false,
+    "closing_hour": "22:00",
+    "longitude": -118.212053,
+    "opening_hour": "08:00",
+    "average_rating": 4.28,
+    "city": "Los Angeles",
+    "latitude": 33.995976,
+    "name": "The Little Garden",
+    "cuisines": [
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1027",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -97.762777,
+    "opening_hour": "08:00",
+    "average_rating": 4.12,
+    "city": "Austin",
+    "latitude": 30.32503,
+    "name": "The Lucky Kettle",
+    "cuisines": [
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1028",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -97.797197,
+    "opening_hour": "10:00",
+    "average_rating": 3.97,
+    "city": "Austin",
+    "latitude": 30.346806,
+    "name": "Marco's Grill",
+    "cuisines": [
+      "Japanese",
+      "Indian",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1029",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -73.967242,
+    "opening_hour": "09:00",
+    "average_rating": 4.63,
+    "city": "New York",
+    "latitude": 40.658556,
+    "name": "The Smoky Hearth",
+    "cuisines": [
+      "Italian",
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1030",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -73.950153,
+    "opening_hour": "09:00",
+    "average_rating": 4.16,
+    "city": "New York",
+    "latitude": 40.673386,
+    "name": "Ines's Canteen",
+    "cuisines": [
+      "Pizza"
+    ]
+  },
+  {
+    "_id": "REST-1031",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -73.984848,
+    "opening_hour": "08:00",
+    "average_rating": 4.42,
+    "city": "New York",
+    "latitude": 40.663125,
+    "name": "Paolo's Supper Club",
+    "cuisines": [
+      "Thai",
+      "Chinese"
+    ]
+  },
+  {
+    "_id": "REST-1032",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -97.700717,
+    "opening_hour": "09:00",
+    "average_rating": 3.86,
+    "city": "Austin",
+    "latitude": 30.335463,
+    "name": "The Crimson Garden",
+    "cuisines": [
+      "Mexican",
+      "Italian",
+      "Indian",
+      "Burgers"
+    ]
+  },
+  {
+    "_id": "REST-1033",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -74.009911,
+    "opening_hour": "10:00",
+    "average_rating": 4.29,
+    "city": "New York",
+    "latitude": 40.74814,
+    "name": "Carlos's Bistro",
+    "cuisines": [
+      "Chinese",
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1034",
+    "price_level": 4,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -87.692035,
+    "opening_hour": "09:00",
+    "average_rating": 3.82,
+    "city": "Chicago",
+    "latitude": 41.867965,
+    "name": "Leila's Brasserie",
+    "cuisines": [
+      "Burgers",
+      "Pizza"
+    ]
+  },
+  {
+    "_id": "REST-1035",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -87.570699,
+    "opening_hour": "09:00",
+    "average_rating": 4.0,
+    "city": "Chicago",
+    "latitude": 41.826076,
+    "name": "The Lucky Fig",
+    "cuisines": [
+      "Mexican",
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1036",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -122.361601,
+    "opening_hour": "09:00",
+    "average_rating": 4.89,
+    "city": "Seattle",
+    "latitude": 47.651582,
+    "name": "Ines's Kitchen",
+    "cuisines": [
+      "Italian",
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1037",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -74.048734,
+    "opening_hour": "08:00",
+    "average_rating": 3.96,
+    "city": "New York",
+    "latitude": 40.721228,
+    "name": "Ines's Grill",
+    "cuisines": [
+      "Japanese"
+    ]
+  },
+  {
+    "_id": "REST-1038",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -74.068523,
+    "opening_hour": "11:00",
+    "average_rating": 4.54,
+    "city": "New York",
+    "latitude": 40.638327,
+    "name": "Ahmed's Grill",
+    "cuisines": [
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1039",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -118.240891,
+    "opening_hour": "09:00",
+    "average_rating": 4.04,
+    "city": "Los Angeles",
+    "latitude": 34.110342,
+    "name": "The Wild Fig",
+    "cuisines": [
+      "Burgers"
+    ]
+  },
+  {
+    "_id": "REST-1040",
+    "price_level": 4,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -118.253433,
+    "opening_hour": "10:00",
+    "average_rating": 4.37,
+    "city": "Los Angeles",
+    "latitude": 33.974561,
+    "name": "Nadia's Canteen",
+    "cuisines": [
+      "Pizza"
+    ]
+  },
+  {
+    "_id": "REST-1041",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -74.009792,
+    "opening_hour": "09:00",
+    "average_rating": 3.92,
+    "city": "New York",
+    "latitude": 40.75932,
+    "name": "Diego's Brasserie",
+    "cuisines": [
+      "Italian",
+      "Mexican",
+      "Indian"
+    ]
+  },
+  {
+    "_id": "REST-1042",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -73.96369,
+    "opening_hour": "09:00",
+    "average_rating": 3.69,
+    "city": "New York",
+    "latitude": 40.746708,
+    "name": "The Rustic Hearth",
+    "cuisines": [
+      "American",
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1043",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -118.221011,
+    "opening_hour": "10:00",
+    "average_rating": 3.48,
+    "city": "Los Angeles",
+    "latitude": 34.080112,
+    "name": "The Hidden Fig",
+    "cuisines": [
+      "Italian",
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1044",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -87.650301,
+    "opening_hour": "10:00",
+    "average_rating": 4.44,
+    "city": "Chicago",
+    "latitude": 41.845191,
+    "name": "Paolo's Dining Room",
+    "cuisines": [
+      "Burgers"
+    ]
+  },
+  {
+    "_id": "REST-1045",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -74.057924,
+    "opening_hour": "09:00",
+    "average_rating": 3.42,
+    "city": "New York",
+    "latitude": 40.783292,
+    "name": "Mei's Kitchen",
+    "cuisines": [
+      "Mexican",
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1046",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -118.311148,
+    "opening_hour": "08:00",
+    "average_rating": 4.32,
+    "city": "Los Angeles",
+    "latitude": 34.047865,
+    "name": "Bruno's Grill",
+    "cuisines": [
+      "Thai"
+    ]
+  },
+  {
+    "_id": "REST-1047",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -118.205222,
+    "opening_hour": "10:00",
+    "average_rating": 4.01,
+    "city": "Los Angeles",
+    "latitude": 34.042984,
+    "name": "Rosa's Bar & Grill",
+    "cuisines": [
+      "American",
+      "Pizza"
+    ]
+  },
+  {
+    "_id": "REST-1048",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -122.376516,
+    "opening_hour": "09:00",
+    "average_rating": 4.9,
+    "city": "Seattle",
+    "latitude": 47.607599,
+    "name": "Ruby's Bistro",
+    "cuisines": [
+      "Burgers",
+      "Thai"
+    ]
+  },
+  {
+    "_id": "REST-1049",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -118.277072,
+    "opening_hour": "10:00",
+    "average_rating": 5.0,
+    "city": "Los Angeles",
+    "latitude": 34.089695,
+    "name": "The Crimson Barrel",
+    "cuisines": [
+      "Chinese",
+      "Mexican",
+      "Burgers",
+      "Thai"
+    ]
+  },
+  {
+    "_id": "REST-1050",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -122.3764,
+    "opening_hour": "10:00",
+    "average_rating": 4.66,
+    "city": "Seattle",
+    "latitude": 47.566686,
+    "name": "Lena's Supper Club",
+    "cuisines": [
+      "Burgers",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1051",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -118.187792,
+    "opening_hour": "10:00",
+    "average_rating": 4.55,
+    "city": "Los Angeles",
+    "latitude": 34.000098,
+    "name": "Jules's Table",
+    "cuisines": [
+      "Pizza"
+    ]
+  },
+  {
+    "_id": "REST-1052",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -73.962346,
+    "opening_hour": "10:00",
+    "average_rating": 4.79,
+    "city": "New York",
+    "latitude": 40.734973,
+    "name": "The Silver Orchard",
+    "cuisines": [
+      "American",
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1053",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -97.738691,
+    "opening_hour": "09:00",
+    "average_rating": 5.0,
+    "city": "Austin",
+    "latitude": 30.282505,
+    "name": "Ines's Bistro",
+    "cuisines": [
+      "Mexican",
+      "Burgers",
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1054",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -118.229264,
+    "opening_hour": "11:00",
+    "average_rating": 4.46,
+    "city": "Los Angeles",
+    "latitude": 34.042476,
+    "name": "The Golden Oak",
+    "cuisines": [
+      "Pizza",
+      "Thai"
+    ]
+  },
+  {
+    "_id": "REST-1055",
+    "price_level": 4,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -97.735644,
+    "opening_hour": "09:00",
+    "average_rating": 4.28,
+    "city": "Austin",
+    "latitude": 30.343718,
+    "name": "Aiko's Eatery",
+    "cuisines": [
+      "Japanese"
+    ]
+  },
+  {
+    "_id": "REST-1056",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -122.336584,
+    "opening_hour": "08:00",
+    "average_rating": 3.81,
+    "city": "Seattle",
+    "latitude": 47.590707,
+    "name": "Mina's Bar & Grill",
+    "cuisines": [
+      "Mexican",
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1057",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -118.255411,
+    "opening_hour": "09:00",
+    "average_rating": 4.57,
+    "city": "Los Angeles",
+    "latitude": 34.026631,
+    "name": "The Humble Hearth",
+    "cuisines": [
+      "American",
+      "Chinese"
+    ]
+  },
+  {
+    "_id": "REST-1058",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -87.564129,
+    "opening_hour": "10:00",
+    "average_rating": 4.8,
+    "city": "Chicago",
+    "latitude": 41.822384,
+    "name": "Ruby's Diner",
+    "cuisines": [
+      "Burgers",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1059",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -97.753552,
+    "opening_hour": "09:00",
+    "average_rating": 4.41,
+    "city": "Austin",
+    "latitude": 30.216448,
+    "name": "Amara's Grill",
+    "cuisines": [
+      "Mexican",
+      "Italian",
+      "Mediterranean",
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1060",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -87.616988,
+    "opening_hour": "11:00",
+    "average_rating": 4.25,
+    "city": "Chicago",
+    "latitude": 41.950971,
+    "name": "The Sunny Kettle",
+    "cuisines": [
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1061",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -73.962359,
+    "opening_hour": "09:00",
+    "average_rating": 4.38,
+    "city": "New York",
+    "latitude": 40.631533,
+    "name": "The Salty Spoon",
+    "cuisines": [
+      "Indian"
+    ]
+  },
+  {
+    "_id": "REST-1062",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -97.755923,
+    "opening_hour": "11:00",
+    "average_rating": 4.42,
+    "city": "Austin",
+    "latitude": 30.281655,
+    "name": "Yara's Kitchen",
+    "cuisines": [
+      "American",
+      "Japanese",
+      "Indian",
+      "Burgers"
+    ]
+  },
+  {
+    "_id": "REST-1063",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -87.55408,
+    "opening_hour": "11:00",
+    "average_rating": 4.42,
+    "city": "Chicago",
+    "latitude": 41.901998,
+    "name": "The Wild Pepper",
+    "cuisines": [
+      "Indian",
+      "Italian",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1064",
+    "price_level": 2,
+    "is_active": false,
+    "closing_hour": "21:00",
+    "longitude": -73.93167,
+    "opening_hour": "10:00",
+    "average_rating": 4.71,
+    "city": "New York",
+    "latitude": 40.638407,
+    "name": "The Sunny Orchard",
+    "cuisines": [
+      "Indian",
+      "Japanese"
+    ]
+  },
+  {
+    "_id": "REST-1065",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -122.326237,
+    "opening_hour": "11:00",
+    "average_rating": 4.31,
+    "city": "Seattle",
+    "latitude": 47.567857,
+    "name": "Marco's Canteen",
+    "cuisines": [
+      "Thai",
+      "Mexican",
+      "American",
+      "Burgers"
+    ]
+  },
+  {
+    "_id": "REST-1066",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -122.35047,
+    "opening_hour": "08:00",
+    "average_rating": 4.41,
+    "city": "San Francisco",
+    "latitude": 37.74035,
+    "name": "The Salty Pepper",
+    "cuisines": [
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1067",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -97.768935,
+    "opening_hour": "11:00",
+    "average_rating": 3.8,
+    "city": "Austin",
+    "latitude": 30.307087,
+    "name": "Mina's Dining Room",
+    "cuisines": [
+      "Italian",
+      "American",
+      "Mexican",
+      "Japanese",
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1068",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -74.014341,
+    "opening_hour": "11:00",
+    "average_rating": 4.12,
+    "city": "New York",
+    "latitude": 40.780884,
+    "name": "Mei's Diner",
+    "cuisines": [
+      "Japanese"
+    ]
+  },
+  {
+    "_id": "REST-1069",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -122.40893,
+    "opening_hour": "11:00",
+    "average_rating": 4.51,
+    "city": "San Francisco",
+    "latitude": 37.699802,
+    "name": "The Velvet Plate",
+    "cuisines": [
+      "Chinese",
+      "Japanese",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1070",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -73.948085,
+    "opening_hour": "10:00",
+    "average_rating": 3.61,
+    "city": "New York",
+    "latitude": 40.688283,
+    "name": "The Blue Hearth",
+    "cuisines": [
+      "Thai"
+    ]
+  },
+  {
+    "_id": "REST-1071",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -118.22688,
+    "opening_hour": "08:00",
+    "average_rating": 5.0,
+    "city": "Los Angeles",
+    "latitude": 34.032938,
+    "name": "The Velvet Ladle",
+    "cuisines": [
+      "Mexican",
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1072",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -97.739675,
+    "opening_hour": "10:00",
+    "average_rating": 4.04,
+    "city": "Austin",
+    "latitude": 30.292909,
+    "name": "The Crimson Kettle",
+    "cuisines": [
+      "Burgers",
+      "Japanese",
+      "Mediterranean",
+      "Mexican",
+      "Thai"
+    ]
+  },
+  {
+    "_id": "REST-1073",
+    "price_level": 4,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -97.802088,
+    "opening_hour": "08:00",
+    "average_rating": 4.18,
+    "city": "Austin",
+    "latitude": 30.31526,
+    "name": "The Copper Garden",
+    "cuisines": [
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1074",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -87.577708,
+    "opening_hour": "11:00",
+    "average_rating": 4.84,
+    "city": "Chicago",
+    "latitude": 41.842894,
+    "name": "Paolo's Bar & Grill",
+    "cuisines": [
+      "American",
+      "Indian",
+      "Burgers"
+    ]
+  },
+  {
+    "_id": "REST-1075",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -97.768783,
+    "opening_hour": "10:00",
+    "average_rating": 4.35,
+    "city": "Austin",
+    "latitude": 30.312174,
+    "name": "Mateo's Diner",
+    "cuisines": [
+      "Thai"
+    ]
+  },
+  {
+    "_id": "REST-1076",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -122.292203,
+    "opening_hour": "10:00",
+    "average_rating": 4.49,
+    "city": "Seattle",
+    "latitude": 47.539556,
+    "name": "Sam's Canteen",
+    "cuisines": [
+      "Pizza"
+    ]
+  },
+  {
+    "_id": "REST-1077",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -122.293545,
+    "opening_hour": "10:00",
+    "average_rating": 4.85,
+    "city": "Seattle",
+    "latitude": 47.687984,
+    "name": "The Urban Harbor",
+    "cuisines": [
+      "American",
+      "Indian",
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1078",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -74.061656,
+    "opening_hour": "09:00",
+    "average_rating": 4.74,
+    "city": "New York",
+    "latitude": 40.726835,
+    "name": "Sofia's Kitchen",
+    "cuisines": [
+      "Thai",
+      "Italian",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1079",
+    "price_level": 4,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -118.261912,
+    "opening_hour": "08:00",
+    "average_rating": 4.22,
+    "city": "Los Angeles",
+    "latitude": 34.074046,
+    "name": "Dmitri's Eatery",
+    "cuisines": [
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1080",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -74.029933,
+    "opening_hour": "10:00",
+    "average_rating": 3.89,
+    "city": "New York",
+    "latitude": 40.674289,
+    "name": "Malik's Canteen",
+    "cuisines": [
+      "Burgers",
+      "Chinese",
+      "Japanese",
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1081",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -118.29648,
+    "opening_hour": "09:00",
+    "average_rating": 4.12,
+    "city": "Los Angeles",
+    "latitude": 34.096089,
+    "name": "Theo's Dining Room",
+    "cuisines": [
+      "Mexican",
+      "Chinese",
+      "Indian"
+    ]
+  },
+  {
+    "_id": "REST-1082",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -118.215086,
+    "opening_hour": "10:00",
+    "average_rating": 3.8,
+    "city": "Los Angeles",
+    "latitude": 34.060802,
+    "name": "Kenji's Dining Room",
+    "cuisines": [
+      "Japanese",
+      "Italian",
+      "Chinese",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1083",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -122.288521,
+    "opening_hour": "11:00",
+    "average_rating": 3.45,
+    "city": "Seattle",
+    "latitude": 47.684449,
+    "name": "Priya's Canteen",
+    "cuisines": [
+      "Burgers"
+    ]
+  },
+  {
+    "_id": "REST-1084",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -118.220827,
+    "opening_hour": "10:00",
+    "average_rating": 4.01,
+    "city": "Los Angeles",
+    "latitude": 34.098451,
+    "name": "The Lucky Basil",
+    "cuisines": [
+      "Italian",
+      "Pizza",
+      "Chinese",
+      "Burgers",
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1085",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -118.317191,
+    "opening_hour": "08:00",
+    "average_rating": 4.56,
+    "city": "Los Angeles",
+    "latitude": 33.997114,
+    "name": "Hugo's Eatery",
+    "cuisines": [
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1086",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -87.64416,
+    "opening_hour": "08:00",
+    "average_rating": 3.91,
+    "city": "Chicago",
+    "latitude": 41.863372,
+    "name": "The Hidden Spoon",
+    "cuisines": [
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1087",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -122.409966,
+    "opening_hour": "08:00",
+    "average_rating": 3.89,
+    "city": "San Francisco",
+    "latitude": 37.739281,
+    "name": "The Urban Table",
+    "cuisines": [
+      "Burgers",
+      "Mexican",
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1088",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -74.079265,
+    "opening_hour": "11:00",
+    "average_rating": 4.23,
+    "city": "New York",
+    "latitude": 40.713815,
+    "name": "Mei's Brasserie",
+    "cuisines": [
+      "Indian",
+      "Mexican",
+      "Burgers"
+    ]
+  },
+  {
+    "_id": "REST-1089",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -74.026869,
+    "opening_hour": "08:00",
+    "average_rating": 4.05,
+    "city": "New York",
+    "latitude": 40.644574,
+    "name": "Mina's Diner",
+    "cuisines": [
+      "Indian",
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1090",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -87.573471,
+    "opening_hour": "10:00",
+    "average_rating": 4.17,
+    "city": "Chicago",
+    "latitude": 41.912148,
+    "name": "The Silver Barrel",
+    "cuisines": [
+      "Chinese"
+    ]
+  },
+  {
+    "_id": "REST-1091",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "00:00",
+    "longitude": -87.687815,
+    "opening_hour": "09:00",
+    "average_rating": 4.14,
+    "city": "Chicago",
+    "latitude": 41.942129,
+    "name": "Aiko's Food House",
+    "cuisines": [
+      "Mediterranean",
+      "Thai",
+      "Japanese"
+    ]
+  },
+  {
+    "_id": "REST-1092",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -73.993916,
+    "opening_hour": "10:00",
+    "average_rating": 3.91,
+    "city": "New York",
+    "latitude": 40.783833,
+    "name": "The Lucky Plate",
+    "cuisines": [
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1093",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -87.586696,
+    "opening_hour": "11:00",
+    "average_rating": 4.27,
+    "city": "Chicago",
+    "latitude": 41.871422,
+    "name": "The Salty Basil",
+    "cuisines": [
+      "Indian",
+      "Italian",
+      "Mexican",
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1094",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -122.397096,
+    "opening_hour": "09:00",
+    "average_rating": 4.07,
+    "city": "Seattle",
+    "latitude": 47.560382,
+    "name": "The Little Fork",
+    "cuisines": [
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1095",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "23:00",
+    "longitude": -118.18643,
+    "opening_hour": "09:00",
+    "average_rating": 3.63,
+    "city": "Los Angeles",
+    "latitude": 33.977068,
+    "name": "Carlos's Dining Room",
+    "cuisines": [
+      "Italian",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1096",
+    "price_level": 3,
+    "is_active": false,
+    "closing_hour": "21:00",
+    "longitude": -87.674988,
+    "opening_hour": "10:00",
+    "average_rating": 3.63,
+    "city": "Chicago",
+    "latitude": 41.832777,
+    "name": "Ruby's Table",
+    "cuisines": [
+      "Mediterranean"
+    ]
+  },
+  {
+    "_id": "REST-1097",
+    "price_level": 4,
+    "is_active": true,
+    "closing_hour": "22:00",
+    "longitude": -122.477815,
+    "opening_hour": "11:00",
+    "average_rating": 4.22,
+    "city": "San Francisco",
+    "latitude": 37.754529,
+    "name": "The Happy Harbor",
+    "cuisines": [
+      "Italian",
+      "American"
+    ]
+  },
+  {
+    "_id": "REST-1098",
+    "price_level": 1,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -122.355686,
+    "opening_hour": "08:00",
+    "average_rating": 4.2,
+    "city": "San Francisco",
+    "latitude": 37.754732,
+    "name": "Luca's Grill",
+    "cuisines": [
+      "Thai",
+      "Japanese",
+      "Mexican"
+    ]
+  },
+  {
+    "_id": "REST-1099",
+    "price_level": 3,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -87.627795,
+    "opening_hour": "11:00",
+    "average_rating": 3.61,
+    "city": "Chicago",
+    "latitude": 41.909756,
+    "name": "Carlos's Kitchen",
+    "cuisines": [
+      "Italian"
+    ]
+  },
+  {
+    "_id": "REST-1100",
+    "price_level": 2,
+    "is_active": true,
+    "closing_hour": "21:00",
+    "longitude": -118.30962,
+    "opening_hour": "11:00",
+    "average_rating": 3.83,
+    "city": "Los Angeles",
+    "latitude": 34.079866,
+    "name": "The Green Fork",
+    "cuisines": [
+      "Chinese"
+    ]
+  }
+]

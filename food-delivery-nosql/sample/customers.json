@@ -1,0 +1,2384 @@
+[
+  {
+    "_id": "CUST-010001",
+    "signup_date": "2024-05-30T00:00:00Z",
+    "full_name": "Tyrone Hernandez",
+    "email": "tyroneh45@yahoo.com",
+    "loyalty_tier": "Silver",
+    "phone": "268.623.5221",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.36203,
+        "zip_code": "91529",
+        "city": "San Francisco",
+        "street": "83488 Schmidt Knoll Apt. 156",
+        "latitude": 37.737706
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010002",
+    "signup_date": "2025-12-08T00:00:00Z",
+    "full_name": "John Pratt",
+    "email": "john.pratt35@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "(527)608-5500",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -73.974149,
+        "zip_code": "11382",
+        "city": "New York",
+        "street": "985 Wells Mountains",
+        "latitude": 40.712841
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010003",
+    "signup_date": "2023-02-13T00:00:00Z",
+    "full_name": "Paige Rodriguez",
+    "email": "paige.rodriguez@icloud.com",
+    "loyalty_tier": "Bronze",
+    "phone": "848.233.8930x1565",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.298457,
+        "zip_code": "92179",
+        "city": "Los Angeles",
+        "street": "076 Joseph Rue Suite 723",
+        "latitude": 33.983328
+      },
+      {
+        "label": "work",
+        "longitude": -118.301877,
+        "zip_code": "96152",
+        "city": "Los Angeles",
+        "street": "636 Clay Curve Apt. 268",
+        "latitude": 34.099435
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010004",
+    "signup_date": "2024-05-23T00:00:00Z",
+    "referral_code": "REF-SLBEZ7",
+    "full_name": "Michael Williams",
+    "email": "michaelw50@gmail.com",
+    "loyalty_tier": "Silver",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -97.801651,
+        "zip_code": "78870",
+        "city": "Austin",
+        "street": "786 Baker Mill Suite 374",
+        "latitude": 30.227888
+      },
+      {
+        "label": "work",
+        "longitude": -122.358856,
+        "zip_code": "94030",
+        "city": "San Francisco",
+        "street": "9249 Kathleen Lock Apt. 348",
+        "latitude": 37.698453
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010005",
+    "signup_date": "2024-08-10T00:00:00Z",
+    "referral_code": "REF-0MC3DO",
+    "full_name": "Heather Williams",
+    "email": "heather.williams14@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "(464)898-1343x42364",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.342981,
+        "zip_code": "90747",
+        "city": "San Francisco",
+        "street": "8696 Gutierrez Mews Apt. 357",
+        "latitude": 37.759031
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010006",
+    "signup_date": "2023-08-19T00:00:00Z",
+    "full_name": "Edward Greer",
+    "email": "edwardg40@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "001-598-780-3567x891",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.238769,
+        "zip_code": "91972",
+        "city": "Los Angeles",
+        "street": "943 Shelby Trail",
+        "latitude": 33.981221
+      },
+      {
+        "label": "other",
+        "longitude": -87.611811,
+        "zip_code": "62382",
+        "city": "Chicago",
+        "street": "25530 Singleton Estate Suite 016",
+        "latitude": 41.815656
+      },
+      {
+        "label": "work",
+        "longitude": -118.20904,
+        "zip_code": "94851",
+        "city": "Los Angeles",
+        "street": "47749 Maureen Mall",
+        "latitude": 34.001354
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010007",
+    "signup_date": "2025-04-04T00:00:00Z",
+    "referral_code": "REF-L3IE3Q",
+    "full_name": "Timothy Wolf",
+    "email": "twolf@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "(931)674-6017x3797",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -122.377694,
+        "zip_code": "92205",
+        "city": "San Francisco",
+        "street": "92314 Cook Plains Apt. 002",
+        "latitude": 37.800087
+      },
+      {
+        "label": "home",
+        "longitude": -97.765516,
+        "zip_code": "76455",
+        "city": "Austin",
+        "street": "688 Munoz Inlet Suite 880",
+        "latitude": 30.242247
+      },
+      {
+        "label": "other",
+        "longitude": -122.451381,
+        "zip_code": "93146",
+        "city": "San Francisco",
+        "street": "99200 Frank Plains",
+        "latitude": 37.788577
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010008",
+    "signup_date": "2023-10-25T00:00:00Z",
+    "full_name": "Melissa Gutierrez",
+    "email": "melissagutierrez@icloud.com",
+    "loyalty_tier": "Bronze",
+    "phone": "001-623-321-8269x53938",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.298803,
+        "zip_code": "95893",
+        "city": "Los Angeles",
+        "street": "470 Williams Islands",
+        "latitude": 34.100215
+      },
+      {
+        "label": "work",
+        "longitude": -118.229381,
+        "zip_code": "95161",
+        "city": "Los Angeles",
+        "street": "03108 Harrison Vista",
+        "latitude": 34.084186
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010009",
+    "signup_date": "2025-09-02T00:00:00Z",
+    "full_name": "James Newman",
+    "email": "james.newman@yahoo.com",
+    "loyalty_tier": "Bronze",
+    "phone": "(579)791-0293x67183",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -97.805797,
+        "zip_code": "77892",
+        "city": "Austin",
+        "street": "93712 Steven Summit Apt. 146",
+        "latitude": 30.322784
+      },
+      {
+        "label": "work",
+        "longitude": -73.971645,
+        "zip_code": "14696",
+        "city": "New York",
+        "street": "154 Phillip Dam",
+        "latitude": 40.642765
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010010",
+    "signup_date": "2025-01-30T00:00:00Z",
+    "referral_code": "REF-H9LEWT",
+    "full_name": "Brittany Grimes",
+    "email": "bgrimes@outlook.com",
+    "loyalty_tier": "Bronze",
+    "phone": "5572626267",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -87.65742,
+        "zip_code": "61341",
+        "city": "Chicago",
+        "street": "30511 Felicia Trail",
+        "latitude": 41.877457
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010011",
+    "signup_date": "2023-03-22T00:00:00Z",
+    "full_name": "Laura Smith",
+    "email": "laura.smith@gmail.com",
+    "loyalty_tier": "Gold",
+    "phone": "+1-666-403-1421",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.251124,
+        "zip_code": "92699",
+        "city": "Los Angeles",
+        "street": "42639 Simmons Spring",
+        "latitude": 34.068031
+      },
+      {
+        "label": "work",
+        "longitude": -87.618245,
+        "zip_code": "62175",
+        "city": "Chicago",
+        "street": "2822 Smith Greens Apt. 830",
+        "latitude": 41.928023
+      },
+      {
+        "label": "other",
+        "longitude": -87.649369,
+        "zip_code": "62070",
+        "city": "Chicago",
+        "street": "64321 Francis Road Suite 658",
+        "latitude": 41.952858
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010012",
+    "signup_date": "2025-10-21T00:00:00Z",
+    "referral_code": "REF-W5FMP6",
+    "full_name": "Tracy Brown",
+    "email": "tracy_brown@aol.com",
+    "loyalty_tier": "Platinum",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.329947,
+        "zip_code": "99003",
+        "city": "Seattle",
+        "street": "7622 Michelle Center Apt. 345",
+        "latitude": 47.550027
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010013",
+    "signup_date": "2023-01-25T00:00:00Z",
+    "full_name": "Adrian Rodriguez",
+    "email": "adrian.rodriguez@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "671-829-3341x227",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -73.996092,
+        "zip_code": "13754",
+        "city": "New York",
+        "street": "67497 Annette Common Suite 191",
+        "latitude": 40.635104
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010014",
+    "signup_date": "2023-10-31T00:00:00Z",
+    "referral_code": "REF-OVO5LA",
+    "full_name": "Gregory Richards",
+    "email": "gregory1985@gmail.com",
+    "loyalty_tier": "Bronze",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -73.947477,
+        "zip_code": "13280",
+        "city": "New York",
+        "street": "296 Rose Springs Suite 405",
+        "latitude": 40.721317
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010015",
+    "signup_date": "2023-10-24T00:00:00Z",
+    "referral_code": "REF-6EO8D0",
+    "full_name": "Jeffrey Bates",
+    "email": "jeffrey_bates@hotmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "001-945-684-5628x296",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -74.059344,
+        "zip_code": "13152",
+        "city": "New York",
+        "street": "5361 Rogers Heights Apt. 506",
+        "latitude": 40.764516
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010016",
+    "signup_date": "2025-06-12T00:00:00Z",
+    "full_name": "Nicole Beard",
+    "email": "nicole.beard@gmail.com",
+    "loyalty_tier": "Platinum",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -74.083141,
+        "zip_code": "13870",
+        "city": "New York",
+        "street": "77559 Adams Lock",
+        "latitude": 40.6909
+      },
+      {
+        "label": "home",
+        "longitude": -74.083045,
+        "zip_code": "13282",
+        "city": "New York",
+        "street": "43252 Shannon Oval Apt. 917",
+        "latitude": 40.780735
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010017",
+    "signup_date": "2024-06-05T00:00:00Z",
+    "full_name": "Dominique Fitzgerald",
+    "email": "dfitzgerald@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "+1-864-234-6973",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -122.377302,
+        "zip_code": "90336",
+        "city": "San Francisco",
+        "street": "224 Pacheco Point",
+        "latitude": 37.763288
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010018",
+    "signup_date": "2024-05-05T00:00:00Z",
+    "referral_code": "REF-DMINYC",
+    "full_name": "Samuel Garza",
+    "email": "garza.samuel@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "001-507-308-9614x7054",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -118.279361,
+        "zip_code": "94793",
+        "city": "Los Angeles",
+        "street": "3623 Luis Coves",
+        "latitude": 33.992247
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010019",
+    "signup_date": "2025-08-20T00:00:00Z",
+    "referral_code": "REF-28DMAI",
+    "full_name": "Darlene Miller",
+    "email": "darlene.miller@mail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "+1-661-403-1801x920",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -122.443179,
+        "zip_code": "90060",
+        "city": "San Francisco",
+        "street": "28114 Baker Isle Apt. 161",
+        "latitude": 37.72834
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010020",
+    "signup_date": "2024-06-15T00:00:00Z",
+    "full_name": "Jane Parker",
+    "email": "jparker@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "595.445.8275x712",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.341997,
+        "zip_code": "98770",
+        "city": "Seattle",
+        "street": "054 Nicole Streets Apt. 080",
+        "latitude": 47.657991
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010021",
+    "signup_date": "2025-02-28T00:00:00Z",
+    "full_name": "Jessica Ball",
+    "email": "jessica.ball@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "+1-942-213-8606x55855",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -74.007485,
+        "zip_code": "13320",
+        "city": "New York",
+        "street": "21562 Bennett Plaza",
+        "latitude": 40.638012
+      },
+      {
+        "label": "other",
+        "longitude": -74.060404,
+        "zip_code": "10606",
+        "city": "New York",
+        "street": "238 Mary Port",
+        "latitude": 40.726907
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010022",
+    "signup_date": "2025-04-22T00:00:00Z",
+    "referral_code": "REF-OXUA0B",
+    "full_name": "Samuel Walters",
+    "email": "samuelwalters@outlook.com",
+    "loyalty_tier": "Bronze",
+    "phone": "001-797-817-9598x512",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -97.747032,
+        "zip_code": "79507",
+        "city": "Austin",
+        "street": "4114 Rivera Fork Suite 943",
+        "latitude": 30.307159
+      },
+      {
+        "label": "work",
+        "longitude": -87.659251,
+        "zip_code": "62883",
+        "city": "Chicago",
+        "street": "244 Brooks Center Suite 972",
+        "latitude": 41.851649
+      },
+      {
+        "label": "other",
+        "longitude": -118.25329,
+        "zip_code": "92112",
+        "city": "Los Angeles",
+        "street": "4568 Taylor Centers Suite 540",
+        "latitude": 34.053271
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010023",
+    "signup_date": "2024-01-17T00:00:00Z",
+    "referral_code": "REF-T2TSY3",
+    "full_name": "Curtis Smith",
+    "email": "curtis.smith@live.com",
+    "loyalty_tier": "Bronze",
+    "phone": "928.384.1914x9111",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -97.805437,
+        "zip_code": "78183",
+        "city": "Austin",
+        "street": "5568 Montgomery Stravenue Apt. 851",
+        "latitude": 30.252693
+      },
+      {
+        "label": "work",
+        "longitude": -73.960915,
+        "zip_code": "12453",
+        "city": "New York",
+        "street": "06562 Deborah Corners",
+        "latitude": 40.743599
+      },
+      {
+        "label": "other",
+        "longitude": -87.644774,
+        "zip_code": "61690",
+        "city": "Chicago",
+        "street": "9165 Lewis Glen Suite 010",
+        "latitude": 41.841311
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010024",
+    "signup_date": "2025-06-17T00:00:00Z",
+    "referral_code": "REF-O4XYP2",
+    "full_name": "Rebecca Blair",
+    "email": "rebecca.blair@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "(267)889-4875x9503",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -74.02081,
+        "zip_code": "13588",
+        "city": "New York",
+        "street": "382 Sean Spurs Suite 583",
+        "latitude": 40.70112
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010025",
+    "signup_date": "2023-11-13T00:00:00Z",
+    "full_name": "Aaron Stephenson",
+    "email": "astephenson@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "647.545.7995",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -87.586359,
+        "zip_code": "60971",
+        "city": "Chicago",
+        "street": "745 Evelyn Brook Suite 300",
+        "latitude": 41.831958
+      },
+      {
+        "label": "home",
+        "longitude": -122.462753,
+        "zip_code": "95109",
+        "city": "San Francisco",
+        "street": "11705 Nash Mountains",
+        "latitude": 37.694695
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010026",
+    "signup_date": "2024-01-29T00:00:00Z",
+    "full_name": "Erik Alvarado",
+    "email": "ealvarado@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "5963580087",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.413418,
+        "zip_code": "90440",
+        "city": "San Francisco",
+        "street": "688 Ballard Vista",
+        "latitude": 37.789298
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010027",
+    "signup_date": "2025-05-28T00:00:00Z",
+    "referral_code": "REF-0GE8MS",
+    "full_name": "Jill Williams",
+    "email": "jill1983@icloud.com",
+    "loyalty_tier": "Bronze",
+    "phone": "612.305.6078",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -74.063768,
+        "zip_code": "10219",
+        "city": "New York",
+        "street": "779 Paul Hill",
+        "latitude": 40.762615
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010028",
+    "signup_date": "2025-12-24T00:00:00Z",
+    "full_name": "Jasmin Gomez",
+    "email": "jgomez@yahoo.com",
+    "loyalty_tier": "Bronze",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.194454,
+        "zip_code": "92395",
+        "city": "Los Angeles",
+        "street": "27349 Shawn Stravenue",
+        "latitude": 33.978323
+      },
+      {
+        "label": "work",
+        "longitude": -87.682533,
+        "zip_code": "62164",
+        "city": "Chicago",
+        "street": "40990 Scott Pines",
+        "latitude": 41.898077
+      },
+      {
+        "label": "other",
+        "longitude": -122.457662,
+        "zip_code": "92400",
+        "city": "San Francisco",
+        "street": "24535 Cline Loop Apt. 307",
+        "latitude": 37.820512
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010029",
+    "signup_date": "2024-08-27T00:00:00Z",
+    "referral_code": "REF-NW4EC2",
+    "full_name": "Jason Williams",
+    "email": "jason.williams@outlook.com",
+    "loyalty_tier": "Bronze",
+    "phone": "810.967.5861x54600",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.387926,
+        "zip_code": "94032",
+        "city": "San Francisco",
+        "street": "243 Bowman Drive",
+        "latitude": 37.738121
+      },
+      {
+        "label": "work",
+        "longitude": -122.298976,
+        "zip_code": "99387",
+        "city": "Seattle",
+        "street": "9938 Richard Pines Suite 349",
+        "latitude": 47.663772
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010030",
+    "signup_date": "2024-05-31T00:00:00Z",
+    "full_name": "Bobby Robinson",
+    "email": "brobinson@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "259.563.2078x336",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.233691,
+        "zip_code": "94247",
+        "city": "Los Angeles",
+        "street": "56318 Katie Island",
+        "latitude": 33.981155
+      },
+      {
+        "label": "work",
+        "longitude": -97.670299,
+        "zip_code": "78999",
+        "city": "Austin",
+        "street": "009 Jill Shoal",
+        "latitude": 30.321376
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010031",
+    "signup_date": "2025-10-01T00:00:00Z",
+    "full_name": "Connor Mathis",
+    "email": "connor.mathis@yahoo.com",
+    "loyalty_tier": "Gold",
+    "phone": "840.838.1983x225",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -74.048225,
+        "zip_code": "10499",
+        "city": "New York",
+        "street": "0899 Johnson Ranch Suite 407",
+        "latitude": 40.752458
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010032",
+    "signup_date": "2023-05-05T00:00:00Z",
+    "referral_code": "REF-C8OPOC",
+    "full_name": "Cassandra Pace",
+    "email": "cassandrapace@outlook.com",
+    "loyalty_tier": "Bronze",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.249676,
+        "zip_code": "96085",
+        "city": "Los Angeles",
+        "street": "45813 Christine Isle Suite 488",
+        "latitude": 34.092838
+      },
+      {
+        "label": "work",
+        "longitude": -122.400079,
+        "zip_code": "91713",
+        "city": "San Francisco",
+        "street": "757 Brown Freeway",
+        "latitude": 37.822801
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010033",
+    "signup_date": "2023-11-30T00:00:00Z",
+    "full_name": "Johnny Jennings",
+    "email": "johnny.jennings@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "319-464-6669x19216",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.383707,
+        "zip_code": "94070",
+        "city": "San Francisco",
+        "street": "10622 Garcia Camp Suite 777",
+        "latitude": 37.824616
+      },
+      {
+        "label": "work",
+        "longitude": -122.446123,
+        "zip_code": "95627",
+        "city": "San Francisco",
+        "street": "70999 Cooley Spring",
+        "latitude": 37.741253
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010034",
+    "signup_date": "2025-12-26T00:00:00Z",
+    "referral_code": "REF-WQTZTG",
+    "full_name": "Ruth Jones",
+    "email": "ruthjones@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "(784)261-5333",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -97.708743,
+        "zip_code": "79093",
+        "city": "Austin",
+        "street": "03410 Jeffrey Creek Apt. 974",
+        "latitude": 30.317537
+      },
+      {
+        "label": "home",
+        "longitude": -87.563203,
+        "zip_code": "62057",
+        "city": "Chicago",
+        "street": "313 Williams Parkways",
+        "latitude": 41.908859
+      },
+      {
+        "label": "other",
+        "longitude": -97.668446,
+        "zip_code": "75579",
+        "city": "Austin",
+        "street": "7579 Mitchell Mill",
+        "latitude": 30.215156
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010035",
+    "signup_date": "2023-11-30T00:00:00Z",
+    "referral_code": "REF-XZRWSG",
+    "full_name": "Miss Brenda Simmons",
+    "email": "brendasimmons@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "542-332-7134x8632",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -97.754146,
+        "zip_code": "76683",
+        "city": "Austin",
+        "street": "0634 Christina Junction",
+        "latitude": 30.24497
+      },
+      {
+        "label": "other",
+        "longitude": -73.966168,
+        "zip_code": "14759",
+        "city": "New York",
+        "street": "81906 Mcgrath Village",
+        "latitude": 40.770739
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010036",
+    "signup_date": "2024-04-11T00:00:00Z",
+    "full_name": "Jeffrey Thompson",
+    "email": "jeffrey.thompson85@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "886.554.9969x8235",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -97.668247,
+        "zip_code": "78466",
+        "city": "Austin",
+        "street": "2529 April Lane",
+        "latitude": 30.241882
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010037",
+    "signup_date": "2023-02-16T00:00:00Z",
+    "full_name": "Earl Allen",
+    "email": "earl.allen@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "(861)310-5554x8099",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -73.945976,
+        "zip_code": "10369",
+        "city": "New York",
+        "street": "59934 Ashley Rapid Apt. 532",
+        "latitude": 40.780131
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010038",
+    "signup_date": "2023-12-13T00:00:00Z",
+    "full_name": "Zachary Fisher",
+    "email": "zacharyfisher@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "001-544-410-7961x1210",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -74.027561,
+        "zip_code": "10056",
+        "city": "New York",
+        "street": "961 Lewis Mall Apt. 448",
+        "latitude": 40.651291
+      },
+      {
+        "label": "work",
+        "longitude": -118.259332,
+        "zip_code": "94957",
+        "city": "Los Angeles",
+        "street": "9603 Pamela Creek",
+        "latitude": 34.086295
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010039",
+    "signup_date": "2023-10-12T00:00:00Z",
+    "full_name": "Justin Hall Jr.",
+    "email": "justin.hall@gmail.com",
+    "loyalty_tier": "Silver",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.29684,
+        "zip_code": "94652",
+        "city": "Los Angeles",
+        "street": "8669 Robinson Falls Suite 885",
+        "latitude": 33.987317
+      },
+      {
+        "label": "other",
+        "longitude": -122.409193,
+        "zip_code": "99023",
+        "city": "Seattle",
+        "street": "955 Young Union",
+        "latitude": 47.562699
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010040",
+    "signup_date": "2025-02-20T00:00:00Z",
+    "full_name": "Nathan Brown",
+    "email": "nathan.brown78@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "584.298.2594x559",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -87.580742,
+        "zip_code": "60522",
+        "city": "Chicago",
+        "street": "528 Chung Rue Apt. 804",
+        "latitude": 41.851826
+      },
+      {
+        "label": "other",
+        "longitude": -74.000446,
+        "zip_code": "12466",
+        "city": "New York",
+        "street": "789 Lindsey Manor",
+        "latitude": 40.776841
+      },
+      {
+        "label": "work",
+        "longitude": -118.23769,
+        "zip_code": "95022",
+        "city": "Los Angeles",
+        "street": "740 Thomas Cliff Suite 709",
+        "latitude": 34.10562
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010041",
+    "signup_date": "2024-12-17T00:00:00Z",
+    "referral_code": "REF-EJSS59",
+    "full_name": "Ricky Fernandez",
+    "email": "rickyfernandez@hotmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "757.493.6216x5852",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.372137,
+        "zip_code": "95572",
+        "city": "San Francisco",
+        "street": "63847 Shannon Harbor",
+        "latitude": 37.801659
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010042",
+    "signup_date": "2024-02-10T00:00:00Z",
+    "referral_code": "REF-2SHP14",
+    "full_name": "Zachary Garrison",
+    "email": "zgarrison@gmail.com",
+    "loyalty_tier": "Platinum",
+    "phone": "(851)951-2809x86365",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -118.295027,
+        "zip_code": "95971",
+        "city": "Los Angeles",
+        "street": "641 Caleb Lock",
+        "latitude": 34.092435
+      },
+      {
+        "label": "home",
+        "longitude": -74.066194,
+        "zip_code": "11881",
+        "city": "New York",
+        "street": "014 James Plain",
+        "latitude": 40.643485
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010043",
+    "signup_date": "2024-01-11T00:00:00Z",
+    "full_name": "Nathan Underwood",
+    "email": "nunderwood@icloud.com",
+    "loyalty_tier": "Silver",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -97.698313,
+        "zip_code": "78816",
+        "city": "Austin",
+        "street": "477 Wong Neck Apt. 134",
+        "latitude": 30.240717
+      },
+      {
+        "label": "other",
+        "longitude": -74.001382,
+        "zip_code": "11656",
+        "city": "New York",
+        "street": "6264 Campbell Circle Apt. 895",
+        "latitude": 40.773853
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010044",
+    "signup_date": "2023-06-28T00:00:00Z",
+    "full_name": "Elizabeth Martin",
+    "email": "elizabethmartin@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "552.244.7138",
+    "addresses": [
+      {
+        "label": "other",
+        "longitude": -97.687321,
+        "zip_code": "75905",
+        "city": "Austin",
+        "street": "680 Todd Stravenue",
+        "latitude": 30.293171
+      },
+      {
+        "label": "home",
+        "longitude": -73.992379,
+        "zip_code": "14157",
+        "city": "New York",
+        "street": "376 Penny Radial Suite 296",
+        "latitude": 40.706151
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010045",
+    "signup_date": "2025-06-14T00:00:00Z",
+    "referral_code": "REF-DF4X7P",
+    "full_name": "Zachary Brown",
+    "email": "zachary.brown@icloud.com",
+    "loyalty_tier": "Bronze",
+    "phone": "+1-630-748-6986",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.173348,
+        "zip_code": "92816",
+        "city": "Los Angeles",
+        "street": "1620 Martinez Extensions",
+        "latitude": 34.019759
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010046",
+    "signup_date": "2024-09-25T00:00:00Z",
+    "full_name": "Linda Dominguez",
+    "email": "lindadominguez@icloud.com",
+    "loyalty_tier": "Bronze",
+    "phone": "+1-771-262-3978x886",
+    "addresses": [
+      {
+        "label": "other",
+        "longitude": -74.061207,
+        "zip_code": "12646",
+        "city": "New York",
+        "street": "867 Nelson Oval Suite 626",
+        "latitude": 40.649855
+      },
+      {
+        "label": "home",
+        "longitude": -73.980468,
+        "zip_code": "13294",
+        "city": "New York",
+        "street": "403 West Forks",
+        "latitude": 40.689556
+      },
+      {
+        "label": "work",
+        "longitude": -118.2668,
+        "zip_code": "90974",
+        "city": "Los Angeles",
+        "street": "3085 Christy Cove Suite 794",
+        "latitude": 34.00295
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010047",
+    "signup_date": "2023-04-25T00:00:00Z",
+    "full_name": "Jeremy White",
+    "email": "jeremywhite@icloud.com",
+    "loyalty_tier": "Silver",
+    "phone": "838-509-3191",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.244477,
+        "zip_code": "94540",
+        "city": "Los Angeles",
+        "street": "8594 Cooper Skyway",
+        "latitude": 34.020104
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010048",
+    "signup_date": "2023-07-31T00:00:00Z",
+    "full_name": "Allen Jackson",
+    "email": "allenjackson@icloud.com",
+    "loyalty_tier": "Gold",
+    "phone": "833-803-8786x3165",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -87.571321,
+        "zip_code": "60095",
+        "city": "Chicago",
+        "street": "88746 Jones Light",
+        "latitude": 41.944942
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010049",
+    "signup_date": "2024-07-08T00:00:00Z",
+    "full_name": "Stephen Mcdonald",
+    "email": "stephen.mcdonald@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "(894)272-4836x084",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -118.281548,
+        "zip_code": "90177",
+        "city": "Los Angeles",
+        "street": "09574 Lara Way Apt. 695",
+        "latitude": 34.04176
+      },
+      {
+        "label": "home",
+        "longitude": -122.445822,
+        "zip_code": "90510",
+        "city": "San Francisco",
+        "street": "07416 Quinn Springs",
+        "latitude": 37.845135
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010050",
+    "signup_date": "2023-08-13T00:00:00Z",
+    "full_name": "Amy Wood",
+    "email": "amyw96@yahoo.com",
+    "loyalty_tier": "Bronze",
+    "phone": "917.563.0623x391",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.383591,
+        "zip_code": "95397",
+        "city": "San Francisco",
+        "street": "79456 Isaac Street Suite 941",
+        "latitude": 37.721448
+      },
+      {
+        "label": "other",
+        "longitude": -118.189932,
+        "zip_code": "95637",
+        "city": "Los Angeles",
+        "street": "645 Perez Flat Apt. 221",
+        "latitude": 34.069078
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010051",
+    "signup_date": "2025-01-23T00:00:00Z",
+    "referral_code": "REF-JEUJZQ",
+    "full_name": "Dr. Jordan Hunter DDS",
+    "email": "jordanh22@aol.com",
+    "loyalty_tier": "Silver",
+    "phone": "992-396-1905",
+    "addresses": [
+      {
+        "label": "other",
+        "longitude": -73.961679,
+        "zip_code": "14575",
+        "city": "New York",
+        "street": "0669 Louis Islands Apt. 040",
+        "latitude": 40.744347
+      },
+      {
+        "label": "work",
+        "longitude": -122.319869,
+        "zip_code": "98319",
+        "city": "Seattle",
+        "street": "81996 Gomez Centers",
+        "latitude": 47.669781
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010052",
+    "signup_date": "2024-02-18T00:00:00Z",
+    "referral_code": "REF-06AY3O",
+    "full_name": "Hannah Anderson",
+    "email": "hannah2001@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "001-705-519-3917x73171",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -122.492543,
+        "zip_code": "90828",
+        "city": "San Francisco",
+        "street": "6151 Perkins Village",
+        "latitude": 37.698104
+      },
+      {
+        "label": "home",
+        "longitude": -97.709416,
+        "zip_code": "77654",
+        "city": "Austin",
+        "street": "99009 Amanda Lakes",
+        "latitude": 30.225828
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010053",
+    "signup_date": "2024-05-11T00:00:00Z",
+    "full_name": "Robert Ross",
+    "email": "rross@aol.com",
+    "loyalty_tier": "Bronze",
+    "phone": "001-902-317-2210x979",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -122.440577,
+        "zip_code": "93722",
+        "city": "San Francisco",
+        "street": "84690 Lewis Fields Suite 714",
+        "latitude": 37.843007
+      },
+      {
+        "label": "home",
+        "longitude": -87.574582,
+        "zip_code": "62907",
+        "city": "Chicago",
+        "street": "333 Nicole Shoal",
+        "latitude": 41.9074
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010054",
+    "signup_date": "2024-10-01T00:00:00Z",
+    "full_name": "Andrea Delgado",
+    "email": "andrea.delgado86@icloud.com",
+    "loyalty_tier": "Bronze",
+    "phone": "492-545-7107x39914",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.177695,
+        "zip_code": "94033",
+        "city": "Los Angeles",
+        "street": "056 Hayden Walks Suite 983",
+        "latitude": 34.076673
+      },
+      {
+        "label": "work",
+        "longitude": -122.400437,
+        "zip_code": "93001",
+        "city": "San Francisco",
+        "street": "06275 Jones Squares Apt. 290",
+        "latitude": 37.755268
+      },
+      {
+        "label": "other",
+        "longitude": -122.448883,
+        "zip_code": "92166",
+        "city": "San Francisco",
+        "street": "70568 Gray Fork",
+        "latitude": 37.777412
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010055",
+    "signup_date": "2024-03-30T00:00:00Z",
+    "full_name": "Gary Malone",
+    "email": "garym15@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "+1-219-637-9379x5678",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -97.733405,
+        "zip_code": "76161",
+        "city": "Austin",
+        "street": "16197 John Highway Suite 993",
+        "latitude": 30.297711
+      },
+      {
+        "label": "other",
+        "longitude": -87.609467,
+        "zip_code": "60020",
+        "city": "Chicago",
+        "street": "913 Kyle Summit Suite 727",
+        "latitude": 41.822856
+      },
+      {
+        "label": "home",
+        "longitude": -122.372573,
+        "zip_code": "93760",
+        "city": "San Francisco",
+        "street": "169 Amber Brooks",
+        "latitude": 37.808495
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010056",
+    "signup_date": "2025-08-16T00:00:00Z",
+    "full_name": "Jane Bishop",
+    "email": "jane.bishop@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "+1-959-275-3334x3184",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -73.955342,
+        "zip_code": "10331",
+        "city": "New York",
+        "street": "68068 Ferguson Hollow",
+        "latitude": 40.754625
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010057",
+    "signup_date": "2024-06-14T00:00:00Z",
+    "full_name": "Whitney Douglas",
+    "email": "wdouglas@yahoo.com",
+    "loyalty_tier": "Bronze",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -74.013496,
+        "zip_code": "10892",
+        "city": "New York",
+        "street": "363 Baldwin Track Apt. 423",
+        "latitude": 40.73094
+      },
+      {
+        "label": "work",
+        "longitude": -74.086123,
+        "zip_code": "14250",
+        "city": "New York",
+        "street": "4629 Vaughn Radial Apt. 522",
+        "latitude": 40.758318
+      },
+      {
+        "label": "other",
+        "longitude": -87.565077,
+        "zip_code": "62228",
+        "city": "Chicago",
+        "street": "7201 Angela Cliff",
+        "latitude": 41.931283
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010058",
+    "signup_date": "2024-02-01T00:00:00Z",
+    "full_name": "Micheal Wyatt",
+    "email": "micheal_wyatt@icloud.com",
+    "loyalty_tier": "Bronze",
+    "phone": "(928)361-7475",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -122.250423,
+        "zip_code": "99245",
+        "city": "Seattle",
+        "street": "5971 Mitchell Drives Suite 802",
+        "latitude": 47.586899
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010059",
+    "signup_date": "2023-04-22T00:00:00Z",
+    "referral_code": "REF-ELSJZR",
+    "full_name": "Dean Hunt",
+    "email": "dhunt@msn.com",
+    "loyalty_tier": "Silver",
+    "phone": "9508994275",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.161448,
+        "zip_code": "95527",
+        "city": "Los Angeles",
+        "street": "627 Eric Green Apt. 655",
+        "latitude": 33.977552
+      },
+      {
+        "label": "work",
+        "longitude": -118.164597,
+        "zip_code": "95855",
+        "city": "Los Angeles",
+        "street": "3200 Tyler Glen",
+        "latitude": 34.006475
+      },
+      {
+        "label": "other",
+        "longitude": -122.35926,
+        "zip_code": "94078",
+        "city": "San Francisco",
+        "street": "83814 Andrea Viaduct Apt. 750",
+        "latitude": 37.704875
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010060",
+    "signup_date": "2024-07-12T00:00:00Z",
+    "full_name": "Jane Soto",
+    "email": "jane_soto@mail.com",
+    "loyalty_tier": "Bronze",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.280256,
+        "zip_code": "91096",
+        "city": "Los Angeles",
+        "street": "371 Figueroa Shores",
+        "latitude": 34.009526
+      },
+      {
+        "label": "work",
+        "longitude": -97.669244,
+        "zip_code": "77001",
+        "city": "Austin",
+        "street": "7947 Chad Manors Apt. 316",
+        "latitude": 30.197779
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010061",
+    "signup_date": "2023-01-26T00:00:00Z",
+    "full_name": "Christina Evans",
+    "email": "christina_evans@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "862-776-3655x6593",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -74.035293,
+        "zip_code": "14773",
+        "city": "New York",
+        "street": "625 Norton Isle",
+        "latitude": 40.730205
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010062",
+    "signup_date": "2024-01-05T00:00:00Z",
+    "full_name": "Andrea Warren",
+    "email": "andrea.warren89@icloud.com",
+    "loyalty_tier": "Bronze",
+    "phone": "+1-589-243-7607",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -118.235244,
+        "zip_code": "95448",
+        "city": "Los Angeles",
+        "street": "79891 Clark Oval Apt. 287",
+        "latitude": 34.120506
+      },
+      {
+        "label": "home",
+        "longitude": -74.069224,
+        "zip_code": "14844",
+        "city": "New York",
+        "street": "483 Anderson Landing",
+        "latitude": 40.751622
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010063",
+    "signup_date": "2024-11-15T00:00:00Z",
+    "referral_code": "REF-BXL3ZO",
+    "full_name": "Christopher Ortega",
+    "email": "christopherortega@icloud.com",
+    "loyalty_tier": "Bronze",
+    "phone": "001-403-790-8576x95400",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -118.29577,
+        "zip_code": "92008",
+        "city": "Los Angeles",
+        "street": "8698 Ramirez Mill",
+        "latitude": 34.045207
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010064",
+    "signup_date": "2023-01-15T00:00:00Z",
+    "referral_code": "REF-GPU38X",
+    "full_name": "Caroline Garcia",
+    "email": "cgarcia@outlook.com",
+    "loyalty_tier": "Silver",
+    "phone": "+1-589-383-1912",
+    "addresses": [
+      {
+        "label": "other",
+        "longitude": -74.016726,
+        "zip_code": "11625",
+        "city": "New York",
+        "street": "0047 Martinez Hills",
+        "latitude": 40.738361
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010065",
+    "signup_date": "2025-09-12T00:00:00Z",
+    "full_name": "Emily Stewart",
+    "email": "emily.stewart@hotmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "533-257-4788x877",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -87.625105,
+        "zip_code": "60417",
+        "city": "Chicago",
+        "street": "75394 Adams Vista",
+        "latitude": 41.846154
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010066",
+    "signup_date": "2023-05-31T00:00:00Z",
+    "referral_code": "REF-UWPY0H",
+    "full_name": "Robert Gray",
+    "email": "robert.gray@msn.com",
+    "loyalty_tier": "Bronze",
+    "phone": "001-576-896-8520x4291",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -73.993546,
+        "zip_code": "12288",
+        "city": "New York",
+        "street": "34037 Zamora Corners Suite 992",
+        "latitude": 40.752944
+      },
+      {
+        "label": "other",
+        "longitude": -122.420555,
+        "zip_code": "93438",
+        "city": "San Francisco",
+        "street": "416 Williams Brooks Suite 962",
+        "latitude": 37.829851
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010067",
+    "signup_date": "2024-11-25T00:00:00Z",
+    "full_name": "Sara Taylor",
+    "email": "sarataylor@icloud.com",
+    "loyalty_tier": "Platinum",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -73.985956,
+        "zip_code": "14714",
+        "city": "New York",
+        "street": "2928 Moran Ridges",
+        "latitude": 40.659284
+      },
+      {
+        "label": "other",
+        "longitude": -87.674098,
+        "zip_code": "61838",
+        "city": "Chicago",
+        "street": "0926 Ronald Loop",
+        "latitude": 41.869241
+      },
+      {
+        "label": "work",
+        "longitude": -97.777075,
+        "zip_code": "79074",
+        "city": "Austin",
+        "street": "5293 Ruiz Rapid Suite 578",
+        "latitude": 30.196569
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010068",
+    "signup_date": "2023-03-27T00:00:00Z",
+    "referral_code": "REF-6OB4HL",
+    "full_name": "Nicholas Butler",
+    "email": "nbutler@yahoo.com",
+    "loyalty_tier": "Gold",
+    "phone": "6239608464",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -73.962661,
+        "zip_code": "10265",
+        "city": "New York",
+        "street": "890 Thomas Run Apt. 861",
+        "latitude": 40.714553
+      },
+      {
+        "label": "home",
+        "longitude": -122.293412,
+        "zip_code": "98040",
+        "city": "Seattle",
+        "street": "213 Connie Parks Apt. 426",
+        "latitude": 47.603366
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010069",
+    "signup_date": "2024-03-10T00:00:00Z",
+    "full_name": "Ryan Gutierrez",
+    "email": "ryan_gutierrez@icloud.com",
+    "loyalty_tier": "Silver",
+    "phone": "994-214-4779x4517",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.285383,
+        "zip_code": "94292",
+        "city": "Los Angeles",
+        "street": "94747 Cameron Hills",
+        "latitude": 34.09182
+      },
+      {
+        "label": "work",
+        "longitude": -122.345438,
+        "zip_code": "98519",
+        "city": "Seattle",
+        "street": "2676 Mitchell Rest Apt. 456",
+        "latitude": 47.651344
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010070",
+    "signup_date": "2024-03-07T00:00:00Z",
+    "full_name": "Kendra Johnson",
+    "email": "kendra.johnson97@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "+1-723-960-5009",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -97.736635,
+        "zip_code": "76275",
+        "city": "Austin",
+        "street": "782 Simon Ford Suite 829",
+        "latitude": 30.348759
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010071",
+    "signup_date": "2023-06-03T00:00:00Z",
+    "full_name": "Sarah Perez",
+    "email": "sarah1990@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "864.632.2311",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -87.607861,
+        "zip_code": "62953",
+        "city": "Chicago",
+        "street": "736 Anne Divide Apt. 566",
+        "latitude": 41.832231
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010072",
+    "signup_date": "2023-09-15T00:00:00Z",
+    "referral_code": "REF-JI9G1U",
+    "full_name": "Mario Mendoza",
+    "email": "mariomendoza@outlook.com",
+    "loyalty_tier": "Bronze",
+    "phone": "(380)889-3782x775",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -87.569844,
+        "zip_code": "62457",
+        "city": "Chicago",
+        "street": "205 Tammy Brook",
+        "latitude": 41.956625
+      },
+      {
+        "label": "home",
+        "longitude": -73.93958,
+        "zip_code": "12426",
+        "city": "New York",
+        "street": "6938 Emily Highway",
+        "latitude": 40.689075
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010073",
+    "signup_date": "2025-02-01T00:00:00Z",
+    "full_name": "Timothy Massey",
+    "email": "timothy.massey21@gmail.com",
+    "loyalty_tier": "Platinum",
+    "phone": "(519)414-4091x972",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -74.082932,
+        "zip_code": "11774",
+        "city": "New York",
+        "street": "5441 Pearson Run Apt. 096",
+        "latitude": 40.706506
+      },
+      {
+        "label": "work",
+        "longitude": -122.392921,
+        "zip_code": "95712",
+        "city": "San Francisco",
+        "street": "065 Nancy Place",
+        "latitude": 37.785543
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010074",
+    "signup_date": "2023-09-28T00:00:00Z",
+    "referral_code": "REF-6L264N",
+    "full_name": "Melanie Gonzalez",
+    "email": "melanie.gonzalez@yahoo.com",
+    "loyalty_tier": "Silver",
+    "phone": "(288)899-8510",
+    "addresses": [
+      {
+        "label": "other",
+        "longitude": -97.667235,
+        "zip_code": "77106",
+        "city": "Austin",
+        "street": "85866 Davenport Coves Apt. 821",
+        "latitude": 30.335548
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010075",
+    "signup_date": "2025-08-15T00:00:00Z",
+    "full_name": "Matthew Bean",
+    "email": "mbean@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "+1-985-793-2144x753",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -73.95287,
+        "zip_code": "11757",
+        "city": "New York",
+        "street": "88024 Odom Dale",
+        "latitude": 40.664966
+      },
+      {
+        "label": "home",
+        "longitude": -87.680541,
+        "zip_code": "62114",
+        "city": "Chicago",
+        "street": "477 Vazquez Lane Suite 350",
+        "latitude": 41.834928
+      },
+      {
+        "label": "other",
+        "longitude": -118.160433,
+        "zip_code": "94943",
+        "city": "Los Angeles",
+        "street": "27234 Tommy Pine Suite 331",
+        "latitude": 34.031603
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010076",
+    "signup_date": "2025-12-29T00:00:00Z",
+    "full_name": "Michael Cole",
+    "email": "mcole@gmail.com",
+    "loyalty_tier": "Gold",
+    "phone": "+1-236-375-8491x3057",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.304162,
+        "zip_code": "95656",
+        "city": "Los Angeles",
+        "street": "803 Michael Glens Suite 282",
+        "latitude": 34.057138
+      },
+      {
+        "label": "other",
+        "longitude": -122.284898,
+        "zip_code": "98012",
+        "city": "Seattle",
+        "street": "366 Carson Passage Apt. 337",
+        "latitude": 47.629729
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010077",
+    "signup_date": "2025-06-19T00:00:00Z",
+    "full_name": "David Williams",
+    "email": "davidw84@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "+1-654-201-7311",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.398843,
+        "zip_code": "98501",
+        "city": "Seattle",
+        "street": "26411 Ballard Roads Suite 681",
+        "latitude": 47.633953
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010078",
+    "signup_date": "2024-11-15T00:00:00Z",
+    "full_name": "Carla Bentley",
+    "email": "carla_bentley@outlook.com",
+    "loyalty_tier": "Gold",
+    "phone": "465.801.2209x9693",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -97.698142,
+        "zip_code": "78429",
+        "city": "Austin",
+        "street": "037 Booth Grove",
+        "latitude": 30.260347
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010079",
+    "signup_date": "2024-01-17T00:00:00Z",
+    "full_name": "Paula Grant",
+    "email": "paula.grant@yahoo.com",
+    "loyalty_tier": "Bronze",
+    "phone": "(971)300-2548",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.295017,
+        "zip_code": "98795",
+        "city": "Seattle",
+        "street": "592 Moyer Mountain Suite 693",
+        "latitude": 47.538797
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010080",
+    "signup_date": "2025-10-06T00:00:00Z",
+    "full_name": "Sandra Hawkins",
+    "email": "sandra.hawkins@outlook.com",
+    "loyalty_tier": "Bronze",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.316287,
+        "zip_code": "94775",
+        "city": "Los Angeles",
+        "street": "22259 Paul Court Suite 179",
+        "latitude": 34.120752
+      },
+      {
+        "label": "work",
+        "longitude": -73.986133,
+        "zip_code": "12094",
+        "city": "New York",
+        "street": "8123 Smith Harbor Apt. 017",
+        "latitude": 40.6392
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010081",
+    "signup_date": "2023-01-05T00:00:00Z",
+    "referral_code": "REF-P8VC3O",
+    "full_name": "Shawn Freeman",
+    "email": "shawn.freeman56@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "001-286-671-1885",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -73.995602,
+        "zip_code": "11242",
+        "city": "New York",
+        "street": "452 Andrew Lodge",
+        "latitude": 40.70244
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010082",
+    "signup_date": "2025-08-22T00:00:00Z",
+    "full_name": "Robert Dixon",
+    "email": "robertd81@live.com",
+    "loyalty_tier": "Gold",
+    "phone": "673.478.7128x689",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -97.744123,
+        "zip_code": "76115",
+        "city": "Austin",
+        "street": "2013 Michael Isle",
+        "latitude": 30.27123
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010083",
+    "signup_date": "2023-06-30T00:00:00Z",
+    "referral_code": "REF-JXV35Y",
+    "full_name": "Katie Holmes",
+    "email": "katieholmes@hotmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "001-378-902-6478x1260",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -122.414221,
+        "zip_code": "90294",
+        "city": "San Francisco",
+        "street": "965 Park Forge",
+        "latitude": 37.720859
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010084",
+    "signup_date": "2023-03-08T00:00:00Z",
+    "full_name": "Timothy Schmitt",
+    "email": "timothys28@yahoo.com",
+    "loyalty_tier": "Bronze",
+    "phone": "001-770-784-2874x1559",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -122.403216,
+        "zip_code": "94159",
+        "city": "San Francisco",
+        "street": "3686 Valdez Station Suite 934",
+        "latitude": 37.784822
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010085",
+    "signup_date": "2024-03-27T00:00:00Z",
+    "full_name": "Amanda Atkinson",
+    "email": "amanda.atkinson@icloud.com",
+    "loyalty_tier": "Bronze",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.41344,
+        "zip_code": "91900",
+        "city": "San Francisco",
+        "street": "22343 Marcia Falls",
+        "latitude": 37.72061
+      },
+      {
+        "label": "other",
+        "longitude": -73.986524,
+        "zip_code": "12320",
+        "city": "New York",
+        "street": "1524 Michael Harbor Suite 441",
+        "latitude": 40.698799
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010086",
+    "signup_date": "2024-10-09T00:00:00Z",
+    "referral_code": "REF-QQX012",
+    "full_name": "Tracy Johnson",
+    "email": "tracy.johnson@icloud.com",
+    "loyalty_tier": "Bronze",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.349904,
+        "zip_code": "99209",
+        "city": "Seattle",
+        "street": "898 Brittany Mountain Apt. 733",
+        "latitude": 47.58796
+      },
+      {
+        "label": "other",
+        "longitude": -122.372716,
+        "zip_code": "93295",
+        "city": "San Francisco",
+        "street": "335 Henry Branch",
+        "latitude": 37.778582
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010087",
+    "signup_date": "2024-12-30T00:00:00Z",
+    "full_name": "Mark Stout",
+    "email": "mark_stout@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "412-695-1713",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -74.036865,
+        "zip_code": "11868",
+        "city": "New York",
+        "street": "284 Barnett Mission",
+        "latitude": 40.667189
+      },
+      {
+        "label": "other",
+        "longitude": -122.456175,
+        "zip_code": "92124",
+        "city": "San Francisco",
+        "street": "9449 Duane Junction Apt. 109",
+        "latitude": 37.708487
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010088",
+    "signup_date": "2025-02-14T00:00:00Z",
+    "referral_code": "REF-DVFT5I",
+    "full_name": "Nicholas Marquez",
+    "email": "nicholasm51@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "411.333.9764",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -73.994108,
+        "zip_code": "14369",
+        "city": "New York",
+        "street": "185 Charles Views Apt. 166",
+        "latitude": 40.748679
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010089",
+    "signup_date": "2024-03-26T00:00:00Z",
+    "full_name": "Natasha Sanders",
+    "email": "natasha.sanders@gmail.com",
+    "loyalty_tier": "Gold",
+    "phone": "3505410265",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.195872,
+        "zip_code": "94789",
+        "city": "Los Angeles",
+        "street": "44888 Melissa Square Apt. 432",
+        "latitude": 34.031875
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010090",
+    "signup_date": "2023-01-18T00:00:00Z",
+    "full_name": "Edward Cummings",
+    "email": "edwardc39@yahoo.com",
+    "loyalty_tier": "Bronze",
+    "phone": "806-513-5347",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -97.736348,
+        "zip_code": "76644",
+        "city": "Austin",
+        "street": "960 Jason Coves",
+        "latitude": 30.284277
+      },
+      {
+        "label": "work",
+        "longitude": -122.478714,
+        "zip_code": "94798",
+        "city": "San Francisco",
+        "street": "80437 John Ways",
+        "latitude": 37.760331
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010091",
+    "signup_date": "2024-02-06T00:00:00Z",
+    "full_name": "Megan Hoffman",
+    "email": "meganh37@gmail.com",
+    "loyalty_tier": "Gold",
+    "phone": "8319321197",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -87.617267,
+        "zip_code": "62397",
+        "city": "Chicago",
+        "street": "152 Campbell Summit Apt. 034",
+        "latitude": 41.94137
+      },
+      {
+        "label": "other",
+        "longitude": -118.278468,
+        "zip_code": "90549",
+        "city": "Los Angeles",
+        "street": "05286 Watson Route",
+        "latitude": 34.096856
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010092",
+    "signup_date": "2025-12-12T00:00:00Z",
+    "referral_code": "REF-DBZMW4",
+    "full_name": "Andrew Guzman",
+    "email": "andrew.guzman@outlook.com",
+    "loyalty_tier": "Bronze",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.34552,
+        "zip_code": "92693",
+        "city": "San Francisco",
+        "street": "04710 Kristen Key Suite 878",
+        "latitude": 37.754125
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010093",
+    "signup_date": "2025-12-30T00:00:00Z",
+    "full_name": "Cody Cooper",
+    "email": "cooper.cody@gmail.com",
+    "loyalty_tier": "Gold",
+    "phone": "955.529.5771",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.268238,
+        "zip_code": "90613",
+        "city": "Los Angeles",
+        "street": "57691 Michael Rapids Apt. 458",
+        "latitude": 34.027148
+      },
+      {
+        "label": "work",
+        "longitude": -73.956897,
+        "zip_code": "14225",
+        "city": "New York",
+        "street": "323 Tonya Lights Apt. 025",
+        "latitude": 40.664005
+      },
+      {
+        "label": "other",
+        "longitude": -97.663652,
+        "zip_code": "78698",
+        "city": "Austin",
+        "street": "95029 Christina Fork",
+        "latitude": 30.23293
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010094",
+    "signup_date": "2023-05-01T00:00:00Z",
+    "referral_code": "REF-WER4Y5",
+    "full_name": "Kari Shaw",
+    "email": "kari.shaw@aol.com",
+    "loyalty_tier": "Gold",
+    "phone": "+1-940-640-7208",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -87.588833,
+        "zip_code": "61099",
+        "city": "Chicago",
+        "street": "402 Whitaker Rest Apt. 371",
+        "latitude": 41.814911
+      },
+      {
+        "label": "work",
+        "longitude": -118.287376,
+        "zip_code": "95394",
+        "city": "Los Angeles",
+        "street": "841 Velasquez Square",
+        "latitude": 34.032236
+      },
+      {
+        "label": "other",
+        "longitude": -74.050994,
+        "zip_code": "12834",
+        "city": "New York",
+        "street": "91051 Spence Drives Suite 449",
+        "latitude": 40.637064
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010095",
+    "signup_date": "2025-08-16T00:00:00Z",
+    "referral_code": "REF-O4DZBL",
+    "full_name": "Carolyn Smith",
+    "email": "csmith@live.com",
+    "loyalty_tier": "Bronze",
+    "phone": "+1-335-749-1707",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -122.256697,
+        "zip_code": "99132",
+        "city": "Seattle",
+        "street": "8389 Fuller Haven Apt. 666",
+        "latitude": 47.653783
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010096",
+    "signup_date": "2024-04-28T00:00:00Z",
+    "full_name": "Rachel Hickman",
+    "email": "rachel_hickman@hotmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "001-813-551-7763x6494",
+    "addresses": [
+      {
+        "label": "other",
+        "longitude": -118.290176,
+        "zip_code": "93031",
+        "city": "Los Angeles",
+        "street": "9636 Hayes Tunnel Suite 265",
+        "latitude": 33.991231
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010097",
+    "signup_date": "2025-05-06T00:00:00Z",
+    "full_name": "Olivia Hernandez",
+    "email": "olivia.hernandez@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "451-844-7739x4386",
+    "addresses": [
+      {
+        "label": "work",
+        "longitude": -118.296077,
+        "zip_code": "93217",
+        "city": "Los Angeles",
+        "street": "4204 Julia Court",
+        "latitude": 33.997106
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010098",
+    "signup_date": "2023-03-05T00:00:00Z",
+    "full_name": "Jessica Reynolds",
+    "email": "jessicareynolds@gmail.com",
+    "loyalty_tier": "Silver",
+    "phone": "(699)237-0486x89952",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.284125,
+        "zip_code": "90400",
+        "city": "Los Angeles",
+        "street": "3076 Baker Highway Apt. 482",
+        "latitude": 34.032819
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010099",
+    "signup_date": "2025-01-01T00:00:00Z",
+    "referral_code": "REF-J51FA3",
+    "full_name": "Kathryn Burch",
+    "email": "burch.kathryn@gmail.com",
+    "loyalty_tier": "Gold",
+    "phone": "704-317-7659",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -87.5965,
+        "zip_code": "61532",
+        "city": "Chicago",
+        "street": "925 David Points",
+        "latitude": 41.916809
+      }
+    ]
+  },
+  {
+    "_id": "CUST-010100",
+    "signup_date": "2024-12-22T00:00:00Z",
+    "full_name": "Danielle Sanders",
+    "email": "danielle.sanders@gmail.com",
+    "loyalty_tier": "Bronze",
+    "phone": "+1-220-863-3666x625",
+    "addresses": [
+      {
+        "label": "home",
+        "longitude": -118.162152,
+        "zip_code": "92428",
+        "city": "Los Angeles",
+        "street": "642 Hill Orchard Suite 050",
+        "latitude": 34.002464
+      }
+    ]
+  }
+]

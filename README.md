@@ -22,6 +22,15 @@ No real person, company or transaction appears in any file, so the data can be u
 | [Student Performance and Lifestyle](student-performance/) | 1 | 102,000 | Exam score prediction and teaching statistics | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/student-performance-and-lifestyle) |
 | [Screen Time, Sleep and Mental Health](screen-time-wellbeing/) | 2 | 474,300 | Sleep, stress and screen-time analysis on daily logs | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/screen-time-sleep-and-mental-health) |
 
+## NoSQL and knowledge graph datasets
+
+The same engine also makes document databases and knowledge graphs. Each comes ready to load, with proof queries that run inside the database and all return 0.
+
+| Dataset | Database | Shape | Size | Good for | Full data |
+|---|---|---|---|---|---|
+| [Food Delivery NoSQL Database (MongoDB)](food-delivery-nosql/) | MongoDB (+ JSON Lines) | 6 collections | 512,550 documents | MongoDB practice, nested JSON, document-to-table ETL | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/food-delivery-nosql-database-mongodb) |
+| [Bank Fraud & AML Knowledge Graph (Neo4j)](banking-knowledge-graph/) | Neo4j (+ CSV) | 10 labels, 14 relationship types | 539,361 nodes, 2,066,637 relationships | Cypher, graph analytics, fraud and AML features | [Kaggle](https://www.kaggle.com/datasets/generaterealdata/banking-payments-knowledge-graph-neo4j) |
+
 ## What is in each folder
 
 | File | What it is |
@@ -34,6 +43,8 @@ No real person, company or transaction appears in any file, so the data can be u
 | `generation.json`, `plan.json` | The settings, seed and full generation plan, so the dataset can be re-created exactly |
 
 The full data of each dataset (CSV files and a SQLite database) is on its Kaggle page, linked in the table above.
+
+The NoSQL and knowledge graph folders hold a sample of every collection or node and relationship file, the database's setup (MongoDB validators, Neo4j constraints), `proof_queries` and `questions` for that database, the design and the generation settings; each README lists them.
 
 ## Quick start
 
@@ -61,9 +72,11 @@ python verify.py ecommerce path/to/ecommerce.sqlite
 
 It prints one line per rule and ends with a line such as `48 of 48 rules hold.`
 
+For the NoSQL and knowledge graph datasets, run `proof_queries.js` with mongosh or `proof_queries.cypher` with cypher-shell after loading the data; every query prints 0.
+
 ## How the data is made
 
-The datasets are generated with [GenerateRealData](https://www.generaterealdata.com), a relational synthetic data generator with 232 data types and 222 built-in generators, one of the largest libraries of any test data generator, from a database schema plus rules in plain terms (for example: a payment equals its order total; a cancelled order has no shipment). Each run uses a fixed seed, so it can be repeated exactly: [`scripts/recreate.py`](scripts/recreate.py) rebuilds any dataset here through the [API](https://www.generaterealdata.com/docs/api/). No value is edited after generation, and no field is written by AI.
+The datasets are generated with [GenerateRealData](https://www.generaterealdata.com), a relational synthetic data generator with 232 data types and 222 built-in generators, one of the largest libraries of any test data generator, from a database schema plus rules in plain terms (for example: a payment equals its order total; a cancelled order has no shipment). Each run uses a fixed seed, so it can be repeated exactly: [`scripts/recreate.py`](scripts/recreate.py) rebuilds any of the SQL datasets above through the [API](https://www.generaterealdata.com/docs/api/). No value is edited after generation, and no field is written by AI.
 
 Each data card also has a *Good to know* section listing what the dataset does not model. Read it before drawing conclusions: these are teaching and testing datasets, not samples of a real population.
 

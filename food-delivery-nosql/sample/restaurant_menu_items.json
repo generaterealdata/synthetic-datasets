@@ -1,0 +1,902 @@
+[
+  {
+    "_id": "MENU-010001",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 23.2,
+    "restaurant_id": "REST-1001",
+    "item_name": "Spicy Tuna Roll",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010002",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 18.01,
+    "restaurant_id": "REST-1001",
+    "item_name": "Classic Cheeseburger",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010003",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 14.69,
+    "restaurant_id": "REST-1001",
+    "item_name": "Veggie Burrito Bowl",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010004",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 17.25,
+    "restaurant_id": "REST-1001",
+    "item_name": "Beef Burrito",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010005",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 24.58,
+    "restaurant_id": "REST-1001",
+    "item_name": "Chicken Tikka Masala",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010006",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 19.88,
+    "restaurant_id": "REST-1001",
+    "item_name": "Pad Thai",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010007",
+    "category": "starter",
+    "is_vegetarian": false,
+    "price": 10.07,
+    "restaurant_id": "REST-1001",
+    "item_name": "Caesar Salad",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010008",
+    "category": "dessert",
+    "is_vegetarian": true,
+    "price": 6.64,
+    "restaurant_id": "REST-1001",
+    "item_name": "Gelato Scoop",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010009",
+    "category": "dessert",
+    "is_vegetarian": false,
+    "price": 9.61,
+    "restaurant_id": "REST-1001",
+    "item_name": "Churros",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010010",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 14.38,
+    "restaurant_id": "REST-1001",
+    "item_name": "Grilled Salmon Bowl",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010011",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 23.75,
+    "restaurant_id": "REST-1001",
+    "item_name": "Margherita Pizza",
+    "is_available": false
+  },
+  {
+    "_id": "MENU-010012",
+    "category": "dessert",
+    "is_vegetarian": false,
+    "price": 11.52,
+    "restaurant_id": "REST-1001",
+    "item_name": "New York Cheesecake",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010013",
+    "category": "drink",
+    "is_vegetarian": false,
+    "price": 2.53,
+    "restaurant_id": "REST-1001",
+    "item_name": "Sparkling Water",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010014",
+    "category": "starter",
+    "is_vegetarian": true,
+    "price": 10.21,
+    "restaurant_id": "REST-1001",
+    "item_name": "Chicken Wings",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010015",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 23.09,
+    "restaurant_id": "REST-1001",
+    "item_name": "Fettuccine Alfredo",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010016",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 15.01,
+    "restaurant_id": "REST-1182",
+    "item_name": "Grilled Salmon Bowl",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010017",
+    "category": "drink",
+    "is_vegetarian": true,
+    "price": 2.68,
+    "restaurant_id": "REST-1001",
+    "item_name": "Iced Green Tea",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010018",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 21.76,
+    "restaurant_id": "REST-1033",
+    "item_name": "Grilled Salmon Bowl",
+    "is_available": false
+  },
+  {
+    "_id": "MENU-010019",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 16.27,
+    "restaurant_id": "REST-1236",
+    "item_name": "Classic Cheeseburger",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010020",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 23.26,
+    "restaurant_id": "REST-1207",
+    "item_name": "Veggie Burrito Bowl",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010021",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 20.14,
+    "restaurant_id": "REST-1152",
+    "item_name": "Margherita Pizza",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010022",
+    "category": "dessert",
+    "is_vegetarian": false,
+    "price": 10.24,
+    "restaurant_id": "REST-1001",
+    "item_name": "Tiramisu",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010023",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 21.78,
+    "restaurant_id": "REST-1136",
+    "item_name": "Chicken Tikka Masala",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010024",
+    "category": "drink",
+    "is_vegetarian": false,
+    "price": 4.25,
+    "restaurant_id": "REST-1001",
+    "item_name": "Mango Lassi",
+    "is_available": false
+  },
+  {
+    "_id": "MENU-010025",
+    "category": "starter",
+    "is_vegetarian": true,
+    "price": 9.92,
+    "restaurant_id": "REST-1001",
+    "item_name": "Bruschetta",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010026",
+    "category": "drink",
+    "is_vegetarian": false,
+    "price": 4.85,
+    "restaurant_id": "REST-1001",
+    "item_name": "Fresh Lemonade",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010027",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 25.4,
+    "restaurant_id": "REST-1086",
+    "item_name": "Beef Burrito",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010028",
+    "category": "drink",
+    "is_vegetarian": false,
+    "price": 3.72,
+    "restaurant_id": "REST-1002",
+    "item_name": "Craft Cola",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010029",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 16.87,
+    "restaurant_id": "REST-1002",
+    "item_name": "Veggie Burrito Bowl",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010030",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 23.75,
+    "restaurant_id": "REST-1002",
+    "item_name": "Pad Thai",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010031",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 21.36,
+    "restaurant_id": "REST-1002",
+    "item_name": "Grilled Salmon Bowl",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010032",
+    "category": "dessert",
+    "is_vegetarian": false,
+    "price": 7.14,
+    "restaurant_id": "REST-1002",
+    "item_name": "Chocolate Lava Cake",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010033",
+    "category": "drink",
+    "is_vegetarian": false,
+    "price": 4.17,
+    "restaurant_id": "REST-1002",
+    "item_name": "Iced Green Tea",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010034",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 14.01,
+    "restaurant_id": "REST-1002",
+    "item_name": "Chicken Tikka Masala",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010035",
+    "category": "dessert",
+    "is_vegetarian": false,
+    "price": 6.15,
+    "restaurant_id": "REST-1002",
+    "item_name": "New York Cheesecake",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010036",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 13.23,
+    "restaurant_id": "REST-1002",
+    "item_name": "Classic Cheeseburger",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010037",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 15.27,
+    "restaurant_id": "REST-1002",
+    "item_name": "Beef Burrito",
+    "is_available": false
+  },
+  {
+    "_id": "MENU-010038",
+    "category": "drink",
+    "is_vegetarian": false,
+    "price": 5.34,
+    "restaurant_id": "REST-1002",
+    "item_name": "Fresh Lemonade",
+    "is_available": false
+  },
+  {
+    "_id": "MENU-010039",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 20.28,
+    "restaurant_id": "REST-1002",
+    "item_name": "Spicy Tuna Roll",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010040",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 23.63,
+    "restaurant_id": "REST-1002",
+    "item_name": "Fettuccine Alfredo",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010041",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 12.43,
+    "restaurant_id": "REST-1002",
+    "item_name": "Margherita Pizza",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010042",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 21.23,
+    "restaurant_id": "REST-1279",
+    "item_name": "Chicken Tikka Masala",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010043",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 21.2,
+    "restaurant_id": "REST-1003",
+    "item_name": "Fettuccine Alfredo",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010044",
+    "category": "drink",
+    "is_vegetarian": true,
+    "price": 3.86,
+    "restaurant_id": "REST-1003",
+    "item_name": "Iced Green Tea",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010045",
+    "category": "drink",
+    "is_vegetarian": false,
+    "price": 3.04,
+    "restaurant_id": "REST-1003",
+    "item_name": "Craft Cola",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010046",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 17.92,
+    "restaurant_id": "REST-1003",
+    "item_name": "Beef Burrito",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010047",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 19.36,
+    "restaurant_id": "REST-1003",
+    "item_name": "Spicy Tuna Roll",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010048",
+    "category": "starter",
+    "is_vegetarian": false,
+    "price": 9.78,
+    "restaurant_id": "REST-1003",
+    "item_name": "Garlic Bread",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010049",
+    "category": "starter",
+    "is_vegetarian": false,
+    "price": 10.94,
+    "restaurant_id": "REST-1003",
+    "item_name": "Mozzarella Sticks",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010050",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 12.27,
+    "restaurant_id": "REST-1003",
+    "item_name": "Classic Cheeseburger",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010051",
+    "category": "starter",
+    "is_vegetarian": false,
+    "price": 10.71,
+    "restaurant_id": "REST-1003",
+    "item_name": "Chicken Wings",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010052",
+    "category": "dessert",
+    "is_vegetarian": false,
+    "price": 6.16,
+    "restaurant_id": "REST-1003",
+    "item_name": "Gelato Scoop",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010053",
+    "category": "starter",
+    "is_vegetarian": true,
+    "price": 6.96,
+    "restaurant_id": "REST-1003",
+    "item_name": "Spring Rolls",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010054",
+    "category": "drink",
+    "is_vegetarian": true,
+    "price": 5.87,
+    "restaurant_id": "REST-1003",
+    "item_name": "Fresh Lemonade",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010055",
+    "category": "starter",
+    "is_vegetarian": false,
+    "price": 9.72,
+    "restaurant_id": "REST-1004",
+    "item_name": "Mozzarella Sticks",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010056",
+    "category": "dessert",
+    "is_vegetarian": false,
+    "price": 11.93,
+    "restaurant_id": "REST-1004",
+    "item_name": "Gelato Scoop",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010057",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 17.6,
+    "restaurant_id": "REST-1004",
+    "item_name": "Chicken Tikka Masala",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010058",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 13.26,
+    "restaurant_id": "REST-1004",
+    "item_name": "Veggie Burrito Bowl",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010059",
+    "category": "drink",
+    "is_vegetarian": true,
+    "price": 2.88,
+    "restaurant_id": "REST-1004",
+    "item_name": "Sparkling Water",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010060",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 24.07,
+    "restaurant_id": "REST-1004",
+    "item_name": "Grilled Salmon Bowl",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010061",
+    "category": "starter",
+    "is_vegetarian": false,
+    "price": 8.97,
+    "restaurant_id": "REST-1004",
+    "item_name": "Bruschetta",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010062",
+    "category": "starter",
+    "is_vegetarian": true,
+    "price": 10.54,
+    "restaurant_id": "REST-1004",
+    "item_name": "Edamame",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010063",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 12.98,
+    "restaurant_id": "REST-1004",
+    "item_name": "Fettuccine Alfredo",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010064",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 15.9,
+    "restaurant_id": "REST-1004",
+    "item_name": "Spicy Tuna Roll",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010065",
+    "category": "starter",
+    "is_vegetarian": false,
+    "price": 10.6,
+    "restaurant_id": "REST-1004",
+    "item_name": "Caesar Salad",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010066",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 24.19,
+    "restaurant_id": "REST-1004",
+    "item_name": "Margherita Pizza",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010067",
+    "category": "starter",
+    "is_vegetarian": true,
+    "price": 5.77,
+    "restaurant_id": "REST-1004",
+    "item_name": "Garlic Bread",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010068",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 23.57,
+    "restaurant_id": "REST-1004",
+    "item_name": "Pad Thai",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010069",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 22.64,
+    "restaurant_id": "REST-1004",
+    "item_name": "Beef Burrito",
+    "is_available": false
+  },
+  {
+    "_id": "MENU-010070",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 14.44,
+    "restaurant_id": "REST-1034",
+    "item_name": "Margherita Pizza",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010071",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 16.02,
+    "restaurant_id": "REST-1004",
+    "item_name": "Classic Cheeseburger",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010072",
+    "category": "drink",
+    "is_vegetarian": true,
+    "price": 3.22,
+    "restaurant_id": "REST-1004",
+    "item_name": "Craft Cola",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010073",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 16.33,
+    "restaurant_id": "REST-1221",
+    "item_name": "Pad Thai",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010074",
+    "category": "starter",
+    "is_vegetarian": false,
+    "price": 9.06,
+    "restaurant_id": "REST-1004",
+    "item_name": "Chicken Wings",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010075",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 14.44,
+    "restaurant_id": "REST-1009",
+    "item_name": "Chicken Tikka Masala",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010076",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 17.96,
+    "restaurant_id": "REST-1068",
+    "item_name": "Fettuccine Alfredo",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010077",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 19.83,
+    "restaurant_id": "REST-1163",
+    "item_name": "Veggie Burrito Bowl",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010078",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 22.26,
+    "restaurant_id": "REST-1062",
+    "item_name": "Chicken Tikka Masala",
+    "is_available": false
+  },
+  {
+    "_id": "MENU-010079",
+    "category": "drink",
+    "is_vegetarian": false,
+    "price": 5.88,
+    "restaurant_id": "REST-1004",
+    "item_name": "Fresh Lemonade",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010080",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 17.51,
+    "restaurant_id": "REST-1288",
+    "item_name": "Classic Cheeseburger",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010081",
+    "category": "starter",
+    "is_vegetarian": false,
+    "price": 9.2,
+    "restaurant_id": "REST-1004",
+    "item_name": "Spring Rolls",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010082",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 15.32,
+    "restaurant_id": "REST-1233",
+    "item_name": "Fettuccine Alfredo",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010083",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 12.84,
+    "restaurant_id": "REST-1121",
+    "item_name": "Margherita Pizza",
+    "is_available": false
+  },
+  {
+    "_id": "MENU-010084",
+    "category": "drink",
+    "is_vegetarian": true,
+    "price": 2.79,
+    "restaurant_id": "REST-1004",
+    "item_name": "Iced Green Tea",
+    "is_available": false
+  },
+  {
+    "_id": "MENU-010085",
+    "category": "dessert",
+    "is_vegetarian": true,
+    "price": 7.32,
+    "restaurant_id": "REST-1004",
+    "item_name": "Churros",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010086",
+    "category": "starter",
+    "is_vegetarian": true,
+    "price": 10.01,
+    "restaurant_id": "REST-1217",
+    "item_name": "Garlic Bread",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010087",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 14.52,
+    "restaurant_id": "REST-1024",
+    "item_name": "Beef Burrito",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010088",
+    "category": "starter",
+    "is_vegetarian": true,
+    "price": 11.39,
+    "restaurant_id": "REST-1005",
+    "item_name": "Caesar Salad",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010089",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 23.6,
+    "restaurant_id": "REST-1005",
+    "item_name": "Grilled Salmon Bowl",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010090",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 22.8,
+    "restaurant_id": "REST-1005",
+    "item_name": "Fettuccine Alfredo",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010091",
+    "category": "drink",
+    "is_vegetarian": false,
+    "price": 4.79,
+    "restaurant_id": "REST-1005",
+    "item_name": "Craft Cola",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010092",
+    "category": "dessert",
+    "is_vegetarian": false,
+    "price": 10.81,
+    "restaurant_id": "REST-1005",
+    "item_name": "Chocolate Lava Cake",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010093",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 25.47,
+    "restaurant_id": "REST-1005",
+    "item_name": "Beef Burrito",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010094",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 12.44,
+    "restaurant_id": "REST-1005",
+    "item_name": "Chicken Tikka Masala",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010095",
+    "category": "main",
+    "is_vegetarian": true,
+    "price": 21.37,
+    "restaurant_id": "REST-1005",
+    "item_name": "Margherita Pizza",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010096",
+    "category": "dessert",
+    "is_vegetarian": true,
+    "price": 11.43,
+    "restaurant_id": "REST-1005",
+    "item_name": "Gelato Scoop",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010097",
+    "category": "main",
+    "is_vegetarian": false,
+    "price": 12.84,
+    "restaurant_id": "REST-1005",
+    "item_name": "Spicy Tuna Roll",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010098",
+    "category": "drink",
+    "is_vegetarian": true,
+    "price": 5.75,
+    "restaurant_id": "REST-1005",
+    "item_name": "Mango Lassi",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010099",
+    "category": "starter",
+    "is_vegetarian": false,
+    "price": 11.16,
+    "restaurant_id": "REST-1005",
+    "item_name": "Mozzarella Sticks",
+    "is_available": true
+  },
+  {
+    "_id": "MENU-010100",
+    "category": "starter",
+    "is_vegetarian": true,
+    "price": 7.86,
+    "restaurant_id": "REST-1005",
+    "item_name": "Garlic Bread",
+    "is_available": true
+  }
+]
